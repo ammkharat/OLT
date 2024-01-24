@@ -1,0 +1,22 @@
+﻿using System;
+using System.Drawing;
+using System.Collections;
+using System.ComponentModel;
+using DevExpress.XtraReports.UI;
+
+namespace Com.Suncor.Olt.Reports.SubReports.WorkPermitMuds
+{
+    public partial class WorkPermitMudsHotReport : DevExpress.XtraReports.UI.XtraReport
+    {
+        public WorkPermitMudsHotReport()
+        {
+            InitializeComponent();
+        }
+
+        private void xrPanel6_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e)
+        {
+
+        }
+
+    }
+}

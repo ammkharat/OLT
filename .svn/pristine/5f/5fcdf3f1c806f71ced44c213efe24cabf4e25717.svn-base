@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+
+<configuration>
+  <configSections>
+
+    <section name="TagInfoSchedulingServiceSchedule"
+             type="System.Configuration.NameValueSectionHandler, System,
+                     Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+
+  </configSections>
+
+  <TagInfoSchedulingServiceSchedule>
+    <!-- Daily Schedule -->
+    <add key="ScheduleType" value="Daily" />
+
+    <!-- Weekly Schedule
+        <add key="ScheduleType" value="Weekly" />
+        <add key="DayOfWeek" value="Sunday" />
+         -->
+  </TagInfoSchedulingServiceSchedule>
+
+  <appSettings>
+    <add key="DefaultSiteIdForScheduler" value="1" /> <!--  Sarnia -->
+    <add key="ServerTimeZone" value="Mountain Standard Time" />
+  </appSettings>
+
+  <startup>
+    <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.0" />
+  </startup>
+</configuration>

@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D8392E1F-5ECB-41E5-8A44-890FF63205AF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Com.Suncor.Olt.Integration.Handlers</RootNamespace>
+    <AssemblyName>Com.Suncor.Olt.Integration.Handlers</AssemblyName>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net">
+      <HintPath>..\..\..\lib\NET-4-0\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="SapLogRequestService, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\tools\SapLogRequestWebService\SapLogRequestService.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\GlobalAssemblyInfo.cs">
+      <Link>Properties\GlobalAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="Adapters\ActionItemDefinitionBuilder.cs" />
+    <Compile Include="Adapters\FlocAdapter.cs" />
+    <Compile Include="Adapters\NotificationAdapter.cs" />
+    <Compile Include="Adapters\WorkOrderAdapter.cs" />
+    <Compile Include="Adapters\WorkOrderToOltObjectBuilderException.cs" />
+    <Compile Include="Adapters\WorkOrderWorkPermitAttribute.cs" />
+    <Compile Include="Adapters\WorkPermitBuilder.cs" />
+    <Compile Include="FunctionalLocationMessageHandler.cs" />
+    <Compile Include="LanguageCode.cs" />
+    <Compile Include="MessageObjects\FunctionalLocationXmlMessage.cs" />
+    <Compile Include="MessageObjects\Notification.cs" />
+    <Compile Include="MessageObjects\WorkOrder.cs" />
+    <Compile Include="MessageSender.cs" />
+    <Compile Include="NotificationMessageHandler.cs" />
+    <Compile Include="SapLogRequestWebService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Validator.cs" />
+    <Compile Include="Validators\FLOCValidator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Validators\NotificationValidator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Validators\WorkOrderValidator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="WorkOrderMessageHandler.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Common\App\Common.App.csproj">
+      <Project>{31784A4C-5836-4671-88CD-5FE0B962BC3E}</Project>
+      <Name>Common.App</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildProjectDirectory)\..\..\..\olt.msbuild" />
+  <Target Name="BeforeBuild">
+    <CallTarget Targets="CreateSAPHandlersWebConfigFiles" />
+  </Target>
+  <Target Name="AfterBuild">
+    <CallTarget Targets="CopySAPHandlerFiles" />
+  </Target>
+</Project>

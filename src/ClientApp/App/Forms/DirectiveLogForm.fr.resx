@@ -1,0 +1,1255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="createOneLogRadioButton.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="createOneLogRadioButton.Error1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="createOneLogRadioButton.Error2" xml:space="preserve">
+    <value />
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="createOneLogRadioButton.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="createOneLogRadioButton.IconPadding1" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="createOneLogRadioButton.IconPadding2" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="createOneLogRadioButton.Text" xml:space="preserve">
+    <value>Créer une instruction</value>
+  </data>
+  <data name="createOneLogRadioButton.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="createLogForEachFlocRadioButton.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="createLogForEachFlocRadioButton.Error1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="createLogForEachFlocRadioButton.Error2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="createLogForEachFlocRadioButton.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="createLogForEachFlocRadioButton.IconPadding1" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="createLogForEachFlocRadioButton.IconPadding2" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="createLogForEachFlocRadioButton.Text" xml:space="preserve">
+    <value>Créer de multiples instructions (une pour chaque poste technique sélectionné)</value>
+  </data>
+  <data name="createLogForEachFlocRadioButton.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="multipleFunctionalLocationGroupBox.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="multipleFunctionalLocationGroupBox.Error1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="multipleFunctionalLocationGroupBox.Error2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="multipleFunctionalLocationGroupBox.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="multipleFunctionalLocationGroupBox.IconPadding1" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="multipleFunctionalLocationGroupBox.IconPadding2" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="multipleFunctionalLocationGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>265, 103</value>
+  </data>
+  <data name="multipleFunctionalLocationGroupBox.Text" xml:space="preserve">
+    <value>Postes techniques multiples</value>
+  </data>
+  <data name="multipleFunctionalLocationGroupBox.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="removeFLOCButton.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="removeFLOCButton.Error1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="removeFLOCButton.Error2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="removeFLOCButton.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="removeFLOCButton.IconPadding1" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="removeFLOCButton.IconPadding2" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="removeFLOCButton.Text" xml:space="preserve">
+    <value>Supprimer</value>
+  </data>
+  <data name="removeFLOCButton.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="functionalLocationListBox.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="functionalLocationListBox.Error1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="functionalLocationListBox.Error2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="functionalLocationListBox.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="functionalLocationListBox.IconPadding1" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="functionalLocationListBox.IconPadding2" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="functionalLocationListBox.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="functionalLocationButton.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="functionalLocationButton.Error1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="functionalLocationButton.Error2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="functionalLocationButton.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="functionalLocationButton.IconPadding1" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="functionalLocationButton.IconPadding2" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="functionalLocationButton.Text" xml:space="preserve">
+    <value>Ajouter...</value>
+  </data>
+  <data name="functionalLocationButton.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="functionalLocationGroupBox.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="functionalLocationGroupBox.Error1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="functionalLocationGroupBox.Error2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="functionalLocationGroupBox.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="functionalLocationGroupBox.IconPadding1" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="functionalLocationGroupBox.IconPadding2" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="functionalLocationGroupBox.Text" xml:space="preserve">
+    <value>Postes techniques</value>
+  </data>
+  <data name="functionalLocationGroupBox.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="logDocumentLinksControl.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="logDocumentLinksControl.Error1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="logDocumentLinksControl.Error2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="logDocumentLinksControl.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="logDocumentLinksControl.IconPadding1" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="logDocumentLinksControl.IconPadding2" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="logDocumentLinksControl.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="linkGroupBox.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="linkGroupBox.Error1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="linkGroupBox.Error2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="linkGroupBox.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="linkGroupBox.IconPadding1" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="linkGroupBox.IconPadding2" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="linkGroupBox.Text" xml:space="preserve">
+    <value>Liens du document</value>
+  </data>
+  <data name="linkGroupBox.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="operationsFollowUpCheckbox.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="operationsFollowUpCheckbox.Error1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="operationsFollowUpCheckbox.Error2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="operationsFollowUpCheckbox.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="operationsFollowUpCheckbox.IconPadding1" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="operationsFollowUpCheckbox.IconPadding2" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="operationsFollowUpCheckbox.Text" xml:space="preserve">
+    <value>Opérations</value>
+  </data>
+  <data name="operationsFollowUpCheckbox.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="supervisorFollowUpCheckbox.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="supervisorFollowUpCheckbox.Error1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="supervisorFollowUpCheckbox.Error2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="supervisorFollowUpCheckbox.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="supervisorFollowUpCheckbox.IconPadding1" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="supervisorFollowUpCheckbox.IconPadding2" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="supervisorFollowUpCheckbox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 77</value>
+  </data>
+  <data name="supervisorFollowUpCheckbox.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="processControlFollowUpCheckBox.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="processControlFollowUpCheckBox.Error1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="processControlFollowUpCheckBox.Error2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="processControlFollowUpCheckBox.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="processControlFollowUpCheckBox.IconPadding1" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="processControlFollowUpCheckBox.IconPadding2" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="processControlFollowUpCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 42</value>
+  </data>
+  <data name="processControlFollowUpCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>85, 30</value>
+  </data>
+  <data name="processControlFollowUpCheckBox.Text" xml:space="preserve">
+    <value>Contrôle de 
+production</value>
+  </data>
+  <data name="processControlFollowUpCheckBox.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="eHSFollowUpCheckBox.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="eHSFollowUpCheckBox.Error1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="eHSFollowUpCheckBox.Error2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="eHSFollowUpCheckBox.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="eHSFollowUpCheckBox.IconPadding1" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="eHSFollowUpCheckBox.IconPadding2" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="eHSFollowUpCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>188, 49</value>
+  </data>
+  <data name="eHSFollowUpCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 17</value>
+  </data>
+  <data name="eHSFollowUpCheckBox.Text" xml:space="preserve">
+    <value>ESP</value>
+  </data>
+  <data name="eHSFollowUpCheckBox.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="inspectionFollowUpCheckbox.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="inspectionFollowUpCheckbox.Error1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="inspectionFollowUpCheckbox.Error2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="inspectionFollowUpCheckbox.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="inspectionFollowUpCheckbox.IconPadding1" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="inspectionFollowUpCheckbox.IconPadding2" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="inspectionFollowUpCheckbox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>188, 20</value>
+  </data>
+  <data name="inspectionFollowUpCheckbox.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="otherFollowUpCheckBox.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="otherFollowUpCheckBox.Error1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="otherFollowUpCheckBox.Error2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="otherFollowUpCheckBox.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="otherFollowUpCheckBox.IconPadding1" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="otherFollowUpCheckBox.IconPadding2" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="otherFollowUpCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>188, 70</value>
+  </data>
+  <data name="otherFollowUpCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>102, 30</value>
+  </data>
+  <data name="otherFollowUpCheckBox.Text" xml:space="preserve">
+    <value>Autres (voir les 
+commentaires)</value>
+  </data>
+  <data name="otherFollowUpCheckBox.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="requiresFollowUpGroupBox.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="requiresFollowUpGroupBox.Error1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="requiresFollowUpGroupBox.Error2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="requiresFollowUpGroupBox.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="requiresFollowUpGroupBox.IconPadding1" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="requiresFollowUpGroupBox.IconPadding2" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="requiresFollowUpGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>443, 103</value>
+  </data>
+  <data name="requiresFollowUpGroupBox.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ultraExplorerBarContainerControl2.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ultraExplorerBarContainerControl2.Error1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ultraExplorerBarContainerControl2.Error2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ultraExplorerBarContainerControl2.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="ultraExplorerBarContainerControl2.IconPadding1" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="ultraExplorerBarContainerControl2.IconPadding2" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="ultraExplorerBarContainerControl2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="oltLabelLine2.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="oltLabelLine2.Error1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="oltLabelLine2.Error2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="oltLabelLine2.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="oltLabelLine2.IconPadding1" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="oltLabelLine2.IconPadding2" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="oltLabelLine2.Label" xml:space="preserve">
+    <value>Détails</value>
+  </data>
+  <data name="oltLabelLine2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ultraExplorerBarContainerControl3.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ultraExplorerBarContainerControl3.Error1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ultraExplorerBarContainerControl3.Error2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ultraExplorerBarContainerControl3.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="ultraExplorerBarContainerControl3.IconPadding1" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="ultraExplorerBarContainerControl3.IconPadding2" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="ultraExplorerBarContainerControl3.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="insertTemplateButton.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="insertTemplateButton.Error1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="insertTemplateButton.Error2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="insertTemplateButton.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="insertTemplateButton.IconPadding1" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="insertTemplateButton.IconPadding2" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="insertTemplateButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>125, 23</value>
+  </data>
+  <data name="insertTemplateButton.Text" xml:space="preserve">
+    <value>Insérer le modèle</value>
+  </data>
+  <data name="insertTemplateButton.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="logTemplateComboBox.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="logTemplateComboBox.Error1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="logTemplateComboBox.Error2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="logTemplateComboBox.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="logTemplateComboBox.IconPadding1" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="logTemplateComboBox.IconPadding2" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="logTemplateComboBox.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="templateLabel.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="templateLabel.Error1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="templateLabel.Error2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="templateLabel.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="templateLabel.IconPadding1" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="templateLabel.IconPadding2" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="templateLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>48, 13</value>
+  </data>
+  <data name="templateLabel.Text" xml:space="preserve">
+    <value>Modèle :</value>
+  </data>
+  <data name="templateLabel.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ultraExplorerBarContainerControl5.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ultraExplorerBarContainerControl5.Error1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ultraExplorerBarContainerControl5.Error2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ultraExplorerBarContainerControl5.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="ultraExplorerBarContainerControl5.IconPadding1" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="ultraExplorerBarContainerControl5.IconPadding2" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="ultraExplorerBarContainerControl5.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="customFieldPhTagLegendControl.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="customFieldPhTagLegendControl.Error1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="customFieldPhTagLegendControl.Error2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="customFieldPhTagLegendControl.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="customFieldPhTagLegendControl.IconPadding1" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="customFieldPhTagLegendControl.IconPadding2" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="customFieldPhTagLegendControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>500, 70</value>
+  </data>
+  <data name="customFieldPhTagLegendControl.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="customFieldsLabelLine.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="customFieldsLabelLine.Error1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="customFieldsLabelLine.Error2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="customFieldsLabelLine.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="customFieldsLabelLine.IconPadding1" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="customFieldsLabelLine.IconPadding2" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="customFieldsLabelLine.Label" xml:space="preserve">
+    <value>Champs personnalisé</value>
+  </data>
+  <data name="customFieldsLabelLine.Size" type="System.Drawing.Size, System.Drawing">
+    <value>751, 13</value>
+  </data>
+  <data name="customFieldsLabelLine.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="customFieldControl.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="customFieldControl.Error1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="customFieldControl.Error2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="customFieldControl.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="customFieldControl.IconPadding1" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="customFieldControl.IconPadding2" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="customFieldControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>698, 30</value>
+  </data>
+  <data name="customFieldControl.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ultraExplorerBarContainerControl6.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ultraExplorerBarContainerControl6.Error1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ultraExplorerBarContainerControl6.Error2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ultraExplorerBarContainerControl6.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="ultraExplorerBarContainerControl6.IconPadding1" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="ultraExplorerBarContainerControl6.IconPadding2" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="ultraExplorerBarContainerControl6.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="commentsLabelLine.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="commentsLabelLine.Error1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="commentsLabelLine.Error2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="commentsLabelLine.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="commentsLabelLine.IconPadding1" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="commentsLabelLine.IconPadding2" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="commentsLabelLine.Label" xml:space="preserve">
+    <value>Remarques</value>
+  </data>
+  <data name="commentsLabelLine.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ultraExplorerBarContainerControl7.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ultraExplorerBarContainerControl7.Error1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ultraExplorerBarContainerControl7.Error2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ultraExplorerBarContainerControl7.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="ultraExplorerBarContainerControl7.IconPadding1" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="ultraExplorerBarContainerControl7.IconPadding2" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="ultraExplorerBarContainerControl7.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="logCommentControl.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="logCommentControl.Error1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="logCommentControl.Error2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="logCommentControl.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="logCommentControl.IconPadding1" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="logCommentControl.IconPadding2" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="logCommentControl.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ultraExplorerBarContainerControl8.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ultraExplorerBarContainerControl8.Error1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ultraExplorerBarContainerControl8.Error2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ultraExplorerBarContainerControl8.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="ultraExplorerBarContainerControl8.IconPadding1" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="ultraExplorerBarContainerControl8.IconPadding2" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="ultraExplorerBarContainerControl8.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="explorerBar.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="explorerBar.Error1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="explorerBar.Error2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ultraExplorerBarGroup4.Text" xml:space="preserve">
+    <value>Groupe principal</value>
+  </data>
+  <data name="ultraExplorerBarGroup2.Text" xml:space="preserve">
+    <value>Détails du registre principal:</value>
+  </data>
+  <data name="ultraExplorerBarGroup1.Text" xml:space="preserve">
+    <value>Nouveau groupe</value>
+  </data>
+  <data name="ultraExplorerBarGroup5.Text" xml:space="preserve">
+    <value>Champs personnalisés</value>
+  </data>
+  <data name="ultraExplorerBarGroup7.Text" xml:space="preserve">
+    <value>Ligne de commentaires</value>
+  </data>
+  <data name="ultraExplorerBarGroup6.Text" xml:space="preserve">
+    <value>Sélecteur de modèle de registre</value>
+  </data>
+  <data name="explorerBar.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="explorerBar.IconPadding1" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="explorerBar.IconPadding2" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="explorerBar.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="importCustomFieldsButton.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="importCustomFieldsButton.Error1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="importCustomFieldsButton.Error2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="importCustomFieldsButton.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="importCustomFieldsButton.IconPadding1" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="importCustomFieldsButton.IconPadding2" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="importCustomFieldsButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>168, 23</value>
+  </data>
+  <data name="importCustomFieldsButton.Text" xml:space="preserve">
+    <value>Importer les champs personnalisés </value>
+  </data>
+  <data name="importCustomFieldsButton.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="viewEditHistoryButton.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="viewEditHistoryButton.Error1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="viewEditHistoryButton.Error2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="viewEditHistoryButton.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="viewEditHistoryButton.IconPadding1" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="viewEditHistoryButton.IconPadding2" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="viewEditHistoryButton.Text" xml:space="preserve">
+    <value>&amp;Historique</value>
+  </data>
+  <data name="cancelButton.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cancelButton.Error1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cancelButton.Error2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cancelButton.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="cancelButton.IconPadding1" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="cancelButton.IconPadding2" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="cancelButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>670, 9</value>
+  </data>
+  <data name="cancelButton.Text" xml:space="preserve">
+    <value>&amp;Annuler</value>
+  </data>
+  <data name="cancelButton.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="saveAndCloseButton.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="saveAndCloseButton.Error1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="saveAndCloseButton.Error2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="saveAndCloseButton.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="saveAndCloseButton.IconPadding1" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="saveAndCloseButton.IconPadding2" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="saveAndCloseButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>568, 9</value>
+  </data>
+  <data name="saveAndCloseButton.Text" xml:space="preserve">
+    <value>&amp;Sauvegarder</value>
+  </data>
+  <data name="saveAndCloseButton.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="buttonPanel.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="buttonPanel.Error1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="buttonPanel.Error2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="buttonPanel.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="buttonPanel.IconPadding1" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="buttonPanel.IconPadding2" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="buttonPanel.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Outil de registre de l'opérateur</value>
+  </data>
+  <data name="$this.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="createdByLabelData.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="createdByLabelData.Error1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="createdByLabelData.Error2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="createdByLabelData.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="createdByLabelData.IconPadding1" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="createdByLabelData.IconPadding2" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="createdByLabelData.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 13</value>
+  </data>
+  <data name="createdByLabelData.Text" xml:space="preserve">
+    <value>&lt;Créé par&gt;</value>
+  </data>
+  <data name="createdByLabelData.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="createdByGroupBox.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="createdByGroupBox.Error1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="createdByGroupBox.Error2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="createdByGroupBox.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="createdByGroupBox.IconPadding1" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="createdByGroupBox.IconPadding2" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="createdByGroupBox.Text" xml:space="preserve">
+    <value>Créé par</value>
+  </data>
+  <data name="createdByGroupBox.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="logDateTimeLabelData.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="logDateTimeLabelData.Error1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="logDateTimeLabelData.Error2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="logDateTimeLabelData.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="logDateTimeLabelData.IconPadding1" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="logDateTimeLabelData.IconPadding2" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="logDateTimeLabelData.Size" type="System.Drawing.Size, System.Drawing">
+    <value>107, 18</value>
+  </data>
+  <data name="logDateTimeLabelData.Text" xml:space="preserve">
+    <value>&lt;Heure de registre&gt;</value>
+  </data>
+  <data name="logDateTimeLabelData.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="actualLoggedTime.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="actualLoggedTime.Error1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="actualLoggedTime.Error2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="actualLoggedTime.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="actualLoggedTime.IconPadding1" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="actualLoggedTime.IconPadding2" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="actualLoggedTime.Location" type="System.Drawing.Point, System.Drawing">
+    <value>113, 4</value>
+  </data>
+  <data name="actualLoggedTime.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="logTimeFlowLayoutPanel.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="logTimeFlowLayoutPanel.Error1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="logTimeFlowLayoutPanel.Error2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="logTimeFlowLayoutPanel.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="logTimeFlowLayoutPanel.IconPadding1" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="logTimeFlowLayoutPanel.IconPadding2" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="logTimeFlowLayoutPanel.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="logTimeGroupBox.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="logTimeGroupBox.Error1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="logTimeGroupBox.Error2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="logTimeGroupBox.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="logTimeGroupBox.IconPadding1" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="logTimeGroupBox.IconPadding2" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="logTimeGroupBox.Text" xml:space="preserve">
+    <value>Heure création</value>
+  </data>
+  <data name="logTimeGroupBox.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="shiftLabelData.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="shiftLabelData.Error1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="shiftLabelData.Error2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="shiftLabelData.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="shiftLabelData.IconPadding1" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="shiftLabelData.IconPadding2" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="shiftLabelData.Size" type="System.Drawing.Size, System.Drawing">
+    <value>51, 16</value>
+  </data>
+  <data name="shiftLabelData.Text" xml:space="preserve">
+    <value>&lt;Quart&gt;</value>
+  </data>
+  <data name="shiftLabelData.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ShiftGroupBox.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ShiftGroupBox.Error1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ShiftGroupBox.Error2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ShiftGroupBox.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="ShiftGroupBox.IconPadding1" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="ShiftGroupBox.IconPadding2" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="ShiftGroupBox.Text" xml:space="preserve">
+    <value>Quart</value>
+  </data>
+  <data name="ShiftGroupBox.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ultraExplorerBarContainerControl1.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ultraExplorerBarContainerControl1.Error1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ultraExplorerBarContainerControl1.Error2" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ultraExplorerBarContainerControl1.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="ultraExplorerBarContainerControl1.IconPadding1" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="ultraExplorerBarContainerControl1.IconPadding2" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="ultraExplorerBarContainerControl1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+</root>

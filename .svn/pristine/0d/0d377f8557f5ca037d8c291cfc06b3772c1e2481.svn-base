@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<configuration>
+  <configSections>
+    <sectionGroup name="userSettings"
+                  type="System.Configuration.UserSettingsGroup, System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+      <section name="Com.Suncor.Olt.Client.Properties.Settings"
+               type="System.Configuration.ClientSettingsSection, System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+               allowExeDefinition="MachineToLocalUser" requirePermission="false" />
+    </sectionGroup>
+
+    <section name="log4net" type="log4net.Config.Log4NetConfigurationSectionHandler, log4net" />
+
+  </configSections>
+
+  <log4net>
+    <appender name="RollingFileAppender" type="log4net.Appender.RollingFileAppender">
+      <file value="$(LogFileLocation)\LabAlert-Scheduler.log" />
+      <appendToFile value="true" />
+      <rollingStyle value="Date" />
+      <maxSizeRollBackups value="90" />
+      <datePattern value="yyyyMMdd" />
+      <layout type="log4net.Layout.PatternLayout">
+        <conversionPattern value="%date [%thread] %-5level %logger{1} - %message%newline" />
+      </layout>
+    </appender>
+    <root>
+      <level value="$(LogLevel)" />
+      <appender-ref ref="RollingFileAppender" />
+    </root>
+    <logger name="Com.Suncor.Olt.Remote.Schedulers.Common.NonBatchingScheduler">
+      <level value="$(LogLevel)" />
+    </logger>
+    <logger name="Com.Suncor.Olt.Remote.Schedulers.Common.Schedulers.LabAlertSchedulingService">
+      <level value="$(LogLevel)" />
+    </logger>
+    <logger name="Com.Suncor.Olt.Remote.Schedulers.Common.TimeZoneConvertedSchedule">
+      <level value="$(LogLevel)" />
+    </logger>
+    <logger name="Com.Suncor.Olt.Common.Wcf.ServiceNameMap">
+      <level value="$(LogLevel)" />
+    </logger>
+    <logger name="Com.Suncor.Olt.Common.Wcf.OltServiceHostFactory">
+      <level value="$(LogLevel)" />
+    </logger>
+  </log4net>
+  <appSettings>
+    <add key="BuildNumber" value="$(BuildNumber)" />
+    <add key="RemoteServicesURL" value="$(SchedulerRemoteServicesURILocation)" />
+    <add key="ServerTimeZone" value="Mountain Standard Time" />
+
+    <!-- WCF settings -->
+    <add key="ClientPorts" value="9707" />
+    <add key="clientServerBindingType" value="3" />
+  </appSettings>
+</configuration>

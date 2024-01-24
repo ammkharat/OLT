@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+
+<WorkOrderOLTdata>
+  <WorkOrderRecord>
+    <header></header>
+    <WorkOrderDetails>
+      <WONumber>GENERATE_IN_TEST</WONumber>
+      <ShortText>Add-Test2 to SAP - 04tc118 compressor</ShortText>
+      <FunctionalLocation>DN1-3003-0000</FunctionalLocation>
+      <EquipmentNumber></EquipmentNumber>
+      <PlantID>7000</PlantID>
+      <Operations>
+        <OperationKeyNo>1000049422</OperationKeyNo>
+        <OperationNumber>0010</OperationNumber>
+        <SubOperation>0010</SubOperation>
+        <EarliestStartDate>2006-09-05</EarliestStartDate>
+        <EarliestStartTime>08:00:00</EarliestStartTime>
+        <EarliestFinishDate>2006-09-05</EarliestFinishDate>
+        <EarliestFinishTime>12:00:00</EarliestFinishTime>
+        <LongText>INSPECT THE NEW FILTER ELEMENTS BEFORE PF&#39;S CLOSE THE LID.</LongText>
+        <WorkPermitType></WorkPermitType>
+        <WorkPermitAttrib></WorkPermitAttrib>
+        <WorkCenterID>10001147</WorkCenterID>
+        <WorkCenterName>OPRPR</WorkCenterName>
+        <WorkCenterText>Operator, Process</WorkCenterText>
+      </Operations>
+    </WorkOrderDetails>
+  </WorkOrderRecord>
+</WorkOrderOLTdata>

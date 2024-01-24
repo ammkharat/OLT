@@ -1,0 +1,1665 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="&gt;&gt;lastModifiedGroupBox.Parent" xml:space="preserve">
+    <value>tableLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;formInformationGroupBox.Parent" xml:space="preserve">
+    <value>mainPanel</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="approvedDateDataLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 19</value>
+  </data>
+  <data name="emailButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 22</value>
+  </data>
+  <data name="oltLabel6.Text" xml:space="preserve">
+    <value>Form #:</value>
+  </data>
+  <data name="oltLabel6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 23</value>
+  </data>
+  <data name="createdDateDataLabel.Text" xml:space="preserve">
+    <value>[created by date]</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="invisibleLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="functionalLocationGroupBox.Text" xml:space="preserve">
+    <value>Functional Locations</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="approvedDateDataLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="expandLinkLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>51, 13</value>
+  </data>
+  <data name="&gt;&gt;oltLabel3.Parent" xml:space="preserve">
+    <value>lastModifiedGroupBox</value>
+  </data>
+  <data name="&gt;&gt;oltLabel7.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Operator Log Tool, Version=4.31.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="functionalLocationGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel2.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="hasAttachmentsDataLabel.Text" xml:space="preserve">
+    <value>[blazinga]</value>
+  </data>
+  <data name="oltLabel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>33, 13</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="&gt;&gt;contentGroupBox.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="validToLabel.Text" xml:space="preserve">
+    <value>To:</value>
+  </data>
+  <data name="&gt;&gt;toolStrip.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;oltLabel2.Name" xml:space="preserve">
+    <value>oltLabel2</value>
+  </data>
+  <data name="tableLayoutPanel2.RowCount" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="printPreviewButton.Text" xml:space="preserve">
+    <value>Preview</value>
+  </data>
+  <data name="&gt;&gt;oltLabel2.Parent" xml:space="preserve">
+    <value>lastModifiedGroupBox</value>
+  </data>
+  <data name="oltLabel7.Text" xml:space="preserve">
+    <value>Is the CSD for a Pressure Safety Valve?</value>
+  </data>
+  <data name="approvedGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;deleteButton.Name" xml:space="preserve">
+    <value>deleteButton</value>
+  </data>
+  <data name="emailButton.Text" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="closeButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 22</value>
+  </data>
+  <data name="&gt;&gt;csdReasonTextBox.Name" xml:space="preserve">
+    <value>csdReasonTextBox</value>
+  </data>
+  <data name="oltLabel7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 39</value>
+  </data>
+  <data name="flowLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>636, 50</value>
+  </data>
+  <data name="createdByUserDataLabel.Text" xml:space="preserve">
+    <value>[created by user]</value>
+  </data>
+  <data name="expandLinkLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="saveGridLayoutButton.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="&gt;&gt;dateRangeButton.Name" xml:space="preserve">
+    <value>dateRangeButton</value>
+  </data>
+  <data name="lastModifiedUserDataLabel.Text" xml:space="preserve">
+    <value>[last modified user]</value>
+  </data>
+  <data name="hasAttachmentsDataLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;approvedDateDataLabel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabelData, Operator Log Tool, Version=4.31.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;dateLabel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Operator Log Tool, Version=4.31.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="criticalSystemDefeatedTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>627, 25</value>
+  </data>
+  <data name="oltLabel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>34, 13</value>
+  </data>
+  <data name="&gt;&gt;closedGroupBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="approvalsGroupBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="isTheCSDForAPressureSafetyValveDataLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="tableLayoutPanel2.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="functionalLocationGroupBox" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="oltGroupBox1" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,57.86517,Percent,42.13483" /&gt;&lt;Rows Styles="Percent,50" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="oltGroupBox1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;lastModifiedUserDataLabel.Parent" xml:space="preserve">
+    <value>lastModifiedGroupBox</value>
+  </data>
+  <data name="printPreviewButton.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="&gt;&gt;approvedGroupBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltGroupBox, Operator Log Tool, Version=4.31.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="expandLinkLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="validToDataLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;documentLinksControl.Name" xml:space="preserve">
+    <value>documentLinksControl</value>
+  </data>
+  <data name="documentLinksControl.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="mainPanel.FlowDirection" type="System.Windows.Forms.FlowDirection, System.Windows.Forms">
+    <value>TopDown</value>
+  </data>
+  <data name="&gt;&gt;oltLabel4.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Operator Log Tool, Version=4.31.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;expandLinkLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="oltLabel3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>33, 13</value>
+  </data>
+  <data name="op14GroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="&gt;&gt;workPermitsGroupBox.Parent" xml:space="preserve">
+    <value>mainPanel</value>
+  </data>
+  <data name="&gt;&gt;mainPanel.Name" xml:space="preserve">
+    <value>mainPanel</value>
+  </data>
+  <data name="deleteButton.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>White</value>
+  </data>
+  <data name="&gt;&gt;mainPanel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;hasAttachmentsDataLabel.Name" xml:space="preserve">
+    <value>hasAttachmentsDataLabel</value>
+  </data>
+  <data name="&gt;&gt;validFromLabel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Operator Log Tool, Version=4.31.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="workPermitsGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>636, 100</value>
+  </data>
+  <data name="&gt;&gt;lastModifiedGroupBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;workPermitsGroupBox.Name" xml:space="preserve">
+    <value>workPermitsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;oltLabel6.Name" xml:space="preserve">
+    <value>oltLabel6</value>
+  </data>
+  <data name="&gt;&gt;deleteButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="oltGroupBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>371, 3</value>
+  </data>
+  <data name="oltLabel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 48</value>
+  </data>
+  <data name="&gt;&gt;createdDateDataLabel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabelData, Operator Log Tool, Version=4.31.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="oltLabel4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>171, 13</value>
+  </data>
+  <data name="tableLayoutPanel3.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;op14GroupBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltGroupBox, Operator Log Tool, Version=4.31.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="approvalsGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 673</value>
+  </data>
+  <data name="isTheCSDForAPressureSafetyValveDataLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>228, 39</value>
+  </data>
+  <data name="validFromLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;oltLabel6.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Operator Log Tool, Version=4.31.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;hasAttachmentsDataLabel.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="lastModifiedDateDataLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel3.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel2.Name" xml:space="preserve">
+    <value>tableLayoutPanel2</value>
+  </data>
+  <data name="&gt;&gt;validToDataLabel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabelData, Operator Log Tool, Version=4.31.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;functionalLocationPanel.Name" xml:space="preserve">
+    <value>functionalLocationPanel</value>
+  </data>
+  <data name="&gt;&gt;validFromLabel.Parent" xml:space="preserve">
+    <value>tableLayoutPanel3</value>
+  </data>
+  <data name="validToDataLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;createdByGroupBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltGroupBox, Operator Log Tool, Version=4.31.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="dateRangeButton.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="criticalSystemDefeatedGroupBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 3, 3, 3</value>
+  </data>
+  <data name="&gt;&gt;formInformationGroupBox.Name" xml:space="preserve">
+    <value>formInformationGroupBox</value>
+  </data>
+  <data name="&gt;&gt;oltGroupBox1.Parent" xml:space="preserve">
+    <value>tableLayoutPanel2</value>
+  </data>
+  <data name="formInformationGroupBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="tableLayoutPanel1.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="createdByGroupBox" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="lastModifiedGroupBox" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,50,Percent,50" /&gt;&lt;Rows Styles="Percent,50" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="tableLayoutPanel1.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="approvedGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="oltLabel6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>46, 13</value>
+  </data>
+  <data name="formNumberDataLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>59, 23</value>
+  </data>
+  <data name="&gt;&gt;isTheCSDForAPressureSafetyValveDataLabel.Parent" xml:space="preserve">
+    <value>op14GroupBox</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;closeButton.Name" xml:space="preserve">
+    <value>closeButton</value>
+  </data>
+  <data name="lastModifiedGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>312, 75</value>
+  </data>
+  <data name="&gt;&gt;hasBeenCommunicatedDataLabel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;functionalLocationGroupBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;cloneButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="saveGridLayoutButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>88, 20</value>
+  </data>
+  <data name="lastModifiedUserDataLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>46, 48</value>
+  </data>
+  <data name="tableLayoutPanel3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 32</value>
+  </data>
+  <data name="printButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>52, 22</value>
+  </data>
+  <data name="&gt;&gt;closedGroupBox.Parent" xml:space="preserve">
+    <value>flowLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;documentLinksGroupBox.Name" xml:space="preserve">
+    <value>documentLinksGroupBox</value>
+  </data>
+  <data name="closedGroupBox.Text" xml:space="preserve">
+    <value>Closed</value>
+  </data>
+  <data name="functionalLocationPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>347, 77</value>
+  </data>
+  <data name="createdByUserDataLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;validToDataLabel.Name" xml:space="preserve">
+    <value>validToDataLabel</value>
+  </data>
+  <data name="criticalSystemDefeatedGroupBox.Text" xml:space="preserve">
+    <value>Critical System Defeated</value>
+  </data>
+  <data name="mainPanel.AutoScroll" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;op14GroupBox.Parent" xml:space="preserve">
+    <value>mainPanel</value>
+  </data>
+  <data name="&gt;&gt;validFromDataLabel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabelData, Operator Log Tool, Version=4.31.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="createdByUserDataLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;flowLayoutPanel1.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="cloneButton.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="tableLayoutPanel3.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="validToDataLabel" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="validToLabel" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="validFromLabel" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="validFromDataLabel" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="AutoSize,0,Percent,100" /&gt;&lt;Rows Styles="Percent,50,Percent,50" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="&gt;&gt;mainPanel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;editButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="tableLayoutPanel3.ColumnCount" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;oltLabel6.Parent" xml:space="preserve">
+    <value>formInformationGroupBox</value>
+  </data>
+  <data name="dateRangeButton.Text" xml:space="preserve">
+    <value>Range</value>
+  </data>
+  <data name="tableLayoutPanel3.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;lastModifiedUserDataLabel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabelData, Operator Log Tool, Version=4.31.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="dateLabel.Text" xml:space="preserve">
+    <value>Date:</value>
+  </data>
+  <data name="&gt;&gt;criticalSystemDefeatedTextBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="exportAllButton.ToolTipText" xml:space="preserve">
+    <value>Export Grid data to Excel</value>
+  </data>
+  <data name="&gt;&gt;flowLayoutPanel1.Parent" xml:space="preserve">
+    <value>mainPanel</value>
+  </data>
+  <data name="&gt;&gt;contentGroupBox.Name" xml:space="preserve">
+    <value>contentGroupBox</value>
+  </data>
+  <data name="hasAttachmentsDataLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>229, 16</value>
+  </data>
+  <data name="&gt;&gt;validToLabel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Operator Log Tool, Version=4.31.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="dateLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 23</value>
+  </data>
+  <data name="contentGroupBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.Controls.Details.AbstractDetails, Operator Log Tool, Version=4.31.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="closedDateDataLabel.Text" xml:space="preserve">
+    <value>oltLabelData1</value>
+  </data>
+  <data name="&gt;&gt;closeButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="oltLabel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 23</value>
+  </data>
+  <data name="&gt;&gt;contentGroupBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltGroupBox, Operator Log Tool, Version=4.31.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;oltLabel5.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Operator Log Tool, Version=4.31.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="validFromLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 13</value>
+  </data>
+  <data name="tableLayoutPanel2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;hasBeenCommunicatedDataLabel.Name" xml:space="preserve">
+    <value>hasBeenCommunicatedDataLabel</value>
+  </data>
+  <data name="validToDataLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 13</value>
+  </data>
+  <data name="contentGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;oltLabel2.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Operator Log Tool, Version=4.31.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="csdReasonGroupBox.Text" xml:space="preserve">
+    <value>Reason of Temporary Installation</value>
+  </data>
+  <data name="&gt;&gt;dateLabel.Parent" xml:space="preserve">
+    <value>createdByGroupBox</value>
+  </data>
+  <data name="&gt;&gt;printPreviewButton.Name" xml:space="preserve">
+    <value>printPreviewButton</value>
+  </data>
+  <data name="oltLabel4.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="documentLinksGroupBox.Text" xml:space="preserve">
+    <value>Document Links</value>
+  </data>
+  <data name="functionalLocationPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 20</value>
+  </data>
+  <data name="criticalSystemDefeatedTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 16</value>
+  </data>
+  <data name="hasBeenCommunicatedDataLabel.Text" xml:space="preserve">
+    <value>[blazinga]</value>
+  </data>
+  <data name="oltLabel7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>198, 13</value>
+  </data>
+  <data name="&gt;&gt;historyButton.Name" xml:space="preserve">
+    <value>historyButton</value>
+  </data>
+  <data name="&gt;&gt;oltLabel7.Parent" xml:space="preserve">
+    <value>op14GroupBox</value>
+  </data>
+  <data name="mainPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="isTheCSDForAPressureSafetyValveDataLabel.Text" xml:space="preserve">
+    <value>[blazinga]</value>
+  </data>
+  <data name="&gt;&gt;oltLabel4.Name" xml:space="preserve">
+    <value>oltLabel4</value>
+  </data>
+  <data name="&gt;&gt;functionalLocationGroupBox.Name" xml:space="preserve">
+    <value>functionalLocationGroupBox</value>
+  </data>
+  <data name="oltLabel5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>168, 13</value>
+  </data>
+  <data name="&gt;&gt;flowLayoutPanel1.Name" xml:space="preserve">
+    <value>flowLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;invisibleLabel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Operator Log Tool, Version=4.31.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;criticalSystemDefeatedGroupBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltGroupBox, Operator Log Tool, Version=4.31.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="oltGroupBox1.Text" xml:space="preserve">
+    <value>Valid</value>
+  </data>
+  <data name="createdDateDataLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;historyButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;closedDateDataLabel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabelData, Operator Log Tool, Version=4.31.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="op14GroupBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="oltLabel3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 48</value>
+  </data>
+  <data name="functionalLocationPanel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;invisibleLabel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;documentLinksControl.Parent" xml:space="preserve">
+    <value>documentLinksGroupBox</value>
+  </data>
+  <data name="&gt;&gt;contentGroupBox.Parent" xml:space="preserve">
+    <value>mainPanel</value>
+  </data>
+  <data name="cloneButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>58, 22</value>
+  </data>
+  <data name="oltLabel4.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="isTheCSDForAPressureSafetyValveDataLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="csdReasonTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="closedDateDataLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 19</value>
+  </data>
+  <data name="exportAllButton.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="&gt;&gt;dateRangeButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;exportAllButton.Name" xml:space="preserve">
+    <value>exportAllButton</value>
+  </data>
+  <data name="validToLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;functionalLocationGroupBox.Parent" xml:space="preserve">
+    <value>tableLayoutPanel2</value>
+  </data>
+  <data name="lastModifiedUserDataLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;createdByUserDataLabel.Parent" xml:space="preserve">
+    <value>createdByGroupBox</value>
+  </data>
+  <data name="invisibleLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;validToLabel.Parent" xml:space="preserve">
+    <value>tableLayoutPanel3</value>
+  </data>
+  <data name="&gt;&gt;printButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="oltLabel6.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;contentRichTextDisplay.Parent" xml:space="preserve">
+    <value>contentGroupBox</value>
+  </data>
+  <data name="closedDateDataLabel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;createdDateDataLabel.Parent" xml:space="preserve">
+    <value>createdByGroupBox</value>
+  </data>
+  <data name="&gt;&gt;workPermitsGroupBox.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;validFromDataLabel.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="closedDateDataLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="cloneButton.Text" xml:space="preserve">
+    <value>Clone</value>
+  </data>
+  <data name="&gt;&gt;flowLayoutPanel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;op14GroupBox.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="approvedDateDataLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="closeButton.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="oltGroupBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="oltLabel5.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;oltLabel2.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;documentLinksControl.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;approvedDateDataLabel.Parent" xml:space="preserve">
+    <value>approvedGroupBox</value>
+  </data>
+  <data name="&gt;&gt;oltLabel1.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Operator Log Tool, Version=4.31.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="validFromDataLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>62, 13</value>
+  </data>
+  <data name="createdDateDataLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="editButton.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="validFromLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="functionalLocationPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;formInformationGroupBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltGroupBox, Operator Log Tool, Version=4.31.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;validToLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="saveGridLayoutButton.Text" xml:space="preserve">
+    <value>Grid Layout</value>
+  </data>
+  <data name="&gt;&gt;emailButton.Name" xml:space="preserve">
+    <value>emailButton</value>
+  </data>
+  <data name="&gt;&gt;approvedGroupBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="formNumberDataLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;contentRichTextDisplay.Name" xml:space="preserve">
+    <value>contentRichTextDisplay</value>
+  </data>
+  <data name="&gt;&gt;oltGroupBox1.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltGroupBox, Operator Log Tool, Version=4.31.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;approvalsGroupBox.Parent" xml:space="preserve">
+    <value>mainPanel</value>
+  </data>
+  <data name="tableLayoutPanel1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="createdByGroupBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;isTheCSDForAPressureSafetyValveDataLabel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabelData, Operator Log Tool, Version=4.31.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;printButton.Name" xml:space="preserve">
+    <value>printButton</value>
+  </data>
+  <data name="lastModifiedGroupBox.Text" xml:space="preserve">
+    <value>Last Modified</value>
+  </data>
+  <data name="&gt;&gt;oltLabel3.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Operator Log Tool, Version=4.31.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="approvedGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>310, 42</value>
+  </data>
+  <data name="validToLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>23, 13</value>
+  </data>
+  <data name="&gt;&gt;formNumberDataLabel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="createdDateDataLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>92, 13</value>
+  </data>
+  <data name="&gt;&gt;csdReasonGroupBox.Parent" xml:space="preserve">
+    <value>mainPanel</value>
+  </data>
+  <data name="lastModifiedGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>321, 3</value>
+  </data>
+  <data name="formInformationGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 102</value>
+  </data>
+  <data name="&gt;&gt;dateLabel.Name" xml:space="preserve">
+    <value>dateLabel</value>
+  </data>
+  <data name="&gt;&gt;lastModifiedDateDataLabel.Name" xml:space="preserve">
+    <value>lastModifiedDateDataLabel</value>
+  </data>
+  <data name="op14GroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 341</value>
+  </data>
+  <data name="&gt;&gt;invisibleLabel.Parent" xml:space="preserve">
+    <value>mainPanel</value>
+  </data>
+  <data name="tableLayoutPanel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 13</value>
+  </data>
+  <data name="deleteButton.Text" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="&gt;&gt;approvedGroupBox.Parent" xml:space="preserve">
+    <value>flowLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;oltLabel1.Name" xml:space="preserve">
+    <value>oltLabel1</value>
+  </data>
+  <data name="&gt;&gt;lastModifiedUserDataLabel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;lastModifiedDateDataLabel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabelData, Operator Log Tool, Version=4.31.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;oltLabel5.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="oltLabel3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="criticalSystemDefeatedGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 412</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel1.Name" xml:space="preserve">
+    <value>tableLayoutPanel1</value>
+  </data>
+  <data name="emailButton.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="approvalsGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>633, 100</value>
+  </data>
+  <data name="validToLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="documentLinksGroupBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="contentGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 510</value>
+  </data>
+  <data name="printPreviewButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>68, 22</value>
+  </data>
+  <data name="createdByGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>312, 75</value>
+  </data>
+  <data name="flowLayoutPanel1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;hasAttachmentsDataLabel.Parent" xml:space="preserve">
+    <value>op14GroupBox</value>
+  </data>
+  <data name="invisibleLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>636, 10</value>
+  </data>
+  <data name="lastModifiedUserDataLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="contentRichTextDisplay.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 29</value>
+  </data>
+  <data name="&gt;&gt;createdDateDataLabel.Name" xml:space="preserve">
+    <value>createdDateDataLabel</value>
+  </data>
+  <data name="closedDateDataLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 13</value>
+  </data>
+  <data name="&gt;&gt;closedDateDataLabel.Name" xml:space="preserve">
+    <value>closedDateDataLabel</value>
+  </data>
+  <data name="criticalSystemDefeatedTextBox.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="csdReasonGroupBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;oltGroupBox1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="oltLabel7.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="createdByGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;validFromDataLabel.Parent" xml:space="preserve">
+    <value>tableLayoutPanel3</value>
+  </data>
+  <data name="approvedGroupBox.Text" xml:space="preserve">
+    <value>Approved</value>
+  </data>
+  <data name="validFromLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 0</value>
+  </data>
+  <data name="&gt;&gt;oltLabel5.Parent" xml:space="preserve">
+    <value>op14GroupBox</value>
+  </data>
+  <data name="&gt;&gt;emailButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="mainPanel.WrapContents" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;oltLabel4.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;csdReasonTextBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltTextBox, Operator Log Tool, Version=4.31.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;approvedDateDataLabel.Name" xml:space="preserve">
+    <value>approvedDateDataLabel</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel1.Parent" xml:space="preserve">
+    <value>mainPanel</value>
+  </data>
+  <data name="&gt;&gt;oltLabel7.Name" xml:space="preserve">
+    <value>oltLabel7</value>
+  </data>
+  <data name="closedGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>310, 42</value>
+  </data>
+  <data name="criticalSystemDefeatedTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="closedGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>319, 3</value>
+  </data>
+  <data name="oltLabel4.Text" xml:space="preserve">
+    <value>Does this CSD Have Attachments?</value>
+  </data>
+  <data name="&gt;&gt;exportAllButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="hasBeenCommunicatedDataLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="validFromLabel.Text" xml:space="preserve">
+    <value>From:</value>
+  </data>
+  <data name="&gt;&gt;createdByUserDataLabel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabelData, Operator Log Tool, Version=4.31.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;formNumberDataLabel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabelData, Operator Log Tool, Version=4.31.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;formNumberDataLabel.Parent" xml:space="preserve">
+    <value>formInformationGroupBox</value>
+  </data>
+  <data name="&gt;&gt;closedGroupBox.Name" xml:space="preserve">
+    <value>closedGroupBox</value>
+  </data>
+  <data name="closedDateDataLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;criticalSystemDefeatedGroupBox.Name" xml:space="preserve">
+    <value>criticalSystemDefeatedGroupBox</value>
+  </data>
+  <data name="&gt;&gt;functionalLocationPanel.Parent" xml:space="preserve">
+    <value>functionalLocationGroupBox</value>
+  </data>
+  <data name="toolStrip.Text" xml:space="preserve">
+    <value>toolStrip1</value>
+  </data>
+  <data name="&gt;&gt;csdReasonGroupBox.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;lastModifiedDateDataLabel.Parent" xml:space="preserve">
+    <value>lastModifiedGroupBox</value>
+  </data>
+  <data name="&gt;&gt;saveGridLayoutButton.Name" xml:space="preserve">
+    <value>saveGridLayoutButton</value>
+  </data>
+  <data name="&gt;&gt;oltLabel7.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;documentLinksGroupBox.Parent" xml:space="preserve">
+    <value>mainPanel</value>
+  </data>
+  <data name="workPermitsGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="&gt;&gt;toolStrip.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="csdReasonGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="&gt;&gt;approvalsGroupBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltGroupBox, Operator Log Tool, Version=4.31.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="approvedDateDataLabel.Text" xml:space="preserve">
+    <value>oltLabelData1</value>
+  </data>
+  <data name="&gt;&gt;criticalSystemDefeatedTextBox.Name" xml:space="preserve">
+    <value>criticalSystemDefeatedTextBox</value>
+  </data>
+  <data name="oltLabel5.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="expandLinkLabel.Text" xml:space="preserve">
+    <value>[Expand]</value>
+  </data>
+  <data name="&gt;&gt;approvalsGroupBox.Name" xml:space="preserve">
+    <value>approvalsGroupBox</value>
+  </data>
+  <data name="approvalsGroupBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 3, 3, 3</value>
+  </data>
+  <data name="oltLabel2.Text" xml:space="preserve">
+    <value>Date:</value>
+  </data>
+  <data name="validToDataLabel.Text" xml:space="preserve">
+    <value>[to date]</value>
+  </data>
+  <data name="workPermitsGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 779</value>
+  </data>
+  <data name="&gt;&gt;lastModifiedGroupBox.Name" xml:space="preserve">
+    <value>lastModifiedGroupBox</value>
+  </data>
+  <data name="&gt;&gt;approvedDateDataLabel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="toolStrip.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="&gt;&gt;closedDateDataLabel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;validFromDataLabel.Name" xml:space="preserve">
+    <value>validFromDataLabel</value>
+  </data>
+  <data name="formNumberDataLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="lastModifiedGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="formNumberDataLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>48, 13</value>
+  </data>
+  <data name="lastModifiedGroupBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="workPermitsGroupBox.Text" xml:space="preserve">
+    <value>Associated Work Permits</value>
+  </data>
+  <data name="&gt;&gt;lastModifiedGroupBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltGroupBox, Operator Log Tool, Version=4.31.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="isTheCSDForAPressureSafetyValveDataLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 13</value>
+  </data>
+  <data name="&gt;&gt;validFromLabel.Name" xml:space="preserve">
+    <value>validFromLabel</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel2.Parent" xml:space="preserve">
+    <value>mainPanel</value>
+  </data>
+  <data name="&gt;&gt;hasAttachmentsDataLabel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabelData, Operator Log Tool, Version=4.31.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="contentRichTextDisplay.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;csdReasonTextBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="oltLabel2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel3.Name" xml:space="preserve">
+    <value>tableLayoutPanel3</value>
+  </data>
+  <data name="closeButton.Text" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="&gt;&gt;csdReasonGroupBox.Name" xml:space="preserve">
+    <value>csdReasonGroupBox</value>
+  </data>
+  <data name="&gt;&gt;criticalSystemDefeatedGroupBox.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;validFromLabel.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="criticalSystemDefeatedGroupBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="oltGroupBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>262, 108</value>
+  </data>
+  <data name="&gt;&gt;csdReasonGroupBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltGroupBox, Operator Log Tool, Version=4.31.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;createdByGroupBox.Name" xml:space="preserve">
+    <value>createdByGroupBox</value>
+  </data>
+  <data name="&gt;&gt;oltLabel4.Parent" xml:space="preserve">
+    <value>op14GroupBox</value>
+  </data>
+  <data name="csdReasonTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 16</value>
+  </data>
+  <data name="exportAllButton.Text" xml:space="preserve">
+    <value>Export Grid</value>
+  </data>
+  <data name="tableLayoutPanel3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>250, 47</value>
+  </data>
+  <data name="toolStrip.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;approvalsGroupBox.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="hasBeenCommunicatedDataLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>531, 16</value>
+  </data>
+  <data name="exportAllButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>85, 22</value>
+  </data>
+  <data name="csdReasonTextBox.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="flowLayoutPanel1.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="contentGroupBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 1, 3, 3</value>
+  </data>
+  <data name="&gt;&gt;isTheCSDForAPressureSafetyValveDataLabel.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;formNumberDataLabel.Name" xml:space="preserve">
+    <value>formNumberDataLabel</value>
+  </data>
+  <data name="&gt;&gt;oltLabel1.Parent" xml:space="preserve">
+    <value>createdByGroupBox</value>
+  </data>
+  <data name="createdByUserDataLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>46, 48</value>
+  </data>
+  <data name="documentLinksControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>627, 100</value>
+  </data>
+  <data name="formInformationGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>633, 51</value>
+  </data>
+  <data name="&gt;&gt;hasBeenCommunicatedDataLabel.Parent" xml:space="preserve">
+    <value>op14GroupBox</value>
+  </data>
+  <data name="lastModifiedDateDataLabel.Text" xml:space="preserve">
+    <value>[last modified date]</value>
+  </data>
+  <data name="&gt;&gt;expandLinkLabel.Parent" xml:space="preserve">
+    <value>contentGroupBox</value>
+  </data>
+  <data name="&gt;&gt;lastModifiedDateDataLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="tableLayoutPanel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>636, 120</value>
+  </data>
+  <data name="&gt;&gt;expandLinkLabel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLinkLabel1, Operator Log Tool, Version=4.31.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="hasAttachmentsDataLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 13</value>
+  </data>
+  <data name="&gt;&gt;formInformationGroupBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;oltLabel6.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="createdByUserDataLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>91, 13</value>
+  </data>
+  <data name="contentGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>633, 157</value>
+  </data>
+  <data name="oltLabel1.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="lastModifiedUserDataLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>99, 13</value>
+  </data>
+  <data name="criticalSystemDefeatedGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>633, 44</value>
+  </data>
+  <data name="&gt;&gt;contentRichTextDisplay.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.Controls.RichTextDisplay, Operator Log Tool, Version=4.31.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;criticalSystemDefeatedTextBox.Parent" xml:space="preserve">
+    <value>criticalSystemDefeatedGroupBox</value>
+  </data>
+  <data name="&gt;&gt;createdByUserDataLabel.Name" xml:space="preserve">
+    <value>createdByUserDataLabel</value>
+  </data>
+  <data name="&gt;&gt;lastModifiedUserDataLabel.Name" xml:space="preserve">
+    <value>lastModifiedUserDataLabel</value>
+  </data>
+  <data name="approvedDateDataLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 13</value>
+  </data>
+  <data name="oltLabel2.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;documentLinksGroupBox.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;oltLabel3.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;criticalSystemDefeatedTextBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltTextBox, Operator Log Tool, Version=4.31.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;validToDataLabel.Parent" xml:space="preserve">
+    <value>tableLayoutPanel3</value>
+  </data>
+  <data name="mainPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>680, 563</value>
+  </data>
+  <data name="tableLayoutPanel1.RowCount" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;cloneButton.Name" xml:space="preserve">
+    <value>cloneButton</value>
+  </data>
+  <data name="printButton.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="contentRichTextDisplay.Size" type="System.Drawing.Size, System.Drawing">
+    <value>619, 120</value>
+  </data>
+  <data name="invisibleLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 0</value>
+  </data>
+  <data name="approvalsGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;oltLabel5.Name" xml:space="preserve">
+    <value>oltLabel5</value>
+  </data>
+  <data name="&gt;&gt;createdByGroupBox.Parent" xml:space="preserve">
+    <value>tableLayoutPanel1</value>
+  </data>
+  <data name="contentGroupBox.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 1, 3, 3</value>
+  </data>
+  <data name="formInformationGroupBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 3, 3, 3</value>
+  </data>
+  <data name="tableLayoutPanel2.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="documentLinksGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 885</value>
+  </data>
+  <data name="closedGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;saveGridLayoutButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="oltLabel6.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="documentLinksGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>633, 119</value>
+  </data>
+  <data name="&gt;&gt;op14GroupBox.Name" xml:space="preserve">
+    <value>op14GroupBox</value>
+  </data>
+  <data name="&gt;&gt;functionalLocationPanel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltPanel, Operator Log Tool, Version=4.31.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel3.Parent" xml:space="preserve">
+    <value>oltGroupBox1</value>
+  </data>
+  <data name="&gt;&gt;approvedGroupBox.Name" xml:space="preserve">
+    <value>approvedGroupBox</value>
+  </data>
+  <data name="&gt;&gt;isTheCSDForAPressureSafetyValveDataLabel.Name" xml:space="preserve">
+    <value>isTheCSDForAPressureSafetyValveDataLabel</value>
+  </data>
+  <data name="&gt;&gt;createdByGroupBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;functionalLocationGroupBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltGroupBox, Operator Log Tool, Version=4.31.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;toolStrip.Name" xml:space="preserve">
+    <value>toolStrip</value>
+  </data>
+  <data name="&gt;&gt;mainPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="historyButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 22</value>
+  </data>
+  <data name="&gt;&gt;createdByUserDataLabel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>680, 588</value>
+  </data>
+  <data name="documentLinksGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="lastModifiedDateDataLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 13</value>
+  </data>
+  <data name="formInformationGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="functionalLocationGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>362, 108</value>
+  </data>
+  <data name="lastModifiedDateDataLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>46, 23</value>
+  </data>
+  <data name="oltLabel1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>FormTemporaryInstallationsDetails</value>
+  </data>
+  <data name="contentRichTextDisplay.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="validFromDataLabel.Text" xml:space="preserve">
+    <value>[from date]</value>
+  </data>
+  <data name="dateLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>34, 13</value>
+  </data>
+  <data name="csdReasonTextBox.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="criticalSystemDefeatedGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="functionalLocationGroupBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="createdByGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="validToLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 23</value>
+  </data>
+  <data name="validToDataLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>44, 23</value>
+  </data>
+  <data name="lastModifiedDateDataLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="approvalsGroupBox.Text" xml:space="preserve">
+    <value>Approvals</value>
+  </data>
+  <data name="&gt;&gt;validToLabel.Name" xml:space="preserve">
+    <value>validToLabel</value>
+  </data>
+  <data name="csdReasonGroupBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 3, 3, 3</value>
+  </data>
+  <data name="&gt;&gt;validToDataLabel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="validFromDataLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;oltLabel3.Name" xml:space="preserve">
+    <value>oltLabel3</value>
+  </data>
+  <data name="validFromDataLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>44, 0</value>
+  </data>
+  <data name="printButton.Text" xml:space="preserve">
+    <value>Print</value>
+  </data>
+  <data name="&gt;&gt;closedDateDataLabel.Parent" xml:space="preserve">
+    <value>closedGroupBox</value>
+  </data>
+  <data name="formInformationGroupBox.Text" xml:space="preserve">
+    <value>Form Information</value>
+  </data>
+  <data name="formNumberDataLabel.Text" xml:space="preserve">
+    <value>[form #]</value>
+  </data>
+  <data name="&gt;&gt;dateLabel.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="oltLabel3.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="validFromDataLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="csdReasonGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>633, 44</value>
+  </data>
+  <data name="op14GroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>633, 65</value>
+  </data>
+  <data name="&gt;&gt;workPermitsGroupBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltGroupBox, Operator Log Tool, Version=4.31.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="historyButton.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="csdReasonTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>627, 25</value>
+  </data>
+  <data name="dateRangeButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 22</value>
+  </data>
+  <data name="&gt;&gt;closedGroupBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltGroupBox, Operator Log Tool, Version=4.31.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="dateLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="workPermitsGroupBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;toolStrip.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="dateRangeButton.ToolTipText" xml:space="preserve">
+    <value>Change displayed Date Range</value>
+  </data>
+  <data name="oltLabel4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 16</value>
+  </data>
+  <data name="&gt;&gt;documentLinksControl.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.Controls.DocumentLinksControl, Operator Log Tool, Version=4.31.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="oltLabel3.Text" xml:space="preserve">
+    <value>User:</value>
+  </data>
+  <data name="&gt;&gt;hasBeenCommunicatedDataLabel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabelData, Operator Log Tool, Version=4.31.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;oltLabel1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;expandLinkLabel.Name" xml:space="preserve">
+    <value>expandLinkLabel</value>
+  </data>
+  <data name="functionalLocationGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="flowLayoutPanel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 159</value>
+  </data>
+  <data name="oltLabel7.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="historyButton.Text" xml:space="preserve">
+    <value>History</value>
+  </data>
+  <data name="mainPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 25</value>
+  </data>
+  <data name="tableLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>636, 83</value>
+  </data>
+  <data name="op14GroupBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 3, 3, 3</value>
+  </data>
+  <data name="hasAttachmentsDataLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="hasBeenCommunicatedDataLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 13</value>
+  </data>
+  <data name="dateLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;functionalLocationPanel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;invisibleLabel.Name" xml:space="preserve">
+    <value>invisibleLabel</value>
+  </data>
+  <data name="documentLinksGroupBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 3, 3, 3</value>
+  </data>
+  <data name="criticalSystemDefeatedTextBox.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="&gt;&gt;criticalSystemDefeatedGroupBox.Parent" xml:space="preserve">
+    <value>mainPanel</value>
+  </data>
+  <data name="toolStrip.Size" type="System.Drawing.Size, System.Drawing">
+    <value>680, 25</value>
+  </data>
+  <data name="deleteButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 22</value>
+  </data>
+  <data name="oltLabel5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>309, 16</value>
+  </data>
+  <data name="documentLinksControl.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="tableLayoutPanel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 215</value>
+  </data>
+  <data name="editButton.Text" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="expandLinkLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>576, 13</value>
+  </data>
+  <data name="&gt;&gt;documentLinksGroupBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltGroupBox, Operator Log Tool, Version=4.31.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="editButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 22</value>
+  </data>
+  <data name="expandLinkLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="oltLabel5.Text" xml:space="preserve">
+    <value>Has this CSD Been Communicated</value>
+  </data>
+  <data name="&gt;&gt;createdDateDataLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="expandLinkLabel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="oltLabel1.Text" xml:space="preserve">
+    <value>User:</value>
+  </data>
+  <data name="documentLinksControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 16</value>
+  </data>
+  <data name="&gt;&gt;printPreviewButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;contentRichTextDisplay.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tableLayoutPanel2.ColumnCount" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="createdByGroupBox.Text" xml:space="preserve">
+    <value>Created By</value>
+  </data>
+  <data name="mainPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="tableLayoutPanel3.RowCount" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;editButton.Name" xml:space="preserve">
+    <value>editButton</value>
+  </data>
+  <data name="hasBeenCommunicatedDataLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;csdReasonTextBox.Parent" xml:space="preserve">
+    <value>csdReasonGroupBox</value>
+  </data>
+  <data name="&gt;&gt;oltGroupBox1.Name" xml:space="preserve">
+    <value>oltGroupBox1</value>
+  </data>
+  <data name="createdDateDataLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>46, 23</value>
+  </data>
+  <data name="tableLayoutPanel1.ColumnCount" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="csdReasonGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 462</value>
+  </data>
+  <data name="$this.Language" type="System.Globalization.CultureInfo, mscorlib">
+    <value>fr</value>
+  </data>
+  <data name="toolStrip.TrayLocation" type="System.Drawing.Point, System.Drawing">
+    <value>17, 17</value>
+  </data>
+  <data name="$this.Localizable" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+</root>

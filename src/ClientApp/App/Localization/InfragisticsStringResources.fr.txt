@@ -1,0 +1,98 @@
+#WinGrid (WinGrid Resources)
+GroupByBoxDefaultPrompt=Glisser ici un en-tête de colonne pour regrouper à partir de cette colonne.
+GroupByButtonToolTip=Cliquer pour inverser l'ordre de tri
+LDR_Layout_mask=[caption] : [value] ([count] [count,articles,article,articles])
+
+# Custom Filtering Dialog screen (WinGrid Resources)
+FilterDialogAllComboItem=Tous
+FilterDialogAnyComboItem=Aucun
+FilterDialogApplyLabelText=Filtre basé sur {0} des conditions suivantes :
+FilterDialogCancelButtonText=&Annuler
+FilterDialogConditionAddButtonText=A&jouter
+FilterDialogConditionDeleteButtonText=&Supprimer
+FilterDialogOkButtonText=&OK
+FilterDialogTitle=Filtre personnalisé
+
+# Basic Filtering (Support Dialogs Resources)
+FilterUIProvider_Menu_ClearFilter=Supprimer le filtre
+FilterUIProvider_Menu_DateFilters=&Filtres par date
+FilterUIProvider_Menu_NumberFilters=&Filtres par numéro
+FilterUIProvider_Menu_TextFilters=&Filtres textuels
+FilterUIProvider_OKButton=OK
+FilterUIProvider_CancelButton=Annuler
+
+# Custom Filter scereen (WinGrid Resources)
+RowFilterDialogDBNullItem=Est vide
+RowFilterDialogBlanksItem=Vides
+RowFilterDialogEmptyTextItem=Texte vide
+RowFilterDropDown_Operator_Contains=Contient
+RowFilterDropDown_Operator_DoesNotContain=Ne contient pas
+RowFilterDropDown_Operator_DoesNotEndWith=Ne se termine pas par
+RowFilterDropDown_Operator_EndsWith=Se termine par
+RowFilterDropDownAllItem=(Tous)
+RowFilterDropDownBlanksItem=(Vides)
+RowFilterDropDownEquals=Est égal à
+RowFilterDropDownGreaterThan=Supérieur à
+RowFilterDropDownGreaterThanOrEqualTo=Supérieur ou égal à
+RowFilterDropDownLessThan=Inférieur à
+RowFilterDropDownLessThanOrEqualTo=Inférieur ou égal à
+RowFilterDropDownLike=Similaire
+RowFilterDropDown_Operator_DoesNotStartWith=Ne commence pas par
+RowFilterDropDown_Operator_DoesNotMatch=Ne correspond pas
+# Hope to remove this one with Story #1060
+RowFilterDropDownMatch=Correspond à une expression ordinaire
+RowFilterDropDownNotEquals=N'est pas égal à
+# Hope to remove this one with Story #1060
+RowFilterDropDown_Operator_NotLike=Non similaire
+RowFilterDropDown_Operator_StartsWith=Commence par
+
+# Date filtering (Support Dialogs Resources)
+SpecialFilterOperand_April=&Avril
+SpecialFilterOperand_August=Aoû&t
+SpecialFilterOperand_December=&Décembre
+SpecialFilterOperand_February=&Février
+SpecialFilterOperand_January=&Janvier
+SpecialFilterOperand_July=Jui&llet
+SpecialFilterOperand_June=J&uin
+SpecialFilterOperand_LastMonth=Le mois dern&ier
+SpecialFilterOperand_LastQuarter=Le trimestre d&ernier
+SpecialFilterOperand_LastWeek=La semaine de&rnière
+SpecialFilterOperand_LastYear=L'année der&nière
+SpecialFilterOperand_March=&Mars
+SpecialFilterOperand_May=Ma&i
+SpecialFilterOperand_NextMonth=Le mois &prochain
+SpecialFilterOperand_NextQuarter=Le trimestre pr&ochain
+SpecialFilterOperand_NextWeek=La semaine pro&chaine
+SpecialFilterOperand_NextYear=L'année proc&haine
+SpecialFilterOperand_November=&Novembre
+SpecialFilterOperand_October=&Octobre
+SpecialFilterOperand_Quarter1=&1er trimestre
+SpecialFilterOperand_Quarter2=&2e trimestre
+SpecialFilterOperand_Quarter3=&3e trimestre
+SpecialFilterOperand_Quarter4=&4e trimestre
+SpecialFilterOperand_September=&Septembre
+SpecialFilterOperand_ThisMonth=Le &mois en cours
+SpecialFilterOperand_ThisQuarter=Le &trimestre en cours
+SpecialFilterOperand_ThisWeek=La &semaine en cours
+SpecialFilterOperand_ThisYear=L'&année en cours
+SpecialFilterOperand_Today=Au&jourd'hui
+SpecialFilterOperand_Tomorrow=&Demain
+SpecialFilterOperand_YearToDate=L'année en cours - à ce jour
+SpecialFilterOperand_Yesterday=&Hier
+
+#Grid Filter options (Support Dialogs Resources)
+UltraGridFilterUIProvider_AfterOperand=&Après le...
+UltraGridFilterUIProvider_AllDatesInPeriod_Menu=Toutes les dates dans la pé&riode
+UltraGridFilterUIProvider_BeforeOperand=A&vant...
+UltraGridFilterUIProvider_BeginsWithOperand=&Commence le...
+UltraGridFilterUIProvider_BetweenOperand=&Entre...
+UltraGridFilterUIProvider_ContainsOperand=Con&tient...
+UltraGridFilterUIProvider_CustomFilter=&Filtre personnalisé...
+UltraGridFilterUIProvider_DoesNotContainOperand=&Ne contient pas…
+UltraGridFilterUIProvider_DoesNotEqualOperand=N'est &pas égal à...
+UltraGridFilterUIProvider_EndsWithOperand=Se ter&mine le...
+UltraGridFilterUIProvider_EqualsOperand=Est é&gal à...
+UltraGridFilterUIProvider_GreaterThanOperand=Est &supérieur à...
+UltraGridFilterUIProvider_GreaterThanOrEqualToOperand=Est supérieur &ou égal à...
+UltraGridFilterUIProvider_LessThanOperand=Est &inférieur à...
+UltraGridFilterUIProvider_LessThanOrEqualToOperand=Inférieur o&u égal à...

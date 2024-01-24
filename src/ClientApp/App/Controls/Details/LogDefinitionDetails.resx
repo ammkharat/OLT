@@ -1,0 +1,1890 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="supervisionCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;occursLabel.Name" xml:space="preserve">
+    <value>occursLabel</value>
+  </data>
+  <data name="&gt;&gt;customFieldsLabel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Operator Log Tool, Version=4.16.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;isOperatingEngineerLogCheckBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="raiseTimeGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="createAnActionItemForEachFunctionalLocationPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="operationsCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>166, 19</value>
+  </data>
+  <data name="EnvironmentalHealthAndSafetyCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>52, 17</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="workAssignmentPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="&gt;&gt;commentsLabel.Name" xml:space="preserve">
+    <value>commentsLabel</value>
+  </data>
+  <data name="follupupGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>139, 5</value>
+  </data>
+  <data name="&gt;&gt;customFieldsLeftPanel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;createOneLogForAllFlocsRadioButton.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;createAnActionItemForEachFunctionalLocationPanel.Parent" xml:space="preserve">
+    <value>multipleFlocPanel</value>
+  </data>
+  <data name="commentsDisplayControl.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;follupupGroupBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltGroupBox, Operator Log Tool, Version=4.16.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;supervisionCheckBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltCheckBox, Operator Log Tool, Version=4.16.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="documentLinksControl.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="optionsPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 543</value>
+  </data>
+  <data name="schedulePanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="editHistoryButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 22</value>
+  </data>
+  <data name="&gt;&gt;customFieldsLeftPanel.Parent" xml:space="preserve">
+    <value>customFieldsPanel</value>
+  </data>
+  <data name="createAnActionItemForEachFunctionalLocationPanel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;commentsDisplayControl.Parent" xml:space="preserve">
+    <value>commentsContentPanel</value>
+  </data>
+  <data name="&gt;&gt;rangeOfRecurrenceGroupBox.Parent" xml:space="preserve">
+    <value>schedulePanel</value>
+  </data>
+  <data name="optionsGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>139, 1</value>
+  </data>
+  <data name="rangeOfRecurrenceStartDateLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;createOneLogForAllFlocsRadioButton.Name" xml:space="preserve">
+    <value>createOneLogForAllFlocsRadioButton</value>
+  </data>
+  <data name="&gt;&gt;customFieldsLabel.Parent" xml:space="preserve">
+    <value>customFieldsLeftPanel</value>
+  </data>
+  <data name="&gt;&gt;followupLeftPanel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;rangeOfRecurrenceEndDateLabel.Parent" xml:space="preserve">
+    <value>rangeOfRecurrenceGroupBox</value>
+  </data>
+  <data name="&gt;&gt;mainFlowLayoutPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="customFieldEntriesPanel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;workAssignmentLabel.Parent" xml:space="preserve">
+    <value>workAssignmentLeftPanel</value>
+  </data>
+  <data name="&gt;&gt;customFieldEntriesPanel.Name" xml:space="preserve">
+    <value>customFieldEntriesPanel</value>
+  </data>
+  <data name="creationDateTimeTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>139, 3</value>
+  </data>
+  <data name="&gt;&gt;rangeOfRecurrenceEndDateLabel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Operator Log Tool, Version=4.16.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="workAssignmentLeftPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>133, 29</value>
+  </data>
+  <data name="&gt;&gt;optionsPanel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltPanel, Operator Log Tool, Version=4.16.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;rangeOfRecurrenceStartDateLabel.Parent" xml:space="preserve">
+    <value>rangeOfRecurrenceGroupBox</value>
+  </data>
+  <data name="functionalLocationLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>21, 7</value>
+  </data>
+  <data name="&gt;&gt;dateTimePanel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;optionsGroupBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;detailsPanel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;createAnActionItemForEachFunctionalLocationPanel.Name" xml:space="preserve">
+    <value>createAnActionItemForEachFunctionalLocationPanel</value>
+  </data>
+  <data name="&gt;&gt;optionsPanel.Name" xml:space="preserve">
+    <value>optionsPanel</value>
+  </data>
+  <data name="rangeOfRecurrenceGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="recurrencePatternGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="isOperatingEngineerLogCheckBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;occursLabel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Operator Log Tool, Version=4.16.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="creationDateTimeTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>564, 20</value>
+  </data>
+  <data name="customFieldsPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="&gt;&gt;otherCheckBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;recurrencePatternGroupBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;documentLinksPanel.Parent" xml:space="preserve">
+    <value>mainFlowLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;documentLinksControl.Name" xml:space="preserve">
+    <value>documentLinksControl</value>
+  </data>
+  <data name="&gt;&gt;dateTimePanel.Parent" xml:space="preserve">
+    <value>mainFlowLayoutPanel</value>
+  </data>
+  <data name="followUpLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="editHistoryButton.ToolTipText" xml:space="preserve">
+    <value>View Edit History</value>
+  </data>
+  <data name="multipleFlocPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 487</value>
+  </data>
+  <data name="recurrenceEndDateData.Location" type="System.Drawing.Point, System.Drawing">
+    <value>241, 17</value>
+  </data>
+  <data name="&gt;&gt;customFieldEntriesPanel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltPanel, Operator Log Tool, Version=4.16.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;flocContentPanel.Parent" xml:space="preserve">
+    <value>flocPanel</value>
+  </data>
+  <data name="&gt;&gt;optionsPanel.Parent" xml:space="preserve">
+    <value>mainFlowLayoutPanel</value>
+  </data>
+  <data name="rangeOfRecurrenceEndDateLabel.Text" xml:space="preserve">
+    <value>End Date:</value>
+  </data>
+  <data name="followupLeftPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>133, 58</value>
+  </data>
+  <data name="&gt;&gt;documentLinksControl.Parent" xml:space="preserve">
+    <value>documentLinksPanel</value>
+  </data>
+  <data name="exportAllButton.ToolTipText" xml:space="preserve">
+    <value>Export Grid data to Excel</value>
+  </data>
+  <data name="&gt;&gt;flocContentPanel.Name" xml:space="preserve">
+    <value>flocContentPanel</value>
+  </data>
+  <data name="inspectionCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>76, 17</value>
+  </data>
+  <data name="commentsLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;commentsContentPanel.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;documentLinksPanel.Name" xml:space="preserve">
+    <value>documentLinksPanel</value>
+  </data>
+  <data name="&gt;&gt;workAssignmentPanel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltPanel, Operator Log Tool, Version=4.16.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;createLogForEachFlocRadioButton.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltRadioButton, Operator Log Tool, Version=4.16.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;documentLinksPanel.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="functionalLocationLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>104, 13</value>
+  </data>
+  <data name="commentsLeftPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="&gt;&gt;cancelButton.Name" xml:space="preserve">
+    <value>cancelButton</value>
+  </data>
+  <data name="&gt;&gt;multipleFlocLeftPanel.Parent" xml:space="preserve">
+    <value>multipleFlocPanel</value>
+  </data>
+  <data name="multipleFlocLeftPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="operationsCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>79, 17</value>
+  </data>
+  <data name="followupLeftPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="dateTimeLeftPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="workAssignmentTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>563, 20</value>
+  </data>
+  <data name="commentsContentPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;supervisionCheckBox.Parent" xml:space="preserve">
+    <value>follupupGroupBox</value>
+  </data>
+  <data name="flocLeftPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="&gt;&gt;detailsPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="documentLinksLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;flocPanel.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="otherCheckBox.Text" xml:space="preserve">
+    <value>Other (See Comments)</value>
+  </data>
+  <data name="&gt;&gt;followUpLabel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Operator Log Tool, Version=4.16.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;recurrenceStartDateData.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabelData, Operator Log Tool, Version=4.16.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;schedulePanel.Parent" xml:space="preserve">
+    <value>mainFlowLayoutPanel</value>
+  </data>
+  <data name="flocPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 406</value>
+  </data>
+  <data name="&gt;&gt;commentsLeftPanel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;commentsContentPanel.Name" xml:space="preserve">
+    <value>commentsContentPanel</value>
+  </data>
+  <data name="&gt;&gt;raiseStartTimeLabel.Name" xml:space="preserve">
+    <value>raiseStartTimeLabel</value>
+  </data>
+  <data name="createAnActionItemForEachFunctionalLocationPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>563, 47</value>
+  </data>
+  <data name="creationDateTimeTextBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="commentsPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="isOperatingEngineerLogCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="followupLeftPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="workAssignmentPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 263</value>
+  </data>
+  <data name="&gt;&gt;followUpLabel.Parent" xml:space="preserve">
+    <value>followupLeftPanel</value>
+  </data>
+  <data name="createLogForEachFlocRadioButton.Text" xml:space="preserve">
+    <value>Create one per FLOC</value>
+  </data>
+  <data name="optionsLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 13</value>
+  </data>
+  <data name="&gt;&gt;raiseTimeGroupBox.Parent" xml:space="preserve">
+    <value>schedulePanel</value>
+  </data>
+  <data name="editHistoryButton.Text" xml:space="preserve">
+    <value>History</value>
+  </data>
+  <data name="createOneLogForAllFlocsRadioButton.Text" xml:space="preserve">
+    <value>Create one for all FLOCs</value>
+  </data>
+  <data name="multipleFlocPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>708, 56</value>
+  </data>
+  <data name="follupupGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;documentLinksControl.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="commentsPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 30</value>
+  </data>
+  <data name="&gt;&gt;schedulePanel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltPanel, Operator Log Tool, Version=4.16.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="customFieldsLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;flocContentPanel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;inspectionCheckBox.Name" xml:space="preserve">
+    <value>inspectionCheckBox</value>
+  </data>
+  <data name="toolStrip1.Text" xml:space="preserve">
+    <value>toolStrip1</value>
+  </data>
+  <data name="&gt;&gt;recurrenceStartDateData.Name" xml:space="preserve">
+    <value>recurrenceStartDateData</value>
+  </data>
+  <data name="rangeOfRecurrenceGroupBox.Text" xml:space="preserve">
+    <value>Range of Recurrence</value>
+  </data>
+  <data name="saveGridLayoutButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>88, 22</value>
+  </data>
+  <data name="&gt;&gt;expandLinkLabel1.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLinkLabel1, Operator Log Tool, Version=4.16.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="followupPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 584</value>
+  </data>
+  <data name="mainFlowLayoutPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="commentsLeftPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="optionsLeftPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;createLogForEachFlocRadioButton.Name" xml:space="preserve">
+    <value>createLogForEachFlocRadioButton</value>
+  </data>
+  <data name="&gt;&gt;optionsGroupBox.Name" xml:space="preserve">
+    <value>optionsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;commentsLeftPanel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltPanel, Operator Log Tool, Version=4.16.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;raiseTimeGroupBox.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="&gt;&gt;scheduleLeftPanel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltPanel, Operator Log Tool, Version=4.16.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="createOneLogForAllFlocsRadioButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 26</value>
+  </data>
+  <data name="&gt;&gt;rangeOfRecurrenceStartDateLabel.Name" xml:space="preserve">
+    <value>rangeOfRecurrenceStartDateLabel</value>
+  </data>
+  <data name="workAssignmentTextBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;followupPanel.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="rangeOfRecurrenceStartDateLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="optionsLeftPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>133, 41</value>
+  </data>
+  <data name="&gt;&gt;editButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;recurrencePatternData.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;EnvironmentalHealthAndSafetyCheckBox.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="recurrenceStartDateData.Size" type="System.Drawing.Size, System.Drawing">
+    <value>67, 13</value>
+  </data>
+  <data name="&gt;&gt;customFieldEntriesPanel.Parent" xml:space="preserve">
+    <value>customFieldsPanel</value>
+  </data>
+  <data name="&gt;&gt;functionalLocationLabel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Operator Log Tool, Version=4.16.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;commentsPanel.Parent" xml:space="preserve">
+    <value>mainFlowLayoutPanel</value>
+  </data>
+  <data name="EnvironmentalHealthAndSafetyCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;documentLinksLabel.Name" xml:space="preserve">
+    <value>documentLinksLabel</value>
+  </data>
+  <data name="&gt;&gt;expandLinkLabel1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="saveGridLayoutButton.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="&gt;&gt;operationsCheckBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltCheckBox, Operator Log Tool, Version=4.16.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;rangeOfRecurrenceGroupBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltGroupBox, Operator Log Tool, Version=4.16.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="optionsLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.Controls.Details.AbstractDetails, Operator Log Tool, Version=4.16.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;raiseTimeGroupBox.Name" xml:space="preserve">
+    <value>raiseTimeGroupBox</value>
+  </data>
+  <data name="cancelButton.Text" xml:space="preserve">
+    <value>Cancel Repeat</value>
+  </data>
+  <data name="commentsPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>708, 233</value>
+  </data>
+  <data name="&gt;&gt;dateTimePanel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltPanel, Operator Log Tool, Version=4.16.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="workAssignmentLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;commentsDisplayControl.Name" xml:space="preserve">
+    <value>commentsDisplayControl</value>
+  </data>
+  <data name="optionsPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="raiseStartTimeLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 17</value>
+  </data>
+  <data name="&gt;&gt;workAssignmentLabel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="commentsDisplayControl.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="multipleFlocLeftPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="follupupGroupBox.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;editButton.Name" xml:space="preserve">
+    <value>editButton</value>
+  </data>
+  <data name="cancelButton.ToolTipText" xml:space="preserve">
+    <value>Cancel Repeating Log</value>
+  </data>
+  <data name="commentsLeftPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;workAssignmentLeftPanel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltPanel, Operator Log Tool, Version=4.16.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;operationsCheckBox.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="exportAllButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>85, 22</value>
+  </data>
+  <data name="&gt;&gt;commentsLeftPanel.Parent" xml:space="preserve">
+    <value>commentsPanel</value>
+  </data>
+  <data name="processControlCheckBox.Text" xml:space="preserve">
+    <value>Process Control</value>
+  </data>
+  <data name="flocLeftPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>133, 81</value>
+  </data>
+  <data name="&gt;&gt;recurrenceEndDateData.Name" xml:space="preserve">
+    <value>recurrenceEndDateData</value>
+  </data>
+  <data name="&gt;&gt;createLogForEachFlocRadioButton.Parent" xml:space="preserve">
+    <value>createAnActionItemForEachFunctionalLocationPanel</value>
+  </data>
+  <data name="schedulePanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 642</value>
+  </data>
+  <data name="&gt;&gt;workAssignmentTextBox.Parent" xml:space="preserve">
+    <value>workAssignmentPanel</value>
+  </data>
+  <data name="optionsLeftPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="&gt;&gt;operationsCheckBox.Parent" xml:space="preserve">
+    <value>follupupGroupBox</value>
+  </data>
+  <data name="createLogForEachFlocRadioButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>127, 17</value>
+  </data>
+  <data name="workAssignmentPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;otherCheckBox.Parent" xml:space="preserve">
+    <value>follupupGroupBox</value>
+  </data>
+  <data name="customFieldsPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>708, 114</value>
+  </data>
+  <data name="&gt;&gt;recurrencePatternGroupBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltGroupBox, Operator Log Tool, Version=4.16.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;optionsGroupBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltGroupBox, Operator Log Tool, Version=4.16.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;commentsPanel.Name" xml:space="preserve">
+    <value>commentsPanel</value>
+  </data>
+  <data name="inspectionCheckBox.Text" xml:space="preserve">
+    <value>Inspection</value>
+  </data>
+  <data name="creationDateTimeLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="multipleFlocLeftPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="occursLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="flocContentPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>139, 5</value>
+  </data>
+  <data name="&gt;&gt;createLogForEachFlocRadioButton.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="dateTimePanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="&gt;&gt;multipleFlocLeftPanel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="inspectionCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;inspectionCheckBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="documentLinksLeftPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>133, 81</value>
+  </data>
+  <data name="inspectionCheckBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;followUpLabel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;raiseStartTimeData.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;raiseTimeGroupBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltGroupBox, Operator Log Tool, Version=4.16.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="EnvironmentalHealthAndSafetyCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 19</value>
+  </data>
+  <data name="editButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 22</value>
+  </data>
+  <data name="&gt;&gt;commentsLabel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Operator Log Tool, Version=4.16.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="dateTimePanel.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;exportAllButton.Name" xml:space="preserve">
+    <value>exportAllButton</value>
+  </data>
+  <data name="&gt;&gt;followupPanel.Name" xml:space="preserve">
+    <value>followupPanel</value>
+  </data>
+  <data name="&gt;&gt;workAssignmentPanel.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="detailsPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>720, 815</value>
+  </data>
+  <data name="workAssignmentPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>708, 29</value>
+  </data>
+  <data name="&gt;&gt;customFieldsLeftPanel.Name" xml:space="preserve">
+    <value>customFieldsLeftPanel</value>
+  </data>
+  <data name="cancelButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>102, 22</value>
+  </data>
+  <data name="&gt;&gt;otherCheckBox.Name" xml:space="preserve">
+    <value>otherCheckBox</value>
+  </data>
+  <data name="&gt;&gt;optionsLabel.Parent" xml:space="preserve">
+    <value>optionsLeftPanel</value>
+  </data>
+  <data name="&gt;&gt;commentsDisplayControl.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="isOperatingEngineerLogCheckBox.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;follupupGroupBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="scheduleLeftPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="&gt;&gt;scheduleLabel.Name" xml:space="preserve">
+    <value>scheduleLabel</value>
+  </data>
+  <data name="scheduleLeftPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="optionsLeftPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="customFieldEntriesPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="creationDateTimeLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="multipleFlocLeftPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>133, 56</value>
+  </data>
+  <data name="recurrenceEndDateData.Text" xml:space="preserve">
+    <value>25 Dec 2005</value>
+  </data>
+  <data name="&gt;&gt;commentsLabel.Parent" xml:space="preserve">
+    <value>commentsLeftPanel</value>
+  </data>
+  <data name="&gt;&gt;multipleFlocPanel.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="processControlCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="followupLeftPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="flocContentPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>563, 70</value>
+  </data>
+  <data name="&gt;&gt;scheduleLabel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="toolStrip1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;isOperatingEngineerLogCheckBox.Parent" xml:space="preserve">
+    <value>optionsGroupBox</value>
+  </data>
+  <data name="mainFlowLayoutPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="customFieldsLeftPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>133, 114</value>
+  </data>
+  <data name="optionsLeftPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="createLogForEachFlocRadioButton.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="customFieldsPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="mainFlowLayoutPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>720, 815</value>
+  </data>
+  <data name="scheduleLabel.Text" xml:space="preserve">
+    <value>Schedule</value>
+  </data>
+  <data name="EnvironmentalHealthAndSafetyCheckBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;scheduleLabel.Parent" xml:space="preserve">
+    <value>scheduleLeftPanel</value>
+  </data>
+  <data name="&gt;&gt;workAssignmentLabel.Name" xml:space="preserve">
+    <value>workAssignmentLabel</value>
+  </data>
+  <data name="commentsLeftPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>133, 233</value>
+  </data>
+  <data name="&gt;&gt;mainFlowLayoutPanel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="saveGridLayoutButton.Text" xml:space="preserve">
+    <value>Grid Layout</value>
+  </data>
+  <data name="mainFlowLayoutPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="documentLinksLabel.Text" xml:space="preserve">
+    <value>Document Links</value>
+  </data>
+  <data name="&gt;&gt;commentsDisplayControl.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.Controls.RichTextDisplay, Operator Log Tool, Version=4.16.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="otherCheckBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;otherCheckBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltCheckBox, Operator Log Tool, Version=4.16.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;optionsLeftPanel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltPanel, Operator Log Tool, Version=4.16.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;flocLeftPanel.Parent" xml:space="preserve">
+    <value>flocPanel</value>
+  </data>
+  <data name="otherCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>136, 17</value>
+  </data>
+  <data name="&gt;&gt;optionsLabel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="customFieldsLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>52, 7</value>
+  </data>
+  <data name="multipleFlocPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="&gt;&gt;isOperatingEngineerLogCheckBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltCheckBox, Operator Log Tool, Version=4.16.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="isOperatingEngineerLogCheckBox.Text" xml:space="preserve">
+    <value>Operating Engineer</value>
+  </data>
+  <data name="follupupGroupBox.Text" xml:space="preserve">
+    <value>Requires Follow-up</value>
+  </data>
+  <data name="workAssignmentLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="detailsPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;followupLeftPanel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltPanel, Operator Log Tool, Version=4.16.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="toolStrip1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>720, 25</value>
+  </data>
+  <data name="&gt;&gt;creationDateTimeLabel.Name" xml:space="preserve">
+    <value>creationDateTimeLabel</value>
+  </data>
+  <data name="optionsLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>81, 12</value>
+  </data>
+  <data name="processControlCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>62, 19</value>
+  </data>
+  <data name="&gt;&gt;customFieldsLabel.Name" xml:space="preserve">
+    <value>customFieldsLabel</value>
+  </data>
+  <data name="documentLinksPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="flocContentPanel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="raiseStartTimeLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="raiseTimeGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>165, 40</value>
+  </data>
+  <data name="recurrencePatternData.Location" type="System.Drawing.Point, System.Drawing">
+    <value>60, 19</value>
+  </data>
+  <data name="workAssignmentLeftPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="expandLinkLabel1.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="workAssignmentLeftPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="mainFlowLayoutPanel.AutoScroll" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="commentsPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="flocLeftPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="commentsLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>57, 13</value>
+  </data>
+  <data name="raiseStartTimeData.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="optionsGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>564, 36</value>
+  </data>
+  <data name="&gt;&gt;raiseStartTimeLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;creationDateTimeTextBox.Name" xml:space="preserve">
+    <value>creationDateTimeTextBox</value>
+  </data>
+  <data name="&gt;&gt;functionalLocationLabel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="expandLinkLabel1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="dateTimePanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="&gt;&gt;optionsLeftPanel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;editHistoryButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dateTimePanel.Name" xml:space="preserve">
+    <value>dateTimePanel</value>
+  </data>
+  <data name="scheduleLeftPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>133, 92</value>
+  </data>
+  <data name="customFieldEntriesPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>139, 5</value>
+  </data>
+  <data name="&gt;&gt;customFieldEntriesPanel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;mainFlowLayoutPanel.Name" xml:space="preserve">
+    <value>mainFlowLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;commentsPanel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltPanel, Operator Log Tool, Version=4.16.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="workAssignmentTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="raiseStartTimeLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 13</value>
+  </data>
+  <data name="&gt;&gt;optionsLabel.Name" xml:space="preserve">
+    <value>optionsLabel</value>
+  </data>
+  <data name="&gt;&gt;customFieldsLeftPanel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltPanel, Operator Log Tool, Version=4.16.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="operationsCheckBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="commentsDisplayControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="optionsGroupBox.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;flocLeftPanel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltPanel, Operator Log Tool, Version=4.16.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="creationDateTimeTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;toolStrip1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;flocPanel.Parent" xml:space="preserve">
+    <value>mainFlowLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;multipleFlocPanel.Name" xml:space="preserve">
+    <value>multipleFlocPanel</value>
+  </data>
+  <data name="&gt;&gt;processControlCheckBox.Name" xml:space="preserve">
+    <value>processControlCheckBox</value>
+  </data>
+  <data name="commentsContentPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>139, 26</value>
+  </data>
+  <data name="&gt;&gt;optionsGroupBox.Parent" xml:space="preserve">
+    <value>optionsPanel</value>
+  </data>
+  <data name="&gt;&gt;customFieldsLabel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="mainFlowLayoutPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="workAssignmentLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>35, 5</value>
+  </data>
+  <data name="flocContentPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;creationDateTimeTextBox.Parent" xml:space="preserve">
+    <value>dateTimePanel</value>
+  </data>
+  <data name="&gt;&gt;customFieldsPanel.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="documentLinksPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="documentLinksLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="raiseStartTimeData.Location" type="System.Drawing.Point, System.Drawing">
+    <value>73, 17</value>
+  </data>
+  <data name="raiseStartTimeData.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="expandLinkLabel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>51, 13</value>
+  </data>
+  <data name="&gt;&gt;rangeOfRecurrenceEndDateLabel.Name" xml:space="preserve">
+    <value>rangeOfRecurrenceEndDateLabel</value>
+  </data>
+  <data name="&gt;&gt;documentLinksLeftPanel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="multipleFlocPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="creationDateTimeLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 13</value>
+  </data>
+  <data name="&gt;&gt;processControlCheckBox.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;recurrenceStartDateData.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="customFieldEntriesPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>564, 99</value>
+  </data>
+  <data name="&gt;&gt;exportAllButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="createAnActionItemForEachFunctionalLocationPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>139, 5</value>
+  </data>
+  <data name="createOneLogForAllFlocsRadioButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>143, 17</value>
+  </data>
+  <data name="createOneLogForAllFlocsRadioButton.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="customFieldsLeftPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="expandLinkLabel1.Text" xml:space="preserve">
+    <value>[Expand]</value>
+  </data>
+  <data name="customFieldsLeftPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="customFieldsPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 292</value>
+  </data>
+  <data name="commentsContentPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>563, 199</value>
+  </data>
+  <data name="&gt;&gt;rangeOfRecurrenceEndDateLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;rangeOfRecurrenceStartDateLabel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Operator Log Tool, Version=4.16.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;creationDateTimeLabel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Operator Log Tool, Version=4.16.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="dateTimePanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>708, 30</value>
+  </data>
+  <data name="isOperatingEngineerLogCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>119, 17</value>
+  </data>
+  <data name="&gt;&gt;processControlCheckBox.Parent" xml:space="preserve">
+    <value>follupupGroupBox</value>
+  </data>
+  <data name="editButton.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="&gt;&gt;EnvironmentalHealthAndSafetyCheckBox.Parent" xml:space="preserve">
+    <value>follupupGroupBox</value>
+  </data>
+  <data name="multipleFlocLeftPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="workAssignmentLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>90, 13</value>
+  </data>
+  <data name="&gt;&gt;functionalLocationLabel.Parent" xml:space="preserve">
+    <value>flocLeftPanel</value>
+  </data>
+  <data name="&gt;&gt;customFieldsPanel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltPanel, Operator Log Tool, Version=4.16.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="rangeOfRecurrenceStartDateLabel.Text" xml:space="preserve">
+    <value>Start Date:</value>
+  </data>
+  <data name="&gt;&gt;customFieldsPanel.Name" xml:space="preserve">
+    <value>customFieldsPanel</value>
+  </data>
+  <data name="&gt;&gt;inspectionCheckBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltCheckBox, Operator Log Tool, Version=4.16.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="expandLinkLabel1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="dateTimeLeftPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="documentLinksLeftPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="rangeOfRecurrenceEndDateLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;creationDateTimeTextBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltTextBox, Operator Log Tool, Version=4.16.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="occursLabel.Text" xml:space="preserve">
+    <value>Occurs:</value>
+  </data>
+  <data name="&gt;&gt;followupLeftPanel.Name" xml:space="preserve">
+    <value>followupLeftPanel</value>
+  </data>
+  <data name="createLogForEachFlocRadioButton.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="customFieldsLeftPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="operationsCheckBox.Text" xml:space="preserve">
+    <value>Operations</value>
+  </data>
+  <data name="&gt;&gt;recurrenceEndDateData.Parent" xml:space="preserve">
+    <value>rangeOfRecurrenceGroupBox</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>LogDefinitionDetails</value>
+  </data>
+  <data name="&gt;&gt;scheduleLeftPanel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;recurrencePatternGroupBox.Parent" xml:space="preserve">
+    <value>schedulePanel</value>
+  </data>
+  <data name="&gt;&gt;dateTimeLeftPanel.Name" xml:space="preserve">
+    <value>dateTimeLeftPanel</value>
+  </data>
+  <data name="&gt;&gt;documentLinksLabel.Parent" xml:space="preserve">
+    <value>documentLinksLeftPanel</value>
+  </data>
+  <data name="supervisionCheckBox.Text" xml:space="preserve">
+    <value>Supervision</value>
+  </data>
+  <data name="documentLinksControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>139, 5</value>
+  </data>
+  <data name="&gt;&gt;raiseStartTimeData.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabelData, Operator Log Tool, Version=4.16.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="toolStrip1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="supervisionCheckBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;optionsPanel.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="workAssignmentLeftPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="recurrenceStartDateData.Location" type="System.Drawing.Point, System.Drawing">
+    <value>72, 17</value>
+  </data>
+  <data name="&gt;&gt;functionalLocationLabel.Name" xml:space="preserve">
+    <value>functionalLocationLabel</value>
+  </data>
+  <data name="&gt;&gt;schedulePanel.Name" xml:space="preserve">
+    <value>schedulePanel</value>
+  </data>
+  <data name="inspectionCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>250, 19</value>
+  </data>
+  <data name="&gt;&gt;inspectionCheckBox.Parent" xml:space="preserve">
+    <value>follupupGroupBox</value>
+  </data>
+  <data name="creationDateTimeLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>25, 5</value>
+  </data>
+  <data name="&gt;&gt;isOperatingEngineerLogCheckBox.Name" xml:space="preserve">
+    <value>isOperatingEngineerLogCheckBox</value>
+  </data>
+  <data name="customFieldEntriesPanel.AutoScroll" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="recurrenceEndDateData.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="occursLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="rangeOfRecurrenceGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>139, 5</value>
+  </data>
+  <data name="detailsPanel.AutoScroll" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="mainFlowLayoutPanel.WrapContents" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="commentsLabel.Text" xml:space="preserve">
+    <value>Comments</value>
+  </data>
+  <data name="&gt;&gt;multipleFlocLeftPanel.Name" xml:space="preserve">
+    <value>multipleFlocLeftPanel</value>
+  </data>
+  <data name="&gt;&gt;createAnActionItemForEachFunctionalLocationPanel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;follupupGroupBox.Parent" xml:space="preserve">
+    <value>followupPanel</value>
+  </data>
+  <data name="workAssignmentLabel.Text" xml:space="preserve">
+    <value>Work Assignment</value>
+  </data>
+  <data name="raiseStartTimeData.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 13</value>
+  </data>
+  <data name="&gt;&gt;flocPanel.Name" xml:space="preserve">
+    <value>flocPanel</value>
+  </data>
+  <data name="followupPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>708, 58</value>
+  </data>
+  <data name="schedulePanel.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="functionalLocationLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;optionsLeftPanel.Parent" xml:space="preserve">
+    <value>optionsPanel</value>
+  </data>
+  <data name="documentLinksLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>44, 7</value>
+  </data>
+  <data name="exportAllButton.Text" xml:space="preserve">
+    <value>Export Grid</value>
+  </data>
+  <data name="processControlCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>101, 17</value>
+  </data>
+  <data name="&gt;&gt;optionsLabel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Operator Log Tool, Version=4.16.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;toolStrip1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="optionsLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="occursLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 13</value>
+  </data>
+  <data name="&gt;&gt;documentLinksLeftPanel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltPanel, Operator Log Tool, Version=4.16.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="scheduleLeftPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="customFieldsLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;followUpLabel.Name" xml:space="preserve">
+    <value>followUpLabel</value>
+  </data>
+  <data name="recurrencePatternData.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="creationDateTimeLabel.Text" xml:space="preserve">
+    <value>Creation Date/Time</value>
+  </data>
+  <data name="documentLinksLeftPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="exportAllButton.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="documentLinksControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>563, 74</value>
+  </data>
+  <data name="workAssignmentTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>139, 3</value>
+  </data>
+  <data name="optionsPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="&gt;&gt;rangeOfRecurrenceGroupBox.Name" xml:space="preserve">
+    <value>rangeOfRecurrenceGroupBox</value>
+  </data>
+  <data name="detailsPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 25</value>
+  </data>
+  <data name="&gt;&gt;followupPanel.Parent" xml:space="preserve">
+    <value>mainFlowLayoutPanel</value>
+  </data>
+  <data name="recurrencePatternData.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 13</value>
+  </data>
+  <data name="&gt;&gt;supervisionCheckBox.Name" xml:space="preserve">
+    <value>supervisionCheckBox</value>
+  </data>
+  <data name="&gt;&gt;schedulePanel.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="documentLinksPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>708, 81</value>
+  </data>
+  <data name="&gt;&gt;rangeOfRecurrenceStartDateLabel.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;createOneLogForAllFlocsRadioButton.Parent" xml:space="preserve">
+    <value>createAnActionItemForEachFunctionalLocationPanel</value>
+  </data>
+  <data name="&gt;&gt;workAssignmentLeftPanel.Name" xml:space="preserve">
+    <value>workAssignmentLeftPanel</value>
+  </data>
+  <data name="&gt;&gt;raiseStartTimeLabel.Parent" xml:space="preserve">
+    <value>raiseTimeGroupBox</value>
+  </data>
+  <data name="documentLinksLeftPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="dateTimeLeftPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>133, 30</value>
+  </data>
+  <data name="scheduleLeftPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="recurrenceStartDateData.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="recurrencePatternGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>139, 47</value>
+  </data>
+  <data name="&gt;&gt;recurrenceEndDateData.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="optionsGroupBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="followUpLabel.Text" xml:space="preserve">
+    <value>Follow-up</value>
+  </data>
+  <data name="EnvironmentalHealthAndSafetyCheckBox.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;workAssignmentLeftPanel.Parent" xml:space="preserve">
+    <value>workAssignmentPanel</value>
+  </data>
+  <data name="commentsContentPanel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;documentLinksLabel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="follupupGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>564, 48</value>
+  </data>
+  <data name="dateTimeLeftPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="&gt;&gt;recurrencePatternData.Name" xml:space="preserve">
+    <value>recurrencePatternData</value>
+  </data>
+  <data name="&gt;&gt;commentsContentPanel.Parent" xml:space="preserve">
+    <value>commentsPanel</value>
+  </data>
+  <data name="&gt;&gt;detailsPanel.Name" xml:space="preserve">
+    <value>detailsPanel</value>
+  </data>
+  <data name="commentsLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>68, 7</value>
+  </data>
+  <data name="&gt;&gt;expandLinkLabel1.Parent" xml:space="preserve">
+    <value>commentsPanel</value>
+  </data>
+  <data name="&gt;&gt;workAssignmentPanel.Name" xml:space="preserve">
+    <value>workAssignmentPanel</value>
+  </data>
+  <data name="documentLinksLeftPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="&gt;&gt;raiseStartTimeLabel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Operator Log Tool, Version=4.16.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="flocPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>708, 81</value>
+  </data>
+  <data name="dateTimeLeftPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;operationsCheckBox.Name" xml:space="preserve">
+    <value>operationsCheckBox</value>
+  </data>
+  <data name="&gt;&gt;recurrenceEndDateData.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabelData, Operator Log Tool, Version=4.16.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;followupLeftPanel.Parent" xml:space="preserve">
+    <value>followupPanel</value>
+  </data>
+  <data name="&gt;&gt;saveGridLayoutButton.Name" xml:space="preserve">
+    <value>saveGridLayoutButton</value>
+  </data>
+  <data name="expandLinkLabel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>652, 8</value>
+  </data>
+  <data name="&gt;&gt;flocContentPanel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltPanel, Operator Log Tool, Version=4.16.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="raiseTimeGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>520, 5</value>
+  </data>
+  <data name="&gt;&gt;commentsLabel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;saveGridLayoutButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;flocPanel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltPanel, Operator Log Tool, Version=4.16.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="optionsGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="flocLeftPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="&gt;&gt;EnvironmentalHealthAndSafetyCheckBox.Name" xml:space="preserve">
+    <value>EnvironmentalHealthAndSafetyCheckBox</value>
+  </data>
+  <data name="flocPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="raiseStartTimeData.Text" xml:space="preserve">
+    <value>12:45pm</value>
+  </data>
+  <data name="&gt;&gt;workAssignmentPanel.Parent" xml:space="preserve">
+    <value>mainFlowLayoutPanel</value>
+  </data>
+  <data name="raiseStartTimeLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;documentLinksLeftPanel.Parent" xml:space="preserve">
+    <value>documentLinksPanel</value>
+  </data>
+  <data name="&gt;&gt;workAssignmentTextBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltTextBox, Operator Log Tool, Version=4.16.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="followUpLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;commentsContentPanel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltPanel, Operator Log Tool, Version=4.16.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;processControlCheckBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltCheckBox, Operator Log Tool, Version=4.16.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="EnvironmentalHealthAndSafetyCheckBox.Text" xml:space="preserve">
+    <value>EH&amp;&amp;S</value>
+  </data>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>720, 840</value>
+  </data>
+  <data name="&gt;&gt;mainFlowLayoutPanel.Parent" xml:space="preserve">
+    <value>detailsPanel</value>
+  </data>
+  <data name="recurrencePatternData.Text" xml:space="preserve">
+    <value>stuff</value>
+  </data>
+  <data name="&gt;&gt;recurrencePatternGroupBox.Name" xml:space="preserve">
+    <value>recurrencePatternGroupBox</value>
+  </data>
+  <data name="&gt;&gt;customFieldsPanel.Parent" xml:space="preserve">
+    <value>mainFlowLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;optionsLeftPanel.Name" xml:space="preserve">
+    <value>optionsLeftPanel</value>
+  </data>
+  <data name="&gt;&gt;recurrencePatternData.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabelData, Operator Log Tool, Version=4.16.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="followupPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;scheduleLabel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Operator Log Tool, Version=4.16.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;followupPanel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltPanel, Operator Log Tool, Version=4.16.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="rangeOfRecurrenceGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>375, 40</value>
+  </data>
+  <data name="&gt;&gt;createOneLogForAllFlocsRadioButton.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltRadioButton, Operator Log Tool, Version=4.16.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="functionalLocationLabel.Text" xml:space="preserve">
+    <value>Functional Locations</value>
+  </data>
+  <data name="customFieldsLeftPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="&gt;&gt;occursLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="editButton.Text" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="&gt;&gt;toolStrip1.Name" xml:space="preserve">
+    <value>toolStrip1</value>
+  </data>
+  <data name="follupupGroupBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="otherCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>417, 20</value>
+  </data>
+  <data name="optionsPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>708, 41</value>
+  </data>
+  <data name="processControlCheckBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="rangeOfRecurrenceStartDateLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>61, 13</value>
+  </data>
+  <data name="documentLinksPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 734</value>
+  </data>
+  <data name="&gt;&gt;expandLinkLabel1.Name" xml:space="preserve">
+    <value>expandLinkLabel1</value>
+  </data>
+  <data name="&gt;&gt;cancelButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;workAssignmentTextBox.Name" xml:space="preserve">
+    <value>workAssignmentTextBox</value>
+  </data>
+  <data name="editHistoryButton.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="&gt;&gt;editHistoryButton.Name" xml:space="preserve">
+    <value>editHistoryButton</value>
+  </data>
+  <data name="documentLinksControl.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;workAssignmentLeftPanel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="followupLeftPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;workAssignmentLabel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Operator Log Tool, Version=4.16.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;EnvironmentalHealthAndSafetyCheckBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltCheckBox, Operator Log Tool, Version=4.16.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;detailsPanel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="optionsLabel.Text" xml:space="preserve">
+    <value>Options</value>
+  </data>
+  <data name="isOperatingEngineerLogCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 11</value>
+  </data>
+  <data name="&gt;&gt;createAnActionItemForEachFunctionalLocationPanel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltPanel, Operator Log Tool, Version=4.16.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="rangeOfRecurrenceEndDateLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 13</value>
+  </data>
+  <data name="rangeOfRecurrenceEndDateLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;supervisionCheckBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="flocPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="scheduleLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="mainFlowLayoutPanel.FlowDirection" type="System.Windows.Forms.FlowDirection, System.Windows.Forms">
+    <value>TopDown</value>
+  </data>
+  <data name="occursLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 18</value>
+  </data>
+  <data name="rangeOfRecurrenceStartDateLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 17</value>
+  </data>
+  <data name="&gt;&gt;documentLinksLeftPanel.Name" xml:space="preserve">
+    <value>documentLinksLeftPanel</value>
+  </data>
+  <data name="cancelButton.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>White</value>
+  </data>
+  <data name="recurrencePatternGroupBox.Text" xml:space="preserve">
+    <value>Recurrence Pattern</value>
+  </data>
+  <data name="schedulePanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>708, 92</value>
+  </data>
+  <data name="scheduleLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 13</value>
+  </data>
+  <data name="&gt;&gt;documentLinksControl.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.Controls.DocumentLinksControl, Operator Log Tool, Version=4.16.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="commentsLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="supervisionCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>333, 19</value>
+  </data>
+  <data name="processControlCheckBox.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;documentLinksPanel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltPanel, Operator Log Tool, Version=4.16.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;multipleFlocLeftPanel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltPanel, Operator Log Tool, Version=4.16.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;documentLinksLabel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Operator Log Tool, Version=4.16.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;scheduleLeftPanel.Name" xml:space="preserve">
+    <value>scheduleLeftPanel</value>
+  </data>
+  <data name="&gt;&gt;occursLabel.Parent" xml:space="preserve">
+    <value>recurrencePatternGroupBox</value>
+  </data>
+  <data name="&gt;&gt;recurrenceStartDateData.Parent" xml:space="preserve">
+    <value>rangeOfRecurrenceGroupBox</value>
+  </data>
+  <data name="rangeOfRecurrenceEndDateLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>181, 17</value>
+  </data>
+  <data name="followUpLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 13</value>
+  </data>
+  <data name="recurrenceEndDateData.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;dateTimeLeftPanel.Parent" xml:space="preserve">
+    <value>dateTimePanel</value>
+  </data>
+  <data name="otherCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="customFieldsLabel.Text" xml:space="preserve">
+    <value>Custom Fields</value>
+  </data>
+  <data name="&gt;&gt;multipleFlocPanel.Parent" xml:space="preserve">
+    <value>mainFlowLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;creationDateTimeLabel.Parent" xml:space="preserve">
+    <value>dateTimeLeftPanel</value>
+  </data>
+  <data name="raiseStartTimeLabel.Text" xml:space="preserve">
+    <value>Start Time:</value>
+  </data>
+  <data name="&gt;&gt;dateTimeLeftPanel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltPanel, Operator Log Tool, Version=4.16.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;creationDateTimeLabel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="recurrencePatternGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>546, 40</value>
+  </data>
+  <data name="documentLinksLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>81, 13</value>
+  </data>
+  <data name="supervisionCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>81, 17</value>
+  </data>
+  <data name="&gt;&gt;raiseStartTimeData.Name" xml:space="preserve">
+    <value>raiseStartTimeData</value>
+  </data>
+  <data name="createLogForEachFlocRadioButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 7</value>
+  </data>
+  <data name="raiseTimeGroupBox.Text" xml:space="preserve">
+    <value>Raise Time</value>
+  </data>
+  <data name="scheduleLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>75, 7</value>
+  </data>
+  <data name="&gt;&gt;multipleFlocPanel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltPanel, Operator Log Tool, Version=4.16.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="operationsCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;recurrencePatternData.Parent" xml:space="preserve">
+    <value>recurrencePatternGroupBox</value>
+  </data>
+  <data name="&gt;&gt;scheduleLeftPanel.Parent" xml:space="preserve">
+    <value>schedulePanel</value>
+  </data>
+  <data name="&gt;&gt;raiseStartTimeData.Parent" xml:space="preserve">
+    <value>raiseTimeGroupBox</value>
+  </data>
+  <data name="commentsLeftPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="&gt;&gt;flocLeftPanel.Name" xml:space="preserve">
+    <value>flocLeftPanel</value>
+  </data>
+  <data name="workAssignmentLeftPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="&gt;&gt;flocLeftPanel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="followUpLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>72, 7</value>
+  </data>
+  <data name="functionalLocationLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="flocLeftPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;rangeOfRecurrenceGroupBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;follupupGroupBox.Name" xml:space="preserve">
+    <value>follupupGroupBox</value>
+  </data>
+  <data name="&gt;&gt;dateTimeLeftPanel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;commentsLeftPanel.Name" xml:space="preserve">
+    <value>commentsLeftPanel</value>
+  </data>
+  <data name="scheduleLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;workAssignmentTextBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="followupPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="&gt;&gt;toolStrip1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;commentsPanel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="recurrencePatternData.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="recurrenceEndDateData.Size" type="System.Drawing.Size, System.Drawing">
+    <value>67, 13</value>
+  </data>
+  <data name="recurrenceStartDateData.Text" xml:space="preserve">
+    <value>25 Dec 2005</value>
+  </data>
+  <data name="createOneLogForAllFlocsRadioButton.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="detailsPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="customFieldsLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 13</value>
+  </data>
+  <data name="recurrenceStartDateData.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="commentsDisplayControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>561, 197</value>
+  </data>
+  <data name="&gt;&gt;creationDateTimeTextBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <metadata name="toolStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>0, 0</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>fr</value>
+  </metadata>
+</root>

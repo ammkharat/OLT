@@ -1,0 +1,1982 @@
+Index: Controls/Page/AbstractLogDefinitionPage.cs
+===================================================================
+--- Controls/Page/AbstractLogDefinitionPage.cs	(revision 7771)
++++ Controls/Page/AbstractLogDefinitionPage.cs	(working copy)
+@@ -1,10 +1,11 @@
+ using Com.Suncor.Olt.Client.Controls.Details;
+ using Com.Suncor.Olt.Client.Controls.GridRenderer;
+ using Com.Suncor.Olt.Common.DTO;
++using Com.Suncor.Olt.Common.Domain;
+ 
+ namespace Com.Suncor.Olt.Client.Controls.Page
+ {
+-    public abstract class AbstractLogDefinitionPage : AbstractPage<LogDefinitionDTO, ILogDefinitionDetails>, ILogDefinitionPage
++    public abstract class AbstractLogDefinitionPage : AbstractPage<LogDefinitionDTO, LogDefinition, ILogDefinitionDetails>, ILogDefinitionPage
+     {
+         protected AbstractLogDefinitionPage(LogDefinitionGridRenderer gridRenderer)
+             : base(new DomainSummaryGrid<LogDefinitionDTO>(gridRenderer, OltGridAppearance.MULTI_SELECT_WRAPPED_TEXT, string.Empty), new LogDefinitionDetails())
+Index: Controls/Page/AbstractLogPage.cs
+===================================================================
+--- Controls/Page/AbstractLogPage.cs	(revision 7771)
++++ Controls/Page/AbstractLogPage.cs	(working copy)
+@@ -7,7 +7,7 @@
+ 
+ namespace Com.Suncor.Olt.Client.Controls.Page
+ {
+-    public abstract class AbstractLogPage : AbstractPage<LogDTO, ILogDetails>, ILogPage
++    public abstract class AbstractLogPage : AbstractPage<LogDTO, Log, ILogDetails>, ILogPage
+     {
+         protected AbstractLogPage(ILogDetails logDetails)
+             : this(logDetails, new LogGridRenderer(true, LogType.Standard, false))
+@@ -53,9 +53,9 @@
+             get { return Details.ShowTreePanel; }
+         }
+        
+-        protected override bool IsCreatedByCurrentUser(LogDTO log)
++        protected override bool IsCreatedByCurrentUser(LogDTO deviationAlertDto)
+         {
+-            return (log != null && log.CreatedByUserId == ClientSession.GetUserContext().User.Id);  
++            return (deviationAlertDto != null && deviationAlertDto.CreatedByUserId == ClientSession.GetUserContext().User.Id);  
+         }
+ 
+         protected override bool IsUpdatedByCurrentUser(LogDTO log)
+@@ -77,5 +77,10 @@
+         {
+             get { return Details; }
+         }
++
++        protected override LogDTO CreateDto(Log domainObject)
++        {
++            return new LogDTO(domainObject);
++        }
+     }
+ }
+Index: Controls/Page/AbstractPage.cs
+===================================================================
+--- Controls/Page/AbstractPage.cs	(revision 7771)
++++ Controls/Page/AbstractPage.cs	(working copy)
+@@ -15,20 +15,22 @@
+ 
+ namespace Com.Suncor.Olt.Client.Controls.Page
+ {
+-    public abstract class AbstractPage<TDto, TDetails> : BasePage, IDomainPage<TDto, TDetails>
++    public abstract class AbstractPage<TDto, TDomainObject, TDetails> : BasePage, IDomainPage<TDto, TDomainObject, TDetails>
+         where TDto : DomainObject
++        where TDomainObject : DomainObject
+         where TDetails : IDetails
+     {
+-        private static readonly ILog logger = GenericLogManager.GetLogger<AbstractPage<TDto, TDetails>>();
++        private static readonly ILog logger = GenericLogManager.GetLogger<AbstractPage<TDto, TDomainObject, TDetails>>();
+ 
+         private readonly TDetails details;
+         protected readonly DomainSummaryGrid<TDto> grid;
+ 
+-        public event EventHandler DetailsChanged;
+         public event EventHandler ButtonsChanged;
+ 
+-        protected abstract bool IsCreatedByCurrentUser(TDto dto);
++        protected abstract bool IsCreatedByCurrentUser(TDto deviationAlertDto);
+         protected abstract bool IsUpdatedByCurrentUser(TDto dto);
++        
++        protected abstract TDto CreateDto(TDomainObject domainObject);
+ 
+         public abstract PageKey PageKey { get; }
+ 
+@@ -192,15 +194,10 @@
+                 ButtonsChanged(this, EventArgs.Empty);
+         }
+ 
+-        private void OnDetailsChanged()
++        public void AddItem(TDomainObject domainObject)
+         {
+-            if (DetailsChanged != null)
+-                DetailsChanged(this, EventArgs.Empty);
+-        }
+-
+-        public void AddItem(TDto dto)
+-        {
+-            if (!ItemIsInGrid(dto))
++            TDto dto = CreateDto(domainObject);
++            if (!ItemIsInGrid(domainObject))
+             {
+                 grid.AddItem(dto);
+ 
+@@ -218,65 +215,65 @@
+             }
+         }
+ 
+-        public bool ItemIsInGrid(TDto dto)
++        public bool ItemIsInGrid(TDomainObject domainObject)
+         {
+-            return grid.FindItem(dto.Id) != null;
++            return grid.ItemExists(domainObject.Id);
+         }
+ 
+-        public void UpdateItem(TDto dto)
++        public void UpdateItem(TDomainObject domainObject)
+         {
+-            TDto updatedVersion = dto;
+-            TDto oldVersion = grid.FindItem(dto.Id);
++            TDto oldVersion = grid.FindItem(domainObject.Id);
+             int updateIndex = grid.Items.IndexOf(oldVersion);
+ 
+             // Got an Update Event for an item not in our list. So, ignore it.
+             if (updateIndex == -1)
+                 return;
+ 
++            TDto updatedVersion = CreateDto(domainObject);
+             grid.UpdateItem(updateIndex, updatedVersion);
+ 
+             // The item that was updated is the item showing in the details pane, so reselect it
+             if (DetailsPaneItem != null && updatedVersion.Id == DetailsPaneItem.Id)
+             {
+                 SelectSingleItemById(updatedVersion.Id);
+-                OnDetailsChanged();
+             }
+ 
+-            if (IsUpdatedByCurrentUser(dto))
++            if (IsUpdatedByCurrentUser(updatedVersion))
+             {
+-                grid.ScrollToItemById(dto.Id);
++                grid.ScrollToItemById(updatedVersion.Id);
+             }
+ 
+             OnButtonsChanged();
+         }
+ 
+-        public void RemoveItem(TDto dto)
++        public void RemoveItem(TDomainObject domainObject)
+         {
+-            TDto toBeRemoved = grid.FindItem(dto.Id);
++            TDto toBeRemoved = grid.FindItem(domainObject.Id);
+ 
+             // Somehow we got notified of an event for an item that we don't care about cause it's not in our visible list.
+             if (toBeRemoved == null)
+                 return;
+ 
+             grid.RemoveItem(toBeRemoved);
+-            
++
+             if (Items.Count == 0)
+             {
+                 // Nothing in the grid now, so make sure Buttons and Details are updated
+-                OnDetailsChanged();
++                OnDetailsChanged(domainObject);
+                 OnButtonsChanged();
+             }
+-            else if (FirstSelectedItem != null && FirstSelectedItem.Id == dto.Id)
++            else if (FirstSelectedItem != null && FirstSelectedItem.Id == toBeRemoved.Id)
+             {
+                 // Removing the First Item selected, so Details and Buttons should be notified.
+-                OnDetailsChanged();
++                OnDetailsChanged(domainObject);
+                 OnButtonsChanged();
+             }
+-            else if (SelectedItemsContains(dto))
++            else if (SelectedItemsContains(toBeRemoved))
+             {
+                 // Removing one of the other selected items, so update the buttons.
+                 OnButtonsChanged();
+             }
++            
+         }
+ 
+         private bool SelectedItemsContains(TDto dto)
+Index: Controls/Page/AbstractShiftHandoverQuestionnairePage.cs
+===================================================================
+--- Controls/Page/AbstractShiftHandoverQuestionnairePage.cs	(revision 7771)
++++ Controls/Page/AbstractShiftHandoverQuestionnairePage.cs	(working copy)
+@@ -1,10 +1,11 @@
+ ﻿using Com.Suncor.Olt.Client.Controls.Details;
+ using Com.Suncor.Olt.Client.Controls.GridRenderer;
+ using Com.Suncor.Olt.Common.DTO;
++using Com.Suncor.Olt.Common.Domain.ShiftHandover;
+ 
+ namespace Com.Suncor.Olt.Client.Controls.Page
+ {
+-    public abstract class AbstractShiftHandoverQuestionnairePage : AbstractPage<ShiftHandoverQuestionnaireDTO, IShiftHandoverQuestionnaireDetails>, IShiftHandoverQuestionnairePage
++    public abstract class AbstractShiftHandoverQuestionnairePage : AbstractPage<ShiftHandoverQuestionnaireDTO, ShiftHandoverQuestionnaire, IShiftHandoverQuestionnaireDetails>, IShiftHandoverQuestionnairePage
+     {
+         protected AbstractShiftHandoverQuestionnairePage()
+             : base(
+@@ -16,11 +17,16 @@
+         {
+         }
+ 
+-        protected override bool IsCreatedByCurrentUser(ShiftHandoverQuestionnaireDTO questionnaire)
++        protected override ShiftHandoverQuestionnaireDTO CreateDto(ShiftHandoverQuestionnaire domainObject)
+         {
+-            return questionnaire != null && questionnaire.CreateUserId == ClientSession.GetUserContext().User.Id;
++            return new ShiftHandoverQuestionnaireDTO(domainObject);
+         }
+ 
++        protected override bool IsCreatedByCurrentUser(ShiftHandoverQuestionnaireDTO deviationAlertDto)
++        {
++            return deviationAlertDto != null && deviationAlertDto.CreateUserId == ClientSession.GetUserContext().User.Id;
++        }
++
+         protected override bool IsUpdatedByCurrentUser(ShiftHandoverQuestionnaireDTO questionnaire)
+         {
+             // TODO: #1490 need to have last modified user so that we can decide to scroll to this item in the case that the user updated the item and it disappeared from the grid.
+Index: Controls/Page/ActionItemDefinitionPage.cs
+===================================================================
+--- Controls/Page/ActionItemDefinitionPage.cs	(revision 7771)
++++ Controls/Page/ActionItemDefinitionPage.cs	(working copy)
+@@ -10,7 +10,7 @@
+ 
+ namespace Com.Suncor.Olt.Client.Controls.Page
+ {
+-    public class ActionItemDefinitionPage : AbstractPage<ActionItemDefinitionDTO, IActionItemDefinitionDetails>, IActionItemDefinitionPage
++    public class ActionItemDefinitionPage : AbstractPage<ActionItemDefinitionDTO, ActionItemDefinition, IActionItemDefinitionDetails>, IActionItemDefinitionPage
+     {
+         public ActionItemDefinitionPage()
+             :base
+@@ -21,6 +21,11 @@
+         {
+         }
+ 
++        protected override ActionItemDefinitionDTO CreateDto(ActionItemDefinition domainObject)
++        {
++            return new ActionItemDefinitionDTO(domainObject);
++        }
++
+         public override PageKey PageKey
+         {
+             get { return PageKey.ACTION_ITEM_DEFINITION_PAGE; }
+@@ -33,11 +38,11 @@
+             form.ShowDialog(this);
+         }
+ 
+-        protected override bool IsCreatedByCurrentUser(ActionItemDefinitionDTO actionItemDefinition)
++        protected override bool IsCreatedByCurrentUser(ActionItemDefinitionDTO deviationAlertDto)
+         {
+             // TODO: this should be using CreatedUserId if it exstined on the DTO
+-            return (actionItemDefinition != null 
+-                    && actionItemDefinition.LastModifiedUserId == ClientSession.GetUserContext().User.Id);
++            return (deviationAlertDto != null 
++                    && deviationAlertDto.LastModifiedUserId == ClientSession.GetUserContext().User.Id);
+         }
+ 
+         protected override bool IsUpdatedByCurrentUser(ActionItemDefinitionDTO actionItemDefinition)
+Index: Controls/Page/ActionItemPage.cs
+===================================================================
+--- Controls/Page/ActionItemPage.cs	(revision 7771)
++++ Controls/Page/ActionItemPage.cs	(working copy)
+@@ -8,7 +8,7 @@
+ 
+ namespace Com.Suncor.Olt.Client.Controls.Page
+ {
+-    public class ActionItemPage : AbstractPage<ActionItemDTO, IActionItemDetails>, IActionItemPage
++    public class ActionItemPage : AbstractPage<ActionItemDTO, ActionItem, IActionItemDetails>, IActionItemPage
+     {
+         public ActionItemPage()
+             :base(
+@@ -18,16 +18,21 @@
+         {
+         }
+ 
++        protected override ActionItemDTO CreateDto(ActionItem domainObject)
++        {
++            return new ActionItemDTO(domainObject);
++        }
++
+         public override PageKey PageKey
+         {
+             get { return PageKey.ACTION_ITEM_PAGE; }
+         }
+ 
+-        protected override bool IsCreatedByCurrentUser(ActionItemDTO actionItem)
++        protected override bool IsCreatedByCurrentUser(ActionItemDTO deviationAlertDto)
+         {
+             // TODO: this should be using CreatedUserId if it exstined on the DTO
+-             return (actionItem != null 
+-                     && actionItem.LastModifiedUserId == ClientSession.GetUserContext().User.Id);
++             return (deviationAlertDto != null 
++                     && deviationAlertDto.LastModifiedUserId == ClientSession.GetUserContext().User.Id);
+         }
+ 
+         protected override bool IsUpdatedByCurrentUser(ActionItemDTO actionItem)
+Index: Controls/Page/CokerCardPage.cs
+===================================================================
+--- Controls/Page/CokerCardPage.cs	(revision 7771)
++++ Controls/Page/CokerCardPage.cs	(working copy)
+@@ -2,10 +2,11 @@
+ using Com.Suncor.Olt.Client.Controls.GridRenderer;
+ using Com.Suncor.Olt.Common.Domain;
+ using Com.Suncor.Olt.Common.DTO;
++using Com.Suncor.Olt.Common.Domain.CokerCard;
+ 
+ namespace Com.Suncor.Olt.Client.Controls.Page
+ {
+-    public class CokerCardPage : AbstractPage<CokerCardDTO, ICokerCardDetails>, ICokerCardPage
++    public class CokerCardPage : AbstractPage<CokerCardDTO, CokerCard, ICokerCardDetails>, ICokerCardPage
+     {
+         public CokerCardPage() : base(
+             new DomainSummaryGrid<CokerCardDTO>(
+@@ -15,14 +16,19 @@
+         {
+         }
+ 
++        protected override CokerCardDTO CreateDto(CokerCard domainObject)
++        {
++            return new CokerCardDTO(domainObject);
++        }
++
+         public override PageKey PageKey
+         {
+             get { return PageKey.COKER_CARD_PAGE; }
+         }
+ 
+-        protected override bool IsCreatedByCurrentUser(CokerCardDTO dto)
++        protected override bool IsCreatedByCurrentUser(CokerCardDTO deviationAlertDto)
+         {
+-            return (dto != null && dto.CreatedByUserId == ClientSession.GetUserContext().User.Id);  
++            return (deviationAlertDto != null && deviationAlertDto.CreatedByUserId == ClientSession.GetUserContext().User.Id);  
+         }
+ 
+         protected override bool IsUpdatedByCurrentUser(CokerCardDTO dto)
+@@ -30,6 +36,5 @@
+             // TODO: 
+             return false;
+         }
+-
+     }
+ }
+Index: Controls/Page/ConfinedSpacePage.cs
+===================================================================
+--- Controls/Page/ConfinedSpacePage.cs	(revision 7771)
++++ Controls/Page/ConfinedSpacePage.cs	(working copy)
+@@ -4,11 +4,12 @@
+ using Com.Suncor.Olt.Client.OltControls;
+ using Com.Suncor.Olt.Common.DTO;
+ using Com.Suncor.Olt.Common.Domain;
++using Com.Suncor.Olt.Common.Domain.WorkPermit;
+ using Com.Suncor.Olt.Common.Localization;
+ 
+ namespace Com.Suncor.Olt.Client.Controls.Page
+ {
+-    public class ConfinedSpacePage: AbstractPage<ConfinedSpaceDTO, IConfinedSpaceDetails>, IConfinedSpacePage
++    public class ConfinedSpacePage: AbstractPage<ConfinedSpaceDTO, ConfinedSpace, IConfinedSpaceDetails>, IConfinedSpacePage
+     {
+         public ConfinedSpacePage(OltGridAppearance appearance): base(
+             new DomainSummaryGrid<ConfinedSpaceDTO>(new ConfinedSpaceGridRenderer(), appearance, "confinedSpaceGrid"),
+@@ -16,9 +17,9 @@
+         {
+         }
+ 
+-        protected override bool IsCreatedByCurrentUser(ConfinedSpaceDTO dto)
++        protected override bool IsCreatedByCurrentUser(ConfinedSpaceDTO deviationAlertDto)
+         {
+-            return (dto != null && dto.CreatedByUserId == ClientSession.GetUserContext().User.Id);
++            return (deviationAlertDto != null && deviationAlertDto.CreatedByUserId == ClientSession.GetUserContext().User.Id);
+         }
+ 
+         protected override bool IsUpdatedByCurrentUser(ConfinedSpaceDTO dto)
+@@ -26,6 +27,11 @@
+             return (dto != null && dto.LastModifiedByFullnameWithUserName.Equals(ClientSession.GetUserContext().User.FullNameWithUserName));
+         }
+ 
++        protected override ConfinedSpaceDTO CreateDto(ConfinedSpace domainObject)
++        {
++            return new ConfinedSpaceDTO(domainObject);
++        }
++
+         public override PageKey PageKey
+         {
+             get { return PageKey.CONFINED_SPACE_PAGE; }
+Index: Controls/Page/DailyDirectivesLogPage.cs
+===================================================================
+--- Controls/Page/DailyDirectivesLogPage.cs	(revision 7771)
++++ Controls/Page/DailyDirectivesLogPage.cs	(working copy)
+@@ -1,6 +1,7 @@
+ ﻿using Com.Suncor.Olt.Client.Controls.Details;
+ using Com.Suncor.Olt.Client.Controls.GridRenderer;
+ using Com.Suncor.Olt.Client.Forms;
++using Com.Suncor.Olt.Common.DTO;
+ using Com.Suncor.Olt.Common.Domain;
+ 
+ namespace Com.Suncor.Olt.Client.Controls.Page
+@@ -12,6 +13,11 @@
+         {
+         }
+ 
++        protected override LogDTO CreateDto(Log domainObject)
++        {
++            return new LogDTO(domainObject);
++        }
++
+         public override PageKey PageKey
+         {
+             get { return PageKey.DAILY_DIRECTIVES_LOG_PAGE; }
+Index: Controls/Page/DeviationAlertPage.cs
+===================================================================
+--- Controls/Page/DeviationAlertPage.cs	(revision 7771)
++++ Controls/Page/DeviationAlertPage.cs	(working copy)
+@@ -2,10 +2,11 @@
+ using Com.Suncor.Olt.Client.Controls.GridRenderer;
+ using Com.Suncor.Olt.Common.Domain;
+ using Com.Suncor.Olt.Common.DTO;
++using Com.Suncor.Olt.Common.Domain.Restriction;
+ 
+ namespace Com.Suncor.Olt.Client.Controls.Page
+ {
+-    public class DeviationAlertPage : AbstractPage<DeviationAlertDTO, IDeviationAlertDetails>, IDeviationAlertPage
++    public class DeviationAlertPage : AbstractPage<DeviationAlertDTO, DeviationAlert, IDeviationAlertDetails>, IDeviationAlertPage
+     {
+         public DeviationAlertPage()
+             : base(new DomainSummaryGrid<DeviationAlertDTO>(
+@@ -14,16 +15,21 @@
+         {
+         }
+ 
++        protected override DeviationAlertDTO CreateDto(DeviationAlert domainObject)
++        {
++            return new DeviationAlertDTO(domainObject);
++        }
++
+         public override PageKey PageKey
+         {
+             get { return PageKey.DEVIATION_ALERT_PAGE; }
+         }
+ 
+-        protected override bool IsCreatedByCurrentUser(DeviationAlertDTO deviationAlertDTO)
++        protected override bool IsCreatedByCurrentUser(DeviationAlertDTO deviationAlertDto)
+         {
+             // TODO: This should use created by user.
+-            return deviationAlertDTO != null
+-                   && deviationAlertDTO.LastModifiedUserId == ClientSession.GetUserContext().User.Id;
++            return deviationAlertDto != null
++                   && deviationAlertDto.LastModifiedUserId == ClientSession.GetUserContext().User.Id;
+         }
+ 
+         protected override bool IsUpdatedByCurrentUser(DeviationAlertDTO deviationAlertDTO)
+Index: Controls/Page/FormPage.cs
+===================================================================
+--- Controls/Page/FormPage.cs	(revision 7771)
++++ Controls/Page/FormPage.cs	(working copy)
+@@ -8,7 +8,7 @@
+ 
+ namespace Com.Suncor.Olt.Client.Controls.Page
+ {
+-    public class FormPage : AbstractPage<FormDTO, IFormDetails>, IFormPage
++    public class FormPage : AbstractPage<FormDTO, BaseForm, IFormDetails>, IFormPage
+     {
+         public FormPage(OltGridAppearance appearance, FormGridRenderer formGridRenderer)
+             : base(
+@@ -27,6 +27,11 @@
+             return (dto != null && dto.LastModifiedByUserId == ClientSession.GetUserContext().User.Id);
+         }
+ 
++        protected override FormDTO CreateDto(BaseForm domainObject)
++        {
++            return domainObject.CreateDTO();
++        }
++
+         public override PageKey PageKey
+         {
+             get { return PageKey.FORM_PAGE; }
+Index: Controls/Page/IActionItemDefinitionPage.cs
+===================================================================
+--- Controls/Page/IActionItemDefinitionPage.cs	(revision 7771)
++++ Controls/Page/IActionItemDefinitionPage.cs	(working copy)
+@@ -1,10 +1,11 @@
+ using System.Collections.Generic;
+ using Com.Suncor.Olt.Client.Controls.Details;
+ using Com.Suncor.Olt.Common.DTO;
++using Com.Suncor.Olt.Common.Domain;
+ 
+ namespace Com.Suncor.Olt.Client.Controls.Page
+ {
+-    public interface IActionItemDefinitionPage : IDomainPage<ActionItemDefinitionDTO, IActionItemDefinitionDetails> 
++    public interface IActionItemDefinitionPage : IDomainPage<ActionItemDefinitionDTO, ActionItemDefinition, IActionItemDefinitionDetails> 
+     {
+         void ShowAssociatedLogForm(List<LogDTO> logDtos);
+         bool ShouldClearCurrentActionItemsForDefinitionUpdate { get; }
+Index: Controls/Page/IActionItemPage.cs
+===================================================================
+--- Controls/Page/IActionItemPage.cs	(revision 7771)
++++ Controls/Page/IActionItemPage.cs	(working copy)
+@@ -1,10 +1,11 @@
+ using System.Collections.Generic;
+ using Com.Suncor.Olt.Client.Controls.Details;
+ using Com.Suncor.Olt.Common.DTO;
++using Com.Suncor.Olt.Common.Domain;
+ 
+ namespace Com.Suncor.Olt.Client.Controls.Page
+ {
+-    public interface IActionItemPage : IDomainPage<ActionItemDTO, IActionItemDetails>
++    public interface IActionItemPage : IDomainPage<ActionItemDTO, ActionItem, IActionItemDetails>
+     {
+         void ShowAssociatedLogForm(List<LogDTO> logDtos);
+     }
+Index: Controls/Page/ICokerCardPage.cs
+===================================================================
+--- Controls/Page/ICokerCardPage.cs	(revision 7771)
++++ Controls/Page/ICokerCardPage.cs	(working copy)
+@@ -1,9 +1,10 @@
+ using Com.Suncor.Olt.Client.Controls.Details;
+ using Com.Suncor.Olt.Common.DTO;
++using Com.Suncor.Olt.Common.Domain.CokerCard;
+ 
+ namespace Com.Suncor.Olt.Client.Controls.Page
+ {
+-    public interface ICokerCardPage : IDomainPage<CokerCardDTO, ICokerCardDetails>
++    public interface ICokerCardPage : IDomainPage<CokerCardDTO, CokerCard, ICokerCardDetails>
+     {
+     }
+ }
+Index: Controls/Page/IConfinedSpacePage.cs
+===================================================================
+--- Controls/Page/IConfinedSpacePage.cs	(revision 7771)
++++ Controls/Page/IConfinedSpacePage.cs	(working copy)
+@@ -1,9 +1,10 @@
+ using Com.Suncor.Olt.Client.Controls.Details;
+ using Com.Suncor.Olt.Common.DTO;
++using Com.Suncor.Olt.Common.Domain.WorkPermit;
+ 
+ namespace Com.Suncor.Olt.Client.Controls.Page
+ {
+-    public interface IConfinedSpacePage : IDomainPage<ConfinedSpaceDTO, IConfinedSpaceDetails>
++    public interface IConfinedSpacePage : IDomainPage<ConfinedSpaceDTO, ConfinedSpace, IConfinedSpaceDetails>
+     {
+         void DisplayInvalidPrintMessage(string message);
+     }
+Index: Controls/Page/IDeviationAlertPage.cs
+===================================================================
+--- Controls/Page/IDeviationAlertPage.cs	(revision 7771)
++++ Controls/Page/IDeviationAlertPage.cs	(working copy)
+@@ -1,10 +1,10 @@
+-using System;
+ using Com.Suncor.Olt.Client.Controls.Details;
+ using Com.Suncor.Olt.Common.DTO;
++using Com.Suncor.Olt.Common.Domain.Restriction;
+ 
+ namespace Com.Suncor.Olt.Client.Controls.Page
+ {
+-    public interface IDeviationAlertPage : IDomainPage<DeviationAlertDTO, IDeviationAlertDetails>
++    public interface IDeviationAlertPage : IDomainPage<DeviationAlertDTO, DeviationAlert, IDeviationAlertDetails>
+     {
+     }
+ }
+\ No newline at end of file
+Index: Controls/Page/IDomainPage.cs
+===================================================================
+--- Controls/Page/IDomainPage.cs	(revision 7771)
++++ Controls/Page/IDomainPage.cs	(working copy)
+@@ -8,11 +8,11 @@
+ 
+ namespace Com.Suncor.Olt.Client.Controls.Page
+ {
+-    public interface IDomainPage<TDomainObject, TDetails> : IItemSelectablePage
++    public interface IDomainPage<TDto, TDomainObject, TDetails> : IItemSelectablePage
++        where TDto : DomainObject
+         where TDomainObject : DomainObject
+         where TDetails : IDetails
+     {
+-        event EventHandler DetailsChanged;
+         event EventHandler ButtonsChanged;
+         
+         event Action<string> SearchButtonClicked;
+@@ -27,13 +27,13 @@
+         void HideDetails();
+         bool ButtonsEnabled { set; }
+ 
+-        IList<TDomainObject> Items { get; set; }
+-        TDomainObject FirstSelectedItem { get; }
+-        List<TDomainObject> SelectedItems { get; }
++        IList<TDto> Items { get; set; }
++        TDto FirstSelectedItem { get; }
++        List<TDto> SelectedItems { get; }
+         bool ItemIsInGrid(TDomainObject item);
+         
+         TDetails Details { get; }
+-        DomainSummaryGrid<TDomainObject> Grid { get; }
++        DomainSummaryGrid<TDto> Grid { get; }
+ 
+         void CancelSuccessfulMessage();
+         void DeleteSuccessfulMessage();
+Index: Controls/Page/IFormPage.cs
+===================================================================
+--- Controls/Page/IFormPage.cs	(revision 7771)
++++ Controls/Page/IFormPage.cs	(working copy)
+@@ -1,9 +1,10 @@
+ ﻿using Com.Suncor.Olt.Client.Controls.Details;
+ using Com.Suncor.Olt.Common.DTO;
++using Com.Suncor.Olt.Common.Domain;
+ 
+ namespace Com.Suncor.Olt.Client.Controls.Page
+ {
+-    public interface IFormPage : IDomainPage<FormDTO, IFormDetails>
++    public interface IFormPage : IDomainPage<FormDTO, BaseForm, IFormDetails>
+     {
+         void CloseSuccessfulMessage();
+     }
+Index: Controls/Page/ILabAlertDefinitionPage.cs
+===================================================================
+--- Controls/Page/ILabAlertDefinitionPage.cs	(revision 7771)
++++ Controls/Page/ILabAlertDefinitionPage.cs	(working copy)
+@@ -1,9 +1,10 @@
+ using Com.Suncor.Olt.Client.Controls.Details;
+ using Com.Suncor.Olt.Common.DTO;
++using Com.Suncor.Olt.Common.Domain.LabAlert;
+ 
+ namespace Com.Suncor.Olt.Client.Controls.Page
+ {
+-    public interface ILabAlertDefinitionPage : IDomainPage<LabAlertDefinitionDTO, ILabAlertDefinitionDetails>
++    public interface ILabAlertDefinitionPage : IDomainPage<LabAlertDefinitionDTO, LabAlertDefinition, ILabAlertDefinitionDetails>
+     {
+     }
+ }
+Index: Controls/Page/ILabAlertPage.cs
+===================================================================
+--- Controls/Page/ILabAlertPage.cs	(revision 7771)
++++ Controls/Page/ILabAlertPage.cs	(working copy)
+@@ -1,9 +1,10 @@
+ using Com.Suncor.Olt.Client.Controls.Details;
+ using Com.Suncor.Olt.Common.DTO;
++using Com.Suncor.Olt.Common.Domain.LabAlert;
+ 
+ namespace Com.Suncor.Olt.Client.Controls.Page
+ {
+-    public interface ILabAlertPage : IDomainPage<LabAlertDTO, ILabAlertDetails>
++    public interface ILabAlertPage : IDomainPage<LabAlertDTO, LabAlert, ILabAlertDetails>
+     {
+     }
+ }
+\ No newline at end of file
+Index: Controls/Page/ILogDefinitionPage.cs
+===================================================================
+--- Controls/Page/ILogDefinitionPage.cs	(revision 7771)
++++ Controls/Page/ILogDefinitionPage.cs	(working copy)
+@@ -1,9 +1,10 @@
+ using Com.Suncor.Olt.Client.Controls.Details;
+ using Com.Suncor.Olt.Common.DTO;
++using Com.Suncor.Olt.Common.Domain;
+ 
+ namespace Com.Suncor.Olt.Client.Controls.Page
+ {
+-    public interface ILogDefinitionPage : IDomainPage<LogDefinitionDTO, ILogDefinitionDetails>
++    public interface ILogDefinitionPage : IDomainPage<LogDefinitionDTO, LogDefinition, ILogDefinitionDetails>
+     {
+     }
+ }
+Index: Controls/Page/ILogPage.cs
+===================================================================
+--- Controls/Page/ILogPage.cs	(revision 7771)
++++ Controls/Page/ILogPage.cs	(working copy)
+@@ -4,7 +4,7 @@
+ 
+ namespace Com.Suncor.Olt.Client.Controls.Page
+ {
+-    public interface ILogPage : IDomainPage<LogDTO, ILogDetails>, IThreadedItemsPage
++    public interface ILogPage : IDomainPage<LogDTO, Log, ILogDetails>, IThreadedItemsPage
+     {        
+         void LaunchCreateForm(Log log);
+         void LaunchCreateReplyForm(Log logToReplyTo);
+Index: Controls/Page/IPermitRequestEdmontonPage.cs
+===================================================================
+--- Controls/Page/IPermitRequestEdmontonPage.cs	(revision 7771)
++++ Controls/Page/IPermitRequestEdmontonPage.cs	(working copy)
+@@ -1,9 +1,10 @@
+ using Com.Suncor.Olt.Client.Controls.Details;
+ using Com.Suncor.Olt.Common.DTO;
++using Com.Suncor.Olt.Common.Domain.WorkPermit;
+ 
+ namespace Com.Suncor.Olt.Client.Controls.Page
+ {
+-    public interface IPermitRequestEdmontonPage : IDomainPage<PermitRequestEdmontonDTO, IPermitRequestEdmontonDetails>
++    public interface IPermitRequestEdmontonPage : IDomainPage<PermitRequestEdmontonDTO, PermitRequestEdmonton, IPermitRequestEdmontonDetails>
+     {
+     }
+ }
+Index: Controls/Page/IPermitRequestLubesPage.cs
+===================================================================
+--- Controls/Page/IPermitRequestLubesPage.cs	(revision 7771)
++++ Controls/Page/IPermitRequestLubesPage.cs	(working copy)
+@@ -1,9 +1,10 @@
+ ﻿using Com.Suncor.Olt.Client.Controls.Details;
+ using Com.Suncor.Olt.Common.DTO;
++using Com.Suncor.Olt.Common.Domain.WorkPermit;
+ 
+ namespace Com.Suncor.Olt.Client.Controls.Page
+ {
+-    public interface IPermitRequestLubesPage : IDomainPage<PermitRequestLubesDTO, IPermitRequestLubesDetails>
++    public interface IPermitRequestLubesPage : IDomainPage<PermitRequestLubesDTO, PermitRequestLubes, IPermitRequestLubesDetails>
+     {
+     }
+ }
+Index: Controls/Page/IPermitRequestMontrealPage.cs
+===================================================================
+--- Controls/Page/IPermitRequestMontrealPage.cs	(revision 7771)
++++ Controls/Page/IPermitRequestMontrealPage.cs	(working copy)
+@@ -1,9 +1,10 @@
+ using Com.Suncor.Olt.Client.Controls.Details;
+ using Com.Suncor.Olt.Common.DTO;
++using Com.Suncor.Olt.Common.Domain.WorkPermit;
+ 
+ namespace Com.Suncor.Olt.Client.Controls.Page
+ {
+-    public interface IPermitRequestMontrealPage : IDomainPage<PermitRequestMontrealDTO, IPermitRequestMontrealDetails>
++    public interface IPermitRequestMontrealPage : IDomainPage<PermitRequestMontrealDTO, PermitRequestMontreal, IPermitRequestMontrealDetails>
+     {
+     }
+ }
+Index: Controls/Page/IPermitRequestOssaPage.cs
+===================================================================
+--- Controls/Page/IPermitRequestOssaPage.cs	(revision 7771)
++++ Controls/Page/IPermitRequestOssaPage.cs	(working copy)
+@@ -1,9 +1,10 @@
+ using Com.Suncor.Olt.Client.Controls.Details;
+ using Com.Suncor.Olt.Common.DTO;
++using Com.Suncor.Olt.Common.Domain.WorkPermit;
+ 
+ namespace Com.Suncor.Olt.Client.Controls.Page
+ {
+-    public interface IPermitRequestOssaPage : IDomainPage<PermitRequestOssaDTO, IPermitRequestOssaDetails>
++    public interface IPermitRequestOssaPage : IDomainPage<PermitRequestOssaDTO, PermitRequestOssa, IPermitRequestOssaDetails>
+     {
+     }
+ }
+Index: Controls/Page/IRestrictionDefinitionPage.cs
+===================================================================
+--- Controls/Page/IRestrictionDefinitionPage.cs	(revision 7771)
++++ Controls/Page/IRestrictionDefinitionPage.cs	(working copy)
+@@ -1,9 +1,10 @@
+ using Com.Suncor.Olt.Client.Controls.Details;
+ using Com.Suncor.Olt.Common.DTO;
++using Com.Suncor.Olt.Common.Domain.Restriction;
+ 
+ namespace Com.Suncor.Olt.Client.Controls.Page
+ {
+-    public interface IRestrictionDefinitionPage : IDomainPage<RestrictionDefinitionDTO, IRestrictionDefinitionDetails>
++    public interface IRestrictionDefinitionPage : IDomainPage<RestrictionDefinitionDTO, RestrictionDefinition, IRestrictionDefinitionDetails>
+     {
+     }
+ }
+Index: Controls/Page/ISAPNotificationPage.cs
+===================================================================
+--- Controls/Page/ISAPNotificationPage.cs	(revision 7771)
++++ Controls/Page/ISAPNotificationPage.cs	(working copy)
+@@ -1,9 +1,10 @@
+ using Com.Suncor.Olt.Client.Controls.Details;
+ using Com.Suncor.Olt.Common.DTO;
++using Com.Suncor.Olt.Common.Domain;
+ 
+ namespace Com.Suncor.Olt.Client.Controls.Page
+ {
+-    public interface ISAPNotificationPage : IDomainPage<SAPNotificationDTO, ISAPNotificationDetails>
++    public interface ISAPNotificationPage : IDomainPage<SAPNotificationDTO, SAPNotification, ISAPNotificationDetails>
+     {
+     }
+ }
+Index: Controls/Page/IShiftHandoverQuestionnairePage.cs
+===================================================================
+--- Controls/Page/IShiftHandoverQuestionnairePage.cs	(revision 7771)
++++ Controls/Page/IShiftHandoverQuestionnairePage.cs	(working copy)
+@@ -1,9 +1,10 @@
+ using Com.Suncor.Olt.Client.Controls.Details;
+ using Com.Suncor.Olt.Common.DTO;
++using Com.Suncor.Olt.Common.Domain.ShiftHandover;
+ 
+ namespace Com.Suncor.Olt.Client.Controls.Page
+ {
+-    public interface IShiftHandoverQuestionnairePage : IDomainPage<ShiftHandoverQuestionnaireDTO, IShiftHandoverQuestionnaireDetails>
++    public interface IShiftHandoverQuestionnairePage : IDomainPage<ShiftHandoverQuestionnaireDTO, ShiftHandoverQuestionnaire, IShiftHandoverQuestionnaireDetails>
+     {
+     }
+ }
+Index: Controls/Page/ISummaryLogPage.cs
+===================================================================
+--- Controls/Page/ISummaryLogPage.cs	(revision 7771)
++++ Controls/Page/ISummaryLogPage.cs	(working copy)
+@@ -5,7 +5,7 @@
+ 
+ namespace Com.Suncor.Olt.Client.Controls.Page
+ {
+-    public interface ISummaryLogPage : IDomainPage<SummaryLogDTO, ISummaryLogDetails>, IThreadedItemsPage
++    public interface ISummaryLogPage : IDomainPage<SummaryLogDTO, SummaryLog, ISummaryLogDetails>, IThreadedItemsPage
+     {
+         List<ReferencedLogDTO> ReferencedLogs { get; }
+         void ShowReferencedLogForm(List<LogDTO> logs);
+Index: Controls/Page/ITargetAlertPage.cs
+===================================================================
+--- Controls/Page/ITargetAlertPage.cs	(revision 7771)
++++ Controls/Page/ITargetAlertPage.cs	(working copy)
+@@ -1,10 +1,11 @@
+ using System.Collections.Generic;
+ using Com.Suncor.Olt.Client.Controls.Details;
+ using Com.Suncor.Olt.Common.DTO;
++using Com.Suncor.Olt.Common.Domain.Target;
+ 
+ namespace Com.Suncor.Olt.Client.Controls.Page
+ {
+-    public interface ITargetAlertPage : IDomainPage<TargetAlertDTO, ITargetAlertDetails>
++    public interface ITargetAlertPage : IDomainPage<TargetAlertDTO, TargetAlert, ITargetAlertDetails>
+     {
+         void ShowAssociatedLogForm(List<LogDTO> logDtos);
+     }
+Index: Controls/Page/ITargetDefinitionPage.cs
+===================================================================
+--- Controls/Page/ITargetDefinitionPage.cs	(revision 7771)
++++ Controls/Page/ITargetDefinitionPage.cs	(working copy)
+@@ -2,10 +2,11 @@
+ using Com.Suncor.Olt.Client.Controls.Details;
+ using Com.Suncor.Olt.Common.Domain;
+ using Com.Suncor.Olt.Common.DTO;
++using Com.Suncor.Olt.Common.Domain.Target;
+ 
+ namespace Com.Suncor.Olt.Client.Controls.Page
+ {
+-    public interface ITargetDefinitionPage : IDomainPage<TargetDefinitionDTO, ITargetDefinitionDetails>
++    public interface ITargetDefinitionPage : IDomainPage<TargetDefinitionDTO, TargetDefinition, ITargetDefinitionDetails>
+     {
+         void DisplayTargetDeleteDeniedMessage(List<string> parentTargetNames);
+         void DisplayTargetDeleteDeniedMessageCausedByExistingActionItemDefinition(List<string> actionItemNames);
+Index: Controls/Page/IWorkPermitEdmontonPage.cs
+===================================================================
+--- Controls/Page/IWorkPermitEdmontonPage.cs	(revision 7771)
++++ Controls/Page/IWorkPermitEdmontonPage.cs	(working copy)
+@@ -1,11 +1,11 @@
+-﻿
+-using System.Collections.Generic;
++﻿using System.Collections.Generic;
+ using Com.Suncor.Olt.Client.Controls.Details;
+ using Com.Suncor.Olt.Common.DTO;
++using Com.Suncor.Olt.Common.Domain.WorkPermit;
+ 
+ namespace Com.Suncor.Olt.Client.Controls.Page
+ {
+-    public interface IWorkPermitEdmontonPage : IDomainPage<WorkPermitEdmontonDTO, IWorkPermitEdmontonDetails>
++    public interface IWorkPermitEdmontonPage : IDomainPage<WorkPermitEdmontonDTO, WorkPermitEdmonton, IWorkPermitEdmontonDetails>
+     {
+         void DisplayInvalidPrintMessage(string workPermitPrintFailureMessageBoxText);
+         void DisplayInvalidMergeDueToFunctionalLocationMessage();
+Index: Controls/Page/IWorkPermitLubesPage.cs
+===================================================================
+--- Controls/Page/IWorkPermitLubesPage.cs	(revision 7771)
++++ Controls/Page/IWorkPermitLubesPage.cs	(working copy)
+@@ -1,9 +1,10 @@
+ ﻿using Com.Suncor.Olt.Client.Controls.Details;
+ using Com.Suncor.Olt.Common.DTO;
++using Com.Suncor.Olt.Common.Domain.WorkPermit;
+ 
+ namespace Com.Suncor.Olt.Client.Controls.Page
+ {
+-    public interface IWorkPermitLubesPage : IDomainPage<WorkPermitLubesDTO, IWorkPermitLubesDetails>
++    public interface IWorkPermitLubesPage : IDomainPage<WorkPermitLubesDTO, WorkPermitLubes, IWorkPermitLubesDetails>
+     {
+     }
+ }
+Index: Controls/Page/IWorkPermitMontrealPage.cs
+===================================================================
+--- Controls/Page/IWorkPermitMontrealPage.cs	(revision 7771)
++++ Controls/Page/IWorkPermitMontrealPage.cs	(working copy)
+@@ -1,9 +1,10 @@
+ using Com.Suncor.Olt.Client.Controls.Details;
+ using Com.Suncor.Olt.Common.DTO;
++using Com.Suncor.Olt.Common.Domain.WorkPermit;
+ 
+ namespace Com.Suncor.Olt.Client.Controls.Page
+ {
+-    public interface IWorkPermitMontrealPage : IDomainPage<WorkPermitMontrealDTO, IWorkPermitMontrealDetails>
++    public interface IWorkPermitMontrealPage : IDomainPage<WorkPermitMontrealDTO, WorkPermitMontreal, IWorkPermitMontrealDetails>
+     {
+         void DisplayInvalidPrintMessage(string message);
+         void OpenDocument(string document);
+Index: Controls/Page/IWorkPermitOssaPage.cs
+===================================================================
+--- Controls/Page/IWorkPermitOssaPage.cs	(revision 7771)
++++ Controls/Page/IWorkPermitOssaPage.cs	(working copy)
+@@ -1,10 +1,11 @@
+ ﻿using System.Collections.Generic;
+ using Com.Suncor.Olt.Client.Controls.Details;
+ using Com.Suncor.Olt.Common.DTO;
++using Com.Suncor.Olt.Common.Domain.WorkPermit;
+ 
+ namespace Com.Suncor.Olt.Client.Controls.Page
+ {
+-    public interface IWorkPermitOssaPage : IDomainPage<WorkPermitOssaDTO, IWorkPermitOssaDetails>
++    public interface IWorkPermitOssaPage : IDomainPage<WorkPermitOssaDTO, WorkPermitOssa, IWorkPermitOssaDetails>
+     {
+         void ShowAssociatedLogForm(List<LogDTO> associatedLogDtos);
+         void DisplayInvalidPrintMessage(string workPermitPrintFailureMessageBoxText);
+Index: Controls/Page/IWorkPermitPage.cs
+===================================================================
+--- Controls/Page/IWorkPermitPage.cs	(revision 7771)
++++ Controls/Page/IWorkPermitPage.cs	(working copy)
+@@ -4,7 +4,7 @@
+ 
+ namespace Com.Suncor.Olt.Client.Controls.Page
+ {
+-    public interface IWorkPermitPage : IDomainPage<WorkPermitDTO, IWorkPermitDetails>
++    public interface IWorkPermitPage : IDomainPage<WorkPermitDTO, WorkPermit, IWorkPermitDetails>
+     {
+         void DisplayInvalidWorkPermitMessage(string message, string title);
+         bool DisplayOptionalInvalidWorkPermitMessage(string message, string title);
+Index: Controls/Page/LabAlertDefinitionPage.cs
+===================================================================
+--- Controls/Page/LabAlertDefinitionPage.cs	(revision 7771)
++++ Controls/Page/LabAlertDefinitionPage.cs	(working copy)
+@@ -2,10 +2,11 @@
+ using Com.Suncor.Olt.Client.Controls.GridRenderer;
+ using Com.Suncor.Olt.Common.Domain;
+ using Com.Suncor.Olt.Common.DTO;
++using Com.Suncor.Olt.Common.Domain.LabAlert;
+ 
+ namespace Com.Suncor.Olt.Client.Controls.Page
+ {
+-    public class LabAlertDefinitionPage : AbstractPage<LabAlertDefinitionDTO, ILabAlertDefinitionDetails>, ILabAlertDefinitionPage
++    public class LabAlertDefinitionPage : AbstractPage<LabAlertDefinitionDTO, LabAlertDefinition, ILabAlertDefinitionDetails>, ILabAlertDefinitionPage
+     {
+         public LabAlertDefinitionPage()
+             : base(
+@@ -17,15 +18,20 @@
+         {
+         }
+ 
++        protected override LabAlertDefinitionDTO CreateDto(LabAlertDefinition domainObject)
++        {
++            return new LabAlertDefinitionDTO(domainObject);
++        }
++
+         public override PageKey PageKey
+         {
+             get { return PageKey.LAB_ALERT_DEFINITION_PAGE; }
+         }
+ 
+-        protected override bool IsCreatedByCurrentUser(LabAlertDefinitionDTO definition)
++        protected override bool IsCreatedByCurrentUser(LabAlertDefinitionDTO deviationAlertDto)
+         {
+             // TODO: This should use created by user
+-            return definition != null  && definition.LastModifiedUserId == ClientSession.GetUserContext().User.Id;
++            return deviationAlertDto != null  && deviationAlertDto.LastModifiedUserId == ClientSession.GetUserContext().User.Id;
+         }
+ 
+         protected override bool IsUpdatedByCurrentUser(LabAlertDefinitionDTO definition)
+Index: Controls/Page/LabAlertPage.cs
+===================================================================
+--- Controls/Page/LabAlertPage.cs	(revision 7771)
++++ Controls/Page/LabAlertPage.cs	(working copy)
+@@ -2,10 +2,11 @@
+ using Com.Suncor.Olt.Client.Controls.GridRenderer;
+ using Com.Suncor.Olt.Common.Domain;
+ using Com.Suncor.Olt.Common.DTO;
++using Com.Suncor.Olt.Common.Domain.LabAlert;
+ 
+ namespace Com.Suncor.Olt.Client.Controls.Page
+ {
+-    public class LabAlertPage : AbstractPage<LabAlertDTO, ILabAlertDetails>, ILabAlertPage
++    public class LabAlertPage : AbstractPage<LabAlertDTO, LabAlert, ILabAlertDetails>, ILabAlertPage
+     {
+         public LabAlertPage()
+             : base(new DomainSummaryGrid<LabAlertDTO>(
+@@ -14,6 +15,11 @@
+         {
+         }
+ 
++        protected override LabAlertDTO CreateDto(LabAlert domainObject)
++        {
++            return new LabAlertDTO(domainObject);
++        }
++
+         public override PageKey PageKey
+         {
+             get { return PageKey.LAB_ALERT_PAGE; }
+Index: Controls/Page/LogByAssignmentPage.cs
+===================================================================
+--- Controls/Page/LogByAssignmentPage.cs	(revision 7771)
++++ Controls/Page/LogByAssignmentPage.cs	(working copy)
+@@ -1,5 +1,6 @@
+ ﻿using Com.Suncor.Olt.Client.Controls.Details;
+ using Com.Suncor.Olt.Client.Forms;
++using Com.Suncor.Olt.Common.DTO;
+ using Com.Suncor.Olt.Common.Domain;
+ 
+ namespace Com.Suncor.Olt.Client.Controls.Page
+@@ -10,6 +11,11 @@
+         {
+         }
+ 
++        protected override LogDTO CreateDto(Log domainObject)
++        {
++            return new LogDTO(domainObject);
++        }
++
+         public override PageKey PageKey
+         {
+             get { return PageKey.LOG_BY_WORK_ASSIGNMENT_PAGE; }
+Index: Controls/Page/LogDefinitionPage.cs
+===================================================================
+--- Controls/Page/LogDefinitionPage.cs	(revision 7771)
++++ Controls/Page/LogDefinitionPage.cs	(working copy)
+@@ -1,4 +1,5 @@
+ ﻿using Com.Suncor.Olt.Client.Controls.GridRenderer;
++using Com.Suncor.Olt.Common.DTO;
+ using Com.Suncor.Olt.Common.Domain;
+ 
+ namespace Com.Suncor.Olt.Client.Controls.Page
+@@ -9,6 +10,11 @@
+         {
+         }
+ 
++        protected override LogDefinitionDTO CreateDto(LogDefinition domainObject)
++        {
++            return new LogDefinitionDTO(domainObject);
++        }
++
+         public override PageKey PageKey
+         {
+             get { return PageKey.LOG_DEFINITION_PAGE; }
+Index: Controls/Page/LogPage.cs
+===================================================================
+--- Controls/Page/LogPage.cs	(revision 7771)
++++ Controls/Page/LogPage.cs	(working copy)
+@@ -1,6 +1,7 @@
+ ﻿using Com.Suncor.Olt.Client.Controls.Details;
+ using Com.Suncor.Olt.Client.Controls.GridRenderer;
+ using Com.Suncor.Olt.Client.Forms;
++using Com.Suncor.Olt.Common.DTO;
+ using Com.Suncor.Olt.Common.Domain;
+ 
+ namespace Com.Suncor.Olt.Client.Controls.Page
+@@ -11,6 +12,13 @@
+         {
+         }
+ 
++        protected override LogDTO CreateDto(Log domainObject)
++        {
++            LogDTO dto = base.CreateDto(domainObject);
++            dto.IsReadByCurrentUser = base.IsCreatedByCurrentUser(dto) || domainObject.idsOfDirectivesReadByCurrentUser.Contains(dto.IdValue);
++            return dto;
++        }
++
+         public override PageKey PageKey
+         {
+             get { return PageKey.LOG_PAGE; }
+Index: Controls/Page/OperatingEngineerLogPage.cs
+===================================================================
+--- Controls/Page/OperatingEngineerLogPage.cs	(revision 7771)
++++ Controls/Page/OperatingEngineerLogPage.cs	(working copy)
+@@ -1,6 +1,7 @@
+ using Com.Suncor.Olt.Client.Controls.Details;
+ using Com.Suncor.Olt.Client.Controls.GridRenderer;
+ using Com.Suncor.Olt.Client.Forms;
++using Com.Suncor.Olt.Common.DTO;
+ using Com.Suncor.Olt.Common.Domain;
+ 
+ namespace Com.Suncor.Olt.Client.Controls.Page
+@@ -17,6 +18,11 @@
+             this.siteConfiguredDisplayName = siteConfiguredDisplayName;
+         }
+ 
++        protected override LogDTO CreateDto(Log domainObject)
++        {
++            return new LogDTO(domainObject);
++        }
++
+         public override PageKey PageKey
+         {
+             get { return PageKey.OPERATING_ENGINEER_LOG_PAGE; }
+Index: Controls/Page/PermitRequestEdmontonPage.cs
+===================================================================
+--- Controls/Page/PermitRequestEdmontonPage.cs	(revision 7771)
++++ Controls/Page/PermitRequestEdmontonPage.cs	(working copy)
+@@ -3,12 +3,13 @@
+ using Com.Suncor.Olt.Client.OltControls;
+ using Com.Suncor.Olt.Common.Domain;
+ using Com.Suncor.Olt.Common.DTO;
++using Com.Suncor.Olt.Common.Domain.WorkPermit;
+ using Com.Suncor.Olt.Common.Localization;
+ using Infragistics.Win.UltraWinGrid.ExcelExport;
+ 
+ namespace Com.Suncor.Olt.Client.Controls.Page
+ {
+-    public class PermitRequestEdmontonPage : AbstractPage<PermitRequestEdmontonDTO, IPermitRequestEdmontonDetails>, IPermitRequestEdmontonPage
++    public class PermitRequestEdmontonPage : AbstractPage<PermitRequestEdmontonDTO, PermitRequestEdmonton, IPermitRequestEdmontonDetails>, IPermitRequestEdmontonPage
+     {
+         private readonly PageKey pageKey;
+ 
+@@ -19,6 +20,11 @@
+             this.pageKey = pageKey;
+         }
+ 
++        protected override PermitRequestEdmontonDTO CreateDto(PermitRequestEdmonton domainObject)
++        {
++            return new PermitRequestEdmontonDTO(domainObject);
++        }
++
+         public override PageKey PageKey
+         {
+             get { return pageKey; }
+Index: Controls/Page/PermitRequestLubesPage.cs
+===================================================================
+--- Controls/Page/PermitRequestLubesPage.cs	(revision 7771)
++++ Controls/Page/PermitRequestLubesPage.cs	(working copy)
+@@ -2,10 +2,11 @@
+ using Com.Suncor.Olt.Client.Controls.GridRenderer;
+ using Com.Suncor.Olt.Common.DTO;
+ using Com.Suncor.Olt.Common.Domain;
++using Com.Suncor.Olt.Common.Domain.WorkPermit;
+ 
+ namespace Com.Suncor.Olt.Client.Controls.Page
+ {
+-    public class PermitRequestLubesPage : AbstractPage<PermitRequestLubesDTO, IPermitRequestLubesDetails>, IPermitRequestLubesPage
++    public class PermitRequestLubesPage : AbstractPage<PermitRequestLubesDTO, PermitRequestLubes, IPermitRequestLubesDetails>, IPermitRequestLubesPage
+     {
+         public PermitRequestLubesPage()
+             : base(
+@@ -24,6 +25,11 @@
+             return false; // mtodo
+         }
+ 
++        protected override PermitRequestLubesDTO CreateDto(PermitRequestLubes domainObject)
++        {
++            return new PermitRequestLubesDTO(domainObject);
++        }
++
+         public override PageKey PageKey
+         {
+             get { return PageKey.PERMIT_REQUEST_PAGE; }
+Index: Controls/Page/PermitRequestMontrealPage.cs
+===================================================================
+--- Controls/Page/PermitRequestMontrealPage.cs	(revision 7771)
++++ Controls/Page/PermitRequestMontrealPage.cs	(working copy)
+@@ -3,11 +3,12 @@
+ using Com.Suncor.Olt.Client.Controls.GridRenderer.GridColumn;
+ using Com.Suncor.Olt.Common.Domain;
+ using Com.Suncor.Olt.Common.DTO;
++using Com.Suncor.Olt.Common.Domain.WorkPermit;
+ using Com.Suncor.Olt.Common.Localization;
+ 
+ namespace Com.Suncor.Olt.Client.Controls.Page
+ {
+-    public class PermitRequestMontrealPage : AbstractPage<PermitRequestMontrealDTO, IPermitRequestMontrealDetails>, IPermitRequestMontrealPage
++    public class PermitRequestMontrealPage : AbstractPage<PermitRequestMontrealDTO, PermitRequestMontreal, IPermitRequestMontrealDetails>, IPermitRequestMontrealPage
+     {
+         public PermitRequestMontrealPage() : base(
+             new DomainSummaryGrid<PermitRequestMontrealDTO>(
+@@ -20,6 +21,11 @@
+         {
+         }
+ 
++        protected override PermitRequestMontrealDTO CreateDto(PermitRequestMontreal domainObject)
++        {
++            return new PermitRequestMontrealDTO(domainObject);
++        }
++
+         public override PageKey PageKey
+         {
+             get { return PageKey.PERMIT_REQUEST_PAGE; }
+Index: Controls/Page/PermitRequestOssaPage.cs
+===================================================================
+--- Controls/Page/PermitRequestOssaPage.cs	(revision 7771)
++++ Controls/Page/PermitRequestOssaPage.cs	(working copy)
+@@ -3,11 +3,12 @@
+ using Com.Suncor.Olt.Client.Controls.GridRenderer.GridColumn;
+ using Com.Suncor.Olt.Common.Domain;
+ using Com.Suncor.Olt.Common.DTO;
++using Com.Suncor.Olt.Common.Domain.WorkPermit;
+ using Com.Suncor.Olt.Common.Localization;
+ 
+ namespace Com.Suncor.Olt.Client.Controls.Page
+ {
+-    public class PermitRequestOssaPage : AbstractPage<PermitRequestOssaDTO, IPermitRequestOssaDetails>, IPermitRequestOssaPage
++    public class PermitRequestOssaPage : AbstractPage<PermitRequestOssaDTO, PermitRequestOssa, IPermitRequestOssaDetails>, IPermitRequestOssaPage
+     {
+         public PermitRequestOssaPage() : base(
+             new DomainSummaryGrid<PermitRequestOssaDTO>(
+@@ -18,6 +19,11 @@
+         {
+         }
+ 
++        protected override PermitRequestOssaDTO CreateDto(PermitRequestOssa domainObject)
++        {
++            return new PermitRequestOssaDTO(domainObject);
++        }
++
+         public override PageKey PageKey
+         {
+             get { return PageKey.PERMIT_REQUEST_PAGE; }
+Index: Controls/Page/RestrictionDefinitionPage.cs
+===================================================================
+--- Controls/Page/RestrictionDefinitionPage.cs	(revision 7771)
++++ Controls/Page/RestrictionDefinitionPage.cs	(working copy)
+@@ -2,10 +2,11 @@
+ using Com.Suncor.Olt.Client.Controls.GridRenderer;
+ using Com.Suncor.Olt.Common.Domain;
+ using Com.Suncor.Olt.Common.DTO;
++using Com.Suncor.Olt.Common.Domain.Restriction;
+ 
+ namespace Com.Suncor.Olt.Client.Controls.Page
+ {
+-    public class RestrictionDefinitionPage : AbstractPage<RestrictionDefinitionDTO, IRestrictionDefinitionDetails>, IRestrictionDefinitionPage
++    public class RestrictionDefinitionPage : AbstractPage<RestrictionDefinitionDTO, RestrictionDefinition, IRestrictionDefinitionDetails>, IRestrictionDefinitionPage
+     {
+         public RestrictionDefinitionPage()
+             : base(
+@@ -17,6 +18,11 @@
+         {
+         }
+ 
++        protected override RestrictionDefinitionDTO CreateDto(RestrictionDefinition domainObject)
++        {
++            return new RestrictionDefinitionDTO(domainObject);
++        }
++
+         public override PageKey PageKey
+         {
+             get { return PageKey.RESTRICTION_DEFINITION_PAGE; }
+Index: Controls/Page/SAPNotificationPage.cs
+===================================================================
+--- Controls/Page/SAPNotificationPage.cs	(revision 7771)
++++ Controls/Page/SAPNotificationPage.cs	(working copy)
+@@ -5,7 +5,7 @@
+ 
+ namespace Com.Suncor.Olt.Client.Controls.Page
+ {
+-    public class SAPNotificationPage : AbstractPage<SAPNotificationDTO, ISAPNotificationDetails>, ISAPNotificationPage
++    public class SAPNotificationPage : AbstractPage<SAPNotificationDTO, SAPNotification, ISAPNotificationDetails>, ISAPNotificationPage
+     {
+         public SAPNotificationPage(): base
+                 (
+@@ -15,6 +15,11 @@
+         {
+         }
+ 
++        protected override SAPNotificationDTO CreateDto(SAPNotification domainObject)
++        {
++            return new SAPNotificationDTO(domainObject);
++        }
++
+         public override PageKey PageKey
+         {
+             get { return PageKey.SAP_NOTIFICATION_PAGE; }
+Index: Controls/Page/SummaryLogPage.cs
+===================================================================
+--- Controls/Page/SummaryLogPage.cs	(revision 7771)
++++ Controls/Page/SummaryLogPage.cs	(working copy)
+@@ -7,7 +7,7 @@
+ 
+ namespace Com.Suncor.Olt.Client.Controls.Page
+ {
+-    public class SummaryLogPage : AbstractPage<SummaryLogDTO, ISummaryLogDetails>, ISummaryLogPage
++    public class SummaryLogPage : AbstractPage<SummaryLogDTO, SummaryLog, ISummaryLogDetails>, ISummaryLogPage
+     {
+         public SummaryLogPage() : base(
+             new DomainSummaryGrid<SummaryLogDTO>(
+@@ -17,6 +17,11 @@
+         {
+         }
+ 
++        protected override SummaryLogDTO CreateDto(SummaryLog domainObject)
++        {
++            return new SummaryLogDTO(domainObject);
++        }
++
+         public override PageKey PageKey
+         {
+             get { return PageKey.SUMMARY_LOG_PAGE; }
+Index: Controls/Page/TargetAlertPage.cs
+===================================================================
+--- Controls/Page/TargetAlertPage.cs	(revision 7771)
++++ Controls/Page/TargetAlertPage.cs	(working copy)
+@@ -5,12 +5,13 @@
+ using Com.Suncor.Olt.Client.OltControls;
+ using Com.Suncor.Olt.Common.Domain;
+ using Com.Suncor.Olt.Common.DTO;
++using Com.Suncor.Olt.Common.Domain.Target;
+ using Com.Suncor.Olt.Common.Localization;
+ using Infragistics.Win.UltraWinGrid.ExcelExport;
+ 
+ namespace Com.Suncor.Olt.Client.Controls.Page
+ {
+-    public class TargetAlertPage : AbstractPage<TargetAlertDTO, ITargetAlertDetails>, ITargetAlertPage
++    public class TargetAlertPage : AbstractPage<TargetAlertDTO, TargetAlert, ITargetAlertDetails>, ITargetAlertPage
+     {
+ 
+         public TargetAlertPage()
+@@ -18,6 +19,11 @@
+         {
+         }
+ 
++        protected override TargetAlertDTO CreateDto(TargetAlert domainObject)
++        {
++            return new TargetAlertDTO(domainObject);
++        }
++
+         public override PageKey PageKey
+         {
+             get { return PageKey.TARGET_ALERT_PAGE; }
+Index: Controls/Page/TargetDefinitionPage.cs
+===================================================================
+--- Controls/Page/TargetDefinitionPage.cs	(revision 7771)
++++ Controls/Page/TargetDefinitionPage.cs	(working copy)
+@@ -7,12 +7,13 @@
+ using Com.Suncor.Olt.Client.OltControls;
+ using Com.Suncor.Olt.Common.Domain;
+ using Com.Suncor.Olt.Common.DTO;
++using Com.Suncor.Olt.Common.Domain.Target;
+ using Com.Suncor.Olt.Common.Extension;
+ using Com.Suncor.Olt.Common.Localization;
+ 
+ namespace Com.Suncor.Olt.Client.Controls.Page
+-{   
+-    public class TargetDefinitionPage : AbstractPage<TargetDefinitionDTO, ITargetDefinitionDetails>,
++{
++    public class TargetDefinitionPage : AbstractPage<TargetDefinitionDTO, TargetDefinition, ITargetDefinitionDetails>,
+                                         ITargetDefinitionPage
+     {
+         public TargetDefinitionPage()
+@@ -26,6 +27,11 @@
+         {
+         }
+ 
++        protected override TargetDefinitionDTO CreateDto(TargetDefinition domainObject)
++        {
++            return new TargetDefinitionDTO(domainObject);
++        }
++
+         public override PageKey PageKey
+         {
+             get { return PageKey.TARGET_DEFINITION_PAGE; }
+Index: Controls/Page/WorkPermitEdmontonPage.cs
+===================================================================
+--- Controls/Page/WorkPermitEdmontonPage.cs	(revision 7771)
++++ Controls/Page/WorkPermitEdmontonPage.cs	(working copy)
+@@ -6,11 +6,12 @@
+ using Com.Suncor.Olt.Client.OltControls;
+ using Com.Suncor.Olt.Common.DTO;
+ using Com.Suncor.Olt.Common.Domain;
++using Com.Suncor.Olt.Common.Domain.WorkPermit;
+ using Com.Suncor.Olt.Common.Localization;
+ 
+ namespace Com.Suncor.Olt.Client.Controls.Page
+ {
+-    public class WorkPermitEdmontonPage : AbstractPage<WorkPermitEdmontonDTO, IWorkPermitEdmontonDetails>, IWorkPermitEdmontonPage
++    public class WorkPermitEdmontonPage : AbstractPage<WorkPermitEdmontonDTO, WorkPermitEdmonton, IWorkPermitEdmontonDetails>, IWorkPermitEdmontonPage
+     {
+         private readonly PageKey pageKey;
+         
+@@ -32,6 +33,11 @@
+             return (permit != null && permit.LastModifiedUserId == ClientSession.GetUserContext().User.Id);
+         }
+ 
++        protected override WorkPermitEdmontonDTO CreateDto(WorkPermitEdmonton domainObject)
++        {
++            return new WorkPermitEdmontonDTO(domainObject);
++        }
++
+         public override PageKey PageKey
+         {
+             get { return pageKey; }
+Index: Controls/Page/WorkPermitLubesPage.cs
+===================================================================
+--- Controls/Page/WorkPermitLubesPage.cs	(revision 7771)
++++ Controls/Page/WorkPermitLubesPage.cs	(working copy)
+@@ -2,10 +2,11 @@
+ using Com.Suncor.Olt.Client.Controls.GridRenderer;
+ using Com.Suncor.Olt.Common.DTO;
+ using Com.Suncor.Olt.Common.Domain;
++using Com.Suncor.Olt.Common.Domain.WorkPermit;
+ 
+ namespace Com.Suncor.Olt.Client.Controls.Page
+ {
+-    public class WorkPermitLubesPage : AbstractPage<WorkPermitLubesDTO, IWorkPermitLubesDetails>, IWorkPermitLubesPage
++    public class WorkPermitLubesPage : AbstractPage<WorkPermitLubesDTO, WorkPermitLubes, IWorkPermitLubesDetails>, IWorkPermitLubesPage
+     {
+         public WorkPermitLubesPage(OltGridAppearance appearance)
+             : base(
+@@ -24,6 +25,11 @@
+             return false;  // mtodo
+         }
+ 
++        protected override WorkPermitLubesDTO CreateDto(WorkPermitLubes domainObject)
++        {
++            return new WorkPermitLubesDTO(domainObject);
++        }
++
+         public override PageKey PageKey
+         {
+             get { return PageKey.WORK_PERMIT_PAGE; }
+Index: Controls/Page/WorkPermitMontrealPage.cs
+===================================================================
+--- Controls/Page/WorkPermitMontrealPage.cs	(revision 7771)
++++ Controls/Page/WorkPermitMontrealPage.cs	(working copy)
+@@ -5,11 +5,12 @@
+ using Com.Suncor.Olt.Client.Utilities;
+ using Com.Suncor.Olt.Common.DTO;
+ using Com.Suncor.Olt.Common.Domain;
++using Com.Suncor.Olt.Common.Domain.WorkPermit;
+ using Com.Suncor.Olt.Common.Localization;
+ 
+ namespace Com.Suncor.Olt.Client.Controls.Page
+ {
+-    public class WorkPermitMontrealPage : AbstractPage<WorkPermitMontrealDTO, IWorkPermitMontrealDetails>, IWorkPermitMontrealPage
++    public class WorkPermitMontrealPage : AbstractPage<WorkPermitMontrealDTO, WorkPermitMontreal, IWorkPermitMontrealDetails>, IWorkPermitMontrealPage
+     {
+         public WorkPermitMontrealPage()
+             : base(new DomainSummaryGrid<WorkPermitMontrealDTO>(
+@@ -18,6 +19,11 @@
+         {
+         }
+ 
++        protected override WorkPermitMontrealDTO CreateDto(WorkPermitMontreal domainObject)
++        {
++            return new WorkPermitMontrealDTO(domainObject);
++        }
++
+         public override PageKey PageKey
+         {
+             get { return PageKey.WORK_PERMIT_PAGE; }
+Index: Controls/Page/WorkPermitOssaPage.cs
+===================================================================
+--- Controls/Page/WorkPermitOssaPage.cs	(revision 7771)
++++ Controls/Page/WorkPermitOssaPage.cs	(working copy)
+@@ -6,11 +6,12 @@
+ using Com.Suncor.Olt.Client.OltControls;
+ using Com.Suncor.Olt.Common.DTO;
+ using Com.Suncor.Olt.Common.Domain;
++using Com.Suncor.Olt.Common.Domain.WorkPermit;
+ using Com.Suncor.Olt.Common.Localization;
+ 
+ namespace Com.Suncor.Olt.Client.Controls.Page
+ {
+-    public class WorkPermitOssaPage : AbstractPage<WorkPermitOssaDTO, IWorkPermitOssaDetails>, IWorkPermitOssaPage
++    public class WorkPermitOssaPage : AbstractPage<WorkPermitOssaDTO, WorkPermitOssa, IWorkPermitOssaDetails>, IWorkPermitOssaPage
+     {
+         public WorkPermitOssaPage(OltGridAppearance appearance)
+             : base(
+@@ -29,6 +30,11 @@
+             return (permit != null && permit.LastModifiedUserId == ClientSession.GetUserContext().User.Id);
+         }
+ 
++        protected override WorkPermitOssaDTO CreateDto(WorkPermitOssa domainObject)
++        {
++            return new WorkPermitOssaDTO(domainObject);
++        }
++
+         public override PageKey PageKey
+         {
+             get { return PageKey.WORK_PERMIT_PAGE; }
+Index: Controls/Page/WorkPermitPage.cs
+===================================================================
+--- Controls/Page/WorkPermitPage.cs	(revision 7771)
++++ Controls/Page/WorkPermitPage.cs	(working copy)
+@@ -11,7 +11,7 @@
+ 
+ namespace Com.Suncor.Olt.Client.Controls.Page
+ {
+-    public class WorkPermitPage : AbstractPage<WorkPermitDTO, IWorkPermitDetails>, IWorkPermitPage
++    public class WorkPermitPage : AbstractPage<WorkPermitDTO, WorkPermit, IWorkPermitDetails>, IWorkPermitPage
+     {
+         public WorkPermitPage() : base(new DomainSummaryGrid<WorkPermitDTO>(
+             new WorkPermitGridRenderer(), OltGridAppearance.MULTI_SELECT_WRAPPED_TEXT, "workPermitPageGrid"), 
+@@ -19,6 +19,11 @@
+         {
+         }
+ 
++        protected override WorkPermitDTO CreateDto(WorkPermit domainObject)
++        {
++            return new WorkPermitDTO(domainObject);
++        }
++
+         public override PageKey PageKey
+         {
+             get { return PageKey.WORK_PERMIT_PAGE; }
+Index: Presenters/Page/AbstractApprovableDomainPagePresenter.cs
+===================================================================
+--- Presenters/Page/AbstractApprovableDomainPagePresenter.cs	(revision 7771)
++++ Presenters/Page/AbstractApprovableDomainPagePresenter.cs	(working copy)
+@@ -13,7 +13,7 @@
+         where TDto : DomainObject
+         where TDomainObject : DomainObject
+         where TDetails : IApprovableDetails
+-        where TPage : class, IDomainPage<TDto, TDetails>
++        where TPage : class, IDomainPage<TDto, TDomainObject, TDetails>
+     {
+         protected AbstractApprovableDomainPagePresenter(
+             TPage page, 
+Index: Presenters/Page/AbstractDeletableDomainPagePresenter.cs
+===================================================================
+--- Presenters/Page/AbstractDeletableDomainPagePresenter.cs	(revision 7771)
++++ Presenters/Page/AbstractDeletableDomainPagePresenter.cs	(working copy)
+@@ -14,7 +14,7 @@
+         where TDto : DomainObject
+         where TDomainObject : DomainObject
+         where TDetails : IDeletableDetails
+-        where TPage : class, IDomainPage<TDto, TDetails>
++        where TPage : class, IDomainPage<TDto, TDomainObject, TDetails>
+     {
+         protected AbstractDeletableDomainPagePresenter(TPage page)
+             : this(
+Index: Presenters/Page/AbstractEditableDomainPagePresenter.cs
+===================================================================
+--- Presenters/Page/AbstractEditableDomainPagePresenter.cs	(revision 7771)
++++ Presenters/Page/AbstractEditableDomainPagePresenter.cs	(working copy)
+@@ -14,7 +14,7 @@
+         where TDto : DomainObject
+         where TDomainObject : DomainObject
+         where TDetails : IEditableDetails
+-        where TPage : class, IDomainPage<TDto, TDetails>
++        where TPage : class, IDomainPage<TDto, TDomainObject, TDetails>
+     {
+         protected AbstractEditableDomainPagePresenter(
+             TPage page, 
+Index: Presenters/Page/AbstractLogDefinitionPagePresenter.cs
+===================================================================
+--- Presenters/Page/AbstractLogDefinitionPagePresenter.cs	(revision 7771)
++++ Presenters/Page/AbstractLogDefinitionPagePresenter.cs	(working copy)
+@@ -227,11 +227,5 @@
+ 
+             details.MostRecentEditHistory = editHistoryService.GetRecentEditHistory(value);
+         }
+-
+-        protected override LogDefinitionDTO CreateDTOFromDomainObject(LogDefinition item)
+-        {
+-            return new LogDefinitionDTO(item);
+-        }
+-
+     }
+ }
+Index: Presenters/Page/AbstractLogPagePresenter.cs
+===================================================================
+--- Presenters/Page/AbstractLogPagePresenter.cs	(revision 7771)
++++ Presenters/Page/AbstractLogPagePresenter.cs	(working copy)
+@@ -338,15 +338,6 @@
+                 log.CustomFields);
+         }
+ 
+-        protected override LogDTO CreateDTOFromDomainObject(Log item)
+-        {
+-            var newDto = new LogDTO(item) { ParentIsUnavailable = false };
+-            // making a big assumption here: this method is only called on create, so this 
+-            // DTO *IS* a parent. (Dustin)
+-            // DTODO, TODO: Update. This is, in fact, called on update. We probably need to log a bug for this
+-            return newDto;
+-        }
+-
+         protected override string DomainObjectName
+         {
+             get { return StringResources.DomainObjectName_Log; }
+Index: Presenters/Page/AbstractPagePresenter.cs
+===================================================================
+--- Presenters/Page/AbstractPagePresenter.cs	(revision 7771)
++++ Presenters/Page/AbstractPagePresenter.cs	(working copy)
+@@ -20,7 +20,7 @@
+         where TDto : DomainObject
+         where TDomainObject : DomainObject
+         where TDetails : IDetails
+-        where TPage : class, IDomainPage<TDto, TDetails>
++        where TPage : class, IDomainPage<TDto, TDomainObject, TDetails>
+     {
+         private static readonly ILog logger = GenericLogManager.GetLogger<AbstractPagePresenter<TDto, TDomainObject, TDetails, TPage>>();
+ 
+@@ -40,12 +40,13 @@
+         
+         protected abstract TDomainObject QueryByDto(TDto dto);
+         protected abstract IList<TDto> GetDtos(Range<Date> dateRange);
+-        protected abstract TDto CreateDTOFromDomainObject(TDomainObject item);
+         protected abstract string DomainObjectName { get; }
+ 
+         protected abstract void HookToServiceEvents(IRemoteEventRepeater repeater);
+         protected abstract void UnHookToServiceEvents(IRemoteEventRepeater repeater);
+ 
++        protected abstract TDto CreateDTOFromDomainObject(TDomainObject item);
++
+         protected abstract void ControlDetailButtons();
+         protected abstract void SetDetailData(TDetails details, TDomainObject item);
+ 
+@@ -214,9 +215,19 @@
+             ControlDetailButtons();
+         }     
+ 
+-        private void Details_Changed(object sender, EventArgs e)
++        private void Details_Changed(TDomainObject domainObject)
+         {
+-            ControlShowingOfDetailsPane();
++            TDto itemShowingInDetails = page.FirstSelectedItem;
++            if (itemShowingInDetails != null && itemShowingInDetails.IdValue == domainObject.IdValue)
++            {
++                SetDetailData(page.Details, domainObject);
++                page.ShowDetails();
++            }
++            else if (itemShowingInDetails == null)
++            {
++                page.HideDetails();
++            }
++            
+         }
+ 
+         private void Buttons_Changed(object sender, EventArgs e)
+@@ -300,7 +311,7 @@
+         {
+             if (IsItemInDateRange(item) && !page.IsDisposed)
+             {
+-                page.AddItem(CreateDTOFromDomainObject(item));
++                page.AddItem(item);
+             }
+         }
+ 
+@@ -323,7 +334,17 @@
+         {
+             if (!page.IsDisposed)
+             {
+-                page.UpdateItem(CreateDTOFromDomainObject(item));
++                if (!page.ItemIsInGrid(item) && IsItemInDateRange(item, userSelectedDateRange))
++                {
++                    page.AddItem(item);
++                }
++                else
++                {
++                    page.UpdateItem(item);
++                    Details_Changed(item);
++                }
++
++                Details_Changed(item);
+             }
+         }
+ 
+@@ -331,7 +352,8 @@
+         {
+             if (!page.IsDisposed)
+             {
+-                page.RemoveItem(CreateDTOFromDomainObject(item));
++                page.RemoveItem(item);
++                Details_Changed(item);
+             }
+         }
+ 
+Index: Presenters/Page/AbstractPermitRequestPagePresenter.cs
+===================================================================
+--- Presenters/Page/AbstractPermitRequestPagePresenter.cs	(revision 7771)
++++ Presenters/Page/AbstractPermitRequestPagePresenter.cs	(working copy)
+@@ -1,5 +1,4 @@
+-﻿using System.Windows.Forms;
+-using Com.Suncor.Olt.Client.Controls.Details;
++﻿using Com.Suncor.Olt.Client.Controls.Details;
+ using Com.Suncor.Olt.Client.Controls.Page;
+ using Com.Suncor.Olt.Client.Security;
+ using Com.Suncor.Olt.Common.Domain;
+@@ -12,7 +11,7 @@
+         where TDto : DomainObject 
+         where TDomainObject : DomainObject
+         where TDetails : IDeletableDetails
+-        where TPage : class, IDomainPage<TDto, TDetails>
++        where TPage : class, IDomainPage<TDto, TDomainObject, TDetails>
+     {
+         protected AbstractPermitRequestPagePresenter(TPage page) : base(page)
+         {
+Index: Presenters/Page/AbstractRespondableDomainPagePresenter.cs
+===================================================================
+--- Presenters/Page/AbstractRespondableDomainPagePresenter.cs	(revision 7771)
++++ Presenters/Page/AbstractRespondableDomainPagePresenter.cs	(working copy)
+@@ -14,7 +14,7 @@
+         where TDto : DomainObject
+         where TDomainObject : DomainObject, IHasDefinition
+         where TDetails : IRespondableDetails
+-        where TPage : class, IDomainPage<TDto, TDetails>
++        where TPage : class, IDomainPage<TDto, TDomainObject, TDetails>
+     {
+         protected AbstractRespondableDomainPagePresenter(TPage page) : this(
+             page,
+Index: Presenters/Page/ConfinedSpacePagePresenter.cs
+===================================================================
+--- Presenters/Page/ConfinedSpacePagePresenter.cs	(revision 7771)
++++ Presenters/Page/ConfinedSpacePagePresenter.cs	(working copy)
+@@ -96,11 +96,6 @@
+             return confinedSpaceService.QueryByFlocUnitAndBelow(userContext.RootFlocSet, new DateRange(dateRange));
+         }
+ 
+-        protected override ConfinedSpaceDTO CreateDTOFromDomainObject(ConfinedSpace item)
+-        {
+-            return new ConfinedSpaceDTO(item);
+-        }
+-
+         protected override string DomainObjectName
+         {
+             get { return StringResources.DomainObjectName_ConfinedSpace; }
+@@ -185,15 +180,13 @@
+ 
+         protected override void ItemUpdated(ConfinedSpace item)
+         {
+-            ConfinedSpaceDTO dto = CreateDTOFromDomainObject(item);
+-
+-            if (!page.ItemIsInGrid(dto) && IsItemInDateRange(item, userSelectedDateRange))
++            if (!page.ItemIsInGrid(item) && IsItemInDateRange(item, userSelectedDateRange))
+             {
+-                page.AddItem(dto);
++                page.AddItem(item);
+             }
+             else
+             {
+-                page.UpdateItem(dto);
++                page.UpdateItem(item);
+             }
+         }
+ 
+Index: Presenters/Page/DailyDirectivesLogPagePresenter.cs
+===================================================================
+--- Presenters/Page/DailyDirectivesLogPagePresenter.cs	(revision 7771)
++++ Presenters/Page/DailyDirectivesLogPagePresenter.cs	(working copy)
+@@ -44,7 +44,7 @@
+                     dto.IsReadByCurrentUser = true;
+                 }
+ 
+-                if (dto.IsReadByCurrentUser.HasValue && dto.IsReadByCurrentUser.Value)
++                if (Equals(dto.IsReadByCurrentUser, true))
+                 {
+                     idsOfDirectivesReadByCurrentUser.Add(dto.IdValue);
+                 }
+Index: Presenters/Page/FormPagePresenter.cs
+===================================================================
+--- Presenters/Page/FormPagePresenter.cs	(revision 7771)
++++ Presenters/Page/FormPagePresenter.cs	(working copy)
+@@ -187,15 +187,13 @@
+ 
+         protected override void ItemUpdated(BaseForm item)
+         {
+-            FormDTO dto = CreateDTOFromDomainObject(item);
+-
+-            if (page.ItemIsInGrid(dto))
++            if (page.ItemIsInGrid(item))
+             {
+-                page.UpdateItem(dto);
++                page.UpdateItem(item);
+             }
+             else if (IsItemInDateRange(item, userSelectedDateRange))
+             {
+-                page.AddItem(dto);
++                page.AddItem(item);
+             }
+         }
+ 
+Index: Presenters/Page/LabAlertPagePresenter.cs
+===================================================================
+--- Presenters/Page/LabAlertPagePresenter.cs	(revision 7771)
++++ Presenters/Page/LabAlertPagePresenter.cs	(working copy)
+@@ -1,4 +1,3 @@
+-using System;
+ using System.Collections.Generic;
+ using Com.Suncor.Olt.Client.Controls.Details;
+ using Com.Suncor.Olt.Client.Controls.Page;
+Index: Presenters/Page/PermitRequestEdmontonPagePresenter.cs
+===================================================================
+--- Presenters/Page/PermitRequestEdmontonPagePresenter.cs	(revision 7771)
++++ Presenters/Page/PermitRequestEdmontonPagePresenter.cs	(working copy)
+@@ -201,8 +201,7 @@
+         protected override void ItemUpdated(PermitRequestEdmonton item)
+         {
+             bool shouldBeDisplayed = ShouldBeDisplayed(item);
+-            PermitRequestEdmontonDTO dto = CreateDTOFromDomainObject(item);
+-            bool itemIsInGrid = page.ItemIsInGrid(dto);
++            bool itemIsInGrid = page.ItemIsInGrid(item);
+ 
+             if (!shouldBeDisplayed && !itemIsInGrid)
+             {
+@@ -211,15 +210,15 @@
+ 
+             if (!shouldBeDisplayed)
+             {
+-                page.RemoveItem(dto);
++                page.RemoveItem(item);
+             }
+             else if (!itemIsInGrid && IsItemInDateRange(item, userSelectedDateRange))
+             {
+-                page.AddItem(dto);
++                page.AddItem(item);
+             }
+             else
+             {
+-                page.UpdateItem(dto);
++                page.UpdateItem(item);
+             }
+         }
+ 
+Index: Presenters/Page/PermitRequestMontrealPagePresenter.cs
+===================================================================
+--- Presenters/Page/PermitRequestMontrealPagePresenter.cs	(revision 7771)
++++ Presenters/Page/PermitRequestMontrealPagePresenter.cs	(working copy)
+@@ -1,6 +1,5 @@
+ ﻿using System;
+ using System.Collections.Generic;
+-using System.Windows.Forms;
+ using Com.Suncor.Olt.Client.Controls.Details;
+ using Com.Suncor.Olt.Client.Controls.Page;
+ using Com.Suncor.Olt.Client.Forms;
+@@ -10,7 +9,6 @@
+ using Com.Suncor.Olt.Common.Domain;
+ using Com.Suncor.Olt.Common.Domain.WorkPermit;
+ using Com.Suncor.Olt.Common.DTO;
+-using Com.Suncor.Olt.Common.Extension;
+ using Com.Suncor.Olt.Common.Localization;
+ using Com.Suncor.Olt.Common.Remote;
+ using Com.Suncor.Olt.Common.Services;
+@@ -168,15 +166,13 @@
+ 
+         protected override void ItemUpdated(PermitRequestMontreal item)
+         {
+-            PermitRequestMontrealDTO dto = CreateDTOFromDomainObject(item);
+-
+-            if(!page.ItemIsInGrid(dto) && IsItemInDateRange(item, userSelectedDateRange))
++            if(!page.ItemIsInGrid(item) && IsItemInDateRange(item, userSelectedDateRange))
+             {
+-                page.AddItem(dto);
++                page.AddItem(item);
+             }
+             else
+             {
+-                page.UpdateItem(dto);    
++                page.UpdateItem(item);    
+             }            
+         }
+ 
+Index: Presenters/Page/PermitRequestOssaPagePresenter.cs
+===================================================================
+--- Presenters/Page/PermitRequestOssaPagePresenter.cs	(revision 7771)
++++ Presenters/Page/PermitRequestOssaPagePresenter.cs	(working copy)
+@@ -1,6 +1,5 @@
+ ﻿using System;
+ using System.Collections.Generic;
+-using System.Windows.Forms;
+ using Com.Suncor.Olt.Client.Controls.Details;
+ using Com.Suncor.Olt.Client.Controls.Page;
+ using Com.Suncor.Olt.Client.Forms;
+@@ -10,7 +9,6 @@
+ using Com.Suncor.Olt.Common.Domain;
+ using Com.Suncor.Olt.Common.Domain.WorkPermit;
+ using Com.Suncor.Olt.Common.DTO;
+-using Com.Suncor.Olt.Common.Extension;
+ using Com.Suncor.Olt.Common.Localization;
+ using Com.Suncor.Olt.Common.Remote;
+ using Com.Suncor.Olt.Common.Services;
+@@ -177,15 +175,13 @@
+ 
+         protected override void ItemUpdated(PermitRequestOssa item)
+         {
+-            PermitRequestOssaDTO dto = CreateDTOFromDomainObject(item);
+-
+-            if (!page.ItemIsInGrid(dto) && IsItemInDateRange(item, userSelectedDateRange))
++            if (!page.ItemIsInGrid(item) && IsItemInDateRange(item, userSelectedDateRange))
+             {
+-                page.AddItem(dto);
++                page.AddItem(item);
+             }
+             else
+             {
+-                page.UpdateItem(dto);
++                page.UpdateItem(item);
+             }
+         }
+     }
+Index: Presenters/Page/TargetAlertPagePresenter.cs
+===================================================================
+--- Presenters/Page/TargetAlertPagePresenter.cs	(revision 7771)
++++ Presenters/Page/TargetAlertPagePresenter.cs	(working copy)
+@@ -1,4 +1,3 @@
+-using System;
+ using System.Collections.Generic;
+ using Com.Suncor.Olt.Client.Controls;
+ using Com.Suncor.Olt.Client.Controls.Details;
+Index: Presenters/Page/WorkPermitEdmontonPagePresenter.cs
+===================================================================
+--- Presenters/Page/WorkPermitEdmontonPagePresenter.cs	(revision 7771)
++++ Presenters/Page/WorkPermitEdmontonPagePresenter.cs	(working copy)
+@@ -279,9 +279,8 @@
+ 
+         protected override void ItemUpdated(WorkPermitEdmonton item)
+         {
+-            WorkPermitEdmontonDTO dto = CreateDTOFromDomainObject(item);
+             bool shouldBeDisplayed = ShouldBeDisplayed(item);
+-            bool itemIsInGrid = page.ItemIsInGrid(dto);
++            bool itemIsInGrid = page.ItemIsInGrid(item);
+ 
+             if (!shouldBeDisplayed && !itemIsInGrid)
+             {
+@@ -290,15 +289,15 @@
+             
+             if (!shouldBeDisplayed)
+             {
+-                page.RemoveItem(dto);
++                page.RemoveItem(item);
+             }
+             else if (!itemIsInGrid && IsItemInDateRange(item, userSelectedDateRange))
+             {
+-                page.AddItem(dto);
++                page.AddItem(item);
+             }
+             else
+             {
+-                page.UpdateItem(dto);
++                page.UpdateItem(item);
+             }
+         }
+ 
+Index: Presenters/Page/WorkPermitMontrealPagePresenter.cs
+===================================================================
+--- Presenters/Page/WorkPermitMontrealPagePresenter.cs	(revision 7771)
++++ Presenters/Page/WorkPermitMontrealPagePresenter.cs	(working copy)
+@@ -364,15 +364,13 @@
+ 
+         protected override void ItemUpdated(WorkPermitMontreal item)
+         {
+-            WorkPermitMontrealDTO dto = CreateDTOFromDomainObject(item);
+-
+-            if (!page.ItemIsInGrid(dto) && IsItemInDateRange(item, userSelectedDateRange))
++            if (!page.ItemIsInGrid(item) && IsItemInDateRange(item, userSelectedDateRange))
+             {
+-                page.AddItem(dto);
++                page.AddItem(item);
+             }
+             else
+             {
+-                page.UpdateItem(dto);
++                page.UpdateItem(item);
+             }
+         }
+ 
+Index: Presenters/Page/WorkPermitOssaPagePresenter.cs
+===================================================================
+--- Presenters/Page/WorkPermitOssaPagePresenter.cs	(revision 7771)
++++ Presenters/Page/WorkPermitOssaPagePresenter.cs	(working copy)
+@@ -232,15 +232,13 @@
+ 
+         protected override void ItemUpdated(WorkPermitOssa item)
+         {
+-            WorkPermitOssaDTO dto = CreateDTOFromDomainObject(item);
+-
+-            if (page.ItemIsInGrid(dto))
++            if (page.ItemIsInGrid(item))
+             {
+-                page.UpdateItem(dto);
++                page.UpdateItem(item);
+             }
+             else if (IsItemInDateRange(item, userSelectedDateRange))
+             {
+-                page.AddItem(dto);
++                page.AddItem(item);
+             }
+         }
+     }
+Index: Presenters/Page/WorkPermitPagePresenter.cs
+===================================================================
+--- Presenters/Page/WorkPermitPagePresenter.cs	(revision 7771)
++++ Presenters/Page/WorkPermitPagePresenter.cs	(working copy)
+@@ -345,15 +345,13 @@
+             }
+             else
+             {
+-                WorkPermitDTO dto = CreateDTOFromDomainObject(workPermit);
+-
+-                if (!page.ItemIsInGrid(dto) && IsItemInDateRange(workPermit, userSelectedDateRange))
++                if (!page.ItemIsInGrid(workPermit) && IsItemInDateRange(workPermit, userSelectedDateRange))
+                 {
+-                    page.AddItem(dto);
++                    page.AddItem(workPermit);
+                 }
+                 else
+                 {
+-                    page.UpdateItem(dto);
++                    page.UpdateItem(workPermit);
+                 }
+             }
+         }

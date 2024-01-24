@@ -1,0 +1,82 @@
+if exists (select * from dbo.sysobjects where id = object_id(N'[dbo].[UpdateConfinedSpace]') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+	drop procedure [dbo].[UpdateConfinedSpace]
+GO
+
+CREATE Procedure [dbo].[UpdateConfinedSpace]
+(
+	@Id bigint,
+	@ConfinedSpaceStatus int,
+	@StartDateTime datetime,
+	@EndDateTime datetime,
+	@FunctionalLocationId bigint,
+	@LastModifiedDateTime datetime,
+	@LastModifiedByUserId bigint,
+	@H2S bit,
+	@Hydrocarbure bit,
+	@Ammoniaque bit,
+	@Corrosif bit, 
+	@CorrosifValue VARCHAR(50),
+	@Aromatique bit, 
+	@AromatiqueValue VARCHAR(50),
+	@AutresSubstances bit, 
+	@AutresSubstancesValue VARCHAR(50),
+	@ObtureOuDebranche bit,
+	@DepressuriseEtVidange bit,
+	@EnPresenceDeGazInerte bit,
+	@PurgeALaVapeur bit,
+	@DessinsRequis bit, 
+	@DessinsRequisValue VARCHAR(50),
+	@PlanDeSauvetage bit,
+	@CablesChauffantsMisHorsTension bit,
+	@InterrupteursElectriquesVerrouilles bit,
+	@PurgeParUnGazInerte bit,
+	@RinceAlEau bit,
+	@VentilationMecanique bit,
+	@BouchesDegoutProtegees bit,
+	@PossibiliteDeSulfureDeFer bit,
+	@AereVentile bit,
+	@AutreConditions bit, 
+	@AutreConditionsValue VARCHAR(50),
+	@VentilationNaturelle bit,
+	@InstructionsSpeciales VARCHAR(450)
+)
+AS
+
+UPDATE ConfinedSpace
+  SET
+	ConfinedSpaceStatus = @ConfinedSpaceStatus,
+  	StartDateTime = @StartDateTime,
+  	EndDateTime = @EndDateTime,
+  	FunctionalLocationId = @FunctionalLocationId,
+  	H2S = @H2S,
+  	Hydrocarbure = @Hydrocarbure,
+  	Ammoniaque = @Ammoniaque,
+  	Corrosif = @Corrosif, 
+  	CorrosifValue = @CorrosifValue,
+  	Aromatique = @Aromatique, 
+  	AromatiqueValue = @AromatiqueValue,
+  	AutresSubstances = @AutresSubstances, 
+  	AutresSubstancesValue = @AutresSubstancesValue,
+  	ObtureOuDebranche = @ObtureOuDebranche,
+  	DepressuriseEtVidange = @DepressuriseEtVidange,
+  	EnPresenceDeGazInerte = @EnPresenceDeGazInerte,
+  	PurgeALaVapeur = @PurgeALaVapeur,
+  	DessinsRequis = @DessinsRequis, 
+  	DessinsRequisValue = @DessinsRequisValue,
+  	PlanDeSauvetage = @PlanDeSauvetage,
+  	CablesChauffantsMisHorsTension = @CablesChauffantsMisHorsTension,
+  	InterrupteursElectriquesVerrouilles = @InterrupteursElectriquesVerrouilles,
+  	PurgeParUnGazInerte = @PurgeParUnGazInerte,
+  	RinceAlEau = @RinceAlEau,
+  	VentilationMecanique = @VentilationMecanique,
+  	BouchesDegoutProtegees = @BouchesDegoutProtegees,
+  	PossibiliteDeSulfureDeFer = @PossibiliteDeSulfureDeFer,
+  	AereVentile = @AereVentile,
+  	AutreConditions = @AutreConditions, 
+  	AutreConditionsValue = @AutreConditionsValue,
+  	VentilationNaturelle = @VentilationNaturelle,
+  	InstructionsSpeciales = @InstructionsSpeciales,
+  	LastModifiedDateTime = @LastModifiedDateTime,
+  	LastModifiedByUserId = @LastModifiedByUserId
+WHERE Id = @Id
+GO

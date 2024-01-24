@@ -1,0 +1,26 @@
+IF EXISTS (SELECT * FROM sysobjects WHERE type = 'P' AND name = 'QueryShiftsBySiteId')
+	BEGIN
+		DROP PROCEDURE [dbo].QueryShiftsBySiteId
+	END
+GO
+
+CREATE Procedure dbo.QueryShiftsBySiteId
+	(
+		@siteId int
+	)
+AS
+
+SELECT 
+	Shift.* ,
+   	
+	siteconfig.PreShiftPaddingInMinutes,
+	siteconfig.PostShiftPaddingInMinutes
+FROM 
+	Shift
+	INNER JOIN SiteConfiguration siteconfig ON siteconfig.SiteId = Shift.SiteId   	
+WHERE 
+	Shift.SiteId=@siteId
+GO
+
+GRANT EXEC ON QueryShiftsBySiteId TO PUBLIC
+GO

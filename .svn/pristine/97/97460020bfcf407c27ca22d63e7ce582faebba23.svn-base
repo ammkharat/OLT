@@ -1,0 +1,19 @@
+using System;
+using System.Collections.Generic;
+using Com.Suncor.Olt.Common.DTO;
+using Com.Suncor.Olt.Common.DTO.Reporting;
+using Com.Suncor.Olt.Common.Domain.FlocSet;
+
+namespace Com.Suncor.Olt.Remote.DataAccess.DTO
+{
+    public interface ISummaryLogDTODao : IDao
+    {
+        List<SummaryLogDTO> QueryDTOsByParentFlocList(DateTime? startOfRange, DateTime? endOfRange, IFlocSet flocSet, List<long> clientReadableVisibilityGroupIds);
+            
+        List<MarkedAsReadReportLogDTO> QueryDTOByParentFlocListAndMarkedAsRead(DateTime start, DateTime end, IFlocSet flocSet);
+
+        //Function added to view based on rolepermission
+        List<SummaryLogDTO> QueryDTOsByParentFlocList(
+          DateTime? startOfRange, DateTime? endOfRange, IFlocSet flocSet, List<long> clientReadableVisibilityGroupIds, long? RoleId);
+    }
+}

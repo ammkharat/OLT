@@ -1,0 +1,261 @@
+<html>
+	<head>
+		<title>OLT Help</title>
+		<style type="text/css">
+
+		span.right {
+			position: absolute;
+			right: 5px; 
+		}
+			
+		body {
+			font-family: Arial, sans-serif;
+			color: black;
+			background-color: white 
+		}
+			
+		h1 {
+			font-family: Arial, sans-serif;
+			font-size: large 
+		}
+			
+		ul {
+			font-family: Arial, sans-serif;
+			font-size: medium 
+		}
+			
+		</style>
+
+	</head>
+	<body>
+		
+		<span class="right">
+		<a href='../fr/index.html'>Français</a>
+		</span>
+		
+		<h1><img src="OLT_icon_48.gif" alt="OLT icon" style="border: 0"/> OLT Help Documentation</h1>
+		
+	    <p/>
+        
+	    <h1>Getting Started</h1>
+        
+	    <ul>
+	        <li><a href="OLT-Presentation-QRG-GeneralOverview.pdf">Overview Presentation</a></li>
+            <li><a href="OLT-GettingStarted-QRG-InstallingOLTonWindows7.pdf">Installing OLT on Windows 7</a></li>
+            <li><a href="OLT-iRequest-RequestAccessToOLT.pdf">Request access to OLT using iRequest</a></li>
+	        <li><a href="OLT-Access-QRG1-Sign-inToOLT.pdf">Signing In to OLT</a></li>       
+	        <li><a href="OLT-QRG-Customize-Priority-Screen.pdf">Customizing the Priority Screen</a></li>       
+			
+		</ul>
+
+	    <h1>Action Item Definitions</h1>
+		
+		<ul>
+			<li><a href="OLT-ActionItemDefn-QRG1-CreateActionItemDefinition.pdf">Creating an Action Item Definition</a></li>	
+			<li><a href="OLT-ActionItemDefn-QRG3-DeleteActionItemDefinition.pdf">Deleting an Action Item Definition</a></li>	
+			<li><a href="OLT-ActionItemDefn-QRG4-ViewActionItemDefinition.pdf">Viewing an Action Item Definition</a></li>	
+			<li><a href="OLT-ActionItemDefn-QRG5-ViewEditHistoryOfActionItemDefinition.pdf">Viewing the Edit History of an Action Item Definition</a></li>	
+			<li><a href="OLT-ActionItemDefn-QRG6-ApproveActionItemDefinition.pdf">Approving an Action Item Definition</a></li>	
+			<li><a href="OLT-ActionItemDefn-QRG7-RejectActionItemDefinition.pdf">Rejecting an Action Item Definition</a></li>
+		    <li><a href="OLT-ActionItemDefn-QRG8-CommentOnActionItemDefinition.pdf">Commenting on an Action Item Definition</a></li>
+		</ul>
+		
+		<h1>Action Items</h1>
+
+	<ul>
+	    <li><a href="OLT-ActionItems-QRG1-ViewActionItems.pdf">View Action Items</a></li>
+	    <li><a href="OLT-ActionItems-QRG2-RespondToActionItems.pdf">Respond to Action Items</a></li>
+	    <li><a href="OLT-ActionItems-QRG3-GoToActionItemDefn.pdf">Go to Action Item Definition</a></li>
+	    <li><a href="OLT-ActionItems-QRG4-ViewWorkAssignmentActionItems.pdf">Viewing Action Items for your Work Assignment</a></li>
+	</ul>
+
+        <h1>Readings</h1> <!--Added By Vibhor : RITM0554013 - OLT : Adding Reading QRG to Help-->
+
+        <ul>
+            <li><a href="OLT.TC.QRG-Create a Reading Definition (English).pdf">Create a Reading Definition</a></li> 
+            <li><a href="OLT.TC.QRG - Respond To Readings.pdf">Respond To Readings</a></li> 
+
+        </ul>
+
+	<h1>Directives</h1>		
+		
+		<ul>
+		    <li><a href="OLT-DailyDirectives-QRG1-CreateDailyDirective.pdf">Create Directive</a></li>			
+		    <li><a href="OLT-DailyDirectives-QRG6-TransitionToNewStyleDirectives.pdf">Transition to New Style Directives</a></li>			
+		</ul>
+		 
+		 <h1>Repeating Daily Directives</h1>
+		
+		<ul>
+		    <li><a href="OLT-DailyDirectives-QRG2-EditDailyDirective.pdf">Edit Daily Directives</a></li>			
+		    <li><a href="OLT-DailyDirectives-QRG3-DeleteDailyDirective.pdf">Delete Daily Directives</a></li>			
+		    <li><a href="OLT-DailyDirectives-QRG4-ViewDailyDirective.pdf">View Daily Directives</a></li>			
+		    <li><a href="OLT-DailyDirectives-QRG5-MarkDailyDirectiveAsRead.pdf">Mark Daily Directives as Read</a></li>			
+		</ul>
+        
+		<h1>Edmonton - Forms</h1>
+        
+	    <ul>
+		    <li><a href="OLT-QRG-Edmonton-Create-Overtime-Request.pdf">Create an Overtime Request</a></li>
+		    <li><a href="OLT-QRG-Edmonton-Approve-Overtime-Request.pdf">Approve an Overtime Request</a></li>
+	        <li><a href="OLT-Edmonton-Forms-QRG-Create-GN-75-Appendix-A.pdf">Create a GN-75 Appendix A Isolation and Lockout of Hazardous Fluids or Energy Safe Work Plan</a></li>
+	        <li><a href="OLT-Edmonton-Forms-QRG-Approve-GN-75-Appendix-A.pdf">Approve a GN-75 Appendix A Isolation and Lockout of Hazardous Fluids or Energy Safe Work Plan</a></li>
+			<li><a href="OLT-Edmonton-Forms-QRG-Create-GN-75-Appendix-B.pdf">Create a GN-75 Appendix B Zero Isolation and Lockout of Hazardous Fluids and Energy</a></li>
+			<li><a href="OLT-Edmonton-Forms-GN-75-Appendix-B-Convert-Visio-To-EMF-Image.pdf">Convert a MS Visio drawing to an EMF Image</a></li>
+			<li><a href="OLT-Edmonton-Forms-GN-75-Appendix-B-Assign-to-ActionItem-Definition.pdf">Assign GN-75 Appendix B to an Action Item Definition</a></li>
+	    </ul>
+
+		<h1>Edmonton - Work Permits</h1>
+        
+	    <ul>
+	        <li><a href="OLT-Edmonton-WorkPermits-QRG1-CreateAPermitRequest.pdf">Create Permit Requests</a></li>
+	        <li><a href="OLT-Edmonton-WorkPermits-QRG2-CreateAWorkPermit.pdf">Create Work Permits</a></li>
+	        <li><a href="OLT-Edmonton-WorkPermits-QRG3-IdentifyingPermitsInAnSAPWorkOrder.pdf">Identify Permits in an SAP Work Order</a></li>
+	    </ul>
+
+        <h1>Lubes - Forms</h1>
+
+        <ul>
+            <li><a href="OLT-Lubes-QRG-CreateAlarmTemporaryDisable.pdf">Create an Alarm Temporary Disable</a></li>
+            <li><a href="OLT-Lubes-QRG-ApproveAlarmTemporaryDisable.pdf">Approve an Alarm Temporary Disable</a></li>
+            <li><a href="OLT-Lubes-QRG-CreateCriticalSystemDefeat.pdf">Create a Critical System Defeat</a></li>
+            <li><a href="OLT-Lubes-QRG-ApproveCriticalSystemDefeat.pdf">Approve a Critical System Defeat</a></li>
+        </ul>
+        
+	    <h1>Lubes - Work Permits</h1>
+        
+        <ul>
+		    <li><a href="OLT-Lubes-WorkPermits-QRG1-CreateAPermitRequest.pdf">Create Permit Requests</a></li>
+		    <li><a href="OLT-Lubes-WorkPermits-QRG2-CreateAWorkPermit.pdf">Create Work Permits</a></li>
+		</ul>
+
+	    <h1>Lab Alerts</h1>
+		
+		<ul>
+			<li><a href="OLT-LabAlerts-QRG1-ViewLabAlerts.pdf">View Lab Alerts</a></li>			
+			<li><a href="OLT-LabAlerts-QRG2-RespondToLabAlerts.pdf">Respond to Lab Alerts</a></li>					
+			<li><a href="OLT-LabAlertsDefn-QRG5-ViewEditHistoryOfLabAlertDefinition.pdf">View the Edit History of a Lab Alert Definition</a></li>			
+		</ul>				
+		
+		<h1>Repeating Log Definitions</h1>
+		
+		<ul>
+			<li><a href="OLT-RepeatingLogDefn-QRG1-CreateRepeatingLogDefn.pdf">Create Repeating Log Definition</a></li>			
+			<li><a href="OLT-RepeatingLogDefn-QRG2-EditRepeatingLogDefn.pdf">Edit Repeating Log Definition</a></li>			
+			<li><a href="OLT-RepeatingLogDefn-QRG3-CancelRepeatingLogDefn.pdf">Cancel Repeating Log Definition</a></li>
+		</ul>		
+
+		<h1>Restrictions</h1>
+		
+		<ul>
+			<li><a href="OLT-Restrictions-QRG1-ViewRestrictions.pdf">View Restrictions</a></li>			
+			<li><a href="OLT-Restrictions-QRG-Respond-Restriction-Deviation-Alert.pdf">Respond to Restriction Deviation Alert</a></li>			
+		</ul>		
+		
+		<h1>Shift Handovers</h1>
+		
+		<ul>
+			<li><a href="OLT-ShiftHandovers-QRG1-CreateShiftHandoverReport.pdf">Create Shift Handover Report</a></li>			
+			<li><a href="OLT-ShiftHandovers-QRG2-EditShiftHandoverEntries.pdf">Edit Shift Handover Entries</a></li>			
+			<li><a href="OLT-ShiftHandovers-QRG3-DeleteShiftHandoverReport.pdf">Delete Shift Handover Report</a></li>			
+			<li><a href="OLT-ShiftHandovers-QRG4-ViewShiftHandoverReport.pdf">View Shift Handover Report</a></li>			
+			<li><a href="OLT-ShiftHandovers-QRG5-ViewEditHistoryOfShiftHandoverReport.pdf">View Shift Handover Report History</a></li>			
+		    <li><a href="OLT-ShiftHandovers-QRG6-MarkShiftHandoverReportAsRead.pdf">Mark Shift Handover Report As Read</a></li>			
+            <li><a href="OLT-ShiftHandovers-QRG7-CreateAShiftHandoverThatIncludesAShiftLog.pdf">Create a Shift Handover that includes a Shift Log</a></li>			
+		</ul>		
+					
+		<h1>Shift Logs</h1>
+		
+		<ul>
+			<li><a href="OLT-ShiftLogs-QRG1-CreateShiftLogEntry.pdf">Create Shift Log Entry</a></li>
+			<li><a href="OLT-ShiftLogs-QRG2-EditShiftLogEntry.pdf">Edit Shift Log Entry</a></li>
+			<li><a href="OLT-ShiftLogs-QRG3-DeleteShiftLogEntry.pdf">Delete Shift Log Entry</a></li>
+			<li><a href="OLT-ShiftLogs-QRG4-ReplyToShiftLogEntry.pdf">Reply to a Shift Log Entry</a></li>
+			<li><a href="OLT-ShiftLogs-QRG5-ViewShiftLogEntryEditHistory.pdf">View Shift Log Entry Edit history</a></li>
+			<li><a href="OLT-ShiftLogs-QRG6-ViewShiftLogThread.pdf">View Shift Log Thread</a></li>
+			<li><a href="OLT-ShiftLogs-QRG7-MarkShiftLogEntryAsRead.pdf">Mark Shift Log Entry as read</a></li>
+		</ul>		
+					
+		<h1>Shift Summary Logs</h1>
+		
+		<ul>
+			<li><a href="OLT-ShiftSummaryLogs-QRG1-CreateShiftSummaryLog.pdf">Create Shift Summary Log</a></li>
+			<li><a href="OLT-ShiftSummaryLogs-QRG2-EditShiftSummaryLog.pdf">Edit Shift Summary Log</a></li>
+			<li><a href="OLT-ShiftSummaryLogs-QRG3-DeleteShiftSummaryLog.pdf">Delete Shift Summary Log</a></li>
+			<li><a href="OLT-ShiftSummaryLogs-QRG4-ViewShiftSummaryLog.pdf">View Shift Summary Log</a></li>
+			<li><a href="OLT-ShiftSummaryLogs-QRG5-MarkShiftSummaryLogAsRead.pdf">Mark Shift Summary Log as Read</a></li>
+		</ul>
+		
+		<h1>Target Alerts</h1>
+		
+		<ul>
+			<li><a href="OLT_QRG_-_Respond_to_Target_Alert_(English).pdf">Responding to Target Alerts</a></li>	
+		</ul>
+		
+		<h1>Target Definitions</h1>
+		
+		<ul>
+			<li><a href="OLT-TargetDefinitions-QRG1-CreateTargetDefinition.pdf">Creating a Target Definition</a></li>	
+			<li><a href="OLT-TargetDefinitions-QRG2-EditTargetDefinition.pdf">Editing a Target Definition</a></li>	
+			<li><a href="OLT-TargetDefinitions-QRG3-DeleteTargetDefinition.pdf">Deleting a Target Definition</a></li>	
+			<li><a href="OLT-TargetDefinitions-QRG4-ApproveTargetDefinition.pdf">Approving a Target Definition</a></li>	
+			<li><a href="OLT-TargetDefinitions-QRG5-RejectTargetDefinition.pdf">Rejecting a Target Definition</a></li>	
+			<li><a href="OLT-TargetDefinitions-QRG7-ViewEditHistoryOfTargetDefinition.pdf">Viewing the Edit History of a Target Definition</a></li>	
+		</ul>
+
+		<h1>Technical Operating Envelope</h1>
+		<ul>
+			<li><a href="OLT-RespondToExcursion.pdf">Respond to Excursion</a></li>	
+			<li><a href="OLT-RespondToMultipleExcursions.pdf">Respond to Multiple Excursions</a></li>	
+			
+		</ul>
+
+        <h1>Wood Buffalo - Forms</h1>
+
+        <ul>
+            <li><a href="OLT-WoodBuffalo-DocumentSuggestion-QRG-CreateAndProcessDocumentSuggestioneForm.pdf">Create and Process a Document Suggestion Form</a></li>
+        </ul>
+				
+	    <h1>Administration of Business Categories / Comment Categories</h1>
+		
+		<ul>
+			<li><a href="OLT-Admin-BusinessCategories-QRG1-ConfigureBusinessCategories.pdf">Configure Business Categories</a></li>	
+			<li><a href="OLT-Admin-BusinessCategories-QRG2-AssociateBusinessCategoriesto FLOCs.pdf">Associate Business Categories to FLOCs</a></li>	
+			<li><a href="OLT-Admin-BusinessCategories-QRG3-ConfigureCommentCategories.pdf">Configure Comment Categories</a></li>	
+			
+		</ul>
+
+		<h1>Administration of Lab Alerts</h1>
+		<ul>
+			<li><a href="OLT-LabAlerts-QRG3-GoToLabAlertDefinition.pdf">Go To a Lab Alert Definition</a></li>			
+			<li><a href="OLT-LabAlertsDefn-QRG1-CreateLabAlertDefinition.pdf">Create a Lab Alert Definition</a></li>			
+			<li><a href="OLT-LabAlertsDefn-QRG2-EditLabAlertDefinition.pdf">Edit a Lab Alert Definition</a></li>											
+			<li><a href="OLT-LabAlertsDefn-QRG3-DeleteLabAlertDefinition.pdf">Delete Lab Alert Definitions</a></li>			
+			<li><a href="OLT-LabAlertsDefn-QRG4-ViewLabAlertDefinition.pdf">View Lab Alert Definitions</a></li>			
+		</ul>
+					
+		<h1>Administration of Restrictions</h1>
+		
+		<ul>
+			<li><a href="OLT-Admin-Restrictions-QRG1-CreateRestrictionDefn.pdf">Create a Restriction Definition</a></li>	
+			<li><a href="OLT-Admin-Restrictions-QRG2-EditRestrictionDefn.pdf">Edit a Restriction Definition</a></li>	
+			<li><a href="OLT-Admin-Restrictions-QRG3-DeleteRestrictionDefn.pdf">Delete a Restriction Definition</a></li>	
+			<li><a href="OLT-Admin-Restrictions-QRG-ManageRestrictionLocationLists.pdf">Manage Restriction Location Lists and Reason Code Associations</a></li>	
+			<li><a href="OLT-Admin-Restrictions-QRG6-ConfigureTimeLimitForDeviationResponse.pdf">Configure the time limit for a Deviation Response</a></li>				
+		</ul>
+		
+		<h1>Administration of Shift Handovers</h1>
+		
+		<ul>
+			<li><a href="OLT-Admin-ShiftHandovers-QRG1-ConfigureShiftHandoverReport.pdf">Configuring the Shift Handover Report</a></li>	
+		</ul>		
+
+		<h1>Administration of Work Assignments</h1>
+		
+		<ul>
+			<li><a href="OLT-Admin-WorkAssignments-QRG1-ConfigureNewWorkAssignmentList.pdf">Configure New Work Assignments</a></li>			
+			<li><a href="OLT-Admin-WorkAssignments-QRG2-ChangeDefaultFLOCsForWorkAssignments.pdf">Change default FLOCs for Work Assignments</a></li>	
+		</ul>		
+				
+	</body>	
+</html>

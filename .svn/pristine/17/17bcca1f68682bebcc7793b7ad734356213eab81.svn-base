@@ -1,0 +1,2391 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="splitContainer.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="splitContainer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 25</value>
+  </data>
+  <data name="splitContainer.Orientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="logDetailThreadTreeView.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="logDetailThreadTreeView.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 13</value>
+  </data>
+  <data name="logDetailThreadTreeView.Size" type="System.Drawing.Size, System.Drawing">
+    <value>866, 195</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="logDetailThreadTreeView.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;logDetailThreadTreeView.Name" xml:space="preserve">
+    <value>logDetailThreadTreeView</value>
+  </data>
+  <data name="&gt;&gt;logDetailThreadTreeView.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.Controls.Details.LogDetailThreadTreeView, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;logDetailThreadTreeView.Parent" xml:space="preserve">
+    <value>splitContainer.Panel1</value>
+  </data>
+  <data name="&gt;&gt;logDetailThreadTreeView.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="parentNotAvailableLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="parentNotAvailableLabel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="parentNotAvailableLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="parentNotAvailableLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="parentNotAvailableLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>466, 13</value>
+  </data>
+  <data name="parentNotAvailableLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="parentNotAvailableLabel.Text" xml:space="preserve">
+    <value>One or more logs in this thread are older than the configured display limit and will not be shown.</value>
+  </data>
+  <data name="&gt;&gt;parentNotAvailableLabel.Name" xml:space="preserve">
+    <value>parentNotAvailableLabel</value>
+  </data>
+  <data name="&gt;&gt;parentNotAvailableLabel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;parentNotAvailableLabel.Parent" xml:space="preserve">
+    <value>splitContainer.Panel1</value>
+  </data>
+  <data name="&gt;&gt;parentNotAvailableLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;splitContainer.Panel1.Name" xml:space="preserve">
+    <value>splitContainer.Panel1</value>
+  </data>
+  <data name="&gt;&gt;splitContainer.Panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;splitContainer.Panel1.Parent" xml:space="preserve">
+    <value>splitContainer</value>
+  </data>
+  <data name="&gt;&gt;splitContainer.Panel1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="mainFlowLayoutPanel.AutoScroll" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="expandLinkLabel1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="expandLinkLabel1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="expandLinkLabel1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="expandLinkLabel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>642, 38</value>
+  </data>
+  <data name="expandLinkLabel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>51, 13</value>
+  </data>
+  <data name="expandLinkLabel1.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="expandLinkLabel1.Text" xml:space="preserve">
+    <value>[Expand]</value>
+  </data>
+  <data name="expandLinkLabel1.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopRight</value>
+  </data>
+  <data name="&gt;&gt;expandLinkLabel1.Name" xml:space="preserve">
+    <value>expandLinkLabel1</value>
+  </data>
+  <data name="&gt;&gt;expandLinkLabel1.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLinkLabel1, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;expandLinkLabel1.Parent" xml:space="preserve">
+    <value>dateAndCommentsAndAssignmentPanel</value>
+  </data>
+  <data name="&gt;&gt;expandLinkLabel1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="commentsDisplayPanel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="commentsDisplayControl.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="commentsDisplayControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="commentsDisplayControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>550, 149</value>
+  </data>
+  <data name="commentsDisplayControl.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;commentsDisplayControl.Name" xml:space="preserve">
+    <value>commentsDisplayControl</value>
+  </data>
+  <data name="&gt;&gt;commentsDisplayControl.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.Controls.RichTextDisplay, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;commentsDisplayControl.Parent" xml:space="preserve">
+    <value>commentsDisplayPanel</value>
+  </data>
+  <data name="&gt;&gt;commentsDisplayControl.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="commentsDisplayPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>139, 58</value>
+  </data>
+  <data name="commentsDisplayPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>552, 151</value>
+  </data>
+  <data name="commentsDisplayPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;commentsDisplayPanel.Name" xml:space="preserve">
+    <value>commentsDisplayPanel</value>
+  </data>
+  <data name="&gt;&gt;commentsDisplayPanel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltPanel, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;commentsDisplayPanel.Parent" xml:space="preserve">
+    <value>dateAndCommentsAndAssignmentPanel</value>
+  </data>
+  <data name="&gt;&gt;commentsDisplayPanel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="commentsLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="commentsLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="commentsLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>70, 58</value>
+  </data>
+  <data name="commentsLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>57, 13</value>
+  </data>
+  <data name="commentsLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="commentsLabel.Text" xml:space="preserve">
+    <value>Comments</value>
+  </data>
+  <data name="&gt;&gt;commentsLabel.Name" xml:space="preserve">
+    <value>commentsLabel</value>
+  </data>
+  <data name="&gt;&gt;commentsLabel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;commentsLabel.Parent" xml:space="preserve">
+    <value>dateAndCommentsAndAssignmentLeftPanel</value>
+  </data>
+  <data name="&gt;&gt;commentsLabel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="workAssignmentLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="workAssignmentLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="workAssignmentLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>37, 220</value>
+  </data>
+  <data name="workAssignmentLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>90, 13</value>
+  </data>
+  <data name="workAssignmentLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="workAssignmentLabel.Text" xml:space="preserve">
+    <value>Work Assignment</value>
+  </data>
+  <data name="&gt;&gt;workAssignmentLabel.Name" xml:space="preserve">
+    <value>workAssignmentLabel</value>
+  </data>
+  <data name="&gt;&gt;workAssignmentLabel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;workAssignmentLabel.Parent" xml:space="preserve">
+    <value>dateAndCommentsAndAssignmentLeftPanel</value>
+  </data>
+  <data name="&gt;&gt;workAssignmentLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="creationDateTimeLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="creationDateTimeLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="creationDateTimeLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>27, 9</value>
+  </data>
+  <data name="creationDateTimeLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 13</value>
+  </data>
+  <data name="creationDateTimeLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="creationDateTimeLabel.Text" xml:space="preserve">
+    <value>Creation Date/Time</value>
+  </data>
+  <data name="&gt;&gt;creationDateTimeLabel.Name" xml:space="preserve">
+    <value>creationDateTimeLabel</value>
+  </data>
+  <data name="&gt;&gt;creationDateTimeLabel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;creationDateTimeLabel.Parent" xml:space="preserve">
+    <value>dateAndCommentsAndAssignmentLeftPanel</value>
+  </data>
+  <data name="&gt;&gt;creationDateTimeLabel.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="dateAndCommentsAndAssignmentLeftPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="dateAndCommentsAndAssignmentLeftPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="dateAndCommentsAndAssignmentLeftPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>133, 250</value>
+  </data>
+  <data name="dateAndCommentsAndAssignmentLeftPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;dateAndCommentsAndAssignmentLeftPanel.Name" xml:space="preserve">
+    <value>dateAndCommentsAndAssignmentLeftPanel</value>
+  </data>
+  <data name="&gt;&gt;dateAndCommentsAndAssignmentLeftPanel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltPanel, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;dateAndCommentsAndAssignmentLeftPanel.Parent" xml:space="preserve">
+    <value>dateAndCommentsAndAssignmentPanel</value>
+  </data>
+  <data name="&gt;&gt;dateAndCommentsAndAssignmentLeftPanel.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="actualLoggedDateTimeTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>157, 3</value>
+  </data>
+  <data name="actualLoggedDateTimeTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>189, 20</value>
+  </data>
+  <data name="actualLoggedDateTimeTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;actualLoggedDateTimeTextBox.Name" xml:space="preserve">
+    <value>actualLoggedDateTimeTextBox</value>
+  </data>
+  <data name="&gt;&gt;actualLoggedDateTimeTextBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltTextBox, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;actualLoggedDateTimeTextBox.Parent" xml:space="preserve">
+    <value>logDateTimeFlowLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;actualLoggedDateTimeTextBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="actualLoggedDateTimeLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="actualLoggedDateTimeLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="actualLoggedDateTimeLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>75, 7</value>
+  </data>
+  <data name="actualLoggedDateTimeLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 7, 3, 0</value>
+  </data>
+  <data name="actualLoggedDateTimeLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>76, 13</value>
+  </data>
+  <data name="actualLoggedDateTimeLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="actualLoggedDateTimeLabel.Text" xml:space="preserve">
+    <value>Log Date/Time</value>
+  </data>
+  <data name="actualLoggedDateTimeLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;actualLoggedDateTimeLabel.Name" xml:space="preserve">
+    <value>actualLoggedDateTimeLabel</value>
+  </data>
+  <data name="&gt;&gt;actualLoggedDateTimeLabel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;actualLoggedDateTimeLabel.Parent" xml:space="preserve">
+    <value>logDateTimeFlowLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;actualLoggedDateTimeLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="logDateTimeFlowLayoutPanel.FlowDirection" type="System.Windows.Forms.FlowDirection, System.Windows.Forms">
+    <value>RightToLeft</value>
+  </data>
+  <data name="logDateTimeFlowLayoutPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>332, 4</value>
+  </data>
+  <data name="logDateTimeFlowLayoutPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>349, 27</value>
+  </data>
+  <data name="logDateTimeFlowLayoutPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;logDateTimeFlowLayoutPanel.Name" xml:space="preserve">
+    <value>logDateTimeFlowLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;logDateTimeFlowLayoutPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;logDateTimeFlowLayoutPanel.Parent" xml:space="preserve">
+    <value>dateAndCommentsAndAssignmentPanel</value>
+  </data>
+  <data name="&gt;&gt;logDateTimeFlowLayoutPanel.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="workAssignmentTextBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="workAssignmentTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>139, 218</value>
+  </data>
+  <data name="workAssignmentTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>552, 20</value>
+  </data>
+  <data name="workAssignmentTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;workAssignmentTextBox.Name" xml:space="preserve">
+    <value>workAssignmentTextBox</value>
+  </data>
+  <data name="&gt;&gt;workAssignmentTextBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltTextBox, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;workAssignmentTextBox.Parent" xml:space="preserve">
+    <value>dateAndCommentsAndAssignmentPanel</value>
+  </data>
+  <data name="&gt;&gt;workAssignmentTextBox.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="creationDateTimeTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>139, 7</value>
+  </data>
+  <data name="creationDateTimeTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>189, 20</value>
+  </data>
+  <data name="creationDateTimeTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;creationDateTimeTextBox.Name" xml:space="preserve">
+    <value>creationDateTimeTextBox</value>
+  </data>
+  <data name="&gt;&gt;creationDateTimeTextBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltTextBox, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;creationDateTimeTextBox.Parent" xml:space="preserve">
+    <value>dateAndCommentsAndAssignmentPanel</value>
+  </data>
+  <data name="&gt;&gt;creationDateTimeTextBox.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="dateAndCommentsAndAssignmentPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="dateAndCommentsAndAssignmentPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="dateAndCommentsAndAssignmentPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>700, 250</value>
+  </data>
+  <data name="dateAndCommentsAndAssignmentPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;dateAndCommentsAndAssignmentPanel.Name" xml:space="preserve">
+    <value>dateAndCommentsAndAssignmentPanel</value>
+  </data>
+  <data name="&gt;&gt;dateAndCommentsAndAssignmentPanel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltPanel, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;dateAndCommentsAndAssignmentPanel.Parent" xml:space="preserve">
+    <value>mainFlowLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;dateAndCommentsAndAssignmentPanel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="customFieldEntriesPanel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="customFieldEntriesPanel.AutoScroll" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="customFieldEntriesPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>139, 7</value>
+  </data>
+  <data name="customFieldEntriesPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>553, 99</value>
+  </data>
+  <data name="customFieldEntriesPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;customFieldEntriesPanel.Name" xml:space="preserve">
+    <value>customFieldEntriesPanel</value>
+  </data>
+  <data name="&gt;&gt;customFieldEntriesPanel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltPanel, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;customFieldEntriesPanel.Parent" xml:space="preserve">
+    <value>customFieldsPanel</value>
+  </data>
+  <data name="&gt;&gt;customFieldEntriesPanel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="customFieldsLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="customFieldsLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="customFieldsLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>54, 11</value>
+  </data>
+  <data name="customFieldsLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 13</value>
+  </data>
+  <data name="customFieldsLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="customFieldsLabel.Text" xml:space="preserve">
+    <value>Custom Fields</value>
+  </data>
+  <data name="&gt;&gt;customFieldsLabel.Name" xml:space="preserve">
+    <value>customFieldsLabel</value>
+  </data>
+  <data name="&gt;&gt;customFieldsLabel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;customFieldsLabel.Parent" xml:space="preserve">
+    <value>customFieldsLeftPanel</value>
+  </data>
+  <data name="&gt;&gt;customFieldsLabel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="customFieldsLeftPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="customFieldsLeftPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="customFieldsLeftPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="customFieldsLeftPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>133, 110</value>
+  </data>
+  <data name="customFieldsLeftPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;customFieldsLeftPanel.Name" xml:space="preserve">
+    <value>customFieldsLeftPanel</value>
+  </data>
+  <data name="&gt;&gt;customFieldsLeftPanel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltPanel, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;customFieldsLeftPanel.Parent" xml:space="preserve">
+    <value>customFieldsPanel</value>
+  </data>
+  <data name="&gt;&gt;customFieldsLeftPanel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="customFieldsPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 250</value>
+  </data>
+  <data name="customFieldsPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="customFieldsPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>700, 110</value>
+  </data>
+  <data name="customFieldsPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;customFieldsPanel.Name" xml:space="preserve">
+    <value>customFieldsPanel</value>
+  </data>
+  <data name="&gt;&gt;customFieldsPanel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltPanel, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;customFieldsPanel.Parent" xml:space="preserve">
+    <value>mainFlowLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;customFieldsPanel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="flocContentPanel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="flocContentPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>139, 7</value>
+  </data>
+  <data name="flocContentPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>553, 58</value>
+  </data>
+  <data name="flocContentPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;flocContentPanel.Name" xml:space="preserve">
+    <value>flocContentPanel</value>
+  </data>
+  <data name="&gt;&gt;flocContentPanel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltPanel, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;flocContentPanel.Parent" xml:space="preserve">
+    <value>flocPanel</value>
+  </data>
+  <data name="&gt;&gt;flocContentPanel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="functionalLocationLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="functionalLocationLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="functionalLocationLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>23, 11</value>
+  </data>
+  <data name="functionalLocationLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>104, 13</value>
+  </data>
+  <data name="functionalLocationLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="functionalLocationLabel.Text" xml:space="preserve">
+    <value>Functional Locations</value>
+  </data>
+  <data name="&gt;&gt;functionalLocationLabel.Name" xml:space="preserve">
+    <value>functionalLocationLabel</value>
+  </data>
+  <data name="&gt;&gt;functionalLocationLabel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;functionalLocationLabel.Parent" xml:space="preserve">
+    <value>flocLeftPanel</value>
+  </data>
+  <data name="&gt;&gt;functionalLocationLabel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="flocLeftPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="flocLeftPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="flocLeftPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="flocLeftPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>133, 69</value>
+  </data>
+  <data name="flocLeftPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;flocLeftPanel.Name" xml:space="preserve">
+    <value>flocLeftPanel</value>
+  </data>
+  <data name="&gt;&gt;flocLeftPanel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltPanel, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;flocLeftPanel.Parent" xml:space="preserve">
+    <value>flocPanel</value>
+  </data>
+  <data name="&gt;&gt;flocLeftPanel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="flocPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 360</value>
+  </data>
+  <data name="flocPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="flocPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>700, 69</value>
+  </data>
+  <data name="flocPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;flocPanel.Name" xml:space="preserve">
+    <value>flocPanel</value>
+  </data>
+  <data name="&gt;&gt;flocPanel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltPanel, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;flocPanel.Parent" xml:space="preserve">
+    <value>mainFlowLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;flocPanel.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="optionsGroupBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="flowLayoutPanel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="IsOperatingEngineerLogCheckBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="IsOperatingEngineerLogCheckBox.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="IsOperatingEngineerLogCheckBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="IsOperatingEngineerLogCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="IsOperatingEngineerLogCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>119, 17</value>
+  </data>
+  <data name="IsOperatingEngineerLogCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="IsOperatingEngineerLogCheckBox.Text" xml:space="preserve">
+    <value>Operating Engineer</value>
+  </data>
+  <data name="&gt;&gt;IsOperatingEngineerLogCheckBox.Name" xml:space="preserve">
+    <value>IsOperatingEngineerLogCheckBox</value>
+  </data>
+  <data name="&gt;&gt;IsOperatingEngineerLogCheckBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltCheckBox, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;IsOperatingEngineerLogCheckBox.Parent" xml:space="preserve">
+    <value>flowLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;IsOperatingEngineerLogCheckBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="recommendForShiftSummaryCheckBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="recommendForShiftSummaryCheckBox.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="recommendForShiftSummaryCheckBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="recommendForShiftSummaryCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>128, 3</value>
+  </data>
+  <data name="recommendForShiftSummaryCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>160, 17</value>
+  </data>
+  <data name="recommendForShiftSummaryCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="recommendForShiftSummaryCheckBox.Text" xml:space="preserve">
+    <value>Recommended for Summary</value>
+  </data>
+  <data name="&gt;&gt;recommendForShiftSummaryCheckBox.Name" xml:space="preserve">
+    <value>recommendForShiftSummaryCheckBox</value>
+  </data>
+  <data name="&gt;&gt;recommendForShiftSummaryCheckBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltCheckBox, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;recommendForShiftSummaryCheckBox.Parent" xml:space="preserve">
+    <value>flowLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;recommendForShiftSummaryCheckBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="flowLayoutPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 8</value>
+  </data>
+  <data name="flowLayoutPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>535, 21</value>
+  </data>
+  <data name="flowLayoutPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;flowLayoutPanel.Name" xml:space="preserve">
+    <value>flowLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;flowLayoutPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;flowLayoutPanel.Parent" xml:space="preserve">
+    <value>optionsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;flowLayoutPanel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="optionsGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>139, 0</value>
+  </data>
+  <data name="optionsGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>554, 34</value>
+  </data>
+  <data name="optionsGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;optionsGroupBox.Name" xml:space="preserve">
+    <value>optionsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;optionsGroupBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltGroupBox, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;optionsGroupBox.Parent" xml:space="preserve">
+    <value>optionsPanel</value>
+  </data>
+  <data name="&gt;&gt;optionsGroupBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="optionsLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="optionsLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="optionsLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>83, 11</value>
+  </data>
+  <data name="optionsLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 13</value>
+  </data>
+  <data name="optionsLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="optionsLabel.Text" xml:space="preserve">
+    <value>Options</value>
+  </data>
+  <data name="&gt;&gt;optionsLabel.Name" xml:space="preserve">
+    <value>optionsLabel</value>
+  </data>
+  <data name="&gt;&gt;optionsLabel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;optionsLabel.Parent" xml:space="preserve">
+    <value>optionsLeftPanel</value>
+  </data>
+  <data name="&gt;&gt;optionsLabel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="optionsLeftPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="optionsLeftPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="optionsLeftPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="optionsLeftPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>133, 38</value>
+  </data>
+  <data name="optionsLeftPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;optionsLeftPanel.Name" xml:space="preserve">
+    <value>optionsLeftPanel</value>
+  </data>
+  <data name="&gt;&gt;optionsLeftPanel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltPanel, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;optionsLeftPanel.Parent" xml:space="preserve">
+    <value>optionsPanel</value>
+  </data>
+  <data name="&gt;&gt;optionsLeftPanel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="optionsPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 429</value>
+  </data>
+  <data name="optionsPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="optionsPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>700, 38</value>
+  </data>
+  <data name="optionsPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;optionsPanel.Name" xml:space="preserve">
+    <value>optionsPanel</value>
+  </data>
+  <data name="&gt;&gt;optionsPanel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltPanel, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;optionsPanel.Parent" xml:space="preserve">
+    <value>mainFlowLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;optionsPanel.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="follupupGroupBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="otherCheckBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="otherCheckBox.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="otherCheckBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="otherCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>391, 20</value>
+  </data>
+  <data name="otherCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>136, 17</value>
+  </data>
+  <data name="otherCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="otherCheckBox.Text" xml:space="preserve">
+    <value>Other (See Comments)</value>
+  </data>
+  <data name="&gt;&gt;otherCheckBox.Name" xml:space="preserve">
+    <value>otherCheckBox</value>
+  </data>
+  <data name="&gt;&gt;otherCheckBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltCheckBox, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;otherCheckBox.Parent" xml:space="preserve">
+    <value>follupupGroupBox</value>
+  </data>
+  <data name="&gt;&gt;otherCheckBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="supervisionCheckBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="supervisionCheckBox.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="supervisionCheckBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="supervisionCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>312, 20</value>
+  </data>
+  <data name="supervisionCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>81, 17</value>
+  </data>
+  <data name="supervisionCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="supervisionCheckBox.Text" xml:space="preserve">
+    <value>Supervision</value>
+  </data>
+  <data name="&gt;&gt;supervisionCheckBox.Name" xml:space="preserve">
+    <value>supervisionCheckBox</value>
+  </data>
+  <data name="&gt;&gt;supervisionCheckBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltCheckBox, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;supervisionCheckBox.Parent" xml:space="preserve">
+    <value>follupupGroupBox</value>
+  </data>
+  <data name="&gt;&gt;supervisionCheckBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="inspectionCheckBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="inspectionCheckBox.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="inspectionCheckBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="inspectionCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>238, 20</value>
+  </data>
+  <data name="inspectionCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>76, 17</value>
+  </data>
+  <data name="inspectionCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="inspectionCheckBox.Text" xml:space="preserve">
+    <value>Inspection</value>
+  </data>
+  <data name="&gt;&gt;inspectionCheckBox.Name" xml:space="preserve">
+    <value>inspectionCheckBox</value>
+  </data>
+  <data name="&gt;&gt;inspectionCheckBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltCheckBox, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;inspectionCheckBox.Parent" xml:space="preserve">
+    <value>follupupGroupBox</value>
+  </data>
+  <data name="&gt;&gt;inspectionCheckBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="operationsCheckBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="operationsCheckBox.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="operationsCheckBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="operationsCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>161, 20</value>
+  </data>
+  <data name="operationsCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>79, 17</value>
+  </data>
+  <data name="operationsCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="operationsCheckBox.Text" xml:space="preserve">
+    <value>Operations</value>
+  </data>
+  <data name="&gt;&gt;operationsCheckBox.Name" xml:space="preserve">
+    <value>operationsCheckBox</value>
+  </data>
+  <data name="&gt;&gt;operationsCheckBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltCheckBox, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;operationsCheckBox.Parent" xml:space="preserve">
+    <value>follupupGroupBox</value>
+  </data>
+  <data name="&gt;&gt;operationsCheckBox.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="processControlCheckBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="processControlCheckBox.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="processControlCheckBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="processControlCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>62, 20</value>
+  </data>
+  <data name="processControlCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>101, 17</value>
+  </data>
+  <data name="processControlCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="processControlCheckBox.Text" xml:space="preserve">
+    <value>Process Control</value>
+  </data>
+  <data name="&gt;&gt;processControlCheckBox.Name" xml:space="preserve">
+    <value>processControlCheckBox</value>
+  </data>
+  <data name="&gt;&gt;processControlCheckBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltCheckBox, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;processControlCheckBox.Parent" xml:space="preserve">
+    <value>follupupGroupBox</value>
+  </data>
+  <data name="&gt;&gt;processControlCheckBox.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="EnvironmentalHealthAndSafetyCheckBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="EnvironmentalHealthAndSafetyCheckBox.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="EnvironmentalHealthAndSafetyCheckBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="EnvironmentalHealthAndSafetyCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 20</value>
+  </data>
+  <data name="EnvironmentalHealthAndSafetyCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>52, 17</value>
+  </data>
+  <data name="EnvironmentalHealthAndSafetyCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="EnvironmentalHealthAndSafetyCheckBox.Text" xml:space="preserve">
+    <value>EH&amp;&amp;S</value>
+  </data>
+  <data name="&gt;&gt;EnvironmentalHealthAndSafetyCheckBox.Name" xml:space="preserve">
+    <value>EnvironmentalHealthAndSafetyCheckBox</value>
+  </data>
+  <data name="&gt;&gt;EnvironmentalHealthAndSafetyCheckBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltCheckBox, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;EnvironmentalHealthAndSafetyCheckBox.Parent" xml:space="preserve">
+    <value>follupupGroupBox</value>
+  </data>
+  <data name="&gt;&gt;EnvironmentalHealthAndSafetyCheckBox.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="follupupGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>139, 7</value>
+  </data>
+  <data name="follupupGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>552, 46</value>
+  </data>
+  <data name="follupupGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="follupupGroupBox.Text" xml:space="preserve">
+    <value>Requires Follow-up</value>
+  </data>
+  <data name="&gt;&gt;follupupGroupBox.Name" xml:space="preserve">
+    <value>follupupGroupBox</value>
+  </data>
+  <data name="&gt;&gt;follupupGroupBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltGroupBox, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;follupupGroupBox.Parent" xml:space="preserve">
+    <value>followupPanel</value>
+  </data>
+  <data name="&gt;&gt;follupupGroupBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="followUpLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="followUpLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="followUpLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>74, 9</value>
+  </data>
+  <data name="followUpLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>53, 13</value>
+  </data>
+  <data name="followUpLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="followUpLabel.Text" xml:space="preserve">
+    <value>Follow-up</value>
+  </data>
+  <data name="&gt;&gt;followUpLabel.Name" xml:space="preserve">
+    <value>followUpLabel</value>
+  </data>
+  <data name="&gt;&gt;followUpLabel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;followUpLabel.Parent" xml:space="preserve">
+    <value>followupLeftPanel</value>
+  </data>
+  <data name="&gt;&gt;followUpLabel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="followupLeftPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="followupLeftPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="followupLeftPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="followupLeftPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>133, 55</value>
+  </data>
+  <data name="followupLeftPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;followupLeftPanel.Name" xml:space="preserve">
+    <value>followupLeftPanel</value>
+  </data>
+  <data name="&gt;&gt;followupLeftPanel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltPanel, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;followupLeftPanel.Parent" xml:space="preserve">
+    <value>followupPanel</value>
+  </data>
+  <data name="&gt;&gt;followupLeftPanel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="followupPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 467</value>
+  </data>
+  <data name="followupPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="followupPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>700, 55</value>
+  </data>
+  <data name="followupPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;followupPanel.Name" xml:space="preserve">
+    <value>followupPanel</value>
+  </data>
+  <data name="&gt;&gt;followupPanel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltPanel, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;followupPanel.Parent" xml:space="preserve">
+    <value>mainFlowLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;followupPanel.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="documentLinksControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>140, 4</value>
+  </data>
+  <data name="documentLinksControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>551, 74</value>
+  </data>
+  <data name="documentLinksControl.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;documentLinksControl.Name" xml:space="preserve">
+    <value>documentLinksControl</value>
+  </data>
+  <data name="&gt;&gt;documentLinksControl.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.Controls.DocumentLinksControl, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;documentLinksControl.Parent" xml:space="preserve">
+    <value>documentLinksPanel</value>
+  </data>
+  <data name="&gt;&gt;documentLinksControl.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="documentLinksLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="documentLinksLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="documentLinksLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>46, 11</value>
+  </data>
+  <data name="documentLinksLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>81, 13</value>
+  </data>
+  <data name="documentLinksLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="documentLinksLabel.Text" xml:space="preserve">
+    <value>Document Links</value>
+  </data>
+  <data name="&gt;&gt;documentLinksLabel.Name" xml:space="preserve">
+    <value>documentLinksLabel</value>
+  </data>
+  <data name="&gt;&gt;documentLinksLabel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;documentLinksLabel.Parent" xml:space="preserve">
+    <value>documentLinksLeftPanel</value>
+  </data>
+  <data name="&gt;&gt;documentLinksLabel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="documentLinksLeftPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="documentLinksLeftPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="documentLinksLeftPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="documentLinksLeftPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>133, 78</value>
+  </data>
+  <data name="documentLinksLeftPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;documentLinksLeftPanel.Name" xml:space="preserve">
+    <value>documentLinksLeftPanel</value>
+  </data>
+  <data name="&gt;&gt;documentLinksLeftPanel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltPanel, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;documentLinksLeftPanel.Parent" xml:space="preserve">
+    <value>documentLinksPanel</value>
+  </data>
+  <data name="&gt;&gt;documentLinksLeftPanel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="documentLinksPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 522</value>
+  </data>
+  <data name="documentLinksPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="documentLinksPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>700, 78</value>
+  </data>
+  <data name="documentLinksPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;documentLinksPanel.Name" xml:space="preserve">
+    <value>documentLinksPanel</value>
+  </data>
+  <data name="&gt;&gt;documentLinksPanel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltPanel, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;documentLinksPanel.Parent" xml:space="preserve">
+    <value>mainFlowLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;documentLinksPanel.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="markedAsReadByPanel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="markedAsReadByPanel.AutoScroll" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="markedAsReadByPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>139, 7</value>
+  </data>
+  <data name="markedAsReadByPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>552, 13</value>
+  </data>
+  <data name="markedAsReadByPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;markedAsReadByPanel.Name" xml:space="preserve">
+    <value>markedAsReadByPanel</value>
+  </data>
+  <data name="&gt;&gt;markedAsReadByPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;markedAsReadByPanel.Parent" xml:space="preserve">
+    <value>markedAsReadPanel</value>
+  </data>
+  <data name="&gt;&gt;markedAsReadByPanel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="markedAsReadToggleButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 6</value>
+  </data>
+  <data name="markedAsReadToggleButton.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;markedAsReadToggleButton.Name" xml:space="preserve">
+    <value>markedAsReadToggleButton</value>
+  </data>
+  <data name="&gt;&gt;markedAsReadToggleButton.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltToggleButton, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;markedAsReadToggleButton.Parent" xml:space="preserve">
+    <value>markedAsReadLeftPanel</value>
+  </data>
+  <data name="&gt;&gt;markedAsReadToggleButton.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="markedAsReadLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="markedAsReadLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="markedAsReadLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>27, 7</value>
+  </data>
+  <data name="markedAsReadLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 13</value>
+  </data>
+  <data name="markedAsReadLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="markedAsReadLabel.Text" xml:space="preserve">
+    <value>Marked As Read By</value>
+  </data>
+  <data name="&gt;&gt;markedAsReadLabel.Name" xml:space="preserve">
+    <value>markedAsReadLabel</value>
+  </data>
+  <data name="&gt;&gt;markedAsReadLabel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;markedAsReadLabel.Parent" xml:space="preserve">
+    <value>markedAsReadLeftPanel</value>
+  </data>
+  <data name="&gt;&gt;markedAsReadLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="markedAsReadLeftPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="markedAsReadLeftPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="markedAsReadLeftPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="markedAsReadLeftPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>133, 27</value>
+  </data>
+  <data name="markedAsReadLeftPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;markedAsReadLeftPanel.Name" xml:space="preserve">
+    <value>markedAsReadLeftPanel</value>
+  </data>
+  <data name="&gt;&gt;markedAsReadLeftPanel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltPanel, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;markedAsReadLeftPanel.Parent" xml:space="preserve">
+    <value>markedAsReadPanel</value>
+  </data>
+  <data name="&gt;&gt;markedAsReadLeftPanel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="markedAsReadPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 600</value>
+  </data>
+  <data name="markedAsReadPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="markedAsReadPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>700, 27</value>
+  </data>
+  <data name="markedAsReadPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;markedAsReadPanel.Name" xml:space="preserve">
+    <value>markedAsReadPanel</value>
+  </data>
+  <data name="&gt;&gt;markedAsReadPanel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltPanel, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;markedAsReadPanel.Parent" xml:space="preserve">
+    <value>mainFlowLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;markedAsReadPanel.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="recurrencePatternData.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="recurrencePatternData.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="recurrencePatternData.Location" type="System.Drawing.Point, System.Drawing">
+    <value>60, 19</value>
+  </data>
+  <data name="recurrencePatternData.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 13</value>
+  </data>
+  <data name="recurrencePatternData.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="recurrencePatternData.Text" xml:space="preserve">
+    <value>stuff</value>
+  </data>
+  <data name="&gt;&gt;recurrencePatternData.Name" xml:space="preserve">
+    <value>recurrencePatternData</value>
+  </data>
+  <data name="&gt;&gt;recurrencePatternData.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabelData, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;recurrencePatternData.Parent" xml:space="preserve">
+    <value>recurrencePatternGroupBox</value>
+  </data>
+  <data name="&gt;&gt;recurrencePatternData.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="occursLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="occursLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="occursLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 18</value>
+  </data>
+  <data name="occursLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 13</value>
+  </data>
+  <data name="occursLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="occursLabel.Text" xml:space="preserve">
+    <value>Occurs:</value>
+  </data>
+  <data name="&gt;&gt;occursLabel.Name" xml:space="preserve">
+    <value>occursLabel</value>
+  </data>
+  <data name="&gt;&gt;occursLabel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;occursLabel.Parent" xml:space="preserve">
+    <value>recurrencePatternGroupBox</value>
+  </data>
+  <data name="&gt;&gt;occursLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="recurrencePatternGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>139, 52</value>
+  </data>
+  <data name="recurrencePatternGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>539, 38</value>
+  </data>
+  <data name="recurrencePatternGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="recurrencePatternGroupBox.Text" xml:space="preserve">
+    <value>Recurrence Pattern</value>
+  </data>
+  <data name="&gt;&gt;recurrencePatternGroupBox.Name" xml:space="preserve">
+    <value>recurrencePatternGroupBox</value>
+  </data>
+  <data name="&gt;&gt;recurrencePatternGroupBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltGroupBox, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;recurrencePatternGroupBox.Parent" xml:space="preserve">
+    <value>schedulePanel</value>
+  </data>
+  <data name="&gt;&gt;recurrencePatternGroupBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="raiseStartTimeData.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="raiseStartTimeData.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="raiseStartTimeData.Location" type="System.Drawing.Point, System.Drawing">
+    <value>73, 17</value>
+  </data>
+  <data name="raiseStartTimeData.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 13</value>
+  </data>
+  <data name="raiseStartTimeData.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="raiseStartTimeData.Text" xml:space="preserve">
+    <value>12:45pm</value>
+  </data>
+  <data name="&gt;&gt;raiseStartTimeData.Name" xml:space="preserve">
+    <value>raiseStartTimeData</value>
+  </data>
+  <data name="&gt;&gt;raiseStartTimeData.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabelData, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;raiseStartTimeData.Parent" xml:space="preserve">
+    <value>raiseTimeGroupBox</value>
+  </data>
+  <data name="&gt;&gt;raiseStartTimeData.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="raiseStartTimeLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="raiseStartTimeLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="raiseStartTimeLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 17</value>
+  </data>
+  <data name="raiseStartTimeLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 13</value>
+  </data>
+  <data name="raiseStartTimeLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="raiseStartTimeLabel.Text" xml:space="preserve">
+    <value>Start Time:</value>
+  </data>
+  <data name="&gt;&gt;raiseStartTimeLabel.Name" xml:space="preserve">
+    <value>raiseStartTimeLabel</value>
+  </data>
+  <data name="&gt;&gt;raiseStartTimeLabel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;raiseStartTimeLabel.Parent" xml:space="preserve">
+    <value>raiseTimeGroupBox</value>
+  </data>
+  <data name="&gt;&gt;raiseStartTimeLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="raiseTimeGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>502, 7</value>
+  </data>
+  <data name="raiseTimeGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>176, 39</value>
+  </data>
+  <data name="raiseTimeGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="raiseTimeGroupBox.Text" xml:space="preserve">
+    <value>Raise Time</value>
+  </data>
+  <data name="&gt;&gt;raiseTimeGroupBox.Name" xml:space="preserve">
+    <value>raiseTimeGroupBox</value>
+  </data>
+  <data name="&gt;&gt;raiseTimeGroupBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltGroupBox, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;raiseTimeGroupBox.Parent" xml:space="preserve">
+    <value>schedulePanel</value>
+  </data>
+  <data name="&gt;&gt;raiseTimeGroupBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="recurrenceEndDateData.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="recurrenceEndDateData.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="recurrenceEndDateData.Location" type="System.Drawing.Point, System.Drawing">
+    <value>245, 17</value>
+  </data>
+  <data name="recurrenceEndDateData.Size" type="System.Drawing.Size, System.Drawing">
+    <value>67, 13</value>
+  </data>
+  <data name="recurrenceEndDateData.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="recurrenceEndDateData.Text" xml:space="preserve">
+    <value>25 Dec 2005</value>
+  </data>
+  <data name="&gt;&gt;recurrenceEndDateData.Name" xml:space="preserve">
+    <value>recurrenceEndDateData</value>
+  </data>
+  <data name="&gt;&gt;recurrenceEndDateData.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabelData, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;recurrenceEndDateData.Parent" xml:space="preserve">
+    <value>rangeOfRecurrenceGroupBox</value>
+  </data>
+  <data name="&gt;&gt;recurrenceEndDateData.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="rangeOfRecurrenceEndDateLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="rangeOfRecurrenceEndDateLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="rangeOfRecurrenceEndDateLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>185, 17</value>
+  </data>
+  <data name="rangeOfRecurrenceEndDateLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 13</value>
+  </data>
+  <data name="rangeOfRecurrenceEndDateLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="rangeOfRecurrenceEndDateLabel.Text" xml:space="preserve">
+    <value>End Date:</value>
+  </data>
+  <data name="&gt;&gt;rangeOfRecurrenceEndDateLabel.Name" xml:space="preserve">
+    <value>rangeOfRecurrenceEndDateLabel</value>
+  </data>
+  <data name="&gt;&gt;rangeOfRecurrenceEndDateLabel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;rangeOfRecurrenceEndDateLabel.Parent" xml:space="preserve">
+    <value>rangeOfRecurrenceGroupBox</value>
+  </data>
+  <data name="&gt;&gt;rangeOfRecurrenceEndDateLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="recurrenceStartDateData.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="recurrenceStartDateData.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="recurrenceStartDateData.Location" type="System.Drawing.Point, System.Drawing">
+    <value>72, 17</value>
+  </data>
+  <data name="recurrenceStartDateData.Size" type="System.Drawing.Size, System.Drawing">
+    <value>67, 13</value>
+  </data>
+  <data name="recurrenceStartDateData.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="recurrenceStartDateData.Text" xml:space="preserve">
+    <value>25 Dec 2005</value>
+  </data>
+  <data name="&gt;&gt;recurrenceStartDateData.Name" xml:space="preserve">
+    <value>recurrenceStartDateData</value>
+  </data>
+  <data name="&gt;&gt;recurrenceStartDateData.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabelData, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;recurrenceStartDateData.Parent" xml:space="preserve">
+    <value>rangeOfRecurrenceGroupBox</value>
+  </data>
+  <data name="&gt;&gt;recurrenceStartDateData.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="rangeOfRecurrenceStartDateLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="rangeOfRecurrenceStartDateLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="rangeOfRecurrenceStartDateLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 17</value>
+  </data>
+  <data name="rangeOfRecurrenceStartDateLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>61, 13</value>
+  </data>
+  <data name="rangeOfRecurrenceStartDateLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="rangeOfRecurrenceStartDateLabel.Text" xml:space="preserve">
+    <value>Start Date:</value>
+  </data>
+  <data name="&gt;&gt;rangeOfRecurrenceStartDateLabel.Name" xml:space="preserve">
+    <value>rangeOfRecurrenceStartDateLabel</value>
+  </data>
+  <data name="&gt;&gt;rangeOfRecurrenceStartDateLabel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;rangeOfRecurrenceStartDateLabel.Parent" xml:space="preserve">
+    <value>rangeOfRecurrenceGroupBox</value>
+  </data>
+  <data name="&gt;&gt;rangeOfRecurrenceStartDateLabel.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="rangeOfRecurrenceGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>139, 7</value>
+  </data>
+  <data name="rangeOfRecurrenceGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>357, 39</value>
+  </data>
+  <data name="rangeOfRecurrenceGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="rangeOfRecurrenceGroupBox.Text" xml:space="preserve">
+    <value>Range of Recurrence</value>
+  </data>
+  <data name="&gt;&gt;rangeOfRecurrenceGroupBox.Name" xml:space="preserve">
+    <value>rangeOfRecurrenceGroupBox</value>
+  </data>
+  <data name="&gt;&gt;rangeOfRecurrenceGroupBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltGroupBox, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;rangeOfRecurrenceGroupBox.Parent" xml:space="preserve">
+    <value>schedulePanel</value>
+  </data>
+  <data name="&gt;&gt;rangeOfRecurrenceGroupBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="scheduleLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="scheduleLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="scheduleLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>77, 11</value>
+  </data>
+  <data name="scheduleLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 13</value>
+  </data>
+  <data name="scheduleLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="scheduleLabel.Text" xml:space="preserve">
+    <value>Schedule</value>
+  </data>
+  <data name="&gt;&gt;scheduleLabel.Name" xml:space="preserve">
+    <value>scheduleLabel</value>
+  </data>
+  <data name="&gt;&gt;scheduleLabel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;scheduleLabel.Parent" xml:space="preserve">
+    <value>scheduleLeftPanel</value>
+  </data>
+  <data name="&gt;&gt;scheduleLabel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="scheduleLeftPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="scheduleLeftPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="scheduleLeftPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="scheduleLeftPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>133, 99</value>
+  </data>
+  <data name="scheduleLeftPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;scheduleLeftPanel.Name" xml:space="preserve">
+    <value>scheduleLeftPanel</value>
+  </data>
+  <data name="&gt;&gt;scheduleLeftPanel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltPanel, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;scheduleLeftPanel.Parent" xml:space="preserve">
+    <value>schedulePanel</value>
+  </data>
+  <data name="&gt;&gt;scheduleLeftPanel.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="schedulePanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 627</value>
+  </data>
+  <data name="schedulePanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="schedulePanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>700, 99</value>
+  </data>
+  <data name="schedulePanel.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;schedulePanel.Name" xml:space="preserve">
+    <value>schedulePanel</value>
+  </data>
+  <data name="&gt;&gt;schedulePanel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltPanel, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;schedulePanel.Parent" xml:space="preserve">
+    <value>mainFlowLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;schedulePanel.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <metadata name="Type.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="Type.HeaderText" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <metadata name="Column1.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="Column1.HeaderText" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <metadata name="Description.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="Description.HeaderText" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <metadata name="Column3.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="Column3.HeaderText" xml:space="preserve">
+    <value>Image</value>
+  </data>
+  <data name="Column3.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <metadata name="Imagebutton.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="Imagebutton.HeaderText" xml:space="preserve">
+    <value>Image</value>
+  </data>
+  <data name="Imagebutton.Width" type="System.Int32, mscorlib">
+    <value>200</value>
+  </data>
+  <data name="oltDGVImage.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="oltDGVImage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>133, 0</value>
+  </data>
+  <data name="oltDGVImage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>567, 134</value>
+  </data>
+  <data name="oltDGVImage.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;oltDGVImage.Name" xml:space="preserve">
+    <value>oltDGVImage</value>
+  </data>
+  <data name="&gt;&gt;oltDGVImage.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltDataGridView, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;oltDGVImage.Parent" xml:space="preserve">
+    <value>oltPanelImagelist</value>
+  </data>
+  <data name="&gt;&gt;oltDGVImage.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="oltLabel1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="oltLabel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>37, 37</value>
+  </data>
+  <data name="oltLabel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 23</value>
+  </data>
+  <data name="oltLabel1.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="oltLabel1.Text" xml:space="preserve">
+    <value>Log Images</value>
+  </data>
+  <data name="&gt;&gt;oltLabel1.Name" xml:space="preserve">
+    <value>oltLabel1</value>
+  </data>
+  <data name="&gt;&gt;oltLabel1.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;oltLabel1.Parent" xml:space="preserve">
+    <value>oltPanel2</value>
+  </data>
+  <data name="&gt;&gt;oltLabel1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="oltPanel2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="oltPanel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="oltPanel2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="oltPanel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>133, 137</value>
+  </data>
+  <data name="oltPanel2.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;oltPanel2.Name" xml:space="preserve">
+    <value>oltPanel2</value>
+  </data>
+  <data name="&gt;&gt;oltPanel2.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltPanel, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;oltPanel2.Parent" xml:space="preserve">
+    <value>oltPanelImagelist</value>
+  </data>
+  <data name="&gt;&gt;oltPanel2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="oltPanelImagelist.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 726</value>
+  </data>
+  <data name="oltPanelImagelist.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="oltPanelImagelist.Size" type="System.Drawing.Size, System.Drawing">
+    <value>700, 137</value>
+  </data>
+  <data name="oltPanelImagelist.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;oltPanelImagelist.Name" xml:space="preserve">
+    <value>oltPanelImagelist</value>
+  </data>
+  <data name="&gt;&gt;oltPanelImagelist.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltPanel, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;oltPanelImagelist.Parent" xml:space="preserve">
+    <value>mainFlowLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;oltPanelImagelist.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="mainFlowLayoutPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="mainFlowLayoutPanel.FlowDirection" type="System.Windows.Forms.FlowDirection, System.Windows.Forms">
+    <value>TopDown</value>
+  </data>
+  <data name="mainFlowLayoutPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="mainFlowLayoutPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>866, 863</value>
+  </data>
+  <data name="mainFlowLayoutPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="mainFlowLayoutPanel.WrapContents" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;mainFlowLayoutPanel.Name" xml:space="preserve">
+    <value>mainFlowLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;mainFlowLayoutPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mainFlowLayoutPanel.Parent" xml:space="preserve">
+    <value>detailsPanel</value>
+  </data>
+  <data name="&gt;&gt;mainFlowLayoutPanel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="detailsPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="detailsPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="detailsPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>866, 863</value>
+  </data>
+  <data name="detailsPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;detailsPanel.Name" xml:space="preserve">
+    <value>detailsPanel</value>
+  </data>
+  <data name="&gt;&gt;detailsPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;detailsPanel.Parent" xml:space="preserve">
+    <value>splitContainer.Panel2</value>
+  </data>
+  <data name="&gt;&gt;detailsPanel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;splitContainer.Panel2.Name" xml:space="preserve">
+    <value>splitContainer.Panel2</value>
+  </data>
+  <data name="&gt;&gt;splitContainer.Panel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;splitContainer.Panel2.Parent" xml:space="preserve">
+    <value>splitContainer</value>
+  </data>
+  <data name="&gt;&gt;splitContainer.Panel2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="splitContainer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>866, 1075</value>
+  </data>
+  <data name="splitContainer.SplitterDistance" type="System.Int32, mscorlib">
+    <value>208</value>
+  </data>
+  <data name="splitContainer.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;splitContainer.Name" xml:space="preserve">
+    <value>splitContainer</value>
+  </data>
+  <data name="&gt;&gt;splitContainer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitContainer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;splitContainer.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;splitContainer.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="actionStrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>0, 0</value>
+  </metadata>
+  <data name="deleteButton.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>White</value>
+  </data>
+  <data name="deleteButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 22</value>
+  </data>
+  <data name="deleteButton.Text" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="editButton.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="editButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 22</value>
+  </data>
+  <data name="editButton.Text" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="replyButton.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="replyButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 22</value>
+  </data>
+  <data name="replyButton.Text" xml:space="preserve">
+    <value>&amp;Reply</value>
+  </data>
+  <data name="copyButton.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="copyButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 22</value>
+  </data>
+  <data name="copyButton.Text" xml:space="preserve">
+    <value>Copy</value>
+  </data>
+  <data name="viewThreadButton.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="viewThreadButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>92, 22</value>
+  </data>
+  <data name="viewThreadButton.Text" xml:space="preserve">
+    <value>View Thread</value>
+  </data>
+  <data name="editHistoryButton.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="editHistoryButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 22</value>
+  </data>
+  <data name="editHistoryButton.Text" xml:space="preserve">
+    <value>History</value>
+  </data>
+  <data name="editHistoryButton.ToolTipText" xml:space="preserve">
+    <value>View Edit History</value>
+  </data>
+  <data name="exportAllButton.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="exportAllButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>85, 22</value>
+  </data>
+  <data name="exportAllButton.Text" xml:space="preserve">
+    <value>Export Grid</value>
+  </data>
+  <data name="exportAllButton.ToolTipText" xml:space="preserve">
+    <value>Export Grid data to Excel</value>
+  </data>
+  <data name="toggleShowButton.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="toggleShowButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 22</value>
+  </data>
+  <data name="toggleShowButton.Text" xml:space="preserve">
+    <value>Range</value>
+  </data>
+  <data name="toggleShowButton.ToolTipText" xml:space="preserve">
+    <value>Change displayed Date Range</value>
+  </data>
+  <data name="markAsReadButton.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="markAsReadButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>99, 22</value>
+  </data>
+  <data name="markAsReadButton.Text" xml:space="preserve">
+    <value>&amp;Mark As Read</value>
+  </data>
+  <data name="printButton.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="printButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>52, 22</value>
+  </data>
+  <data name="printButton.Text" xml:space="preserve">
+    <value>Print</value>
+  </data>
+  <data name="previewButton.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="previewButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>68, 22</value>
+  </data>
+  <data name="previewButton.Text" xml:space="preserve">
+    <value>Preview</value>
+  </data>
+  <data name="saveGridLayoutButton.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="saveGridLayoutButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>88, 22</value>
+  </data>
+  <data name="saveGridLayoutButton.Text" xml:space="preserve">
+    <value>Grid Layout</value>
+  </data>
+  <data name="emailButton.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="emailButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 20</value>
+  </data>
+  <data name="emailButton.Text" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="actionStrip.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="actionStrip.Size" type="System.Drawing.Size, System.Drawing">
+    <value>866, 25</value>
+  </data>
+  <data name="actionStrip.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="actionStrip.Text" xml:space="preserve">
+    <value>toolStrip1</value>
+  </data>
+  <data name="&gt;&gt;actionStrip.Name" xml:space="preserve">
+    <value>actionStrip</value>
+  </data>
+  <data name="&gt;&gt;actionStrip.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;actionStrip.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;actionStrip.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.AutoScroll" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>866, 1100</value>
+  </data>
+  <data name="&gt;&gt;deleteButton.Name" xml:space="preserve">
+    <value>deleteButton</value>
+  </data>
+  <data name="&gt;&gt;deleteButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;editButton.Name" xml:space="preserve">
+    <value>editButton</value>
+  </data>
+  <data name="&gt;&gt;editButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;replyButton.Name" xml:space="preserve">
+    <value>replyButton</value>
+  </data>
+  <data name="&gt;&gt;replyButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;copyButton.Name" xml:space="preserve">
+    <value>copyButton</value>
+  </data>
+  <data name="&gt;&gt;copyButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;viewThreadButton.Name" xml:space="preserve">
+    <value>viewThreadButton</value>
+  </data>
+  <data name="&gt;&gt;viewThreadButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;editHistoryButton.Name" xml:space="preserve">
+    <value>editHistoryButton</value>
+  </data>
+  <data name="&gt;&gt;editHistoryButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;exportAllButton.Name" xml:space="preserve">
+    <value>exportAllButton</value>
+  </data>
+  <data name="&gt;&gt;exportAllButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toggleShowButton.Name" xml:space="preserve">
+    <value>toggleShowButton</value>
+  </data>
+  <data name="&gt;&gt;toggleShowButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;markAsReadButton.Name" xml:space="preserve">
+    <value>markAsReadButton</value>
+  </data>
+  <data name="&gt;&gt;markAsReadButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;printButton.Name" xml:space="preserve">
+    <value>printButton</value>
+  </data>
+  <data name="&gt;&gt;printButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;previewButton.Name" xml:space="preserve">
+    <value>previewButton</value>
+  </data>
+  <data name="&gt;&gt;previewButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;saveGridLayoutButton.Name" xml:space="preserve">
+    <value>saveGridLayoutButton</value>
+  </data>
+  <data name="&gt;&gt;saveGridLayoutButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;emailButton.Name" xml:space="preserve">
+    <value>emailButton</value>
+  </data>
+  <data name="&gt;&gt;emailButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Type.Name" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="&gt;&gt;Type.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Column1.Name" xml:space="preserve">
+    <value>Column1</value>
+  </data>
+  <data name="&gt;&gt;Column1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Description.Name" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="&gt;&gt;Description.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Column3.Name" xml:space="preserve">
+    <value>Column3</value>
+  </data>
+  <data name="&gt;&gt;Column3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewLinkColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Imagebutton.Name" xml:space="preserve">
+    <value>Imagebutton</value>
+  </data>
+  <data name="&gt;&gt;Imagebutton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewImageColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>LogDetails</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.Controls.Details.AbstractDetails, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+</root>

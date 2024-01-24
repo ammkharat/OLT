@@ -1,0 +1,375 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="GroupByBoxDefaultPrompt" xml:space="preserve">
+    <value>Glisser ici un en-tête de colonne pour regrouper à partir de cette colonne.</value>
+  </data>
+  <data name="GroupByButtonToolTip" xml:space="preserve">
+    <value>Cliquer pour inverser l'ordre de tri</value>
+  </data>
+  <data name="LDR_Layout_mask" xml:space="preserve">
+    <value>[caption] : [value] ([count] [count,articles,article,articles])</value>
+  </data>
+  <data name="FilterDialogAllComboItem" xml:space="preserve">
+    <value>Tous</value>
+  </data>
+  <data name="FilterDialogAnyComboItem" xml:space="preserve">
+    <value>Aucun</value>
+  </data>
+  <data name="FilterDialogApplyLabelText" xml:space="preserve">
+    <value>Filtre basé sur {0} des conditions suivantes :</value>
+  </data>
+  <data name="FilterDialogCancelButtonText" xml:space="preserve">
+    <value>&amp;Annuler</value>
+  </data>
+  <data name="FilterDialogConditionAddButtonText" xml:space="preserve">
+    <value>A&amp;jouter</value>
+  </data>
+  <data name="FilterDialogConditionDeleteButtonText" xml:space="preserve">
+    <value>&amp;Supprimer</value>
+  </data>
+  <data name="FilterDialogOkButtonText" xml:space="preserve">
+    <value>&amp;OK</value>
+  </data>
+  <data name="FilterDialogTitle" xml:space="preserve">
+    <value>Filtre personnalisé</value>
+  </data>
+  <data name="FilterUIProvider_Menu_ClearFilter" xml:space="preserve">
+    <value>Supprimer le filtre</value>
+  </data>
+  <data name="FilterUIProvider_Menu_DateFilters" xml:space="preserve">
+    <value>&amp;Filtres par date</value>
+  </data>
+  <data name="FilterUIProvider_Menu_NumberFilters" xml:space="preserve">
+    <value>&amp;Filtres par numéro</value>
+  </data>
+  <data name="FilterUIProvider_Menu_TextFilters" xml:space="preserve">
+    <value>&amp;Filtres textuels</value>
+  </data>
+  <data name="FilterUIProvider_OKButton" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="FilterUIProvider_CancelButton" xml:space="preserve">
+    <value>Annuler</value>
+  </data>
+  <data name="RowFilterDialogDBNullItem" xml:space="preserve">
+    <value>Est vide</value>
+  </data>
+  <data name="RowFilterDialogBlanksItem" xml:space="preserve">
+    <value>Vides</value>
+  </data>
+  <data name="RowFilterDialogEmptyTextItem" xml:space="preserve">
+    <value>Texte vide</value>
+  </data>
+  <data name="RowFilterDropDown_Operator_Contains" xml:space="preserve">
+    <value>Contient</value>
+  </data>
+  <data name="RowFilterDropDown_Operator_DoesNotContain" xml:space="preserve">
+    <value>Ne contient pas</value>
+  </data>
+  <data name="RowFilterDropDown_Operator_DoesNotEndWith" xml:space="preserve">
+    <value>Ne se termine pas par</value>
+  </data>
+  <data name="RowFilterDropDown_Operator_EndsWith" xml:space="preserve">
+    <value>Se termine par</value>
+  </data>
+  <data name="RowFilterDropDownAllItem" xml:space="preserve">
+    <value>(Tous)</value>
+  </data>
+  <data name="RowFilterDropDownBlanksItem" xml:space="preserve">
+    <value>(Vides)</value>
+  </data>
+  <data name="RowFilterDropDownEquals" xml:space="preserve">
+    <value>Est égal à</value>
+  </data>
+  <data name="RowFilterDropDownGreaterThan" xml:space="preserve">
+    <value>Supérieur à</value>
+  </data>
+  <data name="RowFilterDropDownGreaterThanOrEqualTo" xml:space="preserve">
+    <value>Supérieur ou égal à</value>
+  </data>
+  <data name="RowFilterDropDownLessThan" xml:space="preserve">
+    <value>Inférieur à</value>
+  </data>
+  <data name="RowFilterDropDownLessThanOrEqualTo" xml:space="preserve">
+    <value>Inférieur ou égal à</value>
+  </data>
+  <data name="RowFilterDropDownLike" xml:space="preserve">
+    <value>Similaire</value>
+  </data>
+  <data name="RowFilterDropDown_Operator_DoesNotStartWith" xml:space="preserve">
+    <value>Ne commence pas par</value>
+  </data>
+  <data name="RowFilterDropDown_Operator_DoesNotMatch" xml:space="preserve">
+    <value>Ne correspond pas</value>
+  </data>
+  <data name="RowFilterDropDownMatch" xml:space="preserve">
+    <value>Correspond à une expression ordinaire</value>
+  </data>
+  <data name="RowFilterDropDownNotEquals" xml:space="preserve">
+    <value>N'est pas égal à</value>
+  </data>
+  <data name="RowFilterDropDown_Operator_NotLike" xml:space="preserve">
+    <value>Non similaire</value>
+  </data>
+  <data name="RowFilterDropDown_Operator_StartsWith" xml:space="preserve">
+    <value>Commence par</value>
+  </data>
+  <data name="SpecialFilterOperand_April" xml:space="preserve">
+    <value>&amp;Avril</value>
+  </data>
+  <data name="SpecialFilterOperand_August" xml:space="preserve">
+    <value>Aoû&amp;t</value>
+  </data>
+  <data name="SpecialFilterOperand_December" xml:space="preserve">
+    <value>&amp;Décembre</value>
+  </data>
+  <data name="SpecialFilterOperand_February" xml:space="preserve">
+    <value>&amp;Février</value>
+  </data>
+  <data name="SpecialFilterOperand_January" xml:space="preserve">
+    <value>&amp;Janvier</value>
+  </data>
+  <data name="SpecialFilterOperand_July" xml:space="preserve">
+    <value>Jui&amp;llet</value>
+  </data>
+  <data name="SpecialFilterOperand_June" xml:space="preserve">
+    <value>J&amp;uin</value>
+  </data>
+  <data name="SpecialFilterOperand_LastMonth" xml:space="preserve">
+    <value>Le mois dern&amp;ier</value>
+  </data>
+  <data name="SpecialFilterOperand_LastQuarter" xml:space="preserve">
+    <value>Le trimestre d&amp;ernier</value>
+  </data>
+  <data name="SpecialFilterOperand_LastWeek" xml:space="preserve">
+    <value>La semaine de&amp;rnière</value>
+  </data>
+  <data name="SpecialFilterOperand_LastYear" xml:space="preserve">
+    <value>L'année der&amp;nière</value>
+  </data>
+  <data name="SpecialFilterOperand_March" xml:space="preserve">
+    <value>&amp;Mars</value>
+  </data>
+  <data name="SpecialFilterOperand_May" xml:space="preserve">
+    <value>Ma&amp;i</value>
+  </data>
+  <data name="SpecialFilterOperand_NextMonth" xml:space="preserve">
+    <value>Le mois &amp;prochain</value>
+  </data>
+  <data name="SpecialFilterOperand_NextQuarter" xml:space="preserve">
+    <value>Le trimestre pr&amp;ochain</value>
+  </data>
+  <data name="SpecialFilterOperand_NextWeek" xml:space="preserve">
+    <value>La semaine pro&amp;chaine</value>
+  </data>
+  <data name="SpecialFilterOperand_NextYear" xml:space="preserve">
+    <value>L'année proc&amp;haine</value>
+  </data>
+  <data name="SpecialFilterOperand_November" xml:space="preserve">
+    <value>&amp;Novembre</value>
+  </data>
+  <data name="SpecialFilterOperand_October" xml:space="preserve">
+    <value>&amp;Octobre</value>
+  </data>
+  <data name="SpecialFilterOperand_Quarter1" xml:space="preserve">
+    <value>&amp;1er trimestre</value>
+  </data>
+  <data name="SpecialFilterOperand_Quarter2" xml:space="preserve">
+    <value>&amp;2e trimestre</value>
+  </data>
+  <data name="SpecialFilterOperand_Quarter3" xml:space="preserve">
+    <value>&amp;3e trimestre</value>
+  </data>
+  <data name="SpecialFilterOperand_Quarter4" xml:space="preserve">
+    <value>&amp;4e trimestre</value>
+  </data>
+  <data name="SpecialFilterOperand_September" xml:space="preserve">
+    <value>&amp;Septembre</value>
+  </data>
+  <data name="SpecialFilterOperand_ThisMonth" xml:space="preserve">
+    <value>Le &amp;mois en cours</value>
+  </data>
+  <data name="SpecialFilterOperand_ThisQuarter" xml:space="preserve">
+    <value>Le &amp;trimestre en cours</value>
+  </data>
+  <data name="SpecialFilterOperand_ThisWeek" xml:space="preserve">
+    <value>La &amp;semaine en cours</value>
+  </data>
+  <data name="SpecialFilterOperand_ThisYear" xml:space="preserve">
+    <value>L'&amp;année en cours</value>
+  </data>
+  <data name="SpecialFilterOperand_Today" xml:space="preserve">
+    <value>Au&amp;jourd'hui</value>
+  </data>
+  <data name="SpecialFilterOperand_Tomorrow" xml:space="preserve">
+    <value>&amp;Demain</value>
+  </data>
+  <data name="SpecialFilterOperand_YearToDate" xml:space="preserve">
+    <value>L'année en cours - à ce jour</value>
+  </data>
+  <data name="SpecialFilterOperand_Yesterday" xml:space="preserve">
+    <value>&amp;Hier</value>
+  </data>
+  <data name="UltraGridFilterUIProvider_AfterOperand" xml:space="preserve">
+    <value>&amp;Après le...</value>
+  </data>
+  <data name="UltraGridFilterUIProvider_AllDatesInPeriod_Menu" xml:space="preserve">
+    <value>Toutes les dates dans la pé&amp;riode</value>
+  </data>
+  <data name="UltraGridFilterUIProvider_BeforeOperand" xml:space="preserve">
+    <value>A&amp;vant...</value>
+  </data>
+  <data name="UltraGridFilterUIProvider_BeginsWithOperand" xml:space="preserve">
+    <value>&amp;Commence le...</value>
+  </data>
+  <data name="UltraGridFilterUIProvider_BetweenOperand" xml:space="preserve">
+    <value>&amp;Entre...</value>
+  </data>
+  <data name="UltraGridFilterUIProvider_ContainsOperand" xml:space="preserve">
+    <value>Con&amp;tient...</value>
+  </data>
+  <data name="UltraGridFilterUIProvider_CustomFilter" xml:space="preserve">
+    <value>&amp;Filtre personnalisé...</value>
+  </data>
+  <data name="UltraGridFilterUIProvider_DoesNotContainOperand" xml:space="preserve">
+    <value>&amp;Ne contient pas…</value>
+  </data>
+  <data name="UltraGridFilterUIProvider_DoesNotEqualOperand" xml:space="preserve">
+    <value>N'est &amp;pas égal à...</value>
+  </data>
+  <data name="UltraGridFilterUIProvider_EndsWithOperand" xml:space="preserve">
+    <value>Se ter&amp;mine le...</value>
+  </data>
+  <data name="UltraGridFilterUIProvider_EqualsOperand" xml:space="preserve">
+    <value>Est é&amp;gal à...</value>
+  </data>
+  <data name="UltraGridFilterUIProvider_GreaterThanOperand" xml:space="preserve">
+    <value>Est &amp;supérieur à...</value>
+  </data>
+  <data name="UltraGridFilterUIProvider_GreaterThanOrEqualToOperand" xml:space="preserve">
+    <value>Est supérieur &amp;ou égal à...</value>
+  </data>
+  <data name="UltraGridFilterUIProvider_LessThanOperand" xml:space="preserve">
+    <value>Est &amp;inférieur à...</value>
+  </data>
+  <data name="UltraGridFilterUIProvider_LessThanOrEqualToOperand" xml:space="preserve">
+    <value>Inférieur o&amp;u égal à...</value>
+  </data>
+</root>

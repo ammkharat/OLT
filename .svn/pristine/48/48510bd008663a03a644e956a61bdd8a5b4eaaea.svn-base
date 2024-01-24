@@ -1,0 +1,315 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D10DF287-FF58-4116-9BB9-30FB8537E244}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Com.Suncor.Olt.Common</RootNamespace>
+    <AssemblyName>Suncor.Olt.Common.UnitTest</AssemblyName>
+    <WarningLevel>4</WarningLevel>
+    <ProjectTypeGuids>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>.\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <OutputPath>.\bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="NMock2, Version=1.0.2090.21884, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\lib\NMock2.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework">
+      <HintPath>..\..\..\tools\nunit\framework\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="Osherove.ThreadTester, Version=1.0.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\lib\Osherove.ThreadTester.dll</HintPath>
+    </Reference>
+    <Reference Include="Rhino.Mocks">
+      <HintPath>..\..\..\lib\Rhino.Mocks.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\GlobalAssemblyInfo.cs">
+      <Link>Properties\GlobalAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="Domain\AcidClothingTypeTest.cs" />
+    <Compile Include="Domain\ActionItemDefinitionAutoReApprovalConfigurationTest.cs" />
+    <Compile Include="Domain\ApprovalShouldBeEnabledBehaviourTest.cs" />
+    <Compile Include="Domain\BaseFormTest.cs" />
+    <Compile Include="Domain\BusinessCategoryTest.cs" />
+    <Compile Include="Domain\ActionItemDefinitionStatusTest.cs" />
+    <Compile Include="Domain\ActionItemDefinitionUpdateStatusAfterChangesTest.cs" />
+    <Compile Include="Domain\ActionItemStatusTest.cs" />
+    <Compile Include="Domain\ActionItemTest.cs" />
+    <Compile Include="Domain\CokerCardHistoryTest.cs" />
+    <Compile Include="Domain\CommentTest.cs" />
+    <Compile Include="Domain\ContractorTest.cs" />
+    <Compile Include="Domain\DirectiveTest.cs" />
+    <Compile Include="Domain\CustomFieldTest.cs" />
+    <Compile Include="Domain\Excursions\ExcursionResponseTest.cs" />
+    <Compile Include="Domain\Excursions\OpmExcursionEditPackageTest.cs" />
+    <Compile Include="Domain\Excursions\OpmExcursionTest.cs" />
+    <Compile Include="Domain\Form\FormGN1Test.cs" />
+    <Compile Include="Domain\Form\FormGN24Test.cs" />
+    <Compile Include="Domain\Form\FormGN59Test.cs" />
+    <Compile Include="Domain\Form\FormGN6Test.cs" />
+    <Compile Include="Domain\Form\FormGN75ATest.cs" />
+    <Compile Include="Domain\Form\FormGN7Test.cs" />
+    <Compile Include="Domain\Form\FormOilsandsTrainingTest.cs" />
+    <Compile Include="Domain\Form\FormOP14Test.cs" />
+    <Compile Include="Domain\Form\LubesAlarmDisableFormTest.cs" />
+    <Compile Include="Domain\Form\LubesCsdFormTest.cs" />
+    <Compile Include="Domain\Form\OnPremiseContractorTest.cs" />
+    <Compile Include="Domain\Form\OvertimeFormTest.cs" />
+    <Compile Include="Domain\Form\TradeChecklistTest.cs" />
+    <Compile Include="Domain\PermitRequestLubesTest.cs" />
+    <Compile Include="Domain\Schedule\ScheduleHelperTest.cs" />
+    <Compile Include="Domain\PermitAssesmentTest.cs" />
+    <Compile Include="Domain\Validation\Lubes\PermitRequestLubesValidatorTest.cs" />
+    <Compile Include="Domain\WorkPermitLubesTest.cs" />
+    <Compile Include="Domain\CustomFieldEntryHistoryTest.cs" />
+    <Compile Include="Domain\EmailAddressTest.cs" />
+    <Compile Include="Domain\FlocSet\RootFlocSetTest.cs" />
+    <Compile Include="Domain\PermitRequestEdmontonSAPImportDataTest.cs" />
+    <Compile Include="Domain\PermitRequestEdmontonTest.cs" />
+    <Compile Include="Domain\CustomFieldEntryTest.cs" />
+    <Compile Include="Domain\DateTest.cs" />
+    <Compile Include="Domain\DocumentLinkTest.cs" />
+    <Compile Include="Domain\DomainBasedCodeGenerationDriver.cs" />
+    <Compile Include="Domain\DurationTest.cs" />
+    <Compile Include="Domain\FunctionalLocationHierarchyTest.cs" />
+    <Compile Include="Domain\FunctionalLocationOperationalModeTest.cs" />
+    <Compile Include="Domain\GasLimitRangeTest.cs" />
+    <Compile Include="Domain\GasTestElementInfoConfigurationHistoryListTest.cs" />
+    <Compile Include="Domain\GasTestElementInfoConfigurationHistoryTest.cs" />
+    <Compile Include="Domain\GasTestElementTest.cs" />
+    <Compile Include="Domain\LabAlert\LabAlertCheckRangeCalculatorTest.cs" />
+    <Compile Include="Domain\LogDefinitionTest.cs" />
+    <Compile Include="Domain\LogReadTest.cs" />
+    <Compile Include="Domain\PermitRequestBasedWorkPermitStatusTest.cs" />
+    <Compile Include="Domain\PermitRequestMontrealTest.cs" />
+    <Compile Include="Domain\PriorityTest.cs" />
+    <Compile Include="Domain\Restriction\DeviationAlertResponseReasonCodeAssignmentTest.cs" />
+    <Compile Include="Domain\Restriction\DeviationAlertResponseTest.cs" />
+    <Compile Include="Domain\Restriction\DeviationAlertTest.cs" />
+    <Compile Include="Domain\Restriction\RestrictionDefinitionTest.cs" />
+    <Compile Include="Domain\Schedule\Calculators\RoundTheClockScheduleCalculatorTest.cs" />
+    <Compile Include="Domain\Schedule\Calculators\ContinuousScheduleCalculatorTest.cs" />
+    <Compile Include="Domain\Schedule\Calculators\RecurringDailyScheduleCalculatorTest.cs" />
+    <Compile Include="Domain\Schedule\Calculators\RecurringHourlyScheduleCalculatorTest.cs" />
+    <Compile Include="Domain\Schedule\Calculators\RecurringMinuteScheduleCalculatorTest.cs" />
+    <Compile Include="Domain\Schedule\Calculators\RecurringMonthlyDayOfMonthScheduleCalculatorTest.cs" />
+    <Compile Include="Domain\Schedule\Calculators\RecurringMonthlyDayOfWeekScheduleCalculatorTest.cs" />
+    <Compile Include="Domain\Schedule\Calculators\RecurringWeeklyScheduleCalculatorTest.cs" />
+    <Compile Include="Domain\Schedule\Calculators\SingleScheduleCalculatorTest.cs" />
+    <Compile Include="Domain\Schedule\ContinuousScheduleTest.cs" />
+    <Compile Include="Domain\Schedule\RecurringDailyScheduleTest.cs" />
+    <Compile Include="Domain\Schedule\RecurringHourlyScheduleTest.cs" />
+    <Compile Include="Domain\Schedule\RecurringMinuteScheduleTest.cs" />
+    <Compile Include="Domain\Schedule\RecurringMonthlyDayOfMonthScheduleTest.cs" />
+    <Compile Include="Domain\Schedule\RecurringMonthlyDayOfWeekScheduleTest.cs" />
+    <Compile Include="Domain\Schedule\RecurringMonthlyScheduleTest.cs" />
+    <Compile Include="Domain\Schedule\RecurringWeeklyScheduleTest.cs" />
+    <Compile Include="Domain\Schedule\ScheduleTest.cs" />
+    <Compile Include="Domain\Schedule\ScheduleTypeTest.cs" />
+    <Compile Include="Domain\Schedule\SingleScheduleTest.cs" />
+    <Compile Include="Domain\ShiftHandoverQuestionnaireTest.cs" />
+    <Compile Include="Domain\ShiftPatternTest.cs" />
+    <Compile Include="Domain\FunctionalLocationCollectionTest.cs" />
+    <Compile Include="Domain\SiteRolePlantTest.cs" />
+    <Compile Include="Domain\SiteTest.cs" />
+    <Compile Include="Domain\SnapshotToChangeSetConverterTest.cs" />
+    <Compile Include="Domain\SortableDomainObjectStatusTest.cs" />
+    <Compile Include="Domain\SummaryLogTest.cs" />
+    <Compile Include="Domain\TargetCategoryTest.cs" />
+    <Compile Include="Domain\Target\TargetDefinitionAutoReApprovalConfigurationTest.cs" />
+    <Compile Include="Domain\Target\TargetDefinitionStateTest.cs" />
+    <Compile Include="Domain\Target\TargetDefinitionUpdateStatusOnEditingAutoReApprovalFieldTest.cs" />
+    <Compile Include="Domain\Target\TargetValueTest.cs" />
+    <Compile Include="Domain\Target\ThresholdTest.cs" />
+    <Compile Include="Domain\Target\MinThresholdTest.cs" />
+    <Compile Include="Domain\Target\TargetAlertTest.cs" />
+    <Compile Include="Domain\Target\TargetThresholdEvaluationTest.cs" />
+    <Compile Include="Domain\Target\TargetThresholdsTest.cs" />
+    <Compile Include="Domain\Target\MaxThresholdTest.cs" />
+    <Compile Include="Domain\Target\ThresholdEvaluationTest.cs" />
+    <Compile Include="Domain\Target\TargetAlertResponseTest.cs" />
+    <Compile Include="Domain\Target\TargetGapReasonTest.cs" />
+    <Compile Include="Domain\UserShiftTest.cs" />
+    <Compile Include="Domain\UserSpecifiedCraftOrTradeTest.cs" />
+    <Compile Include="Domain\UserWorkPermitDefaultTimePreferencesTest.cs" />
+    <Compile Include="Domain\WorkPermitAttributeTest.cs" />
+    <Compile Include="Domain\WorkPermitCommunicationTest.cs" />
+    <Compile Include="Domain\WorkPermitEdmontonGroupTest.cs" />
+    <Compile Include="Domain\WorkPermitEdmontonTest.cs" />
+    <Compile Include="Domain\WorkPermitFireConfinedSpaceRequirementsTest.cs" />
+    <Compile Include="Domain\WorkPermitMontrealTest.cs" />
+    <Compile Include="Domain\WorkPermitRadiationInformationTest.cs" />
+    <Compile Include="Domain\WorkPermitJobWorksitePreparationTest.cs" />
+    <Compile Include="Domain\DayOfMonthTest.cs" />
+    <Compile Include="Domain\DayOfWeekTest.cs" />
+    <Compile Include="Domain\FunctionalLocationTest.cs" />
+    <Compile Include="Domain\GasTestElementInfoTest.cs" />
+    <Compile Include="Domain\LogTest.cs" />
+    <Compile Include="Domain\MonthTest.cs" />
+    <Compile Include="Domain\WorkAssignmentTest.cs" />
+    <Compile Include="Domain\SAPNotificationTest.cs" />
+    <Compile Include="Domain\ActionItemDefinitionTest.cs" />
+    <Compile Include="Domain\DomainObjectTest.cs" />
+    <Compile Include="Domain\StopWatchTest.cs" />
+    <Compile Include="Domain\Target\TargetDefinitionStatusTest.cs" />
+    <Compile Include="Domain\TimeTest.cs" />
+    <Compile Include="Domain\UserTest.cs" />
+    <Compile Include="Domain\WeekOfMonthTest.cs" />
+    <Compile Include="Domain\RoleTest.cs" />
+    <Compile Include="Domain\WorkPermitEquipmentPreparationConditionTest.cs" />
+    <Compile Include="Domain\WorkPermitGasTestsTest.cs" />
+    <Compile Include="Domain\WorkPermitRespiratoryCartridgeTypeTest.cs" />
+    <Compile Include="Domain\WorkPermitRespiratoryProtectionRequirementsTest.cs" />
+    <Compile Include="Domain\WorkPermitSpecialPPERequirementsTest.cs" />
+    <Compile Include="Domain\WorkPermitSpecificsTest.cs" />
+    <Compile Include="Domain\WorkPermitStatusTest.cs" />
+    <Compile Include="Domain\WorkPermitTest.cs" />
+    <Compile Include="Domain\WorkPermitToolsTest.cs" />
+    <Compile Include="Domain\WorkPermitTypeClassificationTest.cs" />
+    <Compile Include="Domain\WorkPermit\BaseMergeablePermitRequestTest.cs" />
+    <Compile Include="Domain\WorkPermit\WorkOrderImportDataTest.cs" />
+    <Compile Include="Domain\WorkPermit\WorkPermitLubesGroupTest.cs" />
+    <Compile Include="DTO\ActionItemDefinitionDTOTest.cs" />
+    <Compile Include="DTO\ActionItemDTOTest.cs" />
+    <Compile Include="DTO\CustomFieldTrendReportDTOTest.cs" />
+    <Compile Include="DTO\DeviationAlertDTOTest.cs" />
+    <Compile Include="DTO\DirectiveDTOTest.cs" />
+    <Compile Include="DTO\LogDTOTest.cs" />
+    <Compile Include="DTO\LogReadByTest.cs" />
+    <Compile Include="DTO\TargetAlertReportDetailDTOTest.cs" />
+    <Compile Include="Extension\CollectionExtensionsTest.cs" />
+    <Compile Include="Extension\DateTimeExtensionsTests.cs" />
+    <Compile Include="Extension\IntExtensionsTest.cs" />
+    <Compile Include="Extension\DecimalExtensionsTest.cs" />
+    <Compile Include="Extension\DirectoryInfoExtensionsTest.cs" />
+    <Compile Include="Extension\ObjectExtensionsTest.cs" />
+    <Compile Include="Extension\StringExtensionsTest.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Remote\RemoteEventRepeaterTest.cs" />
+    <Compile Include="Domain\Target\TargetDefinitionTest.cs" />
+    <Compile Include="TestUtil.cs" />
+    <Compile Include="Utility\Cache\ExpiringCacheTest.cs" />
+    <Compile Include="Utility\ClockTest.cs" />
+    <Compile Include="Utility\CombinationFinderTest.cs" />
+    <Compile Include="Utility\ComparableListTest.cs" />
+    <Compile Include="Utility\ConstantsTest.cs" />
+    <Compile Include="Utility\DateRangeTest.cs" />
+    <Compile Include="Utility\EdmontonPermitSpecialWorkTypeTest.cs" />
+    <Compile Include="Utility\GenericLogManagerTest.cs" />
+    <Compile Include="Utility\LocalizedPropertyChangeTest.cs" />
+    <Compile Include="Utility\NullableDecimalFormaterTest.cs" />
+    <Compile Include="Utility\DifferenceBuilderTest.cs" />
+    <Compile Include="Utility\HashCodeBuilderTest.cs" />
+    <Compile Include="Utility\NullableDoubleFormaterTest.cs" />
+    <Compile Include="Utility\PropertyComparerTest.cs" />
+    <Compile Include="Utility\RangeTest.cs" />
+    <Compile Include="Utility\ReverseComparerTest.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Utility\RoleElementTemplateValuesContainerTest.cs" />
+    <Compile Include="Utility\SetTest.cs" />
+    <Compile Include="Utility\DomainEventArgsTest.cs" />
+    <Compile Include="Utility\SMTPMailSenderTest.cs" />
+    <Compile Include="Utility\TimeZoneConverterTest.cs" />
+    <Compile Include="Utility\WorkPermitAttributesParseUtilityTest.cs" />
+    <Compile Include="Utility\WorkPermitSnapshotTakerTest.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\RemoteScheduler\App\RemoteApp.Schedulers.Common\RemoteApp.Schedulers.Common.csproj">
+      <Project>{A07C62D9-B88D-4E49-A924-7D6C45638EE9}</Project>
+      <Name>RemoteApp.Schedulers.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\App\Common.App.csproj">
+      <Project>{31784A4C-5836-4671-88CD-5FE0B962BC3E}</Project>
+      <Name>Common.App</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Test.Common\Common.Test.Common.csproj">
+      <Project>{6AEE37AF-C60D-4711-AE02-682F04F23DE5}</Project>
+      <Name>Common.Test.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App.config.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSHARP.Targets" />
+  <Import Project="$(MSBuildProjectDirectory)\..\..\..\olt.msbuild" />
+  <Target Name="BeforeBuild">
+    <CallTarget Targets="CreateConfigFile" />
+  </Target>
+</Project>

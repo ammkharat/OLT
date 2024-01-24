@@ -1,0 +1,1064 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{31784A4C-5836-4671-88CD-5FE0B962BC3E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Com.Suncor.Olt.Common</RootNamespace>
+    <AssemblyName>Com.Suncor.Olt.Common</AssemblyName>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Castle.Core, Version=3.2.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\lib\NET-4-0\Castle.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Com.Suncor.Olt.Reports">
+      <HintPath>..\..\ClientApp\App\bin\Debug\Com.Suncor.Olt.Reports.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v13.2.Core, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="log4net, Version=1.2.13.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\lib\NET-4-0\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel.Activation" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\GlobalAssemblyInfo.cs">
+      <Link>Properties\GlobalAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="Domain\ConfinedSpaceMudSign.cs" />
+    <Compile Include="Domain\Form\GenericCsd.cs" />
+    <Compile Include="Domain\Form\GenericCsdHistory.cs" />
+    <Compile Include="Domain\Form\GenericTemplateEmailApprovalConfiguration.cs" />
+    <Compile Include="Domain\ImageUploader.cs" />
+    <Compile Include="Domain\TrackerReport .cs" />
+    <Compile Include="Domain\ActionItemResponseTracker.cs" />
+    <Compile Include="Domain\AdministratorList.cs" />
+    <Compile Include="Domain\Analytics\Event.cs" />
+    <Compile Include="Domain\Analytics\Property.cs" />
+    <Compile Include="Domain\Analytics\PropertyType.cs" />
+    <Compile Include="Domain\AreaLabel.cs" />
+    <Compile Include="Domain\AssignmentSectionUnitReportGroupBy.cs" />
+    <Compile Include="Domain\BusinessCategory.cs" />
+    <Compile Include="Domain\BusinessCategoryFLOCAssociation.cs" />
+    <Compile Include="Domain\CardEntryStatus.cs" />
+    <Compile Include="Domain\CokerCard\CokerCard.cs" />
+    <Compile Include="Domain\CokerCard\CokerCardConfiguration.cs" />
+    <Compile Include="Domain\CokerCard\CokerCardConfigurationCycleStep.cs" />
+    <Compile Include="Domain\CokerCard\CokerCardConfigurationDrum.cs" />
+    <Compile Include="Domain\CokerCard\CokerCardConfigurationWorkAssignment.cs" />
+    <Compile Include="Domain\CokerCard\CokerCardCycleStepEntry.cs" />
+    <Compile Include="Domain\CokerCard\CokerCardCycleStepHistory.cs" />
+    <Compile Include="Domain\CokerCard\CokerCardDrumEntry.cs" />
+    <Compile Include="Domain\CokerCard\CokerCardDrumEntryHistory.cs" />
+    <Compile Include="Domain\CokerCard\CokerCardHistory.cs" />
+    <Compile Include="Domain\CokerCard\TimeEntry.cs" />
+    <Compile Include="Domain\ComparableObject.cs" />
+    <Compile Include="Domain\ConfiguredDocumentLink.cs" />
+    <Compile Include="Domain\Excursions\ExcursionResponseHistory.cs" />
+    <Compile Include="Domain\Excursions\OpmExcursion.cs" />
+    <Compile Include="Domain\Excursions\ExcursionStatus.cs" />
+    <Compile Include="Domain\Excursions\OpmExcursionBatch.cs" />
+    <Compile Include="Domain\Excursions\OpmExcursionEditPackage.cs" />
+    <Compile Include="Domain\Excursions\OpmExcursionImportStatus.cs" />
+    <Compile Include="Domain\Excursions\OpmToeDefinitionCommentHistory.cs" />
+    <Compile Include="Domain\Excursions\OpmToeDefinitionImportRejection.cs" />
+    <Compile Include="Domain\Excursions\OpmExcursionImportRejection.cs" />
+    <Compile Include="Domain\Excursions\OpmToeDefinitionImportResult.cs" />
+    <Compile Include="Domain\Excursions\OpmExcursionImportResult.cs" />
+    <Compile Include="Domain\FormGN75BTemplatePattern.cs" />
+    <Compile Include="Domain\FormOP14Read.cs" />
+    <Compile Include="Domain\Form\BaseFortHillsForm.cs" />
+    <Compile Include="Domain\Form\DevicePosition.cs" />
+    <Compile Include="Domain\Form\FormGenericTemplate.cs" />
+    <Compile Include="Domain\Form\FormGenericTemplateHistory.cs" />
+    <Compile Include="Domain\Form\GenericTemplateApproval.cs" />
+    <Compile Include="Domain\Form\IFormGenericTemplateBaseDTO.cs" />
+    <Compile Include="Domain\Form\ProcedureDeviationFormAttendee.cs" />
+    <Compile Include="Domain\Form\ProcedureDeviationFormApproval.cs" />
+    <Compile Include="Domain\Form\ProcedureDeviationApprovalObtainedVia.cs" />
+    <Compile Include="Domain\Form\ProcedureDeviationAttendeeType.cs" />
+    <Compile Include="Domain\Form\ProcedureDeviationApprovalType.cs" />
+    <Compile Include="Domain\Form\CorrectiveActionFixDocumentDurationType.cs" />
+    <Compile Include="Domain\Form\ProcedureDeviation.cs" />
+    <Compile Include="Domain\Form\DocumentSuggestion.cs" />
+    <Compile Include="Domain\Form\ProcedureDeviationHistory.cs" />
+    <Compile Include="Domain\Form\PermitAssessmentAnswerHistory.cs" />
+    <Compile Include="Domain\Form\DocumentSuggestionHistory.cs" />
+    <Compile Include="Domain\Form\PermitAssessmentHistory.cs" />
+    <Compile Include="Domain\Form\CauseDeterminationWhyType.cs" />
+    <Compile Include="Domain\Form\OperatingProcedureLevel.cs" />
+    <Compile Include="Domain\Form\ProcedureDeviationType.cs" />
+    <Compile Include="Domain\Form\TemporaryInstallationsMUDS.cs" />
+    <Compile Include="Domain\Form\TemporaryInstallationsMudsHistory.cs" />
+    <Compile Include="Domain\ScadaConnectionType.cs" />
+    <Compile Include="Domain\Validation\Excursions\OpmToeDefinitionValidator.cs" />
+    <Compile Include="Domain\Validation\Excursions\OpmExcursionValidator.cs" />
+    <Compile Include="Domain\Validation\FortHills\PermitRequestBaseValidationAdapterFh.cs" />
+    <Compile Include="Domain\Validation\FortHills\PermitRequestFortHillsValidationDomainAdapter.cs" />
+    <Compile Include="Domain\Validation\FortHills\PermitRequestValidator.cs" />
+    <Compile Include="Domain\Validation\FortHills\WorkPermitFortHillsBaseValidationAdapter.cs" />
+    <Compile Include="Domain\Validation\FortHills\WorkPermitFortHillsValidationDomainAdapter.cs" />
+    <Compile Include="Domain\Validation\FortHills\WorkPermitFortHillsValidator.cs" />
+    <Compile Include="Domain\Validation\Muds\PermitRequestMudsBaseValidationAdapter.cs" />
+    <Compile Include="Domain\Validation\Muds\PermitRequestMudsValidationDomainAdapter.cs" />
+    <Compile Include="Domain\Validation\Muds\PermitRequestMudsValidator.cs" />
+    <Compile Include="Domain\WorkPermitMudsSign.cs" />
+    <Compile Include="Domain\WorkpermitScan.cs" />
+    <Compile Include="Domain\WorkPermitSign.cs" />
+    <Compile Include="Domain\WorkPermit\ConfinedSpaceHistoryMuds.cs" />
+    <Compile Include="Domain\WorkPermit\ConfinedSpaceMuds.cs" />
+    <Compile Include="Domain\WorkPermit\ConfinedSpaceStatusMuds.cs" />
+    <Compile Include="Domain\WorkPermit\FortHillsPermitRequestPostFinalizeResult.cs" />
+    <Compile Include="Domain\WorkPermit\PermitRequestFortHills.cs" />
+    <Compile Include="Domain\WorkPermit\PermitRequestFortHillsHistory.cs" />
+    <Compile Include="Domain\WorkPermit\PermitRequestFortHillsSAPImportData.cs" />
+    <Compile Include="Domain\WorkPermit\PermitRequestMuds.cs" />
+    <Compile Include="Domain\WorkPermit\PermitRequestMudsHistory.cs" />
+    <Compile Include="Domain\WorkPermit\SpecialWork.cs" />
+    <Compile Include="Domain\WorkPermit\WorkPermitFortHills.cs" />
+    <Compile Include="Domain\WorkPermit\WorkPermitFortHillsGroup.cs" />
+    <Compile Include="Domain\WorkPermit\WorkPermitFortHillsHistory.cs" />
+    <Compile Include="Domain\WorkPermit\WorkPermitFortHillsType.cs" />
+    <Compile Include="Domain\WorkPermit\WorkPermitMuds.cs" />
+    <Compile Include="Domain\WorkPermit\WorkPermitMudsDropdownValueKey.cs" />
+    <Compile Include="Domain\WorkPermit\WorkPermitMudsGroup.cs" />
+    <Compile Include="Domain\WorkPermit\WorkPermitMudsHistory.cs" />
+    <Compile Include="Domain\WorkPermit\WorkPermitMudsTemplate.cs" />
+    <Compile Include="Domain\WorkPermit\WorkPermitMudsType.cs" />
+    <Compile Include="DTO\ConfinedSpaceMudsDTO.cs" />
+    <Compile Include="DTO\FormEdmontonGN24DTO.cs" />
+    <Compile Include="DTO\FormEdmontonGN75BDTOforPriorityScreen.cs" />
+    <Compile Include="DTO\FormGenericTemplateBaseDTO.cs" />
+    <Compile Include="DTO\FormGenericTemplateDTO.cs" />
+    <Compile Include="DTO\CSDMarkAsReadReportItem.cs" />
+    <Compile Include="DTO\GenericCsdDTO.cs" />
+    <Compile Include="DTO\ItemNotReadBy.cs" />
+    <Compile Include="DTO\PermitRequestFortHillsDTO.cs" />
+    <Compile Include="DTO\PermitRequestMudsDTO.cs" />
+    <Compile Include="DTO\ProcedureDeviationDTO.cs" />
+    <Compile Include="DTO\Excursions\ExcursionResponseEditingGridRowDTO.cs" />
+    <Compile Include="DTO\Excursions\OpmExcursionDTO.cs" />
+    <Compile Include="DTO\Excursions\OpmExcursionImportStatusDTO.cs" />
+    <Compile Include="DTO\Excursions\OpmExcursionResponseDTO.cs" />
+    <Compile Include="Domain\Excursions\OpmExcursionResponse.cs" />
+    <Compile Include="DTO\Excursions\OpmTagValueDTO.cs" />
+    <Compile Include="Domain\Excursions\OpmToeDefinition.cs" />
+    <Compile Include="Domain\Excursions\OpmToeDefinitionComment.cs" />
+    <Compile Include="Domain\Excursions\ToeType.cs" />
+    <Compile Include="Domain\Form\PermitAssessmentAnswer.cs" />
+    <Compile Include="Domain\Form\PermitAssessmentBuilder.cs" />
+    <Compile Include="Domain\Form\QuestionnaireConfigurationHelper.cs" />
+    <Compile Include="Domain\QuestionnaireConfigurationType.cs" />
+    <Compile Include="Domain\Directive.cs" />
+    <Compile Include="Domain\DirectiveHistory.cs" />
+    <Compile Include="Domain\DirectiveStatus.cs" />
+    <Compile Include="Domain\DomainObjectHistorySnapshot.cs" />
+    <Compile Include="Domain\EmailAddress.cs" />
+    <Compile Include="Domain\FlattenedCustomFieldEntryHistory.cs" />
+    <Compile Include="Domain\FormTemplate.cs" />
+    <Compile Include="Domain\FormTemplateKeys.cs" />
+    <Compile Include="Domain\Form\ApprovalShouldBeEnabledBehaviour.cs" />
+    <Compile Include="Domain\Form\BaseEdmontonForm.cs" />
+    <Compile Include="Domain\Form\BaseFormHistory.cs" />
+    <Compile Include="Domain\Form\BaseFormOilsands.cs" />
+    <Compile Include="Domain\Form\EdmontonPerson.cs" />
+    <Compile Include="Domain\Form\FormOvertimeFormHistory.cs" />
+    <Compile Include="Domain\Form\LubesAlarmDisableForm.cs" />
+    <Compile Include="Domain\Form\LubesCsdForm.cs" />
+    <Compile Include="Domain\Form\LubesAlarmDisableFormHistory.cs" />
+    <Compile Include="Domain\Form\LubesCsdFormHistory.cs" />
+    <Compile Include="Domain\Form\MontrealCsd.cs" />
+    <Compile Include="Domain\Form\MontrealCsdHistory.cs" />
+    <Compile Include="Domain\Form\OnPremiseContractor.cs" />
+    <Compile Include="Domain\Form\OvertimeForm.cs" />
+    <Compile Include="Domain\Form\LubesAlarmDisableDropDownValueKeys.cs" />
+    <Compile Include="Domain\Form\OvertimePrimaryLocationDropDownValueKeys.cs" />
+    <Compile Include="Domain\Form\PermitAssessment.cs" />
+    <Compile Include="Domain\Form\QuestionnaireConfiguration.cs" />
+    <Compile Include="Domain\Form\QuestionnaireSection.cs" />
+    <Compile Include="Domain\Form\TradeChecklistHistory.cs" />
+    <Compile Include="Domain\Form\FormGN1History.cs" />
+    <Compile Include="Domain\Form\FormGN1.cs" />
+    <Compile Include="Domain\Form\FormGN6History.cs" />
+    <Compile Include="Domain\Form\FormGN6.cs" />
+    <Compile Include="Domain\Form\FormGN24History.cs" />
+    <Compile Include="Domain\Form\FormGN24AlkylationClass.cs" />
+    <Compile Include="Domain\Form\FormGN24.cs" />
+    <Compile Include="Domain\Form\FormGN75A.cs" />
+    <Compile Include="Domain\Form\FormGN75AHistory.cs" />
+    <Compile Include="Domain\Form\FormGN75B.cs" />
+    <Compile Include="Domain\Form\FormGN75BDropDownValueKeys.cs" />
+    <Compile Include="Domain\Form\FormGN75BHistory.cs" />
+    <Compile Include="Domain\Form\FormOilsandsTrainingHistory.cs" />
+    <Compile Include="Domain\Form\FormOilsandsTraining.cs" />
+    <Compile Include="Domain\Form\FormOilsandsTrainingItem.cs" />
+    <Compile Include="Domain\Form\FormOP14History.cs" />
+    <Compile Include="Domain\Form\FormApproval.cs" />
+    <Compile Include="Domain\Form\FormGN59.cs" />
+    <Compile Include="Domain\Form\FormGN59History.cs" />
+    <Compile Include="Domain\Form\FormGN7.cs" />
+    <Compile Include="Domain\Form\FormGN7History.cs" />
+    <Compile Include="Domain\Form\FormOP14.cs" />
+    <Compile Include="Domain\Form\FormOP14Department.cs" />
+    <Compile Include="Domain\Form\FormStatus.cs" />
+    <Compile Include="Domain\Form\EdmontonFormType.cs" />
+    <Compile Include="Domain\Form\IFormEdmontonDTO.cs" />
+    <Compile Include="Domain\Form\IsolationItem.cs" />
+    <Compile Include="Domain\Form\IsolationType.cs" />
+    <Compile Include="Domain\Form\OilsandsFormType.cs" />
+    <Compile Include="Domain\Form\TradeChecklist.cs" />
+    <Compile Include="Domain\Form\TradeChecklistInfo.cs" />
+    <Compile Include="Domain\FunctionalLocationSetType.cs" />
+    <Compile Include="Domain\IHasWorkAssignment.cs" />
+    <Compile Include="Domain\IMultiGridContextSelection.cs" />
+    <Compile Include="Domain\CachedRelationshipAttribute.cs" />
+    <Compile Include="Domain\IVisibilityGroupRelevant.cs" />
+    <Compile Include="Domain\PlantHistorian\ScadaConnectionInfo.cs" />
+    <Compile Include="Domain\PlantHistorian\OSIConnectionElement.cs" />
+    <Compile Include="Domain\PlantHistorian\PlantHistorianElement.cs" />
+    <Compile Include="Domain\PlantHistorian\PlantHistoriansCollection.cs" />
+    <Compile Include="Domain\PlantHistorian\PlantHistorianSection.cs" />
+    <Compile Include="Domain\PriorityPageSectionConfiguration.cs" />
+    <Compile Include="Domain\PriorityPageSectionKey.cs" />
+    <Compile Include="Domain\Restriction\DeviationResponseDropDownValueKeys.cs" />
+    <Compile Include="Domain\Restriction\RestrictionLocation.cs" />
+    <Compile Include="Domain\Restriction\RestrictionLocationItem.cs" />
+    <Compile Include="Domain\Restriction\RestrictionLocationItemReasonCodeAssociation.cs" />
+    <Compile Include="Domain\RoleElementTemplateValue.cs" />
+    <Compile Include="Domain\SapAutoImportConfiguration.cs" />
+    <Compile Include="Domain\Form\Question.cs" />
+    <Compile Include="Domain\ShiftHandover\ShiftHandoverEmailConfiguration.cs" />
+    <Compile Include="Domain\ShiftHandover\ShiftHandoverQuestionnaireAssocations.cs" />
+    <Compile Include="Domain\ShiftSummaryItemSource.cs" />
+    <Compile Include="Domain\SiteCommunication.cs" />
+    <Compile Include="Domain\SiteConfigurationDefaults.cs" />
+    <Compile Include="Domain\TrainingBlock.cs" />
+    <Compile Include="Domain\UserGridLayoutIdentifier.cs" />
+    <Compile Include="Domain\UserPreferences.cs" />
+    <Compile Include="Domain\Validation\Edmonton\PermitRequestBaseValidationAdapter.cs" />
+    <Compile Include="Domain\Validation\Edmonton\WorkPermitEdmontonBaseValidationAdapter.cs" />
+    <Compile Include="Domain\Validation\Edmonton\PermitRequestEdmontonValidationDomainAdapter.cs" />
+    <Compile Include="Domain\Validation\Edmonton\PermitRequestValidator.cs" />
+    <Compile Include="Domain\Validation\Edmonton\WorkPermitEdmontonValidationDomainAdapter.cs" />
+    <Compile Include="Domain\Validation\Edmonton\WorkPermitEdmontonValidator.cs" />
+    <Compile Include="Domain\Validation\Lubes\PermitRequestLubesBaseValidationAdapter.cs" />
+    <Compile Include="Domain\Validation\Lubes\PermitRequestLubesValidationDomainAdapter.cs" />
+    <Compile Include="Domain\Validation\Lubes\PermitRequestLubesValidator.cs" />
+    <Compile Include="Domain\Validation\Lubes\WorkPermitLubesBaseValidationAdapter.cs" />
+    <Compile Include="Domain\Validation\Lubes\WorkPermitLubesValidator.cs" />
+    <Compile Include="Domain\Validation\Montreal\PermitRequestMontrealBaseValidationAdapter.cs" />
+    <Compile Include="Domain\Validation\Montreal\PermitRequestMontrealValidationDomainAdapter.cs" />
+    <Compile Include="Domain\Validation\Montreal\PermitRequestMontrealValidator.cs" />
+    <Compile Include="Domain\VisibilityGroup.cs" />
+    <Compile Include="Domain\FormDropdown.cs" />
+    <Compile Include="Domain\WorkPermitSafetyFormState.cs" />
+    <Compile Include="Domain\CustomFieldDropDownValue.cs" />
+    <Compile Include="Domain\CustomFieldGroupWorkAssignment.cs" />
+    <Compile Include="Domain\CustomFieldType.cs" />
+    <Compile Include="Domain\FlocSet\ExactFlocSet.cs" />
+    <Compile Include="Domain\FlocSet\IFlocSet.cs" />
+    <Compile Include="Domain\FlocSet\SectionOnlyFlocSet.cs" />
+    <Compile Include="Domain\IDocumentLinksObject.cs" />
+    <Compile Include="Domain\IHasDefinition.cs" />
+    <Compile Include="Domain\IHasDisplayOrder.cs" />
+    <Compile Include="Domain\IHasReadByCurrentUserInfo.cs" />
+    <Compile Include="Domain\LogGuideline.cs" />
+    <Compile Include="Domain\LogTemplateWorkAssignment.cs" />
+    <Compile Include="Domain\CustomField.cs" />
+    <Compile Include="Domain\CustomFieldEntryHistory.cs" />
+    <Compile Include="Domain\CustomFieldGroup.cs" />
+    <Compile Include="Domain\IHasCustomFieldEntries.cs" />
+    <Compile Include="Domain\DocumentLink.cs" />
+    <Compile Include="Domain\DocumentRootUncPath.cs" />
+    <Compile Include="Domain\ModifiableDomainObject.cs" />
+    <Compile Include="Domain\ReadStatus.cs" />
+    <Compile Include="Domain\RolePermission.cs" />
+    <Compile Include="Domain\FlocSet\RootFlocSet.cs" />
+    <Compile Include="Domain\ShiftHandover\ShiftHandoverConfigurationWorkAssignment.cs" />
+    <Compile Include="Domain\ICategorizedComment.cs" />
+    <Compile Include="Domain\InitiatingEventSink.cs" />
+    <Compile Include="Domain\LabAlert\LabAlertStatus.cs" />
+    <Compile Include="Domain\LabAlert\LabAlert.cs" />
+    <Compile Include="Domain\LabAlert\LabAlertCheckRangeCalculator.cs" />
+    <Compile Include="Domain\LabAlert\LabAlertResponse.cs" />
+    <Compile Include="Domain\LabAlert\LabAlertDefinitionHistory.cs" />
+    <Compile Include="Domain\LabAlert\LabAlertDefinition.cs" />
+    <Compile Include="Domain\LabAlert\LabAlertDefinitionStatus.cs" />
+    <Compile Include="Domain\LabAlert\LabAlertTagQueryDailyRange.cs" />
+    <Compile Include="Domain\LabAlert\LabAlertTagQueryMonthlyDayOfMonthRange.cs" />
+    <Compile Include="Domain\LabAlert\LabAlertTagQueryMonthlyDayOfWeekRange.cs" />
+    <Compile Include="Domain\LabAlert\LabAlertTagQueryRange.cs" />
+    <Compile Include="Domain\LabAlert\LabAlertTagQueryWeeklyRange.cs" />
+    <Compile Include="Domain\LogDefinitionFunctionalLocation.cs" />
+    <Compile Include="Domain\LogFunctionalLocation.cs" />
+    <Compile Include="Domain\LogTemplate.cs" />
+    <Compile Include="Domain\NotifiedEvent.cs" />
+    <Compile Include="Domain\PageKey.cs" />
+    <Compile Include="Domain\Schedule\ScheduleHelper.cs" />
+    <Compile Include="Domain\SectionKey.cs" />
+    <Compile Include="Domain\RoleDisplayConfiguration.cs" />
+    <Compile Include="Domain\SiteRolePlant.cs" />
+    <Compile Include="Domain\SortableSimpleDomainObject.cs" />
+    <Compile Include="Domain\CustomFieldEntry.cs" />
+    <Compile Include="Domain\ItemRead.cs" />
+    <Compile Include="Domain\ShiftHandover\ShiftHandoverConfiguration.cs" />
+    <Compile Include="Domain\SummaryLogHistory.cs" />
+    <Compile Include="Domain\SummaryLogRead.cs" />
+    <Compile Include="Domain\ShiftHandover\ShiftHandoverAnswer.cs" />
+    <Compile Include="Domain\ShiftHandover\ShiftHandoverQuestionnaire.cs" />
+    <Compile Include="Domain\ShiftHandover\ShiftHandoverQuestion.cs" />
+    <Compile Include="Domain\ErrorInfoEnabledDomainObject.cs" />
+    <Compile Include="Domain\ISiteRelevant.cs" />
+    <Compile Include="Domain\Target\TargetDefinitionState.cs" />
+    <Compile Include="Domain\UserPreference\Column.cs" />
+    <Compile Include="Domain\UserPreference\DetailedLogReportParameterPreference.cs" />
+    <Compile Include="Domain\UserPreference\GridPreference.cs" />
+    <Compile Include="Domain\UserPreference\ReportParameterPreference.cs" />
+    <Compile Include="Domain\WorkAssignment.cs" />
+    <Compile Include="Domain\Restriction\DeviationAlertResponse.cs" />
+    <Compile Include="Domain\Restriction\DeviationAlertResponseHistory.cs" />
+    <Compile Include="Domain\Restriction\DeviationAlertResponseReasonCodeAssignment.cs" />
+    <Compile Include="Domain\Restriction\RestrictionReasonCode.cs" />
+    <Compile Include="Domain\Restriction\RestrictionDefinition.cs" />
+    <Compile Include="Domain\Restriction\RestrictionDefinitionHistory.cs" />
+    <Compile Include="Domain\Restriction\RestrictionDefinitionStatus.cs" />
+    <Compile Include="Domain\Restriction\DeviationAlert.cs" />
+    <Compile Include="Domain\Restriction\DeviationAlertStatus.cs" />
+    <Compile Include="Domain\ShiftHandover\ShiftHandoverAnswerHistory.cs" />
+    <Compile Include="Domain\ShiftHandover\ShiftHandoverQuestionnaireHistory.cs" />
+    <Compile Include="Domain\SummaryLog.cs" />
+    <Compile Include="Domain\UserLoginHistory.cs" />
+    <Compile Include="Domain\UserLoginHistoryFunctionalLocation.cs" />
+    <Compile Include="Domain\WorkAssignmentReportDetail.cs" />
+    <Compile Include="Domain\WorkPermitDropdown.cs" />
+    <Compile Include="Domain\WorkPermit\AcidClothingType.cs" />
+    <Compile Include="Domain\WorkPermit\BaseMergeablePermitRequest.cs" />
+    <Compile Include="Domain\WorkPermit\BasePermitRequest.cs" />
+    <Compile Include="Domain\WorkPermit\BasePermitRequestHistory.cs" />
+    <Compile Include="Domain\WorkPermit\IMergeablePermitRequest.cs" />
+    <Compile Include="Domain\WorkPermit\ISAPImportData.cs" />
+    <Compile Include="Domain\WorkPermit\OilsandsWorkPermitType.cs" />
+    <Compile Include="Domain\WorkPermit\WorkOrderDataMergeWrapper.cs" />
+    <Compile Include="Domain\WorkPermit\WorkPermitMontrealGroup.cs" />
+    <Compile Include="Domain\WorkPermit\PermitRequestPostFinalizeResult.cs" />
+    <Compile Include="Domain\WorkPermit\WorkOrderDataImportResult.cs" />
+    <Compile Include="Domain\WorkPermit\PermitRequestLubesHistory.cs" />
+    <Compile Include="Domain\WorkPermit\IWorkPermitGroup.cs" />
+    <Compile Include="Domain\WorkPermit\WorkOrderImportData.cs" />
+    <Compile Include="Domain\WorkPermit\WorkPermitLubesDropdownValueKey.cs" />
+    <Compile Include="Domain\WorkPermit\WorkPermitLubesHistory.cs" />
+    <Compile Include="Domain\WorkPermit\PermitRequestEdmontonSAPImportData.cs" />
+    <Compile Include="Domain\WorkPermit\IHasPermitKey.cs" />
+    <Compile Include="Domain\WorkPermit\PermitKeyData.cs" />
+    <Compile Include="Domain\WorkPermit\PermitRequestWorkOrderSource.cs" />
+    <Compile Include="Domain\WorkPermit\PermitRequestLubes.cs" />
+    <Compile Include="Domain\WorkPermit\EdmontonPermitRequestPostFinalizeResult.cs" />
+    <Compile Include="Domain\WorkPermit\WorkOrderPriority.cs" />
+    <Compile Include="Domain\WorkPermit\WorkPermitEdmontonDropdownValueKey.cs" />
+    <Compile Include="Domain\WorkPermit\DropdownValue.cs" />
+    <Compile Include="Domain\WorkPermit\PermitRequestCompletionStatus.cs" />
+    <Compile Include="Domain\WorkPermit\PermitRequestEdmonton.cs" />
+    <Compile Include="Domain\WorkPermit\PermitRequestEdmontonHistory.cs" />
+    <Compile Include="Domain\WorkPermit\PermitRequestMontreal.cs" />
+    <Compile Include="Domain\WorkPermit\PermitRequestMontrealHistory.cs" />
+    <Compile Include="Domain\WorkPermit\WorkPermitEdmonton.cs" />
+    <Compile Include="Domain\WorkPermit\WorkPermitEdmontonGroup.cs" />
+    <Compile Include="Domain\WorkPermit\WorkPermitEdmontonHistory.cs" />
+    <Compile Include="Domain\WorkPermit\WorkPermitEdmontonType.cs" />
+    <Compile Include="Domain\WorkPermit\WorkPermitLoggableStatus.cs" />
+    <Compile Include="Domain\WorkPermit\WorkPermitLubes.cs" />
+    <Compile Include="Domain\WorkPermit\WorkPermitLubesGroup.cs" />
+    <Compile Include="Domain\WorkPermit\WorkPermitLubesType.cs" />
+    <Compile Include="Domain\WorkPermit\WorkPermitMontrealDropdownValueKey.cs" />
+    <Compile Include="Domain\WorkPermit\PermitRequestBasedWorkPermitStatus.cs" />
+    <Compile Include="Domain\WorkPermit\PermitRequestImportResult.cs" />
+    <Compile Include="Domain\WorkPermit\ConfinedSpace.cs" />
+    <Compile Include="Domain\WorkPermit\ConfinedSpaceHistory.cs" />
+    <Compile Include="Domain\WorkPermit\ConfinedSpaceStatus.cs" />
+    <Compile Include="Domain\WorkPermit\Contractor.cs" />
+    <Compile Include="Domain\WorkPermit\CraftOrTrade.cs" />
+    <Compile Include="Domain\WorkPermit\GasLimitRange.cs" />
+    <Compile Include="Domain\WorkPermit\GasLimitUnit.cs" />
+    <Compile Include="Domain\WorkPermit\GasTestElement.cs" />
+    <Compile Include="Domain\WorkPermit\GasTestElementInfo.cs" />
+    <Compile Include="Domain\WorkPermit\GasTestElementInfoConfigurationHistory.cs" />
+    <Compile Include="Domain\WorkPermit\GasTestElementInfoConfigurationHistoryList.cs" />
+    <Compile Include="Domain\WorkPermit\GenericDateTimeHandler.cs" />
+    <Compile Include="Domain\WorkPermit\ICraftOrTrade.cs" />
+    <Compile Include="Domain\WorkPermit\IGasTestElementDetails.cs" />
+    <Compile Include="Domain\WorkPermit\ISiteSpecificDateTimeHandler.cs" />
+    <Compile Include="Domain\WorkPermit\PermitAttribute.cs" />
+    <Compile Include="Domain\WorkPermit\WorkPermitMontreal.cs" />
+    <Compile Include="Domain\WorkPermit\TernaryString.cs" />
+    <Compile Include="Domain\WorkPermit\UserSpecifiedCraftOrTrade.cs" />
+    <Compile Include="Domain\WorkPermit\UserWorkPermitDefaultTimePreferences.cs" />
+    <Compile Include="Domain\WorkPermit\WorkPermit.cs" />
+    <Compile Include="Domain\WorkPermit\WorkPermitAdditionalItemsRequired.cs" />
+    <Compile Include="Domain\WorkPermit\WorkPermitAsbestos.cs" />
+    <Compile Include="Domain\WorkPermit\WorkPermitAttribute.cs" />
+    <Compile Include="Domain\WorkPermit\WorkPermitAttributes.cs" />
+    <Compile Include="Domain\WorkPermit\AssignmentFlocConfiguration.cs" />
+    <Compile Include="Domain\WorkPermit\WorkPermitCommunication.cs" />
+    <Compile Include="Domain\WorkPermit\WorkPermitEquipmentPreparationCondition.cs" />
+    <Compile Include="Domain\WorkPermit\WorkPermitFireConfinedSpaceRequirements.cs" />
+    <Compile Include="Domain\WorkPermit\WorkPermitGasTests.cs" />
+    <Compile Include="Domain\WorkPermit\WorkPermitHistory.cs" />
+    <Compile Include="Domain\WorkPermit\WorkPermitJobWorksitePreparation.cs" />
+    <Compile Include="Domain\WorkPermit\WorkPermitLockOutMethodType.cs" />
+    <Compile Include="Domain\WorkPermit\WorkPermitMontrealHistory.cs" />
+    <Compile Include="Domain\WorkPermit\WorkPermitMontrealTemplate.cs" />
+    <Compile Include="Domain\WorkPermit\WorkPermitMontrealType.cs" />
+    <Compile Include="Domain\WorkPermit\WorkPermitRadiationInformation.cs" />
+    <Compile Include="Domain\WorkPermit\PermitRequestImportRejection.cs" />
+    <Compile Include="Domain\WorkPermit\WorkPermitRespiratoryCartridgeType.cs" />
+    <Compile Include="Domain\WorkPermit\WorkPermitRespiratoryProtectionRequirements.cs" />
+    <Compile Include="Domain\WorkPermit\WorkPermitSection.cs" />
+    <Compile Include="Domain\WorkPermit\WorkPermitSpecialPPERequirements.cs" />
+    <Compile Include="Domain\WorkPermit\WorkPermitSpecifics.cs" />
+    <Compile Include="Domain\WorkPermit\WorkPermitStatus.cs" />
+    <Compile Include="Domain\WorkPermit\WorkPermitTools.cs" />
+    <Compile Include="Domain\WorkPermit\WorkPermitType.cs" />
+    <Compile Include="Domain\WorkPermit\WorkPermitTypeClassification.cs" />
+    <Compile Include="Domain\YesNoNotApplicable.cs" />
+    <Compile Include="DTO\CokerCardDrumEntryDTO.cs" />
+    <Compile Include="DTO\CokerCardDTO.cs" />
+    <Compile Include="DTO\CokerCardInfoForShiftHandoverDTO.cs" />
+    <Compile Include="DTO\ConfinedSpaceDTO.cs" />
+    <Compile Include="DTO\BasePermitRequestDTO.cs" />
+    <Compile Include="DTO\EdmontonOvertimeFormDTO.cs" />
+    <Compile Include="DTO\Excursions\OpmToeDefinitionDTO.cs" />
+    <Compile Include="DTO\FormEdmontonGN1DTO.cs" />
+    <Compile Include="DTO\DirectiveDTO.cs" />
+    <Compile Include="DTO\FormEdmontonOP14DTO.cs" />
+    <Compile Include="DTO\FormEdmontonGN75ADTO.cs" />
+    <Compile Include="DTO\FormEdmontonGN6DTO.cs" />
+    <Compile Include="DTO\FormEdmontonGN75BDTO.cs" />
+    <Compile Include="DTO\ExcursionEventPriorityPageDTO.cs" />
+    <Compile Include="DTO\FutureActionItemDTO.cs" />
+    <Compile Include="DTO\IIsVisible.cs" />
+    <Compile Include="DTO\LogTemplateDTO.cs" />
+    <Compile Include="DTO\LubesAlarmDisableFormDTO.cs" />
+    <Compile Include="DTO\LubesCsdFormDTO.cs" />
+    <Compile Include="DTO\MontrealCsdDTO.cs" />
+    <Compile Include="DTO\OnPremisePersonnelAuditDTO.cs" />
+    <Compile Include="DTO\OnPremisePersonnelShiftReportDetailDTO.cs" />
+    <Compile Include="DTO\OnPremisePersonnelSupervisorDTO.cs" />
+    <Compile Include="DTO\DocumentSuggestionDTO.cs" />
+    <Compile Include="DTO\PermitAssessmentDTO.cs" />
+    <Compile Include="DTO\QuestionnaireConfigurationDTO.cs" />
+    <Compile Include="DTO\Reporting\LogReportDTOContainer.cs" />
+    <Compile Include="DTO\Reporting\MarkedAsNotReadReportDirectiveDTO.cs" />
+    <Compile Include="DTO\Reporting\MarkedAsNotReadReportDTO.cs" />
+    <Compile Include="DTO\Reporting\MarkedAsNotReadReportLogDTO.cs" />
+    <Compile Include="DTO\Reporting\MarkedAsNotReadReportShiftHandoverQuestionnaireDTO.cs" />
+    <Compile Include="DTO\Reporting\MarkedAsReadReportDirectiveDTO.cs" />
+    <Compile Include="DTO\OnPremisePersonnelShiftReportDTO.cs" />
+    <Compile Include="DTO\RestrictionLocationDto.cs" />
+    <Compile Include="DTO\SafeWorkPermitAssessmentReportDTO.cs" />
+    <Compile Include="DTO\SiteCommunicationDTO.cs" />
+    <Compile Include="DTO\FormOilsandsPriorityPageDTO.cs" />
+    <Compile Include="DTO\FormOilsandsTrainingDTO.cs" />
+    <Compile Include="DTO\NonnumericCustomFieldEntryDTO.cs" />
+    <Compile Include="DTO\NumericCustomFieldEntryDTO.cs" />
+    <Compile Include="DTO\PermitRequestLubesDTO.cs" />
+    <Compile Include="DTO\Reporting\DetailedLogReportDTOContainer.cs" />
+    <Compile Include="DTO\Reporting\FormOilsandsTrainingReportDTO.cs" />
+    <Compile Include="DTO\TemporaryInstallationsMudsDTO.cs" />
+    <Compile Include="DTO\UserDTO.cs" />
+    <Compile Include="DTO\WorkPermitEdmontonHazardDTO.cs" />
+    <Compile Include="DTO\FormEdmontonDTO.cs" />
+    <Compile Include="DTO\IHasStartAndEndDateTimes.cs" />
+    <Compile Include="DTO\IThreadableDTO.cs" />
+    <Compile Include="DTO\Reporting\CustomFieldTrendReportDTO.cs" />
+    <Compile Include="DTO\WorkPermitEdmontonDTO.cs" />
+    <Compile Include="DTO\PermitRequestEdmontonDTO.cs" />
+    <Compile Include="DTO\IRecommendForShiftSummary.cs" />
+    <Compile Include="DTO\PermitRequestMontrealDTO.cs" />
+    <Compile Include="DTO\Reporting\TargetAlertExcelReportDTO.cs" />
+    <Compile Include="DTO\WorkPermitFortHillsDTO.cs" />
+    <Compile Include="DTO\WorkPermitFortHillsHazardDTO.cs" />
+    <Compile Include="DTO\WorkPermitLubesDTO.cs" />
+    <Compile Include="DTO\FunctionalLocationSegmentDTO.cs" />
+    <Compile Include="DTO\IFlaggableAsOperatingEngineerLog.cs" />
+    <Compile Include="DTO\IFollowUp.cs" />
+    <Compile Include="DTO\IHasCreatedByRole.cs" />
+    <Compile Include="DTO\IHasDataSource.cs" />
+    <Compile Include="DTO\IHasPriority.cs" />
+    <Compile Include="DTO\IHasSchedule.cs" />
+    <Compile Include="DTO\IHasStatus.cs" />
+    <Compile Include="DTO\IIsActive.cs" />
+    <Compile Include="DTO\IShiftBased.cs" />
+    <Compile Include="DTO\LabAlertDTO.cs" />
+    <Compile Include="DTO\LabAlertDefinitionDTO.cs" />
+    <Compile Include="DTO\HasCommentsDTO.cs" />
+    <Compile Include="DTO\PriorityPage\LogPriorityPageDTO.cs" />
+    <Compile Include="DTO\PriorityPage\ShiftHandoverQuestionnairePriorityPageDTO.cs" />
+    <Compile Include="DTO\Reporting\CokerCardCycleStepEntryDTO.cs" />
+    <Compile Include="DTO\Reporting\DailyShiftLogReportDTO.cs" />
+    <Compile Include="DTO\Reporting\DetailedLogReportDTO.cs" />
+    <Compile Include="DTO\Reporting\DocumentLinkDTO.cs" />
+    <Compile Include="DTO\Reporting\LogReportDTO.cs" />
+    <Compile Include="DTO\Reporting\MarkedAsReadReportDTO.cs" />
+    <Compile Include="DTO\Reporting\MarkedAsReadReportLogDTO.cs" />
+    <Compile Include="DTO\Reporting\MarkedAsReadReportShiftHandoverQuestionnaireDTO.cs" />
+    <Compile Include="DTO\Reporting\OperatingEngineerLogReportDTO.cs" />
+    <Compile Include="DTO\Reporting\ShiftGapReasonReportDTO.cs" />
+    <Compile Include="DTO\Reporting\TagInfoReportDetail.cs" />
+    <Compile Include="DTO\Reporting\TargetAlertReportDetailDTO.cs" />
+    <Compile Include="DTO\Reporting\TargetAlertResponseReportDetailDTO.cs" />
+    <Compile Include="DTO\ShiftHandoverAnswerDTO.cs" />
+    <Compile Include="DTO\ShiftHandoverConfigurationDTO.cs" />
+    <Compile Include="DTO\SummaryLogDTO.cs" />
+    <Compile Include="DTO\DeviationAlertDTO.cs" />
+    <Compile Include="DTO\FunctionalLocationDTO.cs" />
+    <Compile Include="DTO\RestrictionDefinitionDTO.cs" />
+    <Compile Include="DTO\DeviationAlertReportDTO.cs" />
+    <Compile Include="DTO\ShiftHandoverQuestionnaireDTO.cs" />
+    <Compile Include="DTO\WorkAssignmentDTO.cs" />
+    <Compile Include="DTO\WorkPermitMontrealDTO.cs" />
+    <Compile Include="DTO\WorkPermitMudsDTO.cs" />
+    <Compile Include="DTO\WorkPermitMudsTemplateDTO.cs" />
+    <Compile Include="Exceptions\ExpectedNonDivisionLevelFLOCException.cs" />
+    <Compile Include="Exceptions\WorkPermitBinderException.cs" />
+    <Compile Include="Extension\BooleanExtensions.cs" />
+    <Compile Include="Domain\SAPNotificationType.cs" />
+    <Compile Include="Exceptions\SqlWrapperException.cs" />
+    <Compile Include="Exceptions\TimerDueTimeNegativeException.cs" />
+    <Compile Include="Extension\DateTimeExtensions.cs" />
+    <Compile Include="Extension\DecimalExtensions.cs" />
+    <Compile Include="Extension\DirectoryInfoExtensions.cs" />
+    <Compile Include="Extension\DoubleExtensions.cs" />
+    <Compile Include="Extension\FunctionalLocationListExtensions.cs" />
+    <Compile Include="Extension\HistorySnapshotExtensions.cs" />
+    <Compile Include="Extension\IntExtensions.cs" />
+    <Compile Include="Extension\LongExtensions.cs" />
+    <Compile Include="Extension\MemberInfoExtensions.cs" />
+    <Compile Include="Extension\ObjectExtensions.cs" />
+    <Compile Include="Extension\SAPImportExtensions.cs" />
+    <Compile Include="Extension\StreamExtensions.cs" />
+    <Compile Include="Localization\Culture.cs" />
+    <Compile Include="Localization\LocaleSpecificFormatPatternResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LocaleSpecificFormatPatternResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Localization\LocaleSpecificFormatPatternResources.fr.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LocaleSpecificFormatPatternResources.fr.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Localization\RendererStringResources.Designer.cs">
+      <DependentUpon>RendererStringResources.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Localization\RendererStringResources.fr.Designer.cs">
+      <DependentUpon>RendererStringResources.fr.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Localization\StringResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StringResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Localization\StringResources.fr.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StringResources.fr.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Annotations.cs" />
+    <Compile Include="Remote\EventConnectDisconnectReason.cs" />
+    <Compile Include="Remote\RemoteEventQueue.cs" />
+    <Compile Include="Services\IAdministratorListService.cs" />
+    <Compile Include="Services\IConfinedSpaceMudsService.cs" />
+    <Compile Include="Services\IDirectiveConversionService.cs" />
+    <Compile Include="Services\IDirectiveService.cs" />
+    <Compile Include="Services\IEdmontonSwipeCardService.cs" />
+    <Compile Include="Services\IExcursionImportService.cs" />
+    <Compile Include="Services\IExcursionResponseService.cs" />
+    <Compile Include="Services\IFormFortHillsService.cs" />
+    <Compile Include="Services\IFormGenericCSDService.cs" />
+    <Compile Include="Services\IFormGenericTemplateService.cs" />
+    <Compile Include="Services\IFormOilsandsService.cs" />
+    <Compile Include="Services\IAnalyticsService.cs" />
+    <Compile Include="Services\IGenericTemplateService.cs" />
+    <Compile Include="Services\IHoneywellPhdConfigurationService.cs" />
+    <Compile Include="Services\ILubesPermitRequestMultiDayImportService.cs" />
+    <Compile Include="Services\IMontrealPermitRequestMultiDayImportService.cs" />
+    <Compile Include="Services\IMudsPermitRequestMultiDayImportService.cs" />
+    <Compile Include="Services\IOnPremisePersonnelService.cs" />
+    <Compile Include="Services\IPermitRequestFortHillsService.cs" />
+    <Compile Include="Services\IPermitRequestMudsService.cs" />
+    <Compile Include="Services\IPermitRequestMultiDayImportService.cs" />
+    <Compile Include="Services\IPriorityPageSectionConfigurationService.cs" />
+    <Compile Include="Services\IQuestionnaireConfigurationService.cs" />
+    <Compile Include="Services\IRestrictionFlocsConfigurationService.cs" />
+    <Compile Include="Services\IRestrictionLocationService.cs" />
+    <Compile Include="Services\ISiteCommunicationService.cs" />
+    <Compile Include="Services\IAreaLabelService.cs" />
+    <Compile Include="Services\INumericAndNonnumericCustomFieldEntryListService.cs" />
+    <Compile Include="Services\IPermitRequestLubesService.cs" />
+    <Compile Include="Services\IRoleElementTemplateService.cs" />
+    <Compile Include="Services\ISpecialWorkService.cs" />
+    <Compile Include="Services\IStreamingRequestRoleService.cs" />
+    <Compile Include="Services\ITrainingBlockService.cs" />
+    <Compile Include="Services\IVisibilityGroupService.cs" />
+    <Compile Include="Services\IWorkPermitFortHillsService.cs" />
+    <Compile Include="Services\IWorkPermitLubesService.cs" />
+    <Compile Include="Services\IWorkPermitMudsService.cs" />
+    <Compile Include="Services\IWorkPermitMudsTemplateService.cs" />
+    <Compile Include="ShiftLogMessage.cs" />
+    <Compile Include="Utility\BackgroundHelper.cs" />
+    <Compile Include="Utility\Cache\ICacheBySiteId.cs" />
+    <Compile Include="Utility\Comparer\DomainObjectIdEqualityComparer.cs" />
+    <Compile Include="Utility\Comparer\PropertyComparer.cs" />
+    <Compile Include="Utility\Comparer\ReverseComparer.cs" />
+    <Compile Include="Utility\EmailSettings.cs" />
+    <Compile Include="Utility\FakeBackgroundHelper.cs" />
+    <Compile Include="Utility\ImageDifferenceAttribute.cs" />
+    <Compile Include="Utility\IncludeInSearchAttribute.cs" />
+    <Compile Include="Utility\DevExpressMeasurementUtility.cs" />
+    <Compile Include="Utility\LabelAttributes.cs" />
+    <Compile Include="Utility\NetworkUtilities.cs" />
+    <Compile Include="Utility\Pair.cs" />
+    <Compile Include="Utility\PermitRequestFortHillsAttributes.cs" />
+    <Compile Include="Utility\PermitRequestLubesAttributes.cs" />
+    <Compile Include="Utility\PlantHistorianOrigin.cs" />
+    <Compile Include="Utility\RoleElementChange.cs" />
+    <Compile Include="Services\IFormEdmontonService.cs" />
+    <Compile Include="Services\IPermitRequestEdmontonService.cs" />
+    <Compile Include="Services\IConfiguredDocumentLinkService.cs" />
+    <Compile Include="Services\IPermitRequestImportService.cs" />
+    <Compile Include="Services\IPermitRequestMontrealService.cs" />
+    <Compile Include="Services\IShiftPatternService.cs" />
+    <Compile Include="Services\IStreamingCokerCardService.cs" />
+    <Compile Include="Services\IStreamingReportingService.cs" />
+    <Compile Include="Services\IStreamingRoleService.cs" />
+    <Compile Include="Services\IWorkPermitAssignmentConfigurationService.cs" />
+    <Compile Include="Services\IWorkPermitEdmontonService.cs" />
+    <Compile Include="Services\IPermitAttributeService.cs" />
+    <Compile Include="Services\IConfinedSpaceService.cs" />
+    <Compile Include="Services\IRolePermissionService.cs" />
+    <Compile Include="Services\IWorkPermitAutoAssignmentConfigurationService.cs" />
+    <Compile Include="Services\ICokerCardService.cs" />
+    <Compile Include="Services\ICustomFieldService.cs" />
+    <Compile Include="Services\IDocumentLinkService.cs" />
+    <Compile Include="Services\ILabAlertDefinitionService.cs" />
+    <Compile Include="Services\ILabAlertService.cs" />
+    <Compile Include="Services\ILogTemplateService.cs" />
+    <Compile Include="Services\IEventNotificationService.cs" />
+    <Compile Include="Services\IRoleDisplayConfigurationService.cs" />
+    <Compile Include="Services\IDropdownValueService.cs" />
+    <Compile Include="Services\IWorkPermitMontrealService.cs" />
+    <Compile Include="Services\IWorkPermitMontrealTemplateService.cs" />
+    <Compile Include="Utility\Clock.cs" />
+    <Compile Include="Utility\DateRange.cs" />
+    <Compile Include="Utility\DateRangeUtilities.cs" />
+    <Compile Include="Utility\EdmontonPermitSpecialWorkType.cs" />
+    <Compile Include="Utility\ErrorCodes.cs" />
+    <Compile Include="Utility\Func.cs" />
+    <Compile Include="Utility\GenericLogManager.cs" />
+    <Compile Include="Utility\ListSizeChange.cs" />
+    <Compile Include="Utility\LocalizedPropertyChange.cs" />
+    <Compile Include="Utility\OltEnvironment.cs" />
+    <Compile Include="Utility\PermitRequestEdmontonAttributes.cs" />
+    <Compile Include="Utility\RoleElementTemplateValuesContainer.cs" />
+    <Compile Include="Utility\SAPWorkCentre.cs" />
+    <Compile Include="Utility\SMTPMailSender.cs" />
+    <Compile Include="Utility\TagValue.cs" />
+    <Compile Include="Utility\WorkCentreName.cs" />
+    <Compile Include="Utility\WorkOrderWorkPermitType.cs" />
+    <Compile Include="Utility\WorkPermitAttributesParseUtility.cs" />
+    <Compile Include="Utility\WorkPermitMontrealSnapshotTaker.cs" />
+    <Compile Include="Utility\WorkPermitMudsSnapshotTaker.cs" />
+    <Compile Include="Utility\WorkPermitWorkAssignmentDeterminator.cs" />
+    <Compile Include="Wcf\AbstractChannelFactoryWrapper.cs" />
+    <Compile Include="Wcf\AbstractEventNotificationEnabledServiceRegistry.cs" />
+    <Compile Include="Wcf\AbstractServiceRegistry.cs" />
+    <Compile Include="Wcf\BindingType.cs" />
+    <Compile Include="Wcf\ChannelFactoryCreator.cs" />
+    <Compile Include="Wcf\ClientServerChannelFactoryWrapper.cs" />
+    <Compile Include="Wcf\ChannelInterceptor.cs" />
+    <Compile Include="Wcf\GenericServiceRegistry.cs" />
+    <Compile Include="Wcf\IChannelFactoryWrapper.cs" />
+    <Compile Include="Wcf\MessageHeaderUtility.cs" />
+    <Compile Include="Wcf\NonTransactionalOperationAttribute.cs" />
+    <Compile Include="Wcf\MessageInspectionEndpointBehavior.cs" />
+    <Compile Include="Wcf\MessageInspector.cs" />
+    <Compile Include="Wcf\ServerClientChannelFactoryWrapper.cs" />
+    <Compile Include="Wcf\ServiceEndpointConfiguration.cs" />
+    <Compile Include="Wcf\ServiceBindingFactory.cs" />
+    <Compile Include="Services\IApplicationService.cs" />
+    <Compile Include="Services\IBusinessCategoryFLOCAssociationService.cs" />
+    <Compile Include="Services\IFunctionalLocationDTOService.cs" />
+    <Compile Include="Services\IBusinessCategoryService.cs" />
+    <Compile Include="Services\IDeviationAlertService.cs" />
+    <Compile Include="Services\IPlantService.cs" />
+    <Compile Include="Services\IRestrictionDefinitionService.cs" />
+    <Compile Include="Services\IRestrictionReasonCodeService.cs" />
+    <Compile Include="Services\IRoleElementService.cs" />
+    <Compile Include="SchedulingList.cs" />
+    <Compile Include="Services\IShiftHandoverService.cs" />
+    <Compile Include="Services\ISummaryLogService.cs" />
+    <Compile Include="Services\IUserLoginHistoryService.cs" />
+    <Compile Include="Utility\Cache\CacheValue.cs" />
+    <Compile Include="Utility\Cache\ExpiringCache.cs" />
+    <Compile Include="Utility\Cache\IExpiringCache.cs" />
+    <Compile Include="Domain\ActionItem.cs" />
+    <Compile Include="Domain\ActionItemDefinitionAutoReApprovalConfiguration.cs" />
+    <Compile Include="Domain\ActionItemDefinitionStatus.cs" />
+    <Compile Include="Domain\ActionItemStatus.cs" />
+    <Compile Include="Domain\ActionItemStatusModification.cs" />
+    <Compile Include="Domain\ApplicationEvent.cs" />
+    <Compile Include="Domain\AvailabilityReason.cs" />
+    <Compile Include="Domain\Comment.cs" />
+    <Compile Include="Domain\ActionItemDefinitionHistory.cs" />
+    <Compile Include="Domain\DataSource.cs" />
+    <Compile Include="Domain\Date.cs" />
+    <Compile Include="Domain\DayOfMonth.cs" />
+    <Compile Include="Domain\DomainObjectChangeSet.cs" />
+    <Compile Include="Domain\SimpleDomainObject.cs" />
+    <Compile Include="Domain\Duration.cs" />
+    <Compile Include="Domain\EventSink.cs" />
+    <Compile Include="Domain\DayOfWeek.cs" />
+    <Compile Include="Domain\FunctionalLocation.cs" />
+    <Compile Include="Domain\FunctionalLocationCollection.cs" />
+    <Compile Include="Domain\FunctionalLocationHierarchy.cs" />
+    <Compile Include="Domain\FunctionalLocationInfo.cs" />
+    <Compile Include="Domain\FunctionalLocationOperationalMode.cs" />
+    <Compile Include="Domain\FunctionalLocationOperationalModeHistory.cs" />
+    <Compile Include="Domain\IActionItemDefinitionFLOCShiftAdjustedSchedule.cs" />
+    <Compile Include="Domain\ICommentable.cs" />
+    <Compile Include="Domain\IHistorySnapshot.cs" />
+    <Compile Include="Domain\IFunctionalLocationRelevant.cs" />
+    <Compile Include="Domain\IHistoricalDomainObject.cs" />
+    <Compile Include="Domain\LogDefinitionHistory.cs" />
+    <Compile Include="Domain\LogHistory.cs" />
+    <Compile Include="Domain\LogRead.cs" />
+    <Compile Include="Domain\OperationalMode.cs" />
+    <Compile Include="Domain\Plant.cs" />
+    <Compile Include="Domain\Priority.cs" />
+    <Compile Include="Domain\SAPNotification.cs" />
+    <Compile Include="Domain\SapOperationType.cs" />
+    <Compile Include="Domain\SapWorkOrderOperation.cs" />
+    <Compile Include="Domain\Schedule\AbstractSchedule.cs" />
+    <Compile Include="Domain\Schedule\Calculators\AbstractRecurringFrequencyScheduleCalculator.cs" />
+    <Compile Include="Domain\Schedule\Calculators\AbstractRecurringMonthlyScheduleCalculator.cs" />
+    <Compile Include="Domain\Schedule\Calculators\RoundTheClockScheduleCalculator.cs" />
+    <Compile Include="Domain\Schedule\Calculators\ContinuousScheduleCalculator.cs" />
+    <Compile Include="Domain\Schedule\Calculators\IScheduleCalculator.cs" />
+    <Compile Include="Domain\Schedule\Calculators\RecurringDailyScheduleCalculator.cs" />
+    <Compile Include="Domain\Schedule\Calculators\RecurringHourlyScheduleCalculator.cs" />
+    <Compile Include="Domain\Schedule\Calculators\RecurringMinuteScheduleCalculator.cs" />
+    <Compile Include="Domain\Schedule\Calculators\RecurringMonthlyDayOfMonthScheduleCalculator.cs" />
+    <Compile Include="Domain\Schedule\Calculators\RecurringMonthlyDayOfWeekScheduleCalculator.cs" />
+    <Compile Include="Domain\Schedule\Calculators\RecurringWeeklyScheduleCalculator.cs" />
+    <Compile Include="Domain\Schedule\Calculators\SingleScheduleCalculator.cs" />
+    <Compile Include="Domain\Schedule\RoundTheClockSchedule.cs" />
+    <Compile Include="Domain\Schedule\ContinuousSchedule.cs" />
+    <Compile Include="Domain\Schedule\RecurringDailySchedule.cs" />
+    <Compile Include="Domain\Schedule\RecurringHourlySchedule.cs" />
+    <Compile Include="Domain\Schedule\RecurringMinuteSchedule.cs" />
+    <Compile Include="Domain\Schedule\RecurringMonthlyDayOfMonthSchedule.cs" />
+    <Compile Include="Domain\Schedule\RecurringMonthlyDayOfWeekSchedule.cs" />
+    <Compile Include="Domain\Schedule\RecurringMonthlySchedule.cs" />
+    <Compile Include="Domain\Schedule\RecurringSchedule.cs" />
+    <Compile Include="Domain\Schedule\RecurringWeeklySchedule.cs" />
+    <Compile Include="Domain\Schedule\SingleSchedule.cs" />
+    <Compile Include="Domain\Schedule\ISchedule.cs" />
+    <Compile Include="Domain\IStopWatch.cs" />
+    <Compile Include="Domain\Log.cs" />
+    <Compile Include="Domain\LogDefinition.cs" />
+    <Compile Include="Domain\Month.cs" />
+    <Compile Include="Domain\ObjectLock.cs" />
+    <Compile Include="Domain\ObjectLockResult.cs" />
+    <Compile Include="Domain\Role.cs" />
+    <Compile Include="Domain\RoleElement.cs" />
+    <Compile Include="Domain\Schedule\ScheduleType.cs" />
+    <Compile Include="Domain\SearchCriteria.cs" />
+    <Compile Include="Domain\SearchField.cs" />
+    <Compile Include="Domain\SelectionItem.cs" />
+    <Compile Include="Domain\ActionItemDefinition.cs" />
+    <Compile Include="Domain\DomainObject.cs" />
+    <Compile Include="Domain\ShiftPattern.cs" />
+    <Compile Include="Domain\Site.cs" />
+    <Compile Include="Domain\SiteConfiguration.cs" />
+    <Compile Include="Domain\StopWatch.cs" />
+    <Compile Include="Domain\TagInfo.cs" />
+    <Compile Include="Domain\TagInfoGroup.cs" />
+    <Compile Include="Domain\TargetDefinitionAutoReApprovalConfiguration.cs" />
+    <Compile Include="Domain\Target\ReadWriteTagConfiguration.cs" />
+    <Compile Include="Domain\Target\TagDirection.cs" />
+    <Compile Include="Domain\Target\TargetDefinitionHistory.cs" />
+    <Compile Include="Domain\Target\ITargetAction.cs" />
+    <Compile Include="Domain\Target\TargetDefinitionReadWriteTagConfiguration.cs" />
+    <Compile Include="Domain\Target\TargetValue.cs" />
+    <Compile Include="Domain\Target\Threshold.cs" />
+    <Compile Include="Domain\Target\MaxThreshold.cs" />
+    <Compile Include="Domain\Target\MinThreshold.cs" />
+    <Compile Include="Domain\Target\TargetAlert.cs" />
+    <Compile Include="Domain\Target\TargetAlertResponse.cs" />
+    <Compile Include="Domain\Target\TargetAlertStatus.cs" />
+    <Compile Include="Domain\Target\TargetCategory.cs" />
+    <Compile Include="Domain\Target\TargetGapReason.cs" />
+    <Compile Include="Domain\Target\TargetDefinition.cs" />
+    <Compile Include="Domain\Target\TargetDefinitionStatus.cs" />
+    <Compile Include="Domain\Target\TargetThresholds.cs" />
+    <Compile Include="Domain\Target\TargetThresholdEvaluationLevel.cs" />
+    <Compile Include="Domain\Target\TargetThresholdExcessLevel.cs" />
+    <Compile Include="Domain\Target\ThresholdEvaluation.cs" />
+    <Compile Include="Domain\Time.cs" />
+    <Compile Include="Domain\User.cs" />
+    <Compile Include="Domain\UserPrintPreference.cs" />
+    <Compile Include="Domain\UserShift.cs" />
+    <Compile Include="Domain\WeekOfMonth.cs" />
+    <Compile Include="DTO\ActionItemDefinitionDTO.cs" />
+    <Compile Include="DTO\ActionItemDTO.cs" />
+    <Compile Include="DTO\FunctionalLocationOperationalNormalModeDTO.cs" />
+    <Compile Include="DTO\GasTestElementInfoDTO.cs" />
+    <Compile Include="DTO\GasTestElementResultDTO.cs" />
+    <Compile Include="DTO\LogDefinitionDTO.cs" />
+    <Compile Include="DTO\LogDTO.cs" />
+    <Compile Include="DTO\ItemReadBy.cs" />
+    <Compile Include="DTO\SAPNotificationDTO.cs" />
+    <Compile Include="DTO\TargetAlertDTO.cs" />
+    <Compile Include="DTO\TargetDefinitionDTO.cs" />
+    <Compile Include="DTO\WorkPermitDTO.cs" />
+    <Compile Include="Exceptions\AttemptedToUpdateChildObjectWithoutIdException.cs" />
+    <Compile Include="Exceptions\ExpectedUnitLevelFLOCException.cs" />
+    <Compile Include="Exceptions\InconsistentSiteException.cs" />
+    <Compile Include="Exceptions\InconsistentTagInfoGroupDataException.cs" />
+    <Compile Include="Exceptions\InvalidPlantHistorianConnectionInfoException.cs" />
+    <Compile Include="Exceptions\InvalidPlantHistorianReadException.cs" />
+    <Compile Include="Exceptions\InvalidPlantHistorianServerException.cs" />
+    <Compile Include="Exceptions\InvalidPlantHistorianTypeException.cs" />
+    <Compile Include="Exceptions\InvalidPlantHistorianValueException.cs" />
+    <Compile Include="Exceptions\InvalidPlantHistorianWriteException.cs" />
+    <Compile Include="Exceptions\MissingPHDConnectionException.cs" />
+    <Compile Include="Exceptions\OLTException.cs" />
+    <Compile Include="Exceptions\SAPHandlerProcessingException.cs" />
+    <Compile Include="Exceptions\SAPHandlerValidationException.cs" />
+    <Compile Include="Exceptions\TagDoesNotExistExpection.cs" />
+    <Compile Include="Exceptions\TagInfoGroupNameUniquenessException.cs" />
+    <Compile Include="Exceptions\VersionNotMatchingException.cs" />
+    <Compile Include="Exceptions\ExpectedAnActionItemDefintionFLOCPairException.cs" />
+    <Compile Include="Exceptions\LinkedTargetCircularReferenceException.cs" />
+    <Compile Include="Exceptions\LockException.cs" />
+    <Compile Include="Exceptions\MoreThanOneRecordFoundException.cs" />
+    <Compile Include="Exceptions\NoDataFoundException.cs" />
+    <Compile Include="Exceptions\NoRegisteredImplementationException.cs" />
+    <Compile Include="Exceptions\NoShiftAssignmentFoundException.cs" />
+    <Compile Include="Exceptions\ParentTargetExistsException.cs" />
+    <Compile Include="Exceptions\ShiftNotFoundException.cs" />
+    <Compile Include="Exceptions\TagSchedulerException.cs" />
+    <Compile Include="Exceptions\TimeZoneConversionException.cs" />
+    <Compile Include="Exceptions\WorkPermitNotEditableException.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Remote\IRemoteEventRepeater.cs" />
+    <Compile Include="Remote\RemoteEventRepeater.cs" />
+    <Compile Include="Services\IActionItemDefinitionService.cs" />
+    <Compile Include="Services\IActionItemService.cs" />
+    <Compile Include="Services\IContractorService.cs" />
+    <Compile Include="Services\ICraftOrTradeService.cs" />
+    <Compile Include="Services\IEditHistoryService.cs" />
+    <Compile Include="Services\IEventService.cs" />
+    <Compile Include="Services\IFunctionalLocationInfoService.cs" />
+    <Compile Include="Services\IFunctionalLocationOperationalModeService.cs" />
+    <Compile Include="Services\IFunctionalLocationService.cs" />
+    <Compile Include="Services\IGasTestElementInfoService.cs" />
+    <Compile Include="Services\ILogDefinitionService.cs" />
+    <Compile Include="Services\ILogService.cs" />
+    <Compile Include="Services\IObjectLockingService.cs" />
+    <Compile Include="Services\IWorkAssignmentService.cs" />
+    <Compile Include="Services\IPlantHistorianService.cs" />
+    <Compile Include="Services\IRoleService.cs" />
+    <Compile Include="Services\IReportingService.cs" />
+    <Compile Include="Services\ISAPNotificationService.cs" />
+    <Compile Include="Services\IScheduleService.cs" />
+    <Compile Include="Services\ISecurityService.cs" />
+    <Compile Include="Services\ISiteConfigurationService.cs" />
+    <Compile Include="Services\ISiteService.cs" />
+    <Compile Include="Services\ITagInfoGroupService.cs" />
+    <Compile Include="Services\ITagService.cs" />
+    <Compile Include="Services\ITargetAlertService.cs" />
+    <Compile Include="Services\ITargetDefinitionService.cs" />
+    <Compile Include="Services\ITimeService.cs" />
+    <Compile Include="Services\IUserService.cs" />
+    <Compile Include="Services\IWorkPermitService.cs" />
+    <Compile Include="Utility\AssemblyUtil.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Extension\CharacterExtensions.cs" />
+    <Compile Include="Utility\Combination.cs" />
+    <Compile Include="Utility\CombinationFinder.cs" />
+    <Compile Include="Utility\IgnoreToStringAttribute.cs" />
+    <Compile Include="Utility\DifferenceBuilder.cs" />
+    <Compile Include="Utility\DifferenceLabelAttribute.cs" />
+    <Compile Include="Utility\Error.cs" />
+    <Compile Include="Utility\IgnoreDifferenceAttribute.cs" />
+    <Compile Include="Utility\OltTimeZoneInfo.cs" />
+    <Compile Include="Utility\PropertyChange.cs" />
+    <Compile Include="Utility\HashCodeBuilder.cs" />
+    <Compile Include="Extension\CollectionExtensions.cs" />
+    <Compile Include="Utility\Range.cs" />
+    <Compile Include="Utility\Set.cs" />
+    <Compile Include="Utility\ShiftOutOfBoundsException.cs" />
+    <Compile Include="Utility\Constants.cs" />
+    <Compile Include="Utility\DomainEventArgs.cs" />
+    <Compile Include="Utility\SearchFilterEventArgs.cs" />
+    <Compile Include="Extension\StringExtensions.cs" />
+    <Compile Include="Utility\WorkPermitSnapshotTaker.cs" />
+    <Compile Include="Wcf\NetDataContractOperationBehavior.cs" />
+    <Compile Include="Wcf\ServiceNameMap.cs" />
+    <Compile Include="Wcf\NetDataContractSerializerAttribute.cs" />
+    <Compile Include="Wcf\OltServiceHostFactory.cs" />
+    <Compile Include="Wcf\WcfConfiguration.cs" />
+    <Compile Include="Wcf\WcfServiceExtensions.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Localization\LocaleSpecificFormatPatternResources.fr.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>LocaleSpecificFormatPatternResources.fr.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Localization\LocaleSpecificFormatPatternResources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>LocaleSpecificFormatPatternResources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Localization\RendererStringResources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>RendererStringResources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Localization\RendererStringResources.fr.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>RendererStringResources.fr.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Localization\StringResources.fr.resx">
+      <SubType>Designer</SubType>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>StringResources.fr.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Localization\StringResources.resx">
+      <SubType>Designer</SubType>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>StringResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Localization\LocaleSpecificFormatPatternResources.fr.txt" />
+    <Content Include="Localization\LocaleSpecificFormatPatternResources.txt" />
+    <Content Include="Localization\RendererStringResources.fr.txt" />
+    <Content Include="Localization\RendererStringResources.txt" />
+    <Content Include="Localization\StringResources.fr.txt" />
+    <Content Include="Localization\StringResources.txt" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildProjectDirectory)\..\..\..\olt.msbuild" />
+  <Target Name="BeforeBuild">
+    <CallTarget Targets="GenerateStronglyTypedResourceFiles" />
+  </Target>
+  <PropertyGroup>
+    <PreBuildEvent>if exist "$(TargetPath).locked" del "$(TargetPath).locked"
+if not exist "$(TargetPath).locked" if exist "$(TargetPath)" move "$(TargetPath)" "$(TargetPath).locked"
+
+
+</PreBuildEvent>
+  </PropertyGroup>
+</Project>

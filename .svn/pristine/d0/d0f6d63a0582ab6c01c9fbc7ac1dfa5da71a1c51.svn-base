@@ -1,0 +1,44 @@
+Index: SummaryGrid.cs
+===================================================================
+--- SummaryGrid.cs	(revision 7400)
++++ SummaryGrid.cs	(working copy)
+@@ -1,6 +1,6 @@
+ ﻿using System;
++using System.Collections;
+ using System.Collections.Generic;
+-using System.Collections.ObjectModel;
+ using System.ComponentModel;
+ using System.Drawing;
+ using System.Windows.Forms;
+@@ -180,17 +180,28 @@
+             }
+         }
+ 
+-        public IList<T> Items
++        public ICollection<T> Items
+         {
+             get 
+             {
+                 BindingList<T> bindingList = GetItems();
+                 if (bindingList == null) return null;
+-                return new ReadOnlyCollection<T>(bindingList);
++                return new HashSet<T>(bindingList);
+             }
+             set
+             {
+-                var bindingList = new BindingList<T>(value);
++                BindingList<T> bindingList;
++                if (value is IList && value.GetType().IsGenericType)
++                {
++                    bindingList = new BindingList<T>(value as IList<T>);
++                    
++                }
++                else
++                {
++                    ICollection<T> collection = value;
++                    bindingList = new BindingList<T>(new List<T>(value));
++                }
++
+                 DataSource = bindingList;
+                 renderer.SetExistingColumnsInBand(UniqueGridName, DisplayLayout.Bands[0]);
+                 HideNestedBands();

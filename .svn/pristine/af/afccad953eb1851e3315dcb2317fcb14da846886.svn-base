@@ -1,0 +1,49 @@
+using System;
+using System.Collections.Generic;
+using System.Windows.Forms;
+using Com.Suncor.Olt.Common.Domain;
+using Com.Suncor.Olt.Common.DTO;
+using Com.Suncor.Olt.Common.Domain.WorkPermit;
+
+namespace Com.Suncor.Olt.Client.Controls.Details
+{
+    public interface IWorkPermitDetails : IApprovableDetails
+    {
+        event EventHandler Copy;
+        event EventHandler Clone;
+        event EventHandler Print;
+        event EventHandler PrintPreview;
+        event EventHandler CloseWorkPermit;
+
+        event EventHandler RefreshAll;
+        event EventHandler SetFilter;
+
+        List<AcidClothingType> SpecialProtectiveClothingTypeAcidClothingTypeChoices { set; }
+
+        List<GasTestElementResultDTO> GasTestElementResults { set; }
+        void SetRequiredSpecialPrecautionsComments();
+        List<DocumentLink> DocumentLinks { set;}
+
+        User Author { set; }
+        User Approver { set; }
+        User LastModifier { set; }
+        bool RefreshAllEnabled { set;}
+
+        Version WorkPermitVersion { set; }
+        IWorkPermitDetails BindingTarget { get; }
+
+        bool CloseEnabled { set; }
+        bool CopyEnabled { set; }
+        bool CloneEnabled { set; }
+        bool PrintEnabled { set; }
+        bool PrintPreviewEnabled { set; }
+
+        ToolStripButton SaveGridLayoutButton { get; } // This is because the subclasses of this interface don't implement AbstractDetails like all the other details.
+
+        // DMND0010609-OLT - Edmonton Work permit Scan
+        bool ViewAttachEnabled { set; }
+        event EventHandler ViewAttachment;
+        bool ViewScanEnabled { set; }
+        void MakeSeachWindowRequiredButtonsvisibleonly();
+    }
+}

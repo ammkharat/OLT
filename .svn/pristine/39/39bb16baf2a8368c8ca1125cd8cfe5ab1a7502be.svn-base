@@ -1,0 +1,409 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="oltDGVImage.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="oltDGVImage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>142, 216</value>
+  </data>
+  <data name="oltDGVImage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>596, 180</value>
+  </data>
+  <data name="customFieldsPanel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="customFieldEntriesPanel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="customFieldEntriesPanel.AutoScroll" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="customFieldEntriesPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>596, 99</value>
+  </data>
+  <data name="customFieldsLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="customFieldsLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="customFieldsLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 13</value>
+  </data>
+  <data name="customFieldsLabel.Text" xml:space="preserve">
+    <value>Custom Fields</value>
+  </data>
+  <data name="customFieldsLeftPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="customFieldsLeftPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="customFieldsLeftPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>131, 110</value>
+  </data>
+  <data name="customFieldsPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 921</value>
+  </data>
+  <data name="customFieldsPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="customFieldsPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>643, 110</value>
+  </data>
+  <data name="gn75AssociationGroupBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="editGN75BFormButton2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="editGN75BFormButton2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>419, 66</value>
+  </data>
+  <data name="formGn75LabelData2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="formGn75LabelData2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 68</value>
+  </data>
+  <data name="formGn75LabelData2.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="editGN75BFormButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="viewGN75BFormButton2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="viewGN75BFormButton2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>333, 66</value>
+  </data>
+  <data name="editGN75BFormButton1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="editGN75BFormButton1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>419, 39</value>
+  </data>
+  <data name="formGn75LabelData1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="formGn75LabelData1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 42</value>
+  </data>
+  <data name="formGn75LabelData1.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="viewGN75BFormButton1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="viewGN75BFormButton1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>333, 39</value>
+  </data>
+  <data name="gn75AssociationGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>143, 570</value>
+  </data>
+  <data name="gn75AssociationGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>596, 96</value>
+  </data>
+  <data name="gn75AssociationGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
+  </data>
+  <data name="oltGroupBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>142, 670</value>
+  </data>
+  <data name="oltGroupBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>596, 42</value>
+  </data>
+  <data name="statusLabelData.Size" type="System.Drawing.Size, System.Drawing">
+    <value>596, 24</value>
+  </data>
+  <data name="nameLabelData.Size" type="System.Drawing.Size, System.Drawing">
+    <value>596, 24</value>
+  </data>
+  <data name="functionalLocationPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>143, 463</value>
+  </data>
+  <data name="functionalLocationPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>596, 92</value>
+  </data>
+  <data name="workAssignmentLabelData.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="workAssignmentLabelData.Location" type="System.Drawing.Point, System.Drawing">
+    <value>143, 436</value>
+  </data>
+  <data name="workAssignmentLabelData.Size" type="System.Drawing.Size, System.Drawing">
+    <value>596, 24</value>
+  </data>
+  <data name="statusModificationControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>590, 55</value>
+  </data>
+  <data name="statusModificationGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>142, 840</value>
+  </data>
+  <data name="statusModificationGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>596, 74</value>
+  </data>
+  <data name="documentLinksControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>142, 764</value>
+  </data>
+  <data name="documentLinksControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>596, 74</value>
+  </data>
+  <data name="endByData.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="startByData.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="endByLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="startByLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="timeGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>349, 714</value>
+  </data>
+  <data name="timeGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>386, 42</value>
+  </data>
+  <data name="startDateData.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="startDateLabelData.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="dateGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>143, 716</value>
+  </data>
+  <data name="categoryData.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="categoryData.Location" type="System.Drawing.Point, System.Drawing">
+    <value>143, 404</value>
+  </data>
+  <data name="categoryData.Size" type="System.Drawing.Size, System.Drawing">
+    <value>596, 24</value>
+  </data>
+  <data name="ActionItemDetailsImageLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ActionItemDetailsImageLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="ActionItemDetailsImageLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>23, 233</value>
+  </data>
+  <data name="ActionItemDetailsImageLabel.Text" xml:space="preserve">
+    <value>Action Item Images</value>
+  </data>
+  <data name="formGn75BLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>53, 574</value>
+  </data>
+  <data name="oltLabel3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>49, 669</value>
+  </data>
+  <data name="oltLabel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>85, 42</value>
+  </data>
+  <data name="nameLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>89, 7</value>
+  </data>
+  <data name="workAssignmentLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="workAssignmentLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>33, 434</value>
+  </data>
+  <data name="statusModificationLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="statusModificationLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>46, 841</value>
+  </data>
+  <data name="oltLabel1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="oltLabel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>42, 764</value>
+  </data>
+  <data name="functionalLocationLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="functionalLocationLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 472</value>
+  </data>
+  <data name="descriptionLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="descriptionLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>63, 84</value>
+  </data>
+  <data name="actionDateTimeLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="actionDateTimeLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>35, 715</value>
+  </data>
+  <data name="categoryLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="categoryLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>71, 401</value>
+  </data>
+  <data name="leftPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="leftPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 7</value>
+  </data>
+  <data name="leftPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>133, 907</value>
+  </data>
+  <data name="descriptionLabelData.Size" type="System.Drawing.Size, System.Drawing">
+    <value>596, 136</value>
+  </data>
+  <data name="detailsPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>759, 853</value>
+  </data>
+  <data name="printButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGGSURBVDhPlZNfSwJBFMX9eLk99NBL9mIQPfQBIjUiKhFq
+        E6OiwtTMspIIsWzxb1EiQlEEkihGUBFEobAF9WDtzTPLulqLbgOHgTvn/nZ25oxB/JQIQ6pP+iQxFYsl
+        4hfcZEDzY7VG2fIHJfIiDfBJTQ250hTJPdBB7p7CmTuKpM7JYrGSAdTTotwcvaww8+/x9S01QIFEidaF
+        G1oKZclk6pcBytfbARQImr1HeeL9ceoyGmVApvROPaZBJi0ARq0urCm+WV+MOK5bBpwVRFZ8q74wUzvB
+        A++MR1ABx/lqA6BH8Drch38B/5F9JaICUtevrChWnjW33Sx44J1aDquA+JVcVABa24aaAROL+ypAuHhq
+        AWDWUjNgfH6vFRBM37KFTjuAx+FLks21owAkFk8kzB8rdASgeXotRra5oAoInZRZMxIGUzvZPXGaXBXU
+        X8Cr2gynWbadG0kWUYQE94yrwmnjwNAw5tolq3ObRvktMg+PyFH2BkLsVeFhoACqHhk5jnr7zPQDvTYH
+        j91yqUEAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="toolStrip1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>759, 25</value>
+  </data>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>759, 878</value>
+  </data>
+</root>

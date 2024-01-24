@@ -1,0 +1,31 @@
+﻿<?xml version="1.0"?>
+
+<WorkOrderOLTdata>
+  <WorkOrderRecord>
+    <header></header>
+    <WorkOrderDetails>
+      <WONumber>000030011260</WONumber>
+      <ShortText>Carryover to SAP - 04tc118 compressor</ShortText>
+      <FunctionalLocation>SR1-PLT2-UTP2-SMF</FunctionalLocation>
+      <EquipmentNumber></EquipmentNumber>
+      <PlantID>4000</PlantID>
+
+      <Operations>
+        <OperationKeyNo>1000020930</OperationKeyNo>
+        <OperationNumber>0020</OperationNumber>
+        <SubOperation />
+        <EarliestStartDate>2006-04-03</EarliestStartDate>
+        <EarliestStartTime>12:00:00</EarliestStartTime>
+        <EarliestFinishDate>2006-04-04</EarliestFinishDate>
+        <EarliestFinishTime>12:00:00</EarliestFinishTime>
+        <WorkPermitType>COLD</WorkPermitType>
+        <WorkPermitAttrib>X</WorkPermitAttrib>
+        <WorkCenterID>10001148</WorkCenterID>
+        <WorkCenterName>PRTEC</WorkCenterName>
+        <WorkCenterText>Pipefitter, Contract</WorkCenterText>
+        <LongText>FABRICATE AND INSTALL A NEW SUPPORT FOR A SAGGING STEAM LINE IN "D" RACK * SOUTH OF COLUMN DE5. * THIS IS A 40# STEAM TRACING HARD PIPE LINE THAT NO LONGER HAS ANY * SUPPORTS. IT USE TO BE SUPPORTED FROM THE OLD FLARE LINE THAT WAS * REPLACED DURING THE ALKY 2003 T/A. * ***CAUTION: ALKY UNIT, SPECIAL PPE REQUIRED*** *</LongText>
+      </Operations>
+
+    </WorkOrderDetails>
+  </WorkOrderRecord>
+</WorkOrderOLTdata>

@@ -1,0 +1,144 @@
+﻿DROP TABLE [dbo].[WorkPermitedmontonrequestdetails]
+
+CREATE NONCLUSTERED INDEX [IDX_FormOP14_Covering_DTO]
+ON [dbo].[FormOP14]
+([ValidFromDateTime] , [ValidToDateTime] , [Deleted] , [FormStatusId])
+WITH
+(
+PAD_INDEX = OFF,
+FILLFACTOR = 100,
+IGNORE_DUP_KEY = OFF,
+STATISTICS_NORECOMPUTE = OFF,
+ONLINE = OFF,
+ALLOW_ROW_LOCKS = ON,
+ALLOW_PAGE_LOCKS = ON
+)
+ON [PRIMARY];
+GO
+
+CREATE NONCLUSTERED INDEX [IDX_FormOP14_FormId]
+ON [dbo].[FormOP14Approval]
+([FormOP14Id])
+WITH
+(
+PAD_INDEX = OFF,
+FILLFACTOR = 100,
+IGNORE_DUP_KEY = OFF,
+STATISTICS_NORECOMPUTE = OFF,
+ONLINE = OFF,
+ALLOW_ROW_LOCKS = ON,
+ALLOW_PAGE_LOCKS = ON
+)
+ON [PRIMARY];
+GO
+
+CREATE NONCLUSTERED INDEX [IDX_FormOP14_Covering_Job]
+ON [dbo].[FormOP14]
+([FormStatusId], [ValidFromDateTime] )
+WITH
+(
+PAD_INDEX = OFF,
+FILLFACTOR = 100,
+IGNORE_DUP_KEY = OFF,
+STATISTICS_NORECOMPUTE = OFF,
+ONLINE = OFF,
+ALLOW_ROW_LOCKS = ON,
+ALLOW_PAGE_LOCKS = ON
+)
+ON [PRIMARY];
+GO
+
+
+CREATE NONCLUSTERED INDEX [IDX_WorkPermitEdmonton_PermitRequestId]
+ON [dbo].[WorkPermitEdmonton]
+([PermitRequestId] , [WorkPermitStatusId] , [Id])
+WITH
+(
+PAD_INDEX = OFF,
+FILLFACTOR = 100,
+IGNORE_DUP_KEY = OFF,
+STATISTICS_NORECOMPUTE = OFF,
+ONLINE = OFF,
+ALLOW_ROW_LOCKS = ON,
+ALLOW_PAGE_LOCKS = ON,
+DROP_EXISTING = ON
+)
+ON [PRIMARY];
+GO
+
+
+
+CREATE NONCLUSTERED INDEX [IDX_WorkPermitEdmonton_DTO_Covering]
+ON [dbo].[WorkPermitEdmonton]
+([RequestedStartDateTime] , [ExpiredDateTime] , [FunctionalLocationId] , [Deleted])
+WITH
+(
+PAD_INDEX = OFF,
+FILLFACTOR = 100,
+IGNORE_DUP_KEY = OFF,
+STATISTICS_NORECOMPUTE = OFF,
+ONLINE = OFF,
+ALLOW_ROW_LOCKS = ON,
+ALLOW_PAGE_LOCKS = ON,
+DROP_EXISTING = ON
+)
+ON [PRIMARY];
+GO
+
+CREATE NONCLUSTERED INDEX [IDX_PermitRequestEdmonton_Covering_Others]
+ON [dbo].[PermitRequestEdmonton]
+([RequestedStartDate] , [EndDate] , [Deleted])
+INCLUDE ([IsComplete], [GroupId], [DataSourceId])
+WITH
+(
+PAD_INDEX = OFF,
+FILLFACTOR = 100,
+IGNORE_DUP_KEY = OFF,
+STATISTICS_NORECOMPUTE = OFF,
+ONLINE = OFF,
+ALLOW_ROW_LOCKS = ON,
+ALLOW_PAGE_LOCKS = ON
+)
+ON [PRIMARY];
+GO
+
+DROP INDEX IDX_PermitRequestEdmonton ON [dbo].[PermitRequestEdmonton];
+
+CREATE NONCLUSTERED INDEX [IDX_PermitRequestEdmonton_DTO_Covering]
+ON [dbo].[PermitRequestEdmonton]
+([FunctionalLocationId] , [RequestedStartDate] , [EndDate] , [Deleted])
+WITH
+(
+PAD_INDEX = OFF,
+FILLFACTOR = 100,
+IGNORE_DUP_KEY = OFF,
+STATISTICS_NORECOMPUTE = OFF,
+ONLINE = OFF,
+ALLOW_ROW_LOCKS = ON,
+ALLOW_PAGE_LOCKS = ON,
+DROP_EXISTING = OFF
+)
+ON [PRIMARY];
+GO
+
+CREATE NONCLUSTERED INDEX [IDX_PermitRequestEdmonton_Covering_SAP_Data]
+ON [dbo].[PermitRequestEdmonton]
+(
+ [DataSourceId] , [Deleted] , [WorkOrderNumber] , [OperationNumber] , [SubOperationNumber] 
+)
+WITH
+(
+PAD_INDEX = OFF,
+FILLFACTOR = 100,
+IGNORE_DUP_KEY = OFF,
+STATISTICS_NORECOMPUTE = OFF,
+ONLINE = OFF,
+ALLOW_ROW_LOCKS = ON,
+ALLOW_PAGE_LOCKS = ON
+)
+ON [PRIMARY];
+GO
+
+
+GO
+

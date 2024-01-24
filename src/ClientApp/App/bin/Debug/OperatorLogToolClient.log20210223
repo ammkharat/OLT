@@ -1,0 +1,1561 @@
+2021-02-23 02:03:56,958 [1] INFO  Program - Starting to cleanup on exit.
+2021-02-23 02:04:42,360 [1] INFO  Program - Attempting to disconnect remote event repeater.
+2021-02-23 02:04:42,536 [1] INFO  Program - Done disconnecting remote event repeater.
+2021-02-23 02:04:42,580 [1] INFO  Program - Attempting to release all locks.
+2021-02-23 02:04:47,391 [1] INFO  Program - Done releasing all locks.
+2021-02-23 02:04:47,391 [1] INFO  Program - Attempting to close client side services.
+2021-02-23 02:04:47,826 [1] INFO  AbstractEventNotificationEnabledServiceRegistry - Closing service host.
+2021-02-23 02:04:49,320 [1] INFO  AbstractEventNotificationEnabledServiceRegistry - Done closing service host.
+2021-02-23 02:04:49,320 [1] INFO  Program - Done closing client side services.
+2021-02-23 02:04:49,320 [1] INFO  Program - Done cleanup on exit.
+2021-02-23 02:12:47,954 [1] DEBUG Program - Starting Operator Log Tool Smart Client
+2021-02-23 02:12:48,325 [1] DEBUG CurrentCulture - # of uiculture files found: 2.  Using default.
+2021-02-23 02:12:52,723 [1] INFO  WcfConfiguration - WCF configuration is as follows:
+2021-02-23 02:12:52,724 [1] INFO  WcfConfiguration - clientPorts: 9771,9772,9773,9774,9775,9776,9777,9778
+2021-02-23 02:12:52,724 [1] INFO  WcfConfiguration - clientHostNameOrIPAddress: 
+2021-02-23 02:12:52,724 [1] INFO  WcfConfiguration - receiveTimeout: 10
+2021-02-23 02:12:52,724 [1] INFO  WcfConfiguration - sendTimeout: 15
+2021-02-23 02:12:52,725 [1] INFO  WcfConfiguration - openTimeout: 2
+2021-02-23 02:12:52,725 [1] INFO  WcfConfiguration - closeTimeout: 2
+2021-02-23 02:12:52,725 [1] INFO  WcfConfiguration - maxBufferSize: 2147483647
+2021-02-23 02:12:52,725 [1] INFO  WcfConfiguration - maxBufferPoolSize: 524288
+2021-02-23 02:12:52,725 [1] INFO  WcfConfiguration - maxReceivedMessageSize: 2147483647
+2021-02-23 02:12:52,725 [1] INFO  WcfConfiguration - readerQuotasMaxStringContentLength: 2147483647
+2021-02-23 02:12:52,725 [1] INFO  WcfConfiguration - readerQuotasMaxDepth: 2147483647
+2021-02-23 02:12:52,725 [1] INFO  WcfConfiguration - readerQuotasMaxArrayLength: 2147483647
+2021-02-23 02:12:52,725 [1] INFO  WcfConfiguration - maxConcurrentCalls: 200
+2021-02-23 02:12:52,725 [1] INFO  WcfConfiguration - maxConcurrentInstances: 200
+2021-02-23 02:12:52,725 [1] INFO  WcfConfiguration - maxConcurrentSessions: 200
+2021-02-23 02:12:52,725 [1] INFO  WcfConfiguration - maxConnections: 5000
+2021-02-23 02:12:52,725 [1] INFO  WcfConfiguration - maxItemsInObjectGraph: 2147483647
+2021-02-23 02:12:52,726 [1] INFO  WcfConfiguration - clientServerBindingType: HttpBinaryEncoded
+2021-02-23 02:12:53,926 [1] INFO  NetworkUtilities - Number of IP Addresses found: 2
+2021-02-23 02:12:53,967 [1] INFO  NetworkUtilities - address: fe80::4d6:8f72:f3b9:7889%11
+2021-02-23 02:12:53,967 [1] INFO  NetworkUtilities - address: 10.9.21.6
+2021-02-23 02:12:54,001 [1] INFO  AbstractEventNotificationEnabledServiceRegistry - Attempting to create service host for event notification at net.tcp://10.9.21.6:9771/
+2021-02-23 02:12:54,849 [1] DEBUG OltServiceHostFactory - Tcp binding created.
+2021-02-23 02:12:54,998 [1] DEBUG ServiceNameMap - Attempting to find cached Service type IEventNotificationService
+2021-02-23 02:12:55,000 [1] DEBUG ServiceNameMap - Attempting to find Service type IEventNotificationService in Assemblies
+2021-02-23 02:12:55,000 [1] DEBUG ServiceNameMap - Getting interface type for the service IEventNotificationService
+2021-02-23 02:12:55,000 [1] DEBUG ServiceNameMap - Found 21 assemblies to search.
+2021-02-23 02:12:55,000 [1] DEBUG ServiceNameMap - Found assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 02:12:55,000 [1] DEBUG ServiceNameMap - Found assembly Operator Log Tool, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2021-02-23 02:12:55,001 [1] DEBUG ServiceNameMap - Searching OLT assembly Operator Log Tool, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null for IEventNotificationService
+2021-02-23 02:12:58,900 [1] DEBUG ServiceNameMap - Found assembly log4net, Version=1.2.13.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a
+2021-02-23 02:12:58,900 [1] DEBUG ServiceNameMap - Found assembly System.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2021-02-23 02:12:58,900 [1] DEBUG ServiceNameMap - Found assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 02:12:58,900 [1] DEBUG ServiceNameMap - Found assembly System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 02:12:58,900 [1] DEBUG ServiceNameMap - Found assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 02:12:58,900 [1] DEBUG ServiceNameMap - Found assembly Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2021-02-23 02:12:58,900 [1] DEBUG ServiceNameMap - Searching OLT assembly Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null for IEventNotificationService
+2021-02-23 02:12:59,185 [1] DEBUG ServiceNameMap - Found IEventNotificationService in Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2021-02-23 02:12:59,185 [1] DEBUG ServiceNameMap - Attempting to class that implements IEventNotificationService in Assemblies
+2021-02-23 02:12:59,185 [1] DEBUG ServiceNameMap - Found 33 assemblies to search for service implementation
+2021-02-23 02:12:59,185 [1] DEBUG ServiceNameMap - Found assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 02:12:59,185 [1] DEBUG ServiceNameMap - Found assembly Operator Log Tool, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2021-02-23 02:12:59,185 [1] DEBUG ServiceNameMap - Searching OLT assembly Operator Log Tool, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null for IEventNotificationService
+2021-02-23 02:12:59,186 [1] DEBUG ServiceNameMap - Found Com.Suncor.Olt.Client.Services.EventNotificationService implementing Com.Suncor.Olt.Common.Services.IEventNotificationService in Operator Log Tool, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2021-02-23 02:12:59,186 [1] DEBUG ServiceNameMap - Found assembly log4net, Version=1.2.13.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a
+2021-02-23 02:12:59,186 [1] DEBUG ServiceNameMap - Found assembly System.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2021-02-23 02:12:59,186 [1] DEBUG ServiceNameMap - Found assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 02:12:59,186 [1] DEBUG ServiceNameMap - Found assembly System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 02:12:59,186 [1] DEBUG ServiceNameMap - Found assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 02:12:59,186 [1] DEBUG ServiceNameMap - Found assembly Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2021-02-23 02:12:59,186 [1] DEBUG ServiceNameMap - Searching OLT assembly Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null for IEventNotificationService
+2021-02-23 02:12:59,186 [1] DEBUG ServiceNameMap - Found assembly System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 02:12:59,186 [1] DEBUG ServiceNameMap - Found assembly System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 02:12:59,186 [1] DEBUG ServiceNameMap - Found assembly System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2021-02-23 02:12:59,186 [1] DEBUG ServiceNameMap - Found assembly Infragistics2.Shared.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb
+2021-02-23 02:12:59,186 [1] DEBUG ServiceNameMap - Found assembly Infragistics2.Win.UltraWinGrid.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb
+2021-02-23 02:12:59,186 [1] DEBUG ServiceNameMap - Found assembly Infragistics2.Win.SupportDialogs.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb
+2021-02-23 02:12:59,186 [1] DEBUG ServiceNameMap - Found assembly Operator Log Tool.resources, Version=5.11.65533.0, Culture=en-US, PublicKeyToken=null
+2021-02-23 02:12:59,186 [1] DEBUG ServiceNameMap - Searching OLT assembly Operator Log Tool.resources, Version=5.11.65533.0, Culture=en-US, PublicKeyToken=null for IEventNotificationService
+2021-02-23 02:12:59,186 [1] DEBUG ServiceNameMap - Found assembly Operator Log Tool.resources, Version=5.11.65533.0, Culture=en, PublicKeyToken=null
+2021-02-23 02:12:59,186 [1] DEBUG ServiceNameMap - Searching OLT assembly Operator Log Tool.resources, Version=5.11.65533.0, Culture=en, PublicKeyToken=null for IEventNotificationService
+2021-02-23 02:12:59,186 [1] DEBUG ServiceNameMap - Found assembly Castle.Core, Version=3.2.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc
+2021-02-23 02:12:59,186 [1] DEBUG ServiceNameMap - Found assembly System.ServiceModel.Activation, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2021-02-23 02:12:59,186 [1] DEBUG ServiceNameMap - Found assembly System.Runtime.Serialization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 02:12:59,187 [1] DEBUG ServiceNameMap - Found assembly SMDiagnostics, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 02:12:59,187 [1] DEBUG ServiceNameMap - Found assembly System.ServiceModel.Internals, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2021-02-23 02:12:59,187 [1] DEBUG ServiceNameMap - Found assembly DevExpress.Data.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2021-02-23 02:12:59,187 [1] DEBUG ServiceNameMap - Found assembly DevExpress.XtraCharts.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2021-02-23 02:12:59,187 [1] DEBUG ServiceNameMap - Found assembly DevExpress.XtraReports.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2021-02-23 02:12:59,187 [1] DEBUG ServiceNameMap - Found assembly DevExpress.Printing.v13.2.Core, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2021-02-23 02:12:59,187 [1] DEBUG ServiceNameMap - Found assembly Com.Suncor.Olt.Reports, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2021-02-23 02:12:59,187 [1] DEBUG ServiceNameMap - Searching OLT assembly Com.Suncor.Olt.Reports, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null for IEventNotificationService
+2021-02-23 02:12:59,195 [1] DEBUG ServiceNameMap - Found assembly DevExpress.XtraEditors.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2021-02-23 02:12:59,195 [1] DEBUG ServiceNameMap - Found assembly DevExpress.Utils.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2021-02-23 02:12:59,195 [1] DEBUG ServiceNameMap - Found assembly Infragistics2.Win.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb
+2021-02-23 02:12:59,195 [1] DEBUG ServiceNameMap - Found assembly DevExpress.XtraTreeList.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2021-02-23 02:12:59,195 [1] DEBUG ServiceNameMap - Found assembly Infragistics2.Win.UltraWinExplorerBar.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb
+2021-02-23 02:12:59,195 [1] DEBUG ServiceNameMap - Found assembly Infragistics2.Win.UltraWinEditors.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb
+2021-02-23 02:12:59,195 [1] DEBUG ServiceNameMap - Found assembly Infragistics2.Win.UltraWinTabControl.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb
+2021-02-23 02:13:00,061 [1] DEBUG ServiceNameMap - Getting interface type for the service IEventNotificationService
+2021-02-23 02:13:00,061 [1] DEBUG ServiceNameMap - Found 34 assemblies to search.
+2021-02-23 02:13:00,061 [1] DEBUG ServiceNameMap - Found assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 02:13:00,061 [1] DEBUG ServiceNameMap - Found assembly Operator Log Tool, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2021-02-23 02:13:00,061 [1] DEBUG ServiceNameMap - Searching OLT assembly Operator Log Tool, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null for IEventNotificationService
+2021-02-23 02:13:00,063 [1] DEBUG ServiceNameMap - Found assembly log4net, Version=1.2.13.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a
+2021-02-23 02:13:00,063 [1] DEBUG ServiceNameMap - Found assembly System.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2021-02-23 02:13:00,063 [1] DEBUG ServiceNameMap - Found assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 02:13:00,063 [1] DEBUG ServiceNameMap - Found assembly System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 02:13:00,063 [1] DEBUG ServiceNameMap - Found assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 02:13:00,063 [1] DEBUG ServiceNameMap - Found assembly Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2021-02-23 02:13:00,063 [1] DEBUG ServiceNameMap - Searching OLT assembly Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null for IEventNotificationService
+2021-02-23 02:13:00,064 [1] DEBUG ServiceNameMap - Found IEventNotificationService in Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2021-02-23 02:13:00,064 [1] DEBUG OltServiceHostFactory - Adding add service endpoint for Com.Suncor.Olt.Common.Services.IEventNotificationService
+2021-02-23 02:13:00,115 [1] DEBUG OltServiceHostFactory - Adding alternate data contract serializer
+2021-02-23 02:13:00,209 [1] DEBUG OltServiceHostFactory - Adding service metadata behavior
+2021-02-23 02:13:00,209 [1] DEBUG OltServiceHostFactory - Adding service debug behavior
+2021-02-23 02:13:00,213 [1] DEBUG OltServiceHostFactory - Adding service throttling behavior
+2021-02-23 02:13:00,214 [1] DEBUG OltServiceHostFactory - Service Host created
+2021-02-23 02:13:00,215 [1] DEBUG AbstractEventNotificationEnabledServiceRegistry - Attempting to open Service Host: System.ServiceModel.ServiceHost
+2021-02-23 02:13:02,723 [1] INFO  AbstractEventNotificationEnabledServiceRegistry - Successfully created service host for event notification at net.tcp://10.9.21.6:9771/
+2021-02-23 03:03:34,248 [1] INFO  MainFormPresenter - User login information:
+Client URI: net.tcp://10.9.21.6:9771/
+User: [Id:9246] [Name:Superuserwbl1a1, John [superuserwbl1a1]]
+Shift: [Id:30] [Name:N - 20:00 to 08:00]
+Site: [Id:12] [Name:Wood Buffalo Laboratories]
+Role: [Id:186] [Name:Lab Supervisor]
+Assignment: [Id:2831] [Name:OS Lab Supervisor]
+Version: 5.11.65533.0
+Deployment: -
+OS Version: Microsoft Windows NT 6.1.7601 Service Pack 1
+
+2021-02-23 03:03:34,298 [1] INFO  RemoteEventRepeater - Hooking up service events to our remote event repeater methods.
+2021-02-23 03:03:34,788 [1] INFO  RemoteEventRepeater - Finished hooking up service events to our remote event repeater methods.
+2021-02-23 03:07:36,926 [1] INFO  Program - Starting to cleanup on exit.
+2021-02-23 03:07:37,010 [1] INFO  Program - Attempting to disconnect remote event repeater.
+2021-02-23 03:07:37,010 [1] INFO  RemoteEventRepeater - Clearing service event hooks for remote event repeater methods.
+2021-02-23 03:07:37,019 [1] INFO  RemoteEventRepeater - Finished clearing service event hooks for remote event repeater methods.
+2021-02-23 03:07:37,040 [1] INFO  Program - Done disconnecting remote event repeater.
+2021-02-23 03:07:37,040 [1] INFO  Program - Attempting to release all locks.
+2021-02-23 03:07:37,046 [1] INFO  Program - Done releasing all locks.
+2021-02-23 03:07:37,046 [1] INFO  Program - Attempting to close client side services.
+2021-02-23 03:07:37,069 [1] INFO  AbstractEventNotificationEnabledServiceRegistry - Closing service host.
+2021-02-23 03:07:37,448 [1] INFO  AbstractEventNotificationEnabledServiceRegistry - Done closing service host.
+2021-02-23 03:07:37,448 [1] INFO  Program - Done closing client side services.
+2021-02-23 03:07:37,448 [1] INFO  Program - Done cleanup on exit.
+2021-02-23 03:07:37,465 [1] DEBUG Program - Forced Restart starting.
+2021-02-23 03:07:40,226 [1] DEBUG Program - Starting Operator Log Tool Smart Client
+2021-02-23 03:07:40,285 [1] DEBUG CurrentCulture - # of uiculture files found: 2.  Using default.
+2021-02-23 03:07:41,290 [1] INFO  WcfConfiguration - WCF configuration is as follows:
+2021-02-23 03:07:41,291 [1] INFO  WcfConfiguration - clientPorts: 9771,9772,9773,9774,9775,9776,9777,9778
+2021-02-23 03:07:41,291 [1] INFO  WcfConfiguration - clientHostNameOrIPAddress: 
+2021-02-23 03:07:41,291 [1] INFO  WcfConfiguration - receiveTimeout: 10
+2021-02-23 03:07:41,291 [1] INFO  WcfConfiguration - sendTimeout: 15
+2021-02-23 03:07:41,291 [1] INFO  WcfConfiguration - openTimeout: 2
+2021-02-23 03:07:41,291 [1] INFO  WcfConfiguration - closeTimeout: 2
+2021-02-23 03:07:41,291 [1] INFO  WcfConfiguration - maxBufferSize: 2147483647
+2021-02-23 03:07:41,291 [1] INFO  WcfConfiguration - maxBufferPoolSize: 524288
+2021-02-23 03:07:41,291 [1] INFO  WcfConfiguration - maxReceivedMessageSize: 2147483647
+2021-02-23 03:07:41,291 [1] INFO  WcfConfiguration - readerQuotasMaxStringContentLength: 2147483647
+2021-02-23 03:07:41,291 [1] INFO  WcfConfiguration - readerQuotasMaxDepth: 2147483647
+2021-02-23 03:07:41,291 [1] INFO  WcfConfiguration - readerQuotasMaxArrayLength: 2147483647
+2021-02-23 03:07:41,291 [1] INFO  WcfConfiguration - maxConcurrentCalls: 200
+2021-02-23 03:07:41,291 [1] INFO  WcfConfiguration - maxConcurrentInstances: 200
+2021-02-23 03:07:41,292 [1] INFO  WcfConfiguration - maxConcurrentSessions: 200
+2021-02-23 03:07:41,292 [1] INFO  WcfConfiguration - maxConnections: 5000
+2021-02-23 03:07:41,292 [1] INFO  WcfConfiguration - maxItemsInObjectGraph: 2147483647
+2021-02-23 03:07:41,292 [1] INFO  WcfConfiguration - clientServerBindingType: HttpBinaryEncoded
+2021-02-23 03:07:41,719 [1] INFO  NetworkUtilities - Number of IP Addresses found: 2
+2021-02-23 03:07:41,720 [1] INFO  NetworkUtilities - address: fe80::4d6:8f72:f3b9:7889%11
+2021-02-23 03:07:41,720 [1] INFO  NetworkUtilities - address: 10.9.21.6
+2021-02-23 03:07:41,720 [1] INFO  AbstractEventNotificationEnabledServiceRegistry - Attempting to create service host for event notification at net.tcp://10.9.21.6:9771/
+2021-02-23 03:07:42,068 [1] DEBUG OltServiceHostFactory - Tcp binding created.
+2021-02-23 03:07:42,148 [1] DEBUG ServiceNameMap - Attempting to find cached Service type IEventNotificationService
+2021-02-23 03:07:42,150 [1] DEBUG ServiceNameMap - Attempting to find Service type IEventNotificationService in Assemblies
+2021-02-23 03:07:42,151 [1] DEBUG ServiceNameMap - Getting interface type for the service IEventNotificationService
+2021-02-23 03:07:42,151 [1] DEBUG ServiceNameMap - Found 21 assemblies to search.
+2021-02-23 03:07:42,151 [1] DEBUG ServiceNameMap - Found assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 03:07:42,151 [1] DEBUG ServiceNameMap - Found assembly Operator Log Tool, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2021-02-23 03:07:42,151 [1] DEBUG ServiceNameMap - Searching OLT assembly Operator Log Tool, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null for IEventNotificationService
+2021-02-23 03:07:42,586 [1] DEBUG ServiceNameMap - Found assembly log4net, Version=1.2.13.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a
+2021-02-23 03:07:42,586 [1] DEBUG ServiceNameMap - Found assembly System.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2021-02-23 03:07:42,586 [1] DEBUG ServiceNameMap - Found assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 03:07:42,586 [1] DEBUG ServiceNameMap - Found assembly System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 03:07:42,586 [1] DEBUG ServiceNameMap - Found assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 03:07:42,586 [1] DEBUG ServiceNameMap - Found assembly Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2021-02-23 03:07:42,586 [1] DEBUG ServiceNameMap - Searching OLT assembly Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null for IEventNotificationService
+2021-02-23 03:07:42,661 [1] DEBUG ServiceNameMap - Found IEventNotificationService in Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2021-02-23 03:07:42,661 [1] DEBUG ServiceNameMap - Attempting to class that implements IEventNotificationService in Assemblies
+2021-02-23 03:07:42,661 [1] DEBUG ServiceNameMap - Found 33 assemblies to search for service implementation
+2021-02-23 03:07:42,661 [1] DEBUG ServiceNameMap - Found assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 03:07:42,662 [1] DEBUG ServiceNameMap - Found assembly Operator Log Tool, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2021-02-23 03:07:42,662 [1] DEBUG ServiceNameMap - Searching OLT assembly Operator Log Tool, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null for IEventNotificationService
+2021-02-23 03:07:42,662 [1] DEBUG ServiceNameMap - Found Com.Suncor.Olt.Client.Services.EventNotificationService implementing Com.Suncor.Olt.Common.Services.IEventNotificationService in Operator Log Tool, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2021-02-23 03:07:42,662 [1] DEBUG ServiceNameMap - Found assembly log4net, Version=1.2.13.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a
+2021-02-23 03:07:42,662 [1] DEBUG ServiceNameMap - Found assembly System.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2021-02-23 03:07:42,662 [1] DEBUG ServiceNameMap - Found assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 03:07:42,662 [1] DEBUG ServiceNameMap - Found assembly System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 03:07:42,662 [1] DEBUG ServiceNameMap - Found assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 03:07:42,662 [1] DEBUG ServiceNameMap - Found assembly Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2021-02-23 03:07:42,662 [1] DEBUG ServiceNameMap - Searching OLT assembly Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null for IEventNotificationService
+2021-02-23 03:07:42,663 [1] DEBUG ServiceNameMap - Found assembly System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 03:07:42,663 [1] DEBUG ServiceNameMap - Found assembly System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 03:07:42,663 [1] DEBUG ServiceNameMap - Found assembly System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2021-02-23 03:07:42,663 [1] DEBUG ServiceNameMap - Found assembly Infragistics2.Shared.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb
+2021-02-23 03:07:42,663 [1] DEBUG ServiceNameMap - Found assembly Infragistics2.Win.UltraWinGrid.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb
+2021-02-23 03:07:42,663 [1] DEBUG ServiceNameMap - Found assembly Infragistics2.Win.SupportDialogs.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb
+2021-02-23 03:07:42,663 [1] DEBUG ServiceNameMap - Found assembly Operator Log Tool.resources, Version=5.11.65533.0, Culture=en-US, PublicKeyToken=null
+2021-02-23 03:07:42,663 [1] DEBUG ServiceNameMap - Searching OLT assembly Operator Log Tool.resources, Version=5.11.65533.0, Culture=en-US, PublicKeyToken=null for IEventNotificationService
+2021-02-23 03:07:42,663 [1] DEBUG ServiceNameMap - Found assembly Operator Log Tool.resources, Version=5.11.65533.0, Culture=en, PublicKeyToken=null
+2021-02-23 03:07:42,663 [1] DEBUG ServiceNameMap - Searching OLT assembly Operator Log Tool.resources, Version=5.11.65533.0, Culture=en, PublicKeyToken=null for IEventNotificationService
+2021-02-23 03:07:42,663 [1] DEBUG ServiceNameMap - Found assembly Castle.Core, Version=3.2.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc
+2021-02-23 03:07:42,663 [1] DEBUG ServiceNameMap - Found assembly System.ServiceModel.Activation, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2021-02-23 03:07:42,663 [1] DEBUG ServiceNameMap - Found assembly System.Runtime.Serialization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 03:07:42,663 [1] DEBUG ServiceNameMap - Found assembly SMDiagnostics, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 03:07:42,663 [1] DEBUG ServiceNameMap - Found assembly System.ServiceModel.Internals, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2021-02-23 03:07:42,663 [1] DEBUG ServiceNameMap - Found assembly DevExpress.Data.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2021-02-23 03:07:42,663 [1] DEBUG ServiceNameMap - Found assembly DevExpress.XtraCharts.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2021-02-23 03:07:42,663 [1] DEBUG ServiceNameMap - Found assembly DevExpress.XtraReports.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2021-02-23 03:07:42,663 [1] DEBUG ServiceNameMap - Found assembly DevExpress.Printing.v13.2.Core, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2021-02-23 03:07:42,663 [1] DEBUG ServiceNameMap - Found assembly Com.Suncor.Olt.Reports, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2021-02-23 03:07:42,663 [1] DEBUG ServiceNameMap - Searching OLT assembly Com.Suncor.Olt.Reports, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null for IEventNotificationService
+2021-02-23 03:07:42,671 [1] DEBUG ServiceNameMap - Found assembly DevExpress.XtraEditors.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2021-02-23 03:07:42,671 [1] DEBUG ServiceNameMap - Found assembly DevExpress.Utils.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2021-02-23 03:07:42,671 [1] DEBUG ServiceNameMap - Found assembly Infragistics2.Win.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb
+2021-02-23 03:07:42,671 [1] DEBUG ServiceNameMap - Found assembly DevExpress.XtraTreeList.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2021-02-23 03:07:42,671 [1] DEBUG ServiceNameMap - Found assembly Infragistics2.Win.UltraWinExplorerBar.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb
+2021-02-23 03:07:42,671 [1] DEBUG ServiceNameMap - Found assembly Infragistics2.Win.UltraWinEditors.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb
+2021-02-23 03:07:42,671 [1] DEBUG ServiceNameMap - Found assembly Infragistics2.Win.UltraWinTabControl.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb
+2021-02-23 03:07:43,255 [1] DEBUG ServiceNameMap - Getting interface type for the service IEventNotificationService
+2021-02-23 03:07:43,255 [1] DEBUG ServiceNameMap - Found 34 assemblies to search.
+2021-02-23 03:07:43,255 [1] DEBUG ServiceNameMap - Found assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 03:07:43,255 [1] DEBUG ServiceNameMap - Found assembly Operator Log Tool, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2021-02-23 03:07:43,255 [1] DEBUG ServiceNameMap - Searching OLT assembly Operator Log Tool, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null for IEventNotificationService
+2021-02-23 03:07:43,256 [1] DEBUG ServiceNameMap - Found assembly log4net, Version=1.2.13.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a
+2021-02-23 03:07:43,256 [1] DEBUG ServiceNameMap - Found assembly System.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2021-02-23 03:07:43,256 [1] DEBUG ServiceNameMap - Found assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 03:07:43,256 [1] DEBUG ServiceNameMap - Found assembly System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 03:07:43,256 [1] DEBUG ServiceNameMap - Found assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 03:07:43,256 [1] DEBUG ServiceNameMap - Found assembly Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2021-02-23 03:07:43,256 [1] DEBUG ServiceNameMap - Searching OLT assembly Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null for IEventNotificationService
+2021-02-23 03:07:43,257 [1] DEBUG ServiceNameMap - Found IEventNotificationService in Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2021-02-23 03:07:43,257 [1] DEBUG OltServiceHostFactory - Adding add service endpoint for Com.Suncor.Olt.Common.Services.IEventNotificationService
+2021-02-23 03:07:43,283 [1] DEBUG OltServiceHostFactory - Adding alternate data contract serializer
+2021-02-23 03:07:43,291 [1] DEBUG OltServiceHostFactory - Adding service metadata behavior
+2021-02-23 03:07:43,291 [1] DEBUG OltServiceHostFactory - Adding service debug behavior
+2021-02-23 03:07:43,291 [1] DEBUG OltServiceHostFactory - Adding service throttling behavior
+2021-02-23 03:07:43,291 [1] DEBUG OltServiceHostFactory - Service Host created
+2021-02-23 03:07:43,291 [1] DEBUG AbstractEventNotificationEnabledServiceRegistry - Attempting to open Service Host: System.ServiceModel.ServiceHost
+2021-02-23 03:07:43,727 [1] INFO  AbstractEventNotificationEnabledServiceRegistry - Successfully created service host for event notification at net.tcp://10.9.21.6:9771/
+2021-02-23 03:07:59,156 [1] INFO  Program - Starting to cleanup on exit.
+2021-02-23 03:07:59,280 [1] INFO  Program - Attempting to disconnect remote event repeater.
+2021-02-23 03:07:59,286 [1] INFO  Program - Done disconnecting remote event repeater.
+2021-02-23 03:07:59,287 [1] INFO  Program - Attempting to release all locks.
+2021-02-23 03:07:59,291 [1] INFO  Program - Done releasing all locks.
+2021-02-23 03:07:59,291 [1] INFO  Program - Attempting to close client side services.
+2021-02-23 03:07:59,292 [1] INFO  AbstractEventNotificationEnabledServiceRegistry - Closing service host.
+2021-02-23 03:07:59,293 [1] INFO  AbstractEventNotificationEnabledServiceRegistry - Done closing service host.
+2021-02-23 03:07:59,293 [1] INFO  Program - Done closing client side services.
+2021-02-23 03:07:59,293 [1] INFO  Program - Done cleanup on exit.
+2021-02-23 03:08:26,891 [1] DEBUG Program - Starting Operator Log Tool Smart Client
+2021-02-23 03:08:26,901 [1] DEBUG CurrentCulture - # of uiculture files found: 2.  Using default.
+2021-02-23 03:08:27,240 [1] INFO  WcfConfiguration - WCF configuration is as follows:
+2021-02-23 03:08:27,241 [1] INFO  WcfConfiguration - clientPorts: 9771,9772,9773,9774,9775,9776,9777,9778
+2021-02-23 03:08:27,241 [1] INFO  WcfConfiguration - clientHostNameOrIPAddress: 
+2021-02-23 03:08:27,241 [1] INFO  WcfConfiguration - receiveTimeout: 10
+2021-02-23 03:08:27,241 [1] INFO  WcfConfiguration - sendTimeout: 15
+2021-02-23 03:08:27,241 [1] INFO  WcfConfiguration - openTimeout: 2
+2021-02-23 03:08:27,241 [1] INFO  WcfConfiguration - closeTimeout: 2
+2021-02-23 03:08:27,241 [1] INFO  WcfConfiguration - maxBufferSize: 2147483647
+2021-02-23 03:08:27,241 [1] INFO  WcfConfiguration - maxBufferPoolSize: 524288
+2021-02-23 03:08:27,241 [1] INFO  WcfConfiguration - maxReceivedMessageSize: 2147483647
+2021-02-23 03:08:27,241 [1] INFO  WcfConfiguration - readerQuotasMaxStringContentLength: 2147483647
+2021-02-23 03:08:27,241 [1] INFO  WcfConfiguration - readerQuotasMaxDepth: 2147483647
+2021-02-23 03:08:27,241 [1] INFO  WcfConfiguration - readerQuotasMaxArrayLength: 2147483647
+2021-02-23 03:08:27,242 [1] INFO  WcfConfiguration - maxConcurrentCalls: 200
+2021-02-23 03:08:27,242 [1] INFO  WcfConfiguration - maxConcurrentInstances: 200
+2021-02-23 03:08:27,242 [1] INFO  WcfConfiguration - maxConcurrentSessions: 200
+2021-02-23 03:08:27,242 [1] INFO  WcfConfiguration - maxConnections: 5000
+2021-02-23 03:08:27,242 [1] INFO  WcfConfiguration - maxItemsInObjectGraph: 2147483647
+2021-02-23 03:08:27,242 [1] INFO  WcfConfiguration - clientServerBindingType: HttpBinaryEncoded
+2021-02-23 03:08:27,278 [1] INFO  NetworkUtilities - Number of IP Addresses found: 2
+2021-02-23 03:08:27,279 [1] INFO  NetworkUtilities - address: fe80::4d6:8f72:f3b9:7889%11
+2021-02-23 03:08:27,279 [1] INFO  NetworkUtilities - address: 10.9.21.6
+2021-02-23 03:08:27,280 [1] INFO  AbstractEventNotificationEnabledServiceRegistry - Attempting to create service host for event notification at net.tcp://10.9.21.6:9771/
+2021-02-23 03:08:27,302 [1] DEBUG OltServiceHostFactory - Tcp binding created.
+2021-02-23 03:08:27,305 [1] DEBUG ServiceNameMap - Attempting to find cached Service type IEventNotificationService
+2021-02-23 03:08:27,306 [1] DEBUG ServiceNameMap - Attempting to find Service type IEventNotificationService in Assemblies
+2021-02-23 03:08:27,307 [1] DEBUG ServiceNameMap - Getting interface type for the service IEventNotificationService
+2021-02-23 03:08:27,307 [1] DEBUG ServiceNameMap - Found 21 assemblies to search.
+2021-02-23 03:08:27,307 [1] DEBUG ServiceNameMap - Found assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 03:08:27,307 [1] DEBUG ServiceNameMap - Found assembly Operator Log Tool, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2021-02-23 03:08:27,307 [1] DEBUG ServiceNameMap - Searching OLT assembly Operator Log Tool, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null for IEventNotificationService
+2021-02-23 03:08:27,778 [1] DEBUG ServiceNameMap - Found assembly log4net, Version=1.2.13.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a
+2021-02-23 03:08:27,778 [1] DEBUG ServiceNameMap - Found assembly System.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2021-02-23 03:08:27,778 [1] DEBUG ServiceNameMap - Found assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 03:08:27,778 [1] DEBUG ServiceNameMap - Found assembly System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 03:08:27,778 [1] DEBUG ServiceNameMap - Found assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 03:08:27,778 [1] DEBUG ServiceNameMap - Found assembly Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2021-02-23 03:08:27,778 [1] DEBUG ServiceNameMap - Searching OLT assembly Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null for IEventNotificationService
+2021-02-23 03:08:27,804 [1] DEBUG ServiceNameMap - Found IEventNotificationService in Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2021-02-23 03:08:27,804 [1] DEBUG ServiceNameMap - Attempting to class that implements IEventNotificationService in Assemblies
+2021-02-23 03:08:27,804 [1] DEBUG ServiceNameMap - Found 33 assemblies to search for service implementation
+2021-02-23 03:08:27,804 [1] DEBUG ServiceNameMap - Found assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 03:08:27,804 [1] DEBUG ServiceNameMap - Found assembly Operator Log Tool, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2021-02-23 03:08:27,804 [1] DEBUG ServiceNameMap - Searching OLT assembly Operator Log Tool, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null for IEventNotificationService
+2021-02-23 03:08:27,805 [1] DEBUG ServiceNameMap - Found Com.Suncor.Olt.Client.Services.EventNotificationService implementing Com.Suncor.Olt.Common.Services.IEventNotificationService in Operator Log Tool, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2021-02-23 03:08:27,805 [1] DEBUG ServiceNameMap - Found assembly log4net, Version=1.2.13.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a
+2021-02-23 03:08:27,805 [1] DEBUG ServiceNameMap - Found assembly System.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2021-02-23 03:08:27,805 [1] DEBUG ServiceNameMap - Found assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 03:08:27,805 [1] DEBUG ServiceNameMap - Found assembly System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 03:08:27,805 [1] DEBUG ServiceNameMap - Found assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 03:08:27,805 [1] DEBUG ServiceNameMap - Found assembly Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2021-02-23 03:08:27,805 [1] DEBUG ServiceNameMap - Searching OLT assembly Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null for IEventNotificationService
+2021-02-23 03:08:27,805 [1] DEBUG ServiceNameMap - Found assembly System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 03:08:27,805 [1] DEBUG ServiceNameMap - Found assembly System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 03:08:27,805 [1] DEBUG ServiceNameMap - Found assembly System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2021-02-23 03:08:27,805 [1] DEBUG ServiceNameMap - Found assembly Infragistics2.Shared.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb
+2021-02-23 03:08:27,805 [1] DEBUG ServiceNameMap - Found assembly Infragistics2.Win.UltraWinGrid.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb
+2021-02-23 03:08:27,805 [1] DEBUG ServiceNameMap - Found assembly Infragistics2.Win.SupportDialogs.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb
+2021-02-23 03:08:27,805 [1] DEBUG ServiceNameMap - Found assembly Operator Log Tool.resources, Version=5.11.65533.0, Culture=en-US, PublicKeyToken=null
+2021-02-23 03:08:27,805 [1] DEBUG ServiceNameMap - Searching OLT assembly Operator Log Tool.resources, Version=5.11.65533.0, Culture=en-US, PublicKeyToken=null for IEventNotificationService
+2021-02-23 03:08:27,805 [1] DEBUG ServiceNameMap - Found assembly Operator Log Tool.resources, Version=5.11.65533.0, Culture=en, PublicKeyToken=null
+2021-02-23 03:08:27,805 [1] DEBUG ServiceNameMap - Searching OLT assembly Operator Log Tool.resources, Version=5.11.65533.0, Culture=en, PublicKeyToken=null for IEventNotificationService
+2021-02-23 03:08:27,805 [1] DEBUG ServiceNameMap - Found assembly Castle.Core, Version=3.2.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc
+2021-02-23 03:08:27,805 [1] DEBUG ServiceNameMap - Found assembly System.ServiceModel.Activation, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2021-02-23 03:08:27,805 [1] DEBUG ServiceNameMap - Found assembly System.Runtime.Serialization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 03:08:27,806 [1] DEBUG ServiceNameMap - Found assembly SMDiagnostics, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 03:08:27,806 [1] DEBUG ServiceNameMap - Found assembly System.ServiceModel.Internals, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2021-02-23 03:08:27,806 [1] DEBUG ServiceNameMap - Found assembly DevExpress.Data.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2021-02-23 03:08:27,806 [1] DEBUG ServiceNameMap - Found assembly DevExpress.XtraCharts.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2021-02-23 03:08:27,806 [1] DEBUG ServiceNameMap - Found assembly DevExpress.XtraReports.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2021-02-23 03:08:27,806 [1] DEBUG ServiceNameMap - Found assembly DevExpress.Printing.v13.2.Core, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2021-02-23 03:08:27,806 [1] DEBUG ServiceNameMap - Found assembly Com.Suncor.Olt.Reports, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2021-02-23 03:08:27,806 [1] DEBUG ServiceNameMap - Searching OLT assembly Com.Suncor.Olt.Reports, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null for IEventNotificationService
+2021-02-23 03:08:27,814 [1] DEBUG ServiceNameMap - Found assembly DevExpress.XtraEditors.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2021-02-23 03:08:27,814 [1] DEBUG ServiceNameMap - Found assembly DevExpress.Utils.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2021-02-23 03:08:27,814 [1] DEBUG ServiceNameMap - Found assembly Infragistics2.Win.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb
+2021-02-23 03:08:27,814 [1] DEBUG ServiceNameMap - Found assembly DevExpress.XtraTreeList.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2021-02-23 03:08:27,814 [1] DEBUG ServiceNameMap - Found assembly Infragistics2.Win.UltraWinExplorerBar.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb
+2021-02-23 03:08:27,814 [1] DEBUG ServiceNameMap - Found assembly Infragistics2.Win.UltraWinEditors.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb
+2021-02-23 03:08:27,814 [1] DEBUG ServiceNameMap - Found assembly Infragistics2.Win.UltraWinTabControl.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb
+2021-02-23 03:08:27,871 [1] DEBUG ServiceNameMap - Getting interface type for the service IEventNotificationService
+2021-02-23 03:08:27,871 [1] DEBUG ServiceNameMap - Found 34 assemblies to search.
+2021-02-23 03:08:27,871 [1] DEBUG ServiceNameMap - Found assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 03:08:27,871 [1] DEBUG ServiceNameMap - Found assembly Operator Log Tool, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2021-02-23 03:08:27,871 [1] DEBUG ServiceNameMap - Searching OLT assembly Operator Log Tool, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null for IEventNotificationService
+2021-02-23 03:08:27,873 [1] DEBUG ServiceNameMap - Found assembly log4net, Version=1.2.13.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a
+2021-02-23 03:08:27,873 [1] DEBUG ServiceNameMap - Found assembly System.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2021-02-23 03:08:27,873 [1] DEBUG ServiceNameMap - Found assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 03:08:27,873 [1] DEBUG ServiceNameMap - Found assembly System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 03:08:27,873 [1] DEBUG ServiceNameMap - Found assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 03:08:27,873 [1] DEBUG ServiceNameMap - Found assembly Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2021-02-23 03:08:27,873 [1] DEBUG ServiceNameMap - Searching OLT assembly Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null for IEventNotificationService
+2021-02-23 03:08:27,873 [1] DEBUG ServiceNameMap - Found IEventNotificationService in Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2021-02-23 03:08:27,873 [1] DEBUG OltServiceHostFactory - Adding add service endpoint for Com.Suncor.Olt.Common.Services.IEventNotificationService
+2021-02-23 03:08:27,874 [1] DEBUG OltServiceHostFactory - Adding alternate data contract serializer
+2021-02-23 03:08:27,874 [1] DEBUG OltServiceHostFactory - Adding service metadata behavior
+2021-02-23 03:08:27,875 [1] DEBUG OltServiceHostFactory - Adding service debug behavior
+2021-02-23 03:08:27,875 [1] DEBUG OltServiceHostFactory - Adding service throttling behavior
+2021-02-23 03:08:27,875 [1] DEBUG OltServiceHostFactory - Service Host created
+2021-02-23 03:08:27,875 [1] DEBUG AbstractEventNotificationEnabledServiceRegistry - Attempting to open Service Host: System.ServiceModel.ServiceHost
+2021-02-23 03:08:27,929 [1] INFO  AbstractEventNotificationEnabledServiceRegistry - Successfully created service host for event notification at net.tcp://10.9.21.6:9771/
+2021-02-23 03:08:58,088 [1] INFO  MainFormPresenter - User login information:
+Client URI: net.tcp://10.9.21.6:9771/
+User: [Id:9246] [Name:Superuserwbl1a1, John [superuserwbl1a1]]
+Shift: [Id:30] [Name:N - 20:00 to 08:00]
+Site: [Id:12] [Name:Wood Buffalo Laboratories]
+Role: [Id:186] [Name:Lab Supervisor]
+Assignment: [Id:2831] [Name:OS Lab Supervisor]
+Version: 5.11.65533.0
+Deployment: -
+OS Version: Microsoft Windows NT 6.1.7601 Service Pack 1
+
+2021-02-23 03:08:58,095 [1] INFO  RemoteEventRepeater - Hooking up service events to our remote event repeater methods.
+2021-02-23 03:08:58,116 [1] INFO  RemoteEventRepeater - Finished hooking up service events to our remote event repeater methods.
+2021-02-23 03:38:05,348 [1] DEBUG Program - Starting Operator Log Tool Smart Client
+2021-02-23 03:38:05,358 [1] DEBUG CurrentCulture - # of uiculture files found: 2.  Using default.
+2021-02-23 03:38:05,920 [1] INFO  WcfConfiguration - WCF configuration is as follows:
+2021-02-23 03:38:05,920 [1] INFO  WcfConfiguration - clientPorts: 9771,9772,9773,9774,9775,9776,9777,9778
+2021-02-23 03:38:05,920 [1] INFO  WcfConfiguration - clientHostNameOrIPAddress: 
+2021-02-23 03:38:05,920 [1] INFO  WcfConfiguration - receiveTimeout: 10
+2021-02-23 03:38:05,920 [1] INFO  WcfConfiguration - sendTimeout: 15
+2021-02-23 03:38:05,920 [1] INFO  WcfConfiguration - openTimeout: 2
+2021-02-23 03:38:05,920 [1] INFO  WcfConfiguration - closeTimeout: 2
+2021-02-23 03:38:05,920 [1] INFO  WcfConfiguration - maxBufferSize: 2147483647
+2021-02-23 03:38:05,920 [1] INFO  WcfConfiguration - maxBufferPoolSize: 524288
+2021-02-23 03:38:05,920 [1] INFO  WcfConfiguration - maxReceivedMessageSize: 2147483647
+2021-02-23 03:38:05,920 [1] INFO  WcfConfiguration - readerQuotasMaxStringContentLength: 2147483647
+2021-02-23 03:38:05,920 [1] INFO  WcfConfiguration - readerQuotasMaxDepth: 2147483647
+2021-02-23 03:38:05,920 [1] INFO  WcfConfiguration - readerQuotasMaxArrayLength: 2147483647
+2021-02-23 03:38:05,920 [1] INFO  WcfConfiguration - maxConcurrentCalls: 200
+2021-02-23 03:38:05,920 [1] INFO  WcfConfiguration - maxConcurrentInstances: 200
+2021-02-23 03:38:05,921 [1] INFO  WcfConfiguration - maxConcurrentSessions: 200
+2021-02-23 03:38:05,921 [1] INFO  WcfConfiguration - maxConnections: 5000
+2021-02-23 03:38:05,921 [1] INFO  WcfConfiguration - maxItemsInObjectGraph: 2147483647
+2021-02-23 03:38:05,921 [1] INFO  WcfConfiguration - clientServerBindingType: HttpBinaryEncoded
+2021-02-23 03:38:05,971 [1] INFO  NetworkUtilities - Number of IP Addresses found: 2
+2021-02-23 03:38:05,988 [1] INFO  NetworkUtilities - address: fe80::4d6:8f72:f3b9:7889%11
+2021-02-23 03:38:05,988 [1] INFO  NetworkUtilities - address: 10.9.21.6
+2021-02-23 03:38:05,989 [1] INFO  AbstractEventNotificationEnabledServiceRegistry - Attempting to create service host for event notification at net.tcp://10.9.21.6:9771/
+2021-02-23 03:38:06,014 [1] DEBUG OltServiceHostFactory - Tcp binding created.
+2021-02-23 03:38:06,017 [1] DEBUG ServiceNameMap - Attempting to find cached Service type IEventNotificationService
+2021-02-23 03:38:06,021 [1] DEBUG ServiceNameMap - Attempting to find Service type IEventNotificationService in Assemblies
+2021-02-23 03:38:06,031 [1] DEBUG ServiceNameMap - Getting interface type for the service IEventNotificationService
+2021-02-23 03:38:06,031 [1] DEBUG ServiceNameMap - Found 21 assemblies to search.
+2021-02-23 03:38:06,031 [1] DEBUG ServiceNameMap - Found assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 03:38:06,031 [1] DEBUG ServiceNameMap - Found assembly Operator Log Tool, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2021-02-23 03:38:06,032 [1] DEBUG ServiceNameMap - Searching OLT assembly Operator Log Tool, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null for IEventNotificationService
+2021-02-23 03:38:06,521 [1] DEBUG ServiceNameMap - Found assembly log4net, Version=1.2.13.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a
+2021-02-23 03:38:06,521 [1] DEBUG ServiceNameMap - Found assembly System.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2021-02-23 03:38:06,521 [1] DEBUG ServiceNameMap - Found assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 03:38:06,522 [1] DEBUG ServiceNameMap - Found assembly System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 03:38:06,522 [1] DEBUG ServiceNameMap - Found assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 03:38:06,522 [1] DEBUG ServiceNameMap - Found assembly Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2021-02-23 03:38:06,522 [1] DEBUG ServiceNameMap - Searching OLT assembly Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null for IEventNotificationService
+2021-02-23 03:38:06,546 [1] DEBUG ServiceNameMap - Found IEventNotificationService in Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2021-02-23 03:38:06,546 [1] DEBUG ServiceNameMap - Attempting to class that implements IEventNotificationService in Assemblies
+2021-02-23 03:38:06,546 [1] DEBUG ServiceNameMap - Found 33 assemblies to search for service implementation
+2021-02-23 03:38:06,546 [1] DEBUG ServiceNameMap - Found assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 03:38:06,546 [1] DEBUG ServiceNameMap - Found assembly Operator Log Tool, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2021-02-23 03:38:06,546 [1] DEBUG ServiceNameMap - Searching OLT assembly Operator Log Tool, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null for IEventNotificationService
+2021-02-23 03:38:06,547 [1] DEBUG ServiceNameMap - Found Com.Suncor.Olt.Client.Services.EventNotificationService implementing Com.Suncor.Olt.Common.Services.IEventNotificationService in Operator Log Tool, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2021-02-23 03:38:06,547 [1] DEBUG ServiceNameMap - Found assembly log4net, Version=1.2.13.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a
+2021-02-23 03:38:06,547 [1] DEBUG ServiceNameMap - Found assembly System.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2021-02-23 03:38:06,547 [1] DEBUG ServiceNameMap - Found assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 03:38:06,547 [1] DEBUG ServiceNameMap - Found assembly System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 03:38:06,547 [1] DEBUG ServiceNameMap - Found assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 03:38:06,547 [1] DEBUG ServiceNameMap - Found assembly Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2021-02-23 03:38:06,547 [1] DEBUG ServiceNameMap - Searching OLT assembly Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null for IEventNotificationService
+2021-02-23 03:38:06,547 [1] DEBUG ServiceNameMap - Found assembly System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 03:38:06,547 [1] DEBUG ServiceNameMap - Found assembly System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 03:38:06,547 [1] DEBUG ServiceNameMap - Found assembly System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2021-02-23 03:38:06,547 [1] DEBUG ServiceNameMap - Found assembly Infragistics2.Shared.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb
+2021-02-23 03:38:06,547 [1] DEBUG ServiceNameMap - Found assembly Infragistics2.Win.UltraWinGrid.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb
+2021-02-23 03:38:06,548 [1] DEBUG ServiceNameMap - Found assembly Infragistics2.Win.SupportDialogs.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb
+2021-02-23 03:38:06,548 [1] DEBUG ServiceNameMap - Found assembly Operator Log Tool.resources, Version=5.11.65533.0, Culture=en-US, PublicKeyToken=null
+2021-02-23 03:38:06,548 [1] DEBUG ServiceNameMap - Searching OLT assembly Operator Log Tool.resources, Version=5.11.65533.0, Culture=en-US, PublicKeyToken=null for IEventNotificationService
+2021-02-23 03:38:06,548 [1] DEBUG ServiceNameMap - Found assembly Operator Log Tool.resources, Version=5.11.65533.0, Culture=en, PublicKeyToken=null
+2021-02-23 03:38:06,548 [1] DEBUG ServiceNameMap - Searching OLT assembly Operator Log Tool.resources, Version=5.11.65533.0, Culture=en, PublicKeyToken=null for IEventNotificationService
+2021-02-23 03:38:06,548 [1] DEBUG ServiceNameMap - Found assembly Castle.Core, Version=3.2.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc
+2021-02-23 03:38:06,548 [1] DEBUG ServiceNameMap - Found assembly System.ServiceModel.Activation, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2021-02-23 03:38:06,548 [1] DEBUG ServiceNameMap - Found assembly System.Runtime.Serialization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 03:38:06,548 [1] DEBUG ServiceNameMap - Found assembly SMDiagnostics, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 03:38:06,548 [1] DEBUG ServiceNameMap - Found assembly System.ServiceModel.Internals, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2021-02-23 03:38:06,548 [1] DEBUG ServiceNameMap - Found assembly DevExpress.Data.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2021-02-23 03:38:06,548 [1] DEBUG ServiceNameMap - Found assembly DevExpress.XtraCharts.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2021-02-23 03:38:06,548 [1] DEBUG ServiceNameMap - Found assembly DevExpress.XtraReports.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2021-02-23 03:38:06,548 [1] DEBUG ServiceNameMap - Found assembly DevExpress.Printing.v13.2.Core, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2021-02-23 03:38:06,548 [1] DEBUG ServiceNameMap - Found assembly Com.Suncor.Olt.Reports, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2021-02-23 03:38:06,548 [1] DEBUG ServiceNameMap - Searching OLT assembly Com.Suncor.Olt.Reports, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null for IEventNotificationService
+2021-02-23 03:38:06,556 [1] DEBUG ServiceNameMap - Found assembly DevExpress.XtraEditors.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2021-02-23 03:38:06,556 [1] DEBUG ServiceNameMap - Found assembly DevExpress.Utils.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2021-02-23 03:38:06,556 [1] DEBUG ServiceNameMap - Found assembly Infragistics2.Win.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb
+2021-02-23 03:38:06,556 [1] DEBUG ServiceNameMap - Found assembly DevExpress.XtraTreeList.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2021-02-23 03:38:06,556 [1] DEBUG ServiceNameMap - Found assembly Infragistics2.Win.UltraWinExplorerBar.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb
+2021-02-23 03:38:06,556 [1] DEBUG ServiceNameMap - Found assembly Infragistics2.Win.UltraWinEditors.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb
+2021-02-23 03:38:06,556 [1] DEBUG ServiceNameMap - Found assembly Infragistics2.Win.UltraWinTabControl.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb
+2021-02-23 03:38:06,587 [1] DEBUG ServiceNameMap - Getting interface type for the service IEventNotificationService
+2021-02-23 03:38:06,587 [1] DEBUG ServiceNameMap - Found 34 assemblies to search.
+2021-02-23 03:38:06,587 [1] DEBUG ServiceNameMap - Found assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 03:38:06,587 [1] DEBUG ServiceNameMap - Found assembly Operator Log Tool, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2021-02-23 03:38:06,587 [1] DEBUG ServiceNameMap - Searching OLT assembly Operator Log Tool, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null for IEventNotificationService
+2021-02-23 03:38:06,589 [1] DEBUG ServiceNameMap - Found assembly log4net, Version=1.2.13.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a
+2021-02-23 03:38:06,589 [1] DEBUG ServiceNameMap - Found assembly System.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2021-02-23 03:38:06,589 [1] DEBUG ServiceNameMap - Found assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 03:38:06,589 [1] DEBUG ServiceNameMap - Found assembly System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 03:38:06,589 [1] DEBUG ServiceNameMap - Found assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 03:38:06,589 [1] DEBUG ServiceNameMap - Found assembly Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2021-02-23 03:38:06,589 [1] DEBUG ServiceNameMap - Searching OLT assembly Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null for IEventNotificationService
+2021-02-23 03:38:06,590 [1] DEBUG ServiceNameMap - Found IEventNotificationService in Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2021-02-23 03:38:06,590 [1] DEBUG OltServiceHostFactory - Adding add service endpoint for Com.Suncor.Olt.Common.Services.IEventNotificationService
+2021-02-23 03:38:06,590 [1] DEBUG OltServiceHostFactory - Adding alternate data contract serializer
+2021-02-23 03:38:06,591 [1] DEBUG OltServiceHostFactory - Adding service metadata behavior
+2021-02-23 03:38:06,591 [1] DEBUG OltServiceHostFactory - Adding service debug behavior
+2021-02-23 03:38:06,591 [1] DEBUG OltServiceHostFactory - Adding service throttling behavior
+2021-02-23 03:38:06,591 [1] DEBUG OltServiceHostFactory - Service Host created
+2021-02-23 03:38:06,591 [1] DEBUG AbstractEventNotificationEnabledServiceRegistry - Attempting to open Service Host: System.ServiceModel.ServiceHost
+2021-02-23 03:38:06,645 [1] INFO  AbstractEventNotificationEnabledServiceRegistry - Successfully created service host for event notification at net.tcp://10.9.21.6:9771/
+2021-02-23 03:39:58,899 [1] INFO  MainFormPresenter - User login information:
+Client URI: net.tcp://10.9.21.6:9771/
+User: [Id:9246] [Name:Superuserwbl1a1, John [superuserwbl1a1]]
+Shift: [Id:30] [Name:N - 20:00 to 08:00]
+Site: [Id:12] [Name:Wood Buffalo Laboratories]
+Role: [Id:186] [Name:Lab Supervisor]
+Assignment: [Id:2831] [Name:OS Lab Supervisor]
+Version: 5.11.65533.0
+Deployment: -
+OS Version: Microsoft Windows NT 6.1.7601 Service Pack 1
+
+2021-02-23 03:39:58,906 [1] INFO  RemoteEventRepeater - Hooking up service events to our remote event repeater methods.
+2021-02-23 03:39:59,001 [1] INFO  RemoteEventRepeater - Finished hooking up service events to our remote event repeater methods.
+2021-02-23 03:54:53,451 [1] DEBUG Program - Starting Operator Log Tool Smart Client
+2021-02-23 03:54:53,460 [1] DEBUG CurrentCulture - # of uiculture files found: 2.  Using default.
+2021-02-23 03:54:53,844 [1] INFO  WcfConfiguration - WCF configuration is as follows:
+2021-02-23 03:54:53,844 [1] INFO  WcfConfiguration - clientPorts: 9771,9772,9773,9774,9775,9776,9777,9778
+2021-02-23 03:54:53,844 [1] INFO  WcfConfiguration - clientHostNameOrIPAddress: 
+2021-02-23 03:54:53,844 [1] INFO  WcfConfiguration - receiveTimeout: 10
+2021-02-23 03:54:53,844 [1] INFO  WcfConfiguration - sendTimeout: 15
+2021-02-23 03:54:53,844 [1] INFO  WcfConfiguration - openTimeout: 2
+2021-02-23 03:54:53,844 [1] INFO  WcfConfiguration - closeTimeout: 2
+2021-02-23 03:54:53,844 [1] INFO  WcfConfiguration - maxBufferSize: 2147483647
+2021-02-23 03:54:53,845 [1] INFO  WcfConfiguration - maxBufferPoolSize: 524288
+2021-02-23 03:54:53,845 [1] INFO  WcfConfiguration - maxReceivedMessageSize: 2147483647
+2021-02-23 03:54:53,845 [1] INFO  WcfConfiguration - readerQuotasMaxStringContentLength: 2147483647
+2021-02-23 03:54:53,845 [1] INFO  WcfConfiguration - readerQuotasMaxDepth: 2147483647
+2021-02-23 03:54:53,845 [1] INFO  WcfConfiguration - readerQuotasMaxArrayLength: 2147483647
+2021-02-23 03:54:53,845 [1] INFO  WcfConfiguration - maxConcurrentCalls: 200
+2021-02-23 03:54:53,845 [1] INFO  WcfConfiguration - maxConcurrentInstances: 200
+2021-02-23 03:54:53,845 [1] INFO  WcfConfiguration - maxConcurrentSessions: 200
+2021-02-23 03:54:53,845 [1] INFO  WcfConfiguration - maxConnections: 5000
+2021-02-23 03:54:53,845 [1] INFO  WcfConfiguration - maxItemsInObjectGraph: 2147483647
+2021-02-23 03:54:53,845 [1] INFO  WcfConfiguration - clientServerBindingType: HttpBinaryEncoded
+2021-02-23 03:54:53,879 [1] INFO  NetworkUtilities - Number of IP Addresses found: 2
+2021-02-23 03:54:53,879 [1] INFO  NetworkUtilities - address: fe80::4d6:8f72:f3b9:7889%11
+2021-02-23 03:54:53,880 [1] INFO  NetworkUtilities - address: 10.9.21.6
+2021-02-23 03:54:53,880 [1] INFO  AbstractEventNotificationEnabledServiceRegistry - Attempting to create service host for event notification at net.tcp://10.9.21.6:9771/
+2021-02-23 03:54:53,902 [1] DEBUG OltServiceHostFactory - Tcp binding created.
+2021-02-23 03:54:53,905 [1] DEBUG ServiceNameMap - Attempting to find cached Service type IEventNotificationService
+2021-02-23 03:54:53,907 [1] DEBUG ServiceNameMap - Attempting to find Service type IEventNotificationService in Assemblies
+2021-02-23 03:54:53,907 [1] DEBUG ServiceNameMap - Getting interface type for the service IEventNotificationService
+2021-02-23 03:54:53,907 [1] DEBUG ServiceNameMap - Found 21 assemblies to search.
+2021-02-23 03:54:53,907 [1] DEBUG ServiceNameMap - Found assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 03:54:53,907 [1] DEBUG ServiceNameMap - Found assembly Operator Log Tool, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2021-02-23 03:54:53,908 [1] DEBUG ServiceNameMap - Searching OLT assembly Operator Log Tool, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null for IEventNotificationService
+2021-02-23 03:54:54,297 [1] DEBUG ServiceNameMap - Found assembly log4net, Version=1.2.13.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a
+2021-02-23 03:54:54,297 [1] DEBUG ServiceNameMap - Found assembly System.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2021-02-23 03:54:54,297 [1] DEBUG ServiceNameMap - Found assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 03:54:54,297 [1] DEBUG ServiceNameMap - Found assembly System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 03:54:54,297 [1] DEBUG ServiceNameMap - Found assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 03:54:54,297 [1] DEBUG ServiceNameMap - Found assembly Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2021-02-23 03:54:54,297 [1] DEBUG ServiceNameMap - Searching OLT assembly Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null for IEventNotificationService
+2021-02-23 03:54:54,322 [1] DEBUG ServiceNameMap - Found IEventNotificationService in Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2021-02-23 03:54:54,322 [1] DEBUG ServiceNameMap - Attempting to class that implements IEventNotificationService in Assemblies
+2021-02-23 03:54:54,322 [1] DEBUG ServiceNameMap - Found 33 assemblies to search for service implementation
+2021-02-23 03:54:54,322 [1] DEBUG ServiceNameMap - Found assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 03:54:54,322 [1] DEBUG ServiceNameMap - Found assembly Operator Log Tool, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2021-02-23 03:54:54,322 [1] DEBUG ServiceNameMap - Searching OLT assembly Operator Log Tool, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null for IEventNotificationService
+2021-02-23 03:54:54,323 [1] DEBUG ServiceNameMap - Found Com.Suncor.Olt.Client.Services.EventNotificationService implementing Com.Suncor.Olt.Common.Services.IEventNotificationService in Operator Log Tool, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2021-02-23 03:54:54,323 [1] DEBUG ServiceNameMap - Found assembly log4net, Version=1.2.13.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a
+2021-02-23 03:54:54,323 [1] DEBUG ServiceNameMap - Found assembly System.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2021-02-23 03:54:54,323 [1] DEBUG ServiceNameMap - Found assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 03:54:54,323 [1] DEBUG ServiceNameMap - Found assembly System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 03:54:54,323 [1] DEBUG ServiceNameMap - Found assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 03:54:54,323 [1] DEBUG ServiceNameMap - Found assembly Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2021-02-23 03:54:54,323 [1] DEBUG ServiceNameMap - Searching OLT assembly Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null for IEventNotificationService
+2021-02-23 03:54:54,323 [1] DEBUG ServiceNameMap - Found assembly System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 03:54:54,323 [1] DEBUG ServiceNameMap - Found assembly System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 03:54:54,323 [1] DEBUG ServiceNameMap - Found assembly System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2021-02-23 03:54:54,323 [1] DEBUG ServiceNameMap - Found assembly Infragistics2.Shared.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb
+2021-02-23 03:54:54,323 [1] DEBUG ServiceNameMap - Found assembly Infragistics2.Win.UltraWinGrid.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb
+2021-02-23 03:54:54,323 [1] DEBUG ServiceNameMap - Found assembly Infragistics2.Win.SupportDialogs.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb
+2021-02-23 03:54:54,323 [1] DEBUG ServiceNameMap - Found assembly Operator Log Tool.resources, Version=5.11.65533.0, Culture=en-US, PublicKeyToken=null
+2021-02-23 03:54:54,323 [1] DEBUG ServiceNameMap - Searching OLT assembly Operator Log Tool.resources, Version=5.11.65533.0, Culture=en-US, PublicKeyToken=null for IEventNotificationService
+2021-02-23 03:54:54,323 [1] DEBUG ServiceNameMap - Found assembly Operator Log Tool.resources, Version=5.11.65533.0, Culture=en, PublicKeyToken=null
+2021-02-23 03:54:54,323 [1] DEBUG ServiceNameMap - Searching OLT assembly Operator Log Tool.resources, Version=5.11.65533.0, Culture=en, PublicKeyToken=null for IEventNotificationService
+2021-02-23 03:54:54,323 [1] DEBUG ServiceNameMap - Found assembly Castle.Core, Version=3.2.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc
+2021-02-23 03:54:54,323 [1] DEBUG ServiceNameMap - Found assembly System.ServiceModel.Activation, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2021-02-23 03:54:54,323 [1] DEBUG ServiceNameMap - Found assembly System.Runtime.Serialization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 03:54:54,323 [1] DEBUG ServiceNameMap - Found assembly SMDiagnostics, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 03:54:54,323 [1] DEBUG ServiceNameMap - Found assembly System.ServiceModel.Internals, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2021-02-23 03:54:54,323 [1] DEBUG ServiceNameMap - Found assembly DevExpress.Data.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2021-02-23 03:54:54,323 [1] DEBUG ServiceNameMap - Found assembly DevExpress.XtraCharts.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2021-02-23 03:54:54,323 [1] DEBUG ServiceNameMap - Found assembly DevExpress.XtraReports.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2021-02-23 03:54:54,323 [1] DEBUG ServiceNameMap - Found assembly DevExpress.Printing.v13.2.Core, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2021-02-23 03:54:54,324 [1] DEBUG ServiceNameMap - Found assembly Com.Suncor.Olt.Reports, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2021-02-23 03:54:54,324 [1] DEBUG ServiceNameMap - Searching OLT assembly Com.Suncor.Olt.Reports, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null for IEventNotificationService
+2021-02-23 03:54:54,331 [1] DEBUG ServiceNameMap - Found assembly DevExpress.XtraEditors.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2021-02-23 03:54:54,331 [1] DEBUG ServiceNameMap - Found assembly DevExpress.Utils.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2021-02-23 03:54:54,331 [1] DEBUG ServiceNameMap - Found assembly Infragistics2.Win.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb
+2021-02-23 03:54:54,331 [1] DEBUG ServiceNameMap - Found assembly DevExpress.XtraTreeList.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2021-02-23 03:54:54,331 [1] DEBUG ServiceNameMap - Found assembly Infragistics2.Win.UltraWinExplorerBar.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb
+2021-02-23 03:54:54,331 [1] DEBUG ServiceNameMap - Found assembly Infragistics2.Win.UltraWinEditors.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb
+2021-02-23 03:54:54,331 [1] DEBUG ServiceNameMap - Found assembly Infragistics2.Win.UltraWinTabControl.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb
+2021-02-23 03:54:54,351 [1] DEBUG ServiceNameMap - Getting interface type for the service IEventNotificationService
+2021-02-23 03:54:54,351 [1] DEBUG ServiceNameMap - Found 34 assemblies to search.
+2021-02-23 03:54:54,351 [1] DEBUG ServiceNameMap - Found assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 03:54:54,351 [1] DEBUG ServiceNameMap - Found assembly Operator Log Tool, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2021-02-23 03:54:54,351 [1] DEBUG ServiceNameMap - Searching OLT assembly Operator Log Tool, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null for IEventNotificationService
+2021-02-23 03:54:54,353 [1] DEBUG ServiceNameMap - Found assembly log4net, Version=1.2.13.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a
+2021-02-23 03:54:54,353 [1] DEBUG ServiceNameMap - Found assembly System.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2021-02-23 03:54:54,353 [1] DEBUG ServiceNameMap - Found assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 03:54:54,353 [1] DEBUG ServiceNameMap - Found assembly System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 03:54:54,353 [1] DEBUG ServiceNameMap - Found assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 03:54:54,353 [1] DEBUG ServiceNameMap - Found assembly Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2021-02-23 03:54:54,353 [1] DEBUG ServiceNameMap - Searching OLT assembly Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null for IEventNotificationService
+2021-02-23 03:54:54,353 [1] DEBUG ServiceNameMap - Found IEventNotificationService in Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2021-02-23 03:54:54,353 [1] DEBUG OltServiceHostFactory - Adding add service endpoint for Com.Suncor.Olt.Common.Services.IEventNotificationService
+2021-02-23 03:54:54,354 [1] DEBUG OltServiceHostFactory - Adding alternate data contract serializer
+2021-02-23 03:54:54,354 [1] DEBUG OltServiceHostFactory - Adding service metadata behavior
+2021-02-23 03:54:54,355 [1] DEBUG OltServiceHostFactory - Adding service debug behavior
+2021-02-23 03:54:54,355 [1] DEBUG OltServiceHostFactory - Adding service throttling behavior
+2021-02-23 03:54:54,355 [1] DEBUG OltServiceHostFactory - Service Host created
+2021-02-23 03:54:54,355 [1] DEBUG AbstractEventNotificationEnabledServiceRegistry - Attempting to open Service Host: System.ServiceModel.ServiceHost
+2021-02-23 03:54:54,423 [1] INFO  AbstractEventNotificationEnabledServiceRegistry - Successfully created service host for event notification at net.tcp://10.9.21.6:9771/
+2021-02-23 03:59:30,713 [1] INFO  MainFormPresenter - User login information:
+Client URI: net.tcp://10.9.21.6:9771/
+User: [Id:9246] [Name:Superuserwbl1a1, John [superuserwbl1a1]]
+Shift: [Id:30] [Name:N - 20:00 to 08:00]
+Site: [Id:12] [Name:Wood Buffalo Laboratories]
+Role: [Id:186] [Name:Lab Supervisor]
+Assignment: [Id:2831] [Name:OS Lab Supervisor]
+Version: 5.11.65533.0
+Deployment: -
+OS Version: Microsoft Windows NT 6.1.7601 Service Pack 1
+
+2021-02-23 03:59:30,720 [1] INFO  RemoteEventRepeater - Hooking up service events to our remote event repeater methods.
+2021-02-23 03:59:30,731 [1] INFO  RemoteEventRepeater - Finished hooking up service events to our remote event repeater methods.
+2021-02-23 04:00:40,834 [1] INFO  Program - Starting to cleanup on exit.
+2021-02-23 04:00:40,908 [1] INFO  Program - Attempting to disconnect remote event repeater.
+2021-02-23 04:00:40,908 [1] INFO  RemoteEventRepeater - Clearing service event hooks for remote event repeater methods.
+2021-02-23 04:00:40,926 [1] INFO  RemoteEventRepeater - Finished clearing service event hooks for remote event repeater methods.
+2021-02-23 04:00:40,946 [1] INFO  Program - Done disconnecting remote event repeater.
+2021-02-23 04:00:40,946 [1] INFO  Program - Attempting to release all locks.
+2021-02-23 04:00:40,952 [1] INFO  Program - Done releasing all locks.
+2021-02-23 04:00:40,952 [1] INFO  Program - Attempting to close client side services.
+2021-02-23 04:00:40,975 [1] INFO  AbstractEventNotificationEnabledServiceRegistry - Closing service host.
+2021-02-23 04:00:41,144 [1] INFO  AbstractEventNotificationEnabledServiceRegistry - Done closing service host.
+2021-02-23 04:00:41,144 [1] INFO  Program - Done closing client side services.
+2021-02-23 04:00:41,144 [1] INFO  Program - Done cleanup on exit.
+2021-02-23 04:00:41,155 [1] DEBUG Program - Forced Restart starting.
+2021-02-23 04:00:43,397 [1] DEBUG Program - Starting Operator Log Tool Smart Client
+2021-02-23 04:00:43,410 [1] DEBUG CurrentCulture - # of uiculture files found: 2.  Using default.
+2021-02-23 04:00:43,646 [1] INFO  WcfConfiguration - WCF configuration is as follows:
+2021-02-23 04:00:43,671 [1] INFO  WcfConfiguration - clientPorts: 9771,9772,9773,9774,9775,9776,9777,9778
+2021-02-23 04:00:43,671 [1] INFO  WcfConfiguration - clientHostNameOrIPAddress: 
+2021-02-23 04:00:43,671 [1] INFO  WcfConfiguration - receiveTimeout: 10
+2021-02-23 04:00:43,671 [1] INFO  WcfConfiguration - sendTimeout: 15
+2021-02-23 04:00:43,671 [1] INFO  WcfConfiguration - openTimeout: 2
+2021-02-23 04:00:43,671 [1] INFO  WcfConfiguration - closeTimeout: 2
+2021-02-23 04:00:43,671 [1] INFO  WcfConfiguration - maxBufferSize: 2147483647
+2021-02-23 04:00:43,672 [1] INFO  WcfConfiguration - maxBufferPoolSize: 524288
+2021-02-23 04:00:43,672 [1] INFO  WcfConfiguration - maxReceivedMessageSize: 2147483647
+2021-02-23 04:00:43,672 [1] INFO  WcfConfiguration - readerQuotasMaxStringContentLength: 2147483647
+2021-02-23 04:00:43,672 [1] INFO  WcfConfiguration - readerQuotasMaxDepth: 2147483647
+2021-02-23 04:00:43,672 [1] INFO  WcfConfiguration - readerQuotasMaxArrayLength: 2147483647
+2021-02-23 04:00:43,672 [1] INFO  WcfConfiguration - maxConcurrentCalls: 200
+2021-02-23 04:00:43,672 [1] INFO  WcfConfiguration - maxConcurrentInstances: 200
+2021-02-23 04:00:43,672 [1] INFO  WcfConfiguration - maxConcurrentSessions: 200
+2021-02-23 04:00:43,672 [1] INFO  WcfConfiguration - maxConnections: 5000
+2021-02-23 04:00:43,672 [1] INFO  WcfConfiguration - maxItemsInObjectGraph: 2147483647
+2021-02-23 04:00:43,672 [1] INFO  WcfConfiguration - clientServerBindingType: HttpBinaryEncoded
+2021-02-23 04:00:43,694 [1] INFO  NetworkUtilities - Number of IP Addresses found: 2
+2021-02-23 04:00:43,695 [1] INFO  NetworkUtilities - address: fe80::4d6:8f72:f3b9:7889%11
+2021-02-23 04:00:43,695 [1] INFO  NetworkUtilities - address: 10.9.21.6
+2021-02-23 04:00:43,696 [1] INFO  AbstractEventNotificationEnabledServiceRegistry - Attempting to create service host for event notification at net.tcp://10.9.21.6:9771/
+2021-02-23 04:00:43,704 [1] DEBUG OltServiceHostFactory - Tcp binding created.
+2021-02-23 04:00:43,707 [1] DEBUG ServiceNameMap - Attempting to find cached Service type IEventNotificationService
+2021-02-23 04:00:43,709 [1] DEBUG ServiceNameMap - Attempting to find Service type IEventNotificationService in Assemblies
+2021-02-23 04:00:43,709 [1] DEBUG ServiceNameMap - Getting interface type for the service IEventNotificationService
+2021-02-23 04:00:43,709 [1] DEBUG ServiceNameMap - Found 21 assemblies to search.
+2021-02-23 04:00:43,709 [1] DEBUG ServiceNameMap - Found assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 04:00:43,710 [1] DEBUG ServiceNameMap - Found assembly Operator Log Tool, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2021-02-23 04:00:43,710 [1] DEBUG ServiceNameMap - Searching OLT assembly Operator Log Tool, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null for IEventNotificationService
+2021-02-23 04:00:44,065 [1] DEBUG ServiceNameMap - Found assembly log4net, Version=1.2.13.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a
+2021-02-23 04:00:44,065 [1] DEBUG ServiceNameMap - Found assembly System.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2021-02-23 04:00:44,065 [1] DEBUG ServiceNameMap - Found assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 04:00:44,065 [1] DEBUG ServiceNameMap - Found assembly System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 04:00:44,065 [1] DEBUG ServiceNameMap - Found assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 04:00:44,065 [1] DEBUG ServiceNameMap - Found assembly Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2021-02-23 04:00:44,065 [1] DEBUG ServiceNameMap - Searching OLT assembly Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null for IEventNotificationService
+2021-02-23 04:00:44,091 [1] DEBUG ServiceNameMap - Found IEventNotificationService in Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2021-02-23 04:00:44,091 [1] DEBUG ServiceNameMap - Attempting to class that implements IEventNotificationService in Assemblies
+2021-02-23 04:00:44,091 [1] DEBUG ServiceNameMap - Found 33 assemblies to search for service implementation
+2021-02-23 04:00:44,091 [1] DEBUG ServiceNameMap - Found assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 04:00:44,091 [1] DEBUG ServiceNameMap - Found assembly Operator Log Tool, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2021-02-23 04:00:44,091 [1] DEBUG ServiceNameMap - Searching OLT assembly Operator Log Tool, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null for IEventNotificationService
+2021-02-23 04:00:44,092 [1] DEBUG ServiceNameMap - Found Com.Suncor.Olt.Client.Services.EventNotificationService implementing Com.Suncor.Olt.Common.Services.IEventNotificationService in Operator Log Tool, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2021-02-23 04:00:44,092 [1] DEBUG ServiceNameMap - Found assembly log4net, Version=1.2.13.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a
+2021-02-23 04:00:44,092 [1] DEBUG ServiceNameMap - Found assembly System.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2021-02-23 04:00:44,092 [1] DEBUG ServiceNameMap - Found assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 04:00:44,092 [1] DEBUG ServiceNameMap - Found assembly System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 04:00:44,092 [1] DEBUG ServiceNameMap - Found assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 04:00:44,092 [1] DEBUG ServiceNameMap - Found assembly Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2021-02-23 04:00:44,092 [1] DEBUG ServiceNameMap - Searching OLT assembly Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null for IEventNotificationService
+2021-02-23 04:00:44,093 [1] DEBUG ServiceNameMap - Found assembly System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 04:00:44,093 [1] DEBUG ServiceNameMap - Found assembly System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 04:00:44,093 [1] DEBUG ServiceNameMap - Found assembly System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2021-02-23 04:00:44,093 [1] DEBUG ServiceNameMap - Found assembly Infragistics2.Shared.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb
+2021-02-23 04:00:44,093 [1] DEBUG ServiceNameMap - Found assembly Infragistics2.Win.UltraWinGrid.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb
+2021-02-23 04:00:44,093 [1] DEBUG ServiceNameMap - Found assembly Infragistics2.Win.SupportDialogs.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb
+2021-02-23 04:00:44,093 [1] DEBUG ServiceNameMap - Found assembly Operator Log Tool.resources, Version=5.11.65533.0, Culture=en-US, PublicKeyToken=null
+2021-02-23 04:00:44,093 [1] DEBUG ServiceNameMap - Searching OLT assembly Operator Log Tool.resources, Version=5.11.65533.0, Culture=en-US, PublicKeyToken=null for IEventNotificationService
+2021-02-23 04:00:44,093 [1] DEBUG ServiceNameMap - Found assembly Operator Log Tool.resources, Version=5.11.65533.0, Culture=en, PublicKeyToken=null
+2021-02-23 04:00:44,093 [1] DEBUG ServiceNameMap - Searching OLT assembly Operator Log Tool.resources, Version=5.11.65533.0, Culture=en, PublicKeyToken=null for IEventNotificationService
+2021-02-23 04:00:44,093 [1] DEBUG ServiceNameMap - Found assembly Castle.Core, Version=3.2.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc
+2021-02-23 04:00:44,093 [1] DEBUG ServiceNameMap - Found assembly System.ServiceModel.Activation, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2021-02-23 04:00:44,093 [1] DEBUG ServiceNameMap - Found assembly System.Runtime.Serialization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 04:00:44,093 [1] DEBUG ServiceNameMap - Found assembly SMDiagnostics, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 04:00:44,093 [1] DEBUG ServiceNameMap - Found assembly System.ServiceModel.Internals, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2021-02-23 04:00:44,093 [1] DEBUG ServiceNameMap - Found assembly DevExpress.Data.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2021-02-23 04:00:44,093 [1] DEBUG ServiceNameMap - Found assembly DevExpress.XtraCharts.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2021-02-23 04:00:44,093 [1] DEBUG ServiceNameMap - Found assembly DevExpress.XtraReports.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2021-02-23 04:00:44,093 [1] DEBUG ServiceNameMap - Found assembly DevExpress.Printing.v13.2.Core, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2021-02-23 04:00:44,093 [1] DEBUG ServiceNameMap - Found assembly Com.Suncor.Olt.Reports, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2021-02-23 04:00:44,093 [1] DEBUG ServiceNameMap - Searching OLT assembly Com.Suncor.Olt.Reports, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null for IEventNotificationService
+2021-02-23 04:00:44,102 [1] DEBUG ServiceNameMap - Found assembly DevExpress.XtraEditors.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2021-02-23 04:00:44,102 [1] DEBUG ServiceNameMap - Found assembly DevExpress.Utils.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2021-02-23 04:00:44,102 [1] DEBUG ServiceNameMap - Found assembly Infragistics2.Win.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb
+2021-02-23 04:00:44,102 [1] DEBUG ServiceNameMap - Found assembly DevExpress.XtraTreeList.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2021-02-23 04:00:44,102 [1] DEBUG ServiceNameMap - Found assembly Infragistics2.Win.UltraWinExplorerBar.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb
+2021-02-23 04:00:44,102 [1] DEBUG ServiceNameMap - Found assembly Infragistics2.Win.UltraWinEditors.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb
+2021-02-23 04:00:44,102 [1] DEBUG ServiceNameMap - Found assembly Infragistics2.Win.UltraWinTabControl.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb
+2021-02-23 04:00:44,210 [1] DEBUG ServiceNameMap - Getting interface type for the service IEventNotificationService
+2021-02-23 04:00:44,210 [1] DEBUG ServiceNameMap - Found 34 assemblies to search.
+2021-02-23 04:00:44,210 [1] DEBUG ServiceNameMap - Found assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 04:00:44,210 [1] DEBUG ServiceNameMap - Found assembly Operator Log Tool, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2021-02-23 04:00:44,210 [1] DEBUG ServiceNameMap - Searching OLT assembly Operator Log Tool, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null for IEventNotificationService
+2021-02-23 04:00:44,212 [1] DEBUG ServiceNameMap - Found assembly log4net, Version=1.2.13.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a
+2021-02-23 04:00:44,212 [1] DEBUG ServiceNameMap - Found assembly System.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2021-02-23 04:00:44,212 [1] DEBUG ServiceNameMap - Found assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 04:00:44,212 [1] DEBUG ServiceNameMap - Found assembly System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 04:00:44,212 [1] DEBUG ServiceNameMap - Found assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 04:00:44,212 [1] DEBUG ServiceNameMap - Found assembly Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2021-02-23 04:00:44,212 [1] DEBUG ServiceNameMap - Searching OLT assembly Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null for IEventNotificationService
+2021-02-23 04:00:44,212 [1] DEBUG ServiceNameMap - Found IEventNotificationService in Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2021-02-23 04:00:44,213 [1] DEBUG OltServiceHostFactory - Adding add service endpoint for Com.Suncor.Olt.Common.Services.IEventNotificationService
+2021-02-23 04:00:44,213 [1] DEBUG OltServiceHostFactory - Adding alternate data contract serializer
+2021-02-23 04:00:44,213 [1] DEBUG OltServiceHostFactory - Adding service metadata behavior
+2021-02-23 04:00:44,213 [1] DEBUG OltServiceHostFactory - Adding service debug behavior
+2021-02-23 04:00:44,214 [1] DEBUG OltServiceHostFactory - Adding service throttling behavior
+2021-02-23 04:00:44,214 [1] DEBUG OltServiceHostFactory - Service Host created
+2021-02-23 04:00:44,214 [1] DEBUG AbstractEventNotificationEnabledServiceRegistry - Attempting to open Service Host: System.ServiceModel.ServiceHost
+2021-02-23 04:00:44,235 [1] INFO  AbstractEventNotificationEnabledServiceRegistry - Successfully created service host for event notification at net.tcp://10.9.21.6:9771/
+2021-02-23 04:00:54,572 [1] INFO  Program - Starting to cleanup on exit.
+2021-02-23 04:00:54,784 [1] INFO  Program - Attempting to disconnect remote event repeater.
+2021-02-23 04:00:54,789 [1] INFO  Program - Done disconnecting remote event repeater.
+2021-02-23 04:00:54,789 [1] INFO  Program - Attempting to release all locks.
+2021-02-23 04:00:54,805 [1] INFO  Program - Done releasing all locks.
+2021-02-23 04:00:54,805 [1] INFO  Program - Attempting to close client side services.
+2021-02-23 04:00:54,806 [1] INFO  AbstractEventNotificationEnabledServiceRegistry - Closing service host.
+2021-02-23 04:00:54,807 [1] INFO  AbstractEventNotificationEnabledServiceRegistry - Done closing service host.
+2021-02-23 04:00:54,807 [1] INFO  Program - Done closing client side services.
+2021-02-23 04:00:54,807 [1] INFO  Program - Done cleanup on exit.
+2021-02-23 04:01:56,173 [1] DEBUG Program - Starting Operator Log Tool Smart Client
+2021-02-23 04:01:56,182 [1] DEBUG CurrentCulture - # of uiculture files found: 2.  Using default.
+2021-02-23 04:01:56,619 [1] INFO  WcfConfiguration - WCF configuration is as follows:
+2021-02-23 04:01:56,619 [1] INFO  WcfConfiguration - clientPorts: 9771,9772,9773,9774,9775,9776,9777,9778
+2021-02-23 04:01:56,619 [1] INFO  WcfConfiguration - clientHostNameOrIPAddress: 
+2021-02-23 04:01:56,619 [1] INFO  WcfConfiguration - receiveTimeout: 10
+2021-02-23 04:01:56,619 [1] INFO  WcfConfiguration - sendTimeout: 15
+2021-02-23 04:01:56,619 [1] INFO  WcfConfiguration - openTimeout: 2
+2021-02-23 04:01:56,619 [1] INFO  WcfConfiguration - closeTimeout: 2
+2021-02-23 04:01:56,620 [1] INFO  WcfConfiguration - maxBufferSize: 2147483647
+2021-02-23 04:01:56,620 [1] INFO  WcfConfiguration - maxBufferPoolSize: 524288
+2021-02-23 04:01:56,620 [1] INFO  WcfConfiguration - maxReceivedMessageSize: 2147483647
+2021-02-23 04:01:56,620 [1] INFO  WcfConfiguration - readerQuotasMaxStringContentLength: 2147483647
+2021-02-23 04:01:56,620 [1] INFO  WcfConfiguration - readerQuotasMaxDepth: 2147483647
+2021-02-23 04:01:56,620 [1] INFO  WcfConfiguration - readerQuotasMaxArrayLength: 2147483647
+2021-02-23 04:01:56,620 [1] INFO  WcfConfiguration - maxConcurrentCalls: 200
+2021-02-23 04:01:56,620 [1] INFO  WcfConfiguration - maxConcurrentInstances: 200
+2021-02-23 04:01:56,620 [1] INFO  WcfConfiguration - maxConcurrentSessions: 200
+2021-02-23 04:01:56,620 [1] INFO  WcfConfiguration - maxConnections: 5000
+2021-02-23 04:01:56,620 [1] INFO  WcfConfiguration - maxItemsInObjectGraph: 2147483647
+2021-02-23 04:01:56,620 [1] INFO  WcfConfiguration - clientServerBindingType: HttpBinaryEncoded
+2021-02-23 04:01:56,651 [1] INFO  NetworkUtilities - Number of IP Addresses found: 2
+2021-02-23 04:01:56,652 [1] INFO  NetworkUtilities - address: fe80::4d6:8f72:f3b9:7889%11
+2021-02-23 04:01:56,652 [1] INFO  NetworkUtilities - address: 10.9.21.6
+2021-02-23 04:01:56,652 [1] INFO  AbstractEventNotificationEnabledServiceRegistry - Attempting to create service host for event notification at net.tcp://10.9.21.6:9771/
+2021-02-23 04:01:56,676 [1] DEBUG OltServiceHostFactory - Tcp binding created.
+2021-02-23 04:01:56,679 [1] DEBUG ServiceNameMap - Attempting to find cached Service type IEventNotificationService
+2021-02-23 04:01:56,681 [1] DEBUG ServiceNameMap - Attempting to find Service type IEventNotificationService in Assemblies
+2021-02-23 04:01:56,681 [1] DEBUG ServiceNameMap - Getting interface type for the service IEventNotificationService
+2021-02-23 04:01:56,681 [1] DEBUG ServiceNameMap - Found 21 assemblies to search.
+2021-02-23 04:01:56,681 [1] DEBUG ServiceNameMap - Found assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 04:01:56,682 [1] DEBUG ServiceNameMap - Found assembly Operator Log Tool, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2021-02-23 04:01:56,682 [1] DEBUG ServiceNameMap - Searching OLT assembly Operator Log Tool, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null for IEventNotificationService
+2021-02-23 04:01:57,099 [1] DEBUG ServiceNameMap - Found assembly log4net, Version=1.2.13.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a
+2021-02-23 04:01:57,099 [1] DEBUG ServiceNameMap - Found assembly System.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2021-02-23 04:01:57,099 [1] DEBUG ServiceNameMap - Found assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 04:01:57,099 [1] DEBUG ServiceNameMap - Found assembly System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 04:01:57,099 [1] DEBUG ServiceNameMap - Found assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 04:01:57,099 [1] DEBUG ServiceNameMap - Found assembly Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2021-02-23 04:01:57,099 [1] DEBUG ServiceNameMap - Searching OLT assembly Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null for IEventNotificationService
+2021-02-23 04:01:57,127 [1] DEBUG ServiceNameMap - Found IEventNotificationService in Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2021-02-23 04:01:57,127 [1] DEBUG ServiceNameMap - Attempting to class that implements IEventNotificationService in Assemblies
+2021-02-23 04:01:57,127 [1] DEBUG ServiceNameMap - Found 33 assemblies to search for service implementation
+2021-02-23 04:01:57,127 [1] DEBUG ServiceNameMap - Found assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 04:01:57,127 [1] DEBUG ServiceNameMap - Found assembly Operator Log Tool, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2021-02-23 04:01:57,127 [1] DEBUG ServiceNameMap - Searching OLT assembly Operator Log Tool, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null for IEventNotificationService
+2021-02-23 04:01:57,128 [1] DEBUG ServiceNameMap - Found Com.Suncor.Olt.Client.Services.EventNotificationService implementing Com.Suncor.Olt.Common.Services.IEventNotificationService in Operator Log Tool, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2021-02-23 04:01:57,128 [1] DEBUG ServiceNameMap - Found assembly log4net, Version=1.2.13.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a
+2021-02-23 04:01:57,128 [1] DEBUG ServiceNameMap - Found assembly System.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2021-02-23 04:01:57,128 [1] DEBUG ServiceNameMap - Found assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 04:01:57,128 [1] DEBUG ServiceNameMap - Found assembly System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 04:01:57,128 [1] DEBUG ServiceNameMap - Found assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 04:01:57,128 [1] DEBUG ServiceNameMap - Found assembly Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2021-02-23 04:01:57,128 [1] DEBUG ServiceNameMap - Searching OLT assembly Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null for IEventNotificationService
+2021-02-23 04:01:57,128 [1] DEBUG ServiceNameMap - Found assembly System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 04:01:57,128 [1] DEBUG ServiceNameMap - Found assembly System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 04:01:57,128 [1] DEBUG ServiceNameMap - Found assembly System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2021-02-23 04:01:57,128 [1] DEBUG ServiceNameMap - Found assembly Infragistics2.Shared.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb
+2021-02-23 04:01:57,128 [1] DEBUG ServiceNameMap - Found assembly Infragistics2.Win.UltraWinGrid.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb
+2021-02-23 04:01:57,128 [1] DEBUG ServiceNameMap - Found assembly Infragistics2.Win.SupportDialogs.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb
+2021-02-23 04:01:57,128 [1] DEBUG ServiceNameMap - Found assembly Operator Log Tool.resources, Version=5.11.65533.0, Culture=en-US, PublicKeyToken=null
+2021-02-23 04:01:57,128 [1] DEBUG ServiceNameMap - Searching OLT assembly Operator Log Tool.resources, Version=5.11.65533.0, Culture=en-US, PublicKeyToken=null for IEventNotificationService
+2021-02-23 04:01:57,128 [1] DEBUG ServiceNameMap - Found assembly Operator Log Tool.resources, Version=5.11.65533.0, Culture=en, PublicKeyToken=null
+2021-02-23 04:01:57,128 [1] DEBUG ServiceNameMap - Searching OLT assembly Operator Log Tool.resources, Version=5.11.65533.0, Culture=en, PublicKeyToken=null for IEventNotificationService
+2021-02-23 04:01:57,128 [1] DEBUG ServiceNameMap - Found assembly Castle.Core, Version=3.2.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc
+2021-02-23 04:01:57,128 [1] DEBUG ServiceNameMap - Found assembly System.ServiceModel.Activation, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2021-02-23 04:01:57,129 [1] DEBUG ServiceNameMap - Found assembly System.Runtime.Serialization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 04:01:57,129 [1] DEBUG ServiceNameMap - Found assembly SMDiagnostics, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 04:01:57,129 [1] DEBUG ServiceNameMap - Found assembly System.ServiceModel.Internals, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2021-02-23 04:01:57,129 [1] DEBUG ServiceNameMap - Found assembly DevExpress.Data.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2021-02-23 04:01:57,129 [1] DEBUG ServiceNameMap - Found assembly DevExpress.XtraCharts.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2021-02-23 04:01:57,129 [1] DEBUG ServiceNameMap - Found assembly DevExpress.XtraReports.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2021-02-23 04:01:57,129 [1] DEBUG ServiceNameMap - Found assembly DevExpress.Printing.v13.2.Core, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2021-02-23 04:01:57,129 [1] DEBUG ServiceNameMap - Found assembly Com.Suncor.Olt.Reports, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2021-02-23 04:01:57,129 [1] DEBUG ServiceNameMap - Searching OLT assembly Com.Suncor.Olt.Reports, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null for IEventNotificationService
+2021-02-23 04:01:57,136 [1] DEBUG ServiceNameMap - Found assembly DevExpress.XtraEditors.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2021-02-23 04:01:57,137 [1] DEBUG ServiceNameMap - Found assembly DevExpress.Utils.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2021-02-23 04:01:57,137 [1] DEBUG ServiceNameMap - Found assembly Infragistics2.Win.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb
+2021-02-23 04:01:57,137 [1] DEBUG ServiceNameMap - Found assembly DevExpress.XtraTreeList.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2021-02-23 04:01:57,137 [1] DEBUG ServiceNameMap - Found assembly Infragistics2.Win.UltraWinExplorerBar.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb
+2021-02-23 04:01:57,137 [1] DEBUG ServiceNameMap - Found assembly Infragistics2.Win.UltraWinEditors.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb
+2021-02-23 04:01:57,137 [1] DEBUG ServiceNameMap - Found assembly Infragistics2.Win.UltraWinTabControl.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb
+2021-02-23 04:01:57,161 [1] DEBUG ServiceNameMap - Getting interface type for the service IEventNotificationService
+2021-02-23 04:01:57,161 [1] DEBUG ServiceNameMap - Found 34 assemblies to search.
+2021-02-23 04:01:57,161 [1] DEBUG ServiceNameMap - Found assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 04:01:57,161 [1] DEBUG ServiceNameMap - Found assembly Operator Log Tool, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2021-02-23 04:01:57,161 [1] DEBUG ServiceNameMap - Searching OLT assembly Operator Log Tool, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null for IEventNotificationService
+2021-02-23 04:01:57,163 [1] DEBUG ServiceNameMap - Found assembly log4net, Version=1.2.13.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a
+2021-02-23 04:01:57,163 [1] DEBUG ServiceNameMap - Found assembly System.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2021-02-23 04:01:57,163 [1] DEBUG ServiceNameMap - Found assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 04:01:57,163 [1] DEBUG ServiceNameMap - Found assembly System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 04:01:57,163 [1] DEBUG ServiceNameMap - Found assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 04:01:57,163 [1] DEBUG ServiceNameMap - Found assembly Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2021-02-23 04:01:57,163 [1] DEBUG ServiceNameMap - Searching OLT assembly Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null for IEventNotificationService
+2021-02-23 04:01:57,164 [1] DEBUG ServiceNameMap - Found IEventNotificationService in Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2021-02-23 04:01:57,164 [1] DEBUG OltServiceHostFactory - Adding add service endpoint for Com.Suncor.Olt.Common.Services.IEventNotificationService
+2021-02-23 04:01:57,164 [1] DEBUG OltServiceHostFactory - Adding alternate data contract serializer
+2021-02-23 04:01:57,165 [1] DEBUG OltServiceHostFactory - Adding service metadata behavior
+2021-02-23 04:01:57,165 [1] DEBUG OltServiceHostFactory - Adding service debug behavior
+2021-02-23 04:01:57,165 [1] DEBUG OltServiceHostFactory - Adding service throttling behavior
+2021-02-23 04:01:57,165 [1] DEBUG OltServiceHostFactory - Service Host created
+2021-02-23 04:01:57,165 [1] DEBUG AbstractEventNotificationEnabledServiceRegistry - Attempting to open Service Host: System.ServiceModel.ServiceHost
+2021-02-23 04:01:57,219 [1] INFO  AbstractEventNotificationEnabledServiceRegistry - Successfully created service host for event notification at net.tcp://10.9.21.6:9771/
+2021-02-23 04:03:00,079 [1] INFO  MainFormPresenter - User login information:
+Client URI: net.tcp://10.9.21.6:9771/
+User: [Id:9245] [Name:Superuserwbl1, John [superuserwbl1]]
+Shift: [Id:30] [Name:N - 20:00 to 08:00]
+Site: [Id:12] [Name:Wood Buffalo Laboratories]
+Role: [Id:186] [Name:Lab Supervisor]
+Assignment: [Id:2831] [Name:OS Lab Supervisor]
+Version: 5.11.65533.0
+Deployment: -
+OS Version: Microsoft Windows NT 6.1.7601 Service Pack 1
+
+2021-02-23 04:03:00,086 [1] INFO  RemoteEventRepeater - Hooking up service events to our remote event repeater methods.
+2021-02-23 04:03:00,105 [1] INFO  RemoteEventRepeater - Finished hooking up service events to our remote event repeater methods.
+2021-02-23 04:04:22,600 [1] INFO  Program - Starting to cleanup on exit.
+2021-02-23 04:04:22,613 [1] INFO  Program - Attempting to disconnect remote event repeater.
+2021-02-23 04:04:22,613 [1] INFO  RemoteEventRepeater - Clearing service event hooks for remote event repeater methods.
+2021-02-23 04:04:22,624 [1] INFO  RemoteEventRepeater - Finished clearing service event hooks for remote event repeater methods.
+2021-02-23 04:04:22,624 [1] INFO  Program - Done disconnecting remote event repeater.
+2021-02-23 04:04:22,624 [1] INFO  Program - Attempting to release all locks.
+2021-02-23 04:04:22,631 [1] INFO  Program - Done releasing all locks.
+2021-02-23 04:04:22,632 [1] INFO  Program - Attempting to close client side services.
+2021-02-23 04:04:22,633 [1] INFO  AbstractEventNotificationEnabledServiceRegistry - Closing service host.
+2021-02-23 04:04:22,635 [1] INFO  AbstractEventNotificationEnabledServiceRegistry - Done closing service host.
+2021-02-23 04:04:22,635 [1] INFO  Program - Done closing client side services.
+2021-02-23 04:04:22,635 [1] INFO  Program - Done cleanup on exit.
+2021-02-23 04:04:22,639 [1] DEBUG Program - Forced Restart starting.
+2021-02-23 04:04:23,436 [1] DEBUG Program - Starting Operator Log Tool Smart Client
+2021-02-23 04:04:23,449 [1] DEBUG CurrentCulture - # of uiculture files found: 2.  Using default.
+2021-02-23 04:04:23,656 [1] INFO  WcfConfiguration - WCF configuration is as follows:
+2021-02-23 04:04:23,656 [1] INFO  WcfConfiguration - clientPorts: 9771,9772,9773,9774,9775,9776,9777,9778
+2021-02-23 04:04:23,656 [1] INFO  WcfConfiguration - clientHostNameOrIPAddress: 
+2021-02-23 04:04:23,656 [1] INFO  WcfConfiguration - receiveTimeout: 10
+2021-02-23 04:04:23,656 [1] INFO  WcfConfiguration - sendTimeout: 15
+2021-02-23 04:04:23,656 [1] INFO  WcfConfiguration - openTimeout: 2
+2021-02-23 04:04:23,657 [1] INFO  WcfConfiguration - closeTimeout: 2
+2021-02-23 04:04:23,657 [1] INFO  WcfConfiguration - maxBufferSize: 2147483647
+2021-02-23 04:04:23,657 [1] INFO  WcfConfiguration - maxBufferPoolSize: 524288
+2021-02-23 04:04:23,657 [1] INFO  WcfConfiguration - maxReceivedMessageSize: 2147483647
+2021-02-23 04:04:23,657 [1] INFO  WcfConfiguration - readerQuotasMaxStringContentLength: 2147483647
+2021-02-23 04:04:23,657 [1] INFO  WcfConfiguration - readerQuotasMaxDepth: 2147483647
+2021-02-23 04:04:23,657 [1] INFO  WcfConfiguration - readerQuotasMaxArrayLength: 2147483647
+2021-02-23 04:04:23,657 [1] INFO  WcfConfiguration - maxConcurrentCalls: 200
+2021-02-23 04:04:23,657 [1] INFO  WcfConfiguration - maxConcurrentInstances: 200
+2021-02-23 04:04:23,657 [1] INFO  WcfConfiguration - maxConcurrentSessions: 200
+2021-02-23 04:04:23,657 [1] INFO  WcfConfiguration - maxConnections: 5000
+2021-02-23 04:04:23,657 [1] INFO  WcfConfiguration - maxItemsInObjectGraph: 2147483647
+2021-02-23 04:04:23,657 [1] INFO  WcfConfiguration - clientServerBindingType: HttpBinaryEncoded
+2021-02-23 04:04:23,680 [1] INFO  NetworkUtilities - Number of IP Addresses found: 2
+2021-02-23 04:04:23,681 [1] INFO  NetworkUtilities - address: fe80::4d6:8f72:f3b9:7889%11
+2021-02-23 04:04:23,681 [1] INFO  NetworkUtilities - address: 10.9.21.6
+2021-02-23 04:04:23,682 [1] INFO  AbstractEventNotificationEnabledServiceRegistry - Attempting to create service host for event notification at net.tcp://10.9.21.6:9771/
+2021-02-23 04:04:23,690 [1] DEBUG OltServiceHostFactory - Tcp binding created.
+2021-02-23 04:04:23,693 [1] DEBUG ServiceNameMap - Attempting to find cached Service type IEventNotificationService
+2021-02-23 04:04:23,695 [1] DEBUG ServiceNameMap - Attempting to find Service type IEventNotificationService in Assemblies
+2021-02-23 04:04:23,696 [1] DEBUG ServiceNameMap - Getting interface type for the service IEventNotificationService
+2021-02-23 04:04:23,696 [1] DEBUG ServiceNameMap - Found 21 assemblies to search.
+2021-02-23 04:04:23,696 [1] DEBUG ServiceNameMap - Found assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 04:04:23,696 [1] DEBUG ServiceNameMap - Found assembly Operator Log Tool, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2021-02-23 04:04:23,696 [1] DEBUG ServiceNameMap - Searching OLT assembly Operator Log Tool, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null for IEventNotificationService
+2021-02-23 04:04:24,022 [1] DEBUG ServiceNameMap - Found assembly log4net, Version=1.2.13.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a
+2021-02-23 04:04:24,022 [1] DEBUG ServiceNameMap - Found assembly System.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2021-02-23 04:04:24,022 [1] DEBUG ServiceNameMap - Found assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 04:04:24,022 [1] DEBUG ServiceNameMap - Found assembly System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 04:04:24,022 [1] DEBUG ServiceNameMap - Found assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 04:04:24,022 [1] DEBUG ServiceNameMap - Found assembly Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2021-02-23 04:04:24,022 [1] DEBUG ServiceNameMap - Searching OLT assembly Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null for IEventNotificationService
+2021-02-23 04:04:24,046 [1] DEBUG ServiceNameMap - Found IEventNotificationService in Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2021-02-23 04:04:24,046 [1] DEBUG ServiceNameMap - Attempting to class that implements IEventNotificationService in Assemblies
+2021-02-23 04:04:24,046 [1] DEBUG ServiceNameMap - Found 33 assemblies to search for service implementation
+2021-02-23 04:04:24,046 [1] DEBUG ServiceNameMap - Found assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 04:04:24,046 [1] DEBUG ServiceNameMap - Found assembly Operator Log Tool, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2021-02-23 04:04:24,046 [1] DEBUG ServiceNameMap - Searching OLT assembly Operator Log Tool, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null for IEventNotificationService
+2021-02-23 04:04:24,047 [1] DEBUG ServiceNameMap - Found Com.Suncor.Olt.Client.Services.EventNotificationService implementing Com.Suncor.Olt.Common.Services.IEventNotificationService in Operator Log Tool, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2021-02-23 04:04:24,047 [1] DEBUG ServiceNameMap - Found assembly log4net, Version=1.2.13.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a
+2021-02-23 04:04:24,047 [1] DEBUG ServiceNameMap - Found assembly System.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2021-02-23 04:04:24,047 [1] DEBUG ServiceNameMap - Found assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 04:04:24,047 [1] DEBUG ServiceNameMap - Found assembly System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 04:04:24,047 [1] DEBUG ServiceNameMap - Found assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 04:04:24,047 [1] DEBUG ServiceNameMap - Found assembly Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2021-02-23 04:04:24,047 [1] DEBUG ServiceNameMap - Searching OLT assembly Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null for IEventNotificationService
+2021-02-23 04:04:24,047 [1] DEBUG ServiceNameMap - Found assembly System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 04:04:24,047 [1] DEBUG ServiceNameMap - Found assembly System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 04:04:24,047 [1] DEBUG ServiceNameMap - Found assembly System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2021-02-23 04:04:24,047 [1] DEBUG ServiceNameMap - Found assembly Infragistics2.Shared.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb
+2021-02-23 04:04:24,047 [1] DEBUG ServiceNameMap - Found assembly Infragistics2.Win.UltraWinGrid.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb
+2021-02-23 04:04:24,047 [1] DEBUG ServiceNameMap - Found assembly Infragistics2.Win.SupportDialogs.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb
+2021-02-23 04:04:24,048 [1] DEBUG ServiceNameMap - Found assembly Operator Log Tool.resources, Version=5.11.65533.0, Culture=en-US, PublicKeyToken=null
+2021-02-23 04:04:24,048 [1] DEBUG ServiceNameMap - Searching OLT assembly Operator Log Tool.resources, Version=5.11.65533.0, Culture=en-US, PublicKeyToken=null for IEventNotificationService
+2021-02-23 04:04:24,048 [1] DEBUG ServiceNameMap - Found assembly Operator Log Tool.resources, Version=5.11.65533.0, Culture=en, PublicKeyToken=null
+2021-02-23 04:04:24,048 [1] DEBUG ServiceNameMap - Searching OLT assembly Operator Log Tool.resources, Version=5.11.65533.0, Culture=en, PublicKeyToken=null for IEventNotificationService
+2021-02-23 04:04:24,048 [1] DEBUG ServiceNameMap - Found assembly Castle.Core, Version=3.2.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc
+2021-02-23 04:04:24,048 [1] DEBUG ServiceNameMap - Found assembly System.ServiceModel.Activation, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2021-02-23 04:04:24,048 [1] DEBUG ServiceNameMap - Found assembly System.Runtime.Serialization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 04:04:24,048 [1] DEBUG ServiceNameMap - Found assembly SMDiagnostics, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 04:04:24,048 [1] DEBUG ServiceNameMap - Found assembly System.ServiceModel.Internals, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2021-02-23 04:04:24,048 [1] DEBUG ServiceNameMap - Found assembly DevExpress.Data.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2021-02-23 04:04:24,048 [1] DEBUG ServiceNameMap - Found assembly DevExpress.XtraCharts.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2021-02-23 04:04:24,048 [1] DEBUG ServiceNameMap - Found assembly DevExpress.XtraReports.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2021-02-23 04:04:24,048 [1] DEBUG ServiceNameMap - Found assembly DevExpress.Printing.v13.2.Core, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2021-02-23 04:04:24,048 [1] DEBUG ServiceNameMap - Found assembly Com.Suncor.Olt.Reports, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2021-02-23 04:04:24,048 [1] DEBUG ServiceNameMap - Searching OLT assembly Com.Suncor.Olt.Reports, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null for IEventNotificationService
+2021-02-23 04:04:24,055 [1] DEBUG ServiceNameMap - Found assembly DevExpress.XtraEditors.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2021-02-23 04:04:24,056 [1] DEBUG ServiceNameMap - Found assembly DevExpress.Utils.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2021-02-23 04:04:24,056 [1] DEBUG ServiceNameMap - Found assembly Infragistics2.Win.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb
+2021-02-23 04:04:24,056 [1] DEBUG ServiceNameMap - Found assembly DevExpress.XtraTreeList.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2021-02-23 04:04:24,056 [1] DEBUG ServiceNameMap - Found assembly Infragistics2.Win.UltraWinExplorerBar.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb
+2021-02-23 04:04:24,056 [1] DEBUG ServiceNameMap - Found assembly Infragistics2.Win.UltraWinEditors.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb
+2021-02-23 04:04:24,056 [1] DEBUG ServiceNameMap - Found assembly Infragistics2.Win.UltraWinTabControl.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb
+2021-02-23 04:04:24,068 [1] DEBUG ServiceNameMap - Getting interface type for the service IEventNotificationService
+2021-02-23 04:04:24,068 [1] DEBUG ServiceNameMap - Found 34 assemblies to search.
+2021-02-23 04:04:24,068 [1] DEBUG ServiceNameMap - Found assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 04:04:24,068 [1] DEBUG ServiceNameMap - Found assembly Operator Log Tool, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2021-02-23 04:04:24,068 [1] DEBUG ServiceNameMap - Searching OLT assembly Operator Log Tool, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null for IEventNotificationService
+2021-02-23 04:04:24,070 [1] DEBUG ServiceNameMap - Found assembly log4net, Version=1.2.13.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a
+2021-02-23 04:04:24,070 [1] DEBUG ServiceNameMap - Found assembly System.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2021-02-23 04:04:24,070 [1] DEBUG ServiceNameMap - Found assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 04:04:24,070 [1] DEBUG ServiceNameMap - Found assembly System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 04:04:24,070 [1] DEBUG ServiceNameMap - Found assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 04:04:24,070 [1] DEBUG ServiceNameMap - Found assembly Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2021-02-23 04:04:24,070 [1] DEBUG ServiceNameMap - Searching OLT assembly Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null for IEventNotificationService
+2021-02-23 04:04:24,071 [1] DEBUG ServiceNameMap - Found IEventNotificationService in Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2021-02-23 04:04:24,071 [1] DEBUG OltServiceHostFactory - Adding add service endpoint for Com.Suncor.Olt.Common.Services.IEventNotificationService
+2021-02-23 04:04:24,071 [1] DEBUG OltServiceHostFactory - Adding alternate data contract serializer
+2021-02-23 04:04:24,072 [1] DEBUG OltServiceHostFactory - Adding service metadata behavior
+2021-02-23 04:04:24,072 [1] DEBUG OltServiceHostFactory - Adding service debug behavior
+2021-02-23 04:04:24,072 [1] DEBUG OltServiceHostFactory - Adding service throttling behavior
+2021-02-23 04:04:24,072 [1] DEBUG OltServiceHostFactory - Service Host created
+2021-02-23 04:04:24,072 [1] DEBUG AbstractEventNotificationEnabledServiceRegistry - Attempting to open Service Host: System.ServiceModel.ServiceHost
+2021-02-23 04:04:24,083 [1] INFO  AbstractEventNotificationEnabledServiceRegistry - Successfully created service host for event notification at net.tcp://10.9.21.6:9771/
+2021-02-23 04:04:44,420 [1] INFO  Program - Starting to cleanup on exit.
+2021-02-23 04:04:44,503 [1] INFO  Program - Attempting to disconnect remote event repeater.
+2021-02-23 04:04:44,509 [1] INFO  Program - Done disconnecting remote event repeater.
+2021-02-23 04:04:44,509 [1] INFO  Program - Attempting to release all locks.
+2021-02-23 04:04:44,516 [1] INFO  Program - Done releasing all locks.
+2021-02-23 04:04:44,517 [1] INFO  Program - Attempting to close client side services.
+2021-02-23 04:04:44,518 [1] INFO  AbstractEventNotificationEnabledServiceRegistry - Closing service host.
+2021-02-23 04:04:44,519 [1] INFO  AbstractEventNotificationEnabledServiceRegistry - Done closing service host.
+2021-02-23 04:04:44,519 [1] INFO  Program - Done closing client side services.
+2021-02-23 04:04:44,519 [1] INFO  Program - Done cleanup on exit.
+2021-02-23 04:12:13,185 [1] DEBUG Program - Starting Operator Log Tool Smart Client
+2021-02-23 04:12:13,195 [1] DEBUG CurrentCulture - # of uiculture files found: 2.  Using default.
+2021-02-23 04:12:13,549 [1] INFO  WcfConfiguration - WCF configuration is as follows:
+2021-02-23 04:12:13,549 [1] INFO  WcfConfiguration - clientPorts: 9771,9772,9773,9774,9775,9776,9777,9778
+2021-02-23 04:12:13,549 [1] INFO  WcfConfiguration - clientHostNameOrIPAddress: 
+2021-02-23 04:12:13,549 [1] INFO  WcfConfiguration - receiveTimeout: 10
+2021-02-23 04:12:13,550 [1] INFO  WcfConfiguration - sendTimeout: 15
+2021-02-23 04:12:13,550 [1] INFO  WcfConfiguration - openTimeout: 2
+2021-02-23 04:12:13,550 [1] INFO  WcfConfiguration - closeTimeout: 2
+2021-02-23 04:12:13,550 [1] INFO  WcfConfiguration - maxBufferSize: 2147483647
+2021-02-23 04:12:13,550 [1] INFO  WcfConfiguration - maxBufferPoolSize: 524288
+2021-02-23 04:12:13,550 [1] INFO  WcfConfiguration - maxReceivedMessageSize: 2147483647
+2021-02-23 04:12:13,550 [1] INFO  WcfConfiguration - readerQuotasMaxStringContentLength: 2147483647
+2021-02-23 04:12:13,550 [1] INFO  WcfConfiguration - readerQuotasMaxDepth: 2147483647
+2021-02-23 04:12:13,550 [1] INFO  WcfConfiguration - readerQuotasMaxArrayLength: 2147483647
+2021-02-23 04:12:13,550 [1] INFO  WcfConfiguration - maxConcurrentCalls: 200
+2021-02-23 04:12:13,550 [1] INFO  WcfConfiguration - maxConcurrentInstances: 200
+2021-02-23 04:12:13,550 [1] INFO  WcfConfiguration - maxConcurrentSessions: 200
+2021-02-23 04:12:13,550 [1] INFO  WcfConfiguration - maxConnections: 5000
+2021-02-23 04:12:13,550 [1] INFO  WcfConfiguration - maxItemsInObjectGraph: 2147483647
+2021-02-23 04:12:13,550 [1] INFO  WcfConfiguration - clientServerBindingType: HttpBinaryEncoded
+2021-02-23 04:12:13,581 [1] INFO  NetworkUtilities - Number of IP Addresses found: 2
+2021-02-23 04:12:13,582 [1] INFO  NetworkUtilities - address: fe80::4d6:8f72:f3b9:7889%11
+2021-02-23 04:12:13,582 [1] INFO  NetworkUtilities - address: 10.9.21.6
+2021-02-23 04:12:13,582 [1] INFO  AbstractEventNotificationEnabledServiceRegistry - Attempting to create service host for event notification at net.tcp://10.9.21.6:9771/
+2021-02-23 04:12:13,604 [1] DEBUG OltServiceHostFactory - Tcp binding created.
+2021-02-23 04:12:13,607 [1] DEBUG ServiceNameMap - Attempting to find cached Service type IEventNotificationService
+2021-02-23 04:12:13,609 [1] DEBUG ServiceNameMap - Attempting to find Service type IEventNotificationService in Assemblies
+2021-02-23 04:12:13,609 [1] DEBUG ServiceNameMap - Getting interface type for the service IEventNotificationService
+2021-02-23 04:12:13,609 [1] DEBUG ServiceNameMap - Found 21 assemblies to search.
+2021-02-23 04:12:13,609 [1] DEBUG ServiceNameMap - Found assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 04:12:13,609 [1] DEBUG ServiceNameMap - Found assembly Operator Log Tool, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2021-02-23 04:12:13,609 [1] DEBUG ServiceNameMap - Searching OLT assembly Operator Log Tool, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null for IEventNotificationService
+2021-02-23 04:12:13,995 [1] DEBUG ServiceNameMap - Found assembly log4net, Version=1.2.13.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a
+2021-02-23 04:12:13,995 [1] DEBUG ServiceNameMap - Found assembly System.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2021-02-23 04:12:13,995 [1] DEBUG ServiceNameMap - Found assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 04:12:13,995 [1] DEBUG ServiceNameMap - Found assembly System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 04:12:13,995 [1] DEBUG ServiceNameMap - Found assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 04:12:13,995 [1] DEBUG ServiceNameMap - Found assembly Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2021-02-23 04:12:13,995 [1] DEBUG ServiceNameMap - Searching OLT assembly Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null for IEventNotificationService
+2021-02-23 04:12:14,019 [1] DEBUG ServiceNameMap - Found IEventNotificationService in Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2021-02-23 04:12:14,019 [1] DEBUG ServiceNameMap - Attempting to class that implements IEventNotificationService in Assemblies
+2021-02-23 04:12:14,019 [1] DEBUG ServiceNameMap - Found 33 assemblies to search for service implementation
+2021-02-23 04:12:14,019 [1] DEBUG ServiceNameMap - Found assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 04:12:14,019 [1] DEBUG ServiceNameMap - Found assembly Operator Log Tool, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2021-02-23 04:12:14,019 [1] DEBUG ServiceNameMap - Searching OLT assembly Operator Log Tool, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null for IEventNotificationService
+2021-02-23 04:12:14,020 [1] DEBUG ServiceNameMap - Found Com.Suncor.Olt.Client.Services.EventNotificationService implementing Com.Suncor.Olt.Common.Services.IEventNotificationService in Operator Log Tool, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2021-02-23 04:12:14,020 [1] DEBUG ServiceNameMap - Found assembly log4net, Version=1.2.13.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a
+2021-02-23 04:12:14,020 [1] DEBUG ServiceNameMap - Found assembly System.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2021-02-23 04:12:14,020 [1] DEBUG ServiceNameMap - Found assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 04:12:14,020 [1] DEBUG ServiceNameMap - Found assembly System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 04:12:14,020 [1] DEBUG ServiceNameMap - Found assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 04:12:14,020 [1] DEBUG ServiceNameMap - Found assembly Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2021-02-23 04:12:14,020 [1] DEBUG ServiceNameMap - Searching OLT assembly Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null for IEventNotificationService
+2021-02-23 04:12:14,020 [1] DEBUG ServiceNameMap - Found assembly System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 04:12:14,021 [1] DEBUG ServiceNameMap - Found assembly System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 04:12:14,021 [1] DEBUG ServiceNameMap - Found assembly System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2021-02-23 04:12:14,021 [1] DEBUG ServiceNameMap - Found assembly Infragistics2.Shared.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb
+2021-02-23 04:12:14,021 [1] DEBUG ServiceNameMap - Found assembly Infragistics2.Win.UltraWinGrid.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb
+2021-02-23 04:12:14,021 [1] DEBUG ServiceNameMap - Found assembly Infragistics2.Win.SupportDialogs.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb
+2021-02-23 04:12:14,021 [1] DEBUG ServiceNameMap - Found assembly Operator Log Tool.resources, Version=5.11.65533.0, Culture=en-US, PublicKeyToken=null
+2021-02-23 04:12:14,021 [1] DEBUG ServiceNameMap - Searching OLT assembly Operator Log Tool.resources, Version=5.11.65533.0, Culture=en-US, PublicKeyToken=null for IEventNotificationService
+2021-02-23 04:12:14,021 [1] DEBUG ServiceNameMap - Found assembly Operator Log Tool.resources, Version=5.11.65533.0, Culture=en, PublicKeyToken=null
+2021-02-23 04:12:14,021 [1] DEBUG ServiceNameMap - Searching OLT assembly Operator Log Tool.resources, Version=5.11.65533.0, Culture=en, PublicKeyToken=null for IEventNotificationService
+2021-02-23 04:12:14,021 [1] DEBUG ServiceNameMap - Found assembly Castle.Core, Version=3.2.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc
+2021-02-23 04:12:14,021 [1] DEBUG ServiceNameMap - Found assembly System.ServiceModel.Activation, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2021-02-23 04:12:14,021 [1] DEBUG ServiceNameMap - Found assembly System.Runtime.Serialization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 04:12:14,021 [1] DEBUG ServiceNameMap - Found assembly SMDiagnostics, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 04:12:14,021 [1] DEBUG ServiceNameMap - Found assembly System.ServiceModel.Internals, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2021-02-23 04:12:14,021 [1] DEBUG ServiceNameMap - Found assembly DevExpress.Data.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2021-02-23 04:12:14,021 [1] DEBUG ServiceNameMap - Found assembly DevExpress.XtraCharts.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2021-02-23 04:12:14,021 [1] DEBUG ServiceNameMap - Found assembly DevExpress.XtraReports.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2021-02-23 04:12:14,021 [1] DEBUG ServiceNameMap - Found assembly DevExpress.Printing.v13.2.Core, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2021-02-23 04:12:14,021 [1] DEBUG ServiceNameMap - Found assembly Com.Suncor.Olt.Reports, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2021-02-23 04:12:14,021 [1] DEBUG ServiceNameMap - Searching OLT assembly Com.Suncor.Olt.Reports, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null for IEventNotificationService
+2021-02-23 04:12:14,029 [1] DEBUG ServiceNameMap - Found assembly DevExpress.XtraEditors.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2021-02-23 04:12:14,029 [1] DEBUG ServiceNameMap - Found assembly DevExpress.Utils.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2021-02-23 04:12:14,029 [1] DEBUG ServiceNameMap - Found assembly Infragistics2.Win.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb
+2021-02-23 04:12:14,029 [1] DEBUG ServiceNameMap - Found assembly DevExpress.XtraTreeList.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2021-02-23 04:12:14,029 [1] DEBUG ServiceNameMap - Found assembly Infragistics2.Win.UltraWinExplorerBar.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb
+2021-02-23 04:12:14,029 [1] DEBUG ServiceNameMap - Found assembly Infragistics2.Win.UltraWinEditors.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb
+2021-02-23 04:12:14,029 [1] DEBUG ServiceNameMap - Found assembly Infragistics2.Win.UltraWinTabControl.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb
+2021-02-23 04:12:14,048 [1] DEBUG ServiceNameMap - Getting interface type for the service IEventNotificationService
+2021-02-23 04:12:14,048 [1] DEBUG ServiceNameMap - Found 34 assemblies to search.
+2021-02-23 04:12:14,048 [1] DEBUG ServiceNameMap - Found assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 04:12:14,048 [1] DEBUG ServiceNameMap - Found assembly Operator Log Tool, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2021-02-23 04:12:14,049 [1] DEBUG ServiceNameMap - Searching OLT assembly Operator Log Tool, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null for IEventNotificationService
+2021-02-23 04:12:14,050 [1] DEBUG ServiceNameMap - Found assembly log4net, Version=1.2.13.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a
+2021-02-23 04:12:14,050 [1] DEBUG ServiceNameMap - Found assembly System.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2021-02-23 04:12:14,051 [1] DEBUG ServiceNameMap - Found assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 04:12:14,051 [1] DEBUG ServiceNameMap - Found assembly System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 04:12:14,051 [1] DEBUG ServiceNameMap - Found assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 04:12:14,051 [1] DEBUG ServiceNameMap - Found assembly Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2021-02-23 04:12:14,051 [1] DEBUG ServiceNameMap - Searching OLT assembly Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null for IEventNotificationService
+2021-02-23 04:12:14,051 [1] DEBUG ServiceNameMap - Found IEventNotificationService in Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2021-02-23 04:12:14,051 [1] DEBUG OltServiceHostFactory - Adding add service endpoint for Com.Suncor.Olt.Common.Services.IEventNotificationService
+2021-02-23 04:12:14,051 [1] DEBUG OltServiceHostFactory - Adding alternate data contract serializer
+2021-02-23 04:12:14,052 [1] DEBUG OltServiceHostFactory - Adding service metadata behavior
+2021-02-23 04:12:14,052 [1] DEBUG OltServiceHostFactory - Adding service debug behavior
+2021-02-23 04:12:14,052 [1] DEBUG OltServiceHostFactory - Adding service throttling behavior
+2021-02-23 04:12:14,052 [1] DEBUG OltServiceHostFactory - Service Host created
+2021-02-23 04:12:14,052 [1] DEBUG AbstractEventNotificationEnabledServiceRegistry - Attempting to open Service Host: System.ServiceModel.ServiceHost
+2021-02-23 04:12:14,114 [1] INFO  AbstractEventNotificationEnabledServiceRegistry - Successfully created service host for event notification at net.tcp://10.9.21.6:9771/
+2021-02-23 04:13:25,301 [1] INFO  MainFormPresenter - User login information:
+Client URI: net.tcp://10.9.21.6:9771/
+User: [Id:9246] [Name:Superuserwbl1a1, John [superuserwbl1a1]]
+Shift: [Id:30] [Name:N - 20:00 to 08:00]
+Site: [Id:12] [Name:Wood Buffalo Laboratories]
+Role: [Id:186] [Name:Lab Supervisor]
+Assignment: [Id:2831] [Name:OS Lab Supervisor]
+Version: 5.11.65533.0
+Deployment: -
+OS Version: Microsoft Windows NT 6.1.7601 Service Pack 1
+
+2021-02-23 04:13:25,308 [1] INFO  RemoteEventRepeater - Hooking up service events to our remote event repeater methods.
+2021-02-23 04:13:25,318 [1] INFO  RemoteEventRepeater - Finished hooking up service events to our remote event repeater methods.
+2021-02-23 04:18:14,061 [1] DEBUG Program - Starting Operator Log Tool Smart Client
+2021-02-23 04:18:14,071 [1] DEBUG CurrentCulture - # of uiculture files found: 2.  Using default.
+2021-02-23 04:18:14,429 [1] INFO  WcfConfiguration - WCF configuration is as follows:
+2021-02-23 04:18:14,429 [1] INFO  WcfConfiguration - clientPorts: 9771,9772,9773,9774,9775,9776,9777,9778
+2021-02-23 04:18:14,429 [1] INFO  WcfConfiguration - clientHostNameOrIPAddress: 
+2021-02-23 04:18:14,429 [1] INFO  WcfConfiguration - receiveTimeout: 10
+2021-02-23 04:18:14,429 [1] INFO  WcfConfiguration - sendTimeout: 15
+2021-02-23 04:18:14,429 [1] INFO  WcfConfiguration - openTimeout: 2
+2021-02-23 04:18:14,429 [1] INFO  WcfConfiguration - closeTimeout: 2
+2021-02-23 04:18:14,429 [1] INFO  WcfConfiguration - maxBufferSize: 2147483647
+2021-02-23 04:18:14,429 [1] INFO  WcfConfiguration - maxBufferPoolSize: 524288
+2021-02-23 04:18:14,429 [1] INFO  WcfConfiguration - maxReceivedMessageSize: 2147483647
+2021-02-23 04:18:14,429 [1] INFO  WcfConfiguration - readerQuotasMaxStringContentLength: 2147483647
+2021-02-23 04:18:14,429 [1] INFO  WcfConfiguration - readerQuotasMaxDepth: 2147483647
+2021-02-23 04:18:14,429 [1] INFO  WcfConfiguration - readerQuotasMaxArrayLength: 2147483647
+2021-02-23 04:18:14,430 [1] INFO  WcfConfiguration - maxConcurrentCalls: 200
+2021-02-23 04:18:14,430 [1] INFO  WcfConfiguration - maxConcurrentInstances: 200
+2021-02-23 04:18:14,430 [1] INFO  WcfConfiguration - maxConcurrentSessions: 200
+2021-02-23 04:18:14,430 [1] INFO  WcfConfiguration - maxConnections: 5000
+2021-02-23 04:18:14,430 [1] INFO  WcfConfiguration - maxItemsInObjectGraph: 2147483647
+2021-02-23 04:18:14,430 [1] INFO  WcfConfiguration - clientServerBindingType: HttpBinaryEncoded
+2021-02-23 04:18:14,461 [1] INFO  NetworkUtilities - Number of IP Addresses found: 2
+2021-02-23 04:18:14,462 [1] INFO  NetworkUtilities - address: fe80::4d6:8f72:f3b9:7889%11
+2021-02-23 04:18:14,462 [1] INFO  NetworkUtilities - address: 10.9.21.6
+2021-02-23 04:18:14,463 [1] INFO  AbstractEventNotificationEnabledServiceRegistry - Attempting to create service host for event notification at net.tcp://10.9.21.6:9771/
+2021-02-23 04:18:14,485 [1] DEBUG OltServiceHostFactory - Tcp binding created.
+2021-02-23 04:18:14,488 [1] DEBUG ServiceNameMap - Attempting to find cached Service type IEventNotificationService
+2021-02-23 04:18:14,490 [1] DEBUG ServiceNameMap - Attempting to find Service type IEventNotificationService in Assemblies
+2021-02-23 04:18:14,490 [1] DEBUG ServiceNameMap - Getting interface type for the service IEventNotificationService
+2021-02-23 04:18:14,490 [1] DEBUG ServiceNameMap - Found 21 assemblies to search.
+2021-02-23 04:18:14,490 [1] DEBUG ServiceNameMap - Found assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 04:18:14,491 [1] DEBUG ServiceNameMap - Found assembly Operator Log Tool, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2021-02-23 04:18:14,491 [1] DEBUG ServiceNameMap - Searching OLT assembly Operator Log Tool, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null for IEventNotificationService
+2021-02-23 04:18:15,049 [1] DEBUG ServiceNameMap - Found assembly log4net, Version=1.2.13.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a
+2021-02-23 04:18:15,049 [1] DEBUG ServiceNameMap - Found assembly System.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2021-02-23 04:18:15,050 [1] DEBUG ServiceNameMap - Found assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 04:18:15,050 [1] DEBUG ServiceNameMap - Found assembly System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 04:18:15,050 [1] DEBUG ServiceNameMap - Found assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 04:18:15,050 [1] DEBUG ServiceNameMap - Found assembly Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2021-02-23 04:18:15,050 [1] DEBUG ServiceNameMap - Searching OLT assembly Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null for IEventNotificationService
+2021-02-23 04:18:15,074 [1] DEBUG ServiceNameMap - Found IEventNotificationService in Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2021-02-23 04:18:15,075 [1] DEBUG ServiceNameMap - Attempting to class that implements IEventNotificationService in Assemblies
+2021-02-23 04:18:15,075 [1] DEBUG ServiceNameMap - Found 33 assemblies to search for service implementation
+2021-02-23 04:18:15,075 [1] DEBUG ServiceNameMap - Found assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 04:18:15,075 [1] DEBUG ServiceNameMap - Found assembly Operator Log Tool, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2021-02-23 04:18:15,075 [1] DEBUG ServiceNameMap - Searching OLT assembly Operator Log Tool, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null for IEventNotificationService
+2021-02-23 04:18:15,075 [1] DEBUG ServiceNameMap - Found Com.Suncor.Olt.Client.Services.EventNotificationService implementing Com.Suncor.Olt.Common.Services.IEventNotificationService in Operator Log Tool, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2021-02-23 04:18:15,075 [1] DEBUG ServiceNameMap - Found assembly log4net, Version=1.2.13.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a
+2021-02-23 04:18:15,075 [1] DEBUG ServiceNameMap - Found assembly System.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2021-02-23 04:18:15,075 [1] DEBUG ServiceNameMap - Found assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 04:18:15,075 [1] DEBUG ServiceNameMap - Found assembly System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 04:18:15,075 [1] DEBUG ServiceNameMap - Found assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 04:18:15,075 [1] DEBUG ServiceNameMap - Found assembly Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2021-02-23 04:18:15,075 [1] DEBUG ServiceNameMap - Searching OLT assembly Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null for IEventNotificationService
+2021-02-23 04:18:15,076 [1] DEBUG ServiceNameMap - Found assembly System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 04:18:15,076 [1] DEBUG ServiceNameMap - Found assembly System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 04:18:15,076 [1] DEBUG ServiceNameMap - Found assembly System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2021-02-23 04:18:15,076 [1] DEBUG ServiceNameMap - Found assembly Infragistics2.Shared.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb
+2021-02-23 04:18:15,076 [1] DEBUG ServiceNameMap - Found assembly Infragistics2.Win.UltraWinGrid.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb
+2021-02-23 04:18:15,076 [1] DEBUG ServiceNameMap - Found assembly Infragistics2.Win.SupportDialogs.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb
+2021-02-23 04:18:15,076 [1] DEBUG ServiceNameMap - Found assembly Operator Log Tool.resources, Version=5.11.65533.0, Culture=en-US, PublicKeyToken=null
+2021-02-23 04:18:15,076 [1] DEBUG ServiceNameMap - Searching OLT assembly Operator Log Tool.resources, Version=5.11.65533.0, Culture=en-US, PublicKeyToken=null for IEventNotificationService
+2021-02-23 04:18:15,076 [1] DEBUG ServiceNameMap - Found assembly Operator Log Tool.resources, Version=5.11.65533.0, Culture=en, PublicKeyToken=null
+2021-02-23 04:18:15,076 [1] DEBUG ServiceNameMap - Searching OLT assembly Operator Log Tool.resources, Version=5.11.65533.0, Culture=en, PublicKeyToken=null for IEventNotificationService
+2021-02-23 04:18:15,076 [1] DEBUG ServiceNameMap - Found assembly Castle.Core, Version=3.2.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc
+2021-02-23 04:18:15,076 [1] DEBUG ServiceNameMap - Found assembly System.ServiceModel.Activation, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2021-02-23 04:18:15,076 [1] DEBUG ServiceNameMap - Found assembly System.Runtime.Serialization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 04:18:15,076 [1] DEBUG ServiceNameMap - Found assembly SMDiagnostics, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 04:18:15,076 [1] DEBUG ServiceNameMap - Found assembly System.ServiceModel.Internals, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2021-02-23 04:18:15,076 [1] DEBUG ServiceNameMap - Found assembly DevExpress.Data.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2021-02-23 04:18:15,076 [1] DEBUG ServiceNameMap - Found assembly DevExpress.XtraCharts.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2021-02-23 04:18:15,076 [1] DEBUG ServiceNameMap - Found assembly DevExpress.XtraReports.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2021-02-23 04:18:15,076 [1] DEBUG ServiceNameMap - Found assembly DevExpress.Printing.v13.2.Core, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2021-02-23 04:18:15,076 [1] DEBUG ServiceNameMap - Found assembly Com.Suncor.Olt.Reports, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2021-02-23 04:18:15,076 [1] DEBUG ServiceNameMap - Searching OLT assembly Com.Suncor.Olt.Reports, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null for IEventNotificationService
+2021-02-23 04:18:15,084 [1] DEBUG ServiceNameMap - Found assembly DevExpress.XtraEditors.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2021-02-23 04:18:15,084 [1] DEBUG ServiceNameMap - Found assembly DevExpress.Utils.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2021-02-23 04:18:15,084 [1] DEBUG ServiceNameMap - Found assembly Infragistics2.Win.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb
+2021-02-23 04:18:15,084 [1] DEBUG ServiceNameMap - Found assembly DevExpress.XtraTreeList.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2021-02-23 04:18:15,084 [1] DEBUG ServiceNameMap - Found assembly Infragistics2.Win.UltraWinExplorerBar.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb
+2021-02-23 04:18:15,084 [1] DEBUG ServiceNameMap - Found assembly Infragistics2.Win.UltraWinEditors.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb
+2021-02-23 04:18:15,084 [1] DEBUG ServiceNameMap - Found assembly Infragistics2.Win.UltraWinTabControl.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb
+2021-02-23 04:18:15,124 [1] DEBUG ServiceNameMap - Getting interface type for the service IEventNotificationService
+2021-02-23 04:18:15,124 [1] DEBUG ServiceNameMap - Found 34 assemblies to search.
+2021-02-23 04:18:15,124 [1] DEBUG ServiceNameMap - Found assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 04:18:15,124 [1] DEBUG ServiceNameMap - Found assembly Operator Log Tool, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2021-02-23 04:18:15,124 [1] DEBUG ServiceNameMap - Searching OLT assembly Operator Log Tool, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null for IEventNotificationService
+2021-02-23 04:18:15,126 [1] DEBUG ServiceNameMap - Found assembly log4net, Version=1.2.13.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a
+2021-02-23 04:18:15,126 [1] DEBUG ServiceNameMap - Found assembly System.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2021-02-23 04:18:15,126 [1] DEBUG ServiceNameMap - Found assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 04:18:15,126 [1] DEBUG ServiceNameMap - Found assembly System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 04:18:15,126 [1] DEBUG ServiceNameMap - Found assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 04:18:15,126 [1] DEBUG ServiceNameMap - Found assembly Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2021-02-23 04:18:15,126 [1] DEBUG ServiceNameMap - Searching OLT assembly Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null for IEventNotificationService
+2021-02-23 04:18:15,127 [1] DEBUG ServiceNameMap - Found IEventNotificationService in Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2021-02-23 04:18:15,127 [1] DEBUG OltServiceHostFactory - Adding add service endpoint for Com.Suncor.Olt.Common.Services.IEventNotificationService
+2021-02-23 04:18:15,127 [1] DEBUG OltServiceHostFactory - Adding alternate data contract serializer
+2021-02-23 04:18:15,128 [1] DEBUG OltServiceHostFactory - Adding service metadata behavior
+2021-02-23 04:18:15,128 [1] DEBUG OltServiceHostFactory - Adding service debug behavior
+2021-02-23 04:18:15,128 [1] DEBUG OltServiceHostFactory - Adding service throttling behavior
+2021-02-23 04:18:15,128 [1] DEBUG OltServiceHostFactory - Service Host created
+2021-02-23 04:18:15,128 [1] DEBUG AbstractEventNotificationEnabledServiceRegistry - Attempting to open Service Host: System.ServiceModel.ServiceHost
+2021-02-23 04:18:15,187 [1] INFO  AbstractEventNotificationEnabledServiceRegistry - Successfully created service host for event notification at net.tcp://10.9.21.6:9771/
+2021-02-23 04:21:39,543 [1] INFO  MainFormPresenter - User login information:
+Client URI: net.tcp://10.9.21.6:9771/
+User: [Id:9246] [Name:Superuserwbl1a1, John [superuserwbl1a1]]
+Shift: [Id:30] [Name:N - 20:00 to 08:00]
+Site: [Id:12] [Name:Wood Buffalo Laboratories]
+Role: [Id:186] [Name:Lab Supervisor]
+Assignment: [Id:2831] [Name:OS Lab Supervisor]
+Version: 5.11.65533.0
+Deployment: -
+OS Version: Microsoft Windows NT 6.1.7601 Service Pack 1
+
+2021-02-23 04:21:39,549 [1] INFO  RemoteEventRepeater - Hooking up service events to our remote event repeater methods.
+2021-02-23 04:21:39,649 [1] INFO  RemoteEventRepeater - Finished hooking up service events to our remote event repeater methods.
+2021-02-23 04:24:19,689 [1] ERROR Program - An error has occured. Updating your client application may be necessary.
+
+The Operator Log Tool will now shut down.
+System.Collections.Generic.KeyNotFoundException: The given key was not present in the dictionary.
+   at System.ThrowHelper.ThrowKeyNotFoundException()
+   at System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   at Com.Suncor.Olt.Client.Controls.Page.AbstractMultiGridPage.GetContext(IMultiGridContextSelection selection) in c:\code\windows\csc\OLT\trunk\src\ClientApp\App\Controls\Page\AbstractMultiGridPage.cs:line 93
+   at Com.Suncor.Olt.Client.Presenters.Page.MultiGridWoodBuffaloRegionFormPagePresenter.ChangeContext(IMultiGridContextSelection gridContextSelection) in c:\code\windows\csc\OLT\trunk\src\ClientApp\App\Presenters\Page\MultiGridWoodBuffaloRegionFormPagePresenter.cs:line 93
+   at Com.Suncor.Olt.Client.Presenters.Page.AbstractMultiGridPagePresenter.HandleSelectedGridChanged(IMultiGridContextSelection gridType) in c:\code\windows\csc\OLT\trunk\src\ClientApp\App\Presenters\Page\AbstractMultiGridPagePresenter.cs:line 182
+   at Com.Suncor.Olt.Client.Controls.Page.BaseMultiGridPage.HandleGridSelectionComboBoxSelectedIndexChanged(Object sender, EventArgs e) in c:\code\windows\csc\OLT\trunk\src\ClientApp\App\Controls\Page\BaseMultiGridPage.cs:line 39
+   at System.Windows.Forms.ComboBox.OnSelectedIndexChanged(EventArgs e)
+   at System.Windows.Forms.ComboBox.WmReflectCommand(Message& m)
+   at System.Windows.Forms.ComboBox.WndProc(Message& m)
+   at System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+2021-02-23 04:24:19,904 [1] INFO  Program - Starting to cleanup on exit.
+2021-02-23 04:24:19,992 [1] INFO  Program - Attempting to disconnect remote event repeater.
+2021-02-23 04:24:19,992 [1] INFO  RemoteEventRepeater - Clearing service event hooks for remote event repeater methods.
+2021-02-23 04:24:20,015 [1] INFO  RemoteEventRepeater - Finished clearing service event hooks for remote event repeater methods.
+2021-02-23 04:24:20,015 [1] INFO  Program - Done disconnecting remote event repeater.
+2021-02-23 04:24:20,015 [1] INFO  Program - Attempting to release all locks.
+2021-02-23 04:24:20,021 [1] INFO  Program - Done releasing all locks.
+2021-02-23 04:24:20,021 [1] INFO  Program - Attempting to close client side services.
+2021-02-23 04:24:20,043 [1] INFO  AbstractEventNotificationEnabledServiceRegistry - Closing service host.
+2021-02-23 04:24:20,595 [1] INFO  AbstractEventNotificationEnabledServiceRegistry - Done closing service host.
+2021-02-23 04:24:20,595 [1] INFO  Program - Done closing client side services.
+2021-02-23 04:24:20,595 [1] INFO  Program - Done cleanup on exit.
+2021-02-23 04:26:28,369 [1] DEBUG Program - Starting Operator Log Tool Smart Client
+2021-02-23 04:26:28,378 [1] DEBUG CurrentCulture - # of uiculture files found: 2.  Using default.
+2021-02-23 04:26:28,749 [1] INFO  WcfConfiguration - WCF configuration is as follows:
+2021-02-23 04:26:28,749 [1] INFO  WcfConfiguration - clientPorts: 9771,9772,9773,9774,9775,9776,9777,9778
+2021-02-23 04:26:28,749 [1] INFO  WcfConfiguration - clientHostNameOrIPAddress: 
+2021-02-23 04:26:28,749 [1] INFO  WcfConfiguration - receiveTimeout: 10
+2021-02-23 04:26:28,749 [1] INFO  WcfConfiguration - sendTimeout: 15
+2021-02-23 04:26:28,749 [1] INFO  WcfConfiguration - openTimeout: 2
+2021-02-23 04:26:28,749 [1] INFO  WcfConfiguration - closeTimeout: 2
+2021-02-23 04:26:28,749 [1] INFO  WcfConfiguration - maxBufferSize: 2147483647
+2021-02-23 04:26:28,749 [1] INFO  WcfConfiguration - maxBufferPoolSize: 524288
+2021-02-23 04:26:28,749 [1] INFO  WcfConfiguration - maxReceivedMessageSize: 2147483647
+2021-02-23 04:26:28,750 [1] INFO  WcfConfiguration - readerQuotasMaxStringContentLength: 2147483647
+2021-02-23 04:26:28,750 [1] INFO  WcfConfiguration - readerQuotasMaxDepth: 2147483647
+2021-02-23 04:26:28,750 [1] INFO  WcfConfiguration - readerQuotasMaxArrayLength: 2147483647
+2021-02-23 04:26:28,750 [1] INFO  WcfConfiguration - maxConcurrentCalls: 200
+2021-02-23 04:26:28,750 [1] INFO  WcfConfiguration - maxConcurrentInstances: 200
+2021-02-23 04:26:28,750 [1] INFO  WcfConfiguration - maxConcurrentSessions: 200
+2021-02-23 04:26:28,750 [1] INFO  WcfConfiguration - maxConnections: 5000
+2021-02-23 04:26:28,750 [1] INFO  WcfConfiguration - maxItemsInObjectGraph: 2147483647
+2021-02-23 04:26:28,750 [1] INFO  WcfConfiguration - clientServerBindingType: HttpBinaryEncoded
+2021-02-23 04:26:28,781 [1] INFO  NetworkUtilities - Number of IP Addresses found: 2
+2021-02-23 04:26:28,782 [1] INFO  NetworkUtilities - address: fe80::4d6:8f72:f3b9:7889%11
+2021-02-23 04:26:28,782 [1] INFO  NetworkUtilities - address: 10.9.21.6
+2021-02-23 04:26:28,782 [1] INFO  AbstractEventNotificationEnabledServiceRegistry - Attempting to create service host for event notification at net.tcp://10.9.21.6:9771/
+2021-02-23 04:26:28,803 [1] DEBUG OltServiceHostFactory - Tcp binding created.
+2021-02-23 04:26:28,806 [1] DEBUG ServiceNameMap - Attempting to find cached Service type IEventNotificationService
+2021-02-23 04:26:28,808 [1] DEBUG ServiceNameMap - Attempting to find Service type IEventNotificationService in Assemblies
+2021-02-23 04:26:28,808 [1] DEBUG ServiceNameMap - Getting interface type for the service IEventNotificationService
+2021-02-23 04:26:28,808 [1] DEBUG ServiceNameMap - Found 21 assemblies to search.
+2021-02-23 04:26:28,808 [1] DEBUG ServiceNameMap - Found assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 04:26:28,808 [1] DEBUG ServiceNameMap - Found assembly Operator Log Tool, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2021-02-23 04:26:28,809 [1] DEBUG ServiceNameMap - Searching OLT assembly Operator Log Tool, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null for IEventNotificationService
+2021-02-23 04:26:29,715 [1] DEBUG ServiceNameMap - Found assembly log4net, Version=1.2.13.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a
+2021-02-23 04:26:29,715 [1] DEBUG ServiceNameMap - Found assembly System.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2021-02-23 04:26:29,715 [1] DEBUG ServiceNameMap - Found assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 04:26:29,715 [1] DEBUG ServiceNameMap - Found assembly System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 04:26:29,715 [1] DEBUG ServiceNameMap - Found assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 04:26:29,715 [1] DEBUG ServiceNameMap - Found assembly Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2021-02-23 04:26:29,715 [1] DEBUG ServiceNameMap - Searching OLT assembly Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null for IEventNotificationService
+2021-02-23 04:26:29,741 [1] DEBUG ServiceNameMap - Found IEventNotificationService in Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2021-02-23 04:26:29,741 [1] DEBUG ServiceNameMap - Attempting to class that implements IEventNotificationService in Assemblies
+2021-02-23 04:26:29,741 [1] DEBUG ServiceNameMap - Found 33 assemblies to search for service implementation
+2021-02-23 04:26:29,741 [1] DEBUG ServiceNameMap - Found assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 04:26:29,741 [1] DEBUG ServiceNameMap - Found assembly Operator Log Tool, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2021-02-23 04:26:29,741 [1] DEBUG ServiceNameMap - Searching OLT assembly Operator Log Tool, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null for IEventNotificationService
+2021-02-23 04:26:29,742 [1] DEBUG ServiceNameMap - Found Com.Suncor.Olt.Client.Services.EventNotificationService implementing Com.Suncor.Olt.Common.Services.IEventNotificationService in Operator Log Tool, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2021-02-23 04:26:29,742 [1] DEBUG ServiceNameMap - Found assembly log4net, Version=1.2.13.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a
+2021-02-23 04:26:29,742 [1] DEBUG ServiceNameMap - Found assembly System.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2021-02-23 04:26:29,742 [1] DEBUG ServiceNameMap - Found assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 04:26:29,742 [1] DEBUG ServiceNameMap - Found assembly System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 04:26:29,742 [1] DEBUG ServiceNameMap - Found assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 04:26:29,742 [1] DEBUG ServiceNameMap - Found assembly Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2021-02-23 04:26:29,742 [1] DEBUG ServiceNameMap - Searching OLT assembly Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null for IEventNotificationService
+2021-02-23 04:26:29,742 [1] DEBUG ServiceNameMap - Found assembly System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 04:26:29,742 [1] DEBUG ServiceNameMap - Found assembly System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 04:26:29,742 [1] DEBUG ServiceNameMap - Found assembly System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2021-02-23 04:26:29,742 [1] DEBUG ServiceNameMap - Found assembly Infragistics2.Shared.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb
+2021-02-23 04:26:29,742 [1] DEBUG ServiceNameMap - Found assembly Infragistics2.Win.UltraWinGrid.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb
+2021-02-23 04:26:29,742 [1] DEBUG ServiceNameMap - Found assembly Infragistics2.Win.SupportDialogs.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb
+2021-02-23 04:26:29,742 [1] DEBUG ServiceNameMap - Found assembly Operator Log Tool.resources, Version=5.11.65533.0, Culture=en-US, PublicKeyToken=null
+2021-02-23 04:26:29,742 [1] DEBUG ServiceNameMap - Searching OLT assembly Operator Log Tool.resources, Version=5.11.65533.0, Culture=en-US, PublicKeyToken=null for IEventNotificationService
+2021-02-23 04:26:29,742 [1] DEBUG ServiceNameMap - Found assembly Operator Log Tool.resources, Version=5.11.65533.0, Culture=en, PublicKeyToken=null
+2021-02-23 04:26:29,742 [1] DEBUG ServiceNameMap - Searching OLT assembly Operator Log Tool.resources, Version=5.11.65533.0, Culture=en, PublicKeyToken=null for IEventNotificationService
+2021-02-23 04:26:29,742 [1] DEBUG ServiceNameMap - Found assembly Castle.Core, Version=3.2.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc
+2021-02-23 04:26:29,742 [1] DEBUG ServiceNameMap - Found assembly System.ServiceModel.Activation, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2021-02-23 04:26:29,742 [1] DEBUG ServiceNameMap - Found assembly System.Runtime.Serialization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 04:26:29,742 [1] DEBUG ServiceNameMap - Found assembly SMDiagnostics, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 04:26:29,743 [1] DEBUG ServiceNameMap - Found assembly System.ServiceModel.Internals, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2021-02-23 04:26:29,743 [1] DEBUG ServiceNameMap - Found assembly DevExpress.Data.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2021-02-23 04:26:29,743 [1] DEBUG ServiceNameMap - Found assembly DevExpress.XtraCharts.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2021-02-23 04:26:29,743 [1] DEBUG ServiceNameMap - Found assembly DevExpress.XtraReports.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2021-02-23 04:26:29,743 [1] DEBUG ServiceNameMap - Found assembly DevExpress.Printing.v13.2.Core, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2021-02-23 04:26:29,743 [1] DEBUG ServiceNameMap - Found assembly Com.Suncor.Olt.Reports, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2021-02-23 04:26:29,743 [1] DEBUG ServiceNameMap - Searching OLT assembly Com.Suncor.Olt.Reports, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null for IEventNotificationService
+2021-02-23 04:26:29,750 [1] DEBUG ServiceNameMap - Found assembly DevExpress.XtraEditors.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2021-02-23 04:26:29,750 [1] DEBUG ServiceNameMap - Found assembly DevExpress.Utils.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2021-02-23 04:26:29,750 [1] DEBUG ServiceNameMap - Found assembly Infragistics2.Win.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb
+2021-02-23 04:26:29,750 [1] DEBUG ServiceNameMap - Found assembly DevExpress.XtraTreeList.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2021-02-23 04:26:29,750 [1] DEBUG ServiceNameMap - Found assembly Infragistics2.Win.UltraWinExplorerBar.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb
+2021-02-23 04:26:29,750 [1] DEBUG ServiceNameMap - Found assembly Infragistics2.Win.UltraWinEditors.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb
+2021-02-23 04:26:29,750 [1] DEBUG ServiceNameMap - Found assembly Infragistics2.Win.UltraWinTabControl.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb
+2021-02-23 04:26:29,770 [1] DEBUG ServiceNameMap - Getting interface type for the service IEventNotificationService
+2021-02-23 04:26:29,770 [1] DEBUG ServiceNameMap - Found 34 assemblies to search.
+2021-02-23 04:26:29,770 [1] DEBUG ServiceNameMap - Found assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 04:26:29,770 [1] DEBUG ServiceNameMap - Found assembly Operator Log Tool, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2021-02-23 04:26:29,770 [1] DEBUG ServiceNameMap - Searching OLT assembly Operator Log Tool, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null for IEventNotificationService
+2021-02-23 04:26:29,772 [1] DEBUG ServiceNameMap - Found assembly log4net, Version=1.2.13.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a
+2021-02-23 04:26:29,772 [1] DEBUG ServiceNameMap - Found assembly System.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2021-02-23 04:26:29,772 [1] DEBUG ServiceNameMap - Found assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 04:26:29,772 [1] DEBUG ServiceNameMap - Found assembly System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 04:26:29,772 [1] DEBUG ServiceNameMap - Found assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 04:26:29,772 [1] DEBUG ServiceNameMap - Found assembly Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2021-02-23 04:26:29,772 [1] DEBUG ServiceNameMap - Searching OLT assembly Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null for IEventNotificationService
+2021-02-23 04:26:29,773 [1] DEBUG ServiceNameMap - Found IEventNotificationService in Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2021-02-23 04:26:29,773 [1] DEBUG OltServiceHostFactory - Adding add service endpoint for Com.Suncor.Olt.Common.Services.IEventNotificationService
+2021-02-23 04:26:29,773 [1] DEBUG OltServiceHostFactory - Adding alternate data contract serializer
+2021-02-23 04:26:29,774 [1] DEBUG OltServiceHostFactory - Adding service metadata behavior
+2021-02-23 04:26:29,774 [1] DEBUG OltServiceHostFactory - Adding service debug behavior
+2021-02-23 04:26:29,774 [1] DEBUG OltServiceHostFactory - Adding service throttling behavior
+2021-02-23 04:26:29,774 [1] DEBUG OltServiceHostFactory - Service Host created
+2021-02-23 04:26:29,774 [1] DEBUG AbstractEventNotificationEnabledServiceRegistry - Attempting to open Service Host: System.ServiceModel.ServiceHost
+2021-02-23 04:26:29,833 [1] INFO  AbstractEventNotificationEnabledServiceRegistry - Successfully created service host for event notification at net.tcp://10.9.21.6:9771/
+2021-02-23 04:30:36,054 [1] INFO  MainFormPresenter - User login information:
+Client URI: net.tcp://10.9.21.6:9771/
+User: [Id:9246] [Name:Superuserwbl1a1, John [superuserwbl1a1]]
+Shift: [Id:30] [Name:N - 20:00 to 08:00]
+Site: [Id:12] [Name:Wood Buffalo Laboratories]
+Role: [Id:186] [Name:Lab Supervisor]
+Assignment: [Id:2831] [Name:OS Lab Supervisor]
+Version: 5.11.65533.0
+Deployment: -
+OS Version: Microsoft Windows NT 6.1.7601 Service Pack 1
+
+2021-02-23 04:30:36,066 [1] INFO  RemoteEventRepeater - Hooking up service events to our remote event repeater methods.
+2021-02-23 04:30:36,210 [1] INFO  RemoteEventRepeater - Finished hooking up service events to our remote event repeater methods.
+2021-02-23 04:36:53,743 [1] DEBUG Program - Starting Operator Log Tool Smart Client
+2021-02-23 04:36:53,753 [1] DEBUG CurrentCulture - # of uiculture files found: 2.  Using default.
+2021-02-23 04:36:54,092 [1] INFO  WcfConfiguration - WCF configuration is as follows:
+2021-02-23 04:36:54,092 [1] INFO  WcfConfiguration - clientPorts: 9771,9772,9773,9774,9775,9776,9777,9778
+2021-02-23 04:36:54,092 [1] INFO  WcfConfiguration - clientHostNameOrIPAddress: 
+2021-02-23 04:36:54,092 [1] INFO  WcfConfiguration - receiveTimeout: 10
+2021-02-23 04:36:54,092 [1] INFO  WcfConfiguration - sendTimeout: 15
+2021-02-23 04:36:54,092 [1] INFO  WcfConfiguration - openTimeout: 2
+2021-02-23 04:36:54,092 [1] INFO  WcfConfiguration - closeTimeout: 2
+2021-02-23 04:36:54,093 [1] INFO  WcfConfiguration - maxBufferSize: 2147483647
+2021-02-23 04:36:54,093 [1] INFO  WcfConfiguration - maxBufferPoolSize: 524288
+2021-02-23 04:36:54,093 [1] INFO  WcfConfiguration - maxReceivedMessageSize: 2147483647
+2021-02-23 04:36:54,093 [1] INFO  WcfConfiguration - readerQuotasMaxStringContentLength: 2147483647
+2021-02-23 04:36:54,093 [1] INFO  WcfConfiguration - readerQuotasMaxDepth: 2147483647
+2021-02-23 04:36:54,093 [1] INFO  WcfConfiguration - readerQuotasMaxArrayLength: 2147483647
+2021-02-23 04:36:54,093 [1] INFO  WcfConfiguration - maxConcurrentCalls: 200
+2021-02-23 04:36:54,093 [1] INFO  WcfConfiguration - maxConcurrentInstances: 200
+2021-02-23 04:36:54,093 [1] INFO  WcfConfiguration - maxConcurrentSessions: 200
+2021-02-23 04:36:54,093 [1] INFO  WcfConfiguration - maxConnections: 5000
+2021-02-23 04:36:54,093 [1] INFO  WcfConfiguration - maxItemsInObjectGraph: 2147483647
+2021-02-23 04:36:54,093 [1] INFO  WcfConfiguration - clientServerBindingType: HttpBinaryEncoded
+2021-02-23 04:36:54,123 [1] INFO  NetworkUtilities - Number of IP Addresses found: 2
+2021-02-23 04:36:54,124 [1] INFO  NetworkUtilities - address: fe80::4d6:8f72:f3b9:7889%11
+2021-02-23 04:36:54,124 [1] INFO  NetworkUtilities - address: 10.9.21.6
+2021-02-23 04:36:54,124 [1] INFO  AbstractEventNotificationEnabledServiceRegistry - Attempting to create service host for event notification at net.tcp://10.9.21.6:9771/
+2021-02-23 04:36:54,146 [1] DEBUG OltServiceHostFactory - Tcp binding created.
+2021-02-23 04:36:54,149 [1] DEBUG ServiceNameMap - Attempting to find cached Service type IEventNotificationService
+2021-02-23 04:36:54,150 [1] DEBUG ServiceNameMap - Attempting to find Service type IEventNotificationService in Assemblies
+2021-02-23 04:36:54,151 [1] DEBUG ServiceNameMap - Getting interface type for the service IEventNotificationService
+2021-02-23 04:36:54,151 [1] DEBUG ServiceNameMap - Found 21 assemblies to search.
+2021-02-23 04:36:54,151 [1] DEBUG ServiceNameMap - Found assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 04:36:54,151 [1] DEBUG ServiceNameMap - Found assembly Operator Log Tool, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2021-02-23 04:36:54,151 [1] DEBUG ServiceNameMap - Searching OLT assembly Operator Log Tool, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null for IEventNotificationService
+2021-02-23 04:36:54,783 [1] DEBUG ServiceNameMap - Found assembly log4net, Version=1.2.13.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a
+2021-02-23 04:36:54,784 [1] DEBUG ServiceNameMap - Found assembly System.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2021-02-23 04:36:54,784 [1] DEBUG ServiceNameMap - Found assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 04:36:54,784 [1] DEBUG ServiceNameMap - Found assembly System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 04:36:54,784 [1] DEBUG ServiceNameMap - Found assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 04:36:54,784 [1] DEBUG ServiceNameMap - Found assembly Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2021-02-23 04:36:54,784 [1] DEBUG ServiceNameMap - Searching OLT assembly Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null for IEventNotificationService
+2021-02-23 04:36:54,808 [1] DEBUG ServiceNameMap - Found IEventNotificationService in Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2021-02-23 04:36:54,808 [1] DEBUG ServiceNameMap - Attempting to class that implements IEventNotificationService in Assemblies
+2021-02-23 04:36:54,808 [1] DEBUG ServiceNameMap - Found 33 assemblies to search for service implementation
+2021-02-23 04:36:54,808 [1] DEBUG ServiceNameMap - Found assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 04:36:54,808 [1] DEBUG ServiceNameMap - Found assembly Operator Log Tool, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2021-02-23 04:36:54,808 [1] DEBUG ServiceNameMap - Searching OLT assembly Operator Log Tool, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null for IEventNotificationService
+2021-02-23 04:36:54,809 [1] DEBUG ServiceNameMap - Found Com.Suncor.Olt.Client.Services.EventNotificationService implementing Com.Suncor.Olt.Common.Services.IEventNotificationService in Operator Log Tool, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2021-02-23 04:36:54,809 [1] DEBUG ServiceNameMap - Found assembly log4net, Version=1.2.13.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a
+2021-02-23 04:36:54,809 [1] DEBUG ServiceNameMap - Found assembly System.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2021-02-23 04:36:54,809 [1] DEBUG ServiceNameMap - Found assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 04:36:54,809 [1] DEBUG ServiceNameMap - Found assembly System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 04:36:54,809 [1] DEBUG ServiceNameMap - Found assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 04:36:54,809 [1] DEBUG ServiceNameMap - Found assembly Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2021-02-23 04:36:54,809 [1] DEBUG ServiceNameMap - Searching OLT assembly Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null for IEventNotificationService
+2021-02-23 04:36:54,809 [1] DEBUG ServiceNameMap - Found assembly System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 04:36:54,809 [1] DEBUG ServiceNameMap - Found assembly System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 04:36:54,809 [1] DEBUG ServiceNameMap - Found assembly System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2021-02-23 04:36:54,809 [1] DEBUG ServiceNameMap - Found assembly Infragistics2.Shared.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb
+2021-02-23 04:36:54,809 [1] DEBUG ServiceNameMap - Found assembly Infragistics2.Win.UltraWinGrid.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb
+2021-02-23 04:36:54,809 [1] DEBUG ServiceNameMap - Found assembly Infragistics2.Win.SupportDialogs.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb
+2021-02-23 04:36:54,809 [1] DEBUG ServiceNameMap - Found assembly Operator Log Tool.resources, Version=5.11.65533.0, Culture=en-US, PublicKeyToken=null
+2021-02-23 04:36:54,810 [1] DEBUG ServiceNameMap - Searching OLT assembly Operator Log Tool.resources, Version=5.11.65533.0, Culture=en-US, PublicKeyToken=null for IEventNotificationService
+2021-02-23 04:36:54,810 [1] DEBUG ServiceNameMap - Found assembly Operator Log Tool.resources, Version=5.11.65533.0, Culture=en, PublicKeyToken=null
+2021-02-23 04:36:54,810 [1] DEBUG ServiceNameMap - Searching OLT assembly Operator Log Tool.resources, Version=5.11.65533.0, Culture=en, PublicKeyToken=null for IEventNotificationService
+2021-02-23 04:36:54,810 [1] DEBUG ServiceNameMap - Found assembly Castle.Core, Version=3.2.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc
+2021-02-23 04:36:54,810 [1] DEBUG ServiceNameMap - Found assembly System.ServiceModel.Activation, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2021-02-23 04:36:54,810 [1] DEBUG ServiceNameMap - Found assembly System.Runtime.Serialization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 04:36:54,810 [1] DEBUG ServiceNameMap - Found assembly SMDiagnostics, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 04:36:54,810 [1] DEBUG ServiceNameMap - Found assembly System.ServiceModel.Internals, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2021-02-23 04:36:54,810 [1] DEBUG ServiceNameMap - Found assembly DevExpress.Data.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2021-02-23 04:36:54,810 [1] DEBUG ServiceNameMap - Found assembly DevExpress.XtraCharts.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2021-02-23 04:36:54,810 [1] DEBUG ServiceNameMap - Found assembly DevExpress.XtraReports.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2021-02-23 04:36:54,810 [1] DEBUG ServiceNameMap - Found assembly DevExpress.Printing.v13.2.Core, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2021-02-23 04:36:54,810 [1] DEBUG ServiceNameMap - Found assembly Com.Suncor.Olt.Reports, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2021-02-23 04:36:54,810 [1] DEBUG ServiceNameMap - Searching OLT assembly Com.Suncor.Olt.Reports, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null for IEventNotificationService
+2021-02-23 04:36:54,818 [1] DEBUG ServiceNameMap - Found assembly DevExpress.XtraEditors.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2021-02-23 04:36:54,818 [1] DEBUG ServiceNameMap - Found assembly DevExpress.Utils.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2021-02-23 04:36:54,818 [1] DEBUG ServiceNameMap - Found assembly Infragistics2.Win.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb
+2021-02-23 04:36:54,818 [1] DEBUG ServiceNameMap - Found assembly DevExpress.XtraTreeList.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2021-02-23 04:36:54,818 [1] DEBUG ServiceNameMap - Found assembly Infragistics2.Win.UltraWinExplorerBar.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb
+2021-02-23 04:36:54,818 [1] DEBUG ServiceNameMap - Found assembly Infragistics2.Win.UltraWinEditors.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb
+2021-02-23 04:36:54,818 [1] DEBUG ServiceNameMap - Found assembly Infragistics2.Win.UltraWinTabControl.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb
+2021-02-23 04:36:54,857 [1] DEBUG ServiceNameMap - Getting interface type for the service IEventNotificationService
+2021-02-23 04:36:54,857 [1] DEBUG ServiceNameMap - Found 34 assemblies to search.
+2021-02-23 04:36:54,857 [1] DEBUG ServiceNameMap - Found assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 04:36:54,857 [1] DEBUG ServiceNameMap - Found assembly Operator Log Tool, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2021-02-23 04:36:54,857 [1] DEBUG ServiceNameMap - Searching OLT assembly Operator Log Tool, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null for IEventNotificationService
+2021-02-23 04:36:54,859 [1] DEBUG ServiceNameMap - Found assembly log4net, Version=1.2.13.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a
+2021-02-23 04:36:54,859 [1] DEBUG ServiceNameMap - Found assembly System.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2021-02-23 04:36:54,859 [1] DEBUG ServiceNameMap - Found assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 04:36:54,859 [1] DEBUG ServiceNameMap - Found assembly System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 04:36:54,859 [1] DEBUG ServiceNameMap - Found assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 04:36:54,859 [1] DEBUG ServiceNameMap - Found assembly Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2021-02-23 04:36:54,859 [1] DEBUG ServiceNameMap - Searching OLT assembly Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null for IEventNotificationService
+2021-02-23 04:36:54,860 [1] DEBUG ServiceNameMap - Found IEventNotificationService in Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2021-02-23 04:36:54,860 [1] DEBUG OltServiceHostFactory - Adding add service endpoint for Com.Suncor.Olt.Common.Services.IEventNotificationService
+2021-02-23 04:36:54,860 [1] DEBUG OltServiceHostFactory - Adding alternate data contract serializer
+2021-02-23 04:36:54,861 [1] DEBUG OltServiceHostFactory - Adding service metadata behavior
+2021-02-23 04:36:54,861 [1] DEBUG OltServiceHostFactory - Adding service debug behavior
+2021-02-23 04:36:54,861 [1] DEBUG OltServiceHostFactory - Adding service throttling behavior
+2021-02-23 04:36:54,861 [1] DEBUG OltServiceHostFactory - Service Host created
+2021-02-23 04:36:54,861 [1] DEBUG AbstractEventNotificationEnabledServiceRegistry - Attempting to open Service Host: System.ServiceModel.ServiceHost
+2021-02-23 04:36:54,916 [1] INFO  AbstractEventNotificationEnabledServiceRegistry - Successfully created service host for event notification at net.tcp://10.9.21.6:9771/
+2021-02-23 04:38:05,898 [1] INFO  MainFormPresenter - User login information:
+Client URI: net.tcp://10.9.21.6:9771/
+User: [Id:9246] [Name:Superuserwbl1a1, John [superuserwbl1a1]]
+Shift: [Id:30] [Name:N - 20:00 to 08:00]
+Site: [Id:12] [Name:Wood Buffalo Laboratories]
+Role: [Id:186] [Name:Lab Supervisor]
+Assignment: [Id:2831] [Name:OS Lab Supervisor]
+Version: 5.11.65533.0
+Deployment: -
+OS Version: Microsoft Windows NT 6.1.7601 Service Pack 1
+
+2021-02-23 04:38:05,905 [1] INFO  RemoteEventRepeater - Hooking up service events to our remote event repeater methods.
+2021-02-23 04:38:06,000 [1] INFO  RemoteEventRepeater - Finished hooking up service events to our remote event repeater methods.
+2021-02-23 04:50:36,403 [1] DEBUG Program - Starting Operator Log Tool Smart Client
+2021-02-23 04:50:36,439 [1] DEBUG CurrentCulture - # of uiculture files found: 2.  Using default.
+2021-02-23 04:50:37,006 [1] INFO  WcfConfiguration - WCF configuration is as follows:
+2021-02-23 04:50:37,006 [1] INFO  WcfConfiguration - clientPorts: 9771,9772,9773,9774,9775,9776,9777,9778
+2021-02-23 04:50:37,006 [1] INFO  WcfConfiguration - clientHostNameOrIPAddress: 
+2021-02-23 04:50:37,006 [1] INFO  WcfConfiguration - receiveTimeout: 10
+2021-02-23 04:50:37,006 [1] INFO  WcfConfiguration - sendTimeout: 15
+2021-02-23 04:50:37,006 [1] INFO  WcfConfiguration - openTimeout: 2
+2021-02-23 04:50:37,007 [1] INFO  WcfConfiguration - closeTimeout: 2
+2021-02-23 04:50:37,007 [1] INFO  WcfConfiguration - maxBufferSize: 2147483647
+2021-02-23 04:50:37,007 [1] INFO  WcfConfiguration - maxBufferPoolSize: 524288
+2021-02-23 04:50:37,007 [1] INFO  WcfConfiguration - maxReceivedMessageSize: 2147483647
+2021-02-23 04:50:37,007 [1] INFO  WcfConfiguration - readerQuotasMaxStringContentLength: 2147483647
+2021-02-23 04:50:37,007 [1] INFO  WcfConfiguration - readerQuotasMaxDepth: 2147483647
+2021-02-23 04:50:37,007 [1] INFO  WcfConfiguration - readerQuotasMaxArrayLength: 2147483647
+2021-02-23 04:50:37,007 [1] INFO  WcfConfiguration - maxConcurrentCalls: 200
+2021-02-23 04:50:37,007 [1] INFO  WcfConfiguration - maxConcurrentInstances: 200
+2021-02-23 04:50:37,007 [1] INFO  WcfConfiguration - maxConcurrentSessions: 200
+2021-02-23 04:50:37,007 [1] INFO  WcfConfiguration - maxConnections: 5000
+2021-02-23 04:50:37,007 [1] INFO  WcfConfiguration - maxItemsInObjectGraph: 2147483647
+2021-02-23 04:50:37,007 [1] INFO  WcfConfiguration - clientServerBindingType: HttpBinaryEncoded
+2021-02-23 04:50:37,394 [1] INFO  NetworkUtilities - Number of IP Addresses found: 2
+2021-02-23 04:50:37,395 [1] INFO  NetworkUtilities - address: fe80::4d6:8f72:f3b9:7889%11
+2021-02-23 04:50:37,395 [1] INFO  NetworkUtilities - address: 10.9.21.6
+2021-02-23 04:50:37,395 [1] INFO  AbstractEventNotificationEnabledServiceRegistry - Attempting to create service host for event notification at net.tcp://10.9.21.6:9771/
+2021-02-23 04:50:37,428 [1] DEBUG OltServiceHostFactory - Tcp binding created.
+2021-02-23 04:50:37,431 [1] DEBUG ServiceNameMap - Attempting to find cached Service type IEventNotificationService
+2021-02-23 04:50:37,433 [1] DEBUG ServiceNameMap - Attempting to find Service type IEventNotificationService in Assemblies
+2021-02-23 04:50:37,433 [1] DEBUG ServiceNameMap - Getting interface type for the service IEventNotificationService
+2021-02-23 04:50:37,433 [1] DEBUG ServiceNameMap - Found 21 assemblies to search.
+2021-02-23 04:50:37,433 [1] DEBUG ServiceNameMap - Found assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 04:50:37,433 [1] DEBUG ServiceNameMap - Found assembly Operator Log Tool, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2021-02-23 04:50:37,434 [1] DEBUG ServiceNameMap - Searching OLT assembly Operator Log Tool, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null for IEventNotificationService
+2021-02-23 04:50:38,397 [1] DEBUG ServiceNameMap - Found assembly log4net, Version=1.2.13.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a
+2021-02-23 04:50:38,397 [1] DEBUG ServiceNameMap - Found assembly System.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2021-02-23 04:50:38,397 [1] DEBUG ServiceNameMap - Found assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 04:50:38,397 [1] DEBUG ServiceNameMap - Found assembly System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 04:50:38,397 [1] DEBUG ServiceNameMap - Found assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 04:50:38,397 [1] DEBUG ServiceNameMap - Found assembly Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2021-02-23 04:50:38,397 [1] DEBUG ServiceNameMap - Searching OLT assembly Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null for IEventNotificationService
+2021-02-23 04:50:38,422 [1] DEBUG ServiceNameMap - Found IEventNotificationService in Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2021-02-23 04:50:38,422 [1] DEBUG ServiceNameMap - Attempting to class that implements IEventNotificationService in Assemblies
+2021-02-23 04:50:38,422 [1] DEBUG ServiceNameMap - Found 33 assemblies to search for service implementation
+2021-02-23 04:50:38,422 [1] DEBUG ServiceNameMap - Found assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 04:50:38,422 [1] DEBUG ServiceNameMap - Found assembly Operator Log Tool, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2021-02-23 04:50:38,422 [1] DEBUG ServiceNameMap - Searching OLT assembly Operator Log Tool, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null for IEventNotificationService
+2021-02-23 04:50:38,423 [1] DEBUG ServiceNameMap - Found Com.Suncor.Olt.Client.Services.EventNotificationService implementing Com.Suncor.Olt.Common.Services.IEventNotificationService in Operator Log Tool, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2021-02-23 04:50:38,423 [1] DEBUG ServiceNameMap - Found assembly log4net, Version=1.2.13.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a
+2021-02-23 04:50:38,423 [1] DEBUG ServiceNameMap - Found assembly System.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2021-02-23 04:50:38,423 [1] DEBUG ServiceNameMap - Found assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 04:50:38,423 [1] DEBUG ServiceNameMap - Found assembly System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 04:50:38,423 [1] DEBUG ServiceNameMap - Found assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 04:50:38,423 [1] DEBUG ServiceNameMap - Found assembly Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2021-02-23 04:50:38,423 [1] DEBUG ServiceNameMap - Searching OLT assembly Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null for IEventNotificationService
+2021-02-23 04:50:38,423 [1] DEBUG ServiceNameMap - Found assembly System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 04:50:38,424 [1] DEBUG ServiceNameMap - Found assembly System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 04:50:38,424 [1] DEBUG ServiceNameMap - Found assembly System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2021-02-23 04:50:38,424 [1] DEBUG ServiceNameMap - Found assembly Infragistics2.Shared.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb
+2021-02-23 04:50:38,424 [1] DEBUG ServiceNameMap - Found assembly Infragistics2.Win.UltraWinGrid.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb
+2021-02-23 04:50:38,424 [1] DEBUG ServiceNameMap - Found assembly Infragistics2.Win.SupportDialogs.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb
+2021-02-23 04:50:38,424 [1] DEBUG ServiceNameMap - Found assembly Operator Log Tool.resources, Version=5.11.65533.0, Culture=en-US, PublicKeyToken=null
+2021-02-23 04:50:38,424 [1] DEBUG ServiceNameMap - Searching OLT assembly Operator Log Tool.resources, Version=5.11.65533.0, Culture=en-US, PublicKeyToken=null for IEventNotificationService
+2021-02-23 04:50:38,424 [1] DEBUG ServiceNameMap - Found assembly Operator Log Tool.resources, Version=5.11.65533.0, Culture=en, PublicKeyToken=null
+2021-02-23 04:50:38,424 [1] DEBUG ServiceNameMap - Searching OLT assembly Operator Log Tool.resources, Version=5.11.65533.0, Culture=en, PublicKeyToken=null for IEventNotificationService
+2021-02-23 04:50:38,424 [1] DEBUG ServiceNameMap - Found assembly Castle.Core, Version=3.2.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc
+2021-02-23 04:50:38,424 [1] DEBUG ServiceNameMap - Found assembly System.ServiceModel.Activation, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2021-02-23 04:50:38,424 [1] DEBUG ServiceNameMap - Found assembly System.Runtime.Serialization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 04:50:38,424 [1] DEBUG ServiceNameMap - Found assembly SMDiagnostics, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 04:50:38,424 [1] DEBUG ServiceNameMap - Found assembly System.ServiceModel.Internals, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2021-02-23 04:50:38,424 [1] DEBUG ServiceNameMap - Found assembly DevExpress.Data.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2021-02-23 04:50:38,424 [1] DEBUG ServiceNameMap - Found assembly DevExpress.XtraCharts.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2021-02-23 04:50:38,424 [1] DEBUG ServiceNameMap - Found assembly DevExpress.XtraReports.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2021-02-23 04:50:38,424 [1] DEBUG ServiceNameMap - Found assembly DevExpress.Printing.v13.2.Core, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2021-02-23 04:50:38,424 [1] DEBUG ServiceNameMap - Found assembly Com.Suncor.Olt.Reports, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2021-02-23 04:50:38,424 [1] DEBUG ServiceNameMap - Searching OLT assembly Com.Suncor.Olt.Reports, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null for IEventNotificationService
+2021-02-23 04:50:38,432 [1] DEBUG ServiceNameMap - Found assembly DevExpress.XtraEditors.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2021-02-23 04:50:38,432 [1] DEBUG ServiceNameMap - Found assembly DevExpress.Utils.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2021-02-23 04:50:38,432 [1] DEBUG ServiceNameMap - Found assembly Infragistics2.Win.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb
+2021-02-23 04:50:38,432 [1] DEBUG ServiceNameMap - Found assembly DevExpress.XtraTreeList.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2021-02-23 04:50:38,432 [1] DEBUG ServiceNameMap - Found assembly Infragistics2.Win.UltraWinExplorerBar.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb
+2021-02-23 04:50:38,432 [1] DEBUG ServiceNameMap - Found assembly Infragistics2.Win.UltraWinEditors.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb
+2021-02-23 04:50:38,432 [1] DEBUG ServiceNameMap - Found assembly Infragistics2.Win.UltraWinTabControl.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb
+2021-02-23 04:50:38,450 [1] DEBUG ServiceNameMap - Getting interface type for the service IEventNotificationService
+2021-02-23 04:50:38,450 [1] DEBUG ServiceNameMap - Found 34 assemblies to search.
+2021-02-23 04:50:38,450 [1] DEBUG ServiceNameMap - Found assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 04:50:38,450 [1] DEBUG ServiceNameMap - Found assembly Operator Log Tool, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2021-02-23 04:50:38,450 [1] DEBUG ServiceNameMap - Searching OLT assembly Operator Log Tool, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null for IEventNotificationService
+2021-02-23 04:50:38,452 [1] DEBUG ServiceNameMap - Found assembly log4net, Version=1.2.13.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a
+2021-02-23 04:50:38,452 [1] DEBUG ServiceNameMap - Found assembly System.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2021-02-23 04:50:38,452 [1] DEBUG ServiceNameMap - Found assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 04:50:38,452 [1] DEBUG ServiceNameMap - Found assembly System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 04:50:38,452 [1] DEBUG ServiceNameMap - Found assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2021-02-23 04:50:38,452 [1] DEBUG ServiceNameMap - Found assembly Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2021-02-23 04:50:38,452 [1] DEBUG ServiceNameMap - Searching OLT assembly Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null for IEventNotificationService
+2021-02-23 04:50:38,453 [1] DEBUG ServiceNameMap - Found IEventNotificationService in Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2021-02-23 04:50:38,453 [1] DEBUG OltServiceHostFactory - Adding add service endpoint for Com.Suncor.Olt.Common.Services.IEventNotificationService
+2021-02-23 04:50:38,453 [1] DEBUG OltServiceHostFactory - Adding alternate data contract serializer
+2021-02-23 04:50:38,454 [1] DEBUG OltServiceHostFactory - Adding service metadata behavior
+2021-02-23 04:50:38,454 [1] DEBUG OltServiceHostFactory - Adding service debug behavior
+2021-02-23 04:50:38,454 [1] DEBUG OltServiceHostFactory - Adding service throttling behavior
+2021-02-23 04:50:38,454 [1] DEBUG OltServiceHostFactory - Service Host created
+2021-02-23 04:50:38,454 [1] DEBUG AbstractEventNotificationEnabledServiceRegistry - Attempting to open Service Host: System.ServiceModel.ServiceHost
+2021-02-23 04:50:38,529 [1] INFO  AbstractEventNotificationEnabledServiceRegistry - Successfully created service host for event notification at net.tcp://10.9.21.6:9771/

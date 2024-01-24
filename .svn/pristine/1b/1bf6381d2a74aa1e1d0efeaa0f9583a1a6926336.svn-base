@@ -1,0 +1,94 @@
+IF EXISTS (SELECT * FROM sysobjects WHERE type = 'P' AND name = 'InsertActionItemDefinition')
+	BEGIN
+		DROP  Procedure  InsertActionItemDefinition
+	END
+
+GO
+
+CREATE Procedure [dbo].[InsertActionItemDefinition]
+	(
+	@Id bigint Output,
+	@Name varchar (80), --RITM0370841 : Modified by Vibhor changed size from 50 to 80
+	@BusinessCategoryId bigint = NULL, 
+	@ActionItemDefinitionStatusId bigint, 
+	@PriorityId bigint, 
+	@ScheduleId bigint, 
+	@RequiresApproval bit,
+	@Active bit,
+	@ResponseRequired bit,
+	@SapOperationId bigint = NULL,
+	@Description VARCHAR(MAX),
+	@SourceId int,
+	@OperationalModeId int, 
+	@LastModifiedUserId bigint, 
+	@LastModifiedDateTime datetime,
+	@CreatedByUserId bigint, 
+	@CreatedDateTime datetime,
+	@AssignmentId bigint = NULL,
+	@CreateAnActionItemForEachFunctionalLocation bit,
+	@GN75BId BIGINT = NULL,
+	@GN75BId1 BIGINT = NULL,  
+	@GN75BId2 BIGINT = NULL, 
+	@visGroupsStartingWith varchar(100)
+	)
+AS
+
+INSERT INTO 
+	[ActionItemDefinition]
+	(
+	[Name],
+	[BusinessCategoryId], 
+	[ActionItemDefinitionStatusId], 
+	[PriorityId],
+	[ScheduleId], 
+	[RequiresApproval],
+	[Active],
+	[ResponseRequired],
+	[SapOperationId],
+	[Description],
+	[SourceId], 
+	[OperationalModeId],
+	[LastModifiedUserId], 	
+	[LastModifiedDateTime],
+	[CreatedByUserId], 	
+	[CreatedDateTime],
+	[WorkAssignmentId],
+	[CreateAnActionItemForEachFunctionalLocation],
+	[GN75BId],  
+	[GN75BId1],  
+	[GN75BId2],
+	[VisibilityGroupIDs]
+	)
+VALUES
+	(
+	@Name, 
+	@BusinessCategoryId, 
+	@ActionItemDefinitionStatusId, 
+	@PriorityId,
+	@ScheduleId, 	
+	@RequiresApproval,
+	@Active,
+	@ResponseRequired,
+	@SapOperationId,
+	@Description,
+	@SourceId, 
+	@OperationalModeId,
+	@LastModifiedUserId, 
+	@LastModifiedDateTime,
+	@CreatedByUserId,
+	@CreatedDateTime,
+	@AssignmentId,
+	@CreateAnActionItemForEachFunctionalLocation,
+	@GN75BId, 
+	@GN75BId1,
+	@GN75BId2,
+	@visGroupsStartingWith
+	)
+	
+SET @Id= SCOPE_IDENTITY() 
+GO
+
+GRANT EXEC ON InsertActionItemDefinition TO PUBLIC
+GO
+
+

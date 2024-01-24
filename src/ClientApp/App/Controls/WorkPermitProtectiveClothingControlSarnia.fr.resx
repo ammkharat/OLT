@@ -1,0 +1,368 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="paperCoverallsCheckBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="paperCoverallsCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>368, 19</value>
+  </data>
+  <data name="paperCoverallsCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>174, 17</value>
+  </data>
+  <data name="paperCoverallsCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="paperCoverallsCheckBox.Text" xml:space="preserve">
+    <value>Fire Retardant Paper Coveralls</value>
+  </data>
+  <data name="&gt;&gt;paperCoverallsCheckBox.Name" xml:space="preserve">
+    <value>paperCoverallsCheckBox</value>
+  </data>
+  <data name="&gt;&gt;paperCoverallsCheckBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Common.Controls.OltCheckBox, Com.Suncor.Olt.Common, Version=3.6.9876.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;paperCoverallsCheckBox.Parent" xml:space="preserve">
+    <value>specialProtectiveClothingTypeGroupBox</value>
+  </data>
+  <data name="&gt;&gt;paperCoverallsCheckBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="otherDescriptonTextBoxCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>566, 47</value>
+  </data>
+  <data name="otherDescriptonTextBoxCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>209, 23</value>
+  </data>
+  <data name="otherDescriptonTextBoxCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;otherDescriptonTextBoxCheckBox.Name" xml:space="preserve">
+    <value>otherDescriptonTextBoxCheckBox</value>
+  </data>
+  <data name="&gt;&gt;otherDescriptonTextBoxCheckBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.Controls.OtherCheckBoxTextBox, Com.Suncor.Olt.Client, Version=3.6.9876.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;otherDescriptonTextBoxCheckBox.Parent" xml:space="preserve">
+    <value>specialProtectiveClothingTypeGroupBox</value>
+  </data>
+  <data name="&gt;&gt;otherDescriptonTextBoxCheckBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="acidClothingTypeIDComboBox.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="acidClothingTypeIDComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>654, 18</value>
+  </data>
+  <data name="acidClothingTypeIDComboBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>57, 21</value>
+  </data>
+  <data name="acidClothingTypeIDComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;acidClothingTypeIDComboBox.Name" xml:space="preserve">
+    <value>acidClothingTypeIDComboBox</value>
+  </data>
+  <data name="&gt;&gt;acidClothingTypeIDComboBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Common.Controls.OltComboBox, Com.Suncor.Olt.Common, Version=3.6.9876.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;acidClothingTypeIDComboBox.Parent" xml:space="preserve">
+    <value>specialProtectiveClothingTypeGroupBox</value>
+  </data>
+  <data name="&gt;&gt;acidClothingTypeIDComboBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="naCheckBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="naCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>792, 50</value>
+  </data>
+  <data name="naCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 17</value>
+  </data>
+  <data name="naCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="naCheckBox.Text" xml:space="preserve">
+    <value>S.O.</value>
+  </data>
+  <data name="&gt;&gt;naCheckBox.Name" xml:space="preserve">
+    <value>naCheckBox</value>
+  </data>
+  <data name="&gt;&gt;naCheckBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Common.Controls.OltCheckBox, Com.Suncor.Olt.Common, Version=3.6.9876.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;naCheckBox.Parent" xml:space="preserve">
+    <value>specialProtectiveClothingTypeGroupBox</value>
+  </data>
+  <data name="&gt;&gt;naCheckBox.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="acidClothingCheckBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="acidClothingCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>566, 19</value>
+  </data>
+  <data name="acidClothingCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>88, 17</value>
+  </data>
+  <data name="acidClothingCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="acidClothingCheckBox.Text" xml:space="preserve">
+    <value>Acid Clothing</value>
+  </data>
+  <data name="&gt;&gt;acidClothingCheckBox.Name" xml:space="preserve">
+    <value>acidClothingCheckBox</value>
+  </data>
+  <data name="&gt;&gt;acidClothingCheckBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Common.Controls.OltCheckBox, Com.Suncor.Olt.Common, Version=3.6.9876.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;acidClothingCheckBox.Parent" xml:space="preserve">
+    <value>specialProtectiveClothingTypeGroupBox</value>
+  </data>
+  <data name="&gt;&gt;acidClothingCheckBox.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="causticWearCheckBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="causticWearCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>258, 19</value>
+  </data>
+  <data name="causticWearCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>90, 17</value>
+  </data>
+  <data name="causticWearCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="causticWearCheckBox.Text" xml:space="preserve">
+    <value>Caustic Wear</value>
+  </data>
+  <data name="&gt;&gt;causticWearCheckBox.Name" xml:space="preserve">
+    <value>causticWearCheckBox</value>
+  </data>
+  <data name="&gt;&gt;causticWearCheckBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Common.Controls.OltCheckBox, Com.Suncor.Olt.Common, Version=3.6.9876.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;causticWearCheckBox.Parent" xml:space="preserve">
+    <value>specialProtectiveClothingTypeGroupBox</value>
+  </data>
+  <data name="&gt;&gt;causticWearCheckBox.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="rainCoatCheckBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="rainCoatCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>21, 19</value>
+  </data>
+  <data name="rainCoatCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 17</value>
+  </data>
+  <data name="rainCoatCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="rainCoatCheckBox.Text" xml:space="preserve">
+    <value>Rain Coat</value>
+  </data>
+  <data name="&gt;&gt;rainCoatCheckBox.Name" xml:space="preserve">
+    <value>rainCoatCheckBox</value>
+  </data>
+  <data name="&gt;&gt;rainCoatCheckBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Common.Controls.OltCheckBox, Com.Suncor.Olt.Common, Version=3.6.9876.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;rainCoatCheckBox.Parent" xml:space="preserve">
+    <value>specialProtectiveClothingTypeGroupBox</value>
+  </data>
+  <data name="&gt;&gt;rainCoatCheckBox.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="rainPantsCheckBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="rainPantsCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>135, 19</value>
+  </data>
+  <data name="rainPantsCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 17</value>
+  </data>
+  <data name="rainPantsCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="rainPantsCheckBox.Text" xml:space="preserve">
+    <value>Rain Pants</value>
+  </data>
+  <data name="&gt;&gt;rainPantsCheckBox.Name" xml:space="preserve">
+    <value>rainPantsCheckBox</value>
+  </data>
+  <data name="&gt;&gt;rainPantsCheckBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Common.Controls.OltCheckBox, Com.Suncor.Olt.Common, Version=3.6.9876.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;rainPantsCheckBox.Parent" xml:space="preserve">
+    <value>specialProtectiveClothingTypeGroupBox</value>
+  </data>
+  <data name="&gt;&gt;rainPantsCheckBox.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="specialProtectiveClothingTypeGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="specialProtectiveClothingTypeGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>842, 76</value>
+  </data>
+  <data name="specialProtectiveClothingTypeGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="specialProtectiveClothingTypeGroupBox.Text" xml:space="preserve">
+    <value>Protective Clothing</value>
+  </data>
+  <data name="&gt;&gt;specialProtectiveClothingTypeGroupBox.Name" xml:space="preserve">
+    <value>specialProtectiveClothingTypeGroupBox</value>
+  </data>
+  <data name="&gt;&gt;specialProtectiveClothingTypeGroupBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Common.Controls.OltGroupBox, Com.Suncor.Olt.Common, Version=3.6.9876.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;specialProtectiveClothingTypeGroupBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;specialProtectiveClothingTypeGroupBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>844, 79</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>WorkPermitProtectiveClothingControlSarnia</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.UserControl, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+</root>

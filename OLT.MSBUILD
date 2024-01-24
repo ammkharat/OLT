@@ -1,0 +1,385 @@
+<Project DefaultTargets="DevBuild" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+
+  <!-- See this include file -->
+  <Import Project="olt.include.msbuild" />
+  <Import Project="olt.db.msbuild"/>
+  <Import Project="olt.deployment.msbuild" />
+  <Import Project="olt.deployment.client.msbuild" />
+  <Import Project="tools\CustomTasks\MSBuildExtensionPack\MSBuild.ExtensionPack.tasks" />
+  <Import Project="Tools\CustomTasks\OLT.CustomTasks\CustomTasks.Targets" />
+  <Import Project="$(ProductionBuildFilePath)" Condition="Exists('$(ProductionBuildFilePath)')"/>
+
+  <UsingTask AssemblyFile="tools\CustomTasks\assemblyinfotask.dll" TaskName="AssemblyInfo" />
+  
+  <Target Name="CleanSweep" >
+	  <ItemGroup>
+		  <BuildOutputFiles Include="$(SolutionDir)\src\**\bin\$(Configuration)\**" />
+	  </ItemGroup>
+
+	  <Delete Files="@(BuildOutputFiles)" />
+  </Target>
+
+
+  <!-- Note: named 'CleanAll' to not conflict with the Clean target in the project files -->
+  <Target Name="CleanAll" >
+    <CreateItem Include="**\*.csproj"
+                Exclude="FunctionalTests\**\*.csproj;LoggingClient\**\*.csproj;LoggingService\**\*.csproj">
+      <Output TaskParameter="Include"
+              ItemName="AllProjects"/>
+    </CreateItem>
+
+    <MSBuild Projects="@(AllProjects)" Targets="Clean" Properties="BuildInParallel=true;Configuration=$(Configuration)" />
+  </Target>
+
+  <!-- Build all tests in all projects -->
+  <Target Name="CompileTests" DependsOnTargets="ParseVersionNumber;CopyGlobalAssemblyTemplateFile">
+    
+	<!-- This is for infragistics. It needs an empty licenses.licx file to build. -->
+	<Copy SourceFiles="$(SolutionDir)\licenses.licx" DestinationFolder="$(SolutionDir)\src\ClientApp\App\Properties" />
+	
+	<CreateItem Include="**\*.csproj" Exclude="FunctionalTests\**\*.csproj;LoggingClient\**\*.csproj;LoggingService\**\*.csproj">
+      <Output TaskParameter="Include"
+              ItemName="AllProjects"/>
+    </CreateItem>
+
+
+    <MSBuild Projects="@(AllProjects)" Targets="Build" Properties="BuildInParallel=true;WarningLevel=1"/>
+    <CallTarget Targets="FlushCache" Condition=" '$(IsBuildServer)' != 'true' "/>
+	<CallTarget Targets="CopyRemoteServices;CopySAPHandlerFiles" />
+    <CallTarget Targets="CopyCITestWebsite" />
+  </Target>
+
+  <Target Name="ParseVersionNumber">
+    <VersionParser FullBuildNumber="$(BuildNumber)">
+      <Output TaskParameter="Major" PropertyName="MajorVersion"/>
+      <Output TaskParameter="Minor" PropertyName="MinorVersion"/>
+      <Output TaskParameter="Build" PropertyName="BuildVersion"/>
+    </VersionParser>
+
+    <Message Text="MajorVersion: $(MajorVersion)" />
+    <Message Text="MinorVersion: $(MinorVersion)" />
+    <Message Text="BuildVersion: $(BuildVersion)" />
+  </Target>
+  
+  <Target Name="CopyGlobalAssemblyTemplateFile" DependsOnTargets="ParseVersionNumber">
+    <Copy SourceFiles="$(SolutionDir)\src\GlobalAssemblyInfo.Template.cs" DestinationFiles="$(SolutionDir)\src\GlobalAssemblyInfo.cs" />
+
+		  <AssemblyInfo AssemblyInfoFiles="$(SolutionDir)\src\GlobalAssemblyInfo.cs"
+                  AssemblyMajorVersion="$(MajorVersion)"
+                  AssemblyMinorVersion="$(MinorVersion)"
+                  AssemblyBuildNumber="$(BuildVersion)"
+                  AssemblyRevision="$(AssemblyRevision)"
+                  AssemblyBuildNumberType="$(AssemblyBuildNumberType)"
+                  AssemblyBuildNumberFormat="$(AssemblyBuildNumberFormat)"
+                  AssemblyRevisionType="$(AssemblyRevisionType)"
+                  AssemblyRevisionFormat="$(AssemblyRevisionFormat)"
+                  AssemblyFileMajorVersion="$(MajorVersion)"
+                  AssemblyFileMinorVersion="$(MinorVersion)"
+                  AssemblyFileBuildNumber="$(BuildVersion)"
+                  AssemblyFileRevision="$(AssemblyFileRevision)"
+                  AssemblyFileBuildNumberType="$(AssemblyFileBuildNumberType)"
+                  AssemblyFileBuildNumberFormat="$(AssemblyFileBuildNumberFormat)"
+                  AssemblyFileRevisionType="$(AssemblyFileRevisionType)"
+                  AssemblyFileRevisionFormat="$(AssemblyFileRevisionFormat)"
+                  ComVisible="$(AssemblyComVisible)"
+                  AssemblyGuid="$(AssemblyGuid)"
+                  AssemblyCompany="$(AssemblyCompany)"
+                  AssemblyConfiguration="$(AssemblyConfiguration)"
+                  AssemblyCopyright="$(AssemblyCopyright)"
+                  AssemblyCulture="$(AssemblyCulture)"
+                  AssemblyDescription="$(AssemblyDescription)"
+                  AssemblyProduct="$(ApplicationName)"
+                  AssemblyTitle="$(AssemblyTitle)"
+                  AssemblyIncludeSigningInformation="$(AssemblyIncludeSigningInformation)" 
+                  AssemblyDelaySign="$(AssemblyDelaySign)"
+                  AssemblyKeyFile="$(AssemblyKeyFile)"
+                  AssemblyKeyName="$(AssemblyKeyName)">
+      <Output TaskParameter="MaxAssemblyVersion" PropertyName="MaxAssemblyVersion"/>
+      <Output TaskParameter="MaxAssemblyFileVersion" PropertyName="MaxAssemblyFileVersion"/>
+    </AssemblyInfo>
+	
+  </Target>
+  
+  <Target Name="UnitTest" DependsOnTargets="CompileTests">
+	<CallTarget Targets="UnitTest-Only" />
+  </Target>
+
+  <Target Name="CreateUnitTestList">
+    <Delete Files="$(UnitTestOutputFile)"/>
+	<ItemGroup>
+		<UnitTests Include="**\bin\$(Configuration)\*.UnitTest.dll" />
+	</ItemGroup>
+  </Target>
+  
+  <Target Name="UnitTest-Only" DependsOnTargets="CopyNUnitAddins;CreateUnitTestList">
+    <Exec Command="$(NUnitDirectory)\nunit-console.exe %(UnitTests.FullPath) /exclude:Database,Integration /xml:$(UnitTestOutputFile) /nologo" />
+  </Target>
+  
+  <Target Name="CreatePersistenceTestList">
+	<Delete Files="$(PersistenceTestOutputFile)"/>
+	<ItemGroup>
+		<PersistenceTests Include="**\bin\$(Configuration)\*Remote.UnitTest.dll" />
+	</ItemGroup>
+    <Message Text="Tests: @(PersistenceTests)" />
+  </Target>
+  
+
+  <Target Name="PersistenceTest-Only" DependsOnTargets="CopyNUnitAddins;CreatePersistenceTestList">
+	<Exec Command="$(NUnitDirectory)\nunit-console.exe %(PersistenceTests.FullPath) /include:Database /xml:$(PersistenceTestOutputFile) /nologo" />
+  </Target>
+  
+  <Target Name="PersistenceTest" DependsOnTargets="CompileTests;DbInit" Condition="'$(ApplicationEnvironment)' == 'Developer'">
+	<CallTarget Targets="PersistenceTest-Only" />
+  </Target>
+
+  <Target Name="CreatePHDTestList">
+    <Delete Files="$(IntegrationTestPlantHistorianOutputFile)"/>
+	<ItemGroup>
+		<PHDTests Include="src\Integration\Test\Integration.Test\bin\$(Configuration)\Suncor.Olt.IntegrationHandlers.IntegrationTest.dll" />
+	</ItemGroup>
+    <Message Text="Tests: @(PHDTests)" />
+  </Target>
+
+  
+  <Target Name="CopyNUnitAddins" Condition="'$(IsBuildServer)' == 'true'" >
+	<ItemGroup>
+	  <NUnitAddinFiles Include="$(teamcity_dotnet_nunitaddin)-2.6.1.*" />
+	</ItemGroup>
+
+	<!-- needed by teamcity for including tests in build results when using the nunit console -->
+	<MakeDir Directories="$(NUnitDirectory)\addins" />
+	<Copy SourceFiles="@(NUnitAddinFiles)" DestinationFolder="$(NUnitDirectory)\addins" />
+  </Target>
+  
+  <Target Name="IntegrationTest-PlantHistorian-Only" DependsOnTargets="CopyNUnitAddins;CreatePHDTestList">
+    <!-- run plant historian tests in 32-bit because the phdapi.dll is a 32-bit wrapper. -->
+	<Exec Command="$(NUnitDirectory)\nunit-console-x86.exe %(PHDTests.FullPath) /exclude:Integration /include:IntegrationPlantHistorian /xml:$(IntegrationTestPlantHistorianOutputFile) /nologo" />
+  </Target>
+  
+  <Target Name="IntegrationTest-PlantHistorian" DependsOnTargets="CompileTests;DbInit" Condition="'$(ApplicationEnvironment)' == 'Developer'">
+    <CallTarget Targets="IntegrationTest-PlantHistorian-Only" />
+  </Target>
+
+  <Target Name="CreateIntegrationTestList">
+    <Delete Files="$(IntegrationTestOutputFile)"/>
+	<ItemGroup>
+		<IntegrationTests Include="**\bin\$(Configuration)\*IntegrationTest.dll" />
+	</ItemGroup>
+    <Message Text="Tests: @(IntegrationTests)" />
+  </Target>
+  
+  <Target Name="IntegrationTest-Only" DependsOnTargets="CopyNUnitAddins;CreateIntegrationTestList" >
+	<Exec Command="$(NUnitDirectory)\nunit-console.exe %(IntegrationTests.FullPath) /exclude:IntegrationPlantHistorian /include:Integration /xml:$(IntegrationTestOutputFile) /nologo" />
+  </Target>
+  
+  <Target Name="IntegrationTest" DependsOnTargets="CompileTests;DbInit" Condition="'$(ApplicationEnvironment)' == 'Developer'">
+	<CallTarget Targets="IntegrationTest-Only" />
+  </Target>
+
+  <Target Name="Test" DependsOnTargets="UnitTest;PersistenceTest;IntegrationTest;IntegrationTest-PlantHistorian"/>
+
+  <Target Name="CopyDevExpressFrenchResourceFiles">
+    <!-- Copy all French satellite assemblies to Client -->
+    <CreateItem Include="$(SolutionDir)\lib\fr\*.dll">
+      <Output TaskParameter="Include" ItemName="DevXFrenchResources" />
+    </CreateItem>
+    <Copy SourceFiles="@(DevXFrenchResources)" DestinationFolder="$(ClientExecDirectory)\fr" SkipUnchangedFiles="true" />
+  </Target>
+
+  <Target Name="CleanupDevExpressFiles">
+    <!-- remove all the non French ones that get put in auto-magically by DevExpress -->
+    <RemoveDir Directories="$(ClientExecDirectory)\de;$(ClientExecDirectory)\es;$(ClientExecDirectory)\ja;$(ClientExecDirectory)\ru" />
+    <!-- remove all dev express and infragistics xml files-->
+    <ItemGroup>
+      <XmlFiles Include="$(ClientExecDirectory)\DevExpress*.xml;$(ClientExecDirectory)\Infragistics2*.xml" />
+    </ItemGroup>
+    <Delete Files="@(XmlFiles)" />
+
+  </Target>
+  
+  <!-- Generic Target that can be called from a .csproj file -->
+  <Target Name="CreateConfigFile">
+	<MSBuild Projects="$(MSBuildProjectFile)"
+             Targets="UnTokenizeConfigTemplateFiles"
+             Properties="FilesToDetokenize=$(MSBuildProjectDirectory)\App.config.xml"
+             ContinueOnError="false" />
+  </Target>
+  
+  <Target Name="UnTokenizeConfigTemplateFiles">
+    <!-- convert the property to an itemgroup -->
+	<ItemGroup>
+		<FilesToDetokenise Include="$(FilesToDetokenize)" />
+	</ItemGroup>
+	
+	<MSBuild.ExtensionPack.FileSystem.Detokenise 
+							TaskAction="Analyse" 
+							TargetFiles="@(FilesToDetokenise)" 
+							ReplacementValues="@(TokenValues)"
+							DisplayFiles="true" />
+    <Copy SourceFiles="@(FilesToDetokenise)"
+          DestinationFiles="@(FilesToDetokenise->'%(RootDir)%(Directory)%(Filename)')" SkipUnchangedFiles="false" >
+		  <Output TaskParameter="DestinationFiles" ItemName="UnTokenizedConfigurationFile" />
+	</Copy>
+	<MSBuild.ExtensionPack.FileSystem.Detokenise 
+							TaskAction="Detokenise" 
+							TargetFiles="@(UnTokenizedConfigurationFile)" 
+							ReplacementValues="@(TokenValues)"
+							ForceWrite="true"/>
+  </Target>
+
+  <Target Name="CreateSAPHandlersWebConfigFiles" >
+	<MSBuild Projects="$(MSBuildProjectFile)"
+             Targets="UnTokenizeConfigTemplateFiles"
+             Properties="FilesToDetokenize=$(SAPHandlersDirectory)\SAPHandlerWeb\Web.config.xml"
+             ContinueOnError="false" />
+  </Target>
+  
+  <Target Name="CreateWebAppConfigFiles">
+	<MSBuild Projects="$(MSBuildProjectFile)"
+             Targets="UnTokenizeConfigTemplateFiles"
+             Properties="FilesToDetokenize=$(RemoteDirectory)\WebSite\Web.Config.xml"
+             ContinueOnError="false" />
+  </Target>
+  
+  <Target Name="CreateActionItemSchedulerAppConfigFiles">
+	<MSBuild Projects="$(MSBuildProjectFile)"
+             Targets="UnTokenizeConfigTemplateFiles"
+             Properties="FilesToDetokenize=$(SchedulerDirectory)\App\RemoteApp.ActionItem.Scheduler\App.config.xml"
+             ContinueOnError="false" />
+
+  </Target>
+
+  <Target Name="CreateLogSchedulerAppConfigFiles" >
+	<MSBuild Projects="$(MSBuildProjectFile)"
+             Targets="UnTokenizeConfigTemplateFiles"
+             Properties="FilesToDetokenize=$(SchedulerDirectory)\App\RemoteApp.Log.Scheduler\App.config.xml"
+             ContinueOnError="false" />
+  </Target>
+  
+  <Target Name="CreateShiftSchedulerAppConfigFiles" >
+	<MSBuild Projects="$(MSBuildProjectFile)"
+             Targets="UnTokenizeConfigTemplateFiles"
+             Properties="FilesToDetokenize=$(SchedulerDirectory)\App\RemoteApp.Shift.Scheduler\App.config.xml"
+             ContinueOnError="false" />
+  </Target>
+  
+  <Target Name="CreateProcessSchedulerAppConfigFiles" >
+	<MSBuild Projects="$(MSBuildProjectFile)"
+             Targets="UnTokenizeConfigTemplateFiles"
+             Properties="FilesToDetokenize=$(SchedulerDirectory)\App\RemoteApp.OLTProcess.Scheduler\App.config.xml"
+             ContinueOnError="false" />
+  </Target>
+
+  <Target Name="CreateTargetSchedulerAppConfigFiles" >
+	<MSBuild Projects="$(MSBuildProjectFile)"
+             Targets="UnTokenizeConfigTemplateFiles"
+             Properties="FilesToDetokenize=$(SchedulerDirectory)\App\RemoteApp.Target.Scheduler\App.config.xml"
+             ContinueOnError="false" />
+  </Target>
+
+  <Target Name="CreateRestrictionSchedulerAppConfigFiles" >
+	<MSBuild Projects="$(MSBuildProjectFile)"
+             Targets="UnTokenizeConfigTemplateFiles"
+             Properties="FilesToDetokenize=$(SchedulerDirectory)\App\RemoteApp.Restriction.Scheduler\App.config.xml"
+             ContinueOnError="false" />
+  </Target>
+
+  <Target Name="CreateLabAlertSchedulerAppConfigFiles" >
+	<MSBuild Projects="$(MSBuildProjectFile)"
+             Targets="UnTokenizeConfigTemplateFiles"
+             Properties="FilesToDetokenize=$(SchedulerDirectory)\App\RemoteApp.LabAlert.Scheduler\App.config.xml"
+             ContinueOnError="false" />
+  </Target>
+
+  <Target Name="CopyRemoteServices" >
+    <Message Text="Copying Remote Services from $(RemoteServiceDLLFileLocation) to $(RemoteDirectory)\WebSite\Bin" />
+    <CreateItem Include="$(RemoteServiceDLLFileLocation)\**\*.dll;$(RemoteServiceDLLFileLocation)\*.pdb">
+      <Output
+          TaskParameter="Include"
+          ItemName="RemoteServicesFiles"/>
+    </CreateItem>
+    <Copy SourceFiles="@(RemoteServicesFiles)"
+          DestinationFolder="$(RemoteDirectory)\WebSite\Bin\%(RecursiveDir)" SkipUnchangedFiles="true" />
+  </Target>
+
+  <Target Name="CopySAPHandlerFiles">
+    <CreateItem Include="$(SolutionDir)\src\SAPHandlers\Integration.Handlers\bin\$(Configuration)\**\*.dll;$(SolutionDir)\src\SAPHandlers\Integration.Handlers\bin\$(Configuration)\*.pdb">
+      <Output
+          TaskParameter="Include"
+          ItemName="RemoteSAPHandlersFiles"/>
+    </CreateItem>
+    <Copy SourceFiles="@(RemoteSAPHandlersFiles)"
+          DestinationFolder="$(SAPHandlersDirectory)\SAPHandlerWeb\Bin\%(RecursiveDir)" SkipUnchangedFiles="true"/>
+  </Target>
+  
+  <Target Name="CopyCITestWebsite" Condition="$(TestRemoteServicesWebsiteDirectory) != '' And $(TestSapHandlersWebsiteDirectory) != ''">
+    <ItemGroup>
+      <RemoteServicesWebsiteFiles Include="src\RemoteApp\WebSite\**\*.*"/>
+    </ItemGroup>
+    <Copy
+      SourceFiles="@(RemoteServicesWebsiteFiles)"
+      DestinationFiles="@(RemoteServicesWebsiteFiles->'$(TestRemoteServicesWebsiteDirectory)\%(RecursiveDir)%(Filename)%(Extension)')"
+      SkipUnchangedFiles="true"
+    />
+    <ItemGroup>
+      <SapHandlersWebsiteFiles Include="src\SAPHandlers\SAPHandlerWeb\**\*.*"/>
+    </ItemGroup>
+    <Copy
+      SourceFiles="@(SapHandlersWebsiteFiles)"
+      DestinationFiles="@(SapHandlersWebsiteFiles->'$(TestSapHandlersWebsiteDirectory)\%(RecursiveDir)%(Filename)%(Extension)')"
+      SkipUnchangedFiles="true"
+    />
+  </Target>
+  
+  <Target Name="GenerateInfragisticsStronglyTypedResourceFiles">
+    <GenerateResource Sources="$(ProjectDir)Localization\InfragisticsStringResources.txt" OutputResources="$(ProjectDir)Localization\InfragisticsStringResources.resx" StronglyTypedClassName="InfragisticsStringResources" StronglyTypedLanguage="C#" StronglyTypedNamespace="Com.Suncor.Olt.Client.Localization" StronglyTypedFilename="$(ProjectDir)Localization\InfragisticsStringResources.Designer.cs" PublicClass="true">
+      <Output TaskParameter="OutputResources" ItemName="Resources" />
+    </GenerateResource>
+    <GenerateResource Sources="$(ProjectDir)Localization\InfragisticsStringResources.fr.txt" OutputResources="$(ProjectDir)Localization\InfragisticsStringResources.fr.resx" StronglyTypedClassName="InfragisticsStringResources_fr" StronglyTypedLanguage="C#" StronglyTypedNamespace="Com.Suncor.Olt.Client.Localization" StronglyTypedFilename="$(ProjectDir)Localization\InfragisticsStringResources.fr.Designer.cs" PublicClass="true">
+      <Output TaskParameter="OutputResources" ItemName="Resources" />
+    </GenerateResource>
+  </Target>
+  
+  <Target Name="GenerateStronglyTypedResourceFiles">
+
+    <GenerateResource Sources="$(ProjectDir)Localization\RendererStringResources.txt" OutputResources="$(ProjectDir)Localization\RendererStringResources.resx" StronglyTypedLanguage="C#" StronglyTypedNamespace="Com.Suncor.Olt.Common.Localization" 
+						StronglyTypedFilename="$(ProjectDir)Localization\RendererStringResources.Designer.cs" 
+						StronglyTypedClassName="RendererStringResources"
+						PublicClass="true">
+      <Output TaskParameter="OutputResources" ItemName="Resources" />
+    </GenerateResource>
+    <GenerateResource Sources="$(ProjectDir)Localization\RendererStringResources.fr.txt" OutputResources="$(ProjectDir)Localization\RendererStringResources.fr.resx" StronglyTypedLanguage="C#" StronglyTypedNamespace="Com.Suncor.Olt.Common.Localization" 
+						StronglyTypedFilename="$(ProjectDir)Localization\RendererStringResources.fr.Designer.cs" StronglyTypedClassName="RendererStringResources_fr" PublicClass="true">
+      <Output TaskParameter="OutputResources" ItemName="Resources" />
+    </GenerateResource>
+
+   <GenerateResource Sources="$(ProjectDir)Localization\StringResources.txt" OutputResources="$(ProjectDir)Localization\StringResources.resx" StronglyTypedLanguage="C#" StronglyTypedNamespace="Com.Suncor.Olt.Common.Localization" StronglyTypedFilename="$(ProjectDir)Localization\StringResources.Designer.cs" 
+							StronglyTypedClassName="StringResources" PublicClass="true">
+      <Output TaskParameter="OutputResources" ItemName="Resources" />
+    </GenerateResource>
+    <GenerateResource Sources="$(ProjectDir)Localization\StringResources.fr.txt" OutputResources="$(ProjectDir)Localization\StringResources.fr.resx" StronglyTypedLanguage="C#" StronglyTypedNamespace="Com.Suncor.Olt.Common.Localization" StronglyTypedFilename="$(ProjectDir)Localization\StringResources.fr.Designer.cs" 
+	StronglyTypedClassName="StringResources_fr" PublicClass="true">
+      <Output TaskParameter="OutputResources" ItemName="Resources" />
+    </GenerateResource>
+
+    <GenerateResource Sources="$(ProjectDir)Localization\LocaleSpecificFormatPatternResources.txt" OutputResources="$(ProjectDir)Localization\LocaleSpecificFormatPatternResources.resx" StronglyTypedClassName="LocaleSpecificFormatPatternResources" StronglyTypedLanguage="C#" StronglyTypedNamespace="Com.Suncor.Olt.Common.Localization" StronglyTypedFilename="$(ProjectDir)Localization\LocaleSpecificFormatPatternResources.Designer.cs" PublicClass="true">
+      <Output TaskParameter="OutputResources" ItemName="Resources" />
+    </GenerateResource>
+    <GenerateResource Sources="$(ProjectDir)Localization\LocaleSpecificFormatPatternResources.fr.txt" OutputResources="$(ProjectDir)Localization\LocaleSpecificFormatPatternResources.fr.resx" StronglyTypedClassName="LocaleSpecificFormatPatternResources_fr" StronglyTypedLanguage="C#" StronglyTypedNamespace="Com.Suncor.Olt.Common.Localization" StronglyTypedFilename="$(ProjectDir)Localization\LocaleSpecificFormatPatternResources.fr.Designer.cs" PublicClass="true">
+      <Output TaskParameter="OutputResources" ItemName="Resources" />
+    </GenerateResource>
+  </Target>
+  
+  <Target Name="FlushCache">
+<!--    <Couchbase Username="Administrator" Password="pass@word1" BucketName="$(CachingBucket)" Url="$(CouchbaseServer)" RamQuota="$(CouchbaseRamQuota)" /> -->
+  </Target> 
+  
+  <Target Name="WithoutIntegration">
+    <CallTarget Targets="UnitTest;DbInit;PersistenceTest;CreateClickOnceManifests" />
+  </Target>
+  
+  <Target Name="DevBuild">
+    <CallTarget Targets="UnitTest;PersistenceTest;IntegrationTest;IntegrationTest-PlantHistorian;CreateClickOnceManifests" />
+  </Target>
+
+</Project>

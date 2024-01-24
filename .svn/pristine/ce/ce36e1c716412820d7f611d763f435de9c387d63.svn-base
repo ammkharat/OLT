@@ -1,0 +1,62 @@
+using System.Collections.Generic;
+using Com.Suncor.Olt.Client.Controls.Page;
+using Com.Suncor.Olt.Common.Domain;
+using Com.Suncor.Olt.Common.Domain.WorkPermit;
+using Com.Suncor.Olt.Common.Localization;
+using Com.Suncor.Olt.Common.Services;
+using Com.Suncor.Olt.Common.Utility;
+using Com.Suncor.Olt.Reports;
+using Com.Suncor.Olt.Reports.Adapters;
+
+namespace Com.Suncor.Olt.Client.Reports.Printing
+{
+    public class ConfinedSpaceMudsPrintActions : PrintActions<ConfinedSpaceMuds, ConfinedSpaceMudsReport, ConfinedSpaceMudsReportAdapter>
+    {
+        private readonly IConfinedSpaceMudsPage page;
+        private readonly IConfinedSpaceMudsService service;
+
+        public ConfinedSpaceMudsPrintActions(IConfinedSpaceMudsPage page, IConfinedSpaceMudsService service)
+        {
+            this.page = page;
+            this.service = service;
+        }
+
+        protected override ConfinedSpaceMudsReport CreateSpecificReport()
+        {
+            return new ConfinedSpaceMudsReport();
+        }
+
+        protected override List<ConfinedSpaceMudsReportAdapter> CreateReportAdapter(ConfinedSpaceMuds domainObject)
+        {
+            ConfinedSpaceMudsReportAdapter adapter = new ConfinedSpaceMudsReportAdapter(domainObject);
+            return new List<ConfinedSpaceMudsReportAdapter> {adapter};
+        }
+
+        public override string ReportTitle(ConfinedSpaceMuds domainObject)
+        {
+            return StringResources.ConfinedSpacePrintFormTitle;
+        }
+
+        public override void ShowNotAbleToPrintError()
+        {
+            page.DisplayInvalidPrintMessage(StringResources.WorkPermitPrintFailureMessageBoxText);
+        }
+
+        protected override ReportPrintPreference CreateReportPrintPreference(ConfinedSpaceMudsReport report, UserPrintPreference userPrintPreferences)
+        {
+            // should print two copies of the Confined Space document, and force-single sided because AST on on the back-side of the page.
+            return new ReportPrintPreference(report, 2, false, true, userPrintPreferences.PrinterName, userPrintPreferences.ShowPrintDialog);
+        }
+
+        public override void AfterPrintAction(ConfinedSpaceMuds confinedSpace)
+        {
+            if (confinedSpace.ConfinedSpaceStatus.Id != ConfinedSpaceStatusMuds.Issued.Id)
+            {
+                confinedSpace.ConfinedSpaceStatus = ConfinedSpaceStatusMuds.Issued;
+                confinedSpace.LastModifiedBy = ClientSession.GetUserContext().User;
+                confinedSpace.LastModifiedDateTime = Clock.Now;
+                ServiceEventDispatcher.CallServiceAndDispatchImmediateEventNotification(service.Update, confinedSpace);
+            }
+        }
+    }
+}

@@ -1,0 +1,1248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="errorProvider.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>fr</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="scheduleTypesComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 15</value>
+  </data>
+  <data name="scheduleTypesComboBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>253, 21</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="scheduleTypesComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;scheduleTypesComboBox.Name" xml:space="preserve">
+    <value>scheduleTypesComboBox</value>
+  </data>
+  <data name="&gt;&gt;scheduleTypesComboBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltComboBox, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;scheduleTypesComboBox.Parent" xml:space="preserve">
+    <value>typeGroupBox</value>
+  </data>
+  <data name="&gt;&gt;scheduleTypesComboBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="typeGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="typeGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>287, 40</value>
+  </data>
+  <data name="typeGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="typeGroupBox.Text" xml:space="preserve">
+    <value>Schedule Type</value>
+  </data>
+  <data name="&gt;&gt;typeGroupBox.Name" xml:space="preserve">
+    <value>typeGroupBox</value>
+  </data>
+  <data name="&gt;&gt;typeGroupBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltGroupBox, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;typeGroupBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;typeGroupBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="frequencyGroupBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="everyShiftCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 41</value>
+  </data>
+  <data name="everyShiftCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>102, 20</value>
+  </data>
+  <data name="everyShiftCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="everyShiftCheckBox.Text" xml:space="preserve">
+    <value>Every Shift</value>
+  </data>
+  <data name="everyShiftCheckBox.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;everyShiftCheckBox.Name" xml:space="preserve">
+    <value>everyShiftCheckBox</value>
+  </data>
+  <data name="&gt;&gt;everyShiftCheckBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltCheckBox, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;everyShiftCheckBox.Parent" xml:space="preserve">
+    <value>frequencyGroupBox</value>
+  </data>
+  <data name="&gt;&gt;everyShiftCheckBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="unitLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="unitLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="unitLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>146, 20</value>
+  </data>
+  <data name="unitLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>25, 13</value>
+  </data>
+  <data name="unitLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="unitLabel.Text" xml:space="preserve">
+    <value>unit</value>
+  </data>
+  <data name="&gt;&gt;unitLabel.Name" xml:space="preserve">
+    <value>unitLabel</value>
+  </data>
+  <data name="&gt;&gt;unitLabel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;unitLabel.Parent" xml:space="preserve">
+    <value>frequencyGroupBox</value>
+  </data>
+  <data name="&gt;&gt;unitLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="frequencyUpDown.Location" type="System.Drawing.Point, System.Drawing">
+    <value>93, 18</value>
+  </data>
+  <data name="frequencyUpDown.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 20</value>
+  </data>
+  <data name="frequencyUpDown.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;frequencyUpDown.Name" xml:space="preserve">
+    <value>frequencyUpDown</value>
+  </data>
+  <data name="&gt;&gt;frequencyUpDown.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltNumericUpDown, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;frequencyUpDown.Parent" xml:space="preserve">
+    <value>frequencyGroupBox</value>
+  </data>
+  <data name="&gt;&gt;frequencyUpDown.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="oltLabel3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="oltLabel3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="oltLabel3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 20</value>
+  </data>
+  <data name="oltLabel3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 13</value>
+  </data>
+  <data name="oltLabel3.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="oltLabel3.Text" xml:space="preserve">
+    <value>Repeat every</value>
+  </data>
+  <data name="&gt;&gt;oltLabel3.Name" xml:space="preserve">
+    <value>oltLabel3</value>
+  </data>
+  <data name="&gt;&gt;oltLabel3.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;oltLabel3.Parent" xml:space="preserve">
+    <value>frequencyGroupBox</value>
+  </data>
+  <data name="&gt;&gt;oltLabel3.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="frequencyGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>467, 42</value>
+  </data>
+  <data name="frequencyGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>186, 67</value>
+  </data>
+  <data name="frequencyGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="frequencyGroupBox.Text" xml:space="preserve">
+    <value>Frequency</value>
+  </data>
+  <data name="&gt;&gt;frequencyGroupBox.Name" xml:space="preserve">
+    <value>frequencyGroupBox</value>
+  </data>
+  <data name="&gt;&gt;frequencyGroupBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltGroupBox, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;frequencyGroupBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;frequencyGroupBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="weeklyUpDown.Location" type="System.Drawing.Point, System.Drawing">
+    <value>93, 17</value>
+  </data>
+  <data name="weeklyUpDown.Size" type="System.Drawing.Size, System.Drawing">
+    <value>48, 20</value>
+  </data>
+  <data name="weeklyUpDown.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;weeklyUpDown.Name" xml:space="preserve">
+    <value>weeklyUpDown</value>
+  </data>
+  <data name="&gt;&gt;weeklyUpDown.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltNumericUpDown, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;weeklyUpDown.Parent" xml:space="preserve">
+    <value>weeklyGroupBox</value>
+  </data>
+  <data name="&gt;&gt;weeklyUpDown.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="recurringWeeklyFrequencyLabel2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="recurringWeeklyFrequencyLabel2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="recurringWeeklyFrequencyLabel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>147, 19</value>
+  </data>
+  <data name="recurringWeeklyFrequencyLabel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 13</value>
+  </data>
+  <data name="recurringWeeklyFrequencyLabel2.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="recurringWeeklyFrequencyLabel2.Text" xml:space="preserve">
+    <value>week(s) on</value>
+  </data>
+  <data name="&gt;&gt;recurringWeeklyFrequencyLabel2.Name" xml:space="preserve">
+    <value>recurringWeeklyFrequencyLabel2</value>
+  </data>
+  <data name="&gt;&gt;recurringWeeklyFrequencyLabel2.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;recurringWeeklyFrequencyLabel2.Parent" xml:space="preserve">
+    <value>weeklyGroupBox</value>
+  </data>
+  <data name="&gt;&gt;recurringWeeklyFrequencyLabel2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="recurringWeeklyFrequencyLabel1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="recurringWeeklyFrequencyLabel1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="recurringWeeklyFrequencyLabel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 19</value>
+  </data>
+  <data name="recurringWeeklyFrequencyLabel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 13</value>
+  </data>
+  <data name="recurringWeeklyFrequencyLabel1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="recurringWeeklyFrequencyLabel1.Text" xml:space="preserve">
+    <value>Repeat every</value>
+  </data>
+  <data name="&gt;&gt;recurringWeeklyFrequencyLabel1.Name" xml:space="preserve">
+    <value>recurringWeeklyFrequencyLabel1</value>
+  </data>
+  <data name="&gt;&gt;recurringWeeklyFrequencyLabel1.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;recurringWeeklyFrequencyLabel1.Parent" xml:space="preserve">
+    <value>weeklyGroupBox</value>
+  </data>
+  <data name="&gt;&gt;recurringWeeklyFrequencyLabel1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="saturdayCheckBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="saturdayCheckBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="saturdayCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>119, 62</value>
+  </data>
+  <data name="saturdayCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>42, 17</value>
+  </data>
+  <data name="saturdayCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="saturdayCheckBox.Text" xml:space="preserve">
+    <value>Sat</value>
+  </data>
+  <data name="&gt;&gt;saturdayCheckBox.Name" xml:space="preserve">
+    <value>saturdayCheckBox</value>
+  </data>
+  <data name="&gt;&gt;saturdayCheckBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltCheckBox, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;saturdayCheckBox.Parent" xml:space="preserve">
+    <value>weeklyGroupBox</value>
+  </data>
+  <data name="&gt;&gt;saturdayCheckBox.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="fridayCheckBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fridayCheckBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="fridayCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>69, 62</value>
+  </data>
+  <data name="fridayCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>38, 17</value>
+  </data>
+  <data name="fridayCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="fridayCheckBox.Text" xml:space="preserve">
+    <value>Fri</value>
+  </data>
+  <data name="&gt;&gt;fridayCheckBox.Name" xml:space="preserve">
+    <value>fridayCheckBox</value>
+  </data>
+  <data name="&gt;&gt;fridayCheckBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltCheckBox, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fridayCheckBox.Parent" xml:space="preserve">
+    <value>weeklyGroupBox</value>
+  </data>
+  <data name="&gt;&gt;fridayCheckBox.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="thursdayCheckBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="thursdayCheckBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="thursdayCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 62</value>
+  </data>
+  <data name="thursdayCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>42, 17</value>
+  </data>
+  <data name="thursdayCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="thursdayCheckBox.Text" xml:space="preserve">
+    <value>Thr</value>
+  </data>
+  <data name="&gt;&gt;thursdayCheckBox.Name" xml:space="preserve">
+    <value>thursdayCheckBox</value>
+  </data>
+  <data name="&gt;&gt;thursdayCheckBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltCheckBox, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;thursdayCheckBox.Parent" xml:space="preserve">
+    <value>weeklyGroupBox</value>
+  </data>
+  <data name="&gt;&gt;thursdayCheckBox.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="wednesdayCheckBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="wednesdayCheckBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="wednesdayCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>169, 43</value>
+  </data>
+  <data name="wednesdayCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>48, 17</value>
+  </data>
+  <data name="wednesdayCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="wednesdayCheckBox.Text" xml:space="preserve">
+    <value>Wed</value>
+  </data>
+  <data name="&gt;&gt;wednesdayCheckBox.Name" xml:space="preserve">
+    <value>wednesdayCheckBox</value>
+  </data>
+  <data name="&gt;&gt;wednesdayCheckBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltCheckBox, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;wednesdayCheckBox.Parent" xml:space="preserve">
+    <value>weeklyGroupBox</value>
+  </data>
+  <data name="&gt;&gt;wednesdayCheckBox.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="tuesdayCheckBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="tuesdayCheckBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="tuesdayCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>119, 43</value>
+  </data>
+  <data name="tuesdayCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 17</value>
+  </data>
+  <data name="tuesdayCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="tuesdayCheckBox.Text" xml:space="preserve">
+    <value>Tue</value>
+  </data>
+  <data name="&gt;&gt;tuesdayCheckBox.Name" xml:space="preserve">
+    <value>tuesdayCheckBox</value>
+  </data>
+  <data name="&gt;&gt;tuesdayCheckBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltCheckBox, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tuesdayCheckBox.Parent" xml:space="preserve">
+    <value>weeklyGroupBox</value>
+  </data>
+  <data name="&gt;&gt;tuesdayCheckBox.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="mondayCheckBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="mondayCheckBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="mondayCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>69, 43</value>
+  </data>
+  <data name="mondayCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>46, 17</value>
+  </data>
+  <data name="mondayCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="mondayCheckBox.Text" xml:space="preserve">
+    <value>Mon</value>
+  </data>
+  <data name="&gt;&gt;mondayCheckBox.Name" xml:space="preserve">
+    <value>mondayCheckBox</value>
+  </data>
+  <data name="&gt;&gt;mondayCheckBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltCheckBox, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;mondayCheckBox.Parent" xml:space="preserve">
+    <value>weeklyGroupBox</value>
+  </data>
+  <data name="&gt;&gt;mondayCheckBox.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="sundayCheckBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="sundayCheckBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="sundayCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 43</value>
+  </data>
+  <data name="sundayCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 17</value>
+  </data>
+  <data name="sundayCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="sundayCheckBox.Text" xml:space="preserve">
+    <value>Sun</value>
+  </data>
+  <data name="&gt;&gt;sundayCheckBox.Name" xml:space="preserve">
+    <value>sundayCheckBox</value>
+  </data>
+  <data name="&gt;&gt;sundayCheckBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltCheckBox, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;sundayCheckBox.Parent" xml:space="preserve">
+    <value>weeklyGroupBox</value>
+  </data>
+  <data name="&gt;&gt;sundayCheckBox.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="weeklyGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 111</value>
+  </data>
+  <data name="weeklyGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>287, 83</value>
+  </data>
+  <data name="weeklyGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="weeklyGroupBox.Text" xml:space="preserve">
+    <value>Weekly Recurrence Pattern</value>
+  </data>
+  <data name="&gt;&gt;weeklyGroupBox.Name" xml:space="preserve">
+    <value>weeklyGroupBox</value>
+  </data>
+  <data name="&gt;&gt;weeklyGroupBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltGroupBox, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;weeklyGroupBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;weeklyGroupBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="monthlyGroupBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="oltLabel2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="oltLabel2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="oltLabel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>166, 20</value>
+  </data>
+  <data name="oltLabel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>39, 13</value>
+  </data>
+  <data name="oltLabel2.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="oltLabel2.Text" xml:space="preserve">
+    <value>Day of</value>
+  </data>
+  <data name="&gt;&gt;oltLabel2.Name" xml:space="preserve">
+    <value>oltLabel2</value>
+  </data>
+  <data name="&gt;&gt;oltLabel2.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;oltLabel2.Parent" xml:space="preserve">
+    <value>monthlyGroupBox</value>
+  </data>
+  <data name="&gt;&gt;oltLabel2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="dayOfMonthComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>98, 17</value>
+  </data>
+  <data name="dayOfMonthComboBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>62, 21</value>
+  </data>
+  <data name="dayOfMonthComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;dayOfMonthComboBox.Name" xml:space="preserve">
+    <value>dayOfMonthComboBox</value>
+  </data>
+  <data name="&gt;&gt;dayOfMonthComboBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltComboBox, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;dayOfMonthComboBox.Parent" xml:space="preserve">
+    <value>monthlyGroupBox</value>
+  </data>
+  <data name="&gt;&gt;dayOfMonthComboBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="oltLabel1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="oltLabel1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="oltLabel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 20</value>
+  </data>
+  <data name="oltLabel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>76, 13</value>
+  </data>
+  <data name="oltLabel1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="oltLabel1.Text" xml:space="preserve">
+    <value>Repeat on the</value>
+  </data>
+  <data name="&gt;&gt;oltLabel1.Name" xml:space="preserve">
+    <value>oltLabel1</value>
+  </data>
+  <data name="&gt;&gt;oltLabel1.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;oltLabel1.Parent" xml:space="preserve">
+    <value>monthlyGroupBox</value>
+  </data>
+  <data name="&gt;&gt;oltLabel1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="dayOfWeekComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>275, 16</value>
+  </data>
+  <data name="dayOfWeekComboBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>66, 21</value>
+  </data>
+  <data name="dayOfWeekComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;dayOfWeekComboBox.Name" xml:space="preserve">
+    <value>dayOfWeekComboBox</value>
+  </data>
+  <data name="&gt;&gt;dayOfWeekComboBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltComboBox, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;dayOfWeekComboBox.Parent" xml:space="preserve">
+    <value>monthlyGroupBox</value>
+  </data>
+  <data name="&gt;&gt;dayOfWeekComboBox.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="weekOfMonthComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>207, 16</value>
+  </data>
+  <data name="weekOfMonthComboBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>62, 21</value>
+  </data>
+  <data name="weekOfMonthComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;weekOfMonthComboBox.Name" xml:space="preserve">
+    <value>weekOfMonthComboBox</value>
+  </data>
+  <data name="&gt;&gt;weekOfMonthComboBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltComboBox, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;weekOfMonthComboBox.Parent" xml:space="preserve">
+    <value>monthlyGroupBox</value>
+  </data>
+  <data name="&gt;&gt;weekOfMonthComboBox.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="decCheckBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="decCheckBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="decCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>266, 62</value>
+  </data>
+  <data name="decCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 17</value>
+  </data>
+  <data name="decCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="decCheckBox.Text" xml:space="preserve">
+    <value>Dec</value>
+  </data>
+  <data name="&gt;&gt;decCheckBox.Name" xml:space="preserve">
+    <value>decCheckBox</value>
+  </data>
+  <data name="&gt;&gt;decCheckBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltCheckBox, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;decCheckBox.Parent" xml:space="preserve">
+    <value>monthlyGroupBox</value>
+  </data>
+  <data name="&gt;&gt;decCheckBox.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="junCheckBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="junCheckBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="junCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>266, 43</value>
+  </data>
+  <data name="junCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>43, 17</value>
+  </data>
+  <data name="junCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="junCheckBox.Text" xml:space="preserve">
+    <value>Jun</value>
+  </data>
+  <data name="&gt;&gt;junCheckBox.Name" xml:space="preserve">
+    <value>junCheckBox</value>
+  </data>
+  <data name="&gt;&gt;junCheckBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltCheckBox, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;junCheckBox.Parent" xml:space="preserve">
+    <value>monthlyGroupBox</value>
+  </data>
+  <data name="&gt;&gt;junCheckBox.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="novCheckBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="novCheckBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="novCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>216, 62</value>
+  </data>
+  <data name="novCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 17</value>
+  </data>
+  <data name="novCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="novCheckBox.Text" xml:space="preserve">
+    <value>Nov</value>
+  </data>
+  <data name="&gt;&gt;novCheckBox.Name" xml:space="preserve">
+    <value>novCheckBox</value>
+  </data>
+  <data name="&gt;&gt;novCheckBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltCheckBox, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;novCheckBox.Parent" xml:space="preserve">
+    <value>monthlyGroupBox</value>
+  </data>
+  <data name="&gt;&gt;novCheckBox.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="mayCheckBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="mayCheckBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="mayCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>216, 43</value>
+  </data>
+  <data name="mayCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>46, 17</value>
+  </data>
+  <data name="mayCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="mayCheckBox.Text" xml:space="preserve">
+    <value>May</value>
+  </data>
+  <data name="&gt;&gt;mayCheckBox.Name" xml:space="preserve">
+    <value>mayCheckBox</value>
+  </data>
+  <data name="&gt;&gt;mayCheckBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltCheckBox, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;mayCheckBox.Parent" xml:space="preserve">
+    <value>monthlyGroupBox</value>
+  </data>
+  <data name="&gt;&gt;mayCheckBox.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="octCheckBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="octCheckBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="octCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>166, 62</value>
+  </data>
+  <data name="octCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>43, 17</value>
+  </data>
+  <data name="octCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="octCheckBox.Text" xml:space="preserve">
+    <value>Oct</value>
+  </data>
+  <data name="&gt;&gt;octCheckBox.Name" xml:space="preserve">
+    <value>octCheckBox</value>
+  </data>
+  <data name="&gt;&gt;octCheckBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltCheckBox, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;octCheckBox.Parent" xml:space="preserve">
+    <value>monthlyGroupBox</value>
+  </data>
+  <data name="&gt;&gt;octCheckBox.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="aprCheckBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="aprCheckBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="aprCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>166, 43</value>
+  </data>
+  <data name="aprCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>43, 17</value>
+  </data>
+  <data name="aprCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="aprCheckBox.Text" xml:space="preserve">
+    <value>Apr</value>
+  </data>
+  <data name="&gt;&gt;aprCheckBox.Name" xml:space="preserve">
+    <value>aprCheckBox</value>
+  </data>
+  <data name="&gt;&gt;aprCheckBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltCheckBox, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;aprCheckBox.Parent" xml:space="preserve">
+    <value>monthlyGroupBox</value>
+  </data>
+  <data name="&gt;&gt;aprCheckBox.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="sepCheckBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="sepCheckBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="sepCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>116, 62</value>
+  </data>
+  <data name="sepCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 17</value>
+  </data>
+  <data name="sepCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="sepCheckBox.Text" xml:space="preserve">
+    <value>Sep</value>
+  </data>
+  <data name="&gt;&gt;sepCheckBox.Name" xml:space="preserve">
+    <value>sepCheckBox</value>
+  </data>
+  <data name="&gt;&gt;sepCheckBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltCheckBox, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;sepCheckBox.Parent" xml:space="preserve">
+    <value>monthlyGroupBox</value>
+  </data>
+  <data name="&gt;&gt;sepCheckBox.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="marCheckBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="marCheckBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="marCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>116, 43</value>
+  </data>
+  <data name="marCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 17</value>
+  </data>
+  <data name="marCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="marCheckBox.Text" xml:space="preserve">
+    <value>Mar</value>
+  </data>
+  <data name="&gt;&gt;marCheckBox.Name" xml:space="preserve">
+    <value>marCheckBox</value>
+  </data>
+  <data name="&gt;&gt;marCheckBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltCheckBox, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;marCheckBox.Parent" xml:space="preserve">
+    <value>monthlyGroupBox</value>
+  </data>
+  <data name="&gt;&gt;marCheckBox.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="augCheckBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="augCheckBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="augCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>66, 62</value>
+  </data>
+  <data name="augCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 17</value>
+  </data>
+  <data name="augCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="augCheckBox.Text" xml:space="preserve">
+    <value>Aug</value>
+  </data>
+  <data name="&gt;&gt;augCheckBox.Name" xml:space="preserve">
+    <value>augCheckBox</value>
+  </data>
+  <data name="&gt;&gt;augCheckBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltCheckBox, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;augCheckBox.Parent" xml:space="preserve">
+    <value>monthlyGroupBox</value>
+  </data>
+  <data name="&gt;&gt;augCheckBox.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="febCheckBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="febCheckBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="febCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>66, 43</value>
+  </data>
+  <data name="febCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 17</value>
+  </data>
+  <data name="febCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="febCheckBox.Text" xml:space="preserve">
+    <value>Feb</value>
+  </data>
+  <data name="&gt;&gt;febCheckBox.Name" xml:space="preserve">
+    <value>febCheckBox</value>
+  </data>
+  <data name="&gt;&gt;febCheckBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltCheckBox, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;febCheckBox.Parent" xml:space="preserve">
+    <value>monthlyGroupBox</value>
+  </data>
+  <data name="&gt;&gt;febCheckBox.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="julCheckBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="julCheckBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="julCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 62</value>
+  </data>
+  <data name="julCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>39, 17</value>
+  </data>
+  <data name="julCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="julCheckBox.Text" xml:space="preserve">
+    <value>Jul</value>
+  </data>
+  <data name="&gt;&gt;julCheckBox.Name" xml:space="preserve">
+    <value>julCheckBox</value>
+  </data>
+  <data name="&gt;&gt;julCheckBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltCheckBox, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;julCheckBox.Parent" xml:space="preserve">
+    <value>monthlyGroupBox</value>
+  </data>
+  <data name="&gt;&gt;julCheckBox.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="janCheckBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="janCheckBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="janCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 43</value>
+  </data>
+  <data name="janCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>43, 17</value>
+  </data>
+  <data name="janCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="janCheckBox.Text" xml:space="preserve">
+    <value>Jan</value>
+  </data>
+  <data name="&gt;&gt;janCheckBox.Name" xml:space="preserve">
+    <value>janCheckBox</value>
+  </data>
+  <data name="&gt;&gt;janCheckBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltCheckBox, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;janCheckBox.Parent" xml:space="preserve">
+    <value>monthlyGroupBox</value>
+  </data>
+  <data name="&gt;&gt;janCheckBox.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="monthlyGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>293, 111</value>
+  </data>
+  <data name="monthlyGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>360, 83</value>
+  </data>
+  <data name="monthlyGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="monthlyGroupBox.Text" xml:space="preserve">
+    <value>Monthly Recurrence Pattern</value>
+  </data>
+  <data name="&gt;&gt;monthlyGroupBox.Name" xml:space="preserve">
+    <value>monthlyGroupBox</value>
+  </data>
+  <data name="&gt;&gt;monthlyGroupBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltGroupBox, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;monthlyGroupBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;monthlyGroupBox.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="timeRangePicker.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 15</value>
+  </data>
+  <data name="timeRangePicker.Size" type="System.Drawing.Size, System.Drawing">
+    <value>151, 46</value>
+  </data>
+  <data name="timeRangePicker.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;timeRangePicker.Name" xml:space="preserve">
+    <value>timeRangePicker</value>
+  </data>
+  <data name="&gt;&gt;timeRangePicker.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.Controls.TimeRangePicker, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;timeRangePicker.Parent" xml:space="preserve">
+    <value>timeRangeGroupBox</value>
+  </data>
+  <data name="&gt;&gt;timeRangePicker.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="timeRangeGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>293, 42</value>
+  </data>
+  <data name="timeRangeGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>168, 67</value>
+  </data>
+  <data name="timeRangeGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="timeRangeGroupBox.Text" xml:space="preserve">
+    <value>Repeat Time</value>
+  </data>
+  <data name="&gt;&gt;timeRangeGroupBox.Name" xml:space="preserve">
+    <value>timeRangeGroupBox</value>
+  </data>
+  <data name="&gt;&gt;timeRangeGroupBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltGroupBox, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;timeRangeGroupBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;timeRangeGroupBox.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="dateRangePicker.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="dateRangePicker.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 16</value>
+  </data>
+  <data name="dateRangePicker.Size" type="System.Drawing.Size, System.Drawing">
+    <value>281, 48</value>
+  </data>
+  <data name="dateRangePicker.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;dateRangePicker.Name" xml:space="preserve">
+    <value>dateRangePicker</value>
+  </data>
+  <data name="&gt;&gt;dateRangePicker.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.Controls.DateRangePicker, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;dateRangePicker.Parent" xml:space="preserve">
+    <value>dateRangeGroupBox</value>
+  </data>
+  <data name="&gt;&gt;dateRangePicker.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="dateRangeGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 42</value>
+  </data>
+  <data name="dateRangeGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>287, 67</value>
+  </data>
+  <data name="dateRangeGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="dateRangeGroupBox.Text" xml:space="preserve">
+    <value>Range of Recurrence</value>
+  </data>
+  <data name="&gt;&gt;dateRangeGroupBox.Name" xml:space="preserve">
+    <value>dateRangeGroupBox</value>
+  </data>
+  <data name="&gt;&gt;dateRangeGroupBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltGroupBox, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;dateRangeGroupBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;dateRangeGroupBox.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>655, 202</value>
+  </data>
+  <data name="&gt;&gt;errorProvider.Name" xml:space="preserve">
+    <value>errorProvider</value>
+  </data>
+  <data name="&gt;&gt;errorProvider.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ErrorProvider, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>SchedulePicker</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.UserControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+</root>

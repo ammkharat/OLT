@@ -1,0 +1,269 @@
+﻿using Com.Suncor.Olt.Client.OltControls;
+
+namespace Com.Suncor.Olt.Client.Forms
+{
+    partial class WorkPermitCloseWithStatusForm
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(WorkPermitCloseWithStatusForm));
+            this.cancelButton = new Com.Suncor.Olt.Client.OltControls.OltButton();
+            this.submitButton = new Com.Suncor.Olt.Client.OltControls.OltButton();
+            this.shiftLabel = new Com.Suncor.Olt.Client.OltControls.OltLabel();
+            this.commentsGroupBox = new Com.Suncor.Olt.Client.OltControls.OltGroupBox();
+            this.commentTextBox = new Com.Suncor.Olt.Client.OltControls.OltTextBox();
+            this.shiftGroupBox = new Com.Suncor.Olt.Client.OltControls.OltGroupBox();
+            this.lastModifiedData = new Com.Suncor.Olt.Client.OltControls.OltLastModifiedDateAuthorHeader();
+            this.detailsLabelLine = new Com.Suncor.Olt.Client.OltControls.OltLabelLine();
+            this.oltLabelLine1 = new Com.Suncor.Olt.Client.OltControls.OltLabelLine();
+            this.closeGroupBox = new Com.Suncor.Olt.Client.OltControls.OltGroupBox();
+            this.closeStatusComboBox = new Com.Suncor.Olt.Client.OltControls.OltComboBox();
+            this.descriptionTextBox = new Com.Suncor.Olt.Client.OltControls.OltTextBox();
+            this.errorProvider = new System.Windows.Forms.ErrorProvider(this.components);
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.buttonsPanel = new Com.Suncor.Olt.Client.OltControls.OltPanel();
+            this.mainPanel = new Com.Suncor.Olt.Client.OltControls.OltPanel();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.commentsGroupBox.SuspendLayout();
+            this.shiftGroupBox.SuspendLayout();
+            this.closeGroupBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).BeginInit();
+            this.tableLayoutPanel1.SuspendLayout();
+            this.buttonsPanel.SuspendLayout();
+            this.mainPanel.SuspendLayout();
+            this.tableLayoutPanel2.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // cancelButton
+            // 
+            resources.ApplyResources(this.cancelButton, "cancelButton");
+            this.errorProvider.SetError(this.cancelButton, resources.GetString("cancelButton.Error"));
+            this.errorProvider.SetIconAlignment(this.cancelButton, ((System.Windows.Forms.ErrorIconAlignment)(resources.GetObject("cancelButton.IconAlignment"))));
+            this.errorProvider.SetIconPadding(this.cancelButton, ((int)(resources.GetObject("cancelButton.IconPadding"))));
+            this.cancelButton.Name = "cancelButton";
+            this.cancelButton.UseVisualStyleBackColor = true;
+            // 
+            // submitButton
+            // 
+            resources.ApplyResources(this.submitButton, "submitButton");
+            this.errorProvider.SetError(this.submitButton, resources.GetString("submitButton.Error"));
+            this.errorProvider.SetIconAlignment(this.submitButton, ((System.Windows.Forms.ErrorIconAlignment)(resources.GetObject("submitButton.IconAlignment"))));
+            this.errorProvider.SetIconPadding(this.submitButton, ((int)(resources.GetObject("submitButton.IconPadding"))));
+            this.submitButton.Name = "submitButton";
+            this.submitButton.UseVisualStyleBackColor = true;
+            // 
+            // shiftLabel
+            // 
+            resources.ApplyResources(this.shiftLabel, "shiftLabel");
+            this.errorProvider.SetError(this.shiftLabel, resources.GetString("shiftLabel.Error"));
+            this.errorProvider.SetIconAlignment(this.shiftLabel, ((System.Windows.Forms.ErrorIconAlignment)(resources.GetObject("shiftLabel.IconAlignment"))));
+            this.errorProvider.SetIconPadding(this.shiftLabel, ((int)(resources.GetObject("shiftLabel.IconPadding"))));
+            this.shiftLabel.Name = "shiftLabel";
+            // 
+            // commentsGroupBox
+            // 
+            resources.ApplyResources(this.commentsGroupBox, "commentsGroupBox");
+            this.commentsGroupBox.Controls.Add(this.commentTextBox);
+            this.errorProvider.SetError(this.commentsGroupBox, resources.GetString("commentsGroupBox.Error"));
+            this.errorProvider.SetIconAlignment(this.commentsGroupBox, ((System.Windows.Forms.ErrorIconAlignment)(resources.GetObject("commentsGroupBox.IconAlignment"))));
+            this.errorProvider.SetIconPadding(this.commentsGroupBox, ((int)(resources.GetObject("commentsGroupBox.IconPadding"))));
+            this.commentsGroupBox.Name = "commentsGroupBox";
+            this.commentsGroupBox.TabStop = false;
+            // 
+            // commentTextBox
+            // 
+            resources.ApplyResources(this.commentTextBox, "commentTextBox");
+            this.errorProvider.SetError(this.commentTextBox, resources.GetString("commentTextBox.Error"));
+            this.errorProvider.SetIconAlignment(this.commentTextBox, ((System.Windows.Forms.ErrorIconAlignment)(resources.GetObject("commentTextBox.IconAlignment"))));
+            this.errorProvider.SetIconPadding(this.commentTextBox, ((int)(resources.GetObject("commentTextBox.IconPadding"))));
+            this.commentTextBox.Name = "commentTextBox";
+            this.commentTextBox.OltAcceptsReturn = true;
+            this.commentTextBox.OltTrimWhitespace = true;
+            // 
+            // shiftGroupBox
+            // 
+            resources.ApplyResources(this.shiftGroupBox, "shiftGroupBox");
+            this.shiftGroupBox.Controls.Add(this.shiftLabel);
+            this.errorProvider.SetError(this.shiftGroupBox, resources.GetString("shiftGroupBox.Error"));
+            this.errorProvider.SetIconAlignment(this.shiftGroupBox, ((System.Windows.Forms.ErrorIconAlignment)(resources.GetObject("shiftGroupBox.IconAlignment"))));
+            this.errorProvider.SetIconPadding(this.shiftGroupBox, ((int)(resources.GetObject("shiftGroupBox.IconPadding"))));
+            this.shiftGroupBox.Name = "shiftGroupBox";
+            this.shiftGroupBox.TabStop = false;
+            // 
+            // lastModifiedData
+            // 
+            resources.ApplyResources(this.lastModifiedData, "lastModifiedData");
+            this.errorProvider.SetError(this.lastModifiedData, resources.GetString("lastModifiedData.Error"));
+            this.errorProvider.SetIconAlignment(this.lastModifiedData, ((System.Windows.Forms.ErrorIconAlignment)(resources.GetObject("lastModifiedData.IconAlignment"))));
+            this.errorProvider.SetIconPadding(this.lastModifiedData, ((int)(resources.GetObject("lastModifiedData.IconPadding"))));
+            this.lastModifiedData.LastModifiedDate = new System.DateTime(((long)(0)));
+            this.lastModifiedData.Name = "lastModifiedData";
+            this.lastModifiedData.TabStop = false;
+            // 
+            // detailsLabelLine
+            // 
+            resources.ApplyResources(this.detailsLabelLine, "detailsLabelLine");
+            this.errorProvider.SetError(this.detailsLabelLine, resources.GetString("detailsLabelLine.Error"));
+            this.errorProvider.SetIconAlignment(this.detailsLabelLine, ((System.Windows.Forms.ErrorIconAlignment)(resources.GetObject("detailsLabelLine.IconAlignment"))));
+            this.errorProvider.SetIconPadding(this.detailsLabelLine, ((int)(resources.GetObject("detailsLabelLine.IconPadding"))));
+            this.detailsLabelLine.Name = "detailsLabelLine";
+            this.detailsLabelLine.TabStop = false;
+            // 
+            // oltLabelLine1
+            // 
+            resources.ApplyResources(this.oltLabelLine1, "oltLabelLine1");
+            this.errorProvider.SetError(this.oltLabelLine1, resources.GetString("oltLabelLine1.Error"));
+            this.errorProvider.SetIconAlignment(this.oltLabelLine1, ((System.Windows.Forms.ErrorIconAlignment)(resources.GetObject("oltLabelLine1.IconAlignment"))));
+            this.errorProvider.SetIconPadding(this.oltLabelLine1, ((int)(resources.GetObject("oltLabelLine1.IconPadding"))));
+            this.oltLabelLine1.Name = "oltLabelLine1";
+            this.oltLabelLine1.TabStop = false;
+            // 
+            // closeGroupBox
+            // 
+            resources.ApplyResources(this.closeGroupBox, "closeGroupBox");
+            this.closeGroupBox.Controls.Add(this.closeStatusComboBox);
+            this.errorProvider.SetError(this.closeGroupBox, resources.GetString("closeGroupBox.Error"));
+            this.errorProvider.SetIconAlignment(this.closeGroupBox, ((System.Windows.Forms.ErrorIconAlignment)(resources.GetObject("closeGroupBox.IconAlignment"))));
+            this.errorProvider.SetIconPadding(this.closeGroupBox, ((int)(resources.GetObject("closeGroupBox.IconPadding"))));
+            this.closeGroupBox.Name = "closeGroupBox";
+            this.closeGroupBox.TabStop = false;
+            // 
+            // closeStatusComboBox
+            // 
+            resources.ApplyResources(this.closeStatusComboBox, "closeStatusComboBox");
+            this.closeStatusComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.errorProvider.SetError(this.closeStatusComboBox, resources.GetString("closeStatusComboBox.Error"));
+            this.closeStatusComboBox.FormattingEnabled = true;
+            this.errorProvider.SetIconAlignment(this.closeStatusComboBox, ((System.Windows.Forms.ErrorIconAlignment)(resources.GetObject("closeStatusComboBox.IconAlignment"))));
+            this.errorProvider.SetIconPadding(this.closeStatusComboBox, ((int)(resources.GetObject("closeStatusComboBox.IconPadding"))));
+            this.closeStatusComboBox.Items.AddRange(new object[] {
+            resources.GetString("closeStatusComboBox.Items")});
+            this.closeStatusComboBox.Name = "closeStatusComboBox";
+            // 
+            // descriptionTextBox
+            // 
+            resources.ApplyResources(this.descriptionTextBox, "descriptionTextBox");
+            this.errorProvider.SetError(this.descriptionTextBox, resources.GetString("descriptionTextBox.Error"));
+            this.errorProvider.SetIconAlignment(this.descriptionTextBox, ((System.Windows.Forms.ErrorIconAlignment)(resources.GetObject("descriptionTextBox.IconAlignment"))));
+            this.errorProvider.SetIconPadding(this.descriptionTextBox, ((int)(resources.GetObject("descriptionTextBox.IconPadding"))));
+            this.descriptionTextBox.Name = "descriptionTextBox";
+            this.descriptionTextBox.OltAcceptsReturn = true;
+            this.descriptionTextBox.OltTrimWhitespace = true;
+            this.descriptionTextBox.ReadOnly = true;
+            // 
+            // errorProvider
+            // 
+            this.errorProvider.ContainerControl = this;
+            resources.ApplyResources(this.errorProvider, "errorProvider");
+            // 
+            // tableLayoutPanel1
+            // 
+            resources.ApplyResources(this.tableLayoutPanel1, "tableLayoutPanel1");
+            this.tableLayoutPanel1.Controls.Add(this.lastModifiedData, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.shiftGroupBox, 1, 0);
+            this.errorProvider.SetError(this.tableLayoutPanel1, resources.GetString("tableLayoutPanel1.Error"));
+            this.errorProvider.SetIconAlignment(this.tableLayoutPanel1, ((System.Windows.Forms.ErrorIconAlignment)(resources.GetObject("tableLayoutPanel1.IconAlignment"))));
+            this.errorProvider.SetIconPadding(this.tableLayoutPanel1, ((int)(resources.GetObject("tableLayoutPanel1.IconPadding"))));
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            // 
+            // buttonsPanel
+            // 
+            resources.ApplyResources(this.buttonsPanel, "buttonsPanel");
+            this.buttonsPanel.Controls.Add(this.cancelButton);
+            this.buttonsPanel.Controls.Add(this.submitButton);
+            this.errorProvider.SetError(this.buttonsPanel, resources.GetString("buttonsPanel.Error"));
+            this.errorProvider.SetIconAlignment(this.buttonsPanel, ((System.Windows.Forms.ErrorIconAlignment)(resources.GetObject("buttonsPanel.IconAlignment"))));
+            this.errorProvider.SetIconPadding(this.buttonsPanel, ((int)(resources.GetObject("buttonsPanel.IconPadding"))));
+            this.buttonsPanel.Name = "buttonsPanel";
+            // 
+            // mainPanel
+            // 
+            resources.ApplyResources(this.mainPanel, "mainPanel");
+            this.mainPanel.Controls.Add(this.tableLayoutPanel2);
+            this.mainPanel.Controls.Add(this.tableLayoutPanel1);
+            this.errorProvider.SetError(this.mainPanel, resources.GetString("mainPanel.Error"));
+            this.errorProvider.SetIconAlignment(this.mainPanel, ((System.Windows.Forms.ErrorIconAlignment)(resources.GetObject("mainPanel.IconAlignment"))));
+            this.errorProvider.SetIconPadding(this.mainPanel, ((int)(resources.GetObject("mainPanel.IconPadding"))));
+            this.mainPanel.Name = "mainPanel";
+            // 
+            // tableLayoutPanel2
+            // 
+            resources.ApplyResources(this.tableLayoutPanel2, "tableLayoutPanel2");
+            this.tableLayoutPanel2.Controls.Add(this.closeGroupBox, 0, 1);
+            this.tableLayoutPanel2.Controls.Add(this.detailsLabelLine, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.commentsGroupBox, 0, 2);
+            this.tableLayoutPanel2.Controls.Add(this.descriptionTextBox, 0, 4);
+            this.tableLayoutPanel2.Controls.Add(this.oltLabelLine1, 0, 3);
+            this.errorProvider.SetError(this.tableLayoutPanel2, resources.GetString("tableLayoutPanel2.Error"));
+            this.errorProvider.SetIconAlignment(this.tableLayoutPanel2, ((System.Windows.Forms.ErrorIconAlignment)(resources.GetObject("tableLayoutPanel2.IconAlignment"))));
+            this.errorProvider.SetIconPadding(this.tableLayoutPanel2, ((int)(resources.GetObject("tableLayoutPanel2.IconPadding"))));
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            // 
+            // WorkPermitCloseWithStatusForm
+            // 
+            resources.ApplyResources(this, "$this");
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.mainPanel);
+            this.Controls.Add(this.buttonsPanel);
+            this.Name = "WorkPermitCloseWithStatusForm";
+            this.commentsGroupBox.ResumeLayout(false);
+            this.commentsGroupBox.PerformLayout();
+            this.shiftGroupBox.ResumeLayout(false);
+            this.shiftGroupBox.PerformLayout();
+            this.closeGroupBox.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).EndInit();
+            this.tableLayoutPanel1.ResumeLayout(false);
+            this.buttonsPanel.ResumeLayout(false);
+            this.mainPanel.ResumeLayout(false);
+            this.tableLayoutPanel2.ResumeLayout(false);
+            this.tableLayoutPanel2.PerformLayout();
+            this.ResumeLayout(false);
+
+        }
+
+        #endregion
+
+        private OltButton cancelButton;
+        private OltButton submitButton;
+        private OltLabel shiftLabel;
+        private OltGroupBox commentsGroupBox;
+        private OltTextBox commentTextBox;
+        private OltGroupBox shiftGroupBox;
+        private OltLastModifiedDateAuthorHeader lastModifiedData;
+        private OltLabelLine detailsLabelLine;
+        private OltLabelLine oltLabelLine1;
+        private OltGroupBox closeGroupBox;
+        private OltComboBox closeStatusComboBox;
+        private OltTextBox descriptionTextBox;
+        private System.Windows.Forms.ErrorProvider errorProvider;
+        private OltPanel buttonsPanel;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private OltPanel mainPanel;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
+    }
+}

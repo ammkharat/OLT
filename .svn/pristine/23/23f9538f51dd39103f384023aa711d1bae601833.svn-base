@@ -1,0 +1,501 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="siteNameDataLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="siteNameDataLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 17</value>
+  </data>
+  <data name="siteNameDataLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>40, 13</value>
+  </data>
+  <data name="siteNameDataLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="siteNameDataLabel.Text" xml:space="preserve">
+    <value>&lt;l'emplacement&gt;</value>
+  </data>
+  <data name="&gt;&gt;siteNameDataLabel.Name" xml:space="preserve">
+    <value>siteNameDataLabel</value>
+  </data>
+  <data name="&gt;&gt;siteNameDataLabel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Common.Controls.OltLabelData, Com.Suncor.Olt.Common, Version=1.0.0.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;siteNameDataLabel.Parent" xml:space="preserve">
+    <value>siteGroupBox</value>
+  </data>
+  <data name="&gt;&gt;siteNameDataLabel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="saveButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 164</value>
+  </data>
+  <data name="saveButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="saveButton.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="saveButton.Text" xml:space="preserve">
+    <value>&amp;Sauvegarder</value>
+  </data>
+  <data name="&gt;&gt;saveButton.Name" xml:space="preserve">
+    <value>saveButton</value>
+  </data>
+  <data name="&gt;&gt;saveButton.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Common.Controls.OltButton, Com.Suncor.Olt.Common, Version=1.0.0.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;saveButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;saveButton.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="cancelButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>93, 164</value>
+  </data>
+  <data name="cancelButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="cancelButton.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="cancelButton.Text" xml:space="preserve">
+    <value>&amp;Annuler</value>
+  </data>
+  <data name="&gt;&gt;cancelButton.Name" xml:space="preserve">
+    <value>cancelButton</value>
+  </data>
+  <data name="&gt;&gt;cancelButton.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Common.Controls.OltButton, Com.Suncor.Olt.Common, Version=1.0.0.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;cancelButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;cancelButton.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="archiveCloseWorkPermitLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="archiveCloseWorkPermitLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 21</value>
+  </data>
+  <data name="archiveCloseWorkPermitLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>171, 13</value>
+  </data>
+  <data name="archiveCloseWorkPermitLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="archiveCloseWorkPermitLabel.Text" xml:space="preserve">
+    <value>Archive Closed Work Permits after</value>
+  </data>
+  <data name="&gt;&gt;archiveCloseWorkPermitLabel.Name" xml:space="preserve">
+    <value>archiveCloseWorkPermitLabel</value>
+  </data>
+  <data name="&gt;&gt;archiveCloseWorkPermitLabel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Common.Controls.OltLabel, Com.Suncor.Olt.Common, Version=1.0.0.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;archiveCloseWorkPermitLabel.Parent" xml:space="preserve">
+    <value>archivalGroupBox</value>
+  </data>
+  <data name="&gt;&gt;archiveCloseWorkPermitLabel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="daysLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="daysLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>235, 21</value>
+  </data>
+  <data name="daysLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>38, 13</value>
+  </data>
+  <data name="daysLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="daysLabel.Text" xml:space="preserve">
+    <value>jour(s)</value>
+  </data>
+  <data name="&gt;&gt;daysLabel.Name" xml:space="preserve">
+    <value>daysLabel</value>
+  </data>
+  <data name="&gt;&gt;daysLabel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Common.Controls.OltLabel, Com.Suncor.Olt.Common, Version=1.0.0.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;daysLabel.Parent" xml:space="preserve">
+    <value>archivalGroupBox</value>
+  </data>
+  <data name="&gt;&gt;daysLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="deletePendingWorkPermitLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="deletePendingWorkPermitLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 49</value>
+  </data>
+  <data name="deletePendingWorkPermitLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>172, 13</value>
+  </data>
+  <data name="deletePendingWorkPermitLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="deletePendingWorkPermitLabel.Text" xml:space="preserve">
+    <value>Delete Pending Work Permits after</value>
+  </data>
+  <data name="&gt;&gt;deletePendingWorkPermitLabel.Name" xml:space="preserve">
+    <value>deletePendingWorkPermitLabel</value>
+  </data>
+  <data name="&gt;&gt;deletePendingWorkPermitLabel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Common.Controls.OltLabel, Com.Suncor.Olt.Common, Version=1.0.0.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;deletePendingWorkPermitLabel.Parent" xml:space="preserve">
+    <value>archivalGroupBox</value>
+  </data>
+  <data name="&gt;&gt;deletePendingWorkPermitLabel.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="deletePendingPermitDaysOfInactivityLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="deletePendingPermitDaysOfInactivityLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>235, 49</value>
+  </data>
+  <data name="deletePendingPermitDaysOfInactivityLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>97, 13</value>
+  </data>
+  <data name="deletePendingPermitDaysOfInactivityLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="deletePendingPermitDaysOfInactivityLabel.Text" xml:space="preserve">
+    <value>day(s) of inactivity</value>
+  </data>
+  <data name="&gt;&gt;deletePendingPermitDaysOfInactivityLabel.Name" xml:space="preserve">
+    <value>deletePendingPermitDaysOfInactivityLabel</value>
+  </data>
+  <data name="&gt;&gt;deletePendingPermitDaysOfInactivityLabel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Common.Controls.OltLabel, Com.Suncor.Olt.Common, Version=1.0.0.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;deletePendingPermitDaysOfInactivityLabel.Parent" xml:space="preserve">
+    <value>archivalGroupBox</value>
+  </data>
+  <data name="&gt;&gt;deletePendingPermitDaysOfInactivityLabel.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="closeIssuedWorkPermitLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="closeIssuedWorkPermitLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 77</value>
+  </data>
+  <data name="closeIssuedWorkPermitLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>161, 13</value>
+  </data>
+  <data name="closeIssuedWorkPermitLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="closeIssuedWorkPermitLabel.Text" xml:space="preserve">
+    <value>Close Issued Work Permits after</value>
+  </data>
+  <data name="&gt;&gt;closeIssuedWorkPermitLabel.Name" xml:space="preserve">
+    <value>closeIssuedWorkPermitLabel</value>
+  </data>
+  <data name="&gt;&gt;closeIssuedWorkPermitLabel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Common.Controls.OltLabel, Com.Suncor.Olt.Common, Version=1.0.0.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;closeIssuedWorkPermitLabel.Parent" xml:space="preserve">
+    <value>archivalGroupBox</value>
+  </data>
+  <data name="&gt;&gt;closeIssuedWorkPermitLabel.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="closeIssuedPermitDaysOfInactivityLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="closeIssuedPermitDaysOfInactivityLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>235, 77</value>
+  </data>
+  <data name="closeIssuedPermitDaysOfInactivityLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>97, 13</value>
+  </data>
+  <data name="closeIssuedPermitDaysOfInactivityLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="closeIssuedPermitDaysOfInactivityLabel.Text" xml:space="preserve">
+    <value>day(s) of inactivity</value>
+  </data>
+  <data name="&gt;&gt;closeIssuedPermitDaysOfInactivityLabel.Name" xml:space="preserve">
+    <value>closeIssuedPermitDaysOfInactivityLabel</value>
+  </data>
+  <data name="&gt;&gt;closeIssuedPermitDaysOfInactivityLabel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Common.Controls.OltLabel, Com.Suncor.Olt.Common, Version=1.0.0.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;closeIssuedPermitDaysOfInactivityLabel.Parent" xml:space="preserve">
+    <value>archivalGroupBox</value>
+  </data>
+  <data name="&gt;&gt;closeIssuedPermitDaysOfInactivityLabel.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="archiveClosedAfterDaysNumbericBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>187, 17</value>
+  </data>
+  <data name="archiveClosedAfterDaysNumbericBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>42, 22</value>
+  </data>
+  <data name="archiveClosedAfterDaysNumbericBox.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;archiveClosedAfterDaysNumbericBox.Name" xml:space="preserve">
+    <value>archiveClosedAfterDaysNumbericBox</value>
+  </data>
+  <data name="&gt;&gt;archiveClosedAfterDaysNumbericBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Common.Controls.OltUltraNumericEditor, Com.Suncor.Olt.Common, Version=1.0.0.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;archiveClosedAfterDaysNumbericBox.Parent" xml:space="preserve">
+    <value>archivalGroupBox</value>
+  </data>
+  <data name="&gt;&gt;archiveClosedAfterDaysNumbericBox.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="deletePendingAfterDaysNumericBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>187, 45</value>
+  </data>
+  <data name="deletePendingAfterDaysNumericBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>42, 22</value>
+  </data>
+  <data name="deletePendingAfterDaysNumericBox.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;deletePendingAfterDaysNumericBox.Name" xml:space="preserve">
+    <value>deletePendingAfterDaysNumericBox</value>
+  </data>
+  <data name="&gt;&gt;deletePendingAfterDaysNumericBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Common.Controls.OltUltraNumericEditor, Com.Suncor.Olt.Common, Version=1.0.0.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;deletePendingAfterDaysNumericBox.Parent" xml:space="preserve">
+    <value>archivalGroupBox</value>
+  </data>
+  <data name="&gt;&gt;deletePendingAfterDaysNumericBox.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="closeIssuedAfterDaysNumericBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>187, 73</value>
+  </data>
+  <data name="closeIssuedAfterDaysNumericBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>42, 22</value>
+  </data>
+  <data name="closeIssuedAfterDaysNumericBox.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;closeIssuedAfterDaysNumericBox.Name" xml:space="preserve">
+    <value>closeIssuedAfterDaysNumericBox</value>
+  </data>
+  <data name="&gt;&gt;closeIssuedAfterDaysNumericBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Common.Controls.OltUltraNumericEditor, Com.Suncor.Olt.Common, Version=1.0.0.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;closeIssuedAfterDaysNumericBox.Parent" xml:space="preserve">
+    <value>archivalGroupBox</value>
+  </data>
+  <data name="&gt;&gt;closeIssuedAfterDaysNumericBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <metadata name="errorProvider.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>378, 194</value>
+  </data>
+  <data name="archivalGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 54</value>
+  </data>
+  <data name="archivalGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>349, 104</value>
+  </data>
+  <data name="archivalGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="archivalGroupBox.Text" xml:space="preserve">
+    <value>Work Permit Archivals</value>
+  </data>
+  <data name="&gt;&gt;archivalGroupBox.Name" xml:space="preserve">
+    <value>archivalGroupBox</value>
+  </data>
+  <data name="&gt;&gt;archivalGroupBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;archivalGroupBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;archivalGroupBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="siteGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 12</value>
+  </data>
+  <data name="siteGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>349, 36</value>
+  </data>
+  <data name="siteGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="siteGroupBox.Text" xml:space="preserve">
+    <value>Emplacement</value>
+  </data>
+  <data name="&gt;&gt;siteGroupBox.Name" xml:space="preserve">
+    <value>siteGroupBox</value>
+  </data>
+  <data name="&gt;&gt;siteGroupBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;siteGroupBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;siteGroupBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterParent</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Work Permit Archival Configuration</value>
+  </data>
+  <data name="&gt;&gt;errorProvider.Name" xml:space="preserve">
+    <value>errorProvider</value>
+  </data>
+  <data name="&gt;&gt;errorProvider.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ErrorProvider, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>ConfigureWorkPermitArchivalProcessForm</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.Forms.BaseForm, Com.Suncor.Olt.Client, Version=1.0.0.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+</root>

@@ -1,0 +1,429 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+
+  <Target Name="EchoConfiguration">
+    <Message Text="*************************************************************" />
+    <Message Text="ToolsVersion: $(ToolsVersion)" />
+    <Message Text="TargetFrameworkVersion: $(TargetFrameworkVersion)" />
+    <Message Text="." />
+    <Message Text="BuildNumber: $(BuildNumber)" />
+	  <Message Text="ApplicationName: $(ApplicationName)" />
+    <Message Text="MajorMinorVersionLabel: $(MajorMinorVersionLabel)" />
+    <Message Text="SolutionDir: $(SolutionDir)" />
+    <Message Text="." />
+    <Message Text="IsBuildServer: $(IsBuildServer)" />
+    <Message Text="BuildConfiguration: $(BuildConfiguration)" />
+    <Message Text="LoadBalancer: $(LoadBalancer)" />
+    <Message Text="ServerMachine: $(ServerMachine)" />
+    <Message Text="RemoteAppPort: $(RemoteAppPort)" />
+    <Message Text="ClientRemoteServicesURILocation: $(ClientRemoteServicesURILocation)" />
+    <Message Text="HttpHandlerRemoteServiceURILocation: $(HttpHandlerRemoteServiceURILocation)" />
+    <Message Text="SchedulerRemoteServicesURILocation: $(SchedulerRemoteServicesURILocation)" />
+    <Message Text="RemoteServicesURILocation: $(RemoteServicesURILocation)" />
+    <Message Text="ClientFilesSourceDirectory: $(ClientFilesSourceDirectory)" />
+	  <Message Text="ExtensionTasksPath: $(ExtensionTasksPath)" />
+    <Message Text="." />
+    <Message Text="The following Tokens will be used:" />
+    <Message Text="Key(s): '@(Tokens)' Value: '%(Tokens.ReplacementValue)' " />
+    <Message Text="*************************************************************" />
+  </Target>
+
+  <Target Name="Coverage-Build">
+    <CallTarget Targets="EchoConfiguration;CleanAll;DbInit;CreateMergeDBScripts;Test" />
+  </Target>
+  
+  <Target Name="CI-Build" >
+    <CallTarget Targets="EchoConfiguration;CleanAll;CreateMergeDBScripts;PersistenceTest;IntegrationTest;IntegrationTest-PlantHistorian;CheckinMergedDBScripts" />
+    <CallTarget Targets="ZipRelease" />
+  </Target>
+
+  <Target Name="CI-Training-Data">
+	  <CallTarget Targets="DbInit" />
+  </Target>
+
+  <Target Name="Release-Sandbox">
+	  <CallTarget Targets="EchoConfiguration" /> 
+    
+    <MSBuild Projects="olt.msbuild" Targets="SingleServer-UnInstall" Properties="Instance=001" />
+    <MSBuild Projects="olt.msbuild" Targets="SingleServer-UnInstall" Properties="Instance=002" />
+    
+    <CallTarget Targets="FlushCache;DbInitTrainingData" />
+    
+    <MSBuild Projects="olt.msbuild" Targets="SingleServer-Install" Properties="Instance=001" />
+	<MSBuild Projects="olt.msbuild" Targets="SingleServer-Install" Properties="Instance=002" />
+	
+    <CallTarget Targets="BuildClient" />    
+  </Target>
+
+  <Target Name="Release-Sandbox-Developers" >
+    <CallTarget Targets="EchoConfiguration" /> 
+    
+    <MSBuild Projects="olt.msbuild" Targets="SingleServer-UnInstall" Properties="Instance=001" />	
+    
+    <CallTarget Targets="FlushCache;DbInitTrainingData" />
+	  
+    <MSBuild Projects="olt.msbuild" Targets="SingleServer-Install" Properties="Instance=001" />
+
+    <CallTarget Targets="BuildClient" />
+  </Target>
+ 
+ <Target Name="Release-UAT" >
+    <CallTarget Targets="EchoConfiguration" /> 
+    
+    <MSBuild Projects="olt.msbuild" Targets="SingleServer-UnInstall" Properties="Instance=001" />
+   
+ 	 <CallTarget Targets="FlushCache;RestoreSnapshotDatabase;DbUpgrade" />
+   <CallTarget Targets="DisableAutoPermitImport"/>
+   <CallTarget Targets="DbTestConfigChanges" Condition="'$(RestoreSnapshot)'=='true'" />
+	 
+    <MSBuild Projects="olt.msbuild" Targets="SingleServer-Install" Properties="Instance=001" />
+
+   <CallTarget Targets="BuildClient" />
+ </Target>
+  
+  <Target Name="Release-Training">
+    <CallTarget Targets="EchoConfiguration" />
+	
+    <MSBuild Projects="olt.msbuild" Targets="SingleServer-UnInstall" Properties="Instance=001" />
+	  <MSBuild Projects="olt.msbuild" Targets="SingleServer-UnInstall" Properties="Instance=002" />
+	  <MSBuild Projects="olt.msbuild" Targets="SingleServer-UnInstall" Properties="Instance=003" />
+    
+	<CallTarget Targets="FlushCache;RestoreSnapshotDatabase;DbUpgrade" />
+  <CallTarget Targets="RunAutoPermitImportAtFivePM"/>
+	<CallTarget Targets="DbTestConfigChanges" Condition="'$(RestoreSnapshot)'=='true'" /> 
+    
+    <MSBuild Projects="olt.msbuild" Targets="SingleServer-Install" Properties="Instance=001" />
+	  <MSBuild Projects="olt.msbuild" Targets="SingleServer-Install" Properties="Instance=002" />
+	  <MSBuild Projects="olt.msbuild" Targets="SingleServer-Install" Properties="Instance=003" />
+
+    <CallTarget Targets="BuildClient" />
+  </Target>
+
+  <Target Name="Release-QUT">
+    <CallTarget Targets="EchoConfiguration" />
+	
+    <MSBuild Projects="olt.msbuild" Targets="SingleServer-UnInstall" Properties="Instance=001" />
+	<MSBuild Projects="olt.msbuild" Targets="SingleServer-UnInstall" Properties="Instance=002" />
+	<MSBuild Projects="olt.msbuild" Targets="SingleServer-UnInstall" Properties="Instance=003" />
+    
+    <CallTarget Targets="FlushCache;RestoreSnapshotDatabase;DbUpgrade" />
+	<CallTarget Targets="DbTestConfigChanges" Condition="'$(RestoreSnapshot)'=='true'" />
+	  
+    <MSBuild Projects="olt.msbuild" Targets="SingleServer-Install" Properties="Instance=001" />
+	<MSBuild Projects="olt.msbuild" Targets="SingleServer-Install" Properties="Instance=002" />
+	<MSBuild Projects="olt.msbuild" Targets="SingleServer-Install" Properties="Instance=003" />
+
+    <CallTarget Targets="BuildClient" />
+  </Target>
+
+  <Target Name="Release-PCP">
+    <CallTarget Targets="EchoConfiguration" />
+
+    <MSBuild Projects="olt.msbuild" Targets="SingleServer-UnInstall" Properties="Instance=001" />
+
+	<CallTarget Targets="FlushCache;RestoreSnapshotDatabase;DbUpgrade" />
+  <CallTarget Targets="DisableAutoPermitImport"/>
+
+	<MSBuild Projects="olt.msbuild" Targets="SingleServer-Install" Properties="Instance=001" />
+
+    <CallTarget Targets="BuildClient" />
+  </Target>
+
+  <PropertyGroup>
+    <WebSiteRootUNC>\\$(ServerMachine)\C%24\inetpub</WebSiteRootUNC>
+    <SchedulerRootUNC>\\$(ServerMachine)\C%24\$(SchedulersDirectoryName)</SchedulerRootUNC>
+  </PropertyGroup>
+
+  <Target Name="SingleServer-UnInstall" DependsOnTargets="SingleServer-Stop;SingleServer-Backup">
+    <CreateItem Include="$(WebSiteRootUNC)\$(SAPHandlersWebDirectoryName)\*.*;$(WebSiteRootUNC)\$(RemoteAppWebDirectoryName)\*.*">
+      <Output
+          TaskParameter="Include"
+          ItemName="IISAppFiles"/>
+    </CreateItem>
+    <CreateItem Include="$(SchedulerRootUNC)\**\*.*">
+      <Output
+          TaskParameter="Include"
+          ItemName="SchedulerFiles"/>
+    </CreateItem>
+
+    <Message Text="*************************************************************" />
+    <Message Text="SingleServer-UnInstall" />
+    <Message Text="." />
+    <Message Text="ServerMachine: $(ServerMachine)" />
+    <Message Text="SAPHandlersWebDirectoryName: $(SAPHandlersWebDirectoryName)" />
+    <Message Text="RemoteAppWebDirectoryName: $(RemoteAppWebDirectoryName)" />
+    <Message Text="SchedulersDirectoryName: $(SchedulersDirectoryName)" />
+    <Message Text="*************************************************************" />
+
+    <!-- Clean Scheduler and IIS directories -->
+    <Message Text="Deleting files..." />
+    <Delete Files="@(IISAppFiles)" />
+    <Delete Files="@(SchedulerFiles)" />
+    <Message Text="Done delete." />
+
+  </Target>
+
+  <Target Name="SingleServer-Backup">
+    
+    <Message Text="*************************************************************" />
+    <Message Text="SingleServer-Backup" />
+    <Message Text="." />
+    <Message Text="ServerMachine: $(ServerMachine)" />
+    <Message Text="SAPHandlersWebDirectoryName: $(SAPHandlersWebDirectoryName)" />
+    <Message Text="RemoteAppWebDirectoryName: $(RemoteAppWebDirectoryName)" />
+    <Message Text="SchedulersDirectoryName: $(SchedulersDirectoryName)" />
+    <Message Text="*************************************************************" />
+
+    <!-- Backup directories -->
+    <PropertyGroup>
+      <SapHandlerFilesBackupDirectory>$(WebSiteRootUNC)\$(SAPHandlersWebDirectoryName)_backup</SapHandlerFilesBackupDirectory>
+      <RemoteAppFilesBackupDirectory>$(WebSiteRootUNC)\$(RemoteAppWebDirectoryName)_backup</RemoteAppFilesBackupDirectory>
+      <SchedulerFilesBackupDirectory>\\$(ServerMachine)\C%24\$(SchedulersDirectoryName)_backup</SchedulerFilesBackupDirectory>
+    </PropertyGroup>
+
+    <Message Text="Backup sap handler files to $(SapHandlerFilesBackupDirectory)" />
+    <Message Text="Remove directory:" />
+    <RemoveDir Directories="$(SapHandlerFilesBackupDirectory)" />
+    <Message Text="Copy files:" />
+    <Exec Command="$(windir)\system32\xcopy $(WebSiteRootUNC)\$(SAPHandlersWebDirectoryName) $(SapHandlerFilesBackupDirectory) /Y /E /Q /I" 
+			Condition="Exists('$(WebSiteRootUNC)\$(SAPHandlersWebDirectoryName)')"/>
+
+    <Message Text="Backup remote app files to $(RemoteAppFilesBackupDirectory)" />
+    <Message Text="Remove directory:" />
+    <RemoveDir Directories="$(RemoteAppFilesBackupDirectory)" />
+    <Message Text="Copy files:" />
+    <Exec Command="$(windir)\system32\xcopy $(WebSiteRootUNC)\$(RemoteAppWebDirectoryName) $(RemoteAppFilesBackupDirectory) /Y /E /Q /I" 
+		Condition="Exists('$(WebSiteRootUNC)\$(RemoteAppWebDirectoryName)')"/>
+
+    <Message Text="Backup scheduler files to $(SchedulerFilesBackupDirectory)" />
+    <Message Text="Remove directory:" />
+    <RemoveDir Directories="$(SchedulerFilesBackupDirectory)" />
+    <Message Text="Copy files:" />
+    <Exec Command="$(windir)\system32\xcopy $(SchedulerRootUNC) $(SchedulerFilesBackupDirectory) /Y /E /Q /I" 
+		Condition="Exists('$(SchedulerRootUNC)')"/>
+
+  </Target>
+
+  <ItemGroup>
+    <Service Include="ActionItemScheduler">
+      <WinServiceName>$(ActionItemSchedulerServiceName)</WinServiceName>
+      <DisplayName>$(ActionItemSchedulerServiceDisplayName)</DisplayName>
+      <ExePath>ActionItem\ActionItemScheduler.exe</ExePath>
+      <AutoStart>$(StartActionItemScheduler)</AutoStart>
+    </Service>
+    <Service Include="LogScheduler">
+      <WinServiceName>$(LogSchedulerServiceName)</WinServiceName>
+      <DisplayName>$(LogSchedulerServiceDisplayName)</DisplayName>
+      <ExePath>Log\LogScheduler.exe</ExePath>
+      <AutoStart>$(StartLogScheduler)</AutoStart>
+    </Service>
+    <Service Include="ProcessScheduler">
+      <WinServiceName>$(ProcessSchedulerServiceName)</WinServiceName>
+      <DisplayName>$(ProcessSchedulerServiceDisplayName)</DisplayName>
+      <ExePath>Process\ProcessScheduler.exe</ExePath>
+      <AutoStart>$(StartProcessScheduler)</AutoStart>
+    </Service>
+    <Service Include="ShiftScheduler">
+      <WinServiceName>$(ShiftSchedulerServiceName)</WinServiceName>
+      <DisplayName>$(ShiftSchedulerServiceDisplayName)</DisplayName>
+      <ExePath>Shift\ShiftScheduler.exe</ExePath>
+      <AutoStart>$(StartShiftScheduler)</AutoStart>
+    </Service>
+    <Service Include="TargetScheduler">
+      <WinServiceName>$(TargetSchedulerServiceName)</WinServiceName>
+      <DisplayName>$(TargetSchedulerServiceDisplayName)</DisplayName>
+      <ExePath>Target\TargetScheduler.exe</ExePath>
+      <AutoStart>$(StartTargetScheduler)</AutoStart>
+    </Service>
+    <Service Include="RestrictionScheduler">
+      <WinServiceName>$(RestrictionSchedulerServiceName)</WinServiceName>
+      <DisplayName>$(RestrictionSchedulerServiceDisplayName)</DisplayName>
+      <ExePath>Restriction\RestrictionScheduler.exe</ExePath>
+      <AutoStart>$(StartRestrictionScheduler)</AutoStart>
+    </Service>
+    <Service Include="LabAlertScheduler">
+      <WinServiceName>$(LabAlertSchedulerServiceName)</WinServiceName>
+      <DisplayName>$(LabAlertSchedulerServiceDisplayName)</DisplayName>
+      <ExePath>LabAlert\LabAlertScheduler.exe</ExePath>
+      <AutoStart>$(StartLabAlertScheduler)</AutoStart>
+    </Service>
+  </ItemGroup>
+
+  <Target Name="SingleServer-Stop">
+    <!-- Stop Schedulers -->
+    <MSBuild Projects="$(MSBuildProjectFile)"
+             Targets="StopService"
+             Properties="WinServiceName=%(Service.WinServiceName)" ContinueOnError="false" />
+    <MSBuild.ExtensionPack.Web.Iis7Website TaskAction="Stop" Name="$(RemoteAppWebDirectoryName)" MachineName="$(ServerMachine)" />
+	  <MSBuild.ExtensionPack.Web.Iis7Website TaskAction="Stop" Name="$(SAPHandlersWebDirectoryName)" MachineName="$(ServerMachine)" />
+  </Target>
+
+  <Target Name="StopService">
+    <Message Text="Attempting to Stop $(WinServiceName) on $(ServerMachine)" />
+    <Message Text="Instance = $(Instance)" />
+    <Message Text="BuildConfiguration = $(BuildConfiguration)" />
+    <Message Text="ComputerName = $(ComputerName)" />
+    
+    <MSBuild.ExtensionPack.Computer.WindowsService TaskAction="CheckExists"
+                                                   ServiceName="$(WinServiceName)"
+                                                   MachineName="$(ServerMachine)">
+      <Output TaskParameter="Exists" PropertyName="DoesExist"/>
+    </MSBuild.ExtensionPack.Computer.WindowsService>
+    <MSBuild.ExtensionPack.Computer.WindowsService TaskAction="Stop"
+                                                   ServiceName="$(WinServiceName)"
+                                                   MachineName="$(ServerMachine)"
+                                                   Condition=" '$(DoesExist)' == 'True'"/>
+  </Target>
+  
+  <Target Name="SingleServer-Install" DependsOnTargets="CreateWebAppConfigFiles;CreateSAPHandlersWebConfigFiles;CreateActionItemSchedulerAppConfigFiles;CreateLogSchedulerAppConfigFiles;CreateProcessSchedulerAppConfigFiles;CreateShiftSchedulerAppConfigFiles;CreateTargetSchedulerAppConfigFiles;CreateRestrictionSchedulerAppConfigFiles;CreateLabAlertSchedulerAppConfigFiles">
+
+    <Message Text="*************************************************************" />
+    <Message Text="SingleServer-Install" />
+    <Message Text="." />
+    <Message Text="ServerMachine: $(ServerMachine)" />
+    <Message Text="Configuration: $(Configuration)" />
+    <Message Text="RemoteAppWebDirectoryName: $(RemoteAppWebDirectoryName)" />
+    <Message Text="SAPHandlersWebDirectoryName: $(SAPHandlersWebDirectoryName)" />
+    <Message Text="SchedulerDirectory: $(SchedulerDirectory)" />
+    <Message Text="SchedulerRootUNC: $(SchedulerRootUNC)" />
+    <Message Text="WebSiteRootUNC: $(WebSiteRootUNC)" />
+    <Message Text="*************************************************************" />
+
+    <ItemGroup>
+	    <SchedulerConfigFiles Include="$(SchedulerDirectory)\App\**\Bin\$(Configuration)\*.exe.config" />  
+    </ItemGroup>
+	
+    <!-- Delete existing exe config files before moving the new ones in -->
+    <Message Text="Deleting: @(SchedulerConfigFiles)" />
+    <Delete Files="@(SchedulerConfigFiles)" />
+    
+    <!-- Move config files to the config directory -->
+    <MSBuild.ExtensionPack.FileSystem.File TaskAction="Move" 
+		Path="$(SchedulerDirectory)\App\RemoteApp.ActionItem.Scheduler\App.config" 
+		TargetPath="$(SchedulerDirectory)\App\RemoteApp.ActionItem.Scheduler\Bin\$(Configuration)\ActionItemScheduler.exe.config" />
+    <MSBuild.ExtensionPack.FileSystem.File TaskAction="Move" 
+		  Path="$(SchedulerDirectory)\App\RemoteApp.Log.Scheduler\App.config" 
+          TargetPath="$(SchedulerDirectory)\App\RemoteApp.Log.Scheduler\Bin\$(Configuration)\LogScheduler.exe.config" />
+    <MSBuild.ExtensionPack.FileSystem.File TaskAction="Move" 
+		  Path="$(SchedulerDirectory)\App\RemoteApp.OLTProcess.Scheduler\App.config" 
+          TargetPath="$(SchedulerDirectory)\App\RemoteApp.OLTProcess.Scheduler\Bin\$(Configuration)\ProcessScheduler.exe.config" />
+    <MSBuild.ExtensionPack.FileSystem.File TaskAction="Move"  
+	      Path="$(SchedulerDirectory)\App\RemoteApp.Shift.Scheduler\App.config" 
+          TargetPath="$(SchedulerDirectory)\App\RemoteApp.Shift.Scheduler\Bin\$(Configuration)\ShiftScheduler.exe.config" />
+    <MSBuild.ExtensionPack.FileSystem.File TaskAction="Move" 
+	      Path="$(SchedulerDirectory)\App\RemoteApp.Target.Scheduler\App.config" 
+          TargetPath="$(SchedulerDirectory)\App\RemoteApp.Target.Scheduler\Bin\$(Configuration)\TargetScheduler.exe.config" />
+    <MSBuild.ExtensionPack.FileSystem.File TaskAction="Move"  
+	      Path="$(SchedulerDirectory)\App\RemoteApp.Restriction.Scheduler\App.config"
+          TargetPath="$(SchedulerDirectory)\App\RemoteApp.Restriction.Scheduler\Bin\$(Configuration)\RestrictionScheduler.exe.config" />
+    <MSBuild.ExtensionPack.FileSystem.File TaskAction="Move"  
+	      Path="$(SchedulerDirectory)\App\RemoteApp.LabAlert.Scheduler\App.config"
+          TargetPath="$(SchedulerDirectory)\App\RemoteApp.LabAlert.Scheduler\Bin\$(Configuration)\LabAlertScheduler.exe.config" />
+
+    <!-- Copy the RemoteApp/WebSite Files -->
+    <Exec WorkingDirectory="$(SolutionDir)\src\RemoteApp" Command="$(windir)\system32\xcopy WebSite $(WebSiteRootUNC)\$(RemoteAppWebDirectoryName) /Y /E /Q /I" />
+
+    <!-- Copy the SAP Http Handlers -->
+    <Exec  WorkingDirectory="$(SolutionDir)\src\SAPHandlers" Command="$(windir)\system32\xcopy SAPHandlerWeb $(WebSiteRootUNC)\$(SAPHandlersWebDirectoryName) /Y /E /Q /I" />
+
+    <!-- Copy the Scheduler Files -->
+    <Exec WorkingDirectory="$(SchedulerDirectory)\App\RemoteApp.ActionItem.Scheduler\bin" Command="$(windir)\system32\xcopy Release $(SchedulerRootUNC)\\ActionItem /Y /E /I" />
+    <Exec WorkingDirectory="$(SchedulerDirectory)\App\RemoteApp.Log.Scheduler\bin" Command="$(windir)\system32\xcopy Release $(SchedulerRootUNC)\Log /Y /E /Q /I" />
+    <Exec WorkingDirectory="$(SchedulerDirectory)\App\RemoteApp.OLTProcess.Scheduler\bin" Command="$(windir)\system32\xcopy Release $(SchedulerRootUNC)\Process /Y /E /Q /I" />
+    <Exec WorkingDirectory="$(SchedulerDirectory)\App\RemoteApp.Shift.Scheduler\bin" Command="$(windir)\system32\xcopy Release $(SchedulerRootUNC)\Shift /Y /E /Q /I" />
+    <Exec WorkingDirectory="$(SchedulerDirectory)\App\RemoteApp.Target.Scheduler\bin" Command="$(windir)\system32\xcopy Release $(SchedulerRootUNC)\Target /Y /E /Q /I" />
+    <Exec WorkingDirectory="$(SchedulerDirectory)\App\RemoteApp.Restriction.Scheduler\bin" Command="$(windir)\system32\xcopy Release $(SchedulerRootUNC)\Restriction /Y /E /Q /I" />
+    <Exec WorkingDirectory="$(SchedulerDirectory)\App\RemoteApp.LabAlert.Scheduler\bin" Command="$(windir)\system32\xcopy Release $(SchedulerRootUNC)\LabAlert /Y /E /Q /I" />
+
+    <CallTarget Targets="SingleServer-Start"/>
+  </Target>
+
+  <Target Name="StartService">
+    <!--Check if Service exists -->
+    <MSBuild.ExtensionPack.Computer.WindowsService TaskAction="CheckExists"
+                                                   ServiceName="$(WinServiceName)"
+                                                   MachineName="$(ServerMachine)">
+      <Output TaskParameter="Exists" PropertyName="DoesExist"/>
+    </MSBuild.ExtensionPack.Computer.WindowsService>
+    
+    <!-- Install the service if it doesn't exist -->
+    <MSBuild.ExtensionPack.Computer.WindowsService TaskAction="Install"
+                                                   ServiceName="$(WinServiceName)"
+                                                   MachineName="$(ServerMachine)"
+                                                   ServicePath="$(Scheduler-LocalRootPath)\$(ServicePath)"
+                                                   ServiceDisplayName="$(DisplayName)"
+                                                   ServiceDependencies="W3SVC"
+                                                   User="LocalSystem"
+                                                   Condition=" '$(DoesExist)' == 'False'"/>
+    <!-- Set Start-up as Auto or Manual -->
+    <MSBuild.ExtensionPack.Computer.WindowsService TaskAction="SetAutomatic" 
+                                                   ServiceName="$(WinServiceName)" 
+                                                   MachineName="$(ServerMachine)"
+                                                   Condition=" '$(AutoStart)' == 'true' And '$(DoesExist)' == 'False'"/>
+    <MSBuild.ExtensionPack.Computer.WindowsService TaskAction="SetManual"
+                                                   ServiceName="$(WinServiceName)"
+                                                   MachineName="$(ServerMachine)"
+                                                   Condition=" '$(AutoStart)' != 'true' And '$(DoesExist)' == 'False'"/>
+    
+    <!-- Start the service if it is suppose to be started -->
+    <MSBuild.ExtensionPack.Computer.WindowsService TaskAction="Start" 
+                                                   ServiceName="$(WinServiceName)" 
+                                                   MachineName="$(ServerMachine)"
+                                                   Condition=" '$(AutoStart)' == 'true'"/>
+
+  </Target>
+
+  <Target Name="SingleServer-Start">
+	  <MSBuild.ExtensionPack.Web.Iis7Website TaskAction="Start" Name="$(RemoteAppWebDirectoryName)" MachineName="$(ServerMachine)" />
+	  <MSBuild.ExtensionPack.Web.Iis7Website TaskAction="Start" Name="$(SAPHandlersWebDirectoryName)" MachineName="$(ServerMachine)" />
+
+    <!-- Create/Start the Scheduler Services -->
+    <MSBuild Projects="$(MSBuildProjectFile)"
+             Targets="StartService"
+             Properties="WinServiceName=%(Service.WinServiceName);ServicePath=%(Service.ExePath);AutoStart=%(Service.AutoStart);DisplayName=%(Service.DisplayName)"
+             ContinueOnError="false" />
+  </Target>
+
+  <Target Name="ZipRelease">
+    <PropertyGroup>
+		<ProcessSchedulerReleaseDir>$(SchedulerDirectory)\App\RemoteApp.OltProcess.Scheduler\Bin\$(Configuration)</ProcessSchedulerReleaseDir>
+	</PropertyGroup>
+
+    <ItemGroup>
+      <ZipFiles Include="$(RemoteDirectory)\WebSite\**\*.*"
+                Exclude="$(RemoteDirectory)\WebSite\**\.svn\**;$(RemoteDirectory)\WebSite\*.svclog;$(RemoteDirectory)\WebSite\Bin\de\*.*;$(RemoteDirectory)\WebSite\Bin\es\*.*;$(RemoteDirectory)\WebSite\bin\ja\*.*;$(RemoteDirectory)\WebSite\Bin\ru\*.*" />
+      <ZipFiles Include="$(SAPHandlersDirectory)\SAPHandlerWeb\**\*.*"
+                Exclude="$(SAPHandlersDirectory)\SAPHandlerWeb\**\.svn\**"/>
+      <ZipFiles Include="$(ClientExecDirectory)\**\*.*" />      
+      <ZipFiles Include="$(ClientDirectory)\App\*.xml" />
+      <ZipFiles Include="$(SchedulerDirectory)\App\**\App.config.xml" />
+      <ZipFiles Include="$(SchedulerDirectory)\App\**\Bin\$(Configuration)\**\*.*"
+                Exclude="$(SchedulerDirectory)\App\**\.svn\**;$(SchedulerDirectory)\App\RemoteApp.Schedulers.Common\**;$(ProcessSchedulerReleaseDir)\de\*.*;$(ProcessSchedulerReleaseDir)\es\*.*;$(ProcessSchedulerReleaseDir)\ja\*.*;$(ProcessSchedulerReleaseDir)\ru\*.*" />
+      <ZipFiles Include="$(SolutionDir)\*.msbuild" />
+      <ZipFiles Include="$(SolutionDir)\Tools\CustomTasks\**\*.*"
+                Exclude="$(SolutionDir)\Tools\CustomTasks\**\.svn\**;$(SolutionDir)\Tools\CustomTasks\**\*.xsd;$(SolutionDir)\Tools\CustomTasks\**\*.pdb;$(SolutionDir)\Tools\CustomTasks\**\*.chm" />
+      <ZipFiles Include="$(DbDirectory)\**\*.*"
+				Exclude="$(DbDirectory)\**\.svn\**;$(DbUpgradeDirectory)\2.*.sql*;$(DbUpgradeDirectory)\3.*.sql*;
+							$(DbUpgradeDirectory)\4.0.*.sql*;$(DbUpgradeDirectory)\4.1.*.sql*;$(DbUpgradeDirectory)\4.2.*.sql*;
+							$(DbUpgradeDirectory)\4.3.*.sql*;$(DbUpgradeDirectory)\4.4.*.sql*;$(DbUpgradeDirectory)\4.5.*.sql*;
+							$(DbUpgradeDirectory)\4.6.*.sql*;$(DbUpgradeDirectory)\4.7.*.sql*;$(DbUpgradeDirectory)\4.8.*.sql*;
+							$(DbUpgradeDirectory)\4.9.*.sql*;$(DbUpgradeDirectory)\4.10.*.sql*;
+							$(DbUpgradeDirectory)\4.11*.sql*" />
+    </ItemGroup>
+
+	<CreateItem Include="@(ZipFiles)">
+      <Output
+          TaskParameter="Include"
+          ItemName="ReleaseZipFiles"/>
+    </CreateItem>
+
+    <Delete Files="$(SolutionDir)\Release\OLT-Release.zip" />
+	<MakeDir Directories="$(SolutionDir)\Release" />
+
+	<MSBuild.ExtensionPack.Compression.Zip TaskAction="Create" CompressFiles="@(ReleaseZipFiles)"
+                                           CompressionLevel="BestCompression"
+         RemoveRoot="$(SolutionDir)" 
+         ZipFileName="$(SolutionDir)\Release\OLT-Release.zip" />
+    
+  </Target>
+
+</Project>

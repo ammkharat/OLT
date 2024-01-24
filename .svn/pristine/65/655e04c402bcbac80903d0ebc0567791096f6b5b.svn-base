@@ -1,0 +1,1048 @@
+﻿using Com.Suncor.Olt.Client.OltControls;
+
+namespace Com.Suncor.Olt.Client.Forms
+{
+    partial class ConfinedSpaceFormMuds
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.components = new System.ComponentModel.Container();
+            this.oltLabel1 = new Com.Suncor.Olt.Client.OltControls.OltLabel();
+            this.viewConfiguredDocumentLinkButton = new Com.Suncor.Olt.Client.OltControls.OltButton();
+            this.configuredDocumentLinkComboBox = new Com.Suncor.Olt.Client.OltControls.OltComboBox();
+            this.cancelButton = new Com.Suncor.Olt.Client.OltControls.OltButton();
+            this.saveButton = new Com.Suncor.Olt.Client.OltControls.OltButton();
+            this.basicInformationGroupBox = new Com.Suncor.Olt.Client.OltControls.OltGroupBox();
+            this.oltLabel3 = new Com.Suncor.Olt.Client.OltControls.OltLabel();
+            this.refNumberTextBox = new Com.Suncor.Olt.Client.OltControls.OltTextBox();
+            this.preparationCheckBox = new Com.Suncor.Olt.Client.OltControls.OltCheckBox();
+            this.oltLabel2 = new Com.Suncor.Olt.Client.OltControls.OltLabel();
+            this.functionalLocationTextBox = new Com.Suncor.Olt.Client.OltControls.OltTextBox();
+            this.functionalLocationBrowseButton = new Com.Suncor.Olt.Client.OltControls.OltButton();
+            this.oltLabel6 = new Com.Suncor.Olt.Client.OltControls.OltLabel();
+            this.oltLabel5 = new Com.Suncor.Olt.Client.OltControls.OltLabel();
+            this.endTimePicker = new Com.Suncor.Olt.Client.OltControls.OltTimePicker();
+            this.endDatePicker = new Com.Suncor.Olt.Client.OltControls.OltDatePicker();
+            this.startTimePicker = new Com.Suncor.Olt.Client.OltControls.OltTimePicker();
+            this.startDatePicker = new Com.Suncor.Olt.Client.OltControls.OltDatePicker();
+            this.conditionsGroupBox = new Com.Suncor.Olt.Client.OltControls.OltGroupBox();
+            this.pssPath = new Com.Suncor.Olt.Client.OltControls.OltTextBox();
+            this.viewPSSLinkButton = new Com.Suncor.Olt.Client.OltControls.OltButton();
+            this.purgeBooleanControl = new Com.Suncor.Olt.Client.Controls.Template.TemplatableBooleanControl();
+            this.ventillationBooleanControl = new Com.Suncor.Olt.Client.Controls.Template.TemplatableBooleanControl();
+            this.harnisBooleanControl = new Com.Suncor.Olt.Client.Controls.Template.TemplatableBooleanControl();
+            this.ventilationForceBooleanControl = new Com.Suncor.Olt.Client.Controls.Template.TemplatableBooleanControl();
+            this.pssBooleanControl = new Com.Suncor.Olt.Client.Controls.Template.TemplatableBooleanControl();
+            this.dessinsBooleanControl = new Com.Suncor.Olt.Client.Controls.Template.TemplatableBooleanControl();
+            this.videBooleanControl = new Com.Suncor.Olt.Client.Controls.Template.TemplatableBooleanControl();
+            this.detectionGazBooleanControl = new Com.Suncor.Olt.Client.Controls.Template.TemplatableBooleanControl();
+            this.depressuriseBooleanControl = new Com.Suncor.Olt.Client.Controls.Template.TemplatableBooleanControl();
+            this.obtureBooleanControl = new Com.Suncor.Olt.Client.Controls.Template.TemplatableBooleanControl();
+            this.rinceBooleanControl = new Com.Suncor.Olt.Client.Controls.Template.TemplatableBooleanControl();
+            this.nettoyesBooleanControl = new Com.Suncor.Olt.Client.Controls.Template.TemplatableBooleanControl();
+            this.ventilationNaturelleBooleanControl = new Com.Suncor.Olt.Client.Controls.Template.TemplatableBooleanControl();
+            this.bouchesDegoutProtegeesBooleanControl = new Com.Suncor.Olt.Client.Controls.Template.TemplatableBooleanControl();
+            this.ventilationMecaniqueBooleanControl = new Com.Suncor.Olt.Client.Controls.Template.TemplatableBooleanControl();
+            this.planDeSauvetageBooleanControl = new Com.Suncor.Olt.Client.Controls.Template.TemplatableBooleanControl();
+            this.autresConditionsDropDownControl = new Com.Suncor.Olt.Client.Controls.Template.TemplatableDropDownControl();
+            this.dessinsRequisStringControl = new Com.Suncor.Olt.Client.Controls.Template.TemplatableStringControl();
+            this.cablesChauffantsMisHorsTensionBooleanControl = new Com.Suncor.Olt.Client.Controls.Template.TemplatableBooleanControl();
+            this.purgeParGazInerteBooleanControl = new Com.Suncor.Olt.Client.Controls.Template.TemplatableBooleanControl();
+            this.obtureOuDeBrancheBooleanControl = new Com.Suncor.Olt.Client.Controls.Template.TemplatableBooleanControl();
+            this.interrupteursElectriquesVerrouillesBooleanControl = new Com.Suncor.Olt.Client.Controls.Template.TemplatableBooleanControl();
+            this.depressuriseEtVidangeBooleanControl = new Com.Suncor.Olt.Client.Controls.Template.TemplatableBooleanControl();
+            this.enPresenceDeGazInerteBooleanControl = new Com.Suncor.Olt.Client.Controls.Template.TemplatableBooleanControl();
+            this.purgeAlaVapeurBooleanControl = new Com.Suncor.Olt.Client.Controls.Template.TemplatableBooleanControl();
+            this.possibiliteDeSulfuredeFerBooleanControl = new Com.Suncor.Olt.Client.Controls.Template.TemplatableBooleanControl();
+            this.aereBooleanControl = new Com.Suncor.Olt.Client.Controls.Template.TemplatableBooleanControl();
+            this.rinceAlEauBooleanControl = new Com.Suncor.Olt.Client.Controls.Template.TemplatableBooleanControl();
+            this.specialPrecautionsOrConsiderationsGroupBox = new Com.Suncor.Olt.Client.OltControls.OltGroupBox();
+            this.instructionsSpecialesTextBox = new Com.Suncor.Olt.Client.OltControls.OltTextBox();
+            this.substancesNormalementGroupBox = new Com.Suncor.Olt.Client.OltControls.OltGroupBox();
+            this.bacteriesBooleanControl = new Com.Suncor.Olt.Client.Controls.Template.TemplatableBooleanControl();
+            this.amianteBooleanControl = new Com.Suncor.Olt.Client.Controls.Template.TemplatableBooleanControl();
+            this.soufreBooleanControl = new Com.Suncor.Olt.Client.Controls.Template.TemplatableBooleanControl();
+            this.sbsBooleanControl = new Com.Suncor.Olt.Client.Controls.Template.TemplatableBooleanControl();
+            this.naOhBooleanControl = new Com.Suncor.Olt.Client.Controls.Template.TemplatableBooleanControl();
+            this.refluxBooleanControl = new Com.Suncor.Olt.Client.Controls.Template.TemplatableBooleanControl();
+            this.azoteBooleanControl = new Com.Suncor.Olt.Client.Controls.Template.TemplatableBooleanControl();
+            this.coBooleanControl = new Com.Suncor.Olt.Client.Controls.Template.TemplatableBooleanControl();
+            this.acidicSFBooleanControl = new Com.Suncor.Olt.Client.Controls.Template.TemplatableBooleanControl();
+            this.nh3BooleanControl = new Com.Suncor.Olt.Client.Controls.Template.TemplatableBooleanControl();
+            this.so2BooleanControl = new Com.Suncor.Olt.Client.Controls.Template.TemplatableBooleanControl();
+            this.autresSubstancesDropDownControl = new Com.Suncor.Olt.Client.Controls.Template.TemplatableDropDownControl();
+            this.aromatiqueDropDownControl = new Com.Suncor.Olt.Client.Controls.Template.TemplatableDropDownControl();
+            this.corrosifDropDownControl = new Com.Suncor.Olt.Client.Controls.Template.TemplatableDropDownControl();
+            this.hydrocarbureBooleanControl = new Com.Suncor.Olt.Client.Controls.Template.TemplatableBooleanControl();
+            this.ammoniaqueBooleanControl = new Com.Suncor.Olt.Client.Controls.Template.TemplatableBooleanControl();
+            this.h2SBooleanControl = new Com.Suncor.Olt.Client.Controls.Template.TemplatableBooleanControl();
+            this.errorProvider = new System.Windows.Forms.ErrorProvider(this.components);
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.basicInformationGroupBox.SuspendLayout();
+            this.conditionsGroupBox.SuspendLayout();
+            this.specialPrecautionsOrConsiderationsGroupBox.SuspendLayout();
+            this.substancesNormalementGroupBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // oltLabel1
+            // 
+            this.oltLabel1.AutoSize = true;
+            this.oltLabel1.Location = new System.Drawing.Point(-1, 479);
+            this.oltLabel1.Name = "oltLabel1";
+            this.oltLabel1.Size = new System.Drawing.Size(132, 13);
+            this.oltLabel1.TabIndex = 9;
+            this.oltLabel1.Text = "Documents de Référence:";
+            // 
+            // viewConfiguredDocumentLinkButton
+            // 
+            this.viewConfiguredDocumentLinkButton.Location = new System.Drawing.Point(408, 475);
+            this.viewConfiguredDocumentLinkButton.Name = "viewConfiguredDocumentLinkButton";
+            this.viewConfiguredDocumentLinkButton.Size = new System.Drawing.Size(75, 23);
+            this.viewConfiguredDocumentLinkButton.TabIndex = 5;
+            this.viewConfiguredDocumentLinkButton.Text = "Afficher";
+            this.viewConfiguredDocumentLinkButton.UseVisualStyleBackColor = true;
+            // 
+            // configuredDocumentLinkComboBox
+            // 
+            this.configuredDocumentLinkComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.configuredDocumentLinkComboBox.FormattingEnabled = true;
+            this.configuredDocumentLinkComboBox.Location = new System.Drawing.Point(133, 476);
+            this.configuredDocumentLinkComboBox.Name = "configuredDocumentLinkComboBox";
+            this.configuredDocumentLinkComboBox.Size = new System.Drawing.Size(269, 21);
+            this.configuredDocumentLinkComboBox.TabIndex = 4;
+            // 
+            // cancelButton
+            // 
+            this.cancelButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.cancelButton.Location = new System.Drawing.Point(919, 479);
+            this.cancelButton.Name = "cancelButton";
+            this.cancelButton.Size = new System.Drawing.Size(75, 23);
+            this.cancelButton.TabIndex = 7;
+            this.cancelButton.Text = "Fermer";
+            this.cancelButton.UseVisualStyleBackColor = true;
+            // 
+            // saveButton
+            // 
+            this.saveButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.saveButton.Location = new System.Drawing.Point(831, 479);
+            this.saveButton.Name = "saveButton";
+            this.saveButton.Size = new System.Drawing.Size(75, 23);
+            this.saveButton.TabIndex = 6;
+            this.saveButton.Text = "Enregistrer";
+            this.saveButton.UseVisualStyleBackColor = true;
+            // 
+            // basicInformationGroupBox
+            // 
+            this.basicInformationGroupBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.basicInformationGroupBox.Controls.Add(this.oltLabel3);
+            this.basicInformationGroupBox.Controls.Add(this.refNumberTextBox);
+            this.basicInformationGroupBox.Controls.Add(this.preparationCheckBox);
+            this.basicInformationGroupBox.Controls.Add(this.oltLabel2);
+            this.basicInformationGroupBox.Controls.Add(this.functionalLocationTextBox);
+            this.basicInformationGroupBox.Controls.Add(this.functionalLocationBrowseButton);
+            this.basicInformationGroupBox.Controls.Add(this.oltLabel6);
+            this.basicInformationGroupBox.Controls.Add(this.oltLabel5);
+            this.basicInformationGroupBox.Controls.Add(this.endTimePicker);
+            this.basicInformationGroupBox.Controls.Add(this.endDatePicker);
+            this.basicInformationGroupBox.Controls.Add(this.startTimePicker);
+            this.basicInformationGroupBox.Controls.Add(this.startDatePicker);
+            this.basicInformationGroupBox.Location = new System.Drawing.Point(3, 4);
+            this.basicInformationGroupBox.Name = "basicInformationGroupBox";
+            this.basicInformationGroupBox.Size = new System.Drawing.Size(1006, 83);
+            this.basicInformationGroupBox.TabIndex = 0;
+            this.basicInformationGroupBox.TabStop = false;
+            this.basicInformationGroupBox.Text = "Informations de base";
+            // 
+            // oltLabel3
+            // 
+            this.oltLabel3.AutoSize = true;
+            this.oltLabel3.Location = new System.Drawing.Point(637, 21);
+            this.oltLabel3.Name = "oltLabel3";
+            this.oltLabel3.Size = new System.Drawing.Size(35, 13);
+            this.oltLabel3.TabIndex = 7;
+            this.oltLabel3.Text = "Ref #";
+            // 
+            // refNumberTextBox
+            // 
+            this.refNumberTextBox.Location = new System.Drawing.Point(676, 17);
+            this.refNumberTextBox.Margin = new System.Windows.Forms.Padding(0);
+            this.refNumberTextBox.MaxLength = 50;
+            this.refNumberTextBox.Name = "refNumberTextBox";
+            this.refNumberTextBox.OltAcceptsReturn = true;
+            this.refNumberTextBox.OltTrimWhitespace = true;
+            this.refNumberTextBox.ReadOnly = true;
+            this.refNumberTextBox.Size = new System.Drawing.Size(87, 20);
+            this.refNumberTextBox.TabIndex = 8;
+            this.refNumberTextBox.Text = "EC";
+            // 
+            // preparationCheckBox
+            // 
+            this.preparationCheckBox.AutoSize = true;
+            this.preparationCheckBox.BackColor = System.Drawing.Color.Yellow;
+            this.preparationCheckBox.Location = new System.Drawing.Point(536, 19);
+            this.preparationCheckBox.Name = "preparationCheckBox";
+            this.preparationCheckBox.Size = new System.Drawing.Size(82, 17);
+            this.preparationCheckBox.TabIndex = 6;
+            this.preparationCheckBox.Text = "Préparation";
+            this.preparationCheckBox.UseVisualStyleBackColor = false;
+            this.preparationCheckBox.Value = null;
+            // 
+            // oltLabel2
+            // 
+            this.oltLabel2.AutoSize = true;
+            this.oltLabel2.Location = new System.Drawing.Point(10, 53);
+            this.oltLabel2.Name = "oltLabel2";
+            this.oltLabel2.Size = new System.Drawing.Size(88, 13);
+            this.oltLabel2.TabIndex = 9;
+            this.oltLabel2.Text = "Poste technique:";
+            // 
+            // functionalLocationTextBox
+            // 
+            this.functionalLocationTextBox.Location = new System.Drawing.Point(98, 49);
+            this.functionalLocationTextBox.Name = "functionalLocationTextBox";
+            this.functionalLocationTextBox.OltAcceptsReturn = true;
+            this.functionalLocationTextBox.OltTrimWhitespace = true;
+            this.functionalLocationTextBox.ReadOnly = true;
+            this.functionalLocationTextBox.Size = new System.Drawing.Size(274, 20);
+            this.functionalLocationTextBox.TabIndex = 10;
+            this.functionalLocationTextBox.TabStop = false;
+            // 
+            // functionalLocationBrowseButton
+            // 
+            this.functionalLocationBrowseButton.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.functionalLocationBrowseButton.Location = new System.Drawing.Point(377, 48);
+            this.functionalLocationBrowseButton.Name = "functionalLocationBrowseButton";
+            this.functionalLocationBrowseButton.Size = new System.Drawing.Size(75, 23);
+            this.functionalLocationBrowseButton.TabIndex = 11;
+            this.functionalLocationBrowseButton.Text = "&Parcourir...";
+            this.functionalLocationBrowseButton.UseVisualStyleBackColor = true;
+            // 
+            // oltLabel6
+            // 
+            this.oltLabel6.AutoSize = true;
+            this.oltLabel6.Location = new System.Drawing.Point(294, 21);
+            this.oltLabel6.Name = "oltLabel6";
+            this.oltLabel6.Size = new System.Drawing.Size(13, 13);
+            this.oltLabel6.TabIndex = 3;
+            this.oltLabel6.Text = "à";
+            // 
+            // oltLabel5
+            // 
+            this.oltLabel5.AutoSize = true;
+            this.oltLabel5.Location = new System.Drawing.Point(45, 21);
+            this.oltLabel5.Name = "oltLabel5";
+            this.oltLabel5.Size = new System.Drawing.Size(50, 13);
+            this.oltLabel5.TabIndex = 0;
+            this.oltLabel5.Text = "Valide du";
+            // 
+            // endTimePicker
+            // 
+            this.endTimePicker.Checked = true;
+            this.endTimePicker.CustomFormat = "HH:mm";
+            this.endTimePicker.Location = new System.Drawing.Point(453, 17);
+            this.endTimePicker.Margin = new System.Windows.Forms.Padding(0);
+            this.endTimePicker.Name = "endTimePicker";
+            this.endTimePicker.ShowCheckBox = false;
+            this.endTimePicker.Size = new System.Drawing.Size(60, 21);
+            this.endTimePicker.TabIndex = 5;
+            // 
+            // endDatePicker
+            // 
+            this.endDatePicker.CustomFormat = "ddd yyyy-MM-dd";
+            this.endDatePicker.Location = new System.Drawing.Point(323, 17);
+            this.endDatePicker.Margin = new System.Windows.Forms.Padding(0);
+            this.endDatePicker.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.endDatePicker.Name = "endDatePicker";
+            this.endDatePicker.PickerEnabled = true;
+            this.endDatePicker.Size = new System.Drawing.Size(126, 21);
+            this.endDatePicker.TabIndex = 4;
+            // 
+            // startTimePicker
+            // 
+            this.startTimePicker.Checked = true;
+            this.startTimePicker.CustomFormat = "HH:mm";
+            this.startTimePicker.Location = new System.Drawing.Point(219, 17);
+            this.startTimePicker.Margin = new System.Windows.Forms.Padding(0);
+            this.startTimePicker.Name = "startTimePicker";
+            this.startTimePicker.ShowCheckBox = false;
+            this.startTimePicker.Size = new System.Drawing.Size(60, 21);
+            this.startTimePicker.TabIndex = 4;
+            // 
+            // startDatePicker
+            // 
+            this.startDatePicker.CustomFormat = "ddd yyyy-MM-dd";
+            this.startDatePicker.Location = new System.Drawing.Point(98, 17);
+            this.startDatePicker.Margin = new System.Windows.Forms.Padding(0);
+            this.startDatePicker.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.startDatePicker.Name = "startDatePicker";
+            this.startDatePicker.PickerEnabled = true;
+            this.startDatePicker.Size = new System.Drawing.Size(118, 21);
+            this.startDatePicker.TabIndex = 2;
+            // 
+            // conditionsGroupBox
+            // 
+            this.conditionsGroupBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.conditionsGroupBox.Controls.Add(this.pssPath);
+            this.conditionsGroupBox.Controls.Add(this.viewPSSLinkButton);
+            this.conditionsGroupBox.Controls.Add(this.purgeBooleanControl);
+            this.conditionsGroupBox.Controls.Add(this.ventillationBooleanControl);
+            this.conditionsGroupBox.Controls.Add(this.harnisBooleanControl);
+            this.conditionsGroupBox.Controls.Add(this.ventilationForceBooleanControl);
+            this.conditionsGroupBox.Controls.Add(this.pssBooleanControl);
+            this.conditionsGroupBox.Controls.Add(this.dessinsBooleanControl);
+            this.conditionsGroupBox.Controls.Add(this.videBooleanControl);
+            this.conditionsGroupBox.Controls.Add(this.detectionGazBooleanControl);
+            this.conditionsGroupBox.Controls.Add(this.depressuriseBooleanControl);
+            this.conditionsGroupBox.Controls.Add(this.obtureBooleanControl);
+            this.conditionsGroupBox.Controls.Add(this.rinceBooleanControl);
+            this.conditionsGroupBox.Controls.Add(this.nettoyesBooleanControl);
+            this.conditionsGroupBox.Controls.Add(this.ventilationNaturelleBooleanControl);
+            this.conditionsGroupBox.Controls.Add(this.bouchesDegoutProtegeesBooleanControl);
+            this.conditionsGroupBox.Controls.Add(this.ventilationMecaniqueBooleanControl);
+            this.conditionsGroupBox.Controls.Add(this.planDeSauvetageBooleanControl);
+            this.conditionsGroupBox.Controls.Add(this.autresConditionsDropDownControl);
+            this.conditionsGroupBox.Controls.Add(this.dessinsRequisStringControl);
+            this.conditionsGroupBox.Controls.Add(this.cablesChauffantsMisHorsTensionBooleanControl);
+            this.conditionsGroupBox.Controls.Add(this.purgeParGazInerteBooleanControl);
+            this.conditionsGroupBox.Controls.Add(this.obtureOuDeBrancheBooleanControl);
+            this.conditionsGroupBox.Controls.Add(this.interrupteursElectriquesVerrouillesBooleanControl);
+            this.conditionsGroupBox.Controls.Add(this.depressuriseEtVidangeBooleanControl);
+            this.conditionsGroupBox.Controls.Add(this.enPresenceDeGazInerteBooleanControl);
+            this.conditionsGroupBox.Controls.Add(this.purgeAlaVapeurBooleanControl);
+            this.conditionsGroupBox.Controls.Add(this.possibiliteDeSulfuredeFerBooleanControl);
+            this.conditionsGroupBox.Controls.Add(this.aereBooleanControl);
+            this.conditionsGroupBox.Controls.Add(this.rinceAlEauBooleanControl);
+            this.conditionsGroupBox.Location = new System.Drawing.Point(3, 209);
+            this.conditionsGroupBox.Margin = new System.Windows.Forms.Padding(0);
+            this.conditionsGroupBox.Name = "conditionsGroupBox";
+            this.conditionsGroupBox.Size = new System.Drawing.Size(1006, 161);
+            this.conditionsGroupBox.TabIndex = 2;
+            this.conditionsGroupBox.TabStop = false;
+            this.conditionsGroupBox.Text = "CONDITIONS AUTORISÉS";
+            // 
+            // pssPath
+            // 
+            this.pssPath.Location = new System.Drawing.Point(159, 129);
+            this.pssPath.MaxLength = 60;
+            this.pssPath.Name = "pssPath";
+            this.pssPath.OltAcceptsReturn = true;
+            this.pssPath.OltTrimWhitespace = true;
+            this.pssPath.Size = new System.Drawing.Size(409, 20);
+            this.pssPath.TabIndex = 30;
+            this.pssPath.Visible = false;
+            // 
+            // viewPSSLinkButton
+            // 
+            this.viewPSSLinkButton.Location = new System.Drawing.Point(571, 127);
+            this.viewPSSLinkButton.Name = "viewPSSLinkButton";
+            this.viewPSSLinkButton.Size = new System.Drawing.Size(75, 22);
+            this.viewPSSLinkButton.TabIndex = 10;
+            this.viewPSSLinkButton.Text = "Afficher";
+            this.viewPSSLinkButton.UseVisualStyleBackColor = true;
+            this.viewPSSLinkButton.Visible = false;
+            // 
+            // purgeBooleanControl
+            // 
+            this.purgeBooleanControl.Label = "Purgé";
+            this.purgeBooleanControl.Location = new System.Drawing.Point(8, 111);
+            this.purgeBooleanControl.Margin = new System.Windows.Forms.Padding(0);
+            this.purgeBooleanControl.MinimumSize = new System.Drawing.Size(100, 17);
+            this.purgeBooleanControl.Name = "purgeBooleanControl";
+            this.purgeBooleanControl.Size = new System.Drawing.Size(100, 17);
+            this.purgeBooleanControl.TabIndex = 29;
+            this.purgeBooleanControl.TemplateMode = false;
+            // 
+            // ventillationBooleanControl
+            // 
+            this.ventillationBooleanControl.Label = "Ventilation en continue";
+            this.ventillationBooleanControl.Location = new System.Drawing.Point(652, 30);
+            this.ventillationBooleanControl.Margin = new System.Windows.Forms.Padding(0);
+            this.ventillationBooleanControl.MinimumSize = new System.Drawing.Size(100, 17);
+            this.ventillationBooleanControl.Name = "ventillationBooleanControl";
+            this.ventillationBooleanControl.Size = new System.Drawing.Size(199, 17);
+            this.ventillationBooleanControl.TabIndex = 26;
+            this.ventillationBooleanControl.TemplateMode = false;
+            // 
+            // harnisBooleanControl
+            // 
+            this.harnisBooleanControl.Label = "Harnais de sécurité";
+            this.harnisBooleanControl.Location = new System.Drawing.Point(652, 96);
+            this.harnisBooleanControl.Margin = new System.Windows.Forms.Padding(0);
+            this.harnisBooleanControl.MinimumSize = new System.Drawing.Size(100, 17);
+            this.harnisBooleanControl.Name = "harnisBooleanControl";
+            this.harnisBooleanControl.Size = new System.Drawing.Size(145, 17);
+            this.harnisBooleanControl.TabIndex = 28;
+            this.harnisBooleanControl.TemplateMode = false;
+            // 
+            // ventilationForceBooleanControl
+            // 
+            this.ventilationForceBooleanControl.Label = "Ventilation forcée (mécanique)";
+            this.ventilationForceBooleanControl.Location = new System.Drawing.Point(652, 52);
+            this.ventilationForceBooleanControl.Margin = new System.Windows.Forms.Padding(0);
+            this.ventilationForceBooleanControl.MinimumSize = new System.Drawing.Size(100, 17);
+            this.ventilationForceBooleanControl.Name = "ventilationForceBooleanControl";
+            this.ventilationForceBooleanControl.Size = new System.Drawing.Size(204, 17);
+            this.ventilationForceBooleanControl.TabIndex = 27;
+            this.ventilationForceBooleanControl.TemplateMode = false;
+            // 
+            // pssBooleanControl
+            // 
+            this.pssBooleanControl.Label = "Plan de sauvetage (PSS)";
+            this.pssBooleanControl.Location = new System.Drawing.Point(8, 132);
+            this.pssBooleanControl.Margin = new System.Windows.Forms.Padding(0);
+            this.pssBooleanControl.MinimumSize = new System.Drawing.Size(100, 17);
+            this.pssBooleanControl.Name = "pssBooleanControl";
+            this.pssBooleanControl.Size = new System.Drawing.Size(150, 17);
+            this.pssBooleanControl.TabIndex = 25;
+            this.pssBooleanControl.TemplateMode = false;
+            // 
+            // dessinsBooleanControl
+            // 
+            this.dessinsBooleanControl.Label = "Dessins requis";
+            this.dessinsBooleanControl.Location = new System.Drawing.Point(330, 56);
+            this.dessinsBooleanControl.Margin = new System.Windows.Forms.Padding(0);
+            this.dessinsBooleanControl.MinimumSize = new System.Drawing.Size(100, 17);
+            this.dessinsBooleanControl.Name = "dessinsBooleanControl";
+            this.dessinsBooleanControl.Size = new System.Drawing.Size(145, 17);
+            this.dessinsBooleanControl.TabIndex = 23;
+            this.dessinsBooleanControl.TemplateMode = false;
+            // 
+            // videBooleanControl
+            // 
+            this.videBooleanControl.Label = "Vidé";
+            this.videBooleanControl.Location = new System.Drawing.Point(330, 36);
+            this.videBooleanControl.Margin = new System.Windows.Forms.Padding(0);
+            this.videBooleanControl.MinimumSize = new System.Drawing.Size(100, 17);
+            this.videBooleanControl.Name = "videBooleanControl";
+            this.videBooleanControl.Size = new System.Drawing.Size(204, 17);
+            this.videBooleanControl.TabIndex = 22;
+            this.videBooleanControl.TemplateMode = false;
+            // 
+            // detectionGazBooleanControl
+            // 
+            this.detectionGazBooleanControl.Label = "Détection  de gaz en continue";
+            this.detectionGazBooleanControl.Location = new System.Drawing.Point(330, 77);
+            this.detectionGazBooleanControl.Margin = new System.Windows.Forms.Padding(0);
+            this.detectionGazBooleanControl.MinimumSize = new System.Drawing.Size(100, 17);
+            this.detectionGazBooleanControl.Name = "detectionGazBooleanControl";
+            this.detectionGazBooleanControl.Size = new System.Drawing.Size(200, 17);
+            this.detectionGazBooleanControl.TabIndex = 24;
+            this.detectionGazBooleanControl.TemplateMode = false;
+            // 
+            // depressuriseBooleanControl
+            // 
+            this.depressuriseBooleanControl.Label = "Dépressurisé";
+            this.depressuriseBooleanControl.Location = new System.Drawing.Point(8, 23);
+            this.depressuriseBooleanControl.Margin = new System.Windows.Forms.Padding(0);
+            this.depressuriseBooleanControl.MinimumSize = new System.Drawing.Size(100, 17);
+            this.depressuriseBooleanControl.Name = "depressuriseBooleanControl";
+            this.depressuriseBooleanControl.Size = new System.Drawing.Size(199, 17);
+            this.depressuriseBooleanControl.TabIndex = 16;
+            this.depressuriseBooleanControl.TemplateMode = false;
+            // 
+            // obtureBooleanControl
+            // 
+            this.obtureBooleanControl.Label = "Obturé";
+            this.obtureBooleanControl.Location = new System.Drawing.Point(8, 67);
+            this.obtureBooleanControl.Margin = new System.Windows.Forms.Padding(0);
+            this.obtureBooleanControl.MinimumSize = new System.Drawing.Size(100, 17);
+            this.obtureBooleanControl.Name = "obtureBooleanControl";
+            this.obtureBooleanControl.Size = new System.Drawing.Size(145, 17);
+            this.obtureBooleanControl.TabIndex = 18;
+            this.obtureBooleanControl.TemplateMode = false;
+            // 
+            // rinceBooleanControl
+            // 
+            this.rinceBooleanControl.Label = "Rincé";
+            this.rinceBooleanControl.Location = new System.Drawing.Point(8, 45);
+            this.rinceBooleanControl.Margin = new System.Windows.Forms.Padding(0);
+            this.rinceBooleanControl.MinimumSize = new System.Drawing.Size(100, 17);
+            this.rinceBooleanControl.Name = "rinceBooleanControl";
+            this.rinceBooleanControl.Size = new System.Drawing.Size(204, 17);
+            this.rinceBooleanControl.TabIndex = 17;
+            this.rinceBooleanControl.TemplateMode = false;
+            // 
+            // nettoyesBooleanControl
+            // 
+            this.nettoyesBooleanControl.Label = "Nettoyés";
+            this.nettoyesBooleanControl.Location = new System.Drawing.Point(8, 89);
+            this.nettoyesBooleanControl.Margin = new System.Windows.Forms.Padding(0);
+            this.nettoyesBooleanControl.MinimumSize = new System.Drawing.Size(100, 17);
+            this.nettoyesBooleanControl.Name = "nettoyesBooleanControl";
+            this.nettoyesBooleanControl.Size = new System.Drawing.Size(100, 17);
+            this.nettoyesBooleanControl.TabIndex = 19;
+            this.nettoyesBooleanControl.TemplateMode = false;
+            // 
+            // ventilationNaturelleBooleanControl
+            // 
+            this.ventilationNaturelleBooleanControl.Label = "Ventilation naturelle";
+            this.ventilationNaturelleBooleanControl.Location = new System.Drawing.Point(652, 242);
+            this.ventilationNaturelleBooleanControl.Margin = new System.Windows.Forms.Padding(0);
+            this.ventilationNaturelleBooleanControl.MinimumSize = new System.Drawing.Size(100, 17);
+            this.ventilationNaturelleBooleanControl.Name = "ventilationNaturelleBooleanControl";
+            this.ventilationNaturelleBooleanControl.Size = new System.Drawing.Size(136, 17);
+            this.ventilationNaturelleBooleanControl.TabIndex = 15;
+            this.ventilationNaturelleBooleanControl.TemplateMode = false;
+            // 
+            // bouchesDegoutProtegeesBooleanControl
+            // 
+            this.bouchesDegoutProtegeesBooleanControl.Label = "Bouches d\'égout protégées";
+            this.bouchesDegoutProtegeesBooleanControl.Location = new System.Drawing.Point(652, 198);
+            this.bouchesDegoutProtegeesBooleanControl.Margin = new System.Windows.Forms.Padding(0);
+            this.bouchesDegoutProtegeesBooleanControl.MinimumSize = new System.Drawing.Size(100, 17);
+            this.bouchesDegoutProtegeesBooleanControl.Name = "bouchesDegoutProtegeesBooleanControl";
+            this.bouchesDegoutProtegeesBooleanControl.Size = new System.Drawing.Size(199, 17);
+            this.bouchesDegoutProtegeesBooleanControl.TabIndex = 11;
+            this.bouchesDegoutProtegeesBooleanControl.TemplateMode = false;
+            // 
+            // ventilationMecaniqueBooleanControl
+            // 
+            this.ventilationMecaniqueBooleanControl.Label = "Ventilation mécanique";
+            this.ventilationMecaniqueBooleanControl.Location = new System.Drawing.Point(330, 266);
+            this.ventilationMecaniqueBooleanControl.Margin = new System.Windows.Forms.Padding(0);
+            this.ventilationMecaniqueBooleanControl.MinimumSize = new System.Drawing.Size(100, 17);
+            this.ventilationMecaniqueBooleanControl.Name = "ventilationMecaniqueBooleanControl";
+            this.ventilationMecaniqueBooleanControl.Size = new System.Drawing.Size(150, 17);
+            this.ventilationMecaniqueBooleanControl.TabIndex = 10;
+            this.ventilationMecaniqueBooleanControl.TemplateMode = false;
+            // 
+            // planDeSauvetageBooleanControl
+            // 
+            this.planDeSauvetageBooleanControl.Label = "Plan de sauvetage";
+            this.planDeSauvetageBooleanControl.Location = new System.Drawing.Point(17, 286);
+            this.planDeSauvetageBooleanControl.Margin = new System.Windows.Forms.Padding(0);
+            this.planDeSauvetageBooleanControl.MinimumSize = new System.Drawing.Size(100, 17);
+            this.planDeSauvetageBooleanControl.Name = "planDeSauvetageBooleanControl";
+            this.planDeSauvetageBooleanControl.Size = new System.Drawing.Size(117, 17);
+            this.planDeSauvetageBooleanControl.TabIndex = 5;
+            this.planDeSauvetageBooleanControl.TemplateMode = false;
+            // 
+            // autresConditionsDropDownControl
+            // 
+            this.autresConditionsDropDownControl.DropDownWidth = 175;
+            this.autresConditionsDropDownControl.Label = "Autre:";
+            this.autresConditionsDropDownControl.Location = new System.Drawing.Point(330, 99);
+            this.autresConditionsDropDownControl.Margin = new System.Windows.Forms.Padding(0);
+            this.autresConditionsDropDownControl.MinimumSize = new System.Drawing.Size(226, 22);
+            this.autresConditionsDropDownControl.Name = "autresConditionsDropDownControl";
+            this.autresConditionsDropDownControl.Size = new System.Drawing.Size(238, 22);
+            this.autresConditionsDropDownControl.TabIndex = 14;
+            this.autresConditionsDropDownControl.TemplateMode = false;
+            // 
+            // dessinsRequisStringControl
+            // 
+            this.dessinsRequisStringControl.Label = "Fiche de cadenassage : #";
+            this.dessinsRequisStringControl.Location = new System.Drawing.Point(652, 73);
+            this.dessinsRequisStringControl.Margin = new System.Windows.Forms.Padding(0);
+            this.dessinsRequisStringControl.MinimumSize = new System.Drawing.Size(226, 22);
+            this.dessinsRequisStringControl.Name = "dessinsRequisStringControl";
+            this.dessinsRequisStringControl.Size = new System.Drawing.Size(305, 22);
+            this.dessinsRequisStringControl.TabIndex = 4;
+            this.dessinsRequisStringControl.TemplateMode = false;
+            this.dessinsRequisStringControl.TextBoxMaxLength = 32767;
+            this.dessinsRequisStringControl.TextBoxWidth = 150;
+            // 
+            // cablesChauffantsMisHorsTensionBooleanControl
+            // 
+            this.cablesChauffantsMisHorsTensionBooleanControl.Label = "Câbles chauffants mis hors tension";
+            this.cablesChauffantsMisHorsTensionBooleanControl.Location = new System.Drawing.Point(330, 176);
+            this.cablesChauffantsMisHorsTensionBooleanControl.Margin = new System.Windows.Forms.Padding(0);
+            this.cablesChauffantsMisHorsTensionBooleanControl.MinimumSize = new System.Drawing.Size(100, 17);
+            this.cablesChauffantsMisHorsTensionBooleanControl.Name = "cablesChauffantsMisHorsTensionBooleanControl";
+            this.cablesChauffantsMisHorsTensionBooleanControl.Size = new System.Drawing.Size(199, 17);
+            this.cablesChauffantsMisHorsTensionBooleanControl.TabIndex = 6;
+            this.cablesChauffantsMisHorsTensionBooleanControl.TemplateMode = false;
+            // 
+            // purgeParGazInerteBooleanControl
+            // 
+            this.purgeParGazInerteBooleanControl.Label = "Purgé par un gaz inerte";
+            this.purgeParGazInerteBooleanControl.Location = new System.Drawing.Point(330, 220);
+            this.purgeParGazInerteBooleanControl.Margin = new System.Windows.Forms.Padding(0);
+            this.purgeParGazInerteBooleanControl.MinimumSize = new System.Drawing.Size(100, 17);
+            this.purgeParGazInerteBooleanControl.Name = "purgeParGazInerteBooleanControl";
+            this.purgeParGazInerteBooleanControl.Size = new System.Drawing.Size(145, 17);
+            this.purgeParGazInerteBooleanControl.TabIndex = 8;
+            this.purgeParGazInerteBooleanControl.TemplateMode = false;
+            // 
+            // obtureOuDeBrancheBooleanControl
+            // 
+            this.obtureOuDeBrancheBooleanControl.Label = "Obturé ou débranché";
+            this.obtureOuDeBrancheBooleanControl.Location = new System.Drawing.Point(17, 198);
+            this.obtureOuDeBrancheBooleanControl.Margin = new System.Windows.Forms.Padding(0);
+            this.obtureOuDeBrancheBooleanControl.MinimumSize = new System.Drawing.Size(100, 17);
+            this.obtureOuDeBrancheBooleanControl.Name = "obtureOuDeBrancheBooleanControl";
+            this.obtureOuDeBrancheBooleanControl.Size = new System.Drawing.Size(135, 17);
+            this.obtureOuDeBrancheBooleanControl.TabIndex = 0;
+            this.obtureOuDeBrancheBooleanControl.TemplateMode = false;
+            // 
+            // interrupteursElectriquesVerrouillesBooleanControl
+            // 
+            this.interrupteursElectriquesVerrouillesBooleanControl.Label = "Interrupteurs électriques verrouillés";
+            this.interrupteursElectriquesVerrouillesBooleanControl.Location = new System.Drawing.Point(330, 198);
+            this.interrupteursElectriquesVerrouillesBooleanControl.Margin = new System.Windows.Forms.Padding(0);
+            this.interrupteursElectriquesVerrouillesBooleanControl.MinimumSize = new System.Drawing.Size(100, 17);
+            this.interrupteursElectriquesVerrouillesBooleanControl.Name = "interrupteursElectriquesVerrouillesBooleanControl";
+            this.interrupteursElectriquesVerrouillesBooleanControl.Size = new System.Drawing.Size(204, 17);
+            this.interrupteursElectriquesVerrouillesBooleanControl.TabIndex = 7;
+            this.interrupteursElectriquesVerrouillesBooleanControl.TemplateMode = false;
+            // 
+            // depressuriseEtVidangeBooleanControl
+            // 
+            this.depressuriseEtVidangeBooleanControl.Label = "Dépressurisé et vidangé";
+            this.depressuriseEtVidangeBooleanControl.Location = new System.Drawing.Point(17, 220);
+            this.depressuriseEtVidangeBooleanControl.Margin = new System.Windows.Forms.Padding(0);
+            this.depressuriseEtVidangeBooleanControl.MinimumSize = new System.Drawing.Size(100, 17);
+            this.depressuriseEtVidangeBooleanControl.Name = "depressuriseEtVidangeBooleanControl";
+            this.depressuriseEtVidangeBooleanControl.Size = new System.Drawing.Size(148, 17);
+            this.depressuriseEtVidangeBooleanControl.TabIndex = 1;
+            this.depressuriseEtVidangeBooleanControl.TemplateMode = false;
+            // 
+            // enPresenceDeGazInerteBooleanControl
+            // 
+            this.enPresenceDeGazInerteBooleanControl.Label = "En présence de gaz inerte";
+            this.enPresenceDeGazInerteBooleanControl.Location = new System.Drawing.Point(17, 242);
+            this.enPresenceDeGazInerteBooleanControl.Margin = new System.Windows.Forms.Padding(0);
+            this.enPresenceDeGazInerteBooleanControl.MinimumSize = new System.Drawing.Size(100, 17);
+            this.enPresenceDeGazInerteBooleanControl.Name = "enPresenceDeGazInerteBooleanControl";
+            this.enPresenceDeGazInerteBooleanControl.Size = new System.Drawing.Size(157, 17);
+            this.enPresenceDeGazInerteBooleanControl.TabIndex = 2;
+            this.enPresenceDeGazInerteBooleanControl.TemplateMode = false;
+            // 
+            // purgeAlaVapeurBooleanControl
+            // 
+            this.purgeAlaVapeurBooleanControl.Label = "Purgé à la vapeur";
+            this.purgeAlaVapeurBooleanControl.Location = new System.Drawing.Point(17, 264);
+            this.purgeAlaVapeurBooleanControl.Margin = new System.Windows.Forms.Padding(0);
+            this.purgeAlaVapeurBooleanControl.MinimumSize = new System.Drawing.Size(100, 17);
+            this.purgeAlaVapeurBooleanControl.Name = "purgeAlaVapeurBooleanControl";
+            this.purgeAlaVapeurBooleanControl.Size = new System.Drawing.Size(117, 17);
+            this.purgeAlaVapeurBooleanControl.TabIndex = 3;
+            this.purgeAlaVapeurBooleanControl.TemplateMode = false;
+            // 
+            // possibiliteDeSulfuredeFerBooleanControl
+            // 
+            this.possibiliteDeSulfuredeFerBooleanControl.Label = "Possibilité de sulfure de fer";
+            this.possibiliteDeSulfuredeFerBooleanControl.Location = new System.Drawing.Point(652, 220);
+            this.possibiliteDeSulfuredeFerBooleanControl.Margin = new System.Windows.Forms.Padding(0);
+            this.possibiliteDeSulfuredeFerBooleanControl.MinimumSize = new System.Drawing.Size(100, 17);
+            this.possibiliteDeSulfuredeFerBooleanControl.Name = "possibiliteDeSulfuredeFerBooleanControl";
+            this.possibiliteDeSulfuredeFerBooleanControl.Size = new System.Drawing.Size(161, 17);
+            this.possibiliteDeSulfuredeFerBooleanControl.TabIndex = 12;
+            this.possibiliteDeSulfuredeFerBooleanControl.TemplateMode = false;
+            // 
+            // aereBooleanControl
+            // 
+            this.aereBooleanControl.Label = "Aéré";
+            this.aereBooleanControl.Location = new System.Drawing.Point(330, 17);
+            this.aereBooleanControl.Margin = new System.Windows.Forms.Padding(0);
+            this.aereBooleanControl.MinimumSize = new System.Drawing.Size(100, 17);
+            this.aereBooleanControl.Name = "aereBooleanControl";
+            this.aereBooleanControl.Size = new System.Drawing.Size(182, 17);
+            this.aereBooleanControl.TabIndex = 13;
+            this.aereBooleanControl.TemplateMode = false;
+            // 
+            // rinceAlEauBooleanControl
+            // 
+            this.rinceAlEauBooleanControl.Label = "Rincé à l\'eau";
+            this.rinceAlEauBooleanControl.Location = new System.Drawing.Point(330, 242);
+            this.rinceAlEauBooleanControl.Margin = new System.Windows.Forms.Padding(0);
+            this.rinceAlEauBooleanControl.MinimumSize = new System.Drawing.Size(100, 17);
+            this.rinceAlEauBooleanControl.Name = "rinceAlEauBooleanControl";
+            this.rinceAlEauBooleanControl.Size = new System.Drawing.Size(100, 17);
+            this.rinceAlEauBooleanControl.TabIndex = 9;
+            this.rinceAlEauBooleanControl.TemplateMode = false;
+            // 
+            // specialPrecautionsOrConsiderationsGroupBox
+            // 
+            this.specialPrecautionsOrConsiderationsGroupBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.specialPrecautionsOrConsiderationsGroupBox.Controls.Add(this.instructionsSpecialesTextBox);
+            this.specialPrecautionsOrConsiderationsGroupBox.Location = new System.Drawing.Point(3, 378);
+            this.specialPrecautionsOrConsiderationsGroupBox.Margin = new System.Windows.Forms.Padding(0);
+            this.specialPrecautionsOrConsiderationsGroupBox.Name = "specialPrecautionsOrConsiderationsGroupBox";
+            this.specialPrecautionsOrConsiderationsGroupBox.Size = new System.Drawing.Size(1006, 85);
+            this.specialPrecautionsOrConsiderationsGroupBox.TabIndex = 3;
+            this.specialPrecautionsOrConsiderationsGroupBox.TabStop = false;
+            this.specialPrecautionsOrConsiderationsGroupBox.Text = "Instructions spéciales";
+            // 
+            // instructionsSpecialesTextBox
+            // 
+            this.instructionsSpecialesTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.instructionsSpecialesTextBox.Location = new System.Drawing.Point(6, 17);
+            this.instructionsSpecialesTextBox.MaxLength = 500;
+            this.instructionsSpecialesTextBox.Multiline = true;
+            this.instructionsSpecialesTextBox.Name = "instructionsSpecialesTextBox";
+            this.instructionsSpecialesTextBox.OltAcceptsReturn = true;
+            this.instructionsSpecialesTextBox.OltTrimWhitespace = true;
+            this.instructionsSpecialesTextBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.instructionsSpecialesTextBox.Size = new System.Drawing.Size(996, 58);
+            this.instructionsSpecialesTextBox.TabIndex = 0;
+            // 
+            // substancesNormalementGroupBox
+            // 
+            this.substancesNormalementGroupBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.substancesNormalementGroupBox.Controls.Add(this.bacteriesBooleanControl);
+            this.substancesNormalementGroupBox.Controls.Add(this.amianteBooleanControl);
+            this.substancesNormalementGroupBox.Controls.Add(this.soufreBooleanControl);
+            this.substancesNormalementGroupBox.Controls.Add(this.sbsBooleanControl);
+            this.substancesNormalementGroupBox.Controls.Add(this.naOhBooleanControl);
+            this.substancesNormalementGroupBox.Controls.Add(this.refluxBooleanControl);
+            this.substancesNormalementGroupBox.Controls.Add(this.azoteBooleanControl);
+            this.substancesNormalementGroupBox.Controls.Add(this.coBooleanControl);
+            this.substancesNormalementGroupBox.Controls.Add(this.acidicSFBooleanControl);
+            this.substancesNormalementGroupBox.Controls.Add(this.nh3BooleanControl);
+            this.substancesNormalementGroupBox.Controls.Add(this.so2BooleanControl);
+            this.substancesNormalementGroupBox.Controls.Add(this.autresSubstancesDropDownControl);
+            this.substancesNormalementGroupBox.Controls.Add(this.aromatiqueDropDownControl);
+            this.substancesNormalementGroupBox.Controls.Add(this.corrosifDropDownControl);
+            this.substancesNormalementGroupBox.Controls.Add(this.hydrocarbureBooleanControl);
+            this.substancesNormalementGroupBox.Controls.Add(this.ammoniaqueBooleanControl);
+            this.substancesNormalementGroupBox.Controls.Add(this.h2SBooleanControl);
+            this.substancesNormalementGroupBox.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.substancesNormalementGroupBox.Location = new System.Drawing.Point(3, 90);
+            this.substancesNormalementGroupBox.Margin = new System.Windows.Forms.Padding(0);
+            this.substancesNormalementGroupBox.Name = "substancesNormalementGroupBox";
+            this.substancesNormalementGroupBox.Size = new System.Drawing.Size(1006, 114);
+            this.substancesNormalementGroupBox.TabIndex = 1;
+            this.substancesNormalementGroupBox.TabStop = false;
+            this.substancesNormalementGroupBox.Text = "SUBSTANCES NORMALEMENT À L’INTÉRIEUR DE L’ÉQUIPEMENT";
+            // 
+            // bacteriesBooleanControl
+            // 
+            this.bacteriesBooleanControl.Label = "Bactéries";
+            this.bacteriesBooleanControl.Location = new System.Drawing.Point(879, 38);
+            this.bacteriesBooleanControl.Margin = new System.Windows.Forms.Padding(0);
+            this.bacteriesBooleanControl.MinimumSize = new System.Drawing.Size(100, 17);
+            this.bacteriesBooleanControl.Name = "bacteriesBooleanControl";
+            this.bacteriesBooleanControl.Size = new System.Drawing.Size(100, 17);
+            this.bacteriesBooleanControl.TabIndex = 19;
+            this.bacteriesBooleanControl.TemplateMode = false;
+            // 
+            // amianteBooleanControl
+            // 
+            this.amianteBooleanControl.Label = "Amiante";
+            this.amianteBooleanControl.Location = new System.Drawing.Point(879, 16);
+            this.amianteBooleanControl.Margin = new System.Windows.Forms.Padding(0);
+            this.amianteBooleanControl.MinimumSize = new System.Drawing.Size(100, 17);
+            this.amianteBooleanControl.Name = "amianteBooleanControl";
+            this.amianteBooleanControl.Size = new System.Drawing.Size(100, 17);
+            this.amianteBooleanControl.TabIndex = 18;
+            this.amianteBooleanControl.TemplateMode = false;
+            // 
+            // soufreBooleanControl
+            // 
+            this.soufreBooleanControl.Label = "Soufre";
+            this.soufreBooleanControl.Location = new System.Drawing.Point(652, 61);
+            this.soufreBooleanControl.Margin = new System.Windows.Forms.Padding(0);
+            this.soufreBooleanControl.MinimumSize = new System.Drawing.Size(100, 17);
+            this.soufreBooleanControl.Name = "soufreBooleanControl";
+            this.soufreBooleanControl.Size = new System.Drawing.Size(100, 17);
+            this.soufreBooleanControl.TabIndex = 16;
+            this.soufreBooleanControl.TemplateMode = false;
+            // 
+            // sbsBooleanControl
+            // 
+            this.sbsBooleanControl.Label = "Bisulfite de sodium (SBS)";
+            this.sbsBooleanControl.Location = new System.Drawing.Point(652, 38);
+            this.sbsBooleanControl.Margin = new System.Windows.Forms.Padding(0);
+            this.sbsBooleanControl.MinimumSize = new System.Drawing.Size(100, 17);
+            this.sbsBooleanControl.Name = "sbsBooleanControl";
+            this.sbsBooleanControl.Size = new System.Drawing.Size(100, 17);
+            this.sbsBooleanControl.TabIndex = 15;
+            this.sbsBooleanControl.TemplateMode = false;
+            // 
+            // naOhBooleanControl
+            // 
+            this.naOhBooleanControl.Label = "Caustique (NaOH)";
+            this.naOhBooleanControl.Location = new System.Drawing.Point(652, 16);
+            this.naOhBooleanControl.Margin = new System.Windows.Forms.Padding(0);
+            this.naOhBooleanControl.MinimumSize = new System.Drawing.Size(100, 17);
+            this.naOhBooleanControl.Name = "naOhBooleanControl";
+            this.naOhBooleanControl.Size = new System.Drawing.Size(132, 17);
+            this.naOhBooleanControl.TabIndex = 14;
+            this.naOhBooleanControl.TemplateMode = false;
+            // 
+            // refluxBooleanControl
+            // 
+            this.refluxBooleanControl.Label = "Reflux";
+            this.refluxBooleanControl.Location = new System.Drawing.Point(330, 89);
+            this.refluxBooleanControl.Margin = new System.Windows.Forms.Padding(0);
+            this.refluxBooleanControl.MinimumSize = new System.Drawing.Size(100, 17);
+            this.refluxBooleanControl.Name = "refluxBooleanControl";
+            this.refluxBooleanControl.Size = new System.Drawing.Size(100, 17);
+            this.refluxBooleanControl.TabIndex = 13;
+            this.refluxBooleanControl.TemplateMode = false;
+            // 
+            // azoteBooleanControl
+            // 
+            this.azoteBooleanControl.Label = "Azote";
+            this.azoteBooleanControl.Location = new System.Drawing.Point(330, 67);
+            this.azoteBooleanControl.Margin = new System.Windows.Forms.Padding(0);
+            this.azoteBooleanControl.MinimumSize = new System.Drawing.Size(100, 17);
+            this.azoteBooleanControl.Name = "azoteBooleanControl";
+            this.azoteBooleanControl.Size = new System.Drawing.Size(100, 17);
+            this.azoteBooleanControl.TabIndex = 12;
+            this.azoteBooleanControl.TemplateMode = false;
+            // 
+            // coBooleanControl
+            // 
+            this.coBooleanControl.Label = "Monoxyde carbone (CO)";
+            this.coBooleanControl.Location = new System.Drawing.Point(330, 22);
+            this.coBooleanControl.Margin = new System.Windows.Forms.Padding(0);
+            this.coBooleanControl.MinimumSize = new System.Drawing.Size(100, 17);
+            this.coBooleanControl.Name = "coBooleanControl";
+            this.coBooleanControl.Size = new System.Drawing.Size(154, 22);
+            this.coBooleanControl.TabIndex = 10;
+            this.coBooleanControl.TemplateMode = false;
+            // 
+            // acidicSFBooleanControl
+            // 
+            this.acidicSFBooleanControl.Label = "Acide sulfurique faible";
+            this.acidicSFBooleanControl.Location = new System.Drawing.Point(8, 89);
+            this.acidicSFBooleanControl.Margin = new System.Windows.Forms.Padding(0);
+            this.acidicSFBooleanControl.MinimumSize = new System.Drawing.Size(100, 17);
+            this.acidicSFBooleanControl.Name = "acidicSFBooleanControl";
+            this.acidicSFBooleanControl.Size = new System.Drawing.Size(146, 22);
+            this.acidicSFBooleanControl.TabIndex = 9;
+            this.acidicSFBooleanControl.TemplateMode = false;
+            // 
+            // nh3BooleanControl
+            // 
+            this.nh3BooleanControl.Label = "Ammoniaque (NH3)";
+            this.nh3BooleanControl.Location = new System.Drawing.Point(8, 67);
+            this.nh3BooleanControl.Margin = new System.Windows.Forms.Padding(0);
+            this.nh3BooleanControl.MinimumSize = new System.Drawing.Size(100, 17);
+            this.nh3BooleanControl.Name = "nh3BooleanControl";
+            this.nh3BooleanControl.Size = new System.Drawing.Size(122, 17);
+            this.nh3BooleanControl.TabIndex = 8;
+            this.nh3BooleanControl.TemplateMode = false;
+            // 
+            // so2BooleanControl
+            // 
+            this.so2BooleanControl.Label = "Dioxyde de soufre (SO2)";
+            this.so2BooleanControl.Location = new System.Drawing.Point(8, 44);
+            this.so2BooleanControl.Margin = new System.Windows.Forms.Padding(0);
+            this.so2BooleanControl.MinimumSize = new System.Drawing.Size(100, 17);
+            this.so2BooleanControl.Name = "so2BooleanControl";
+            this.so2BooleanControl.Size = new System.Drawing.Size(144, 17);
+            this.so2BooleanControl.TabIndex = 7;
+            this.so2BooleanControl.TemplateMode = false;
+            // 
+            // autresSubstancesDropDownControl
+            // 
+            this.autresSubstancesDropDownControl.AutoSize = true;
+            this.autresSubstancesDropDownControl.DropDownWidth = 200;
+            this.autresSubstancesDropDownControl.Label = "Autres";
+            this.autresSubstancesDropDownControl.Location = new System.Drawing.Point(652, 83);
+            this.autresSubstancesDropDownControl.Margin = new System.Windows.Forms.Padding(0);
+            this.autresSubstancesDropDownControl.MinimumSize = new System.Drawing.Size(226, 22);
+            this.autresSubstancesDropDownControl.Name = "autresSubstancesDropDownControl";
+            this.autresSubstancesDropDownControl.Size = new System.Drawing.Size(311, 22);
+            this.autresSubstancesDropDownControl.TabIndex = 5;
+            this.autresSubstancesDropDownControl.TemplateMode = false;
+            // 
+            // aromatiqueDropDownControl
+            // 
+            this.aromatiqueDropDownControl.AutoSize = true;
+            this.aromatiqueDropDownControl.DropDownWidth = 200;
+            this.aromatiqueDropDownControl.Label = "Aromatique";
+            this.aromatiqueDropDownControl.Location = new System.Drawing.Point(297, 129);
+            this.aromatiqueDropDownControl.Margin = new System.Windows.Forms.Padding(0);
+            this.aromatiqueDropDownControl.MinimumSize = new System.Drawing.Size(226, 22);
+            this.aromatiqueDropDownControl.Name = "aromatiqueDropDownControl";
+            this.aromatiqueDropDownControl.Size = new System.Drawing.Size(264, 22);
+            this.aromatiqueDropDownControl.TabIndex = 4;
+            this.aromatiqueDropDownControl.TemplateMode = false;
+            // 
+            // corrosifDropDownControl
+            // 
+            this.corrosifDropDownControl.AutoSize = true;
+            this.corrosifDropDownControl.DropDownWidth = 200;
+            this.corrosifDropDownControl.Label = "Corrosif";
+            this.corrosifDropDownControl.Location = new System.Drawing.Point(13, 129);
+            this.corrosifDropDownControl.Margin = new System.Windows.Forms.Padding(0);
+            this.corrosifDropDownControl.MinimumSize = new System.Drawing.Size(226, 22);
+            this.corrosifDropDownControl.Name = "corrosifDropDownControl";
+            this.corrosifDropDownControl.Size = new System.Drawing.Size(274, 22);
+            this.corrosifDropDownControl.TabIndex = 3;
+            this.corrosifDropDownControl.TemplateMode = false;
+            // 
+            // hydrocarbureBooleanControl
+            // 
+            this.hydrocarbureBooleanControl.Label = "Hydrocarbure";
+            this.hydrocarbureBooleanControl.Location = new System.Drawing.Point(330, 44);
+            this.hydrocarbureBooleanControl.Margin = new System.Windows.Forms.Padding(0);
+            this.hydrocarbureBooleanControl.MinimumSize = new System.Drawing.Size(100, 17);
+            this.hydrocarbureBooleanControl.Name = "hydrocarbureBooleanControl";
+            this.hydrocarbureBooleanControl.Size = new System.Drawing.Size(100, 17);
+            this.hydrocarbureBooleanControl.TabIndex = 1;
+            this.hydrocarbureBooleanControl.TemplateMode = false;
+            // 
+            // ammoniaqueBooleanControl
+            // 
+            this.ammoniaqueBooleanControl.Label = "Ammoniaque";
+            this.ammoniaqueBooleanControl.Location = new System.Drawing.Point(600, 129);
+            this.ammoniaqueBooleanControl.Margin = new System.Windows.Forms.Padding(0);
+            this.ammoniaqueBooleanControl.MinimumSize = new System.Drawing.Size(100, 17);
+            this.ammoniaqueBooleanControl.Name = "ammoniaqueBooleanControl";
+            this.ammoniaqueBooleanControl.Size = new System.Drawing.Size(100, 17);
+            this.ammoniaqueBooleanControl.TabIndex = 2;
+            this.ammoniaqueBooleanControl.TemplateMode = false;
+            // 
+            // h2SBooleanControl
+            // 
+            this.h2SBooleanControl.Label = "Hydrogène sulfuré (H2S)";
+            this.h2SBooleanControl.Location = new System.Drawing.Point(8, 22);
+            this.h2SBooleanControl.Margin = new System.Windows.Forms.Padding(0);
+            this.h2SBooleanControl.MinimumSize = new System.Drawing.Size(100, 17);
+            this.h2SBooleanControl.Name = "h2SBooleanControl";
+            this.h2SBooleanControl.Size = new System.Drawing.Size(155, 17);
+            this.h2SBooleanControl.TabIndex = 0;
+            this.h2SBooleanControl.TemplateMode = false;
+            // 
+            // errorProvider
+            // 
+            this.errorProvider.ContainerControl = this;
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
+            // ConfinedSpaceFormMuds
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
+            this.ClientSize = new System.Drawing.Size(1012, 514);
+            this.Controls.Add(this.oltLabel1);
+            this.Controls.Add(this.viewConfiguredDocumentLinkButton);
+            this.Controls.Add(this.configuredDocumentLinkComboBox);
+            this.Controls.Add(this.cancelButton);
+            this.Controls.Add(this.saveButton);
+            this.Controls.Add(this.basicInformationGroupBox);
+            this.Controls.Add(this.conditionsGroupBox);
+            this.Controls.Add(this.specialPrecautionsOrConsiderationsGroupBox);
+            this.Controls.Add(this.substancesNormalementGroupBox);
+            this.MinimumSize = new System.Drawing.Size(1020, 38);
+            this.Name = "ConfinedSpaceFormMuds";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.Text = "Espace Clos";
+            this.basicInformationGroupBox.ResumeLayout(false);
+            this.basicInformationGroupBox.PerformLayout();
+            this.conditionsGroupBox.ResumeLayout(false);
+            this.conditionsGroupBox.PerformLayout();
+            this.specialPrecautionsOrConsiderationsGroupBox.ResumeLayout(false);
+            this.specialPrecautionsOrConsiderationsGroupBox.PerformLayout();
+            this.substancesNormalementGroupBox.ResumeLayout(false);
+            this.substancesNormalementGroupBox.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private OltGroupBox basicInformationGroupBox;
+        private OltLabel oltLabel3;
+        private OltTextBox refNumberTextBox;
+        private OltCheckBox preparationCheckBox;
+        private OltLabel oltLabel2;
+        private OltTextBox functionalLocationTextBox;
+        private OltButton functionalLocationBrowseButton;
+        private OltLabel oltLabel6;
+        private OltLabel oltLabel5;
+        private OltTimePicker endTimePicker;
+        private OltDatePicker endDatePicker;
+        private OltTimePicker startTimePicker;
+        private OltDatePicker startDatePicker;
+        private OltGroupBox conditionsGroupBox;
+        private Com.Suncor.Olt.Client.Controls.Template.TemplatableDropDownControl autresConditionsDropDownControl;
+        private Com.Suncor.Olt.Client.Controls.Template.TemplatableStringControl dessinsRequisStringControl;
+        private Com.Suncor.Olt.Client.Controls.Template.TemplatableBooleanControl cablesChauffantsMisHorsTensionBooleanControl;
+        private Com.Suncor.Olt.Client.Controls.Template.TemplatableBooleanControl purgeParGazInerteBooleanControl;
+        private Com.Suncor.Olt.Client.Controls.Template.TemplatableBooleanControl obtureOuDeBrancheBooleanControl;
+        private Com.Suncor.Olt.Client.Controls.Template.TemplatableBooleanControl interrupteursElectriquesVerrouillesBooleanControl;
+        private Com.Suncor.Olt.Client.Controls.Template.TemplatableBooleanControl depressuriseEtVidangeBooleanControl;
+        private Com.Suncor.Olt.Client.Controls.Template.TemplatableBooleanControl enPresenceDeGazInerteBooleanControl;
+        private Com.Suncor.Olt.Client.Controls.Template.TemplatableBooleanControl purgeAlaVapeurBooleanControl;
+        private Com.Suncor.Olt.Client.Controls.Template.TemplatableBooleanControl possibiliteDeSulfuredeFerBooleanControl;
+        private Com.Suncor.Olt.Client.Controls.Template.TemplatableBooleanControl aereBooleanControl;
+        private Com.Suncor.Olt.Client.Controls.Template.TemplatableBooleanControl rinceAlEauBooleanControl;
+        private OltGroupBox specialPrecautionsOrConsiderationsGroupBox;
+        private OltTextBox instructionsSpecialesTextBox;
+        private OltGroupBox substancesNormalementGroupBox;
+        private Com.Suncor.Olt.Client.Controls.Template.TemplatableDropDownControl autresSubstancesDropDownControl;
+        private Com.Suncor.Olt.Client.Controls.Template.TemplatableDropDownControl aromatiqueDropDownControl;
+        private Com.Suncor.Olt.Client.Controls.Template.TemplatableDropDownControl corrosifDropDownControl;
+        private Com.Suncor.Olt.Client.Controls.Template.TemplatableBooleanControl hydrocarbureBooleanControl;
+        private Com.Suncor.Olt.Client.Controls.Template.TemplatableBooleanControl ammoniaqueBooleanControl;
+        private Com.Suncor.Olt.Client.Controls.Template.TemplatableBooleanControl h2SBooleanControl;
+        private Com.Suncor.Olt.Client.Controls.Template.TemplatableBooleanControl ventilationMecaniqueBooleanControl;
+        private Com.Suncor.Olt.Client.Controls.Template.TemplatableBooleanControl planDeSauvetageBooleanControl;
+        private Com.Suncor.Olt.Client.Controls.Template.TemplatableBooleanControl ventilationNaturelleBooleanControl;
+        private Com.Suncor.Olt.Client.Controls.Template.TemplatableBooleanControl bouchesDegoutProtegeesBooleanControl;
+        private OltButton saveButton;
+        private OltButton cancelButton;
+        private System.Windows.Forms.ErrorProvider errorProvider;
+        private OltButton viewConfiguredDocumentLinkButton;
+        private OltComboBox configuredDocumentLinkComboBox;
+        private OltLabel oltLabel1;
+        private Controls.Template.TemplatableBooleanControl refluxBooleanControl;
+        private Controls.Template.TemplatableBooleanControl azoteBooleanControl;
+        private Controls.Template.TemplatableBooleanControl coBooleanControl;
+        private Controls.Template.TemplatableBooleanControl acidicSFBooleanControl;
+        private Controls.Template.TemplatableBooleanControl nh3BooleanControl;
+        private Controls.Template.TemplatableBooleanControl so2BooleanControl;
+        private Controls.Template.TemplatableBooleanControl bacteriesBooleanControl;
+        private Controls.Template.TemplatableBooleanControl amianteBooleanControl;
+        private Controls.Template.TemplatableBooleanControl soufreBooleanControl;
+        private Controls.Template.TemplatableBooleanControl sbsBooleanControl;
+        private Controls.Template.TemplatableBooleanControl naOhBooleanControl;
+        private Controls.Template.TemplatableBooleanControl depressuriseBooleanControl;
+        private Controls.Template.TemplatableBooleanControl obtureBooleanControl;
+        private Controls.Template.TemplatableBooleanControl rinceBooleanControl;
+        private Controls.Template.TemplatableBooleanControl nettoyesBooleanControl;
+        private Controls.Template.TemplatableBooleanControl pssBooleanControl;
+        private Controls.Template.TemplatableBooleanControl dessinsBooleanControl;
+        private Controls.Template.TemplatableBooleanControl videBooleanControl;
+        private Controls.Template.TemplatableBooleanControl detectionGazBooleanControl;
+        private Controls.Template.TemplatableBooleanControl ventillationBooleanControl;
+        private Controls.Template.TemplatableBooleanControl harnisBooleanControl;
+        private Controls.Template.TemplatableBooleanControl ventilationForceBooleanControl;
+        private Controls.Template.TemplatableBooleanControl purgeBooleanControl;
+        private OltButton viewPSSLinkButton;
+        private OltTextBox pssPath;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
+
+    }
+}

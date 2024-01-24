@@ -1,0 +1,104 @@
+﻿<?xml version="1.0"?>
+
+<WorkOrderOLTdata>
+  <WorkOrderRecord>
+    <header></header>
+    <WorkOrderDetails>
+      <WONumber>000030011260</WONumber>
+      <ShortText>Carryover to SAP - 04tc118 compressor</ShortText>
+      <FunctionalLocation>SR1-PLT2-UTP2-SMF</FunctionalLocation>
+      <EquipmentNumber></EquipmentNumber>
+      <PlantID>4000</PlantID>
+      <Operations>
+        <OperationKeyNo>1000021028</OperationKeyNo>
+        <OperationNumber>0010</OperationNumber>
+        <SubOperation></SubOperation>
+        <EarliestStartDate>2006-04-11</EarliestStartDate>
+        <EarliestStartTime>08:00:00</EarliestStartTime>
+        <EarliestFinishDate>2006-04-11</EarliestFinishDate>
+        <EarliestFinishTime>10:00:00</EarliestFinishTime>
+        <WorkPermitType>COLD</WorkPermitType>
+        <WorkPermitAttrib>X\</WorkPermitAttrib>
+        <WorkCenterID>10001148</WorkCenterID>
+        <WorkCenterName>PF-C</WorkCenterName>
+        <WorkCenterText>Pipefitter, Contract</WorkCenterText>
+        <LongText>REMOVE 3&quot; BLIND FLANGE *  * REMOVE THE 3&quot; BLIND FLANGE FROM THE TRIP VALVE INLET AS REQUIRED FOR * RE-INSTALLATION OF THE TRIP VALVE AND COMPRESSOR. *</LongText>
+      </Operations>
+      <Operations>
+        <OperationKeyNo>1000021028</OperationKeyNo>
+        <OperationNumber>0030</OperationNumber>
+        <SubOperation></SubOperation>
+        <EarliestStartDate>2006-04-11</EarliestStartDate>
+        <EarliestStartTime>09:00:00</EarliestStartTime>
+        <EarliestFinishDate>2006-04-11</EarliestFinishDate>
+        <EarliestFinishTime>11:00:00</EarliestFinishTime>
+        <WorkPermitType>COLD</WorkPermitType>
+        <WorkPermitAttrib>X</WorkPermitAttrib>
+        <WorkCenterID>10001564</WorkCenterID>
+        <WorkCenterName>EQOPR-C</WorkCenterName>
+        <WorkCenterText>Equipment Operator,</WorkCenterText>
+        <LongText>ASSIST WITH TRANSP. TRIP VALVE *  * ASSIST THE MILLWRIGHTS WITH TRANSPORTING THE COMPRESSOR AND TRIP VALVE * BACK TO THE COMPRESSOR BUILDING FOR RE-INSTALLATION. *</LongText>
+      </Operations>
+      <Operations>
+        <OperationKeyNo>1000021028</OperationKeyNo>
+        <OperationNumber>0040</OperationNumber>
+        <SubOperation></SubOperation>
+        <EarliestStartDate>2006-04-11</EarliestStartDate>
+        <EarliestStartTime>10:00:00</EarliestStartTime>
+        <EarliestFinishDate>2006-04-11</EarliestFinishDate>
+        <EarliestFinishTime>13:00:00</EarliestFinishTime>
+        <WorkPermitType>COLD</WorkPermitType>
+        <WorkPermitAttrib>X</WorkPermitAttrib>
+        <WorkCenterID>10001148</WorkCenterID>
+        <WorkCenterName>PF-C</WorkCenterName>
+        <WorkCenterText>Pipefitter, Contract</WorkCenterText>
+        <LongText>RE-CONNECT PIPING *  * 1. RE-CONNECT THE ASSOCIATED PIPING ON 04C-118B AS REQUIRED ONCE * THE TRIP VALVE HAS BEEN RE-INSTALLED IN THE UNIT. *  * 2. REMOVE THE BLANK FROM THE 10&quot; VALVE, LOCATED AT THE NORTH * WEST CORNER OF THE COMPRESSOR BUILDING. *</LongText>
+      </Operations>
+      <Operations>
+        <OperationKeyNo>1000021028</OperationKeyNo>
+        <OperationNumber>0020</OperationNumber>
+        <SubOperation></SubOperation>
+        <EarliestStartDate>2006-04-11</EarliestStartDate>
+        <EarliestStartTime>08:00:00</EarliestStartTime>
+        <EarliestFinishDate>2006-04-11</EarliestFinishDate>
+        <EarliestFinishTime>10:00:00</EarliestFinishTime>
+        <WorkPermitType>COLD</WorkPermitType>
+        <WorkPermitAttrib>X</WorkPermitAttrib>
+        <WorkCenterID>10001145</WorkCenterID>
+        <WorkCenterName>MW-C</WorkCenterName>
+        <WorkCenterText>Millwright, Contract</WorkCenterText>
+        <LongText>A TRANSPORT TRIP VALVE TO UNIT *  * 1. TRANSPORT COMPRESSOR AND TRIP VALVE BACK TO THE UNIT FOR * INSTALLATION. *  * 2. RE-INSTALL 04C-118B AS REQUIRED IN THE COMPRESSOR BUILDING. *  * 3. BOLT UP THE TRIP VALVE FLANGE TO THE COMPRESSOR FLANGE AD * REQUIRED. *</LongText>
+      </Operations>
+      <Operations>
+        <OperationKeyNo>1000021028</OperationKeyNo>
+        <OperationNumber>0050</OperationNumber>
+        <SubOperation></SubOperation>
+        <EarliestStartDate>2006-04-11</EarliestStartDate>
+        <EarliestStartTime>13:00:00</EarliestStartTime>
+        <EarliestFinishDate>2006-04-11</EarliestFinishDate>
+        <EarliestFinishTime>15:00:00</EarliestFinishTime>
+        <WorkPermitType>COLD</WorkPermitType>
+        <WorkPermitAttrib>X</WorkPermitAttrib>
+        <WorkCenterID>10001145</WorkCenterID>
+        <WorkCenterName>MW-C</WorkCenterName>
+        <WorkCenterText>Millwright, Contract</WorkCenterText>
+        <LongText>A RUN IN COMPRESSOR *  * PERFORM RUN IN AND REQUIRED TESTS ON 04C-118B AS REQUIRED ONCE ALL * EQUIPMENT HAS BEEN RE-INSTALLED IN THE UNIT. *</LongText>
+      </Operations>
+      <Operations>
+        <OperationKeyNo>1000021028</OperationKeyNo>
+        <OperationNumber>0055</OperationNumber>
+        <SubOperation></SubOperation>
+        <EarliestStartDate>2006-04-11</EarliestStartDate>
+        <EarliestStartTime>15:00:00</EarliestStartTime>
+        <EarliestFinishDate>2006-04-11</EarliestFinishDate>
+        <EarliestFinishTime>16:00:00</EarliestFinishTime>
+        <WorkPermitType>COLD</WorkPermitType>
+        <WorkPermitAttrib>X</WorkPermitAttrib>
+        <WorkCenterID>10001148</WorkCenterID>
+        <WorkCenterName>PF-C</WorkCenterName>
+        <WorkCenterText>Pipefitter, Contract</WorkCenterText>
+        <LongText>DISCONNECT COMPRESSOR HOSES *  * DISCONNECT PORTABLE AIR COMPRESSOR HOSES AND TRANSPORT TO THE TOOL CRIB * AS REQUIRED ONCE COMPRESSOR REPAIRS HAVE BEEN COMPLETED. *</LongText>
+      </Operations>
+    </WorkOrderDetails>
+  </WorkOrderRecord>
+</WorkOrderOLTdata>

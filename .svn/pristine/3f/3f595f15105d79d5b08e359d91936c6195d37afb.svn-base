@@ -1,0 +1,48 @@
+using System;
+using System.Collections.Generic;
+using Com.Suncor.Olt.Common.Domain;
+using Com.Suncor.Olt.Common.Domain.WorkPermit;
+
+namespace Com.Suncor.Olt.Client.Forms
+{
+    public interface IWorkPermitCloseFormView : IRespondFormView
+    {
+        event EventHandler SubmitButtonClick;
+        event EventHandler CancelButtonClick;
+        event EventHandler CreateLogCheckedChanged;
+        
+        string Description { set; }
+        bool IsLogAnOperatingEngineeringLog { get; set;}
+        void EnableMakingAnOperatingEngineerLog();
+        void HideOperatingEngineerLogCheckbox();
+
+        string OperatingEngineerLogDisplayText { set; }
+        bool CreateLogEnabled { set; }
+        string FormTitle { set; }
+        void HideDescription();        
+    }
+
+    public interface IWorkPermitCloseWithStatusFormView : IBaseForm
+    {
+        event EventHandler SubmitButtonClick;
+        event EventHandler CancelButtonClick;
+
+        DateTime CreateDateTime { set; }
+        string Shift { set; }
+        User Author { set; }
+        List<WorkPermitLoggableStatus> Statuses { set; }
+        WorkPermitLoggableStatus SelectedStatus { get; }
+        string Comment { get; }
+        string CommentsSectionTitle { set; }
+
+        string Description { set; }
+        string FormTitle { set; }
+
+        bool StatusHidden { get; }
+        void HideCloseStatus();
+
+        void SetErrorForNoStatusSelected();
+        void SetErrorForNoComments();
+        void ClearErrors();
+    }
+}

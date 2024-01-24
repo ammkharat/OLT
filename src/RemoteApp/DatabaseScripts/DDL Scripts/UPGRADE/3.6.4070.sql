@@ -1,0 +1,11 @@
+drop index IDX_SAPNOTIFICATION_FUNCTIONALLOCATION
+ON SAPNotification;
+
+
+CREATE NONCLUSTERED INDEX IDX_SAPNOTIFICATION
+ON SAPNotification
+(
+	FunctionalLocationId ASC,
+	CreationDateTime ASC
+)
+GO

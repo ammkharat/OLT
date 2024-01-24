@@ -1,0 +1,487 @@
+----------------------------------------------------------------------------------------
+--  Add Metatarsal Guard to Work Permit
+----------------------------------------------------------------------------------------
+IF NOT EXISTS(SELECT * FROM information_schema.columns WHERE table_name = 'WorkPermit' AND Column_name = 'SpecialProtectiveFootwearMetatarsalGuard')
+BEGIN
+	ALTER TABLE [dbo].[WorkPermit]
+	  ADD [SpecialProtectiveFootwearMetatarsalGuard] [bit] NOT NULL DEFAULT (0)
+END
+GO
+
+IF NOT EXISTS(SELECT * FROM information_schema.columns WHERE table_name = 'WorkPermitHistory' AND Column_name = 'SpecialProtectiveFootwearMetatarsalGuard')
+BEGIN
+	ALTER TABLE [dbo].[WorkPermitHistory]
+	  ADD [SpecialProtectiveFootwearMetatarsalGuard] [bit] NOT NULL DEFAULT (0)
+END
+GO
+
+-----------------------
+--- WorkPermitTypeClassification is applicable to Denver, but not Sarnia.
+-----------------------
+ALTER TABLE WorkPermit
+	ALTER COLUMN WorkPermitTypeClassificationId BIGINT NULL
+GO
+
+ALTER TABLE [dbo].[WorkPermit]
+	ADD PermitElectricalWork bit NOT NULL DEFAULT (0);
+
+ALTER TABLE [dbo].[WorkPermitHistory]
+	ADD PermitElectricalWork bit NOT NULL DEFAULT (0);
+
+
+-----------------------
+--- Add Special Protective Clothing  Type Paper Coveralls  to Work Permits
+-----------------------
+ALTER TABLE [dbo].[WorkPermit]
+	ADD SpecialProtectiveClothingTypePaperCoveralls bit NOT NULL DEFAULT (0);
+
+ALTER TABLE [dbo].[WorkPermitHistory]
+	ADD SpecialProtectiveClothingTypePaperCoveralls bit NOT NULL DEFAULT (0);
+
+GO
+
+
+-----------------------
+--- Add Other Description to WorkPermit's Equipment Preparation & Condition
+-----------------------
+ALTER TABLE [dbo].[WorkPermit]
+	ADD EquipmentConditionOtherDescription VARCHAR(50) NULL;
+
+ALTER TABLE [dbo].[WorkPermitHistory]
+	ADD EquipmentConditionOtherDescription VARCHAR(50) NULL;
+
+GO
+
+
+-----------------------
+--- Add purge options to Work Permit
+-----------------------
+ALTER TABLE [dbo].[WorkPermit]
+	ADD 
+		EquipmentConditionPurgedN2 BIT NOT NULL DEFAULT (0),
+		EquipmentConditionPurgedSteamed BIT NOT NULL DEFAULT(0),
+		EquipmentConditionPurgedAir BIT NOT NULL DEFAULT(0);
+	
+ALTER TABLE [dbo].[WorkPermitHistory]
+	ADD
+		EquipmentConditionPurgedN2 BIT NOT NULL DEFAULT (0),
+		EquipmentConditionPurgedSteamed BIT NOT NULL DEFAULT(0),
+		EquipmentConditionPurgedAir BIT NOT NULL DEFAULT(0);
+
+GO
+
+
+-----------------------
+--- Add Descriptions to Additional Forms options on Work Permits
+-----------------------
+ALTER TABLE [dbo].[WorkPermit]
+	ADD 
+		AdditionalCSEAssessmentOrAuthorizationDescription VARCHAR(50) NULL,
+		AdditionalBurnOrOpenFlameAssessmentDescription VARCHAR(50) NULL,
+		AdditionalElectricalDescription VARCHAR(50) NULL,
+		AdditionalAsbestosHandlingDescription VARCHAR(50) NULL,
+		AdditionalCriticalLiftDescription VARCHAR(50) NULL,
+		AdditionalWaiverOrDeviationDescription VARCHAR(50) NULL,
+		AdditionalExcavationDescription VARCHAR(50) NULL
+GO
+		
+ALTER TABLE [dbo].[WorkPermitHistory]
+	ADD
+		AdditionalCSEAssessmentOrAuthorizationDescription VARCHAR(50) NULL,
+		AdditionalBurnOrOpenFlameAssessmentDescription VARCHAR(50) NULL,
+		AdditionalElectricalDescription VARCHAR(50) NULL,
+		AdditionalAsbestosHandlingDescription VARCHAR(50) NULL,
+		AdditionalCriticalLiftDescription VARCHAR(50) NULL,
+		AdditionalWaiverOrDeviationDescription VARCHAR(50) NULL,
+		AdditionalExcavationDescription VARCHAR(50) NULL
+GO
+
+-----------------------
+--- Add Asbestos Gaskets to Work Permit
+-----------------------
+ALTER TABLE [dbo].[WorkPermit]
+	ADD 
+		EquipmentAsbestosGasketsNotApplicable BIT NOT NULL DEFAULT (0),
+		EquipmentAsbestosGaskets BIT NULL
+		
+ALTER TABLE [dbo].[WorkPermitHistory]
+	ADD
+		EquipmentAsbestosGasketsNotApplicable BIT NOT NULL DEFAULT (0),
+		EquipmentAsbestosGaskets BIT NULL
+GO
+
+ALTER TABLE [dbo].[WorkPermit]
+	ALTER COLUMN [EndDateTime] [datetime] NULL
+ALTER TABLE [dbo].[WorkPermitHistory]
+	ALTER COLUMN [EndDateTime] [datetime] NULL	
+GO
+
+-----------------------
+--- Add Equipment Isolation  Car-Ber to WorkPermit
+-----------------------
+ALTER TABLE [dbo].[WorkPermit]
+	ADD 
+		EquipmentIsolationMethodCarBer [bit] NOT NULL DEFAULT (0)
+		
+ALTER TABLE [dbo].[WorkPermitHistory]
+	ADD
+		EquipmentIsolationMethodCarBer [bit] NOT NULL DEFAULT (0)
+
+GO
+
+
+
+set nocount on
+declare @constname sysname,
+	@colname sysname,
+        @tablename sysname,
+        @cmd varchar(1024)
+
+declare curs_constraints cursor for
+	SELECT const.[name] constraint_name, col.[name] column_name, t.[name] table_name
+	FROM 
+		sys.default_constraints const,
+		sys.all_columns col,
+		sys.all_objects t
+	WHERE 
+		[const].[name] LIKE 'DF__WorkP%'
+		AND const.parent_object_id = t.OBJECT_ID
+		AND col.OBJECT_ID = t.OBJECT_ID
+		AND col.column_id = const.parent_column_id
+	
+open curs_constraints
+
+fetch next from curs_constraints into @constname, @colname, @tablename
+while (@@fetch_status = 0)
+		begin
+			select @cmd = 'sys.sp_rename ' + @constname + ', DF_' + @tablename + '_' + @colname
+			exec(@cmd)
+			fetch next from curs_constraints into @constname, @colname, @tablename
+		end
+		fetch next from curs_constraints into @constname, @colname, @tablename
+close curs_constraints
+deallocate curs_constraints
+GO
+
+ALTER TABLE [dbo].[WorkPermit] 
+	ADD AdditionalRadiationApproval bit NOT NULL CONSTRAINT DF_WorkPermit_AdditionalRadiationApproval DEFAULT(0) ,
+	AdditionalOnlineLeakRepairForm bit NOT NULL CONSTRAINT DF_WorkPermit_AdditionalOnlineLeakRepairForm DEFAULT(0)
+GO
+
+ALTER TABLE [dbo].[WorkPermitHistory] 
+	ADD AdditionalRadiationApproval bit NOT NULL CONSTRAINT DF_WorkPermitHistory_AdditionalRadiationApproval DEFAULT(0) ,
+	AdditionalOnlineLeakRepairForm bit NOT NULL CONSTRAINT DF_WorkPermitHistory_AdditionalOnlineLeakRepairForm DEFAULT(0)
+GO
+
+
+ALTER TABLE [dbo].[WorkPermit] DROP CONSTRAINT [DF_WorkPermit_AdditionalRescuePlan]
+GO
+ALTER TABLE [dbo].[WorkPermit] DROP CONSTRAINT [DF_WorkPermit_AdditionalVehicleEntry]
+GO
+ALTER TABLE [dbo].[WorkPermit] DROP CONSTRAINT [DF_WorkPermit_AdditionalFreezePlugOrExpansionPlug]
+GO
+ALTER TABLE [dbo].[WorkPermit] DROP CONSTRAINT [DF_WorkPermit_AdditionalHazop]
+GO
+ALTER TABLE [dbo].[WorkPermit] DROP CONSTRAINT [DF_WorkPermit_AdditionalLeakSeal]
+GO
+ALTER TABLE [dbo].[WorkPermit] DROP CONSTRAINT [DF_WorkPermit_AdditionalTemporaryFacilityPlacementOrSiting]
+GO
+ALTER TABLE [dbo].[WorkPermit] DROP CONSTRAINT [DF_WorkPermit_AdditionalHazardousServiceTag]
+GO
+ALTER TABLE [dbo].[WorkPermit] DROP CONSTRAINT [DF_WorkPermit_AdditionalFireProtectionSystems]
+GO
+ALTER TABLE [dbo].[WorkPermit] DROP CONSTRAINT [DF_WorkPermit_AdditionalEnvironmental]
+GO
+ALTER TABLE [dbo].[WorkPermit] DROP CONSTRAINT [DF_WorkPermit_AdditionalSafeWorkProcedure]
+GO
+ALTER TABLE [dbo].[WorkPermit] DROP CONSTRAINT [DF_WorkPermit_AdditionalRadiography]
+GO
+
+ALTER TABLE [dbo].[WorkPermit] 
+	DROP COLUMN AdditionalRescuePlan, AdditionalVehicleEntry, AdditionalFreezePlugOrExpansionPlug, AdditionalHazop,  AdditionalLeakSeal,
+			AdditionalTemporaryFacilityPlacementOrSiting, AdditionalHazardousServiceTag, AdditionalFireProtectionSystems,
+			AdditionalEnvironmental, AdditionalSafeWorkProcedure, AdditionalRadiography
+GO
+
+ALTER TABLE [dbo].[WorkPermitHistory] DROP CONSTRAINT [DF_WorkPermitHistory_AdditionalRescuePlan]
+GO
+ALTER TABLE [dbo].[WorkPermitHistory] DROP CONSTRAINT [DF_WorkPermitHistory_AdditionalVehicleEntry]
+GO
+ALTER TABLE [dbo].[WorkPermitHistory] DROP CONSTRAINT [DF_WorkPermitHistory_AdditionalFreezePlugOrExpansionPlug]
+GO
+ALTER TABLE [dbo].[WorkPermitHistory] DROP CONSTRAINT [DF_WorkPermitHistory_AdditionalHazop]
+GO
+ALTER TABLE [dbo].[WorkPermitHistory] DROP CONSTRAINT [DF_WorkPermitHistory_AdditionalLeakSeal]
+GO
+ALTER TABLE [dbo].[WorkPermitHistory] DROP CONSTRAINT [DF_WorkPermitHistory_AdditionalTemporaryFacilityPlacementOrSiting]
+GO
+ALTER TABLE [dbo].[WorkPermitHistory] DROP CONSTRAINT [DF_WorkPermitHistory_AdditionalHazardousServiceTag]
+GO
+ALTER TABLE [dbo].[WorkPermitHistory] DROP CONSTRAINT [DF_WorkPermitHistory_AdditionalFireProtectionSystems]
+GO
+ALTER TABLE [dbo].[WorkPermitHistory] DROP CONSTRAINT [DF_WorkPermitHistory_AdditionalEnvironmental]
+GO
+ALTER TABLE [dbo].[WorkPermitHistory] DROP CONSTRAINT [DF_WorkPermitHistory_AdditionalSafeWorkProcedure]
+GO
+ALTER TABLE [dbo].[WorkPermitHistory] DROP CONSTRAINT [DF_WorkPermitHistory_AdditionalRadiography]
+GO
+
+ALTER TABLE [dbo].[WorkPermitHistory] 
+	DROP COLUMN AdditionalRescuePlan, AdditionalVehicleEntry, AdditionalFreezePlugOrExpansionPlug, AdditionalHazop,  AdditionalLeakSeal,
+			AdditionalTemporaryFacilityPlacementOrSiting, AdditionalHazardousServiceTag, AdditionalFireProtectionSystems,
+			AdditionalEnvironmental, AdditionalSafeWorkProcedure, AdditionalRadiography
+GO
+
+
+
+
+-- Rename the Respiratory Cartridge Type Column
+sp_rename 'WorkPermit.RespitoryProtectionRequirementsRespiratoryCartridgeType', 'RespitoryProtectionRequirementsRespiratoryCartridgeTypeDescription', 'COLUMN'
+GO
+
+sp_rename 'WorkPermitHistory.RespitoryProtectionRequirementsRespiratoryCartridgeType', 'RespitoryProtectionRequirementsRespiratoryCartridgeTypeDescription', 'COLUMN'
+GO
+
+
+ALTER TABLE [dbo].[WorkPermit]
+	DROP CONSTRAINT
+		[DF_WorkPermit_FireConfinedSpace300ABCorDryChemicalExtinguisher],
+		[DF_WorkPermit_FireConfinedSpace150ABCorDryChemicalExtinguisher],
+		[DF_WorkPermit_FireConfinedSpace30ABCorDryChemicalExtinguisher],
+		
+		[DF_WorkPermit_SpecialProtectiveClothingTypePolyethyleneSuit],
+		[DF_WorkPermit_SpecialProtectiveClothingTypeSlicker],
+		[DF_WorkPermit_SpecialProtectiveClothingTypeNomex],
+		[DF_WorkPermit_SpecialProtectiveClothingTypeChemicalResistantSuit],
+		[DF_WorkPermit_SpecialHandProtectionCottonJersey],
+		
+		[DF_WorkPermit_ToolsGrinder],
+		
+		[DF_WorkPermit_RadiationSourceTypeSerialActivityNotApplicable],
+		
+		[DF_WorkPermit_RadiationMeasureNotApplicable],
+		[DF_WorkPermit_RadiationMeasureSurveyInstrument],
+		[DF_WorkPermit_RadiationMeasureDosimeter],
+		
+		[DF_WorkPermit_ExternalNotificationRequired]
+GO
+
+ALTER TABLE [dbo].[WorkPermitHistory]
+	DROP CONSTRAINT
+		[DF_WorkPermitHistory_FireConfinedSpace300ABCorDryChemicalExtinguisher],
+		[DF_WorkPermitHistory_FireConfinedSpace150ABCorDryChemicalExtinguisher],
+		[DF_WorkPermitHistory_FireConfinedSpace30ABCorDryChemicalExtinguisher],
+		
+		[DF_WorkPermitHistory_SpecialProtectiveClothingTypePolyethyleneSuit],
+		[DF_WorkPermitHistory_SpecialProtectiveClothingTypeSlicker],
+		[DF_WorkPermitHistory_SpecialProtectiveClothingTypeNomex],
+		[DF_WorkPermitHistory_SpecialProtectiveClothingTypeChemicalResistantSuit],
+		[DF_WorkPermitHistory_SpecialHandProtectionCottonJersey],
+		
+		[DF_WorkPermitHistory_ToolsGrinder],
+		
+		[DF_WorkPermitHistory_RadiationSourceTypeSerialActivityNotApplicable],
+
+		[DF_WorkPermitHistory_RadiationMeasureNotApplicable],
+		[DF_WorkPermitHistory_RadiationMeasureSurveyInstrument],
+		[DF_WorkPermitHistory_RadiationMeasureDosimeter],
+
+		[DF_WorkPermitHistory_ExternalNotificationRequired]
+GO
+
+
+ALTER TABLE [dbo].[WorkPermit] 
+	DROP COLUMN
+		[FireConfinedSpace300ABCorDryChemicalExtinguisher],
+		[FireConfinedSpace150ABCorDryChemicalExtinguisher],
+		[FireConfinedSpace30ABCorDryChemicalExtinguisher],
+		[FireConfinedSpaceWatchmenType],
+		[FireConfinedSpaceWatchmenNumber],
+		
+		[SpecialProtectiveClothingTypePolyethyleneSuit],
+		[SpecialProtectiveClothingTypeSlicker],
+		[SpecialProtectiveClothingTypeNomex],
+		[SpecialProtectiveClothingTypeChemicalResistantSuit],
+		[SpecialHandProtectionCottonJersey],
+		
+		[ToolsGrinder],
+		[ToolsWelderDescription],		
+
+		[RadiationSourceTypeSerialActivityNotApplicable],
+		[RadiationSourceTypeSerialActivityDescription],
+		
+		[RadiationMeasureNotApplicable],
+		[RadiationMeasureSurveyInstrument],
+		[RadiationMeasureDosimeter],
+	    [RadiationMeasureOtherDescription],
+		
+		[ExternalNotificationRequired],
+		[ExternalNotificationDescription]	
+GO
+
+
+ALTER TABLE [dbo].[WorkPermitHistory] 
+	DROP COLUMN
+		[FireConfinedSpace300ABCorDryChemicalExtinguisher],
+		[FireConfinedSpace150ABCorDryChemicalExtinguisher],
+		[FireConfinedSpace30ABCorDryChemicalExtinguisher],
+		[FireConfinedSpaceWatchmenType],
+		[FireConfinedSpaceWatchmenNumber],
+		
+		[SpecialProtectiveClothingTypePolyethyleneSuit],
+		[SpecialProtectiveClothingTypeSlicker],
+		[SpecialProtectiveClothingTypeNomex],
+		[SpecialProtectiveClothingTypeChemicalResistantSuit],
+		[SpecialHandProtectionCottonJersey],
+		
+		[ToolsGrinder],
+		[ToolsWelderDescription],		
+		
+		[RadiationSourceTypeSerialActivityNotApplicable],
+		[RadiationSourceTypeSerialActivityDescription], 
+		
+		[RadiationMeasureNotApplicable],
+		[RadiationMeasureSurveyInstrument],
+		[RadiationMeasureDosimeter],
+	    [RadiationMeasureOtherDescription],
+		
+		[ExternalNotificationRequired],
+		[ExternalNotificationDescription]
+GO
+
+
+ALTER TABLE [dbo].[WorkPermit]
+	ADD
+		[FireConfinedSpaceHoleWatchNumber] [varchar](50) NULL,
+		[FireConfinedSpaceFireWatchNumber] [varchar](50) NULL,
+		[FireConfinedSpaceSpotterNumber] [varchar](50) NULL,
+
+		[SpecialProtectiveClothingTypeTyvekSuit] [bit] NOT NULL CONSTRAINT DF_WorkPermit_SpecialProtectiveClothingTypeTyvekSuit DEFAULT (0),
+		[SpecialProtectiveClothingTypeKapplerSuit] [bit] NOT NULL CONSTRAINT DF_WorkPermit_SpecialProtectiveClothingTypeKapplerSuit DEFAULT (0),
+		[SpecialProtectiveClothingTypeElectricalFlashGear] [bit] NOT NULL CONSTRAINT DF_WorkPermit_SpecialProtectiveClothingTypeElectricalFlashGear DEFAULT (0),
+		[SpecialProtectiveClothingTypeCorrosiveClothing] [bit] NOT NULL CONSTRAINT DF_WorkPermit_SpecialProtectiveClothingTypeCorrosiveClothing DEFAULT (0),		
+		[SpecialHandProtectionChemicalGloves] [bit] NOT NULL CONSTRAINT DF_WorkPermit_SpecialHandProtectionChemicalGloves DEFAULT (0),
+		
+		[RespitoryProtectionRequirementsRespiratoryCartridgeTypeId] [bigint] NULL,
+		
+		[ToolsChemicals] [bit] NOT NULL CONSTRAINT DF_WorkPermit_ToolsChemicals DEFAULT (0),
+		
+		[JobSitePreparationAreaPreparationRadiationRope] [bit] NOT NULL CONSTRAINT DF_WorkPermit_JobSitePreparationAreaPreparationRadiationRope DEFAULT(0)
+GO
+
+
+ALTER TABLE [dbo].[WorkPermitHistory]
+	ADD
+		[FireConfinedSpaceHoleWatchNumber] [varchar](50) NULL,
+		[FireConfinedSpaceFireWatchNumber] [varchar](50) NULL,
+		[FireConfinedSpaceSpotterNumber] [varchar](50) NULL,
+
+		[SpecialProtectiveClothingTypeTyvekSuit] [bit] NOT NULL CONSTRAINT DF_WorkPermitHistory_SpecialProtectiveClothingTypeTyvekSuit DEFAULT (0),
+		[SpecialProtectiveClothingTypeKapplerSuit] [bit] NOT NULL CONSTRAINT DF_WorkPermitHistory_SpecialProtectiveClothingTypeKapplerSuit DEFAULT (0),
+		[SpecialProtectiveClothingTypeElectricalFlashGear] [bit] NOT NULL CONSTRAINT DF_WorkPermitHistory_SpecialProtectiveClothingTypeElectricalFlashGear DEFAULT (0),
+		[SpecialProtectiveClothingTypeCorrosiveClothing] [bit] NOT NULL CONSTRAINT DF_WorkPermitHistory_SpecialProtectiveClothingTypeCorrosiveClothing DEFAULT (0),		
+		[SpecialHandProtectionChemicalGloves] [bit] NOT NULL CONSTRAINT DF_WorkPermitHistory_SpecialHandProtectionChemicalGloves DEFAULT (0),
+		
+		[RespitoryProtectionRequirementsRespiratoryCartridgeTypeId] [bigint] NULL,
+		
+		[ToolsChemicals] [bit] NOT NULL CONSTRAINT DF_WorkPermitHistory_ToolsChemicals DEFAULT (0),	
+		
+		[JobSitePreparationAreaPreparationRadiationRope] [bit] NOT NULL CONSTRAINT DF_WorkPermitHistory_JobSitePreparationAreaPreparationRadiationRope DEFAULT(0)
+GO
+
+
+--------------------------
+-- Add Gas Test Element columns for Denver
+---------------------------
+
+ALTER TABLE [GasTestElementInfo]
+	ADD
+		[Deleted] [bit] NOT NULL CONSTRAINT DF_GasTestElementInfo_Deleted DEFAULT (0)
+GO
+
+UPDATE [GasTestElementInfo]
+	SET [Deleted] = 1
+	WHERE [SiteId] = 2 AND [Name] IN ('Benzene', 'Toluene', 'Xylene', 'Ammonia')
+GO
+	
+ALTER TABLE [WorkPermitGasTestElementInfo]
+	ADD
+		[SystemEntryTestResult] [float] NULL,
+		[SystemEntryTestNotApplicable] [bit] NOT NULL CONSTRAINT DF_WorkPermitGasTestElementInfo_SystemEntryTestNotApplicable DEFAULT (0)
+GO
+
+ALTER TABLE [WorkPermit]
+	ADD [GasTestSystemEntryTestTime] [varchar](5) NULL
+GO
+
+ALTER TABLE [WorkPermitHistory]
+	ADD [GasTestSystemEntryTestTime] [varchar](5) NULL
+GO
+
+ALTER TABLE [dbo].[WorkPermit]
+	DROP CONSTRAINT
+		[DF_WorkPermit_JobSitePreparationDocumentationSignageNotApplicable],
+		[DF_WorkPermit_JobSitePreparationDocumentationSignageBlankOrBlindList],
+		[DF_WorkPermit_JobSitePreparationDocumentationSignageCSEPermit],
+		[DF_WorkPermit_JobSitePreparationDocumentationSignageVesselPreparedForOpening],
+		[DF_WorkPermit_JobSitePreparationDocumentationSignageRestrictedEntry]
+GO
+
+
+ALTER TABLE [dbo].[WorkPermit] 
+	DROP COLUMN
+		[JobSitePreparationDocumentationSignageNotApplicable],
+		[JobSitePreparationDocumentationSignageBlankOrBlindList],
+		[JobSitePreparationDocumentationSignageCSEPermit],
+		[JobSitePreparationDocumentationSignageVesselPreparedForOpening],
+		[JobSitePreparationDocumentationSignageRestrictedEntry],
+		[JobSitePreparationDocumentationSignageOtherDescription]
+		
+
+ALTER TABLE [dbo].[WorkPermitHistory]
+	DROP CONSTRAINT
+		[DF_WorkPermitHistory_JobSitePreparationDocumentationSignageNotApplicable],
+		[DF_WorkPermitHistory_JobSitePreparationDocumentationSignageBlankOrBlindList],
+		[DF_WorkPermitHistory_JobSitePreparationDocumentationSignageCSEPermit],
+		[DF_WorkPermitHistory_JobSitePreparationDocumentationSignageVesselPreparedForOpening],
+		[DF_WorkPermitHistory_JobSitePreparationDocumentationSignageRestrictedEntry]
+GO
+
+
+ALTER TABLE [dbo].[WorkPermitHistory] 
+	DROP COLUMN
+		[JobSitePreparationDocumentationSignageNotApplicable],
+		[JobSitePreparationDocumentationSignageBlankOrBlindList],
+		[JobSitePreparationDocumentationSignageCSEPermit],
+		[JobSitePreparationDocumentationSignageVesselPreparedForOpening],
+		[JobSitePreparationDocumentationSignageRestrictedEntry],
+		[JobSitePreparationDocumentationSignageOtherDescription]
+GO
+
+--------------------------
+-- Increase size of the GasTestElements Work Permit History field to keep track of Immediate/Work Area, Confined Space and System Entry Results
+--------------------------
+ALTER TABLE [WorkPermitHistory]
+	ALTER COLUMN [GasTestElements] [varchar](2000) NULL
+GO
+
+
+ALTER TABLE [dbo].[WorkPermit]
+	DROP CONSTRAINT
+		[DF_WorkPermit_ToolsSandblaster]
+GO
+
+
+ALTER TABLE [dbo].[WorkPermit] 
+	DROP COLUMN
+		[ToolsSandblaster]
+
+ALTER TABLE [dbo].[WorkPermitHistory]
+	DROP CONSTRAINT
+		[DF_WorkPermitHistory_ToolsSandblaster]
+GO
+
+ALTER TABLE [dbo].[WorkPermitHistory] 
+	DROP COLUMN
+		[ToolsSandblaster]
+GO

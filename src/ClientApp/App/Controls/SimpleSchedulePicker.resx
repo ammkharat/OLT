@@ -1,0 +1,639 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="errorProvider.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="recurrenceGroupBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="flowLayoutPanel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="oltLabel3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="oltLabel3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 6</value>
+  </data>
+  <data name="oltLabel3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>18, 13</value>
+  </data>
+  <data name="oltLabel3.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="oltLabel3.Text" xml:space="preserve">
+    <value>At</value>
+  </data>
+  <data name="&gt;&gt;oltLabel3.Name" xml:space="preserve">
+    <value>oltLabel3</value>
+  </data>
+  <data name="&gt;&gt;oltLabel3.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Common.Controls.OltLabel, Com.Suncor.Olt.Common, Version=3.6.9876.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;oltLabel3.Parent" xml:space="preserve">
+    <value>dailyGroupBox</value>
+  </data>
+  <data name="&gt;&gt;oltLabel3.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="daily_TimePicker.Location" type="System.Drawing.Point, System.Drawing">
+    <value>30, 2</value>
+  </data>
+  <data name="daily_TimePicker.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="daily_TimePicker.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 21</value>
+  </data>
+  <data name="daily_TimePicker.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;daily_TimePicker.Name" xml:space="preserve">
+    <value>daily_TimePicker</value>
+  </data>
+  <data name="&gt;&gt;daily_TimePicker.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Common.Controls.OltTimePicker, Com.Suncor.Olt.Common, Version=3.6.9876.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;daily_TimePicker.Parent" xml:space="preserve">
+    <value>dailyGroupBox</value>
+  </data>
+  <data name="&gt;&gt;daily_TimePicker.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="dailyGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="dailyGroupBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="dailyGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>132, 24</value>
+  </data>
+  <data name="dailyGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="dailyGroupBox.Text" xml:space="preserve">
+    <value>Recurrence Pattern</value>
+  </data>
+  <data name="&gt;&gt;dailyGroupBox.Name" xml:space="preserve">
+    <value>dailyGroupBox</value>
+  </data>
+  <data name="&gt;&gt;dailyGroupBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Common.Controls.OltPanel, Com.Suncor.Olt.Common, Version=3.6.9876.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;dailyGroupBox.Parent" xml:space="preserve">
+    <value>flowLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;dailyGroupBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="oltLabel5.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="oltLabel5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>108, 6</value>
+  </data>
+  <data name="oltLabel5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>17, 13</value>
+  </data>
+  <data name="oltLabel5.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="oltLabel5.Text" xml:space="preserve">
+    <value>at</value>
+  </data>
+  <data name="&gt;&gt;oltLabel5.Name" xml:space="preserve">
+    <value>oltLabel5</value>
+  </data>
+  <data name="&gt;&gt;oltLabel5.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Common.Controls.OltLabel, Com.Suncor.Olt.Common, Version=3.6.9876.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;oltLabel5.Parent" xml:space="preserve">
+    <value>weeklyGroupBox</value>
+  </data>
+  <data name="&gt;&gt;oltLabel5.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="weekly_DayOfWeekComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 3</value>
+  </data>
+  <data name="weekly_DayOfWeekComboBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 21</value>
+  </data>
+  <data name="weekly_DayOfWeekComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;weekly_DayOfWeekComboBox.Name" xml:space="preserve">
+    <value>weekly_DayOfWeekComboBox</value>
+  </data>
+  <data name="&gt;&gt;weekly_DayOfWeekComboBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Common.Controls.OltComboBox, Com.Suncor.Olt.Common, Version=3.6.9876.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;weekly_DayOfWeekComboBox.Parent" xml:space="preserve">
+    <value>weeklyGroupBox</value>
+  </data>
+  <data name="&gt;&gt;weekly_DayOfWeekComboBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="weekly_TimePicker.Location" type="System.Drawing.Point, System.Drawing">
+    <value>131, 2</value>
+  </data>
+  <data name="weekly_TimePicker.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="weekly_TimePicker.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 21</value>
+  </data>
+  <data name="weekly_TimePicker.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;weekly_TimePicker.Name" xml:space="preserve">
+    <value>weekly_TimePicker</value>
+  </data>
+  <data name="&gt;&gt;weekly_TimePicker.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Common.Controls.OltTimePicker, Com.Suncor.Olt.Common, Version=3.6.9876.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;weekly_TimePicker.Parent" xml:space="preserve">
+    <value>weeklyGroupBox</value>
+  </data>
+  <data name="&gt;&gt;weekly_TimePicker.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="weeklyGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>132, 0</value>
+  </data>
+  <data name="weeklyGroupBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="weeklyGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>233, 24</value>
+  </data>
+  <data name="weeklyGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="weeklyGroupBox.Text" xml:space="preserve">
+    <value>Recurrence Pattern</value>
+  </data>
+  <data name="&gt;&gt;weeklyGroupBox.Name" xml:space="preserve">
+    <value>weeklyGroupBox</value>
+  </data>
+  <data name="&gt;&gt;weeklyGroupBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Common.Controls.OltPanel, Com.Suncor.Olt.Common, Version=3.6.9876.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;weeklyGroupBox.Parent" xml:space="preserve">
+    <value>flowLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;weeklyGroupBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="monthlyByDayOfWeek_WeekOfMonthComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 3</value>
+  </data>
+  <data name="monthlyByDayOfWeek_WeekOfMonthComboBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 21</value>
+  </data>
+  <data name="monthlyByDayOfWeek_WeekOfMonthComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;monthlyByDayOfWeek_WeekOfMonthComboBox.Name" xml:space="preserve">
+    <value>monthlyByDayOfWeek_WeekOfMonthComboBox</value>
+  </data>
+  <data name="&gt;&gt;monthlyByDayOfWeek_WeekOfMonthComboBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Common.Controls.OltComboBox, Com.Suncor.Olt.Common, Version=3.6.9876.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;monthlyByDayOfWeek_WeekOfMonthComboBox.Parent" xml:space="preserve">
+    <value>monthlyByDayOfWeekGroupBox</value>
+  </data>
+  <data name="&gt;&gt;monthlyByDayOfWeek_WeekOfMonthComboBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="oltLabel1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="oltLabel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>186, 6</value>
+  </data>
+  <data name="oltLabel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>17, 13</value>
+  </data>
+  <data name="oltLabel1.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="oltLabel1.Text" xml:space="preserve">
+    <value>at</value>
+  </data>
+  <data name="&gt;&gt;oltLabel1.Name" xml:space="preserve">
+    <value>oltLabel1</value>
+  </data>
+  <data name="&gt;&gt;oltLabel1.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Common.Controls.OltLabel, Com.Suncor.Olt.Common, Version=3.6.9876.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;oltLabel1.Parent" xml:space="preserve">
+    <value>monthlyByDayOfWeekGroupBox</value>
+  </data>
+  <data name="&gt;&gt;oltLabel1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="monthlyByDayOfWeek_DayOfWeekComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>84, 3</value>
+  </data>
+  <data name="monthlyByDayOfWeek_DayOfWeekComboBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 21</value>
+  </data>
+  <data name="monthlyByDayOfWeek_DayOfWeekComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;monthlyByDayOfWeek_DayOfWeekComboBox.Name" xml:space="preserve">
+    <value>monthlyByDayOfWeek_DayOfWeekComboBox</value>
+  </data>
+  <data name="&gt;&gt;monthlyByDayOfWeek_DayOfWeekComboBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Common.Controls.OltComboBox, Com.Suncor.Olt.Common, Version=3.6.9876.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;monthlyByDayOfWeek_DayOfWeekComboBox.Parent" xml:space="preserve">
+    <value>monthlyByDayOfWeekGroupBox</value>
+  </data>
+  <data name="&gt;&gt;monthlyByDayOfWeek_DayOfWeekComboBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="monthlyByDayOfWeek_TimePicker.Location" type="System.Drawing.Point, System.Drawing">
+    <value>209, 2</value>
+  </data>
+  <data name="monthlyByDayOfWeek_TimePicker.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="monthlyByDayOfWeek_TimePicker.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 21</value>
+  </data>
+  <data name="monthlyByDayOfWeek_TimePicker.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;monthlyByDayOfWeek_TimePicker.Name" xml:space="preserve">
+    <value>monthlyByDayOfWeek_TimePicker</value>
+  </data>
+  <data name="&gt;&gt;monthlyByDayOfWeek_TimePicker.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Common.Controls.OltTimePicker, Com.Suncor.Olt.Common, Version=3.6.9876.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;monthlyByDayOfWeek_TimePicker.Parent" xml:space="preserve">
+    <value>monthlyByDayOfWeekGroupBox</value>
+  </data>
+  <data name="&gt;&gt;monthlyByDayOfWeek_TimePicker.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="monthlyByDayOfWeekGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>365, 0</value>
+  </data>
+  <data name="monthlyByDayOfWeekGroupBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="monthlyByDayOfWeekGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>311, 24</value>
+  </data>
+  <data name="monthlyByDayOfWeekGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="monthlyByDayOfWeekGroupBox.Text" xml:space="preserve">
+    <value>Recurrence Pattern</value>
+  </data>
+  <data name="&gt;&gt;monthlyByDayOfWeekGroupBox.Name" xml:space="preserve">
+    <value>monthlyByDayOfWeekGroupBox</value>
+  </data>
+  <data name="&gt;&gt;monthlyByDayOfWeekGroupBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Common.Controls.OltPanel, Com.Suncor.Olt.Common, Version=3.6.9876.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;monthlyByDayOfWeekGroupBox.Parent" xml:space="preserve">
+    <value>flowLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;monthlyByDayOfWeekGroupBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="oltLabel2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="oltLabel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>74, 6</value>
+  </data>
+  <data name="oltLabel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>103, 13</value>
+  </data>
+  <data name="oltLabel2.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="oltLabel2.Text" xml:space="preserve">
+    <value>day of the month at</value>
+  </data>
+  <data name="&gt;&gt;oltLabel2.Name" xml:space="preserve">
+    <value>oltLabel2</value>
+  </data>
+  <data name="&gt;&gt;oltLabel2.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Common.Controls.OltLabel, Com.Suncor.Olt.Common, Version=3.6.9876.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;oltLabel2.Parent" xml:space="preserve">
+    <value>monthlyByDayOfMonthGroupBox</value>
+  </data>
+  <data name="&gt;&gt;oltLabel2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="monthlyByDayOfMonth_DayOfMonthComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 3</value>
+  </data>
+  <data name="monthlyByDayOfMonth_DayOfMonthComboBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>62, 21</value>
+  </data>
+  <data name="monthlyByDayOfMonth_DayOfMonthComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;monthlyByDayOfMonth_DayOfMonthComboBox.Name" xml:space="preserve">
+    <value>monthlyByDayOfMonth_DayOfMonthComboBox</value>
+  </data>
+  <data name="&gt;&gt;monthlyByDayOfMonth_DayOfMonthComboBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Common.Controls.OltComboBox, Com.Suncor.Olt.Common, Version=3.6.9876.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;monthlyByDayOfMonth_DayOfMonthComboBox.Parent" xml:space="preserve">
+    <value>monthlyByDayOfMonthGroupBox</value>
+  </data>
+  <data name="&gt;&gt;monthlyByDayOfMonth_DayOfMonthComboBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="monthlyByDayOfMonth_TimePicker.Location" type="System.Drawing.Point, System.Drawing">
+    <value>183, 2</value>
+  </data>
+  <data name="monthlyByDayOfMonth_TimePicker.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="monthlyByDayOfMonth_TimePicker.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 21</value>
+  </data>
+  <data name="monthlyByDayOfMonth_TimePicker.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;monthlyByDayOfMonth_TimePicker.Name" xml:space="preserve">
+    <value>monthlyByDayOfMonth_TimePicker</value>
+  </data>
+  <data name="&gt;&gt;monthlyByDayOfMonth_TimePicker.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Common.Controls.OltTimePicker, Com.Suncor.Olt.Common, Version=3.6.9876.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;monthlyByDayOfMonth_TimePicker.Parent" xml:space="preserve">
+    <value>monthlyByDayOfMonthGroupBox</value>
+  </data>
+  <data name="&gt;&gt;monthlyByDayOfMonth_TimePicker.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="monthlyByDayOfMonthGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>676, 0</value>
+  </data>
+  <data name="monthlyByDayOfMonthGroupBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="monthlyByDayOfMonthGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>285, 24</value>
+  </data>
+  <data name="monthlyByDayOfMonthGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="monthlyByDayOfMonthGroupBox.Text" xml:space="preserve">
+    <value>Recurrence Pattern</value>
+  </data>
+  <data name="&gt;&gt;monthlyByDayOfMonthGroupBox.Name" xml:space="preserve">
+    <value>monthlyByDayOfMonthGroupBox</value>
+  </data>
+  <data name="&gt;&gt;monthlyByDayOfMonthGroupBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Common.Controls.OltPanel, Com.Suncor.Olt.Common, Version=3.6.9876.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;monthlyByDayOfMonthGroupBox.Parent" xml:space="preserve">
+    <value>flowLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;monthlyByDayOfMonthGroupBox.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="flowLayoutPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 14</value>
+  </data>
+  <data name="flowLayoutPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>963, 29</value>
+  </data>
+  <data name="flowLayoutPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;flowLayoutPanel.Name" xml:space="preserve">
+    <value>flowLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;flowLayoutPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;flowLayoutPanel.Parent" xml:space="preserve">
+    <value>recurrenceGroupBox</value>
+  </data>
+  <data name="&gt;&gt;flowLayoutPanel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="recurrenceGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>295, 0</value>
+  </data>
+  <data name="recurrenceGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>971, 45</value>
+  </data>
+  <data name="recurrenceGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="recurrenceGroupBox.Text" xml:space="preserve">
+    <value>Recurrence Pattern</value>
+  </data>
+  <data name="&gt;&gt;recurrenceGroupBox.Name" xml:space="preserve">
+    <value>recurrenceGroupBox</value>
+  </data>
+  <data name="&gt;&gt;recurrenceGroupBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Common.Controls.OltGroupBox, Com.Suncor.Olt.Common, Version=3.6.9876.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;recurrenceGroupBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;recurrenceGroupBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="scheduleTypesComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 16</value>
+  </data>
+  <data name="scheduleTypesComboBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>257, 21</value>
+  </data>
+  <data name="scheduleTypesComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;scheduleTypesComboBox.Name" xml:space="preserve">
+    <value>scheduleTypesComboBox</value>
+  </data>
+  <data name="&gt;&gt;scheduleTypesComboBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Common.Controls.OltComboBox, Com.Suncor.Olt.Common, Version=3.6.9876.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;scheduleTypesComboBox.Parent" xml:space="preserve">
+    <value>typeGroupBox</value>
+  </data>
+  <data name="&gt;&gt;scheduleTypesComboBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="typeGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="typeGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>289, 45</value>
+  </data>
+  <data name="typeGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="typeGroupBox.Text" xml:space="preserve">
+    <value>Schedule Type</value>
+  </data>
+  <data name="&gt;&gt;typeGroupBox.Name" xml:space="preserve">
+    <value>typeGroupBox</value>
+  </data>
+  <data name="&gt;&gt;typeGroupBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Common.Controls.OltGroupBox, Com.Suncor.Olt.Common, Version=3.6.9876.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;typeGroupBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;typeGroupBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1266, 50</value>
+  </data>
+  <data name="&gt;&gt;errorProvider.Name" xml:space="preserve">
+    <value>errorProvider</value>
+  </data>
+  <data name="&gt;&gt;errorProvider.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ErrorProvider, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>SimpleSchedulePicker</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.UserControl, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+</root>

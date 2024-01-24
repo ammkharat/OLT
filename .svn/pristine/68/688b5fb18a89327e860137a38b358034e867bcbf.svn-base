@@ -1,0 +1,35 @@
+﻿using System.Collections.Generic;
+using System.ServiceModel;
+using Com.Suncor.Olt.Common.Domain;
+using Com.Suncor.Olt.Common.Domain.FlocSet;
+using Com.Suncor.Olt.Common.Domain.WorkPermit;
+using Com.Suncor.Olt.Common.DTO;
+using Com.Suncor.Olt.Common.Utility;
+
+namespace Com.Suncor.Olt.Common.Services
+{
+    [ServiceContract]
+    public interface IPermitRequestMudsService
+    {
+        [OperationContract]
+        List<PermitRequestMudsDTO> QueryByFlocUnitAndBelow(IFlocSet flocSet, DateRange dateRange);
+
+        [OperationContract]
+        PermitRequestMuds QueryById(long id);
+
+        [OperationContract]
+        List<NotifiedEvent> Insert(PermitRequestMuds request);
+
+        [OperationContract]
+        List<NotifiedEvent> Update(PermitRequestMuds request);
+
+        [OperationContract]
+        List<NotifiedEvent> Remove(PermitRequestMuds request);
+
+        [OperationContract]
+        List<NotifiedEvent> Submit(Date workPermitDate, List<PermitRequestMudsDTO> dtos, User user);
+
+        [OperationContract]
+        List<NotifiedEvent> SaveAndSubmit(Date workPermitDate, PermitRequestMuds request, User user);
+    }
+}

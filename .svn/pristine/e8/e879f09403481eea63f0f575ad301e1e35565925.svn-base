@@ -1,0 +1,27 @@
+using System.Collections.Generic;
+using Com.Suncor.Olt.Common.Domain.WorkPermit;
+using Com.Suncor.Olt.Remote.Caching;
+
+namespace Com.Suncor.Olt.Remote.DataAccess.Domain
+{
+    public interface IGenericTemplateApprovalDao : IDao
+    {
+        [CachedQueryBySiteId]
+        List<GenericTemplateApproval> QueryBySite(long siteId, long plantId, long formTypeId);
+        
+        [CachedQueryBySiteId]
+        List<GenericTemplateApproval> QueryForEGenericForms(long siteId, long plantId);
+        
+        [CachedInsertOrUpdate(true, false)]
+        GenericTemplateApproval Insert(GenericTemplateApproval approval);
+
+        [CachedRemove(true, false)]
+        void Remove(GenericTemplateApproval contractor);
+        
+        [CachedInsertOrUpdate(true, false)]
+        void Update(GenericTemplateApproval approval);
+
+        //DMND0009363-#950321920-Mukesh
+        void UpdateTemplateHeader(GenericTemplateApproval contractor);
+    }
+}

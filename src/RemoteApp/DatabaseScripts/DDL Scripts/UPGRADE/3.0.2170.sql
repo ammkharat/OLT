@@ -1,0 +1,3 @@
+delete from userlayoutpreference
+
+GO

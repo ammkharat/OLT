@@ -1,0 +1,1125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="toolStrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>0, 0</value>
+  </metadata>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="toolStrip.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="actionItemMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>216, 22</value>
+  </data>
+  <data name="actionItemMenuItem.Text" xml:space="preserve">
+    <value>&amp;Action Item Definition</value>
+  </data>
+  <data name="targetMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>216, 22</value>
+  </data>
+  <data name="targetMenuItem.Text" xml:space="preserve">
+    <value>&amp;Target Definition</value>
+  </data>
+  <data name="restrictionMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>216, 22</value>
+  </data>
+  <data name="restrictionMenuItem.Text" xml:space="preserve">
+    <value>Restriction Definition</value>
+  </data>
+  <data name="labAlertMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>216, 22</value>
+  </data>
+  <data name="labAlertMenuItem.Text" xml:space="preserve">
+    <value>La&amp;b Alert Definition</value>
+  </data>
+  <data name="shiftLogMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>235, 22</value>
+  </data>
+  <data name="shiftLogMenuItem.Text" xml:space="preserve">
+    <value>Shift &amp;Log Entry</value>
+  </data>
+  <data name="logDefinitionMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>235, 22</value>
+  </data>
+  <data name="logDefinitionMenuItem.Text" xml:space="preserve">
+    <value>Repeating Log Definition Entry</value>
+  </data>
+  <data name="cokerCardMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>235, 22</value>
+  </data>
+  <data name="cokerCardMenuItem.Text" xml:space="preserve">
+    <value>&amp;Coker Card Entry</value>
+  </data>
+  <data name="shiftSummaryLogMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>235, 22</value>
+  </data>
+  <data name="shiftSummaryLogMenuItem.Text" xml:space="preserve">
+    <value>Shift S&amp;ummary Log Entry</value>
+  </data>
+  <data name="dailyDirectiveMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>235, 22</value>
+  </data>
+  <data name="dailyDirectiveMenuItem.Text" xml:space="preserve">
+    <value>Directive Entry</value>
+  </data>
+  <data name="standingOrderMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>235, 22</value>
+  </data>
+  <data name="standingOrderMenuItem.Text" xml:space="preserve">
+    <value>Standing Order Entry</value>
+  </data>
+  <data name="logMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>216, 22</value>
+  </data>
+  <data name="logMenuItem.Text" xml:space="preserve">
+    <value>Log</value>
+  </data>
+  <data name="shiftHandoverToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>216, 22</value>
+  </data>
+  <data name="shiftHandoverToolStripMenuItem.Text" xml:space="preserve">
+    <value>Shift &amp;Handover</value>
+  </data>
+  <data name="permitMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>216, 22</value>
+  </data>
+  <data name="permitMenuItem.Text" xml:space="preserve">
+    <value>&amp;Safe Work Permit</value>
+  </data>
+  <data name="permitRequestToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>216, 22</value>
+  </data>
+  <data name="permitRequestToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Permit Request</value>
+  </data>
+  <data name="confinedSpaceDocumentToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>216, 22</value>
+  </data>
+  <data name="confinedSpaceDocumentToolStripMenuItem.Text" xml:space="preserve">
+    <value>Confined Space Document</value>
+  </data>
+  <data name="formGN1MenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>287, 22</value>
+  </data>
+  <data name="formGN1MenuItem.Text" xml:space="preserve">
+    <value>GN-1</value>
+  </data>
+  <data name="formGN6MenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>287, 22</value>
+  </data>
+  <data name="formGN6MenuItem.Text" xml:space="preserve">
+    <value>GN-6</value>
+  </data>
+  <data name="formGN7MenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>287, 22</value>
+  </data>
+  <data name="formGN7MenuItem.Text" xml:space="preserve">
+    <value>GN-7</value>
+  </data>
+  <data name="formGN24MenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>287, 22</value>
+  </data>
+  <data name="formGN24MenuItem.Text" xml:space="preserve">
+    <value>GN-24</value>
+  </data>
+  <data name="formGN59MenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>287, 22</value>
+  </data>
+  <data name="formGN59MenuItem.Text" xml:space="preserve">
+    <value>GN-59</value>
+  </data>
+  <data name="gN75AppendixAToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>287, 22</value>
+  </data>
+  <data name="gN75AppendixAToolStripMenuItem.Text" xml:space="preserve">
+    <value>GN-75 Appendix A</value>
+  </data>
+  <data name="gN75AppendixBToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>287, 22</value>
+  </data>
+  <data name="gN75AppendixBToolStripMenuItem.Text" xml:space="preserve">
+    <value>GN-75 Appendix B</value>
+  </data>
+  <data name="formOP14MenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>287, 22</value>
+  </data>
+  <data name="formOP14MenuItem.Text" xml:space="preserve">
+    <value>OP-14</value>
+  </data>
+  <data name="formOdourNoiseMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>287, 22</value>
+  </data>
+  <data name="formOdourNoiseMenuItem.Text" xml:space="preserve">
+    <value>Odour - Noise complaint</value>
+  </data>
+  <data name="formDeviationMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>287, 22</value>
+  </data>
+  <data name="formDeviationMenuItem.Text" xml:space="preserve">
+    <value>Letter of Exception</value>
+  </data>
+  <data name="formRoadClosureMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>287, 22</value>
+  </data>
+  <data name="formRoadClosureMenuItem.Text" xml:space="preserve">
+    <value>Road closure</value>
+  </data>
+  <data name="formGN11GroundDisturbanceMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>287, 22</value>
+  </data>
+  <data name="formGN11GroundDisturbanceMenuItem.Text" xml:space="preserve">
+    <value>GN11 Ground Disturbance</value>
+  </data>
+  <data name="formGN27FreezePlugMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>287, 22</value>
+  </data>
+  <data name="formGN27FreezePlugMenuItem.Text" xml:space="preserve">
+    <value>GN27 Freeze Plug</value>
+  </data>
+  <data name="formHazardAssessmentMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>287, 22</value>
+  </data>
+  <data name="formHazardAssessmentMenuItem.Text" xml:space="preserve">
+    <value>HO68 Plant 12 Minor HF Leak</value>
+  </data>
+  <data name="formNonEmergencyWaterSystemApprovalMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>287, 22</value>
+  </data>
+  <data name="formNonEmergencyWaterSystemApprovalMenuItem.Text" xml:space="preserve">
+    <value>Non-Emergency Water System Approval</value>
+  </data>
+  <data name="formLubesCsdMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>287, 22</value>
+  </data>
+  <data name="formLubesCsdMenuItem.Text" xml:space="preserve">
+    <value>Critical System Defeat</value>
+  </data>
+  <data name="formOilsandsTrainingMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>287, 22</value>
+  </data>
+  <data name="formOilsandsTrainingMenuItem.Text" xml:space="preserve">
+    <value>Training</value>
+  </data>
+  <data name="formForthillsTrainingMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>287, 22</value>
+  </data>
+  <data name="formForthillsTrainingMenuItem.Text" xml:space="preserve">
+    <value>Training</value>
+  </data>
+  <data name="formSiteWideTrainingMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>287, 22</value>
+  </data>
+  <data name="formSiteWideTrainingMenuItem.Text" xml:space="preserve">
+    <value>Training</value>
+  </data>
+  <data name="formETFTrainingMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>287, 22</value>
+  </data>
+  <data name="formETFTrainingMenuItem.Text" xml:space="preserve">
+    <value>Training</value>
+  </data>
+  <data name="overtimeRequestToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>287, 22</value>
+  </data>
+  <data name="overtimeRequestToolStripMenuItem.Text" xml:space="preserve">
+    <value>Overtime Request</value>
+  </data>
+  <data name="formMontrealCsdMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>287, 22</value>
+  </data>
+  <data name="formMontrealCsdMenuItem.Text" xml:space="preserve">
+    <value>Critical System Defeat</value>
+  </data>
+  <data name="formLubesAlarmDisableMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>287, 22</value>
+  </data>
+  <data name="formLubesAlarmDisableMenuItem.Text" xml:space="preserve">
+    <value>Alarm Temporary Disable</value>
+  </data>
+  <data name="formOilSandsSafeWorkPermitAuditQuestionnaireToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>287, 22</value>
+  </data>
+  <data name="formOilSandsSafeWorkPermitAuditQuestionnaireToolStripMenuItem.Text" xml:space="preserve">
+    <value>Assessment Questionnaires</value>
+  </data>
+  <data name="formForthillsSafeWorkPermitAuditQuestionnaireToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>287, 22</value>
+  </data>
+  <data name="formForthillsSafeWorkPermitAuditQuestionnaireToolStripMenuItem.Text" xml:space="preserve">
+    <value>Assessment Questionnaires</value>
+  </data>
+  <data name="formDocumentSuggestionMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>287, 22</value>
+  </data>
+  <data name="formDocumentSuggestionMenuItem.Text" xml:space="preserve">
+    <value>Document Suggestion</value>
+  </data>
+  <data name="formProcedureDeviationMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>287, 22</value>
+  </data>
+  <data name="formProcedureDeviationMenuItem.Text" xml:space="preserve">
+    <value>Operating Procedure Deviation</value>
+  </data>
+  <data name="formSarniaGN75BTemplateMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>287, 22</value>
+  </data>
+  <data name="formSarniaGN75BTemplateMenuItem.Text" xml:space="preserve">
+    <value>EIP Template</value>
+  </data>
+  <data name="formSarniaGN75BFormMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>287, 22</value>
+  </data>
+  <data name="formSarniaGN75BFormMenuItem.Text" xml:space="preserve">
+    <value>EIP Issue</value>
+  </data>
+  <data name="formSarniaOP14MenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>287, 22</value>
+  </data>
+  <data name="formSarniaOP14MenuItem.Text" xml:space="preserve">
+    <value>Critical System Defeat</value>
+  </data>
+  <data name="formSelcOP14MenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>287, 22</value>
+  </data>
+  <data name="formSelcOP14MenuItem.Text" xml:space="preserve">
+    <value>Critical System Defeat</value>
+  </data>
+  <data name="formMudsTemporaryInstallationMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>287, 22</value>
+  </data>
+  <data name="formMudsTemporaryInstallationMenuItem.Text" xml:space="preserve">
+    <value>Temporary Installations</value>
+  </data>
+  <data name="formOilSampleMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>287, 22</value>
+  </data>
+  <data name="formOilSampleMenuItem.Text" xml:space="preserve">
+    <value>980E- AT 250HR Oil Sample/ inspection</value>
+  </data>
+  <data name="formDailyInspectionMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>287, 22</value>
+  </data>
+  <data name="formDailyInspectionMenuItem.Text" xml:space="preserve">
+    <value>980E- AT Daily Inspection</value>
+  </data>
+  <data name="formMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>216, 22</value>
+  </data>
+  <data name="formMenuItem.Text" xml:space="preserve">
+    <value>Form</value>
+  </data>
+  <data name="directiveToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>216, 22</value>
+  </data>
+  <data name="directiveToolStripMenuItem.Text" xml:space="preserve">
+    <value>Directive</value>
+  </data>
+  <data name="newSplitButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIDSURBVDhPpZLrS5NhGMb3j4SWh0oRQVExD4gonkDpg4hG
+        YKxG6WBogkMZKgPNCEVJFBGdGETEvgwyO9DJE5syZw3PIlPEE9pgBCLZ5XvdMB8Ew8gXbl54nuf63dd9
+        0OGSnwCahxbPRNPAPMw9Xpg6ZmF46kZZ0xSKzJPIrhpDWsVnpBhGkKx3nAX8Pv7z1zg8OoY/cITdn4fw
+        bf/C0kYAN3Ma/w3gWfZL5kzTKBxjWyK2DftwI9tyMYCZKXbNHaD91bLYJrDXsYbrWfUKwJrPE9M2M1Oc
+        VzOOpHI7Jr376Hi9ogHqFIANO0/MmmmbmSmm9a8ze+I4MrNWAdjtoJgWcx+PSzg166yZZ8xM8XvXDix9
+        c4jIqFYAjoriBV9AhEPv1mH/sonogha0afbZMMZz+yreTGyhpusHwtNNCsA5U1zS4BLxzJIfg299qO32
+        Ir7UJtZfftyATqeT+8o2D8JSjQrAJblrncYL7ZJ2+bfaFnC/1S1NjL3diRat7qrO7wLRP3HjWsojBeCo
+        mDEo5mNjuweFGvjWg2EBhCbpkW78htSHHwRyNdmgAFzPEee2iFkzayy2OLXzT4gr6UdUnlXrullsxxQ+
+        kx0g8BTA3aZlButjSTyjODq/WcQcW/B/Je4OQhLvKQDnzN1mp0nnkvAhR8VuMzNrpm1mpjgkoVwB/v8D
+        TgDQASA1MVpwzwAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="newSplitButton.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="newSplitButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 25</value>
+  </data>
+  <data name="newSplitButton.Text" xml:space="preserve">
+    <value>&amp;New</value>
+  </data>
+  <data name="toolStripSeparator1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>6, 28</value>
+  </data>
+  <data name="userLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>39, 25</value>
+  </data>
+  <data name="userLabel.Text" xml:space="preserve">
+    <value>User :</value>
+  </data>
+  <data name="fullnameLabelData.Size" type="System.Drawing.Size, System.Drawing">
+    <value>61, 25</value>
+  </data>
+  <data name="fullnameLabelData.Text" xml:space="preserve">
+    <value>Full Name</value>
+  </data>
+  <data name="toolStripSeparator5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>6, 28</value>
+  </data>
+  <data name="roleLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>38, 25</value>
+  </data>
+  <data name="roleLabel.Text" xml:space="preserve">
+    <value>Role :</value>
+  </data>
+  <data name="roleLabelData.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 25</value>
+  </data>
+  <data name="roleLabelData.Text" xml:space="preserve">
+    <value>Role</value>
+  </data>
+  <data name="toolStripSeparator6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>6, 28</value>
+  </data>
+  <data name="assignmentLabel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="assignmentLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 25</value>
+  </data>
+  <data name="assignmentLabel.Text" xml:space="preserve">
+    <value>Assignment :</value>
+  </data>
+  <data name="workAssignmentLabelData.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 25</value>
+  </data>
+  <data name="workAssignmentLabelData.Text" xml:space="preserve">
+    <value>Assignment</value>
+  </data>
+  <data name="toolStripSeparator2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>6, 28</value>
+  </data>
+  <data name="shiftLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>39, 25</value>
+  </data>
+  <data name="shiftLabel.Text" xml:space="preserve">
+    <value>Shift :</value>
+  </data>
+  <data name="shiftLabelData.Size" type="System.Drawing.Size, System.Drawing">
+    <value>31, 25</value>
+  </data>
+  <data name="shiftLabelData.Text" xml:space="preserve">
+    <value>Shift</value>
+  </data>
+  <data name="toolStripSeparator3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>6, 28</value>
+  </data>
+  <data name="siteLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 25</value>
+  </data>
+  <data name="siteLabel.Text" xml:space="preserve">
+    <value>Site :</value>
+  </data>
+  <data name="siteLabelData.Size" type="System.Drawing.Size, System.Drawing">
+    <value>26, 25</value>
+  </data>
+  <data name="siteLabelData.Text" xml:space="preserve">
+    <value>Site</value>
+  </data>
+  <data name="toolStripSeparator4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>6, 28</value>
+  </data>
+  <data name="logOutButton.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="logOutButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 25</value>
+  </data>
+  <data name="logOutButton.Text" xml:space="preserve">
+    <value>&amp;Log Out</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="ChangeSite.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ChangeSite.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="ChangeSite.Size" type="System.Drawing.Size, System.Drawing">
+    <value>90, 25</value>
+  </data>
+  <data name="ChangeSite.Text" xml:space="preserve">
+    <value>Change Site</value>
+  </data>
+  <data name="ChangeSite.ToolTipText" xml:space="preserve">
+    <value>Change Site</value>
+  </data>
+  <data name="changeActiveFLOCButton.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="changeActiveFLOCButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>136, 25</value>
+  </data>
+  <data name="changeActiveFLOCButton.Text" xml:space="preserve">
+    <value>&amp;Change Active FLOC</value>
+  </data>
+  <data name="changeActiveFLOCButton.ToolTipText" xml:space="preserve">
+    <value>Change Active FLOC</value>
+  </data>
+  <data name="timeButton.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="timeButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>38, 25</value>
+  </data>
+  <data name="timeButton.Text" xml:space="preserve">
+    <value>Time</value>
+  </data>
+  <data name="txtSearchText.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 28</value>
+  </data>
+  <data name="txtSearchText.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="btnSearch.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="btnSearch.Size" type="System.Drawing.Size, System.Drawing">
+    <value>23, 25</value>
+  </data>
+  <data name="btnSearch.Text" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="btnSearch.ToolTipText" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="btnSearch.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="changeWorkPermitFLOCToolStripButton.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="changeWorkPermitFLOCToolStripButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>174, 20</value>
+  </data>
+  <data name="changeWorkPermitFLOCToolStripButton.Text" xml:space="preserve">
+    <value>Change Active Permit FLOC</value>
+  </data>
+  <data name="changeWorkPermitFLOCToolStripButton.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="changeActiveRestrictionFlocToolStripButton.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="changeActiveRestrictionFlocToolStripButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>195, 20</value>
+  </data>
+  <data name="changeActiveRestrictionFlocToolStripButton.Text" xml:space="preserve">
+    <value>Change Active Restriction FLOC</value>
+  </data>
+  <data name="changeActiveRestrictionFlocToolStripButton.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="toolStrip.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="toolStrip.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1010, 28</value>
+  </data>
+  <data name="toolStrip.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="toolStrip.Text" xml:space="preserve">
+    <value>User Tool Strip</value>
+  </data>
+  <data name="&gt;&gt;toolStrip.Name" xml:space="preserve">
+    <value>toolStrip</value>
+  </data>
+  <data name="&gt;&gt;toolStrip.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStrip.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;toolStrip.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1010, 28</value>
+  </data>
+  <data name="&gt;&gt;newSplitButton.Name" xml:space="preserve">
+    <value>newSplitButton</value>
+  </data>
+  <data name="&gt;&gt;newSplitButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSplitButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;actionItemMenuItem.Name" xml:space="preserve">
+    <value>actionItemMenuItem</value>
+  </data>
+  <data name="&gt;&gt;actionItemMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;targetMenuItem.Name" xml:space="preserve">
+    <value>targetMenuItem</value>
+  </data>
+  <data name="&gt;&gt;targetMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;restrictionMenuItem.Name" xml:space="preserve">
+    <value>restrictionMenuItem</value>
+  </data>
+  <data name="&gt;&gt;restrictionMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;labAlertMenuItem.Name" xml:space="preserve">
+    <value>labAlertMenuItem</value>
+  </data>
+  <data name="&gt;&gt;labAlertMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;logMenuItem.Name" xml:space="preserve">
+    <value>logMenuItem</value>
+  </data>
+  <data name="&gt;&gt;logMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;shiftLogMenuItem.Name" xml:space="preserve">
+    <value>shiftLogMenuItem</value>
+  </data>
+  <data name="&gt;&gt;shiftLogMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;logDefinitionMenuItem.Name" xml:space="preserve">
+    <value>logDefinitionMenuItem</value>
+  </data>
+  <data name="&gt;&gt;logDefinitionMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cokerCardMenuItem.Name" xml:space="preserve">
+    <value>cokerCardMenuItem</value>
+  </data>
+  <data name="&gt;&gt;cokerCardMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;shiftSummaryLogMenuItem.Name" xml:space="preserve">
+    <value>shiftSummaryLogMenuItem</value>
+  </data>
+  <data name="&gt;&gt;shiftSummaryLogMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dailyDirectiveMenuItem.Name" xml:space="preserve">
+    <value>dailyDirectiveMenuItem</value>
+  </data>
+  <data name="&gt;&gt;dailyDirectiveMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;standingOrderMenuItem.Name" xml:space="preserve">
+    <value>standingOrderMenuItem</value>
+  </data>
+  <data name="&gt;&gt;standingOrderMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;shiftHandoverToolStripMenuItem.Name" xml:space="preserve">
+    <value>shiftHandoverToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;shiftHandoverToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;permitMenuItem.Name" xml:space="preserve">
+    <value>permitMenuItem</value>
+  </data>
+  <data name="&gt;&gt;permitMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;permitRequestToolStripMenuItem.Name" xml:space="preserve">
+    <value>permitRequestToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;permitRequestToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;confinedSpaceDocumentToolStripMenuItem.Name" xml:space="preserve">
+    <value>confinedSpaceDocumentToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;confinedSpaceDocumentToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;formMenuItem.Name" xml:space="preserve">
+    <value>formMenuItem</value>
+  </data>
+  <data name="&gt;&gt;formMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;formGN1MenuItem.Name" xml:space="preserve">
+    <value>formGN1MenuItem</value>
+  </data>
+  <data name="&gt;&gt;formGN1MenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;formGN6MenuItem.Name" xml:space="preserve">
+    <value>formGN6MenuItem</value>
+  </data>
+  <data name="&gt;&gt;formGN6MenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;formGN7MenuItem.Name" xml:space="preserve">
+    <value>formGN7MenuItem</value>
+  </data>
+  <data name="&gt;&gt;formGN7MenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;formGN24MenuItem.Name" xml:space="preserve">
+    <value>formGN24MenuItem</value>
+  </data>
+  <data name="&gt;&gt;formGN24MenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;formGN59MenuItem.Name" xml:space="preserve">
+    <value>formGN59MenuItem</value>
+  </data>
+  <data name="&gt;&gt;formGN59MenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;gN75AppendixAToolStripMenuItem.Name" xml:space="preserve">
+    <value>gN75AppendixAToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;gN75AppendixAToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;gN75AppendixBToolStripMenuItem.Name" xml:space="preserve">
+    <value>gN75AppendixBToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;gN75AppendixBToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;formOP14MenuItem.Name" xml:space="preserve">
+    <value>formOP14MenuItem</value>
+  </data>
+  <data name="&gt;&gt;formOP14MenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;formOdourNoiseMenuItem.Name" xml:space="preserve">
+    <value>formOdourNoiseMenuItem</value>
+  </data>
+  <data name="&gt;&gt;formOdourNoiseMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;formDeviationMenuItem.Name" xml:space="preserve">
+    <value>formDeviationMenuItem</value>
+  </data>
+  <data name="&gt;&gt;formDeviationMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;formRoadClosureMenuItem.Name" xml:space="preserve">
+    <value>formRoadClosureMenuItem</value>
+  </data>
+  <data name="&gt;&gt;formRoadClosureMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;formGN11GroundDisturbanceMenuItem.Name" xml:space="preserve">
+    <value>formGN11GroundDisturbanceMenuItem</value>
+  </data>
+  <data name="&gt;&gt;formGN11GroundDisturbanceMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;formGN27FreezePlugMenuItem.Name" xml:space="preserve">
+    <value>formGN27FreezePlugMenuItem</value>
+  </data>
+  <data name="&gt;&gt;formGN27FreezePlugMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;formHazardAssessmentMenuItem.Name" xml:space="preserve">
+    <value>formHazardAssessmentMenuItem</value>
+  </data>
+  <data name="&gt;&gt;formHazardAssessmentMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;formLubesCsdMenuItem.Name" xml:space="preserve">
+    <value>formLubesCsdMenuItem</value>
+  </data>
+  <data name="&gt;&gt;formLubesCsdMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;formOilsandsTrainingMenuItem.Name" xml:space="preserve">
+    <value>formOilsandsTrainingMenuItem</value>
+  </data>
+  <data name="&gt;&gt;formOilsandsTrainingMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;formForthillsTrainingMenuItem.Name" xml:space="preserve">
+    <value>formForthillsTrainingMenuItem</value>
+  </data>
+  <data name="&gt;&gt;formForthillsTrainingMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;formSiteWideTrainingMenuItem.Name" xml:space="preserve">
+    <value>formSiteWideTrainingMenuItem</value>
+  </data>
+  <data name="&gt;&gt;formSiteWideTrainingMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;formETFTrainingMenuItem.Name" xml:space="preserve">
+    <value>formETFTrainingMenuItem</value>
+  </data>
+  <data name="&gt;&gt;formETFTrainingMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;overtimeRequestToolStripMenuItem.Name" xml:space="preserve">
+    <value>overtimeRequestToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;overtimeRequestToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;formMontrealCsdMenuItem.Name" xml:space="preserve">
+    <value>formMontrealCsdMenuItem</value>
+  </data>
+  <data name="&gt;&gt;formMontrealCsdMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;formLubesAlarmDisableMenuItem.Name" xml:space="preserve">
+    <value>formLubesAlarmDisableMenuItem</value>
+  </data>
+  <data name="&gt;&gt;formLubesAlarmDisableMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;formOilSandsSafeWorkPermitAuditQuestionnaireToolStripMenuItem.Name" xml:space="preserve">
+    <value>formOilSandsSafeWorkPermitAuditQuestionnaireToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;formOilSandsSafeWorkPermitAuditQuestionnaireToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;formForthillsSafeWorkPermitAuditQuestionnaireToolStripMenuItem.Name" xml:space="preserve">
+    <value>formForthillsSafeWorkPermitAuditQuestionnaireToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;formForthillsSafeWorkPermitAuditQuestionnaireToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;formDocumentSuggestionMenuItem.Name" xml:space="preserve">
+    <value>formDocumentSuggestionMenuItem</value>
+  </data>
+  <data name="&gt;&gt;formDocumentSuggestionMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;formProcedureDeviationMenuItem.Name" xml:space="preserve">
+    <value>formProcedureDeviationMenuItem</value>
+  </data>
+  <data name="&gt;&gt;formProcedureDeviationMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;formSarniaGN75BTemplateMenuItem.Name" xml:space="preserve">
+    <value>formSarniaGN75BTemplateMenuItem</value>
+  </data>
+  <data name="&gt;&gt;formSarniaGN75BTemplateMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;formSarniaGN75BFormMenuItem.Name" xml:space="preserve">
+    <value>formSarniaGN75BFormMenuItem</value>
+  </data>
+  <data name="&gt;&gt;formSarniaGN75BFormMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;formSarniaOP14MenuItem.Name" xml:space="preserve">
+    <value>formSarniaOP14MenuItem</value>
+  </data>
+  <data name="&gt;&gt;formSarniaOP14MenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;formSelcOP14MenuItem.Name" xml:space="preserve">
+    <value>formSelcOP14MenuItem</value>
+  </data>
+  <data name="&gt;&gt;formSelcOP14MenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;formMudsTemporaryInstallationMenuItem.Name" xml:space="preserve">
+    <value>formMudsTemporaryInstallationMenuItem</value>
+  </data>
+  <data name="&gt;&gt;formMudsTemporaryInstallationMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;formOilSampleMenuItem.Name" xml:space="preserve">
+    <value>formOilSampleMenuItem</value>
+  </data>
+  <data name="&gt;&gt;formOilSampleMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;formDailyInspectionMenuItem.Name" xml:space="preserve">
+    <value>formDailyInspectionMenuItem</value>
+  </data>
+  <data name="&gt;&gt;formDailyInspectionMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;directiveToolStripMenuItem.Name" xml:space="preserve">
+    <value>directiveToolStripMenuItem</value>
+  </data>
+  <data name="&gt;&gt;directiveToolStripMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripSeparator1.Name" xml:space="preserve">
+    <value>toolStripSeparator1</value>
+  </data>
+  <data name="&gt;&gt;toolStripSeparator1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;userLabel.Name" xml:space="preserve">
+    <value>userLabel</value>
+  </data>
+  <data name="&gt;&gt;userLabel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltToolStripLabel, Operator Log Tool, Version=5.5.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fullnameLabelData.Name" xml:space="preserve">
+    <value>fullnameLabelData</value>
+  </data>
+  <data name="&gt;&gt;fullnameLabelData.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltToolStripLabelData, Operator Log Tool, Version=5.5.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;toolStripSeparator5.Name" xml:space="preserve">
+    <value>toolStripSeparator5</value>
+  </data>
+  <data name="&gt;&gt;toolStripSeparator5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;roleLabel.Name" xml:space="preserve">
+    <value>roleLabel</value>
+  </data>
+  <data name="&gt;&gt;roleLabel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltToolStripLabel, Operator Log Tool, Version=5.5.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;roleLabelData.Name" xml:space="preserve">
+    <value>roleLabelData</value>
+  </data>
+  <data name="&gt;&gt;roleLabelData.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltToolStripLabelData, Operator Log Tool, Version=5.5.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;toolStripSeparator6.Name" xml:space="preserve">
+    <value>toolStripSeparator6</value>
+  </data>
+  <data name="&gt;&gt;toolStripSeparator6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;assignmentLabel.Name" xml:space="preserve">
+    <value>assignmentLabel</value>
+  </data>
+  <data name="&gt;&gt;assignmentLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;workAssignmentLabelData.Name" xml:space="preserve">
+    <value>workAssignmentLabelData</value>
+  </data>
+  <data name="&gt;&gt;workAssignmentLabelData.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripSeparator2.Name" xml:space="preserve">
+    <value>toolStripSeparator2</value>
+  </data>
+  <data name="&gt;&gt;toolStripSeparator2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;shiftLabel.Name" xml:space="preserve">
+    <value>shiftLabel</value>
+  </data>
+  <data name="&gt;&gt;shiftLabel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltToolStripLabel, Operator Log Tool, Version=5.5.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;shiftLabelData.Name" xml:space="preserve">
+    <value>shiftLabelData</value>
+  </data>
+  <data name="&gt;&gt;shiftLabelData.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltToolStripLabelData, Operator Log Tool, Version=5.5.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;toolStripSeparator3.Name" xml:space="preserve">
+    <value>toolStripSeparator3</value>
+  </data>
+  <data name="&gt;&gt;toolStripSeparator3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;siteLabel.Name" xml:space="preserve">
+    <value>siteLabel</value>
+  </data>
+  <data name="&gt;&gt;siteLabel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltToolStripLabel, Operator Log Tool, Version=5.5.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;siteLabelData.Name" xml:space="preserve">
+    <value>siteLabelData</value>
+  </data>
+  <data name="&gt;&gt;siteLabelData.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltToolStripLabelData, Operator Log Tool, Version=5.5.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;toolStripSeparator4.Name" xml:space="preserve">
+    <value>toolStripSeparator4</value>
+  </data>
+  <data name="&gt;&gt;toolStripSeparator4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;logOutButton.Name" xml:space="preserve">
+    <value>logOutButton</value>
+  </data>
+  <data name="&gt;&gt;logOutButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ChangeSite.Name" xml:space="preserve">
+    <value>ChangeSite</value>
+  </data>
+  <data name="&gt;&gt;ChangeSite.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;changeActiveFLOCButton.Name" xml:space="preserve">
+    <value>changeActiveFLOCButton</value>
+  </data>
+  <data name="&gt;&gt;changeActiveFLOCButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;timeButton.Name" xml:space="preserve">
+    <value>timeButton</value>
+  </data>
+  <data name="&gt;&gt;timeButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtSearchText.Name" xml:space="preserve">
+    <value>txtSearchText</value>
+  </data>
+  <data name="&gt;&gt;txtSearchText.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnSearch.Name" xml:space="preserve">
+    <value>btnSearch</value>
+  </data>
+  <data name="&gt;&gt;btnSearch.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;changeWorkPermitFLOCToolStripButton.Name" xml:space="preserve">
+    <value>changeWorkPermitFLOCToolStripButton</value>
+  </data>
+  <data name="&gt;&gt;changeWorkPermitFLOCToolStripButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;changeActiveRestrictionFlocToolStripButton.Name" xml:space="preserve">
+    <value>changeActiveRestrictionFlocToolStripButton</value>
+  </data>
+  <data name="&gt;&gt;changeActiveRestrictionFlocToolStripButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;formNonEmergencyWaterSystemApprovalMenuItem.Name" xml:space="preserve">
+    <value>formNonEmergencyWaterSystemApprovalMenuItem</value>
+  </data>
+  <data name="&gt;&gt;formNonEmergencyWaterSystemApprovalMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>MainUserStrip</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.UserControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+</root>

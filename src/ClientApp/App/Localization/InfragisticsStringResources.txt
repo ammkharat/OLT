@@ -1,0 +1,98 @@
+﻿#WinGrid (WinGrid Resources)
+GroupByBoxDefaultPrompt=Drag a column header here to group by that column.
+GroupByButtonToolTip=Click to toggle sort direction
+LDR_Layout_mask=[caption] : [value] ([count] [count,items,item,items])
+
+# Custom Filtering Dialog screen (WinGrid Resources)
+FilterDialogAllComboItem=All
+FilterDialogAnyComboItem=Any
+FilterDialogApplyLabelText=Filter based on {0} of the following conditions:
+FilterDialogCancelButtonText=&Cancel
+FilterDialogConditionAddButtonText=&Add
+FilterDialogConditionDeleteButtonText=&Delete
+FilterDialogOkButtonText=&OK
+FilterDialogTitle=Custom Filter
+
+# Basic Filtering (Support Dialogs Resources)
+FilterUIProvider_Menu_ClearFilter=Clear Filter
+FilterUIProvider_Menu_DateFilters=Date &Filters
+FilterUIProvider_Menu_NumberFilters=Number &Filters
+FilterUIProvider_Menu_TextFilters=Text &Filters
+FilterUIProvider_OKButton=OK
+FilterUIProvider_CancelButton=Cancel
+
+# Custom Filter scereen (WinGrid Resources)
+RowFilterDialogDBNullItem=Is Empty
+RowFilterDialogBlanksItem=Blanks
+RowFilterDialogEmptyTextItem=Empty Text
+RowFilterDropDown_Operator_Contains=Contains
+RowFilterDropDown_Operator_DoesNotContain=Does not contain
+RowFilterDropDown_Operator_DoesNotEndWith=Does not end with
+RowFilterDropDown_Operator_EndsWith=Ends with
+RowFilterDropDownAllItem=(All)
+RowFilterDropDownBlanksItem=(Blanks)
+RowFilterDropDownEquals=Equals
+RowFilterDropDownGreaterThan=Greater than
+RowFilterDropDownGreaterThanOrEqualTo=Greater than or equal to
+RowFilterDropDownLessThan=Less than
+RowFilterDropDownLessThanOrEqualTo=Less than or equal to
+RowFilterDropDownLike=Like
+RowFilterDropDown_Operator_DoesNotStartWith=Does not start with
+RowFilterDropDown_Operator_DoesNotMatch=Does not match
+# Hope to remove this one with Story #1060
+RowFilterDropDownMatch=Matches Regular Expression
+RowFilterDropDownNotEquals=Does not equal
+# Hope to remove this one with Story #1060
+RowFilterDropDown_Operator_NotLike=Not Like
+RowFilterDropDown_Operator_StartsWith=Starts with
+
+# Date filtering (Support Dialogs Resources)
+SpecialFilterOperand_April=&April
+SpecialFilterOperand_August=Augus&t
+SpecialFilterOperand_December=&December
+SpecialFilterOperand_February=&February
+SpecialFilterOperand_January=&January
+SpecialFilterOperand_July=Ju&ly
+SpecialFilterOperand_June=J&une
+SpecialFilterOperand_LastMonth=Last Mo&nth
+SpecialFilterOperand_LastQuarter=Last Qua&rter
+SpecialFilterOperand_LastWeek=&Last Week
+SpecialFilterOperand_LastYear=Last &Year
+SpecialFilterOperand_March=&March
+SpecialFilterOperand_May=Ma&y
+SpecialFilterOperand_NextMonth=Next &Month
+SpecialFilterOperand_NextQuarter=Next &Quarter
+SpecialFilterOperand_NextWeek=Next Wee&k
+SpecialFilterOperand_NextYear=Ne&xt Year
+SpecialFilterOperand_November=&November
+SpecialFilterOperand_October=&October
+SpecialFilterOperand_Quarter1=Quarter &1
+SpecialFilterOperand_Quarter2=Quarter &2
+SpecialFilterOperand_Quarter3=Quarter &3
+SpecialFilterOperand_Quarter4=Quarter &4
+SpecialFilterOperand_September=&September
+SpecialFilterOperand_ThisMonth=Thi&s Month
+SpecialFilterOperand_ThisQuarter=This Q&uarter
+SpecialFilterOperand_ThisWeek=T&his Week
+SpecialFilterOperand_ThisYear=Th&is Year
+SpecialFilterOperand_Today=T&oday
+SpecialFilterOperand_Tomorrow=&Tomorrow
+SpecialFilterOperand_YearToDate=Year To Date
+SpecialFilterOperand_Yesterday=Yester&day
+
+#Grid Filter options (Support Dialogs Resources)
+UltraGridFilterUIProvider_AfterOperand=&After...
+UltraGridFilterUIProvider_AllDatesInPeriod_Menu=All Dates in the &Period
+UltraGridFilterUIProvider_BeforeOperand=&Before...
+UltraGridFilterUIProvider_BeginsWithOperand=Begins W&ith...
+UltraGridFilterUIProvider_BetweenOperand=Bet&ween...
+UltraGridFilterUIProvider_ContainsOperand=Cont&ains...
+UltraGridFilterUIProvider_CustomFilter=Custom &Filter...
+UltraGridFilterUIProvider_DoesNotContainOperand=&Does Not Contain...
+UltraGridFilterUIProvider_DoesNotEqualOperand=Does &Not Equal...
+UltraGridFilterUIProvider_EndsWithOperand=Ends Wi&th...
+UltraGridFilterUIProvider_EqualsOperand=&Equals...
+UltraGridFilterUIProvider_GreaterThanOperand=&Greater Than...
+UltraGridFilterUIProvider_GreaterThanOrEqualToOperand=Greater Than &Or Equal To...
+UltraGridFilterUIProvider_LessThanOperand=&Less Than...
+UltraGridFilterUIProvider_LessThanOrEqualToOperand=Less Than Or E&qual To...

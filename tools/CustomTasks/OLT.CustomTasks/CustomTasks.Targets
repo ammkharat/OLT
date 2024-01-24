@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  
+  <UsingTask TaskName="CustomTasks.Couchbase" AssemblyFile="CustomTasks.dll"/>
+  
+  <UsingTask TaskName="CustomTasks.DBUpgrade" AssemblyFile="CustomTasks.dll"/>
+  <UsingTask TaskName="CustomTasks.DBVersion" AssemblyFile="CustomTasks.dll"/>
+  
+  <UsingTask TaskName="CustomTasks.FileMerge" AssemblyFile="CustomTasks.dll"/>
+
+  <UsingTask TaskName="CustomTasks.VersionParser" AssemblyFile="CustomTasks.dll" />
+  
+  <UsingTask TaskName="CustomTasks.Sql" AssemblyFile="CustomTasks.dll"/>
+  <UsingTask TaskName="CustomTasks.Subversion.SvnAdd" AssemblyFile="CustomTasks.dll"/>
+  <UsingTask TaskName="CustomTasks.Subversion.SvnDelete" AssemblyFile="CustomTasks.dll"/>
+
+</Project>

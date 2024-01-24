@@ -1,0 +1,332 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Windows.Forms;
+using Com.Suncor.Olt.Client.Controls.Page;
+using Com.Suncor.Olt.Client.Forms;
+using Com.Suncor.Olt.Client.OltControls;
+using Com.Suncor.Olt.Client.Presenters.History;
+using Com.Suncor.Olt.Client.Presenters.Validation;
+using Com.Suncor.Olt.Client.Presenters.Validation.ValidationError;
+using Com.Suncor.Olt.Client.Reports.Printing;
+using Com.Suncor.Olt.Client.Security;
+using Com.Suncor.Olt.Client.Services;
+using Com.Suncor.Olt.Client.Utilities;
+using Com.Suncor.Olt.Client.Validation;
+using Com.Suncor.Olt.Common.Domain;
+using Com.Suncor.Olt.Common.Domain.WorkPermit;
+using Com.Suncor.Olt.Common.DTO;
+using Com.Suncor.Olt.Common.Extension;
+using Com.Suncor.Olt.Common.Localization;
+using Com.Suncor.Olt.Common.Services;
+using Com.Suncor.Olt.Common.Utility;
+using Com.Suncor.Olt.Reports;
+using Com.Suncor.Olt.Reports.Adapters;
+
+
+namespace Com.Suncor.Olt.Client.Presenters
+{
+    class PopupSarniaExtensionPresenter //: AddEditBaseFormPresenter<T, WorkPermit>, IWorkPermitSarniaPrintable where T : IWorkPermitFormView
+    {
+        private readonly IWorkPermitService service;
+       // private DateTime? extensiondatetime;
+        WorkPermit permit;
+        private IPopupSarniaExtension view;
+        private IWorkPermitPage page;
+        private readonly IReportPrintManager<WorkPermit> reportPrintManager;
+         private readonly WorkPermitForms workPermitForms;
+
+       // public PopupSarniaExtensionPresenter() : this(null);
+         public PopupSarniaExtensionPresenter(WorkPermit editobject, bool isExtensible, IPopupSarniaExtension view, IWorkPermitPage page)
+          //  : base(new WorkPermitFormSarnia(), editobject)
+            
+        {
+            //ExtensionDateTime = view.ExtensionDateTime;
+
+            var clientServiceRegistry = ClientServiceRegistry.Instance;
+            service = clientServiceRegistry.GetService<IWorkPermitService>();
+            this.permit = editobject;
+            SubscribeToEvents(view);
+            this.view = view;
+             this.page = page;
+            workPermitForms = new WorkPermitFormsFactory().Build();
+
+        }
+
+       private void  SubscribeToEvents(IPopupSarniaExtension view)
+        {
+           view.SaveButtonClicked+=view_SaveButtonClicked;
+           view.CancelButtonClick+=view_CancelButtonClick;
+           view.FormLoad += HandleViewLoad;
+           view.ExpiryDateTime = permit.EndDateTime.Value;
+           //view.ExtensionDateTime = permit.EndDateTime.Value;
+
+
+        }
+       public bool? AskIfTheyWantToPrintTheForms()
+       {
+           var dialogResult =
+               OltMessageBox.Show(Form.ActiveForm,
+                   "Do you want to print all forms associated to this safe work permit?",
+                   "Print Associated Forms?", MessageBoxButtons.YesNo);
+           if (dialogResult == DialogResult.Cancel) return null;
+           return dialogResult == DialogResult.Yes;
+       }
+       public void ShowPrintingFailedMessage()
+       {
+           view.DisplayInvalidPrintMessage(StringResources.WorkPermitPrintFailureMessageBoxText);
+       }
+       public bool IsOnlyPrintingOnePermit { get; set; }
+       public bool ShouldNotPrintForms { get; set; }
+       public void ShowUnableToPrintWithExpiryDateInPastMessage()
+       {
+           
+           view.DisplayErrorMessageDialog(StringResources.WorkPermitEdmonton_UnableToPrintWithExpiryDateInPast,
+               StringResources.WorkPermitEdmonton_UnableToPrintWithExpiryDateInPastDialogTitle);
+       }
+       public void UpdateWorkPermit(WorkPermit permit)
+       {
+           ServiceEventDispatcher.CallServiceAndDispatchImmediateEventNotification(service.Update, permit);
+       }
+
+        private void view_SaveButtonClicked(object args, EventArgs e)
+        {
+
+            CreateForExtension(permit);
+
+        }
+
+        private void view_CancelButtonClick(object args, EventArgs e)
+        {
+           // view.Close();
+        }
+
+        private void HandleViewLoad()
+        {
+            ExpiryDateTime = ClientSession.GetUserContext().UserShift.EndDateTime;
+            ExtensionDateTime = new DateTime(); //permit.EndDateTime;
+            view.ExtensionDateEnable = false;
+            view.ExtensionTimeEnable = false;
+            view.ExpiryDateTime = permit.EndDateTime.Value;
+            //view.ExtensionDateEnable=fa
+
+
+        }
+
+        public DateTime? ExtensionDateTime { get; set; }
+
+        public DateTime? ExpiryDateTime { get; set; }
+
+     
+        public void CreateForExtension(WorkPermit workpermit)
+        {
+           
+            workpermit.ExtensionEnable = true;
+
+           
+            Time extensionTime =view.ExtensionTime ;
+           // DateTime expiryTime = workpermit.EndDateTime.Value.AddMinutes();
+            double differenceInMinutes;
+          // permit.ExtensionRevalidationDateTime=permit.EndDateTime+Convert.ToDateTime(extensionTime)
+           // double differenceInMinutes = (Convert.ToDateTime(ExtensionDateTime).AddSeconds(-Convert.ToDateTime(ExtensionDateTime).Second) - expiryTime).TotalMinutes;
+            User user = ClientSession.GetUserContext().User;
+            string username = user.Username;
+            double differenceInworktime = (Convert.ToDateTime(workpermit.EndDateTime)
+                           .AddSeconds(-Convert.ToDateTime(workpermit.EndDateTime).Second) -
+                                              workpermit.StartDateTime).TotalMinutes;
+            if (differenceInworktime <= 960)
+            {
+                if (username.Equals(workpermit.ApprovedBy.Username))
+                {
+                    if (workpermit.ExtensionTimeIssuer == null)
+                    {
+                        workpermit.ExtensionTimeIssuer = workpermit.EndDateTime.Value;
+
+                    }
+                    if (workpermit.BeforeExtensionDateTime == null)
+                    {
+                        workpermit.BeforeExtensionDateTime = workpermit.EndDateTime.Value;
+
+                    }
+
+
+                    differenceInMinutes =
+                        (Convert.ToDateTime(workpermit.ExtensionTimeIssuer)
+                            .AddSeconds(-Convert.ToDateTime(workpermit.ExtensionTimeIssuer).Second) -
+                         workpermit.BeforeExtensionDateTime.Value).TotalMinutes +
+                        extensionTime.TotalMinutes;
+
+                    if (differenceInMinutes > 120 || 0 > differenceInMinutes)
+                    {
+                        // DialogResult result = OltMessageBox.Show(Form.ActiveForm, "permit can be extended by 2 hrs only", "Alert", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                        OltMessageBox.Show(Form.ActiveForm,
+                            "Permit can be extended by 2 hrs only", "Alert");
+
+                        //return null;
+                        //if (dialogResult == DialogResult.OK) return;
+
+                    }
+                    else
+                    {
+                        if (workpermit.ExtensionRevalidationDateTime == null)
+                        {
+
+                            workpermit.ExtensionRevalidationDateTime = workpermit.EndDateTime.Value;
+                        }
+                        if (workpermit.ISSUER_SOURCEXTENSION == null)
+                        {
+                            workpermit.ISSUER_SOURCEXTENSION = "Via OLT";
+                        }
+                        workpermit.ExtensionTimeIssuer =
+                            workpermit.ExtensionTimeIssuer.Value.AddMinutes(differenceInMinutes);
+                        workpermit.ExtensionRevalidationDateTime =
+                            workpermit.ExtensionRevalidationDateTime.Value.AddMinutes(extensionTime.TotalMinutes);
+                        workpermit.Specifics.EndDateTime =
+                            workpermit.EndDateTime.Value.AddMinutes(extensionTime.TotalMinutes);
+                        // totalExpiryMinutes = totalExpiryMinutes - extensionTime.TotalMinutes;
+                        if (ClientSession.GetUserContext().IsSarniaSite && ClientSession.GetUserContext().SiteConfiguration.EnableWorkPermitSignature && page.SelectedItems.Count == 1)
+                        {
+                            WorkPermitSarniaSign workPermitSign = new WorkPermitSarniaSign(page.SelectedItems[0]);
+                            DialogResult Result = workPermitSign.ShowDialog();
+                            if (Result == DialogResult.Yes)
+                            {
+                                PrintWithDialogFocus(Print);
+
+                            }
+                            return;
+                        }
+
+                        PrintWithDialogFocus(Print);
+
+                        ServiceEventDispatcher.CallServiceAndDispatchImmediateEventNotification(service.Update,
+                            workpermit);
+
+                        //FinalizePermitAndSaveAndPrint(workpermit);
+                        //workPermitForms.ReportPrintManager(service, page, workpermit.Version).PreviewReport(workpermit);
+                       
+                    }
+                }
+                else
+                {
+                    if (workpermit.ExtensionTimeIssuer == null)
+                    {
+                        workpermit.ExtensionTimeIssuer = workpermit.EndDateTime.Value;
+
+                    }
+                    if (workpermit.BeforeExtensionDateTime == null)
+                    {
+                        workpermit.BeforeExtensionDateTime = workpermit.EndDateTime.Value;
+                    }
+
+                    differenceInMinutes =
+                        (Convert.ToDateTime(workpermit.ExtensionTimeIssuer)
+                            .AddSeconds(-Convert.ToDateTime(workpermit.ExtensionTimeNonIssuer).Second) -
+                         workpermit.BeforeExtensionDateTime.Value).TotalMinutes +
+                        extensionTime.TotalMinutes;
+
+                    if (differenceInMinutes > 960 || 0 > differenceInMinutes)
+                    {
+                        OltMessageBox.Show(Form.ActiveForm, "permit can be extended by 16 hrs only", "Alert");
+                        return;
+                    }
+                    else
+                    {
+                        if (workpermit.ExtensionRevalidationDateTime == null)
+                        {
+
+                            workpermit.ExtensionRevalidationDateTime = workpermit.EndDateTime.Value;
+                        }
+                        if (workpermit.ISSUER_SOURCEXTENSION == null)
+                        {
+                            workpermit.ISSUER_SOURCEXTENSION = "Via OLT";
+                        }
+                        workpermit.ExtensionTimeNonIssuer =
+                            workpermit.ExtensionTimeIssuer.Value.AddMinutes(differenceInMinutes);
+                        workpermit.ExtensionRevalidationDateTime =
+                            workpermit.ExtensionRevalidationDateTime.Value.AddMinutes(extensionTime.TotalMinutes);
+                        workpermit.Specifics.EndDateTime =
+                            workpermit.EndDateTime.Value.AddMinutes(extensionTime.TotalMinutes);
+
+                        if (ClientSession.GetUserContext().IsSarniaSite && ClientSession.GetUserContext().SiteConfiguration.EnableWorkPermitSignature && page.SelectedItems.Count == 1)
+                        {
+                            WorkPermitSarniaSign workPermitSign = new WorkPermitSarniaSign(page.SelectedItems[0]);
+                            DialogResult Result = workPermitSign.ShowDialog();
+                            if (Result == DialogResult.Yes)
+                            {
+                                PrintWithDialogFocus(Print);
+
+                            }
+                            return;
+                        }
+
+                        PrintWithDialogFocus(Print);
+
+                        ServiceEventDispatcher.CallServiceAndDispatchImmediateEventNotification(service.Update,
+                            workpermit);
+
+                        //FinalizePermitAndSaveAndPrint(workpermit);
+                        //workPermitForms.ReportPrintManager(service, page, workpermit.Version).PreviewReport(workpermit);
+                      
+
+                    }
+                }
+            }
+            else
+            {
+                OltMessageBox.Show(Form.ActiveForm, "A Safe Work Permit can only be valid for upto 16hrs", "Alert");
+                return;
+            }
+
+
+
+
+        }
+        private void Print()
+        {
+            List<WorkPermitDTO> permitDtos = page.SelectedItems;
+            List<WorkPermit> permits = ConvertAllTo(permitDtos);
+            //ayman USPipeline workpermit
+            if (ClientSession.GetUserContext().IsDenverSite)
+            {
+                int numberOfOldPermits = permits.Count(permit => WorkPermit.IsOldVersionForDenver(permit.Version));
+                int numberOfNewPermits = permits.Count(permit => !WorkPermit.IsOldVersionForDenver(permit.Version));
+
+                if (numberOfOldPermits > 0 && numberOfNewPermits > 0)
+                {
+                    OltMessageBox.ShowError(StringResources.WorkPermit_CannotPrintMultipleFormats, StringResources.WorkPermit_CannotPrintMultipleFormats_Title);
+                    return;
+                }
+            }
+
+            if (ClientSession.GetUserContext().IsUSPipelineSite)
+            {
+                int numberOfOldPermitsUSPipeline = permits.Count(permit => WorkPermit.IsOldVersionForUSPipeline(permit.Version));
+                int numberOfNewPermitsUSPipeline = permits.Count(permit => !WorkPermit.IsOldVersionForUSPipeline(permit.Version));
+                if (numberOfOldPermitsUSPipeline > 0 && numberOfNewPermitsUSPipeline > 0)
+                {
+                    OltMessageBox.ShowError(StringResources.WorkPermit_CannotPrintMultipleFormats, StringResources.WorkPermit_CannotPrintMultipleFormats_Title);
+                    return;
+                }
+            }
+
+            workPermitForms.ReportPrintManager(service, page, permits[0].Version).PrintReport(permits);
+        }
+        protected List<WorkPermit> ConvertAllTo(List<WorkPermitDTO> dtos)
+        {
+           return dtos.ConvertAll(dto => QueryByDto(dto));
+        }
+        private  WorkPermit QueryByDto(WorkPermitDTO dto)
+        {
+            if (ClientSession.GetUserContext().IsUSPipelineSite)
+                return service.QueryByIdForUSPipeline(dto.IdValue);  
+            //ayman USPipeline workpermit
+            return service.QueryById(dto.IdValue);
+        }
+        protected void PrintWithDialogFocus(Action performPrint)
+        {
+            new PrintWithDialogFocus().Print(performPrint);
+        }
+      
+    }
+}

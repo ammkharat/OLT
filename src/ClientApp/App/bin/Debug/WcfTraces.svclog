@@ -1,0 +1,163 @@
+<E2ETraceEvent xmlns="http://schemas.microsoft.com/2004/06/E2ETraceEvent"><System xmlns="http://schemas.microsoft.com/2004/06/windows/eventlog/system"><EventID>131075</EventID><Type>3</Type><SubType Name="Warning">0</SubType><Level>4</Level><TimeCreated SystemTime="2021-02-09T13:34:40.7075598Z" /><Source Name="System.ServiceModel" /><Correlation ActivityID="{00000000-0000-0000-0000-000000000000}" /><Execution ProcessName="Operator Log Tool" ProcessID="16548" ThreadID="1" /><Channel/><Computer>D126741</Computer></System><ApplicationData><TraceData><DataItem><TraceRecord xmlns="http://schemas.microsoft.com/2004/10/E2ETraceEvent/TraceRecord" Severity="Warning"><TraceIdentifier>https://docs.microsoft.com/dotnet/framework/wcf/diagnostics/tracing/System-ServiceModel-Diagnostics-ThrowingException</TraceIdentifier><Description>Throwing an exception.</Description><AppDomain>Operator Log Tool.exe</AppDomain><Exception><ExceptionType>System.ServiceModel.FaultException`1[[System.ServiceModel.ExceptionDetail, System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ExceptionType><Message>An error has occured while executing server operation.
+Error GUID: 0a294b84-d398-44c9-a31b-56ae60f59aa2
+Method: Com.Suncor.Olt.Common.Domain.SiteConfiguration QueryBySiteId(Int64)
+User Information: [User:9245] [Shift:] [ClientUri:net.tcp://10.9.21.6:9771/]
+Input[0]: Type:Int64 - 12
+Exception Information: Com.Suncor.Olt.Common.Exceptions.NoDataFoundException: Could not find column 'SetWorkPermitQuestionForMudsSite' in the ResultSet.
+   at Com.Suncor.Olt.Remote.DataAccess.SqlDataReaderExtensions.Get[T](IDataRecord dataRecord, String columnName) in c:\code\windows\csc\OLT\trunk\src\RemoteApp\App\DataAccess\SqlDataReaderExtensions.cs:line 31
+   at Com.Suncor.Olt.Remote.DataAccess.Domain.SiteConfigurationDao.PopulateInstance(SqlDataReader reader) in c:\code\windows\csc\OLT\trunk\src\RemoteApp\App\DataAccess\Domain\SiteConfigurationDao.cs:line 706
+   at Com.Suncor.Olt.Remote.DataAccess.SqlCommandExtensions.ExecuteCommandForSingleResult[T](SqlCommand command, PopulateInstance`1 populateHandler) in c:\code\windows\csc\OLT\trunk\src\RemoteApp\App\DataAccess\SqlCommandExtensions.cs:line 288
+   at Com.Suncor.Olt.Remote.DataAccess.SqlCommandExtensions.QueryById[T](SqlCommand command, Int64 id, PopulateInstance`1 populateHandler, String storedProcedureName) in c:\code\windows\csc\OLT\trunk\src\RemoteApp\App\DataAccess\SqlCommandExtensions.cs:line 147
+   at Com.Suncor.Olt.Remote.DataAccess.Domain.SiteConfigurationDao.QueryBySiteId(Int64 siteId) in c:\code\windows\csc\OLT\trunk\src\RemoteApp\App\DataAccess\Domain\SiteConfigurationDao.cs:line 57
+   at Castle.Proxies.Invocations.ISiteConfigurationDao_QueryBySiteId.InvokeMethodOnTarget()
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Com.Suncor.Olt.Remote.DataAccess.StoredProcDaoInterceptor.RunCommand(SqlConnection sqlConnection, IInvocation invocation) in c:\code\windows\csc\OLT\trunk\src\RemoteApp\App\DataAccess\StoredProcDaoInterceptor.cs:line 61
+   at Com.Suncor.Olt.Remote.DataAccess.StoredProcDaoInterceptor.Intercept(IInvocation invocation) in c:\code\windows\csc\OLT\trunk\src\RemoteApp\App\DataAccess\StoredProcDaoInterceptor.cs:line 27
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Com.Suncor.Olt.Remote.DataAccess.StoredProcPerformanceInterceptor.Intercept(IInvocation invocation) in c:\code\windows\csc\OLT\trunk\src\RemoteApp\App\DataAccess\StoredProcPerformanceInterceptor.cs:line 22
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.Proxies.ISiteConfigurationDaoProxy.QueryBySiteId(Int64 siteId)
+   at Com.Suncor.Olt.Remote.Services.SiteConfigurationService.QueryBySiteId(Int64 siteId) in c:\code\windows\csc\OLT\trunk\src\RemoteApp\App\Services\SiteConfigurationService.cs:line 73
+   at SyncInvokeQueryBySiteId(Object , Object[] , Object[] )
+   at System.ServiceModel.Dispatcher.SyncMethodInvoker.Invoke(Object instance, Object[] inputs, Object[]&amp;amp; outputs)
+   at Com.Suncor.Olt.Remote.Wcf.ServerOperationInvoker.InvokeWithTransaction(Object instance, Object[] inputs, Object[]&amp;amp; outputs) in c:\code\windows\csc\OLT\trunk\src\RemoteApp\App\Wcf\ServerOperationInvoker.cs:line 181
+   at Com.Suncor.Olt.Remote.Wcf.ServerOperationInvoker.Invoke(Object instance, Object[] inputs, Object[]&amp;amp; outputs) in c:\code\windows\csc\OLT\trunk\src\RemoteApp\App\Wcf\ServerOperationInvoker.cs:line 86</Message><StackTrace>   at System.ServiceModel.Channels.ServiceChannel.ThrowIfFaultUnderstood(Message reply, MessageFault fault, String action, MessageVersion version, FaultConverter faultConverter)
+   at System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc&amp;amp; rpc)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData&amp;amp; msgData, Int32 type)
+   at Com.Suncor.Olt.Common.Services.ISiteConfigurationService.QueryBySiteId(Int64 siteId)
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   at System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   at Com.Suncor.Olt.Common.Wcf.ChannelInterceptor.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.Proxies.ISiteConfigurationServiceProxy.QueryBySiteId(Int64 siteId)
+   at Castle.Proxies.Invocations.ISiteConfigurationService_QueryBySiteId.InvokeMethodOnTarget()
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.DynamicProxy.StandardInterceptor.PerformProceed(IInvocation invocation)
+   at Castle.DynamicProxy.StandardInterceptor.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.Proxies.ISiteConfigurationServiceProxy.QueryBySiteId(Int64 siteId)
+   at Com.Suncor.Olt.Client.Presenters.MainFormPresenter.GetNextFormAfterSignIn()
+   at Com.Suncor.Olt.Client.Presenters.MainFormPresenter.ShowSignInForm(NextForm nextFormOnCancel)
+   at Com.Suncor.Olt.Client.Presenters.MainFormPresenter.ShowLogInForm()
+   at Com.Suncor.Olt.Client.Presenters.MainFormPresenter.ShowNextForm(NextForm nextForm)
+   at Com.Suncor.Olt.Client.Presenters.MainFormPresenter.MainForm_Load(Object sender, EventArgs e)
+   at System.EventHandler.Invoke(Object sender, EventArgs e)
+   at System.Windows.Forms.Form.OnLoad(EventArgs e)
+   at System.Windows.Forms.Form.OnCreateControl()
+   at System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   at System.Windows.Forms.Control.CreateControl()
+   at System.Windows.Forms.Control.WmShowWindow(Message&amp;amp; m)
+   at System.Windows.Forms.Control.WndProc(Message&amp;amp; m)
+   at System.Windows.Forms.Form.WmShowWindow(Message&amp;amp; m)
+   at System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+   at System.Windows.Forms.UnsafeNativeMethods.SendMessage(HandleRef hWnd, Int32 msg, Int32 wParam, Int32 lParam)
+   at System.Windows.Forms.UnsafeNativeMethods.SendMessage(HandleRef hWnd, Int32 msg, Int32 wParam, Int32 lParam)
+   at System.Windows.Forms.Form.SetVisibleCore(Boolean value)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoopInner(Int32 reason, ApplicationContext context)
+   at System.Windows.Forms.Application.ThreadContext.RunMessageLoop(Int32 reason, ApplicationContext context)
+   at Com.Suncor.Olt.Client.Program.Main()
+</StackTrace><ExceptionString>System.ServiceModel.FaultException`1[System.ServiceModel.ExceptionDetail]: An error has occured while executing server operation.
+Error GUID: 0a294b84-d398-44c9-a31b-56ae60f59aa2
+Method: Com.Suncor.Olt.Common.Domain.SiteConfiguration QueryBySiteId(Int64)
+User Information: [User:9245] [Shift:] [ClientUri:net.tcp://10.9.21.6:9771/]
+Input[0]: Type:Int64 - 12
+Exception Information: Com.Suncor.Olt.Common.Exceptions.NoDataFoundException: Could not find column 'SetWorkPermitQuestionForMudsSite' in the ResultSet.
+   at Com.Suncor.Olt.Remote.DataAccess.SqlDataReaderExtensions.Get[T](IDataRecord dataRecord, String columnName) in c:\code\windows\csc\OLT\trunk\src\RemoteApp\App\DataAccess\SqlDataReaderExtensions.cs:line 31
+   at Com.Suncor.Olt.Remote.DataAccess.Domain.SiteConfigurationDao.PopulateInstance(SqlDataReader reader) in c:\code\windows\csc\OLT\trunk\src\RemoteApp\App\DataAccess\Domain\SiteConfigurationDao.cs:line 706
+   at Com.Suncor.Olt.Remote.DataAccess.SqlCommandExtensions.ExecuteCommandForSingleResult[T](SqlCommand command, PopulateInstance`1 populateHandler) in c:\code... (Fault Detail is equal to An ExceptionDetail, likely created by IncludeExceptionDetailInFaults=true, whose value is:
+Com.Suncor.Olt.Common.Exceptions.OLTException: An error has occured while executing server operation.
+Error GUID: 0a294b84-d398-44c9-a31b-56ae60f59aa2
+Method: Com.Suncor.Olt.Common.Domain.SiteConfiguration QueryBySiteId(Int64)
+User Information: [User:9245] [Shift:] [ClientUri:net.tcp://10.9.21.6:9771/]
+Input[0]: Type:Int64 - 12
+Exception Information: Com.Suncor.Olt.Common.Exceptions.NoDataFoundException: Could not find column 'SetWorkPermitQuestionForMudsSite' in the ResultSet.
+   at Com.Suncor.Olt.Remote.DataAccess.SqlDataReaderExtensions.Get[T](IDataRecord dataRecord, String columnName) in c:\code\windows\csc\OLT\trunk\src\RemoteApp\App\DataAccess\SqlDataReaderExtensions.cs:line 31
+   at Com.Suncor.Olt.Remote.DataAccess.Domain.SiteConfigurationDao.PopulateInstance(SqlDataReader reader) in c:\code\windows\csc\OLT\trunk\src\RemoteApp\App\DataAccess\Domain\SiteConfigurationDao.cs:line 706
+   at Com.Suncor.Olt....).</ExceptionString></Exception></TraceRecord></DataItem></TraceData></ApplicationData></E2ETraceEvent><E2ETraceEvent xmlns="http://schemas.microsoft.com/2004/06/E2ETraceEvent"><System xmlns="http://schemas.microsoft.com/2004/06/windows/eventlog/system"><EventID>131075</EventID><Type>3</Type><SubType Name="Warning">0</SubType><Level>4</Level><TimeCreated SystemTime="2021-02-09T13:46:54.5715598Z" /><Source Name="System.ServiceModel" /><Correlation ActivityID="{00000000-0000-0000-0000-000000000000}" /><Execution ProcessName="Operator Log Tool" ProcessID="1944" ThreadID="14" /><Channel/><Computer>D126741</Computer></System><ApplicationData><TraceData><DataItem><TraceRecord xmlns="http://schemas.microsoft.com/2004/10/E2ETraceEvent/TraceRecord" Severity="Warning"><TraceIdentifier>https://docs.microsoft.com/dotnet/framework/wcf/diagnostics/tracing/System-ServiceModel-Diagnostics-ThrowingException</TraceIdentifier><Description>Throwing an exception.</Description><AppDomain>Operator Log Tool.exe</AppDomain><Exception><ExceptionType>System.ServiceModel.FaultException`1[[System.ServiceModel.ExceptionDetail, System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ExceptionType><Message>The key 'Com.Suncor.Olt.Remote.DataAccess.Domain.IGenericCsdDao' for type 'IGenericCsdDao' was not found in the dictionary.</Message><StackTrace>   at System.ServiceModel.Channels.ServiceChannel.ThrowIfFaultUnderstood(Message reply, MessageFault fault, String action, MessageVersion version, FaultConverter faultConverter)
+   at System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc&amp;amp; rpc)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData&amp;amp; msgData, Int32 type)
+   at Com.Suncor.Olt.Common.Services.IFormEdmontonService.QueryDocumentSuggestionsByFunctionalLocations(RootFlocSet flocSet, DateTime now, Int64 userId)
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   at System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   at Com.Suncor.Olt.Common.Wcf.ChannelInterceptor.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.Proxies.IFormEdmontonServiceProxy.QueryDocumentSuggestionsByFunctionalLocations(RootFlocSet flocSet, DateTime now, Int64 userId)
+   at Castle.Proxies.Invocations.IFormEdmontonService_QueryDocumentSuggestionsByFunctionalLocations.InvokeMethodOnTarget()
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.DynamicProxy.StandardInterceptor.PerformProceed(IInvocation invocation)
+   at Castle.DynamicProxy.StandardInterceptor.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.Proxies.IFormEdmontonServiceProxy.QueryDocumentSuggestionsByFunctionalLocations(RootFlocSet flocSet, DateTime now, Int64 userId)
+   at Com.Suncor.Olt.Client.Presenters.Page.PriorityPageDocumentSuggestionSectionPresenter.QueryDtos()
+   at Com.Suncor.Olt.Client.Presenters.Page.PriorityPagePresenter.&amp;lt;CreateTreeAndQueryData&amp;gt;b__29(PresenterContainer pContainer, ResultContainer resultContainer)
+   at Com.Suncor.Olt.Client.Presenters.Page.PriorityPagePresenter.DataFetcher.DoWork(PresenterContainer presenterContainer)
+   at Com.Suncor.Olt.Common.Utility.BackgroundHelper`2.DoBackgroundWork(Object sender, DoWorkEventArgs e)
+   at System.ComponentModel.BackgroundWorker.OnDoWork(DoWorkEventArgs e)
+   at Com.Suncor.Olt.Client.Utilities.ClientBackgroundWorker.OnDoWork(DoWorkEventArgs e)
+   at System.ComponentModel.BackgroundWorker.WorkerThreadStart(Object argument)
+   at System.Runtime.Remoting.Messaging.StackBuilderSink._PrivateProcessMessage(IntPtr md, Object[] args, Object server, Object[]&amp;amp; outArgs)
+   at System.Runtime.Remoting.Messaging.StackBuilderSink.AsyncProcessMessage(IMessage msg, IMessageSink replySink)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.QueueUserWorkItemCallback.System.Threading.IThreadPoolWorkItem.ExecuteWorkItem()
+   at System.Threading.ThreadPoolWorkQueue.Dispatch()
+</StackTrace><ExceptionString>System.ServiceModel.FaultException`1[System.ServiceModel.ExceptionDetail]: The key 'Com.Suncor.Olt.Remote.DataAccess.Domain.IGenericCsdDao' for type 'IGenericCsdDao' was not found in the dictionary. (Fault Detail is equal to An ExceptionDetail, likely created by IncludeExceptionDetailInFaults=true, whose value is:
+System.ApplicationException: The key 'Com.Suncor.Olt.Remote.DataAccess.Domain.IGenericCsdDao' for type 'IGenericCsdDao' was not found in the dictionary. ----&amp;gt; System.Collections.Generic.KeyNotFoundException: The given key was not present in the dictionary.
+   at System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   at Com.Suncor.Olt.Remote.DataAccess.DaoRegistry.GetDao[T]() in c:\code\windows\csc\OLT\trunk\src\RemoteApp\App\DataAccess\DaoRegistry.cs:line 46
+   --- End of inner ExceptionDetail stack trace ---
+   at Com.Suncor.Olt.Remote.DataAccess.DaoRegistry.GetDao[T]() in c:\code\windows\csc\OLT\trunk\src\RemoteApp\App\DataAccess\DaoRegistry.cs:line 56
+   at Com.Suncor.Olt.Remote.Services.FormEdmontonService..ctor() in c:\code\windows\csc\OLT\trunk\src\RemoteApp\App\Services\FormEdmontonService.cs:line 190
+   at CreateCom.Suncor.Olt.Remote.Services.FormEdmontonService()
+   at System.ServiceModel.Dispatch...).</ExceptionString></Exception></TraceRecord></DataItem></TraceData></ApplicationData></E2ETraceEvent><E2ETraceEvent xmlns="http://schemas.microsoft.com/2004/06/E2ETraceEvent"><System xmlns="http://schemas.microsoft.com/2004/06/windows/eventlog/system"><EventID>131075</EventID><Type>3</Type><SubType Name="Warning">0</SubType><Level>4</Level><TimeCreated SystemTime="2021-02-09T13:46:54.5735598Z" /><Source Name="System.ServiceModel" /><Correlation ActivityID="{00000000-0000-0000-0000-000000000000}" /><Execution ProcessName="Operator Log Tool" ProcessID="1944" ThreadID="15" /><Channel/><Computer>D126741</Computer></System><ApplicationData><TraceData><DataItem><TraceRecord xmlns="http://schemas.microsoft.com/2004/10/E2ETraceEvent/TraceRecord" Severity="Warning"><TraceIdentifier>https://docs.microsoft.com/dotnet/framework/wcf/diagnostics/tracing/System-ServiceModel-Diagnostics-ThrowingException</TraceIdentifier><Description>Throwing an exception.</Description><AppDomain>Operator Log Tool.exe</AppDomain><Exception><ExceptionType>System.ServiceModel.FaultException`1[[System.ServiceModel.ExceptionDetail, System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</ExceptionType><Message>The key 'Com.Suncor.Olt.Remote.DataAccess.Domain.IGenericCsdDao' for type 'IGenericCsdDao' was not found in the dictionary.</Message><StackTrace>   at System.ServiceModel.Channels.ServiceChannel.ThrowIfFaultUnderstood(Message reply, MessageFault fault, String action, MessageVersion version, FaultConverter faultConverter)
+   at System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc&amp;amp; rpc)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData&amp;amp; msgData, Int32 type)
+   at Com.Suncor.Olt.Common.Services.IFormEdmontonService.QueryProcedureDeviationsByFunctionalLocations(RootFlocSet flocSet, DateTime now, Int64 userId)
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+   at System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   at Com.Suncor.Olt.Common.Wcf.ChannelInterceptor.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.Proxies.IFormEdmontonServiceProxy.QueryProcedureDeviationsByFunctionalLocations(RootFlocSet flocSet, DateTime now, Int64 userId)
+   at Castle.Proxies.Invocations.IFormEdmontonService_QueryProcedureDeviationsByFunctionalLocations.InvokeMethodOnTarget()
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.DynamicProxy.StandardInterceptor.PerformProceed(IInvocation invocation)
+   at Castle.DynamicProxy.StandardInterceptor.Intercept(IInvocation invocation)
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.Proxies.IFormEdmontonServiceProxy.QueryProcedureDeviationsByFunctionalLocations(RootFlocSet flocSet, DateTime now, Int64 userId)
+   at Com.Suncor.Olt.Client.Presenters.Page.PriorityPageProcedureDeviationSectionPresenter.QueryDtos()
+   at Com.Suncor.Olt.Client.Presenters.Page.PriorityPagePresenter.&amp;lt;CreateTreeAndQueryData&amp;gt;b__2b(PresenterContainer pContainer, ResultContainer resultContainer)
+   at Com.Suncor.Olt.Client.Presenters.Page.PriorityPagePresenter.DataFetcher.DoWork(PresenterContainer presenterContainer)
+   at Com.Suncor.Olt.Common.Utility.BackgroundHelper`2.DoBackgroundWork(Object sender, DoWorkEventArgs e)
+   at System.ComponentModel.BackgroundWorker.OnDoWork(DoWorkEventArgs e)
+   at Com.Suncor.Olt.Client.Utilities.ClientBackgroundWorker.OnDoWork(DoWorkEventArgs e)
+   at System.ComponentModel.BackgroundWorker.WorkerThreadStart(Object argument)
+   at System.Runtime.Remoting.Messaging.StackBuilderSink._PrivateProcessMessage(IntPtr md, Object[] args, Object server, Object[]&amp;amp; outArgs)
+   at System.Runtime.Remoting.Messaging.StackBuilderSink.AsyncProcessMessage(IMessage msg, IMessageSink replySink)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   at System.Threading.QueueUserWorkItemCallback.System.Threading.IThreadPoolWorkItem.ExecuteWorkItem()
+   at System.Threading.ThreadPoolWorkQueue.Dispatch()
+</StackTrace><ExceptionString>System.ServiceModel.FaultException`1[System.ServiceModel.ExceptionDetail]: The key 'Com.Suncor.Olt.Remote.DataAccess.Domain.IGenericCsdDao' for type 'IGenericCsdDao' was not found in the dictionary. (Fault Detail is equal to An ExceptionDetail, likely created by IncludeExceptionDetailInFaults=true, whose value is:
+System.ApplicationException: The key 'Com.Suncor.Olt.Remote.DataAccess.Domain.IGenericCsdDao' for type 'IGenericCsdDao' was not found in the dictionary. ----&amp;gt; System.Collections.Generic.KeyNotFoundException: The given key was not present in the dictionary.
+   at System.Collections.Generic.Dictionary`2.get_Item(TKey key)
+   at Com.Suncor.Olt.Remote.DataAccess.DaoRegistry.GetDao[T]() in c:\code\windows\csc\OLT\trunk\src\RemoteApp\App\DataAccess\DaoRegistry.cs:line 46
+   --- End of inner ExceptionDetail stack trace ---
+   at Com.Suncor.Olt.Remote.DataAccess.DaoRegistry.GetDao[T]() in c:\code\windows\csc\OLT\trunk\src\RemoteApp\App\DataAccess\DaoRegistry.cs:line 56
+   at Com.Suncor.Olt.Remote.Services.FormEdmontonService..ctor() in c:\code\windows\csc\OLT\trunk\src\RemoteApp\App\Services\FormEdmontonService.cs:line 190
+   at CreateCom.Suncor.Olt.Remote.Services.FormEdmontonService()
+   at System.ServiceModel.Dispatch...).</ExceptionString></Exception></TraceRecord></DataItem></TraceData></ApplicationData></E2ETraceEvent>

@@ -1,0 +1,456 @@
+2021-02-25 03:12:04,676 [1] INFO  CachingLogger - Found 2 items to skip caching
+2021-02-25 03:12:04,678 [1] INFO  CachingLogger - Skipping caching for dao named 'IUserDTODao'.
+2021-02-25 03:12:04,678 [1] INFO  CachingLogger - Skipping caching for dao named 'ISiteConfigurationDao'.
+2021-02-25 06:23:20,054 [1] INFO  CachingLogger - Found 2 items to skip caching
+2021-02-25 06:23:20,056 [1] INFO  CachingLogger - Skipping caching for dao named 'IUserDTODao'.
+2021-02-25 06:23:20,056 [1] INFO  CachingLogger - Skipping caching for dao named 'ISiteConfigurationDao'.
+2021-02-25 06:23:52,750 [15] DEBUG CachingLogger - Pulling QueryAllBySiteId:Plant:2 from database took 359ms.
+2021-02-25 06:23:52,750 [15] DEBUG CachingLogger - Updating QueryAllBySiteId:Plant:2 in cache after Insert, Update or Query from DB.
+2021-02-25 06:23:52,852 [15] DEBUG CachingLogger - Pulling QueryAllBySiteId:Plant:8 from database took 0ms.
+2021-02-25 06:23:52,852 [15] DEBUG CachingLogger - Updating QueryAllBySiteId:Plant:8 in cache after Insert, Update or Query from DB.
+2021-02-25 06:23:52,951 [15] DEBUG CachingLogger - Pulling QueryAllBySiteId:Plant:13 from database took 0ms.
+2021-02-25 06:23:52,951 [15] DEBUG CachingLogger - Updating QueryAllBySiteId:Plant:13 in cache after Insert, Update or Query from DB.
+2021-02-25 06:23:52,990 [15] DEBUG CachingLogger - Pulling QueryAllBySiteId:Plant:5 from database took 0ms.
+2021-02-25 06:23:52,990 [15] DEBUG CachingLogger - Updating QueryAllBySiteId:Plant:5 in cache after Insert, Update or Query from DB.
+2021-02-25 06:23:52,990 [15] DEBUG CachingLogger - Pulling QueryAllBySiteId:Plant:14 from database took 0ms.
+2021-02-25 06:23:52,990 [15] DEBUG CachingLogger - Updating QueryAllBySiteId:Plant:14 in cache after Insert, Update or Query from DB.
+2021-02-25 06:23:53,029 [15] DEBUG CachingLogger - Pulling QueryAllBySiteId:Plant:15 from database took 0ms.
+2021-02-25 06:23:53,029 [15] DEBUG CachingLogger - Updating QueryAllBySiteId:Plant:15 in cache after Insert, Update or Query from DB.
+2021-02-25 06:23:53,106 [15] DEBUG CachingLogger - Pulling QueryAllBySiteId:Plant:7 from database took 0ms.
+2021-02-25 06:23:53,106 [15] DEBUG CachingLogger - Updating QueryAllBySiteId:Plant:7 in cache after Insert, Update or Query from DB.
+2021-02-25 06:23:53,189 [15] DEBUG CachingLogger - Pulling QueryAllBySiteId:Plant:10 from database took 0ms.
+2021-02-25 06:23:53,189 [15] DEBUG CachingLogger - Updating QueryAllBySiteId:Plant:10 in cache after Insert, Update or Query from DB.
+2021-02-25 06:23:53,268 [15] DEBUG CachingLogger - Pulling QueryAllBySiteId:Plant:16 from database took 1ms.
+2021-02-25 06:23:53,268 [15] DEBUG CachingLogger - Updating QueryAllBySiteId:Plant:16 in cache after Insert, Update or Query from DB.
+2021-02-25 06:23:53,307 [15] DEBUG CachingLogger - Pulling QueryAllBySiteId:Plant:9 from database took 0ms.
+2021-02-25 06:23:53,307 [15] DEBUG CachingLogger - Updating QueryAllBySiteId:Plant:9 in cache after Insert, Update or Query from DB.
+2021-02-25 06:23:53,307 [15] DEBUG CachingLogger - Pulling QueryAllBySiteId:Plant:3 from database took 0ms.
+2021-02-25 06:23:53,307 [15] DEBUG CachingLogger - Updating QueryAllBySiteId:Plant:3 in cache after Insert, Update or Query from DB.
+2021-02-25 06:23:53,307 [15] DEBUG CachingLogger - Pulling QueryAllBySiteId:Plant:1 from database took 0ms.
+2021-02-25 06:23:53,307 [15] DEBUG CachingLogger - Updating QueryAllBySiteId:Plant:1 in cache after Insert, Update or Query from DB.
+2021-02-25 06:23:53,307 [15] DEBUG CachingLogger - Pulling QueryAllBySiteId:Plant:6 from database took 0ms.
+2021-02-25 06:23:53,307 [15] DEBUG CachingLogger - Updating QueryAllBySiteId:Plant:6 in cache after Insert, Update or Query from DB.
+2021-02-25 06:23:53,312 [15] DEBUG CachingLogger - Pulling QueryAllBySiteId:Plant:19 from database took 0ms.
+2021-02-25 06:23:53,312 [15] DEBUG CachingLogger - Updating QueryAllBySiteId:Plant:19 in cache after Insert, Update or Query from DB.
+2021-02-25 06:23:53,312 [15] DEBUG CachingLogger - Pulling QueryAllBySiteId:Plant:17 from database took 0ms.
+2021-02-25 06:23:53,312 [15] DEBUG CachingLogger - Updating QueryAllBySiteId:Plant:17 in cache after Insert, Update or Query from DB.
+2021-02-25 06:23:53,313 [15] DEBUG CachingLogger - Pulling QueryAllBySiteId:Plant:18 from database took 0ms.
+2021-02-25 06:23:53,313 [15] DEBUG CachingLogger - Updating QueryAllBySiteId:Plant:18 in cache after Insert, Update or Query from DB.
+2021-02-25 06:23:53,313 [15] DEBUG CachingLogger - Pulling QueryAllBySiteId:Plant:11 from database took 0ms.
+2021-02-25 06:23:53,313 [15] DEBUG CachingLogger - Updating QueryAllBySiteId:Plant:11 in cache after Insert, Update or Query from DB.
+2021-02-25 06:23:53,313 [15] DEBUG CachingLogger - Pulling QueryAllBySiteId:Plant:12 from database took 0ms.
+2021-02-25 06:23:53,313 [15] DEBUG CachingLogger - Updating QueryAllBySiteId:Plant:12 in cache after Insert, Update or Query from DB.
+2021-02-25 06:23:53,653 [15] DEBUG CachingLogger - Pulling QueryAllBySiteId:Plant:2 from cache took 39ms.
+2021-02-25 06:23:53,653 [15] DEBUG CachingLogger - Pulling Site:2 from database took 41ms.
+2021-02-25 06:23:53,653 [15] DEBUG CachingLogger - Updating Site:2 in cache after Insert, Update or Query from DB.
+2021-02-25 06:23:53,712 [15] DEBUG CachingLogger - Pulling DivisionFlocsOfSite:FunctionalLocationInfo:2 from database took 397ms.
+2021-02-25 06:23:53,712 [15] DEBUG CachingLogger - Updating DivisionFlocsOfSite:FunctionalLocationInfo:2 in cache after Insert, Update or Query from DB.
+2021-02-25 06:23:53,868 [15] DEBUG CachingLogger - Pulling QueryAllBySiteId:Plant:8 from cache took 38ms.
+2021-02-25 06:23:53,868 [15] DEBUG CachingLogger - Pulling Site:8 from database took 38ms.
+2021-02-25 06:23:53,868 [15] DEBUG CachingLogger - Updating Site:8 in cache after Insert, Update or Query from DB.
+2021-02-25 06:23:53,906 [15] DEBUG CachingLogger - Pulling DivisionFlocsOfSite:FunctionalLocationInfo:8 from database took 193ms.
+2021-02-25 06:23:53,906 [15] DEBUG CachingLogger - Updating DivisionFlocsOfSite:FunctionalLocationInfo:8 in cache after Insert, Update or Query from DB.
+2021-02-25 06:23:54,244 [15] DEBUG CachingLogger - Pulling QueryAllBySiteId:Plant:13 from cache took 38ms.
+2021-02-25 06:23:54,244 [15] DEBUG CachingLogger - Pulling Site:13 from database took 38ms.
+2021-02-25 06:23:54,244 [15] DEBUG CachingLogger - Updating Site:13 in cache after Insert, Update or Query from DB.
+2021-02-25 06:23:54,322 [15] DEBUG CachingLogger - Pulling Site:13 from cache took 39ms.
+2021-02-25 06:23:54,361 [15] DEBUG CachingLogger - Pulling Site:13 from cache took 38ms.
+2021-02-25 06:23:54,399 [15] DEBUG CachingLogger - Pulling Site:13 from cache took 38ms.
+2021-02-25 06:23:54,438 [15] DEBUG CachingLogger - Pulling Site:13 from cache took 38ms.
+2021-02-25 06:23:54,476 [15] DEBUG CachingLogger - Pulling Site:13 from cache took 38ms.
+2021-02-25 06:23:54,514 [15] DEBUG CachingLogger - Pulling Site:13 from cache took 38ms.
+2021-02-25 06:23:54,514 [15] DEBUG CachingLogger - Pulling DivisionFlocsOfSite:FunctionalLocationInfo:13 from database took 607ms.
+2021-02-25 06:23:54,515 [15] DEBUG CachingLogger - Updating DivisionFlocsOfSite:FunctionalLocationInfo:13 in cache after Insert, Update or Query from DB.
+2021-02-25 06:23:54,663 [15] DEBUG CachingLogger - Pulling QueryAllBySiteId:Plant:5 from database took 0ms.
+2021-02-25 06:23:54,663 [15] DEBUG CachingLogger - Updating QueryAllBySiteId:Plant:5 in cache after Insert, Update or Query from DB.
+2021-02-25 06:23:54,663 [15] DEBUG CachingLogger - Pulling Site:5 from database took 0ms.
+2021-02-25 06:23:54,663 [15] DEBUG CachingLogger - Updating Site:5 in cache after Insert, Update or Query from DB.
+2021-02-25 06:23:54,663 [15] DEBUG CachingLogger - Pulling QueryAllBySiteId:Plant:5 from database took 0ms.
+2021-02-25 06:23:54,663 [15] DEBUG CachingLogger - Updating QueryAllBySiteId:Plant:5 in cache after Insert, Update or Query from DB.
+2021-02-25 06:23:54,663 [15] DEBUG CachingLogger - Pulling Site:5 from database took 0ms.
+2021-02-25 06:23:54,663 [15] DEBUG CachingLogger - Updating Site:5 in cache after Insert, Update or Query from DB.
+2021-02-25 06:23:54,663 [15] DEBUG CachingLogger - Pulling QueryAllBySiteId:Plant:5 from database took 0ms.
+2021-02-25 06:23:54,663 [15] DEBUG CachingLogger - Updating QueryAllBySiteId:Plant:5 in cache after Insert, Update or Query from DB.
+2021-02-25 06:23:54,664 [15] DEBUG CachingLogger - Pulling Site:5 from database took 0ms.
+2021-02-25 06:23:54,664 [15] DEBUG CachingLogger - Updating Site:5 in cache after Insert, Update or Query from DB.
+2021-02-25 06:23:54,664 [15] DEBUG CachingLogger - Pulling QueryAllBySiteId:Plant:5 from database took 0ms.
+2021-02-25 06:23:54,664 [15] DEBUG CachingLogger - Updating QueryAllBySiteId:Plant:5 in cache after Insert, Update or Query from DB.
+2021-02-25 06:23:54,664 [15] DEBUG CachingLogger - Pulling Site:5 from database took 0ms.
+2021-02-25 06:23:54,664 [15] DEBUG CachingLogger - Updating Site:5 in cache after Insert, Update or Query from DB.
+2021-02-25 06:23:54,664 [15] DEBUG CachingLogger - Pulling QueryAllBySiteId:Plant:5 from database took 0ms.
+2021-02-25 06:23:54,664 [15] DEBUG CachingLogger - Updating QueryAllBySiteId:Plant:5 in cache after Insert, Update or Query from DB.
+2021-02-25 06:23:54,664 [15] DEBUG CachingLogger - Pulling Site:5 from database took 0ms.
+2021-02-25 06:23:54,664 [15] DEBUG CachingLogger - Updating Site:5 in cache after Insert, Update or Query from DB.
+2021-02-25 06:23:54,664 [15] DEBUG CachingLogger - Pulling DivisionFlocsOfSite:FunctionalLocationInfo:5 from database took 111ms.
+2021-02-25 06:23:54,664 [15] DEBUG CachingLogger - Updating DivisionFlocsOfSite:FunctionalLocationInfo:5 in cache after Insert, Update or Query from DB.
+2021-02-25 06:23:54,840 [15] DEBUG CachingLogger - Pulling QueryAllBySiteId:Plant:14 from database took 0ms.
+2021-02-25 06:23:54,840 [15] DEBUG CachingLogger - Updating QueryAllBySiteId:Plant:14 in cache after Insert, Update or Query from DB.
+2021-02-25 06:23:54,840 [15] DEBUG CachingLogger - Pulling Site:14 from database took 0ms.
+2021-02-25 06:23:54,840 [15] DEBUG CachingLogger - Updating Site:14 in cache after Insert, Update or Query from DB.
+2021-02-25 06:23:54,840 [15] DEBUG CachingLogger - Pulling DivisionFlocsOfSite:FunctionalLocationInfo:14 from database took 97ms.
+2021-02-25 06:23:54,840 [15] DEBUG CachingLogger - Updating DivisionFlocsOfSite:FunctionalLocationInfo:14 in cache after Insert, Update or Query from DB.
+2021-02-25 06:23:55,095 [15] DEBUG CachingLogger - Pulling QueryAllBySiteId:Plant:15 from cache took 38ms.
+2021-02-25 06:23:55,095 [15] DEBUG CachingLogger - Pulling Site:15 from database took 38ms.
+2021-02-25 06:23:55,095 [15] DEBUG CachingLogger - Updating Site:15 in cache after Insert, Update or Query from DB.
+2021-02-25 06:23:55,133 [15] DEBUG CachingLogger - Pulling DivisionFlocsOfSite:FunctionalLocationInfo:15 from database took 254ms.
+2021-02-25 06:23:55,133 [15] DEBUG CachingLogger - Updating DivisionFlocsOfSite:FunctionalLocationInfo:15 in cache after Insert, Update or Query from DB.
+2021-02-25 06:23:55,225 [15] DEBUG CachingLogger - Pulling QueryAllBySiteId:Plant:7 from cache took 38ms.
+2021-02-25 06:23:55,225 [15] DEBUG CachingLogger - Pulling Site:7 from database took 38ms.
+2021-02-25 06:23:55,225 [15] DEBUG CachingLogger - Updating Site:7 in cache after Insert, Update or Query from DB.
+2021-02-25 06:23:55,264 [15] DEBUG CachingLogger - Pulling DivisionFlocsOfSite:FunctionalLocationInfo:7 from database took 130ms.
+2021-02-25 06:23:55,264 [15] DEBUG CachingLogger - Updating DivisionFlocsOfSite:FunctionalLocationInfo:7 in cache after Insert, Update or Query from DB.
+2021-02-25 06:23:55,340 [15] DEBUG CachingLogger - Pulling QueryAllBySiteId:Plant:10 from cache took 38ms.
+2021-02-25 06:23:55,340 [15] DEBUG CachingLogger - Pulling Site:10 from database took 38ms.
+2021-02-25 06:23:55,340 [15] DEBUG CachingLogger - Updating Site:10 in cache after Insert, Update or Query from DB.
+2021-02-25 06:23:55,340 [15] DEBUG CachingLogger - Pulling DivisionFlocsOfSite:FunctionalLocationInfo:10 from database took 76ms.
+2021-02-25 06:23:55,340 [15] DEBUG CachingLogger - Updating DivisionFlocsOfSite:FunctionalLocationInfo:10 in cache after Insert, Update or Query from DB.
+2021-02-25 06:23:55,437 [15] DEBUG CachingLogger - Pulling QueryAllBySiteId:Plant:16 from cache took 38ms.
+2021-02-25 06:23:55,437 [15] DEBUG CachingLogger - Pulling Site:16 from database took 39ms.
+2021-02-25 06:23:55,437 [15] DEBUG CachingLogger - Updating Site:16 in cache after Insert, Update or Query from DB.
+2021-02-25 06:23:55,476 [15] DEBUG CachingLogger - Pulling DivisionFlocsOfSite:FunctionalLocationInfo:16 from database took 135ms.
+2021-02-25 06:23:55,476 [15] DEBUG CachingLogger - Updating DivisionFlocsOfSite:FunctionalLocationInfo:16 in cache after Insert, Update or Query from DB.
+2021-02-25 06:23:55,526 [15] DEBUG CachingLogger - Pulling QueryAllBySiteId:Plant:9 from database took 0ms.
+2021-02-25 06:23:55,526 [15] DEBUG CachingLogger - Updating QueryAllBySiteId:Plant:9 in cache after Insert, Update or Query from DB.
+2021-02-25 06:23:55,526 [15] DEBUG CachingLogger - Pulling Site:9 from database took 0ms.
+2021-02-25 06:23:55,526 [15] DEBUG CachingLogger - Updating Site:9 in cache after Insert, Update or Query from DB.
+2021-02-25 06:23:55,526 [15] DEBUG CachingLogger - Pulling DivisionFlocsOfSite:FunctionalLocationInfo:9 from database took 49ms.
+2021-02-25 06:23:55,526 [15] DEBUG CachingLogger - Updating DivisionFlocsOfSite:FunctionalLocationInfo:9 in cache after Insert, Update or Query from DB.
+2021-02-25 06:23:55,741 [15] DEBUG CachingLogger - Pulling QueryAllBySiteId:Plant:3 from database took 0ms.
+2021-02-25 06:23:55,741 [15] DEBUG CachingLogger - Updating QueryAllBySiteId:Plant:3 in cache after Insert, Update or Query from DB.
+2021-02-25 06:23:55,741 [15] DEBUG CachingLogger - Pulling Site:3 from database took 0ms.
+2021-02-25 06:23:55,741 [15] DEBUG CachingLogger - Updating Site:3 in cache after Insert, Update or Query from DB.
+2021-02-25 06:23:55,742 [15] DEBUG CachingLogger - Pulling QueryAllBySiteId:Plant:3 from database took 0ms.
+2021-02-25 06:23:55,742 [15] DEBUG CachingLogger - Updating QueryAllBySiteId:Plant:3 in cache after Insert, Update or Query from DB.
+2021-02-25 06:23:55,742 [15] DEBUG CachingLogger - Pulling Site:3 from database took 0ms.
+2021-02-25 06:23:55,742 [15] DEBUG CachingLogger - Updating Site:3 in cache after Insert, Update or Query from DB.
+2021-02-25 06:23:55,743 [15] DEBUG CachingLogger - Pulling QueryAllBySiteId:Plant:3 from database took 0ms.
+2021-02-25 06:23:55,743 [15] DEBUG CachingLogger - Updating QueryAllBySiteId:Plant:3 in cache after Insert, Update or Query from DB.
+2021-02-25 06:23:55,743 [15] DEBUG CachingLogger - Pulling Site:3 from database took 0ms.
+2021-02-25 06:23:55,743 [15] DEBUG CachingLogger - Updating Site:3 in cache after Insert, Update or Query from DB.
+2021-02-25 06:23:55,743 [15] DEBUG CachingLogger - Pulling QueryAllBySiteId:Plant:3 from database took 0ms.
+2021-02-25 06:23:55,743 [15] DEBUG CachingLogger - Updating QueryAllBySiteId:Plant:3 in cache after Insert, Update or Query from DB.
+2021-02-25 06:23:55,743 [15] DEBUG CachingLogger - Pulling Site:3 from database took 0ms.
+2021-02-25 06:23:55,743 [15] DEBUG CachingLogger - Updating Site:3 in cache after Insert, Update or Query from DB.
+2021-02-25 06:23:55,744 [15] DEBUG CachingLogger - Pulling QueryAllBySiteId:Plant:3 from database took 0ms.
+2021-02-25 06:23:55,744 [15] DEBUG CachingLogger - Updating QueryAllBySiteId:Plant:3 in cache after Insert, Update or Query from DB.
+2021-02-25 06:23:55,744 [15] DEBUG CachingLogger - Pulling Site:3 from database took 0ms.
+2021-02-25 06:23:55,744 [15] DEBUG CachingLogger - Updating Site:3 in cache after Insert, Update or Query from DB.
+2021-02-25 06:23:55,744 [15] DEBUG CachingLogger - Pulling DivisionFlocsOfSite:FunctionalLocationInfo:3 from database took 217ms.
+2021-02-25 06:23:55,744 [15] DEBUG CachingLogger - Updating DivisionFlocsOfSite:FunctionalLocationInfo:3 in cache after Insert, Update or Query from DB.
+2021-02-25 06:23:55,768 [15] DEBUG CachingLogger - Pulling QueryAllBySiteId:Plant:1 from database took 0ms.
+2021-02-25 06:23:55,768 [15] DEBUG CachingLogger - Updating QueryAllBySiteId:Plant:1 in cache after Insert, Update or Query from DB.
+2021-02-25 06:23:55,768 [15] DEBUG CachingLogger - Pulling Site:1 from database took 0ms.
+2021-02-25 06:23:55,768 [15] DEBUG CachingLogger - Updating Site:1 in cache after Insert, Update or Query from DB.
+2021-02-25 06:23:55,768 [15] DEBUG CachingLogger - Pulling DivisionFlocsOfSite:FunctionalLocationInfo:1 from database took 24ms.
+2021-02-25 06:23:55,768 [15] DEBUG CachingLogger - Updating DivisionFlocsOfSite:FunctionalLocationInfo:1 in cache after Insert, Update or Query from DB.
+2021-02-25 06:23:55,844 [15] DEBUG CachingLogger - Pulling QueryAllBySiteId:Plant:6 from database took 0ms.
+2021-02-25 06:23:55,844 [15] DEBUG CachingLogger - Updating QueryAllBySiteId:Plant:6 in cache after Insert, Update or Query from DB.
+2021-02-25 06:23:55,844 [15] DEBUG CachingLogger - Pulling Site:6 from database took 0ms.
+2021-02-25 06:23:55,844 [15] DEBUG CachingLogger - Updating Site:6 in cache after Insert, Update or Query from DB.
+2021-02-25 06:23:55,845 [15] DEBUG CachingLogger - Pulling QueryAllBySiteId:Plant:6 from database took 0ms.
+2021-02-25 06:23:55,845 [15] DEBUG CachingLogger - Updating QueryAllBySiteId:Plant:6 in cache after Insert, Update or Query from DB.
+2021-02-25 06:23:55,845 [15] DEBUG CachingLogger - Pulling Site:6 from database took 0ms.
+2021-02-25 06:23:55,845 [15] DEBUG CachingLogger - Updating Site:6 in cache after Insert, Update or Query from DB.
+2021-02-25 06:23:55,845 [15] DEBUG CachingLogger - Pulling DivisionFlocsOfSite:FunctionalLocationInfo:6 from database took 38ms.
+2021-02-25 06:23:55,845 [15] DEBUG CachingLogger - Updating DivisionFlocsOfSite:FunctionalLocationInfo:6 in cache after Insert, Update or Query from DB.
+2021-02-25 06:23:55,941 [15] DEBUG CachingLogger - Pulling QueryAllBySiteId:Plant:19 from database took 0ms.
+2021-02-25 06:23:55,941 [15] DEBUG CachingLogger - Updating QueryAllBySiteId:Plant:19 in cache after Insert, Update or Query from DB.
+2021-02-25 06:23:55,941 [15] DEBUG CachingLogger - Pulling Site:19 from database took 0ms.
+2021-02-25 06:23:55,941 [15] DEBUG CachingLogger - Updating Site:19 in cache after Insert, Update or Query from DB.
+2021-02-25 06:23:56,028 [15] DEBUG CachingLogger - Pulling Site:19 from cache took 48ms.
+2021-02-25 06:23:56,067 [15] DEBUG CachingLogger - Pulling Site:19 from cache took 38ms.
+2021-02-25 06:23:56,106 [15] DEBUG CachingLogger - Pulling Site:19 from cache took 38ms.
+2021-02-25 06:23:56,144 [15] DEBUG CachingLogger - Pulling Site:19 from cache took 38ms.
+2021-02-25 06:23:56,144 [15] DEBUG CachingLogger - Pulling DivisionFlocsOfSite:FunctionalLocationInfo:19 from database took 260ms.
+2021-02-25 06:23:56,144 [15] DEBUG CachingLogger - Updating DivisionFlocsOfSite:FunctionalLocationInfo:19 in cache after Insert, Update or Query from DB.
+2021-02-25 06:23:56,242 [15] DEBUG CachingLogger - Pulling QueryAllBySiteId:Plant:17 from database took 0ms.
+2021-02-25 06:23:56,242 [15] DEBUG CachingLogger - Updating QueryAllBySiteId:Plant:17 in cache after Insert, Update or Query from DB.
+2021-02-25 06:23:56,242 [15] DEBUG CachingLogger - Pulling Site:17 from database took 0ms.
+2021-02-25 06:23:56,242 [15] DEBUG CachingLogger - Updating Site:17 in cache after Insert, Update or Query from DB.
+2021-02-25 06:23:56,243 [15] DEBUG CachingLogger - Pulling QueryAllBySiteId:Plant:17 from database took 0ms.
+2021-02-25 06:23:56,243 [15] DEBUG CachingLogger - Updating QueryAllBySiteId:Plant:17 in cache after Insert, Update or Query from DB.
+2021-02-25 06:23:56,243 [15] DEBUG CachingLogger - Pulling Site:17 from database took 0ms.
+2021-02-25 06:23:56,243 [15] DEBUG CachingLogger - Updating Site:17 in cache after Insert, Update or Query from DB.
+2021-02-25 06:23:56,243 [15] DEBUG CachingLogger - Pulling QueryAllBySiteId:Plant:17 from database took 0ms.
+2021-02-25 06:23:56,243 [15] DEBUG CachingLogger - Updating QueryAllBySiteId:Plant:17 in cache after Insert, Update or Query from DB.
+2021-02-25 06:23:56,243 [15] DEBUG CachingLogger - Pulling Site:17 from database took 0ms.
+2021-02-25 06:23:56,243 [15] DEBUG CachingLogger - Updating Site:17 in cache after Insert, Update or Query from DB.
+2021-02-25 06:23:56,244 [15] DEBUG CachingLogger - Pulling QueryAllBySiteId:Plant:17 from database took 0ms.
+2021-02-25 06:23:56,244 [15] DEBUG CachingLogger - Updating QueryAllBySiteId:Plant:17 in cache after Insert, Update or Query from DB.
+2021-02-25 06:23:56,244 [15] DEBUG CachingLogger - Pulling Site:17 from database took 0ms.
+2021-02-25 06:23:56,244 [15] DEBUG CachingLogger - Updating Site:17 in cache after Insert, Update or Query from DB.
+2021-02-25 06:23:56,244 [15] DEBUG CachingLogger - Pulling DivisionFlocsOfSite:FunctionalLocationInfo:17 from database took 61ms.
+2021-02-25 06:23:56,244 [15] DEBUG CachingLogger - Updating DivisionFlocsOfSite:FunctionalLocationInfo:17 in cache after Insert, Update or Query from DB.
+2021-02-25 06:23:56,358 [15] DEBUG CachingLogger - Pulling QueryAllBySiteId:Plant:18 from database took 0ms.
+2021-02-25 06:23:56,358 [15] DEBUG CachingLogger - Updating QueryAllBySiteId:Plant:18 in cache after Insert, Update or Query from DB.
+2021-02-25 06:23:56,358 [15] DEBUG CachingLogger - Pulling Site:18 from database took 0ms.
+2021-02-25 06:23:56,358 [15] DEBUG CachingLogger - Updating Site:18 in cache after Insert, Update or Query from DB.
+2021-02-25 06:23:56,358 [15] DEBUG CachingLogger - Pulling QueryAllBySiteId:Plant:18 from database took 0ms.
+2021-02-25 06:23:56,358 [15] DEBUG CachingLogger - Updating QueryAllBySiteId:Plant:18 in cache after Insert, Update or Query from DB.
+2021-02-25 06:23:56,358 [15] DEBUG CachingLogger - Pulling Site:18 from database took 0ms.
+2021-02-25 06:23:56,358 [15] DEBUG CachingLogger - Updating Site:18 in cache after Insert, Update or Query from DB.
+2021-02-25 06:23:56,359 [15] DEBUG CachingLogger - Pulling QueryAllBySiteId:Plant:18 from database took 0ms.
+2021-02-25 06:23:56,359 [15] DEBUG CachingLogger - Updating QueryAllBySiteId:Plant:18 in cache after Insert, Update or Query from DB.
+2021-02-25 06:23:56,359 [15] DEBUG CachingLogger - Pulling Site:18 from database took 0ms.
+2021-02-25 06:23:56,359 [15] DEBUG CachingLogger - Updating Site:18 in cache after Insert, Update or Query from DB.
+2021-02-25 06:23:56,359 [15] DEBUG CachingLogger - Pulling DivisionFlocsOfSite:FunctionalLocationInfo:18 from database took 37ms.
+2021-02-25 06:23:56,359 [15] DEBUG CachingLogger - Updating DivisionFlocsOfSite:FunctionalLocationInfo:18 in cache after Insert, Update or Query from DB.
+2021-02-25 06:23:56,411 [15] DEBUG CachingLogger - Pulling QueryAllBySiteId:Plant:11 from database took 0ms.
+2021-02-25 06:23:56,411 [15] DEBUG CachingLogger - Updating QueryAllBySiteId:Plant:11 in cache after Insert, Update or Query from DB.
+2021-02-25 06:23:56,411 [15] DEBUG CachingLogger - Pulling Site:11 from database took 0ms.
+2021-02-25 06:23:56,411 [15] DEBUG CachingLogger - Updating Site:11 in cache after Insert, Update or Query from DB.
+2021-02-25 06:23:56,412 [15] DEBUG CachingLogger - Pulling QueryAllBySiteId:Plant:11 from database took 0ms.
+2021-02-25 06:23:56,412 [15] DEBUG CachingLogger - Updating QueryAllBySiteId:Plant:11 in cache after Insert, Update or Query from DB.
+2021-02-25 06:23:56,412 [15] DEBUG CachingLogger - Pulling Site:11 from database took 0ms.
+2021-02-25 06:23:56,412 [15] DEBUG CachingLogger - Updating Site:11 in cache after Insert, Update or Query from DB.
+2021-02-25 06:23:56,412 [15] DEBUG CachingLogger - Pulling DivisionFlocsOfSite:FunctionalLocationInfo:11 from database took 13ms.
+2021-02-25 06:23:56,412 [15] DEBUG CachingLogger - Updating DivisionFlocsOfSite:FunctionalLocationInfo:11 in cache after Insert, Update or Query from DB.
+2021-02-25 06:23:56,503 [15] DEBUG CachingLogger - Pulling QueryAllBySiteId:Plant:12 from database took 0ms.
+2021-02-25 06:23:56,503 [15] DEBUG CachingLogger - Updating QueryAllBySiteId:Plant:12 in cache after Insert, Update or Query from DB.
+2021-02-25 06:23:56,504 [15] DEBUG CachingLogger - Pulling Site:12 from database took 0ms.
+2021-02-25 06:23:56,504 [15] DEBUG CachingLogger - Updating Site:12 in cache after Insert, Update or Query from DB.
+2021-02-25 06:23:56,504 [15] DEBUG CachingLogger - Pulling DivisionFlocsOfSite:FunctionalLocationInfo:12 from database took 53ms.
+2021-02-25 06:23:56,504 [15] DEBUG CachingLogger - Updating DivisionFlocsOfSite:FunctionalLocationInfo:12 in cache after Insert, Update or Query from DB.
+2021-02-25 06:23:56,623 [15] DEBUG CachingLogger - Pulling QueryAllBySiteId:Role:12 from database took 80ms.
+2021-02-25 06:23:56,623 [15] DEBUG CachingLogger - Updating QueryAllBySiteId:Role:12 in cache after Insert, Update or Query from DB.
+2021-02-25 06:23:56,668 [15] DEBUG CachingLogger - Pulling QueryAllBySiteId:Plant:12 from database took 0ms.
+2021-02-25 06:23:56,668 [15] DEBUG CachingLogger - Updating QueryAllBySiteId:Plant:12 in cache after Insert, Update or Query from DB.
+2021-02-25 06:23:56,668 [15] DEBUG CachingLogger - Pulling SiteByADKey:WoodBuffaloLaboratories from database took 18ms.
+2021-02-25 06:23:56,668 [15] DEBUG CachingLogger - Updating SiteByADKey:WoodBuffaloLaboratories in cache after Insert, Update or Query from DB.
+2021-02-25 06:23:56,697 [15] DEBUG CachingLogger - Pulling RoleByADKey:12:LabSpecialist from database took 28ms.
+2021-02-25 06:23:56,697 [15] DEBUG CachingLogger - Updating RoleByADKey:12:LabSpecialist in cache after Insert, Update or Query from DB.
+2021-02-25 06:23:56,739 [15] DEBUG CachingLogger - Pulling QueryAllBySiteId:Plant:12 from database took 0ms.
+2021-02-25 06:23:56,739 [15] DEBUG CachingLogger - Updating QueryAllBySiteId:Plant:12 in cache after Insert, Update or Query from DB.
+2021-02-25 06:23:56,739 [15] DEBUG CachingLogger - Pulling SiteByADKey:WoodBuffaloLaboratories from database took 0ms.
+2021-02-25 06:23:56,739 [15] DEBUG CachingLogger - Updating SiteByADKey:WoodBuffaloLaboratories in cache after Insert, Update or Query from DB.
+2021-02-25 06:23:56,778 [15] DEBUG CachingLogger - Pulling RoleByADKey:12:TechnicalAdmin from database took 0ms.
+2021-02-25 06:23:56,778 [15] DEBUG CachingLogger - Updating RoleByADKey:12:TechnicalAdmin in cache after Insert, Update or Query from DB.
+2021-02-25 06:23:56,818 [15] DEBUG CachingLogger - Pulling QueryAllBySiteId:Plant:12 from database took 0ms.
+2021-02-25 06:23:56,818 [15] DEBUG CachingLogger - Updating QueryAllBySiteId:Plant:12 in cache after Insert, Update or Query from DB.
+2021-02-25 06:23:56,818 [15] DEBUG CachingLogger - Pulling SiteByADKey:WoodBuffaloLaboratories from database took 0ms.
+2021-02-25 06:23:56,818 [15] DEBUG CachingLogger - Updating SiteByADKey:WoodBuffaloLaboratories in cache after Insert, Update or Query from DB.
+2021-02-25 06:23:56,856 [15] DEBUG CachingLogger - Pulling RoleByADKey:12:QualityTeam from database took 0ms.
+2021-02-25 06:23:56,856 [15] DEBUG CachingLogger - Updating RoleByADKey:12:QualityTeam in cache after Insert, Update or Query from DB.
+2021-02-25 06:23:56,896 [15] DEBUG CachingLogger - Pulling QueryAllBySiteId:Plant:12 from database took 0ms.
+2021-02-25 06:23:56,896 [15] DEBUG CachingLogger - Updating QueryAllBySiteId:Plant:12 in cache after Insert, Update or Query from DB.
+2021-02-25 06:23:56,896 [15] DEBUG CachingLogger - Pulling SiteByADKey:WoodBuffaloLaboratories from database took 0ms.
+2021-02-25 06:23:56,896 [15] DEBUG CachingLogger - Updating SiteByADKey:WoodBuffaloLaboratories in cache after Insert, Update or Query from DB.
+2021-02-25 06:23:56,897 [15] DEBUG CachingLogger - Pulling RoleByADKey:12:LabTechnician from database took 0ms.
+2021-02-25 06:23:56,897 [15] DEBUG CachingLogger - Updating RoleByADKey:12:LabTechnician in cache after Insert, Update or Query from DB.
+2021-02-25 06:23:56,897 [15] DEBUG CachingLogger - Pulling QueryAllBySiteId:Plant:12 from database took 0ms.
+2021-02-25 06:23:56,897 [15] DEBUG CachingLogger - Updating QueryAllBySiteId:Plant:12 in cache after Insert, Update or Query from DB.
+2021-02-25 06:23:56,897 [15] DEBUG CachingLogger - Pulling SiteByADKey:WoodBuffaloLaboratories from database took 0ms.
+2021-02-25 06:23:56,897 [15] DEBUG CachingLogger - Updating SiteByADKey:WoodBuffaloLaboratories in cache after Insert, Update or Query from DB.
+2021-02-25 06:23:56,936 [15] DEBUG CachingLogger - Pulling RoleByADKey:12:LabManager from database took 0ms.
+2021-02-25 06:23:56,936 [15] DEBUG CachingLogger - Updating RoleByADKey:12:LabManager in cache after Insert, Update or Query from DB.
+2021-02-25 06:23:56,975 [15] DEBUG CachingLogger - Pulling QueryAllBySiteId:Plant:12 from database took 0ms.
+2021-02-25 06:23:56,975 [15] DEBUG CachingLogger - Updating QueryAllBySiteId:Plant:12 in cache after Insert, Update or Query from DB.
+2021-02-25 06:23:56,975 [15] DEBUG CachingLogger - Pulling SiteByADKey:WoodBuffaloLaboratories from database took 0ms.
+2021-02-25 06:23:56,975 [15] DEBUG CachingLogger - Updating SiteByADKey:WoodBuffaloLaboratories in cache after Insert, Update or Query from DB.
+2021-02-25 06:23:57,014 [15] DEBUG CachingLogger - Pulling RoleByADKey:12:LabSupervisor from database took 0ms.
+2021-02-25 06:23:57,014 [15] DEBUG CachingLogger - Updating RoleByADKey:12:LabSupervisor in cache after Insert, Update or Query from DB.
+2021-02-25 06:23:57,053 [15] DEBUG CachingLogger - Pulling QueryAllBySiteId:Plant:12 from database took 0ms.
+2021-02-25 06:23:57,053 [15] DEBUG CachingLogger - Updating QueryAllBySiteId:Plant:12 in cache after Insert, Update or Query from DB.
+2021-02-25 06:23:57,053 [15] DEBUG CachingLogger - Pulling SiteByADKey:WoodBuffaloLaboratories from database took 0ms.
+2021-02-25 06:23:57,053 [15] DEBUG CachingLogger - Updating SiteByADKey:WoodBuffaloLaboratories in cache after Insert, Update or Query from DB.
+2021-02-25 06:23:57,053 [15] DEBUG CachingLogger - Pulling RoleByADKey:12:Administrator from database took 0ms.
+2021-02-25 06:23:57,053 [15] DEBUG CachingLogger - Updating RoleByADKey:12:Administrator in cache after Insert, Update or Query from DB.
+2021-02-25 06:23:57,054 [15] DEBUG CachingLogger - Pulling QueryAllBySiteId:Plant:12 from database took 0ms.
+2021-02-25 06:23:57,054 [15] DEBUG CachingLogger - Updating QueryAllBySiteId:Plant:12 in cache after Insert, Update or Query from DB.
+2021-02-25 06:23:57,054 [15] DEBUG CachingLogger - Pulling SiteByADKey:WoodBuffaloLaboratories from database took 0ms.
+2021-02-25 06:23:57,054 [15] DEBUG CachingLogger - Updating SiteByADKey:WoodBuffaloLaboratories in cache after Insert, Update or Query from DB.
+2021-02-25 06:23:57,054 [15] DEBUG CachingLogger - Pulling RoleByADKey:12:LabUnitLeader from database took 0ms.
+2021-02-25 06:23:57,054 [15] DEBUG CachingLogger - Updating RoleByADKey:12:LabUnitLeader in cache after Insert, Update or Query from DB.
+2021-02-25 06:23:57,055 [15] DEBUG CachingLogger - Pulling QueryAllBySiteId:Plant:12 from database took 0ms.
+2021-02-25 06:23:57,055 [15] DEBUG CachingLogger - Updating QueryAllBySiteId:Plant:12 in cache after Insert, Update or Query from DB.
+2021-02-25 06:23:57,055 [15] DEBUG CachingLogger - Pulling SiteByADKey:WoodBuffaloLaboratories from database took 0ms.
+2021-02-25 06:23:57,055 [15] DEBUG CachingLogger - Updating SiteByADKey:WoodBuffaloLaboratories in cache after Insert, Update or Query from DB.
+2021-02-25 06:23:57,055 [15] DEBUG CachingLogger - Pulling RoleByADKey:12:ReadUser from database took 0ms.
+2021-02-25 06:23:57,055 [15] DEBUG CachingLogger - Updating RoleByADKey:12:ReadUser in cache after Insert, Update or Query from DB.
+2021-02-25 06:24:09,544 [1] DEBUG CachingLogger - Pulling TargetDefinitionAutoReApprovalConfiguration:12 from database took 50ms.
+2021-02-25 06:24:09,544 [1] DEBUG CachingLogger - Updating TargetDefinitionAutoReApprovalConfiguration:12 in cache after Insert, Update or Query from DB.
+2021-02-25 06:24:21,421 [1] DEBUG CachingLogger - Pulling User:9246 from database took 23ms.
+2021-02-25 06:24:21,421 [1] DEBUG CachingLogger - Updating User:9246 in cache after Insert, Update or Query from DB.
+2021-02-25 06:24:21,502 [1] DEBUG CachingLogger - Pulling Role:186 from database took 27ms.
+2021-02-25 06:24:21,502 [1] DEBUG CachingLogger - Updating Role:186 in cache after Insert, Update or Query from DB.
+2021-02-25 06:24:21,521 [1] DEBUG CachingLogger - Pulling QueryAllBySiteId:Plant:12 from database took 0ms.
+2021-02-25 06:24:21,521 [1] DEBUG CachingLogger - Updating QueryAllBySiteId:Plant:12 in cache after Insert, Update or Query from DB.
+2021-02-25 06:24:21,521 [1] DEBUG CachingLogger - Pulling Site:12 from database took 0ms.
+2021-02-25 06:24:21,521 [1] DEBUG CachingLogger - Updating Site:12 in cache after Insert, Update or Query from DB.
+2021-02-25 06:24:25,721 [1] DEBUG CachingLogger - Pulling WorkAssignment:2831 from database took 4298ms.
+2021-02-25 06:24:25,721 [1] DEBUG CachingLogger - Updating WorkAssignment:2831 in cache after Insert, Update or Query from DB.
+2021-02-25 06:24:25,723 [1] DEBUG CachingLogger - Pulling QueryAllBySiteId:Plant:12 from database took 0ms.
+2021-02-25 06:24:25,723 [1] DEBUG CachingLogger - Updating QueryAllBySiteId:Plant:12 in cache after Insert, Update or Query from DB.
+2021-02-25 06:24:25,723 [1] DEBUG CachingLogger - Pulling Site:12 from database took 0ms.
+2021-02-25 06:24:25,723 [1] DEBUG CachingLogger - Updating Site:12 in cache after Insert, Update or Query from DB.
+2021-02-25 06:24:25,723 [1] DEBUG CachingLogger - Pulling ShiftPattern:30 from database took 2ms.
+2021-02-25 06:24:25,723 [1] DEBUG CachingLogger - Updating ShiftPattern:30 in cache after Insert, Update or Query from DB.
+2021-02-25 06:24:25,771 [1] DEBUG CachingLogger - Pulling QueryAllBySiteId:Plant:12 from database took 0ms.
+2021-02-25 06:24:25,771 [1] DEBUG CachingLogger - Updating QueryAllBySiteId:Plant:12 in cache after Insert, Update or Query from DB.
+2021-02-25 06:24:25,771 [1] DEBUG CachingLogger - Pulling Site:12 from database took 0ms.
+2021-02-25 06:24:25,771 [1] DEBUG CachingLogger - Updating Site:12 in cache after Insert, Update or Query from DB.
+2021-02-25 06:24:25,771 [1] DEBUG CachingLogger - Pulling FunctionalLocation:379145 from database took 21ms.
+2021-02-25 06:24:25,771 [1] DEBUG CachingLogger - Updating FunctionalLocation:379145 in cache after Insert, Update or Query from DB.
+2021-02-25 06:24:29,067 [1] DEBUG CachingLogger - Pulling DivisionFlocsOfSite:FunctionalLocationInfo:12 from cache took 39ms.
+2021-02-25 06:24:30,969 [1] DEBUG CachingLogger - Pulling QueryAllBySiteId:VisibilityGroup:12 from database took 1ms.
+2021-02-25 06:24:30,969 [1] DEBUG CachingLogger - Updating QueryAllBySiteId:VisibilityGroup:12 in cache after Insert, Update or Query from DB.
+2021-02-25 06:24:31,013 [22] DEBUG CachingLogger - Pulling Role:192 from database took 0ms.
+2021-02-25 06:24:31,013 [22] DEBUG CachingLogger - Updating Role:192 in cache after Insert, Update or Query from DB.
+2021-02-25 06:24:31,015 [22] DEBUG CachingLogger - Pulling Role:185 from database took 0ms.
+2021-02-25 06:24:31,015 [22] DEBUG CachingLogger - Updating Role:185 in cache after Insert, Update or Query from DB.
+2021-02-25 06:24:31,016 [22] DEBUG CachingLogger - Pulling QueryAllBySiteId:Plant:12 from database took 0ms.
+2021-02-25 06:24:31,016 [22] DEBUG CachingLogger - Updating QueryAllBySiteId:Plant:12 in cache after Insert, Update or Query from DB.
+2021-02-25 06:24:31,016 [22] DEBUG CachingLogger - Pulling Site:12 from database took 0ms.
+2021-02-25 06:24:31,016 [22] DEBUG CachingLogger - Updating Site:12 in cache after Insert, Update or Query from DB.
+2021-02-25 06:24:31,017 [22] DEBUG CachingLogger - Pulling Role:185 from database took 0ms.
+2021-02-25 06:24:31,017 [22] DEBUG CachingLogger - Updating Role:185 in cache after Insert, Update or Query from DB.
+2021-02-25 06:24:31,018 [22] DEBUG CachingLogger - Pulling QueryAllBySiteId:Plant:12 from database took 0ms.
+2021-02-25 06:24:31,018 [22] DEBUG CachingLogger - Updating QueryAllBySiteId:Plant:12 in cache after Insert, Update or Query from DB.
+2021-02-25 06:24:31,018 [22] DEBUG CachingLogger - Pulling Site:12 from database took 0ms.
+2021-02-25 06:24:31,018 [22] DEBUG CachingLogger - Updating Site:12 in cache after Insert, Update or Query from DB.
+2021-02-25 06:24:31,019 [22] DEBUG CachingLogger - Pulling Role:185 from database took 0ms.
+2021-02-25 06:24:31,019 [22] DEBUG CachingLogger - Updating Role:185 in cache after Insert, Update or Query from DB.
+2021-02-25 06:24:31,020 [22] DEBUG CachingLogger - Pulling QueryAllBySiteId:Plant:12 from database took 0ms.
+2021-02-25 06:24:31,020 [22] DEBUG CachingLogger - Updating QueryAllBySiteId:Plant:12 in cache after Insert, Update or Query from DB.
+2021-02-25 06:24:31,020 [22] DEBUG CachingLogger - Pulling Site:12 from database took 0ms.
+2021-02-25 06:24:31,020 [22] DEBUG CachingLogger - Updating Site:12 in cache after Insert, Update or Query from DB.
+2021-02-25 06:24:31,021 [22] DEBUG CachingLogger - Pulling Role:185 from database took 0ms.
+2021-02-25 06:24:31,021 [22] DEBUG CachingLogger - Updating Role:185 in cache after Insert, Update or Query from DB.
+2021-02-25 06:24:31,022 [22] DEBUG CachingLogger - Pulling QueryAllBySiteId:Plant:12 from database took 0ms.
+2021-02-25 06:24:31,022 [22] DEBUG CachingLogger - Updating QueryAllBySiteId:Plant:12 in cache after Insert, Update or Query from DB.
+2021-02-25 06:24:31,022 [22] DEBUG CachingLogger - Pulling Site:12 from database took 0ms.
+2021-02-25 06:24:31,022 [22] DEBUG CachingLogger - Updating Site:12 in cache after Insert, Update or Query from DB.
+2021-02-25 06:24:31,023 [22] DEBUG CachingLogger - Pulling Role:185 from database took 0ms.
+2021-02-25 06:24:31,023 [22] DEBUG CachingLogger - Updating Role:185 in cache after Insert, Update or Query from DB.
+2021-02-25 06:24:31,024 [22] DEBUG CachingLogger - Pulling QueryAllBySiteId:Plant:12 from database took 0ms.
+2021-02-25 06:24:31,024 [22] DEBUG CachingLogger - Updating QueryAllBySiteId:Plant:12 in cache after Insert, Update or Query from DB.
+2021-02-25 06:24:31,024 [22] DEBUG CachingLogger - Pulling Site:12 from database took 0ms.
+2021-02-25 06:24:31,024 [22] DEBUG CachingLogger - Updating Site:12 in cache after Insert, Update or Query from DB.
+2021-02-25 06:24:31,025 [22] DEBUG CachingLogger - Pulling Role:192 from database took 0ms.
+2021-02-25 06:24:31,025 [22] DEBUG CachingLogger - Updating Role:192 in cache after Insert, Update or Query from DB.
+2021-02-25 06:24:31,025 [22] DEBUG CachingLogger - Pulling QueryAllBySiteId:Plant:12 from database took 0ms.
+2021-02-25 06:24:31,025 [22] DEBUG CachingLogger - Updating QueryAllBySiteId:Plant:12 in cache after Insert, Update or Query from DB.
+2021-02-25 06:24:31,025 [22] DEBUG CachingLogger - Pulling Site:12 from database took 0ms.
+2021-02-25 06:24:31,025 [22] DEBUG CachingLogger - Updating Site:12 in cache after Insert, Update or Query from DB.
+2021-02-25 06:24:31,065 [22] DEBUG CachingLogger - Pulling Role:188 from database took 0ms.
+2021-02-25 06:24:31,065 [22] DEBUG CachingLogger - Updating Role:188 in cache after Insert, Update or Query from DB.
+2021-02-25 06:24:31,106 [22] DEBUG CachingLogger - Pulling QueryAllBySiteId:Plant:12 from database took 0ms.
+2021-02-25 06:24:31,107 [22] DEBUG CachingLogger - Updating QueryAllBySiteId:Plant:12 in cache after Insert, Update or Query from DB.
+2021-02-25 06:24:31,107 [22] DEBUG CachingLogger - Pulling Site:12 from database took 0ms.
+2021-02-25 06:24:31,107 [22] DEBUG CachingLogger - Updating Site:12 in cache after Insert, Update or Query from DB.
+2021-02-25 06:24:31,146 [22] DEBUG CachingLogger - Pulling Role:194 from database took 0ms.
+2021-02-25 06:24:31,146 [22] DEBUG CachingLogger - Updating Role:194 in cache after Insert, Update or Query from DB.
+2021-02-25 06:24:31,186 [22] DEBUG CachingLogger - Pulling QueryAllBySiteId:Plant:12 from database took 0ms.
+2021-02-25 06:24:31,186 [22] DEBUG CachingLogger - Updating QueryAllBySiteId:Plant:12 in cache after Insert, Update or Query from DB.
+2021-02-25 06:24:31,186 [22] DEBUG CachingLogger - Pulling Site:12 from database took 0ms.
+2021-02-25 06:24:31,186 [22] DEBUG CachingLogger - Updating Site:12 in cache after Insert, Update or Query from DB.
+2021-02-25 06:24:31,187 [22] DEBUG CachingLogger - Pulling Role:186 from database took 0ms.
+2021-02-25 06:24:31,187 [22] DEBUG CachingLogger - Updating Role:186 in cache after Insert, Update or Query from DB.
+2021-02-25 06:24:31,188 [22] DEBUG CachingLogger - Pulling QueryAllBySiteId:Plant:12 from database took 0ms.
+2021-02-25 06:24:31,188 [22] DEBUG CachingLogger - Updating QueryAllBySiteId:Plant:12 in cache after Insert, Update or Query from DB.
+2021-02-25 06:24:31,188 [22] DEBUG CachingLogger - Pulling Site:12 from database took 0ms.
+2021-02-25 06:24:31,188 [22] DEBUG CachingLogger - Updating Site:12 in cache after Insert, Update or Query from DB.
+2021-02-25 06:24:31,189 [22] DEBUG CachingLogger - Pulling Role:185 from database took 0ms.
+2021-02-25 06:24:31,189 [22] DEBUG CachingLogger - Updating Role:185 in cache after Insert, Update or Query from DB.
+2021-02-25 06:24:31,190 [22] DEBUG CachingLogger - Pulling QueryAllBySiteId:Plant:12 from database took 0ms.
+2021-02-25 06:24:31,190 [22] DEBUG CachingLogger - Updating QueryAllBySiteId:Plant:12 in cache after Insert, Update or Query from DB.
+2021-02-25 06:24:31,190 [22] DEBUG CachingLogger - Pulling Site:12 from database took 0ms.
+2021-02-25 06:24:31,190 [22] DEBUG CachingLogger - Updating Site:12 in cache after Insert, Update or Query from DB.
+2021-02-25 06:24:31,191 [22] DEBUG CachingLogger - Pulling Role:185 from database took 0ms.
+2021-02-25 06:24:31,191 [22] DEBUG CachingLogger - Updating Role:185 in cache after Insert, Update or Query from DB.
+2021-02-25 06:24:31,191 [22] DEBUG CachingLogger - Pulling QueryAllBySiteId:Plant:12 from database took 0ms.
+2021-02-25 06:24:31,191 [22] DEBUG CachingLogger - Updating QueryAllBySiteId:Plant:12 in cache after Insert, Update or Query from DB.
+2021-02-25 06:24:31,191 [22] DEBUG CachingLogger - Pulling Site:12 from database took 0ms.
+2021-02-25 06:24:31,191 [22] DEBUG CachingLogger - Updating Site:12 in cache after Insert, Update or Query from DB.
+2021-02-25 06:24:31,192 [22] DEBUG CachingLogger - Pulling Role:185 from database took 0ms.
+2021-02-25 06:24:31,192 [22] DEBUG CachingLogger - Updating Role:185 in cache after Insert, Update or Query from DB.
+2021-02-25 06:24:31,193 [22] DEBUG CachingLogger - Pulling QueryAllBySiteId:Plant:12 from database took 0ms.
+2021-02-25 06:24:31,193 [22] DEBUG CachingLogger - Updating QueryAllBySiteId:Plant:12 in cache after Insert, Update or Query from DB.
+2021-02-25 06:24:31,193 [22] DEBUG CachingLogger - Pulling Site:12 from database took 0ms.
+2021-02-25 06:24:31,193 [22] DEBUG CachingLogger - Updating Site:12 in cache after Insert, Update or Query from DB.
+2021-02-25 06:24:31,194 [22] DEBUG CachingLogger - Pulling Role:190 from database took 0ms.
+2021-02-25 06:24:31,194 [22] DEBUG CachingLogger - Updating Role:190 in cache after Insert, Update or Query from DB.
+2021-02-25 06:24:31,194 [22] DEBUG CachingLogger - Pulling QueryAllBySiteId:Plant:12 from database took 0ms.
+2021-02-25 06:24:31,194 [22] DEBUG CachingLogger - Updating QueryAllBySiteId:Plant:12 in cache after Insert, Update or Query from DB.
+2021-02-25 06:24:31,194 [22] DEBUG CachingLogger - Pulling Site:12 from database took 0ms.
+2021-02-25 06:24:31,194 [22] DEBUG CachingLogger - Updating Site:12 in cache after Insert, Update or Query from DB.
+2021-02-25 06:24:31,234 [22] DEBUG CachingLogger - Pulling Role:191 from database took 0ms.
+2021-02-25 06:24:31,234 [22] DEBUG CachingLogger - Updating Role:191 in cache after Insert, Update or Query from DB.
+2021-02-25 06:24:31,273 [22] DEBUG CachingLogger - Pulling QueryAllBySiteId:Plant:12 from database took 0ms.
+2021-02-25 06:24:31,273 [22] DEBUG CachingLogger - Updating QueryAllBySiteId:Plant:12 in cache after Insert, Update or Query from DB.
+2021-02-25 06:24:31,273 [22] DEBUG CachingLogger - Pulling Site:12 from database took 0ms.
+2021-02-25 06:24:31,273 [22] DEBUG CachingLogger - Updating Site:12 in cache after Insert, Update or Query from DB.
+2021-02-25 06:24:31,274 [22] DEBUG CachingLogger - Pulling Role:189 from database took 0ms.
+2021-02-25 06:24:31,274 [22] DEBUG CachingLogger - Updating Role:189 in cache after Insert, Update or Query from DB.
+2021-02-25 06:24:31,275 [22] DEBUG CachingLogger - Pulling QueryAllBySiteId:Plant:12 from database took 0ms.
+2021-02-25 06:24:31,275 [22] DEBUG CachingLogger - Updating QueryAllBySiteId:Plant:12 in cache after Insert, Update or Query from DB.
+2021-02-25 06:24:31,275 [22] DEBUG CachingLogger - Pulling Site:12 from database took 0ms.
+2021-02-25 06:24:31,275 [22] DEBUG CachingLogger - Updating Site:12 in cache after Insert, Update or Query from DB.
+2021-02-25 06:24:31,276 [22] DEBUG CachingLogger - Pulling Role:185 from database took 0ms.
+2021-02-25 06:24:31,277 [22] DEBUG CachingLogger - Updating Role:185 in cache after Insert, Update or Query from DB.
+2021-02-25 06:24:31,277 [22] DEBUG CachingLogger - Pulling QueryAllBySiteId:Plant:12 from database took 0ms.
+2021-02-25 06:24:31,277 [22] DEBUG CachingLogger - Updating QueryAllBySiteId:Plant:12 in cache after Insert, Update or Query from DB.
+2021-02-25 06:24:31,277 [22] DEBUG CachingLogger - Pulling Site:12 from database took 0ms.
+2021-02-25 06:24:31,277 [22] DEBUG CachingLogger - Updating Site:12 in cache after Insert, Update or Query from DB.
+2021-02-25 06:24:31,278 [22] DEBUG CachingLogger - Pulling Role:185 from database took 0ms.
+2021-02-25 06:24:31,278 [22] DEBUG CachingLogger - Updating Role:185 in cache after Insert, Update or Query from DB.
+2021-02-25 06:24:31,279 [22] DEBUG CachingLogger - Pulling QueryAllBySiteId:Plant:12 from database took 0ms.
+2021-02-25 06:24:31,279 [22] DEBUG CachingLogger - Updating QueryAllBySiteId:Plant:12 in cache after Insert, Update or Query from DB.
+2021-02-25 06:24:31,279 [22] DEBUG CachingLogger - Pulling Site:12 from database took 0ms.
+2021-02-25 06:24:31,279 [22] DEBUG CachingLogger - Updating Site:12 in cache after Insert, Update or Query from DB.
+2021-02-25 06:24:31,279 [22] DEBUG CachingLogger - Pulling Role:185 from database took 0ms.
+2021-02-25 06:24:31,279 [22] DEBUG CachingLogger - Updating Role:185 in cache after Insert, Update or Query from DB.
+2021-02-25 06:24:31,280 [22] DEBUG CachingLogger - Pulling QueryAllBySiteId:Plant:12 from database took 0ms.
+2021-02-25 06:24:31,280 [22] DEBUG CachingLogger - Updating QueryAllBySiteId:Plant:12 in cache after Insert, Update or Query from DB.
+2021-02-25 06:24:31,280 [22] DEBUG CachingLogger - Pulling Site:12 from database took 0ms.
+2021-02-25 06:24:31,280 [22] DEBUG CachingLogger - Updating Site:12 in cache after Insert, Update or Query from DB.
+2021-02-25 06:24:31,281 [22] DEBUG CachingLogger - Pulling Role:185 from database took 0ms.
+2021-02-25 06:24:31,281 [22] DEBUG CachingLogger - Updating Role:185 in cache after Insert, Update or Query from DB.
+2021-02-25 06:24:31,281 [22] DEBUG CachingLogger - Pulling QueryAllBySiteId:Plant:12 from database took 0ms.
+2021-02-25 06:24:31,281 [22] DEBUG CachingLogger - Updating QueryAllBySiteId:Plant:12 in cache after Insert, Update or Query from DB.
+2021-02-25 06:24:31,281 [22] DEBUG CachingLogger - Pulling Site:12 from database took 0ms.
+2021-02-25 06:24:31,281 [22] DEBUG CachingLogger - Updating Site:12 in cache after Insert, Update or Query from DB.
+2021-02-25 06:24:31,282 [22] DEBUG CachingLogger - Pulling Role:185 from database took 0ms.
+2021-02-25 06:24:31,282 [22] DEBUG CachingLogger - Updating Role:185 in cache after Insert, Update or Query from DB.
+2021-02-25 06:24:31,283 [22] DEBUG CachingLogger - Pulling QueryAllBySiteId:Plant:12 from database took 0ms.
+2021-02-25 06:24:31,283 [22] DEBUG CachingLogger - Updating QueryAllBySiteId:Plant:12 in cache after Insert, Update or Query from DB.
+2021-02-25 06:24:31,283 [22] DEBUG CachingLogger - Pulling Site:12 from database took 0ms.
+2021-02-25 06:24:31,283 [22] DEBUG CachingLogger - Updating Site:12 in cache after Insert, Update or Query from DB.
+2021-02-25 06:24:31,283 [22] DEBUG CachingLogger - Pulling QueryAllBySiteId:Plant:12 from database took 0ms.
+2021-02-25 06:24:31,283 [22] DEBUG CachingLogger - Updating QueryAllBySiteId:Plant:12 in cache after Insert, Update or Query from DB.
+2021-02-25 06:24:31,283 [22] DEBUG CachingLogger - Pulling Site:12 from database took 0ms.
+2021-02-25 06:24:31,283 [22] DEBUG CachingLogger - Updating Site:12 in cache after Insert, Update or Query from DB.
+2021-02-25 06:24:31,283 [22] DEBUG CachingLogger - Pulling QueryAllBySiteId:Plant:12 from database took 0ms.
+2021-02-25 06:24:31,283 [22] DEBUG CachingLogger - Updating QueryAllBySiteId:Plant:12 in cache after Insert, Update or Query from DB.
+2021-02-25 06:24:31,283 [22] DEBUG CachingLogger - Pulling Site:12 from database took 0ms.
+2021-02-25 06:24:31,283 [22] DEBUG CachingLogger - Updating Site:12 in cache after Insert, Update or Query from DB.
+2021-02-25 06:24:31,284 [22] DEBUG CachingLogger - Pulling Role:185 from database took 0ms.
+2021-02-25 06:24:31,284 [22] DEBUG CachingLogger - Updating Role:185 in cache after Insert, Update or Query from DB.
+2021-02-25 06:24:31,285 [22] DEBUG CachingLogger - Pulling QueryAllBySiteId:Plant:12 from database took 0ms.
+2021-02-25 06:24:31,285 [22] DEBUG CachingLogger - Updating QueryAllBySiteId:Plant:12 in cache after Insert, Update or Query from DB.
+2021-02-25 06:24:31,285 [22] DEBUG CachingLogger - Pulling Site:12 from database took 0ms.
+2021-02-25 06:24:31,285 [22] DEBUG CachingLogger - Updating Site:12 in cache after Insert, Update or Query from DB.
+2021-02-25 06:24:31,285 [22] DEBUG CachingLogger - Pulling QueryAllBySiteId:Plant:12 from database took 0ms.
+2021-02-25 06:24:31,285 [22] DEBUG CachingLogger - Updating QueryAllBySiteId:Plant:12 in cache after Insert, Update or Query from DB.
+2021-02-25 06:24:31,285 [22] DEBUG CachingLogger - Pulling Site:12 from database took 0ms.
+2021-02-25 06:24:31,285 [22] DEBUG CachingLogger - Updating Site:12 in cache after Insert, Update or Query from DB.
+2021-02-25 06:24:31,286 [22] DEBUG CachingLogger - Pulling Role:185 from database took 0ms.
+2021-02-25 06:24:31,286 [22] DEBUG CachingLogger - Updating Role:185 in cache after Insert, Update or Query from DB.
+2021-02-25 06:24:31,287 [22] DEBUG CachingLogger - Pulling QueryAllBySiteId:Plant:12 from database took 0ms.
+2021-02-25 06:24:31,287 [22] DEBUG CachingLogger - Updating QueryAllBySiteId:Plant:12 in cache after Insert, Update or Query from DB.
+2021-02-25 06:24:31,287 [22] DEBUG CachingLogger - Pulling Site:12 from database took 0ms.
+2021-02-25 06:24:31,287 [22] DEBUG CachingLogger - Updating Site:12 in cache after Insert, Update or Query from DB.
+2021-02-25 06:24:31,288 [22] DEBUG CachingLogger - Pulling Role:185 from database took 0ms.
+2021-02-25 06:24:31,288 [22] DEBUG CachingLogger - Updating Role:185 in cache after Insert, Update or Query from DB.
+2021-02-25 06:24:31,288 [22] DEBUG CachingLogger - Pulling QueryAllBySiteId:Plant:12 from database took 0ms.
+2021-02-25 06:24:31,288 [22] DEBUG CachingLogger - Updating QueryAllBySiteId:Plant:12 in cache after Insert, Update or Query from DB.
+2021-02-25 06:24:31,288 [22] DEBUG CachingLogger - Pulling Site:12 from database took 0ms.
+2021-02-25 06:24:31,288 [22] DEBUG CachingLogger - Updating Site:12 in cache after Insert, Update or Query from DB.
+2021-02-25 06:24:31,289 [22] DEBUG CachingLogger - Pulling Role:185 from database took 0ms.
+2021-02-25 06:24:31,289 [22] DEBUG CachingLogger - Updating Role:185 in cache after Insert, Update or Query from DB.
+2021-02-25 06:24:31,289 [22] DEBUG CachingLogger - Pulling QueryAllBySiteId:Plant:12 from database took 0ms.
+2021-02-25 06:24:31,289 [22] DEBUG CachingLogger - Updating QueryAllBySiteId:Plant:12 in cache after Insert, Update or Query from DB.
+2021-02-25 06:24:31,289 [22] DEBUG CachingLogger - Pulling Site:12 from database took 0ms.
+2021-02-25 06:24:31,289 [22] DEBUG CachingLogger - Updating Site:12 in cache after Insert, Update or Query from DB.
+2021-02-25 06:24:31,290 [22] DEBUG CachingLogger - Pulling QueryAllBySiteId:WorkAssignment:12 from database took 298ms.
+2021-02-25 06:24:31,290 [22] DEBUG CachingLogger - Updating QueryAllBySiteId:WorkAssignment:12 in cache after Insert, Update or Query from DB.

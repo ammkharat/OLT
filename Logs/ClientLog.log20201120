@@ -1,0 +1,80 @@
+2020-11-20 06:50:44,309 [16] ERROR ClientLog - The following error log was sent from a client.
+     2020-11-20 06:50:36,344 [1] ERROR Program - An error has occured. Updating your client application may be necessary.
+     
+     The Operator Log Tool will now shut down.
+     System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation. ---> System.ServiceModel.FaultException`1[System.ServiceModel.ExceptionDetail]: An error has occured while executing server operation.
+     Error GUID: 4a557e12-7525-4f42-b76c-a21e4e180cfd
+     Method: Com.Suncor.Olt.Common.Domain.SiteConfiguration QueryBySiteId(Int64)
+     User Information: [User:12492] [Shift:] [ClientUri:net.tcp://10.9.21.6:9771/]
+     Input[0]: Type:Int64 - 13
+     Exception Information: System.InvalidCastException: Specified cast is not valid.
+        at Com.Suncor.Olt.Remote.DataAccess.SqlDataReaderExtensions.Get[T](IDataRecord dataRecord, String columnName) in c:\code\windows\csc\OLT\trunk\src\RemoteApp\App\DataAccess\SqlDataReaderExtensions.cs:line 27
+        at Com.Suncor.Olt.Remote.DataAccess.Domain.SiteConfigurationDao.PopulateInstance(SqlDataReader reader) in c:\code\windows\csc\OLT\trunk\src\RemoteApp\App\DataAccess\Domain\SiteConfigurationDao.cs:line 695
+        at Com.Suncor.Olt.Remote.DataAccess.SqlCommandExtensions.ExecuteCommandForSingleResult[T](SqlCommand command, PopulateInstance`1 populateHandler) in c:\code\windows\csc\OLT\trunk\src\RemoteApp\App\DataAccess\SqlCommandExtensions.cs:line 288
+        at Com.Suncor.Olt.Remote.DataAccess.SqlCommandExtensions.QueryById[T](SqlCommand command, Int64 id, PopulateInstance`1 populateHandler, String storedProcedureName) in c:\code\windows\csc\OLT\trunk\src\RemoteApp\App\DataAccess\SqlCommandExtensions.cs:line 147
+        at Com.Suncor.Olt.Remote.DataAccess.Domain.SiteConfigurationDao.QueryBySiteId(Int64 siteId) in c:\code\windows\csc\OLT\trunk\src\RemoteApp\App\DataAccess\Domain\SiteConfigurationDao.cs:line 57
+        at Castle.Proxies.Invocations.ISiteConfigurationDao_QueryBySiteId.InvokeMethodOnTarget()
+        at Castle.DynamicProxy.AbstractInvocation.Proceed()
+        at Com.Suncor.Olt.Remote.DataAccess.StoredProcDaoInterceptor.RunCommand(SqlConnection sqlConnection, IInvocation invocation) in c:\code\windows\csc\OLT\trunk\src\RemoteApp\App\DataAccess\StoredProcDaoInterceptor.cs:line 61
+        at Com.Suncor.Olt.Remote.DataAccess.StoredProcDaoInterceptor.Intercept(IInvocation invocation) in c:\code\windows\csc\OLT\trunk\src\RemoteApp\App\DataAccess\StoredProcDaoInterceptor.cs:line 27
+        at Castle.DynamicProxy.AbstractInvocation.Proceed()
+        at Com.Suncor.Olt.Remote.DataAccess.StoredProcPerformanceInterceptor.Intercept(IInvocation invocation) in c:\code\windows\csc\OLT\trunk\src\RemoteApp\App\DataAccess\StoredProcPerformanceInterceptor.cs:line 22
+        at Castle.DynamicProxy.AbstractInvocation.Proceed()
+        at Castle.Proxies.ISiteConfigurationDaoProxy.QueryBySiteId(Int64 siteId)
+        at Com.Suncor.Olt.Remote.Services.SiteConfigurationService.QueryBySiteId(Int64 siteId) in c:\code\windows\csc\OLT\trunk\src\RemoteApp\App\Services\SiteConfigurationService.cs:line 73
+        at SyncInvokeQueryBySiteId(Object , Object[] , Object[] )
+        at System.ServiceModel.Dispatcher.SyncMethodInvoker.Invoke(Object instance, Object[] inputs, Object[]& outputs)
+        at Com.Suncor.Olt.Remote.Wcf.ServerOperationInvoker.InvokeWithTransaction(Object instance, Object[] inputs, Object[]& outputs) in c:\code\windows\csc\OLT\trunk\src\RemoteApp\App\Wcf\ServerOperationInvoker.cs:line 181
+        at Com.Suncor.Olt.Remote.Wcf.ServerOperationInvoker.Invoke(Object instance, Object[] inputs, Object[]& outputs) in c:\code\windows\csc\OLT\trunk\src\RemoteApp\App\Wcf\ServerOperationInvoker.cs:line 86
+     
+     Server stack trace: 
+        at System.ServiceModel.Channels.ServiceChannel.ThrowIfFaultUnderstood(Message reply, MessageFault fault, String action, MessageVersion version, FaultConverter faultConverter)
+        at System.ServiceModel.Channels.ServiceChannel.HandleReply(ProxyOperationRuntime operation, ProxyRpc& rpc)
+        at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+        at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+        at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+     
+     Exception rethrown at [0]: 
+        at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+        at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+        at Com.Suncor.Olt.Common.Services.ISiteConfigurationService.QueryBySiteId(Int64 siteId)
+        --- End of inner exception stack trace ---
+        at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor)
+        at System.Reflection.RuntimeMethodInfo.UnsafeInvokeInternal(Object obj, Object[] parameters, Object[] arguments)
+        at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+        at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+        at Com.Suncor.Olt.Common.Wcf.ChannelInterceptor.Intercept(IInvocation invocation) in c:\code\windows\csc\OLT\trunk\src\Common\App\Wcf\ChannelInterceptor.cs:line 26
+        at Castle.DynamicProxy.AbstractInvocation.Proceed()
+        at Castle.Proxies.ISiteConfigurationServiceProxy.QueryBySiteId(Int64 siteId)
+        at Castle.Proxies.Invocations.ISiteConfigurationService_QueryBySiteId.InvokeMethodOnTarget()
+        at Castle.DynamicProxy.AbstractInvocation.Proceed()
+        at Castle.DynamicProxy.StandardInterceptor.PerformProceed(IInvocation invocation)
+        at Castle.DynamicProxy.StandardInterceptor.Intercept(IInvocation invocation)
+        at Castle.DynamicProxy.AbstractInvocation.Proceed()
+        at Castle.Proxies.ISiteConfigurationServiceProxy.QueryBySiteId(Int64 siteId)
+        at Com.Suncor.Olt.Client.Presenters.MainFormPresenter.GetNextFormAfterSignIn() in c:\code\windows\csc\OLT\trunk\src\ClientApp\App\Presenters\MainFormPresenter.cs:line 1223
+        at Com.Suncor.Olt.Client.Presenters.MainFormPresenter.ShowSignInForm(NextForm nextFormOnCancel) in c:\code\windows\csc\OLT\trunk\src\ClientApp\App\Presenters\MainFormPresenter.cs:line 1206
+        at Com.Suncor.Olt.Client.Presenters.MainFormPresenter.ShowLogInForm() in c:\code\windows\csc\OLT\trunk\src\ClientApp\App\Presenters\MainFormPresenter.cs:line 1186
+        at Com.Suncor.Olt.Client.Presenters.MainFormPresenter.ShowNextForm(NextForm nextForm) in c:\code\windows\csc\OLT\trunk\src\ClientApp\App\Presenters\MainFormPresenter.cs:line 214
+        at Com.Suncor.Olt.Client.Presenters.MainFormPresenter.MainForm_Load(Object sender, EventArgs e) in c:\code\windows\csc\OLT\trunk\src\ClientApp\App\Presenters\MainFormPresenter.cs:line 1122
+        at System.EventHandler.Invoke(Object sender, EventArgs e)
+        at System.Windows.Forms.Form.OnLoad(EventArgs e)
+        at System.Windows.Forms.Form.OnCreateControl()
+        at System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+        at System.Windows.Forms.Control.CreateControl()
+        at System.Windows.Forms.Control.WmShowWindow(Message& m)
+        at System.Windows.Forms.Control.WndProc(Message& m)
+        at System.Windows.Forms.Form.WmShowWindow(Message& m)
+        at System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+     
+     Client URI: net.tcp://10.9.21.6:9771/
+     User: [Id:12492] [Name:Superuserse1a1, John [superuserse1a1]]
+     Shift: <null>
+     Site: [Id:13] [Name:Edmonton Pipelines]
+     Role: <null>
+     Assignment: <null>
+     Version: 5.11.65533.0
+     Deployment: -
+     OS Version: Microsoft Windows NT 6.1.7601 Service Pack 1
+     
+     

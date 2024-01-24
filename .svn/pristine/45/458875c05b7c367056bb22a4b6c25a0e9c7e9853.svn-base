@@ -1,0 +1,2160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="openFileDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>140, 17</value>
+  </metadata>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="saveButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="saveButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="saveButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>95, 55</value>
+  </data>
+  <data name="saveButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="saveButton.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="saveButton.Text" xml:space="preserve">
+    <value>Enregistrer</value>
+  </data>
+  <data name="&gt;&gt;saveButton.Name" xml:space="preserve">
+    <value>saveButton</value>
+  </data>
+  <data name="&gt;&gt;saveButton.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltButton, Operator Log Tool, Version=5.9.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;saveButton.Parent" xml:space="preserve">
+    <value>oltGroupBox2</value>
+  </data>
+  <data name="&gt;&gt;saveButton.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="cancelButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="cancelButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="cancelButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>246, 55</value>
+  </data>
+  <data name="cancelButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="cancelButton.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="cancelButton.Text" xml:space="preserve">
+    <value>Fermer</value>
+  </data>
+  <data name="&gt;&gt;cancelButton.Name" xml:space="preserve">
+    <value>cancelButton</value>
+  </data>
+  <data name="&gt;&gt;cancelButton.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltButton, Operator Log Tool, Version=5.9.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;cancelButton.Parent" xml:space="preserve">
+    <value>oltGroupBox2</value>
+  </data>
+  <data name="&gt;&gt;cancelButton.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="oltGroupBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>675, 904</value>
+  </data>
+  <data name="oltGroupBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>331, 100</value>
+  </data>
+  <data name="oltGroupBox2.TabIndex" type="System.Int32, mscorlib">
+    <value>80</value>
+  </data>
+  <data name="&gt;&gt;oltGroupBox2.Name" xml:space="preserve">
+    <value>oltGroupBox2</value>
+  </data>
+  <data name="&gt;&gt;oltGroupBox2.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltGroupBox, Operator Log Tool, Version=5.9.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;oltGroupBox2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;oltGroupBox2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="oltLabel1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="oltLabel1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="oltLabel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>51, 43</value>
+  </data>
+  <data name="oltLabel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>132, 13</value>
+  </data>
+  <data name="oltLabel1.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="oltLabel1.Text" xml:space="preserve">
+    <value>Documents de Référence:</value>
+  </data>
+  <data name="&gt;&gt;oltLabel1.Name" xml:space="preserve">
+    <value>oltLabel1</value>
+  </data>
+  <data name="&gt;&gt;oltLabel1.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Operator Log Tool, Version=5.9.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;oltLabel1.Parent" xml:space="preserve">
+    <value>oltGroupBox1</value>
+  </data>
+  <data name="&gt;&gt;oltLabel1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="configuredDocumentLinkComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>246, 39</value>
+  </data>
+  <data name="configuredDocumentLinkComboBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>269, 21</value>
+  </data>
+  <data name="configuredDocumentLinkComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;configuredDocumentLinkComboBox.Name" xml:space="preserve">
+    <value>configuredDocumentLinkComboBox</value>
+  </data>
+  <data name="&gt;&gt;configuredDocumentLinkComboBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltComboBox, Operator Log Tool, Version=5.9.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;configuredDocumentLinkComboBox.Parent" xml:space="preserve">
+    <value>oltGroupBox1</value>
+  </data>
+  <data name="&gt;&gt;configuredDocumentLinkComboBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="viewConfiguredDocumentLinkButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="viewConfiguredDocumentLinkButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>538, 37</value>
+  </data>
+  <data name="viewConfiguredDocumentLinkButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="viewConfiguredDocumentLinkButton.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="viewConfiguredDocumentLinkButton.Text" xml:space="preserve">
+    <value>Afficher</value>
+  </data>
+  <data name="&gt;&gt;viewConfiguredDocumentLinkButton.Name" xml:space="preserve">
+    <value>viewConfiguredDocumentLinkButton</value>
+  </data>
+  <data name="&gt;&gt;viewConfiguredDocumentLinkButton.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltButton, Operator Log Tool, Version=5.9.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;viewConfiguredDocumentLinkButton.Parent" xml:space="preserve">
+    <value>oltGroupBox1</value>
+  </data>
+  <data name="&gt;&gt;viewConfiguredDocumentLinkButton.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="oltGroupBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 904</value>
+  </data>
+  <data name="oltGroupBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>646, 100</value>
+  </data>
+  <data name="oltGroupBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>79</value>
+  </data>
+  <data name="&gt;&gt;oltGroupBox1.Name" xml:space="preserve">
+    <value>oltGroupBox1</value>
+  </data>
+  <data name="&gt;&gt;oltGroupBox1.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltGroupBox, Operator Log Tool, Version=5.9.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;oltGroupBox1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;oltGroupBox1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="gasTestTestResultsGroupBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gasTestElementInfoTableLayoutPanel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gasTestElementInfoTableLayoutPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>33, 19</value>
+  </data>
+  <data name="gasTestElementInfoTableLayoutPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>897, 357</value>
+  </data>
+  <data name="gasTestElementInfoTableLayoutPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;gasTestElementInfoTableLayoutPanel.Name" xml:space="preserve">
+    <value>gasTestElementInfoTableLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;gasTestElementInfoTableLayoutPanel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.Controls.GasTestElementLayoutPanelMuds, Operator Log Tool, Version=5.9.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;gasTestElementInfoTableLayoutPanel.Parent" xml:space="preserve">
+    <value>gasTestTestResultsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;gasTestElementInfoTableLayoutPanel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="gasTestTestResultsGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 403</value>
+  </data>
+  <data name="gasTestTestResultsGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>997, 398</value>
+  </data>
+  <data name="gasTestTestResultsGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>78</value>
+  </data>
+  <data name="gasTestTestResultsGroupBox.Text" xml:space="preserve">
+    <value>Test Results</value>
+  </data>
+  <data name="&gt;&gt;gasTestTestResultsGroupBox.Name" xml:space="preserve">
+    <value>gasTestTestResultsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;gasTestTestResultsGroupBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltGroupBox, Operator Log Tool, Version=5.9.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;gasTestTestResultsGroupBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;gasTestTestResultsGroupBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="basicInformationGroupBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="oltLabel3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="oltLabel3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="oltLabel3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>637, 21</value>
+  </data>
+  <data name="oltLabel3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 13</value>
+  </data>
+  <data name="oltLabel3.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="oltLabel3.Text" xml:space="preserve">
+    <value>Ref #</value>
+  </data>
+  <data name="&gt;&gt;oltLabel3.Name" xml:space="preserve">
+    <value>oltLabel3</value>
+  </data>
+  <data name="&gt;&gt;oltLabel3.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Operator Log Tool, Version=5.9.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;oltLabel3.Parent" xml:space="preserve">
+    <value>basicInformationGroupBox</value>
+  </data>
+  <data name="&gt;&gt;oltLabel3.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="refNumberTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>676, 17</value>
+  </data>
+  <data name="refNumberTextBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="refNumberTextBox.MaxLength" type="System.Int32, mscorlib">
+    <value>50</value>
+  </data>
+  <data name="refNumberTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>87, 20</value>
+  </data>
+  <data name="refNumberTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="refNumberTextBox.Text" xml:space="preserve">
+    <value>EC</value>
+  </data>
+  <data name="&gt;&gt;refNumberTextBox.Name" xml:space="preserve">
+    <value>refNumberTextBox</value>
+  </data>
+  <data name="&gt;&gt;refNumberTextBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltTextBox, Operator Log Tool, Version=5.9.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;refNumberTextBox.Parent" xml:space="preserve">
+    <value>basicInformationGroupBox</value>
+  </data>
+  <data name="&gt;&gt;refNumberTextBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="preparationCheckBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="preparationCheckBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="preparationCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>536, 19</value>
+  </data>
+  <data name="preparationCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>82, 17</value>
+  </data>
+  <data name="preparationCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="preparationCheckBox.Text" xml:space="preserve">
+    <value>Préparation</value>
+  </data>
+  <data name="&gt;&gt;preparationCheckBox.Name" xml:space="preserve">
+    <value>preparationCheckBox</value>
+  </data>
+  <data name="&gt;&gt;preparationCheckBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltCheckBox, Operator Log Tool, Version=5.9.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;preparationCheckBox.Parent" xml:space="preserve">
+    <value>basicInformationGroupBox</value>
+  </data>
+  <data name="&gt;&gt;preparationCheckBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="oltLabel2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="oltLabel2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="oltLabel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 53</value>
+  </data>
+  <data name="oltLabel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>88, 13</value>
+  </data>
+  <data name="oltLabel2.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="oltLabel2.Text" xml:space="preserve">
+    <value>Poste technique:</value>
+  </data>
+  <data name="&gt;&gt;oltLabel2.Name" xml:space="preserve">
+    <value>oltLabel2</value>
+  </data>
+  <data name="&gt;&gt;oltLabel2.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Operator Log Tool, Version=5.9.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;oltLabel2.Parent" xml:space="preserve">
+    <value>basicInformationGroupBox</value>
+  </data>
+  <data name="&gt;&gt;oltLabel2.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="functionalLocationTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>98, 49</value>
+  </data>
+  <data name="functionalLocationTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>274, 20</value>
+  </data>
+  <data name="functionalLocationTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;functionalLocationTextBox.Name" xml:space="preserve">
+    <value>functionalLocationTextBox</value>
+  </data>
+  <data name="&gt;&gt;functionalLocationTextBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltTextBox, Operator Log Tool, Version=5.9.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;functionalLocationTextBox.Parent" xml:space="preserve">
+    <value>basicInformationGroupBox</value>
+  </data>
+  <data name="&gt;&gt;functionalLocationTextBox.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="functionalLocationBrowseButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="functionalLocationBrowseButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>377, 48</value>
+  </data>
+  <data name="functionalLocationBrowseButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="functionalLocationBrowseButton.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="functionalLocationBrowseButton.Text" xml:space="preserve">
+    <value>&amp;Parcourir...</value>
+  </data>
+  <data name="&gt;&gt;functionalLocationBrowseButton.Name" xml:space="preserve">
+    <value>functionalLocationBrowseButton</value>
+  </data>
+  <data name="&gt;&gt;functionalLocationBrowseButton.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltButton, Operator Log Tool, Version=5.9.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;functionalLocationBrowseButton.Parent" xml:space="preserve">
+    <value>basicInformationGroupBox</value>
+  </data>
+  <data name="&gt;&gt;functionalLocationBrowseButton.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="oltLabel6.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="oltLabel6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="oltLabel6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>294, 21</value>
+  </data>
+  <data name="oltLabel6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>13, 13</value>
+  </data>
+  <data name="oltLabel6.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="oltLabel6.Text" xml:space="preserve">
+    <value>à</value>
+  </data>
+  <data name="&gt;&gt;oltLabel6.Name" xml:space="preserve">
+    <value>oltLabel6</value>
+  </data>
+  <data name="&gt;&gt;oltLabel6.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Operator Log Tool, Version=5.9.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;oltLabel6.Parent" xml:space="preserve">
+    <value>basicInformationGroupBox</value>
+  </data>
+  <data name="&gt;&gt;oltLabel6.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="oltLabel5.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="oltLabel5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="oltLabel5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>45, 21</value>
+  </data>
+  <data name="oltLabel5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 13</value>
+  </data>
+  <data name="oltLabel5.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="oltLabel5.Text" xml:space="preserve">
+    <value>Valide du</value>
+  </data>
+  <data name="&gt;&gt;oltLabel5.Name" xml:space="preserve">
+    <value>oltLabel5</value>
+  </data>
+  <data name="&gt;&gt;oltLabel5.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Operator Log Tool, Version=5.9.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;oltLabel5.Parent" xml:space="preserve">
+    <value>basicInformationGroupBox</value>
+  </data>
+  <data name="&gt;&gt;oltLabel5.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="endTimePicker.Location" type="System.Drawing.Point, System.Drawing">
+    <value>453, 17</value>
+  </data>
+  <data name="endTimePicker.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="endTimePicker.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 21</value>
+  </data>
+  <data name="endTimePicker.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;endTimePicker.Name" xml:space="preserve">
+    <value>endTimePicker</value>
+  </data>
+  <data name="&gt;&gt;endTimePicker.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltTimePicker, Operator Log Tool, Version=5.9.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;endTimePicker.Parent" xml:space="preserve">
+    <value>basicInformationGroupBox</value>
+  </data>
+  <data name="&gt;&gt;endTimePicker.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="endDatePicker.Location" type="System.Drawing.Point, System.Drawing">
+    <value>323, 17</value>
+  </data>
+  <data name="endDatePicker.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="endDatePicker.Size" type="System.Drawing.Size, System.Drawing">
+    <value>126, 21</value>
+  </data>
+  <data name="endDatePicker.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;endDatePicker.Name" xml:space="preserve">
+    <value>endDatePicker</value>
+  </data>
+  <data name="&gt;&gt;endDatePicker.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltDatePicker, Operator Log Tool, Version=5.9.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;endDatePicker.Parent" xml:space="preserve">
+    <value>basicInformationGroupBox</value>
+  </data>
+  <data name="&gt;&gt;endDatePicker.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="startTimePicker.Location" type="System.Drawing.Point, System.Drawing">
+    <value>219, 17</value>
+  </data>
+  <data name="startTimePicker.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="startTimePicker.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 21</value>
+  </data>
+  <data name="startTimePicker.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;startTimePicker.Name" xml:space="preserve">
+    <value>startTimePicker</value>
+  </data>
+  <data name="&gt;&gt;startTimePicker.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltTimePicker, Operator Log Tool, Version=5.9.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;startTimePicker.Parent" xml:space="preserve">
+    <value>basicInformationGroupBox</value>
+  </data>
+  <data name="&gt;&gt;startTimePicker.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="startDatePicker.Location" type="System.Drawing.Point, System.Drawing">
+    <value>98, 17</value>
+  </data>
+  <data name="startDatePicker.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="startDatePicker.Size" type="System.Drawing.Size, System.Drawing">
+    <value>118, 21</value>
+  </data>
+  <data name="startDatePicker.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;startDatePicker.Name" xml:space="preserve">
+    <value>startDatePicker</value>
+  </data>
+  <data name="&gt;&gt;startDatePicker.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltDatePicker, Operator Log Tool, Version=5.9.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;startDatePicker.Parent" xml:space="preserve">
+    <value>basicInformationGroupBox</value>
+  </data>
+  <data name="&gt;&gt;startDatePicker.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="basicInformationGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 12</value>
+  </data>
+  <data name="basicInformationGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>995, 83</value>
+  </data>
+  <data name="basicInformationGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="basicInformationGroupBox.Text" xml:space="preserve">
+    <value>Informations de base</value>
+  </data>
+  <data name="&gt;&gt;basicInformationGroupBox.Name" xml:space="preserve">
+    <value>basicInformationGroupBox</value>
+  </data>
+  <data name="&gt;&gt;basicInformationGroupBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltGroupBox, Operator Log Tool, Version=5.9.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;basicInformationGroupBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;basicInformationGroupBox.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="conditionsGroupBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="pssPath.Location" type="System.Drawing.Point, System.Drawing">
+    <value>159, 129</value>
+  </data>
+  <data name="pssPath.MaxLength" type="System.Int32, mscorlib">
+    <value>60</value>
+  </data>
+  <data name="pssPath.Size" type="System.Drawing.Size, System.Drawing">
+    <value>409, 20</value>
+  </data>
+  <data name="pssPath.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="pssPath.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;pssPath.Name" xml:space="preserve">
+    <value>pssPath</value>
+  </data>
+  <data name="&gt;&gt;pssPath.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltTextBox, Operator Log Tool, Version=5.9.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;pssPath.Parent" xml:space="preserve">
+    <value>conditionsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;pssPath.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="viewPSSLinkButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="viewPSSLinkButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>571, 127</value>
+  </data>
+  <data name="viewPSSLinkButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 22</value>
+  </data>
+  <data name="viewPSSLinkButton.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="viewPSSLinkButton.Text" xml:space="preserve">
+    <value>Afficher</value>
+  </data>
+  <data name="viewPSSLinkButton.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;viewPSSLinkButton.Name" xml:space="preserve">
+    <value>viewPSSLinkButton</value>
+  </data>
+  <data name="&gt;&gt;viewPSSLinkButton.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltButton, Operator Log Tool, Version=5.9.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;viewPSSLinkButton.Parent" xml:space="preserve">
+    <value>conditionsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;viewPSSLinkButton.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="purgeBooleanControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 111</value>
+  </data>
+  <data name="purgeBooleanControl.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="purgeBooleanControl.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>100, 17</value>
+  </data>
+  <data name="purgeBooleanControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 17</value>
+  </data>
+  <data name="purgeBooleanControl.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
+  </data>
+  <data name="&gt;&gt;purgeBooleanControl.Name" xml:space="preserve">
+    <value>purgeBooleanControl</value>
+  </data>
+  <data name="&gt;&gt;purgeBooleanControl.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.Controls.Template.TemplatableBooleanControl, Operator Log Tool, Version=5.9.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;purgeBooleanControl.Parent" xml:space="preserve">
+    <value>conditionsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;purgeBooleanControl.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="ventillationBooleanControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>652, 30</value>
+  </data>
+  <data name="ventillationBooleanControl.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="ventillationBooleanControl.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>100, 17</value>
+  </data>
+  <data name="ventillationBooleanControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>199, 17</value>
+  </data>
+  <data name="ventillationBooleanControl.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="&gt;&gt;ventillationBooleanControl.Name" xml:space="preserve">
+    <value>ventillationBooleanControl</value>
+  </data>
+  <data name="&gt;&gt;ventillationBooleanControl.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.Controls.Template.TemplatableBooleanControl, Operator Log Tool, Version=5.9.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;ventillationBooleanControl.Parent" xml:space="preserve">
+    <value>conditionsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;ventillationBooleanControl.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="harnisBooleanControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>652, 96</value>
+  </data>
+  <data name="harnisBooleanControl.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="harnisBooleanControl.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>100, 17</value>
+  </data>
+  <data name="harnisBooleanControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>145, 17</value>
+  </data>
+  <data name="harnisBooleanControl.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="&gt;&gt;harnisBooleanControl.Name" xml:space="preserve">
+    <value>harnisBooleanControl</value>
+  </data>
+  <data name="&gt;&gt;harnisBooleanControl.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.Controls.Template.TemplatableBooleanControl, Operator Log Tool, Version=5.9.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;harnisBooleanControl.Parent" xml:space="preserve">
+    <value>conditionsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;harnisBooleanControl.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="ventilationForceBooleanControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>652, 52</value>
+  </data>
+  <data name="ventilationForceBooleanControl.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="ventilationForceBooleanControl.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>100, 17</value>
+  </data>
+  <data name="ventilationForceBooleanControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>204, 17</value>
+  </data>
+  <data name="ventilationForceBooleanControl.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="&gt;&gt;ventilationForceBooleanControl.Name" xml:space="preserve">
+    <value>ventilationForceBooleanControl</value>
+  </data>
+  <data name="&gt;&gt;ventilationForceBooleanControl.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.Controls.Template.TemplatableBooleanControl, Operator Log Tool, Version=5.9.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;ventilationForceBooleanControl.Parent" xml:space="preserve">
+    <value>conditionsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;ventilationForceBooleanControl.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="pssBooleanControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 132</value>
+  </data>
+  <data name="pssBooleanControl.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="pssBooleanControl.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>100, 17</value>
+  </data>
+  <data name="pssBooleanControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>150, 17</value>
+  </data>
+  <data name="pssBooleanControl.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="&gt;&gt;pssBooleanControl.Name" xml:space="preserve">
+    <value>pssBooleanControl</value>
+  </data>
+  <data name="&gt;&gt;pssBooleanControl.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.Controls.Template.TemplatableBooleanControl, Operator Log Tool, Version=5.9.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;pssBooleanControl.Parent" xml:space="preserve">
+    <value>conditionsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;pssBooleanControl.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="dessinsBooleanControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>330, 56</value>
+  </data>
+  <data name="dessinsBooleanControl.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="dessinsBooleanControl.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>100, 17</value>
+  </data>
+  <data name="dessinsBooleanControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>145, 17</value>
+  </data>
+  <data name="dessinsBooleanControl.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="&gt;&gt;dessinsBooleanControl.Name" xml:space="preserve">
+    <value>dessinsBooleanControl</value>
+  </data>
+  <data name="&gt;&gt;dessinsBooleanControl.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.Controls.Template.TemplatableBooleanControl, Operator Log Tool, Version=5.9.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;dessinsBooleanControl.Parent" xml:space="preserve">
+    <value>conditionsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;dessinsBooleanControl.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="videBooleanControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>330, 36</value>
+  </data>
+  <data name="videBooleanControl.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="videBooleanControl.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>100, 17</value>
+  </data>
+  <data name="videBooleanControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>204, 17</value>
+  </data>
+  <data name="videBooleanControl.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="&gt;&gt;videBooleanControl.Name" xml:space="preserve">
+    <value>videBooleanControl</value>
+  </data>
+  <data name="&gt;&gt;videBooleanControl.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.Controls.Template.TemplatableBooleanControl, Operator Log Tool, Version=5.9.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;videBooleanControl.Parent" xml:space="preserve">
+    <value>conditionsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;videBooleanControl.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="detectionGazBooleanControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>330, 77</value>
+  </data>
+  <data name="detectionGazBooleanControl.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="detectionGazBooleanControl.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>100, 17</value>
+  </data>
+  <data name="detectionGazBooleanControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 17</value>
+  </data>
+  <data name="detectionGazBooleanControl.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="&gt;&gt;detectionGazBooleanControl.Name" xml:space="preserve">
+    <value>detectionGazBooleanControl</value>
+  </data>
+  <data name="&gt;&gt;detectionGazBooleanControl.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.Controls.Template.TemplatableBooleanControl, Operator Log Tool, Version=5.9.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;detectionGazBooleanControl.Parent" xml:space="preserve">
+    <value>conditionsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;detectionGazBooleanControl.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="depressuriseBooleanControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 23</value>
+  </data>
+  <data name="depressuriseBooleanControl.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="depressuriseBooleanControl.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>100, 17</value>
+  </data>
+  <data name="depressuriseBooleanControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>199, 17</value>
+  </data>
+  <data name="depressuriseBooleanControl.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;depressuriseBooleanControl.Name" xml:space="preserve">
+    <value>depressuriseBooleanControl</value>
+  </data>
+  <data name="&gt;&gt;depressuriseBooleanControl.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.Controls.Template.TemplatableBooleanControl, Operator Log Tool, Version=5.9.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;depressuriseBooleanControl.Parent" xml:space="preserve">
+    <value>conditionsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;depressuriseBooleanControl.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="obtureBooleanControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 67</value>
+  </data>
+  <data name="obtureBooleanControl.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="obtureBooleanControl.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>100, 17</value>
+  </data>
+  <data name="obtureBooleanControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>145, 17</value>
+  </data>
+  <data name="obtureBooleanControl.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;obtureBooleanControl.Name" xml:space="preserve">
+    <value>obtureBooleanControl</value>
+  </data>
+  <data name="&gt;&gt;obtureBooleanControl.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.Controls.Template.TemplatableBooleanControl, Operator Log Tool, Version=5.9.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;obtureBooleanControl.Parent" xml:space="preserve">
+    <value>conditionsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;obtureBooleanControl.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="rinceBooleanControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 45</value>
+  </data>
+  <data name="rinceBooleanControl.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="rinceBooleanControl.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>100, 17</value>
+  </data>
+  <data name="rinceBooleanControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>204, 17</value>
+  </data>
+  <data name="rinceBooleanControl.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;rinceBooleanControl.Name" xml:space="preserve">
+    <value>rinceBooleanControl</value>
+  </data>
+  <data name="&gt;&gt;rinceBooleanControl.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.Controls.Template.TemplatableBooleanControl, Operator Log Tool, Version=5.9.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;rinceBooleanControl.Parent" xml:space="preserve">
+    <value>conditionsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;rinceBooleanControl.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="nettoyesBooleanControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 89</value>
+  </data>
+  <data name="nettoyesBooleanControl.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="nettoyesBooleanControl.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>100, 17</value>
+  </data>
+  <data name="nettoyesBooleanControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 17</value>
+  </data>
+  <data name="nettoyesBooleanControl.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;nettoyesBooleanControl.Name" xml:space="preserve">
+    <value>nettoyesBooleanControl</value>
+  </data>
+  <data name="&gt;&gt;nettoyesBooleanControl.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.Controls.Template.TemplatableBooleanControl, Operator Log Tool, Version=5.9.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;nettoyesBooleanControl.Parent" xml:space="preserve">
+    <value>conditionsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;nettoyesBooleanControl.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="ventilationNaturelleBooleanControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>652, 242</value>
+  </data>
+  <data name="ventilationNaturelleBooleanControl.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="ventilationNaturelleBooleanControl.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>100, 17</value>
+  </data>
+  <data name="ventilationNaturelleBooleanControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>136, 17</value>
+  </data>
+  <data name="ventilationNaturelleBooleanControl.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;ventilationNaturelleBooleanControl.Name" xml:space="preserve">
+    <value>ventilationNaturelleBooleanControl</value>
+  </data>
+  <data name="&gt;&gt;ventilationNaturelleBooleanControl.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.Controls.Template.TemplatableBooleanControl, Operator Log Tool, Version=5.9.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;ventilationNaturelleBooleanControl.Parent" xml:space="preserve">
+    <value>conditionsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;ventilationNaturelleBooleanControl.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="bouchesDegoutProtegeesBooleanControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>652, 198</value>
+  </data>
+  <data name="bouchesDegoutProtegeesBooleanControl.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="bouchesDegoutProtegeesBooleanControl.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>100, 17</value>
+  </data>
+  <data name="bouchesDegoutProtegeesBooleanControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>199, 17</value>
+  </data>
+  <data name="bouchesDegoutProtegeesBooleanControl.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;bouchesDegoutProtegeesBooleanControl.Name" xml:space="preserve">
+    <value>bouchesDegoutProtegeesBooleanControl</value>
+  </data>
+  <data name="&gt;&gt;bouchesDegoutProtegeesBooleanControl.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.Controls.Template.TemplatableBooleanControl, Operator Log Tool, Version=5.9.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;bouchesDegoutProtegeesBooleanControl.Parent" xml:space="preserve">
+    <value>conditionsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;bouchesDegoutProtegeesBooleanControl.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="ventilationMecaniqueBooleanControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>330, 266</value>
+  </data>
+  <data name="ventilationMecaniqueBooleanControl.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="ventilationMecaniqueBooleanControl.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>100, 17</value>
+  </data>
+  <data name="ventilationMecaniqueBooleanControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>150, 17</value>
+  </data>
+  <data name="ventilationMecaniqueBooleanControl.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;ventilationMecaniqueBooleanControl.Name" xml:space="preserve">
+    <value>ventilationMecaniqueBooleanControl</value>
+  </data>
+  <data name="&gt;&gt;ventilationMecaniqueBooleanControl.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.Controls.Template.TemplatableBooleanControl, Operator Log Tool, Version=5.9.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;ventilationMecaniqueBooleanControl.Parent" xml:space="preserve">
+    <value>conditionsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;ventilationMecaniqueBooleanControl.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="planDeSauvetageBooleanControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 286</value>
+  </data>
+  <data name="planDeSauvetageBooleanControl.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="planDeSauvetageBooleanControl.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>100, 17</value>
+  </data>
+  <data name="planDeSauvetageBooleanControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>117, 17</value>
+  </data>
+  <data name="planDeSauvetageBooleanControl.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;planDeSauvetageBooleanControl.Name" xml:space="preserve">
+    <value>planDeSauvetageBooleanControl</value>
+  </data>
+  <data name="&gt;&gt;planDeSauvetageBooleanControl.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.Controls.Template.TemplatableBooleanControl, Operator Log Tool, Version=5.9.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;planDeSauvetageBooleanControl.Parent" xml:space="preserve">
+    <value>conditionsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;planDeSauvetageBooleanControl.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="autresConditionsDropDownControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>330, 99</value>
+  </data>
+  <data name="autresConditionsDropDownControl.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="autresConditionsDropDownControl.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>226, 22</value>
+  </data>
+  <data name="autresConditionsDropDownControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>238, 22</value>
+  </data>
+  <data name="autresConditionsDropDownControl.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;autresConditionsDropDownControl.Name" xml:space="preserve">
+    <value>autresConditionsDropDownControl</value>
+  </data>
+  <data name="&gt;&gt;autresConditionsDropDownControl.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.Controls.Template.TemplatableDropDownControl, Operator Log Tool, Version=5.9.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;autresConditionsDropDownControl.Parent" xml:space="preserve">
+    <value>conditionsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;autresConditionsDropDownControl.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="dessinsRequisStringControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>652, 73</value>
+  </data>
+  <data name="dessinsRequisStringControl.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="dessinsRequisStringControl.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>226, 22</value>
+  </data>
+  <data name="dessinsRequisStringControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>305, 22</value>
+  </data>
+  <data name="dessinsRequisStringControl.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;dessinsRequisStringControl.Name" xml:space="preserve">
+    <value>dessinsRequisStringControl</value>
+  </data>
+  <data name="&gt;&gt;dessinsRequisStringControl.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.Controls.Template.TemplatableStringControl, Operator Log Tool, Version=5.9.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;dessinsRequisStringControl.Parent" xml:space="preserve">
+    <value>conditionsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;dessinsRequisStringControl.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="cablesChauffantsMisHorsTensionBooleanControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>330, 176</value>
+  </data>
+  <data name="cablesChauffantsMisHorsTensionBooleanControl.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="cablesChauffantsMisHorsTensionBooleanControl.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>100, 17</value>
+  </data>
+  <data name="cablesChauffantsMisHorsTensionBooleanControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>199, 17</value>
+  </data>
+  <data name="cablesChauffantsMisHorsTensionBooleanControl.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;cablesChauffantsMisHorsTensionBooleanControl.Name" xml:space="preserve">
+    <value>cablesChauffantsMisHorsTensionBooleanControl</value>
+  </data>
+  <data name="&gt;&gt;cablesChauffantsMisHorsTensionBooleanControl.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.Controls.Template.TemplatableBooleanControl, Operator Log Tool, Version=5.9.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;cablesChauffantsMisHorsTensionBooleanControl.Parent" xml:space="preserve">
+    <value>conditionsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;cablesChauffantsMisHorsTensionBooleanControl.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="purgeParGazInerteBooleanControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>330, 220</value>
+  </data>
+  <data name="purgeParGazInerteBooleanControl.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="purgeParGazInerteBooleanControl.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>100, 17</value>
+  </data>
+  <data name="purgeParGazInerteBooleanControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>145, 17</value>
+  </data>
+  <data name="purgeParGazInerteBooleanControl.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;purgeParGazInerteBooleanControl.Name" xml:space="preserve">
+    <value>purgeParGazInerteBooleanControl</value>
+  </data>
+  <data name="&gt;&gt;purgeParGazInerteBooleanControl.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.Controls.Template.TemplatableBooleanControl, Operator Log Tool, Version=5.9.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;purgeParGazInerteBooleanControl.Parent" xml:space="preserve">
+    <value>conditionsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;purgeParGazInerteBooleanControl.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="obtureOuDeBrancheBooleanControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 198</value>
+  </data>
+  <data name="obtureOuDeBrancheBooleanControl.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="obtureOuDeBrancheBooleanControl.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>100, 17</value>
+  </data>
+  <data name="obtureOuDeBrancheBooleanControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>135, 17</value>
+  </data>
+  <data name="obtureOuDeBrancheBooleanControl.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;obtureOuDeBrancheBooleanControl.Name" xml:space="preserve">
+    <value>obtureOuDeBrancheBooleanControl</value>
+  </data>
+  <data name="&gt;&gt;obtureOuDeBrancheBooleanControl.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.Controls.Template.TemplatableBooleanControl, Operator Log Tool, Version=5.9.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;obtureOuDeBrancheBooleanControl.Parent" xml:space="preserve">
+    <value>conditionsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;obtureOuDeBrancheBooleanControl.ZOrder" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="interrupteursElectriquesVerrouillesBooleanControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>330, 198</value>
+  </data>
+  <data name="interrupteursElectriquesVerrouillesBooleanControl.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="interrupteursElectriquesVerrouillesBooleanControl.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>100, 17</value>
+  </data>
+  <data name="interrupteursElectriquesVerrouillesBooleanControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>204, 17</value>
+  </data>
+  <data name="interrupteursElectriquesVerrouillesBooleanControl.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;interrupteursElectriquesVerrouillesBooleanControl.Name" xml:space="preserve">
+    <value>interrupteursElectriquesVerrouillesBooleanControl</value>
+  </data>
+  <data name="&gt;&gt;interrupteursElectriquesVerrouillesBooleanControl.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.Controls.Template.TemplatableBooleanControl, Operator Log Tool, Version=5.9.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;interrupteursElectriquesVerrouillesBooleanControl.Parent" xml:space="preserve">
+    <value>conditionsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;interrupteursElectriquesVerrouillesBooleanControl.ZOrder" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="depressuriseEtVidangeBooleanControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 220</value>
+  </data>
+  <data name="depressuriseEtVidangeBooleanControl.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="depressuriseEtVidangeBooleanControl.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>100, 17</value>
+  </data>
+  <data name="depressuriseEtVidangeBooleanControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>148, 17</value>
+  </data>
+  <data name="depressuriseEtVidangeBooleanControl.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;depressuriseEtVidangeBooleanControl.Name" xml:space="preserve">
+    <value>depressuriseEtVidangeBooleanControl</value>
+  </data>
+  <data name="&gt;&gt;depressuriseEtVidangeBooleanControl.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.Controls.Template.TemplatableBooleanControl, Operator Log Tool, Version=5.9.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;depressuriseEtVidangeBooleanControl.Parent" xml:space="preserve">
+    <value>conditionsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;depressuriseEtVidangeBooleanControl.ZOrder" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="enPresenceDeGazInerteBooleanControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 242</value>
+  </data>
+  <data name="enPresenceDeGazInerteBooleanControl.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="enPresenceDeGazInerteBooleanControl.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>100, 17</value>
+  </data>
+  <data name="enPresenceDeGazInerteBooleanControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>157, 17</value>
+  </data>
+  <data name="enPresenceDeGazInerteBooleanControl.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;enPresenceDeGazInerteBooleanControl.Name" xml:space="preserve">
+    <value>enPresenceDeGazInerteBooleanControl</value>
+  </data>
+  <data name="&gt;&gt;enPresenceDeGazInerteBooleanControl.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.Controls.Template.TemplatableBooleanControl, Operator Log Tool, Version=5.9.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;enPresenceDeGazInerteBooleanControl.Parent" xml:space="preserve">
+    <value>conditionsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;enPresenceDeGazInerteBooleanControl.ZOrder" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="purgeAlaVapeurBooleanControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 264</value>
+  </data>
+  <data name="purgeAlaVapeurBooleanControl.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="purgeAlaVapeurBooleanControl.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>100, 17</value>
+  </data>
+  <data name="purgeAlaVapeurBooleanControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>117, 17</value>
+  </data>
+  <data name="purgeAlaVapeurBooleanControl.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;purgeAlaVapeurBooleanControl.Name" xml:space="preserve">
+    <value>purgeAlaVapeurBooleanControl</value>
+  </data>
+  <data name="&gt;&gt;purgeAlaVapeurBooleanControl.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.Controls.Template.TemplatableBooleanControl, Operator Log Tool, Version=5.9.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;purgeAlaVapeurBooleanControl.Parent" xml:space="preserve">
+    <value>conditionsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;purgeAlaVapeurBooleanControl.ZOrder" xml:space="preserve">
+    <value>26</value>
+  </data>
+  <data name="possibiliteDeSulfuredeFerBooleanControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>652, 220</value>
+  </data>
+  <data name="possibiliteDeSulfuredeFerBooleanControl.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="possibiliteDeSulfuredeFerBooleanControl.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>100, 17</value>
+  </data>
+  <data name="possibiliteDeSulfuredeFerBooleanControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>161, 17</value>
+  </data>
+  <data name="possibiliteDeSulfuredeFerBooleanControl.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;possibiliteDeSulfuredeFerBooleanControl.Name" xml:space="preserve">
+    <value>possibiliteDeSulfuredeFerBooleanControl</value>
+  </data>
+  <data name="&gt;&gt;possibiliteDeSulfuredeFerBooleanControl.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.Controls.Template.TemplatableBooleanControl, Operator Log Tool, Version=5.9.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;possibiliteDeSulfuredeFerBooleanControl.Parent" xml:space="preserve">
+    <value>conditionsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;possibiliteDeSulfuredeFerBooleanControl.ZOrder" xml:space="preserve">
+    <value>27</value>
+  </data>
+  <data name="aereBooleanControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>330, 17</value>
+  </data>
+  <data name="aereBooleanControl.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="aereBooleanControl.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>100, 17</value>
+  </data>
+  <data name="aereBooleanControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>182, 17</value>
+  </data>
+  <data name="aereBooleanControl.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;aereBooleanControl.Name" xml:space="preserve">
+    <value>aereBooleanControl</value>
+  </data>
+  <data name="&gt;&gt;aereBooleanControl.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.Controls.Template.TemplatableBooleanControl, Operator Log Tool, Version=5.9.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;aereBooleanControl.Parent" xml:space="preserve">
+    <value>conditionsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;aereBooleanControl.ZOrder" xml:space="preserve">
+    <value>28</value>
+  </data>
+  <data name="rinceAlEauBooleanControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>330, 242</value>
+  </data>
+  <data name="rinceAlEauBooleanControl.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="rinceAlEauBooleanControl.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>100, 17</value>
+  </data>
+  <data name="rinceAlEauBooleanControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 17</value>
+  </data>
+  <data name="rinceAlEauBooleanControl.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;rinceAlEauBooleanControl.Name" xml:space="preserve">
+    <value>rinceAlEauBooleanControl</value>
+  </data>
+  <data name="&gt;&gt;rinceAlEauBooleanControl.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.Controls.Template.TemplatableBooleanControl, Operator Log Tool, Version=5.9.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;rinceAlEauBooleanControl.Parent" xml:space="preserve">
+    <value>conditionsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;rinceAlEauBooleanControl.ZOrder" xml:space="preserve">
+    <value>29</value>
+  </data>
+  <data name="conditionsGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 227</value>
+  </data>
+  <data name="conditionsGroupBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="conditionsGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>997, 161</value>
+  </data>
+  <data name="conditionsGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="conditionsGroupBox.Text" xml:space="preserve">
+    <value>CONDITIONS AUTORISÉS</value>
+  </data>
+  <data name="&gt;&gt;conditionsGroupBox.Name" xml:space="preserve">
+    <value>conditionsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;conditionsGroupBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltGroupBox, Operator Log Tool, Version=5.9.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;conditionsGroupBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;conditionsGroupBox.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="specialPrecautionsOrConsiderationsGroupBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="instructionsSpecialesTextBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="instructionsSpecialesTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 19</value>
+  </data>
+  <data name="instructionsSpecialesTextBox.MaxLength" type="System.Int32, mscorlib">
+    <value>500</value>
+  </data>
+  <data name="instructionsSpecialesTextBox.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="instructionsSpecialesTextBox.ScrollBars" type="System.Windows.Forms.ScrollBars, System.Windows.Forms">
+    <value>Vertical</value>
+  </data>
+  <data name="instructionsSpecialesTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>987, 58</value>
+  </data>
+  <data name="instructionsSpecialesTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;instructionsSpecialesTextBox.Name" xml:space="preserve">
+    <value>instructionsSpecialesTextBox</value>
+  </data>
+  <data name="&gt;&gt;instructionsSpecialesTextBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltTextBox, Operator Log Tool, Version=5.9.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;instructionsSpecialesTextBox.Parent" xml:space="preserve">
+    <value>specialPrecautionsOrConsiderationsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;instructionsSpecialesTextBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="specialPrecautionsOrConsiderationsGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 816</value>
+  </data>
+  <data name="specialPrecautionsOrConsiderationsGroupBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="specialPrecautionsOrConsiderationsGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>997, 85</value>
+  </data>
+  <data name="specialPrecautionsOrConsiderationsGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="specialPrecautionsOrConsiderationsGroupBox.Text" xml:space="preserve">
+    <value>Instructions spéciales</value>
+  </data>
+  <data name="&gt;&gt;specialPrecautionsOrConsiderationsGroupBox.Name" xml:space="preserve">
+    <value>specialPrecautionsOrConsiderationsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;specialPrecautionsOrConsiderationsGroupBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltGroupBox, Operator Log Tool, Version=5.9.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;specialPrecautionsOrConsiderationsGroupBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;specialPrecautionsOrConsiderationsGroupBox.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="substancesNormalementGroupBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="bacteriesBooleanControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>879, 38</value>
+  </data>
+  <data name="bacteriesBooleanControl.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="bacteriesBooleanControl.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>100, 17</value>
+  </data>
+  <data name="bacteriesBooleanControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 17</value>
+  </data>
+  <data name="bacteriesBooleanControl.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;bacteriesBooleanControl.Name" xml:space="preserve">
+    <value>bacteriesBooleanControl</value>
+  </data>
+  <data name="&gt;&gt;bacteriesBooleanControl.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.Controls.Template.TemplatableBooleanControl, Operator Log Tool, Version=5.9.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;bacteriesBooleanControl.Parent" xml:space="preserve">
+    <value>substancesNormalementGroupBox</value>
+  </data>
+  <data name="&gt;&gt;bacteriesBooleanControl.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="amianteBooleanControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>879, 16</value>
+  </data>
+  <data name="amianteBooleanControl.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="amianteBooleanControl.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>100, 17</value>
+  </data>
+  <data name="amianteBooleanControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 17</value>
+  </data>
+  <data name="amianteBooleanControl.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;amianteBooleanControl.Name" xml:space="preserve">
+    <value>amianteBooleanControl</value>
+  </data>
+  <data name="&gt;&gt;amianteBooleanControl.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.Controls.Template.TemplatableBooleanControl, Operator Log Tool, Version=5.9.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;amianteBooleanControl.Parent" xml:space="preserve">
+    <value>substancesNormalementGroupBox</value>
+  </data>
+  <data name="&gt;&gt;amianteBooleanControl.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="soufreBooleanControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>652, 61</value>
+  </data>
+  <data name="soufreBooleanControl.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="soufreBooleanControl.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>100, 17</value>
+  </data>
+  <data name="soufreBooleanControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 17</value>
+  </data>
+  <data name="soufreBooleanControl.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;soufreBooleanControl.Name" xml:space="preserve">
+    <value>soufreBooleanControl</value>
+  </data>
+  <data name="&gt;&gt;soufreBooleanControl.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.Controls.Template.TemplatableBooleanControl, Operator Log Tool, Version=5.9.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;soufreBooleanControl.Parent" xml:space="preserve">
+    <value>substancesNormalementGroupBox</value>
+  </data>
+  <data name="&gt;&gt;soufreBooleanControl.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="sbsBooleanControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>652, 38</value>
+  </data>
+  <data name="sbsBooleanControl.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="sbsBooleanControl.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>100, 17</value>
+  </data>
+  <data name="sbsBooleanControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 17</value>
+  </data>
+  <data name="sbsBooleanControl.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;sbsBooleanControl.Name" xml:space="preserve">
+    <value>sbsBooleanControl</value>
+  </data>
+  <data name="&gt;&gt;sbsBooleanControl.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.Controls.Template.TemplatableBooleanControl, Operator Log Tool, Version=5.9.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;sbsBooleanControl.Parent" xml:space="preserve">
+    <value>substancesNormalementGroupBox</value>
+  </data>
+  <data name="&gt;&gt;sbsBooleanControl.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="naOhBooleanControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>652, 16</value>
+  </data>
+  <data name="naOhBooleanControl.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="naOhBooleanControl.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>100, 17</value>
+  </data>
+  <data name="naOhBooleanControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>132, 17</value>
+  </data>
+  <data name="naOhBooleanControl.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;naOhBooleanControl.Name" xml:space="preserve">
+    <value>naOhBooleanControl</value>
+  </data>
+  <data name="&gt;&gt;naOhBooleanControl.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.Controls.Template.TemplatableBooleanControl, Operator Log Tool, Version=5.9.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;naOhBooleanControl.Parent" xml:space="preserve">
+    <value>substancesNormalementGroupBox</value>
+  </data>
+  <data name="&gt;&gt;naOhBooleanControl.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="refluxBooleanControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>330, 89</value>
+  </data>
+  <data name="refluxBooleanControl.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="refluxBooleanControl.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>100, 17</value>
+  </data>
+  <data name="refluxBooleanControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 17</value>
+  </data>
+  <data name="refluxBooleanControl.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;refluxBooleanControl.Name" xml:space="preserve">
+    <value>refluxBooleanControl</value>
+  </data>
+  <data name="&gt;&gt;refluxBooleanControl.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.Controls.Template.TemplatableBooleanControl, Operator Log Tool, Version=5.9.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;refluxBooleanControl.Parent" xml:space="preserve">
+    <value>substancesNormalementGroupBox</value>
+  </data>
+  <data name="&gt;&gt;refluxBooleanControl.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="azoteBooleanControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>330, 67</value>
+  </data>
+  <data name="azoteBooleanControl.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="azoteBooleanControl.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>100, 17</value>
+  </data>
+  <data name="azoteBooleanControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 17</value>
+  </data>
+  <data name="azoteBooleanControl.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;azoteBooleanControl.Name" xml:space="preserve">
+    <value>azoteBooleanControl</value>
+  </data>
+  <data name="&gt;&gt;azoteBooleanControl.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.Controls.Template.TemplatableBooleanControl, Operator Log Tool, Version=5.9.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;azoteBooleanControl.Parent" xml:space="preserve">
+    <value>substancesNormalementGroupBox</value>
+  </data>
+  <data name="&gt;&gt;azoteBooleanControl.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="coBooleanControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>330, 22</value>
+  </data>
+  <data name="coBooleanControl.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="coBooleanControl.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>100, 17</value>
+  </data>
+  <data name="coBooleanControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>154, 22</value>
+  </data>
+  <data name="coBooleanControl.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;coBooleanControl.Name" xml:space="preserve">
+    <value>coBooleanControl</value>
+  </data>
+  <data name="&gt;&gt;coBooleanControl.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.Controls.Template.TemplatableBooleanControl, Operator Log Tool, Version=5.9.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;coBooleanControl.Parent" xml:space="preserve">
+    <value>substancesNormalementGroupBox</value>
+  </data>
+  <data name="&gt;&gt;coBooleanControl.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="acidicSFBooleanControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 89</value>
+  </data>
+  <data name="acidicSFBooleanControl.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="acidicSFBooleanControl.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>100, 17</value>
+  </data>
+  <data name="acidicSFBooleanControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>146, 22</value>
+  </data>
+  <data name="acidicSFBooleanControl.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;acidicSFBooleanControl.Name" xml:space="preserve">
+    <value>acidicSFBooleanControl</value>
+  </data>
+  <data name="&gt;&gt;acidicSFBooleanControl.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.Controls.Template.TemplatableBooleanControl, Operator Log Tool, Version=5.9.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;acidicSFBooleanControl.Parent" xml:space="preserve">
+    <value>substancesNormalementGroupBox</value>
+  </data>
+  <data name="&gt;&gt;acidicSFBooleanControl.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="nh3BooleanControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 67</value>
+  </data>
+  <data name="nh3BooleanControl.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="nh3BooleanControl.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>100, 17</value>
+  </data>
+  <data name="nh3BooleanControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>122, 17</value>
+  </data>
+  <data name="nh3BooleanControl.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;nh3BooleanControl.Name" xml:space="preserve">
+    <value>nh3BooleanControl</value>
+  </data>
+  <data name="&gt;&gt;nh3BooleanControl.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.Controls.Template.TemplatableBooleanControl, Operator Log Tool, Version=5.9.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;nh3BooleanControl.Parent" xml:space="preserve">
+    <value>substancesNormalementGroupBox</value>
+  </data>
+  <data name="&gt;&gt;nh3BooleanControl.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="so2BooleanControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 44</value>
+  </data>
+  <data name="so2BooleanControl.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="so2BooleanControl.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>100, 17</value>
+  </data>
+  <data name="so2BooleanControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>144, 17</value>
+  </data>
+  <data name="so2BooleanControl.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;so2BooleanControl.Name" xml:space="preserve">
+    <value>so2BooleanControl</value>
+  </data>
+  <data name="&gt;&gt;so2BooleanControl.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.Controls.Template.TemplatableBooleanControl, Operator Log Tool, Version=5.9.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;so2BooleanControl.Parent" xml:space="preserve">
+    <value>substancesNormalementGroupBox</value>
+  </data>
+  <data name="&gt;&gt;so2BooleanControl.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="autresSubstancesDropDownControl.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="autresSubstancesDropDownControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>652, 83</value>
+  </data>
+  <data name="autresSubstancesDropDownControl.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="autresSubstancesDropDownControl.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>226, 22</value>
+  </data>
+  <data name="autresSubstancesDropDownControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>311, 22</value>
+  </data>
+  <data name="autresSubstancesDropDownControl.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;autresSubstancesDropDownControl.Name" xml:space="preserve">
+    <value>autresSubstancesDropDownControl</value>
+  </data>
+  <data name="&gt;&gt;autresSubstancesDropDownControl.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.Controls.Template.TemplatableDropDownControl, Operator Log Tool, Version=5.9.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;autresSubstancesDropDownControl.Parent" xml:space="preserve">
+    <value>substancesNormalementGroupBox</value>
+  </data>
+  <data name="&gt;&gt;autresSubstancesDropDownControl.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="aromatiqueDropDownControl.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="aromatiqueDropDownControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>297, 129</value>
+  </data>
+  <data name="aromatiqueDropDownControl.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="aromatiqueDropDownControl.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>226, 22</value>
+  </data>
+  <data name="aromatiqueDropDownControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>264, 22</value>
+  </data>
+  <data name="aromatiqueDropDownControl.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;aromatiqueDropDownControl.Name" xml:space="preserve">
+    <value>aromatiqueDropDownControl</value>
+  </data>
+  <data name="&gt;&gt;aromatiqueDropDownControl.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.Controls.Template.TemplatableDropDownControl, Operator Log Tool, Version=5.9.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;aromatiqueDropDownControl.Parent" xml:space="preserve">
+    <value>substancesNormalementGroupBox</value>
+  </data>
+  <data name="&gt;&gt;aromatiqueDropDownControl.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="corrosifDropDownControl.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="corrosifDropDownControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 129</value>
+  </data>
+  <data name="corrosifDropDownControl.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="corrosifDropDownControl.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>226, 22</value>
+  </data>
+  <data name="corrosifDropDownControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>274, 22</value>
+  </data>
+  <data name="corrosifDropDownControl.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;corrosifDropDownControl.Name" xml:space="preserve">
+    <value>corrosifDropDownControl</value>
+  </data>
+  <data name="&gt;&gt;corrosifDropDownControl.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.Controls.Template.TemplatableDropDownControl, Operator Log Tool, Version=5.9.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;corrosifDropDownControl.Parent" xml:space="preserve">
+    <value>substancesNormalementGroupBox</value>
+  </data>
+  <data name="&gt;&gt;corrosifDropDownControl.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="hydrocarbureBooleanControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>330, 44</value>
+  </data>
+  <data name="hydrocarbureBooleanControl.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="hydrocarbureBooleanControl.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>100, 17</value>
+  </data>
+  <data name="hydrocarbureBooleanControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 17</value>
+  </data>
+  <data name="hydrocarbureBooleanControl.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;hydrocarbureBooleanControl.Name" xml:space="preserve">
+    <value>hydrocarbureBooleanControl</value>
+  </data>
+  <data name="&gt;&gt;hydrocarbureBooleanControl.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.Controls.Template.TemplatableBooleanControl, Operator Log Tool, Version=5.9.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;hydrocarbureBooleanControl.Parent" xml:space="preserve">
+    <value>substancesNormalementGroupBox</value>
+  </data>
+  <data name="&gt;&gt;hydrocarbureBooleanControl.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="ammoniaqueBooleanControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>600, 129</value>
+  </data>
+  <data name="ammoniaqueBooleanControl.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="ammoniaqueBooleanControl.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>100, 17</value>
+  </data>
+  <data name="ammoniaqueBooleanControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 17</value>
+  </data>
+  <data name="ammoniaqueBooleanControl.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;ammoniaqueBooleanControl.Name" xml:space="preserve">
+    <value>ammoniaqueBooleanControl</value>
+  </data>
+  <data name="&gt;&gt;ammoniaqueBooleanControl.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.Controls.Template.TemplatableBooleanControl, Operator Log Tool, Version=5.9.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;ammoniaqueBooleanControl.Parent" xml:space="preserve">
+    <value>substancesNormalementGroupBox</value>
+  </data>
+  <data name="&gt;&gt;ammoniaqueBooleanControl.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="h2SBooleanControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 22</value>
+  </data>
+  <data name="h2SBooleanControl.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="h2SBooleanControl.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>100, 17</value>
+  </data>
+  <data name="h2SBooleanControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>155, 17</value>
+  </data>
+  <data name="h2SBooleanControl.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;h2SBooleanControl.Name" xml:space="preserve">
+    <value>h2SBooleanControl</value>
+  </data>
+  <data name="&gt;&gt;h2SBooleanControl.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.Controls.Template.TemplatableBooleanControl, Operator Log Tool, Version=5.9.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;h2SBooleanControl.Parent" xml:space="preserve">
+    <value>substancesNormalementGroupBox</value>
+  </data>
+  <data name="&gt;&gt;h2SBooleanControl.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="substancesNormalementGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 98</value>
+  </data>
+  <data name="substancesNormalementGroupBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="substancesNormalementGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>995, 114</value>
+  </data>
+  <data name="substancesNormalementGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="substancesNormalementGroupBox.Text" xml:space="preserve">
+    <value>SUBSTANCES NORMALEMENT À L’INTÉRIEUR DE L’ÉQUIPEMENT</value>
+  </data>
+  <data name="&gt;&gt;substancesNormalementGroupBox.Name" xml:space="preserve">
+    <value>substancesNormalementGroupBox</value>
+  </data>
+  <data name="&gt;&gt;substancesNormalementGroupBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltGroupBox, Operator Log Tool, Version=5.9.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;substancesNormalementGroupBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;substancesNormalementGroupBox.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <metadata name="errorProvider.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>103</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.AutoScroll" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1063, 665</value>
+  </data>
+  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1020, 38</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterParent</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Espace Clos</value>
+  </data>
+  <data name="&gt;&gt;openFileDialog1.Name" xml:space="preserve">
+    <value>openFileDialog1</value>
+  </data>
+  <data name="&gt;&gt;openFileDialog1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.OpenFileDialog, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;errorProvider.Name" xml:space="preserve">
+    <value>errorProvider</value>
+  </data>
+  <data name="&gt;&gt;errorProvider.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ErrorProvider, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>ConfinedSpaceFormMuds</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.Forms.BaseForm, Operator Log Tool, Version=5.9.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+</root>

@@ -1,0 +1,1041 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="&gt;&gt;minimumUnitLabel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Com.Suncor.Olt.Client, Version=4.11.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="functionalLocationGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>215, 40</value>
+  </data>
+  <data name="thresholdValuesGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>261, 222</value>
+  </data>
+  <data name="tagNameGroupBox.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;summaryLabelLine.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;targetUnitLabel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Com.Suncor.Olt.Client, Version=4.11.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="neverToExceedMinUnitLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>42, 13</value>
+  </data>
+  <data name="&gt;&gt;definitionAuthorGroupBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;maximumUnitLabel.Parent" xml:space="preserve">
+    <value>thresholdValuesGroupBox</value>
+  </data>
+  <data name="neverToExceedMaxUnitLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>42, 13</value>
+  </data>
+  <data name="&gt;&gt;categoryLabelData.Name" xml:space="preserve">
+    <value>categoryLabelData</value>
+  </data>
+  <data name="&gt;&gt;neverToExceedMinUnitLabel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Com.Suncor.Olt.Client, Version=4.11.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="neverToExceedMinLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>31, 101</value>
+  </data>
+  <data name="&gt;&gt;neverToExceedMinLabel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Com.Suncor.Olt.Client, Version=4.11.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;neverToExceedMaxLabel.Parent" xml:space="preserve">
+    <value>thresholdValuesGroupBox</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="categoryLabelData.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="neverToExceedMinLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="targetUnitLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="functionalLocationGroupBox.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;definitionAuthorGroupBox.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;maxValue.Parent" xml:space="preserve">
+    <value>thresholdValuesGroupBox</value>
+  </data>
+  <data name="descriptionTextBox.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="&gt;&gt;descriptionGroupBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;tagNameGroupBox.Name" xml:space="preserve">
+    <value>tagNameGroupBox</value>
+  </data>
+  <data name="&gt;&gt;minimumUnitLabel.Parent" xml:space="preserve">
+    <value>thresholdValuesGroupBox</value>
+  </data>
+  <data name="&gt;&gt;thresholdValuesGroupBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltGroupBox, Com.Suncor.Olt.Client, Version=4.11.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="nameLabelData.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="descriptionTextBox.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="neverToExceedMinLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;minimumUnitLabel.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;categoryGroupBox.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;neverToExceedMinUnitLabel.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;targetLabel.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="thresholdValuesGroupBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left</value>
+  </data>
+  <data name="&gt;&gt;definitionAuthorGroupBox.Name" xml:space="preserve">
+    <value>definitionAuthorGroupBox</value>
+  </data>
+  <data name="nameLabelData.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;minValue.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltNumericBox, Com.Suncor.Olt.Client, Version=4.11.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;descriptionTextBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="neverToExceedMinUnitLabel.Text" xml:space="preserve">
+    <value>&lt;Unit&gt;</value>
+  </data>
+  <data name="&gt;&gt;categoryLabelData.Parent" xml:space="preserve">
+    <value>categoryGroupBox</value>
+  </data>
+  <data name="&gt;&gt;nameGroupBox.Name" xml:space="preserve">
+    <value>nameGroupBox</value>
+  </data>
+  <data name="minimumUnitLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>42, 13</value>
+  </data>
+  <data name="neverToExceedMaxUnitLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;neverToExceedMaxUnitLabel.Parent" xml:space="preserve">
+    <value>thresholdValuesGroupBox</value>
+  </data>
+  <data name="tagNameLabelData.Text" xml:space="preserve">
+    <value>&lt;Tag Name&gt;</value>
+  </data>
+  <data name="maxLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="minLabel.Text" xml:space="preserve">
+    <value>Min:</value>
+  </data>
+  <data name="minLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;targetValue.Name" xml:space="preserve">
+    <value>targetValue</value>
+  </data>
+  <data name="neverToExceedMinValue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>68, 21</value>
+  </data>
+  <data name="&gt;&gt;neverToExceedMaxUnitLabel.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="functionalLocationLabelData.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="neverToExceedMinValue.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="targetLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 13</value>
+  </data>
+  <data name="neverToExceedMinUnitLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>212, 101</value>
+  </data>
+  <data name="&gt;&gt;neverToExceedMaxValue.Name" xml:space="preserve">
+    <value>neverToExceedMaxValue</value>
+  </data>
+  <data name="&gt;&gt;minValue.Name" xml:space="preserve">
+    <value>minValue</value>
+  </data>
+  <data name="targetUnitLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>212, 126</value>
+  </data>
+  <data name="&gt;&gt;targetValue.Parent" xml:space="preserve">
+    <value>thresholdValuesGroupBox</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="&gt;&gt;minLabel.Name" xml:space="preserve">
+    <value>minLabel</value>
+  </data>
+  <data name="&gt;&gt;categoryLabelData.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Com.Suncor.Olt.Client, Version=4.11.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="targetLabel.Text" xml:space="preserve">
+    <value>Target:</value>
+  </data>
+  <data name="functionalLocationLabelData.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="tagNameLabelData.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;descriptionGroupBox.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="minimumUnitLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;tagNameLabelData.Name" xml:space="preserve">
+    <value>tagNameLabelData</value>
+  </data>
+  <data name="&gt;&gt;neverToExceedMinLabel.Name" xml:space="preserve">
+    <value>neverToExceedMinLabel</value>
+  </data>
+  <data name="targetLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;targetValue.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltTextBox, Com.Suncor.Olt.Client, Version=4.11.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;categoryGroupBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;toolTip.Name" xml:space="preserve">
+    <value>toolTip</value>
+  </data>
+  <data name="maxLabel.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;nameLabelData.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Com.Suncor.Olt.Client, Version=4.11.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;maxValue.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltNumericBox, Com.Suncor.Olt.Client, Version=4.11.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;neverToExceedMinUnitLabel.Parent" xml:space="preserve">
+    <value>thresholdValuesGroupBox</value>
+  </data>
+  <data name="neverToExceedMinValue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>140, 97</value>
+  </data>
+  <data name="definitionAuthorGroupBox.Text" xml:space="preserve">
+    <value>Author</value>
+  </data>
+  <data name="descriptionGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>404, 222</value>
+  </data>
+  <data name="neverToExceedMinUnitLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="nameGroupBox.Text" xml:space="preserve">
+    <value>&lt;Target Entity&gt; Name</value>
+  </data>
+  <data name="functionalLocationLabelData.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 17</value>
+  </data>
+  <data name="&gt;&gt;tagNameLabelData.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Com.Suncor.Olt.Client, Version=4.11.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="categoryGroupBox.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="definitionAuthorGroupBox.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;neverToExceedMinUnitLabel.Name" xml:space="preserve">
+    <value>neverToExceedMinUnitLabel</value>
+  </data>
+  <data name="authorLabelData.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="authorLabelData.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="summaryLabelLine.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="&gt;&gt;nameLabelData.Parent" xml:space="preserve">
+    <value>nameGroupBox</value>
+  </data>
+  <data name="&gt;&gt;neverToExceedMinValue.Parent" xml:space="preserve">
+    <value>thresholdValuesGroupBox</value>
+  </data>
+  <data name="neverToExceedMaxValue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>140, 22</value>
+  </data>
+  <data name="&gt;&gt;targetUnitLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="descriptionTextBox.ScrollBars" type="System.Windows.Forms.ScrollBars, System.Windows.Forms">
+    <value>Vertical</value>
+  </data>
+  <data name="targetLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="authorLabelData.Text" xml:space="preserve">
+    <value>&lt;Author&gt;</value>
+  </data>
+  <data name="&gt;&gt;descriptionTextBox.Parent" xml:space="preserve">
+    <value>descriptionGroupBox</value>
+  </data>
+  <data name="&gt;&gt;neverToExceedMaxLabel.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;targetUnitLabel.Parent" xml:space="preserve">
+    <value>thresholdValuesGroupBox</value>
+  </data>
+  <data name="&gt;&gt;targetLabel.Name" xml:space="preserve">
+    <value>targetLabel</value>
+  </data>
+  <data name="&gt;&gt;descriptionTextBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltTextBox, Com.Suncor.Olt.Client, Version=4.11.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tagNameLabelData.Parent" xml:space="preserve">
+    <value>tagNameGroupBox</value>
+  </data>
+  <data name="functionalLocationLabelData.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="neverToExceedMaxValue.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;targetLabel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Com.Suncor.Olt.Client, Version=4.11.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="minValue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>140, 72</value>
+  </data>
+  <data name="&gt;&gt;thresholdValuesGroupBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>TargetSummary</value>
+  </data>
+  <data name="neverToExceedMaxUnitLabel.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="targetUnitLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;tagNameGroupBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;thresholdValuesGroupBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="minLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="minValue.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="maxLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>31, 51</value>
+  </data>
+  <data name="&gt;&gt;maximumUnitLabel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Com.Suncor.Olt.Client, Version=4.11.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;targetValue.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;minValue.Parent" xml:space="preserve">
+    <value>thresholdValuesGroupBox</value>
+  </data>
+  <data name="functionalLocationLabelData.Size" type="System.Drawing.Size, System.Drawing">
+    <value>115, 13</value>
+  </data>
+  <data name="targetValue.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="authorLabelData.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 18</value>
+  </data>
+  <data name="&gt;&gt;minLabel.Parent" xml:space="preserve">
+    <value>thresholdValuesGroupBox</value>
+  </data>
+  <data name="summaryLabelLine.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="neverToExceedMaxLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="summaryLabelLine.Size" type="System.Drawing.Size, System.Drawing">
+    <value>730, 13</value>
+  </data>
+  <data name="neverToExceedMaxUnitLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="thresholdValuesGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 111</value>
+  </data>
+  <data name="neverToExceedMaxValue.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="&gt;&gt;minValue.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="tagNameGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>238, 65</value>
+  </data>
+  <data name="neverToExceedMaxUnitLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>212, 26</value>
+  </data>
+  <data name="&gt;&gt;neverToExceedMinValue.Name" xml:space="preserve">
+    <value>neverToExceedMinValue</value>
+  </data>
+  <data name="categoryLabelData.Text" xml:space="preserve">
+    <value>&lt;Category&gt;</value>
+  </data>
+  <data name="neverToExceedMinLabel.Text" xml:space="preserve">
+    <value>NTE/SOL Min:</value>
+  </data>
+  <data name="descriptionGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>284, 111</value>
+  </data>
+  <data name="descriptionGroupBox.Text" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="neverToExceedMinUnitLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="targetUnitLabel.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="neverToExceedMaxValue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>68, 21</value>
+  </data>
+  <data name="categoryLabelData.Size" type="System.Drawing.Size, System.Drawing">
+    <value>68, 13</value>
+  </data>
+  <data name="&gt;&gt;authorLabelData.Parent" xml:space="preserve">
+    <value>definitionAuthorGroupBox</value>
+  </data>
+  <data name="descriptionGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="categoryLabelData.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 17</value>
+  </data>
+  <data name="tagNameGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>215, 40</value>
+  </data>
+  <data name="targetUnitLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="maxValue.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;nameGroupBox.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="neverToExceedMaxUnitLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;maxLabel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Com.Suncor.Olt.Client, Version=4.11.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="targetUnitLabel.Text" xml:space="preserve">
+    <value>&lt;Unit&gt;</value>
+  </data>
+  <data name="maximumUnitLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="thresholdValuesGroupBox.Text" xml:space="preserve">
+    <value>Threshold Values</value>
+  </data>
+  <data name="&gt;&gt;functionalLocationLabelData.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="neverToExceedMinValue.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="neverToExceedMinUnitLabel.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="targetValue.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="neverToExceedMaxUnitLabel.Text" xml:space="preserve">
+    <value>&lt;Unit&gt;</value>
+  </data>
+  <data name="&gt;&gt;maximumUnitLabel.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="minimumUnitLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="targetValue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>140, 122</value>
+  </data>
+  <data name="&gt;&gt;maxLabel.Name" xml:space="preserve">
+    <value>maxLabel</value>
+  </data>
+  <data name="&gt;&gt;neverToExceedMaxValue.Parent" xml:space="preserve">
+    <value>thresholdValuesGroupBox</value>
+  </data>
+  <data name="&gt;&gt;authorLabelData.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;neverToExceedMaxLabel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Com.Suncor.Olt.Client, Version=4.11.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="descriptionTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>398, 202</value>
+  </data>
+  <data name="&gt;&gt;categoryGroupBox.Name" xml:space="preserve">
+    <value>categoryGroupBox</value>
+  </data>
+  <data name="definitionAuthorGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>459, 19</value>
+  </data>
+  <data name="&gt;&gt;functionalLocationLabelData.Name" xml:space="preserve">
+    <value>functionalLocationLabelData</value>
+  </data>
+  <data name="categoryGroupBox.Text" xml:space="preserve">
+    <value>Category</value>
+  </data>
+  <data name="nameGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 19</value>
+  </data>
+  <data name="maxLabel.Text" xml:space="preserve">
+    <value>Max:</value>
+  </data>
+  <data name="&gt;&gt;nameLabelData.Name" xml:space="preserve">
+    <value>nameLabelData</value>
+  </data>
+  <data name="&gt;&gt;nameLabelData.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;thresholdValuesGroupBox.Name" xml:space="preserve">
+    <value>thresholdValuesGroupBox</value>
+  </data>
+  <data name="&gt;&gt;maxLabel.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;targetUnitLabel.Name" xml:space="preserve">
+    <value>targetUnitLabel</value>
+  </data>
+  <data name="&gt;&gt;categoryGroupBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltGroupBox, Com.Suncor.Olt.Client, Version=4.11.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="descriptionGroupBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="minimumUnitLabel.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;functionalLocationLabelData.Parent" xml:space="preserve">
+    <value>functionalLocationGroupBox</value>
+  </data>
+  <data name="&gt;&gt;functionalLocationLabelData.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Com.Suncor.Olt.Client, Version=4.11.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;minLabel.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="$this.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="descriptionGroupBox.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;neverToExceedMaxValue.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltNumericBox, Com.Suncor.Olt.Client, Version=4.11.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="categoryLabelData.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;summaryLabelLine.Name" xml:space="preserve">
+    <value>summaryLabelLine</value>
+  </data>
+  <data name="summaryLabelLine.Label" xml:space="preserve">
+    <value>&lt;Target Summary&gt; Details</value>
+  </data>
+  <data name="targetLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>31, 126</value>
+  </data>
+  <data name="&gt;&gt;definitionAuthorGroupBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltGroupBox, Com.Suncor.Olt.Client, Version=4.11.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;maxLabel.Parent" xml:space="preserve">
+    <value>thresholdValuesGroupBox</value>
+  </data>
+  <data name="functionalLocationGroupBox.Text" xml:space="preserve">
+    <value>Functional Location</value>
+  </data>
+  <data name="minLabel.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="minValue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>68, 21</value>
+  </data>
+  <data name="&gt;&gt;maxValue.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;toolTip.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="categoryGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>719, 336</value>
+  </data>
+  <data name="tagNameLabelData.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 17</value>
+  </data>
+  <data name="targetValue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>68, 21</value>
+  </data>
+  <data name="maxValue.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="minimumUnitLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>212, 76</value>
+  </data>
+  <data name="maximumUnitLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>212, 51</value>
+  </data>
+  <data name="authorLabelData.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 13</value>
+  </data>
+  <data name="&gt;&gt;summaryLabelLine.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabelLine, Com.Suncor.Olt.Client, Version=4.11.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;categoryLabelData.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="maxLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 13</value>
+  </data>
+  <data name="&gt;&gt;maxValue.Name" xml:space="preserve">
+    <value>maxValue</value>
+  </data>
+  <data name="nameGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>215, 40</value>
+  </data>
+  <data name="&gt;&gt;neverToExceedMinValue.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltNumericBox, Com.Suncor.Olt.Client, Version=4.11.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;functionalLocationGroupBox.Name" xml:space="preserve">
+    <value>functionalLocationGroupBox</value>
+  </data>
+  <data name="maximumUnitLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="categoryGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>238, 19</value>
+  </data>
+  <data name="minLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="descriptionTextBox.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="nameLabelData.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.UserControl, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;functionalLocationGroupBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltGroupBox, Com.Suncor.Olt.Client, Version=4.11.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="tagNameLabelData.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="neverToExceedMinUnitLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="minValue.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="neverToExceedMinValue.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="functionalLocationGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="categoryLabelData.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="neverToExceedMaxLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="descriptionTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 17</value>
+  </data>
+  <data name="tagNameLabelData.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 13</value>
+  </data>
+  <data name="&gt;&gt;descriptionGroupBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltGroupBox, Com.Suncor.Olt.Client, Version=4.11.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="summaryLabelLine.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="functionalLocationLabelData.Text" xml:space="preserve">
+    <value>&lt;Functional Location&gt;</value>
+  </data>
+  <data name="neverToExceedMaxLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="thresholdValuesGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="maxLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="authorLabelData.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="neverToExceedMaxValue.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="thresholdValuesGroupBox.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="neverToExceedMaxLabel.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;neverToExceedMaxLabel.Name" xml:space="preserve">
+    <value>neverToExceedMaxLabel</value>
+  </data>
+  <data name="maxValue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>140, 47</value>
+  </data>
+  <data name="&gt;&gt;tagNameGroupBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltGroupBox, Com.Suncor.Olt.Client, Version=4.11.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="descriptionTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="targetUnitLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>42, 13</value>
+  </data>
+  <data name="nameLabelData.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 13</value>
+  </data>
+  <data name="&gt;&gt;summaryLabelLine.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="nameLabelData.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="categoryGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>215, 40</value>
+  </data>
+  <data name="&gt;&gt;neverToExceedMaxValue.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="minLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 13</value>
+  </data>
+  <data name="&gt;&gt;minimumUnitLabel.Name" xml:space="preserve">
+    <value>minimumUnitLabel</value>
+  </data>
+  <data name="summaryLabelLine.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 3</value>
+  </data>
+  <data name="&gt;&gt;minLabel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Com.Suncor.Olt.Client, Version=4.11.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="minValue.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="&gt;&gt;authorLabelData.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Com.Suncor.Olt.Client, Version=4.11.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="nameLabelData.Text" xml:space="preserve">
+    <value>&lt;Name&gt;</value>
+  </data>
+  <data name="functionalLocationGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 65</value>
+  </data>
+  <data name="minimumUnitLabel.Text" xml:space="preserve">
+    <value>&lt;Unit&gt;</value>
+  </data>
+  <data name="nameGroupBox.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="targetLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;targetLabel.Parent" xml:space="preserve">
+    <value>thresholdValuesGroupBox</value>
+  </data>
+  <data name="neverToExceedMinLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 13</value>
+  </data>
+  <data name="targetValue.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="tagNameLabelData.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;neverToExceedMaxUnitLabel.Name" xml:space="preserve">
+    <value>neverToExceedMaxUnitLabel</value>
+  </data>
+  <data name="functionalLocationLabelData.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="maxValue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>68, 21</value>
+  </data>
+  <data name="tagNameLabelData.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="authorLabelData.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="definitionAuthorGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;neverToExceedMaxUnitLabel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Com.Suncor.Olt.Client, Version=4.11.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="minimumUnitLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;authorLabelData.Name" xml:space="preserve">
+    <value>authorLabelData</value>
+  </data>
+  <data name="&gt;&gt;neverToExceedMinLabel.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="neverToExceedMaxLabel.Text" xml:space="preserve">
+    <value>NTE/SOL Max:</value>
+  </data>
+  <data name="categoryLabelData.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="maxValue.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="&gt;&gt;maximumUnitLabel.Name" xml:space="preserve">
+    <value>maximumUnitLabel</value>
+  </data>
+  <data name="&gt;&gt;functionalLocationGroupBox.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="maximumUnitLabel.Text" xml:space="preserve">
+    <value>&lt;Unit&gt;</value>
+  </data>
+  <data name="definitionAuthorGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>217, 43</value>
+  </data>
+  <data name="&gt;&gt;functionalLocationGroupBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="maximumUnitLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>42, 13</value>
+  </data>
+  <data name="neverToExceedMaxLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 13</value>
+  </data>
+  <data name="&gt;&gt;descriptionTextBox.Name" xml:space="preserve">
+    <value>descriptionTextBox</value>
+  </data>
+  <data name="maxLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;descriptionGroupBox.Name" xml:space="preserve">
+    <value>descriptionGroupBox</value>
+  </data>
+  <data name="&gt;&gt;nameGroupBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltGroupBox, Com.Suncor.Olt.Client, Version=4.11.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="maximumUnitLabel.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="neverToExceedMaxLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>31, 26</value>
+  </data>
+  <data name="&gt;&gt;neverToExceedMinValue.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;tagNameLabelData.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="nameLabelData.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 17</value>
+  </data>
+  <data name="&gt;&gt;nameGroupBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="minLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>31, 76</value>
+  </data>
+  <data name="&gt;&gt;tagNameGroupBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="maximumUnitLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;neverToExceedMinLabel.Parent" xml:space="preserve">
+    <value>thresholdValuesGroupBox</value>
+  </data>
+  <data name="tagNameGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="tagNameGroupBox.Text" xml:space="preserve">
+    <value>Plant Historian Measurement Tag</value>
+  </data>
+  <data name="nameGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="neverToExceedMinLabel.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="targetLabel.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="neverToExceedMinLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>56</value>
+  </metadata>
+  <metadata name="toolTip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+</root>

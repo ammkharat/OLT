@@ -1,0 +1,337 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="approveButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>83, 22</value>
+  </data>
+  <data name="approveButton.Text" xml:space="preserve">
+    <value>Approuver</value>
+  </data>
+  <data name="rejectButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>66, 22</value>
+  </data>
+  <data name="rejectButton.Text" xml:space="preserve">
+    <value>Refuser</value>
+  </data>
+  <data name="deleteButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>82, 22</value>
+  </data>
+  <data name="deleteButton.Text" xml:space="preserve">
+    <value>Supprimer</value>
+  </data>
+  <data name="editButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>57, 22</value>
+  </data>
+  <data name="editButton.Text" xml:space="preserve">
+    <value>Éditer</value>
+  </data>
+  <data name="commentsButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>143, 22</value>
+  </data>
+  <data name="commentsButton.Text" xml:space="preserve">
+    <value>Faire un commentaire</value>
+  </data>
+  <data name="exportAllButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>127, 22</value>
+  </data>
+  <data name="exportAllButton.Text" xml:space="preserve">
+    <value>Grille d’exportation</value>
+  </data>
+  <data name="exportAllButton.ToolTipText" xml:space="preserve">
+    <value>Exporter les données de la grille vers Excel</value>
+  </data>
+  <data name="editHistoryButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>82, 22</value>
+  </data>
+  <data name="editHistoryButton.Text" xml:space="preserve">
+    <value>Historique</value>
+  </data>
+  <data name="editHistoryButton.ToolTipText" xml:space="preserve">
+    <value>Afficher l'historique des modifications</value>
+  </data>
+  <data name="viewAssociatedLogsButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>188, 20</value>
+  </data>
+  <data name="viewAssociatedLogsButton.Text" xml:space="preserve">
+    <value>Voir registres associés</value>
+  </data>
+  <data name="dateRangeToggleButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 20</value>
+  </data>
+  <data name="dateRangeToggleButton.Text" xml:space="preserve">
+    <value>Plage</value>
+  </data>
+  <data name="saveGridLayoutButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALcSURBVDhPlZJLcxJZGIb9La7Gcjaz1F/g0rU7x3Kh0USn
+        tKYs7xovMd5qdFRMGS0tQguBoBLIpYKAUQORBDUxXAN0EyDRQCDh0iB5PFBlOi49VafPOV/3eZ/3+77e
+        ghhddy7xb3c7p24f4cydDs7d6+CCrp3OR+1cfnKYrmeH6e47xHWpjZvGNq4Z9zHg0DevsqX5OHhyLyNT
+        VmxePVZvL2bvfUy+WzyfvILkP4cUOIE0cxxprgN9aD+60C7+l05pAgeEgOnNYySXDslzF8P4TfreXcXg
+        68Q4fZGnU//wn3c313w76Q78xa3INnrMnZrA3qN7eGi9wYOBLnQvL/Pg1Xl09rPcth7hUM8O/u7ZSpv+
+        D45ZtnNi8E9Ov97KPcNZTcA5Mgy1GvVSifziEo2KilpcJRWdZ+3rCtVcmVq+SiqkoOZU6vk6bqdbEzAb
+        JRbTMmklTjT0RcxZgrMB/N63BGcChOc+t2K+9+PEwl+IR+YYctg1gSH7K6qlAqXiCvJ8hMJylmL+K6lk
+        TOwXWSssU17Nk4xHxLpCrbyK67VzkwOTRCaVQI5HmRh3CdoMMeFk2u8lEpwlFgmSiIXxT06QEAA5EWN4
+        yKEJjAwNopaKgrpEIhoSTnItYiaVFPQcFfGuVimxoCSpV8usf1dxu1yagKXfiCLokeAMkxPjzAtiPBrm
+        47Rf0EPCehQlGScw5UeRE6RTCiPNwv/8kUaH7VQEsZmrLPKsrBVETYosZRZa9LpaplGvkc2kofG9ddHj
+        2dSFAbOpVdlYeI4PvnetfJPzUT5/nBY5C7qgLgjqp08BMukFlhazjI6ObnbgoF4uopYLopUJGrVKK8+V
+        3Dex1lofNkc+t7yx97zxaAL9JiPDDhsOuw2jZOCF1UIz9uRxL4Y+PRZzP4M2GxaLBafTidvtZmxsTBP4
+        Kbu+DlVVJZ8XHchmURQFWZbJZDLkcqIblSqNRmPDxUYRf4n85uEH6Rp4I/Dw/jkAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="saveGridLayoutButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>112, 20</value>
+  </data>
+  <data name="saveGridLayoutButton.Text" xml:space="preserve">
+    <value>Modèle de grille</value>
+  </data>
+  <data name="createOneActionItemForAllFlocsRadioButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>354, 17</value>
+  </data>
+  <data name="createOneActionItemForAllFlocsRadioButton.Text" xml:space="preserve">
+    <value>Créer une tâche de préparation pour tous les postes techniques</value>
+  </data>
+  <data name="createActionItemForEachFlocRadioButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>342, 17</value>
+  </data>
+  <data name="createActionItemForEachFlocRadioButton.Text" xml:space="preserve">
+    <value>Créer une tâche de préparation pour chaque poste technique</value>
+  </data>
+  <data name="workAssignmentLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>25, 431</value>
+  </data>
+  <data name="workAssignmentLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>97, 13</value>
+  </data>
+  <data name="workAssignmentLabel.Text" xml:space="preserve">
+    <value>Assignation tâches</value>
+  </data>
+  <data name="documentLinksLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>26, 827</value>
+  </data>
+  <data name="documentLinksLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 13</value>
+  </data>
+  <data name="documentLinksLabel.Text" xml:space="preserve">
+    <value>Liens du document</value>
+  </data>
+  <data name="priorityLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>81, 93</value>
+  </data>
+  <data name="priorityLabel.Text" xml:space="preserve">
+    <value>Priorité</value>
+  </data>
+  <data name="oltLabel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>26, 66</value>
+  </data>
+  <data name="oltLabel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 13</value>
+  </data>
+  <data name="oltLabel1.Text" xml:space="preserve">
+    <value>Mode opérationnel</value>
+  </data>
+  <data name="dependentTargetLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 598</value>
+  </data>
+  <data name="dependentTargetLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>115, 13</value>
+  </data>
+  <data name="dependentTargetLabel.Text" xml:space="preserve">
+    <value>Objectif(s) assujetti(s)</value>
+  </data>
+  <data name="editedByLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>62, 121</value>
+  </data>
+  <data name="editedByLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 13</value>
+  </data>
+  <data name="editedByLabel.Text" xml:space="preserve">
+    <value>Modifié par</value>
+  </data>
+  <data name="nameLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>94, 146</value>
+  </data>
+  <data name="nameLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>28, 13</value>
+  </data>
+  <data name="nameLabel.Text" xml:space="preserve">
+    <value>Nom</value>
+  </data>
+  <data name="functionLocationLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>28, 271</value>
+  </data>
+  <data name="functionLocationLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>94, 13</value>
+  </data>
+  <data name="functionLocationLabel.Text" xml:space="preserve">
+    <value>Postes techniques</value>
+  </data>
+  <data name="commentsLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>62, 171</value>
+  </data>
+  <data name="descriptionLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>61, 699</value>
+  </data>
+  <data name="descriptionLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>61, 13</value>
+  </data>
+  <data name="descriptionLabel.Text" xml:space="preserve">
+    <value>Remarques</value>
+  </data>
+  <data name="scheduleTypeLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>80, 460</value>
+  </data>
+  <data name="scheduleTypeLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>42, 13</value>
+  </data>
+  <data name="scheduleTypeLabel.Text" xml:space="preserve">
+    <value>Horaire</value>
+  </data>
+  <data name="actionCategoryLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 13</value>
+  </data>
+  <data name="actionCategoryLabel.Text" xml:space="preserve">
+    <value>Catégorie</value>
+  </data>
+  <data name="temporarilyInActiveCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>304, 9</value>
+  </data>
+  <data name="temporarilyInActiveCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>136, 17</value>
+  </data>
+  <data name="temporarilyInActiveCheckBox.Text" xml:space="preserve">
+    <value>Temporairement inactif</value>
+  </data>
+  <data name="responseRequiredCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>459, 9</value>
+  </data>
+  <data name="responseRequiredCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>251, 17</value>
+  </data>
+  <data name="responseRequiredCheckBox.Text" xml:space="preserve">
+    <value>Nécessite une réponse après le déclenchement</value>
+  </data>
+  <data name="requiresApprovalCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>123, 17</value>
+  </data>
+  <data name="requiresApprovalCheckBox.Text" xml:space="preserve">
+    <value>Approbation requise</value>
+  </data>
+</root>

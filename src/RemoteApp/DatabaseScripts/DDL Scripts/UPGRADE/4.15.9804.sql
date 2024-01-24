@@ -1,0 +1,26 @@
+﻿CREATE TABLE [dbo].[EdmontonPerson] (
+[Id] bigint IDENTITY(1, 1) NOT NULL,
+[Firstname] varchar(50) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+[Lastname] varchar(50) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+[BadgeId] varchar(50) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+[LastScan] datetime NOT NULL,
+[ScanStatus] tinyint NOT NULL,
+[Deleted] bit NOT NULL,
+PRIMARY KEY CLUSTERED ([Id] )
+WITH ( PAD_INDEX = OFF,
+FILLFACTOR = 100,
+IGNORE_DUP_KEY = OFF,
+STATISTICS_NORECOMPUTE = OFF,
+ALLOW_ROW_LOCKS = ON,
+ALLOW_PAGE_LOCKS = ON,
+DATA_COMPRESSION = NONE )
+ ON [PRIMARY]
+)
+ON [PRIMARY];
+GO
+
+
+
+
+GO
+

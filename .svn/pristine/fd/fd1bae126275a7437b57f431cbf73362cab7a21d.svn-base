@@ -1,0 +1,232 @@
+﻿namespace Com.Suncor.Olt.Client.Forms
+{
+    partial class MarkAsTemplateNameForm
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.components = new System.ComponentModel.Container();
+            this.TemplateName = new Com.Suncor.Olt.Client.OltControls.OltTextBox();
+            this.NameLabel = new Com.Suncor.Olt.Client.OltControls.OltLabel();
+            this.saveButton = new Com.Suncor.Olt.Client.OltControls.OltButton();
+            this.GlobalCheckBox = new Com.Suncor.Olt.Client.OltControls.OltCheckBox();
+            this.IndividualCheckbox = new Com.Suncor.Olt.Client.OltControls.OltCheckBox();
+            this.categoryComboBox = new System.Windows.Forms.ComboBox();
+            this.categoryLabel = new Com.Suncor.Olt.Client.OltControls.OltLabel();
+            this.CancelButton = new Com.Suncor.Olt.Client.OltControls.OltButton();
+            this.oltPanel1 = new Com.Suncor.Olt.Client.OltControls.OltPanel();
+            this.oltGroupBox1 = new Com.Suncor.Olt.Client.OltControls.OltGroupBox();
+            this.oltGroupBox4 = new Com.Suncor.Olt.Client.OltControls.OltGroupBox();
+            this.oltGroupBox3 = new Com.Suncor.Olt.Client.OltControls.OltGroupBox();
+            this.oltGroupBox2 = new Com.Suncor.Olt.Client.OltControls.OltGroupBox();
+            this.OlterrorProvider = new System.Windows.Forms.ErrorProvider(this.components);
+            this.oltPanel1.SuspendLayout();
+            this.oltGroupBox1.SuspendLayout();
+            this.oltGroupBox4.SuspendLayout();
+            this.oltGroupBox3.SuspendLayout();
+            this.oltGroupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.OlterrorProvider)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // TemplateName
+            // 
+            this.TemplateName.Location = new System.Drawing.Point(98, 13);
+            this.TemplateName.Multiline = true;
+            this.TemplateName.Name = "TemplateName";
+            this.TemplateName.OltAcceptsReturn = true;
+            this.TemplateName.OltTrimWhitespace = true;
+            this.TemplateName.Size = new System.Drawing.Size(260, 28);
+            this.TemplateName.TabIndex = 0;
+            // 
+            // NameLabel
+            // 
+            this.NameLabel.AutoSize = true;
+            this.NameLabel.Location = new System.Drawing.Point(6, 19);
+            this.NameLabel.Name = "NameLabel";
+            this.NameLabel.Size = new System.Drawing.Size(91, 13);
+            this.NameLabel.TabIndex = 1;
+            this.NameLabel.Text = "Template Name : ";
+            // 
+            // saveButton
+            // 
+            this.saveButton.Location = new System.Drawing.Point(217, 13);
+            this.saveButton.Name = "saveButton";
+            this.saveButton.Size = new System.Drawing.Size(70, 23);
+            this.saveButton.TabIndex = 2;
+            this.saveButton.Text = "Save";
+            this.saveButton.UseVisualStyleBackColor = true;
+            // 
+            // GlobalCheckBox
+            // 
+            this.GlobalCheckBox.AutoSize = true;
+            this.GlobalCheckBox.Location = new System.Drawing.Point(99, 13);
+            this.GlobalCheckBox.Name = "GlobalCheckBox";
+            this.GlobalCheckBox.Size = new System.Drawing.Size(55, 17);
+            this.GlobalCheckBox.TabIndex = 5;
+            this.GlobalCheckBox.Text = "Global";
+            this.GlobalCheckBox.UseVisualStyleBackColor = true;
+            this.GlobalCheckBox.Value = null;
+            // 
+            // IndividualCheckbox
+            // 
+            this.IndividualCheckbox.AutoSize = true;
+            this.IndividualCheckbox.Location = new System.Drawing.Point(235, 13);
+            this.IndividualCheckbox.Name = "IndividualCheckbox";
+            this.IndividualCheckbox.Size = new System.Drawing.Size(59, 17);
+            this.IndividualCheckbox.TabIndex = 6;
+            this.IndividualCheckbox.Text = "For Me";
+            this.IndividualCheckbox.UseVisualStyleBackColor = true;
+            this.IndividualCheckbox.Value = null;
+            // 
+            // categoryComboBox
+            // 
+            this.categoryComboBox.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.categoryComboBox.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.categoryComboBox.FormattingEnabled = true;
+            this.categoryComboBox.Location = new System.Drawing.Point(98, 19);
+            this.categoryComboBox.MaxLength = 75;
+            this.categoryComboBox.Name = "categoryComboBox";
+            this.categoryComboBox.Size = new System.Drawing.Size(260, 21);
+            this.categoryComboBox.TabIndex = 8;
+            // 
+            // categoryLabel
+            // 
+            this.categoryLabel.AutoSize = true;
+            this.categoryLabel.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.categoryLabel.Location = new System.Drawing.Point(33, 22);
+            this.categoryLabel.Name = "categoryLabel";
+            this.categoryLabel.Size = new System.Drawing.Size(56, 13);
+            this.categoryLabel.TabIndex = 7;
+            this.categoryLabel.Text = "Category:";
+            this.categoryLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // CancelButton
+            // 
+            this.CancelButton.Location = new System.Drawing.Point(299, 13);
+            this.CancelButton.Name = "CancelButton";
+            this.CancelButton.Size = new System.Drawing.Size(70, 23);
+            this.CancelButton.TabIndex = 9;
+            this.CancelButton.Text = "Cancel";
+            this.CancelButton.UseVisualStyleBackColor = true;
+            this.CancelButton.Click += new System.EventHandler(this.CancelButton_Click);
+            // 
+            // oltPanel1
+            // 
+            this.oltPanel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.oltPanel1.Controls.Add(this.saveButton);
+            this.oltPanel1.Controls.Add(this.CancelButton);
+            this.oltPanel1.Location = new System.Drawing.Point(6, 167);
+            this.oltPanel1.Name = "oltPanel1";
+            this.oltPanel1.Size = new System.Drawing.Size(382, 45);
+            this.oltPanel1.TabIndex = 10;
+            // 
+            // oltGroupBox1
+            // 
+            this.oltGroupBox1.Controls.Add(this.oltPanel1);
+            this.oltGroupBox1.Controls.Add(this.oltGroupBox4);
+            this.oltGroupBox1.Controls.Add(this.oltGroupBox3);
+            this.oltGroupBox1.Controls.Add(this.oltGroupBox2);
+            this.oltGroupBox1.Location = new System.Drawing.Point(12, 12);
+            this.oltGroupBox1.Name = "oltGroupBox1";
+            this.oltGroupBox1.Size = new System.Drawing.Size(394, 221);
+            this.oltGroupBox1.TabIndex = 11;
+            this.oltGroupBox1.TabStop = false;
+            this.oltGroupBox1.Text = "Template Save As";
+            // 
+            // oltGroupBox4
+            // 
+            this.oltGroupBox4.Controls.Add(this.IndividualCheckbox);
+            this.oltGroupBox4.Controls.Add(this.GlobalCheckBox);
+            this.oltGroupBox4.Location = new System.Drawing.Point(6, 120);
+            this.oltGroupBox4.Name = "oltGroupBox4";
+            this.oltGroupBox4.Size = new System.Drawing.Size(382, 44);
+            this.oltGroupBox4.TabIndex = 2;
+            this.oltGroupBox4.TabStop = false;
+            // 
+            // oltGroupBox3
+            // 
+            this.oltGroupBox3.Controls.Add(this.categoryComboBox);
+            this.oltGroupBox3.Controls.Add(this.categoryLabel);
+            this.oltGroupBox3.Location = new System.Drawing.Point(6, 68);
+            this.oltGroupBox3.Name = "oltGroupBox3";
+            this.oltGroupBox3.Size = new System.Drawing.Size(382, 53);
+            this.oltGroupBox3.TabIndex = 1;
+            this.oltGroupBox3.TabStop = false;
+            // 
+            // oltGroupBox2
+            // 
+            this.oltGroupBox2.Controls.Add(this.NameLabel);
+            this.oltGroupBox2.Controls.Add(this.TemplateName);
+            this.oltGroupBox2.Location = new System.Drawing.Point(6, 19);
+            this.oltGroupBox2.Name = "oltGroupBox2";
+            this.oltGroupBox2.Size = new System.Drawing.Size(382, 50);
+            this.oltGroupBox2.TabIndex = 0;
+            this.oltGroupBox2.TabStop = false;
+            // 
+            // OlterrorProvider
+            // 
+            this.OlterrorProvider.ContainerControl = this;
+            // 
+            // MarkAsTemplateNameForm
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(413, 240);
+            this.Controls.Add(this.oltGroupBox1);
+            this.Name = "MarkAsTemplateNameForm";
+            this.Text = "MarkAsTemplateNameForm";
+            this.oltPanel1.ResumeLayout(false);
+            this.oltGroupBox1.ResumeLayout(false);
+            this.oltGroupBox4.ResumeLayout(false);
+            this.oltGroupBox4.PerformLayout();
+            this.oltGroupBox3.ResumeLayout(false);
+            this.oltGroupBox3.PerformLayout();
+            this.oltGroupBox2.ResumeLayout(false);
+            this.oltGroupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.OlterrorProvider)).EndInit();
+            this.ResumeLayout(false);
+
+        }
+
+        #endregion
+
+        private OltControls.OltTextBox TemplateName;
+        private OltControls.OltLabel NameLabel;
+        private OltControls.OltButton saveButton;
+        private OltControls.OltCheckBox GlobalCheckBox;
+        private OltControls.OltCheckBox IndividualCheckbox;
+        private System.Windows.Forms.ComboBox categoryComboBox;
+        private OltControls.OltLabel categoryLabel;
+        private OltControls.OltButton CancelButton;
+        private OltControls.OltPanel oltPanel1;
+        private OltControls.OltGroupBox oltGroupBox1;
+        private OltControls.OltGroupBox oltGroupBox4;
+        private OltControls.OltGroupBox oltGroupBox3;
+        private OltControls.OltGroupBox oltGroupBox2;
+        private System.Windows.Forms.ErrorProvider OlterrorProvider;
+
+    }
+}

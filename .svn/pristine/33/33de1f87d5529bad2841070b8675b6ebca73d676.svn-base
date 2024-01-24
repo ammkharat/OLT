@@ -1,0 +1,2208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="targetNameLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>54, 80</value>
+  </data>
+  <data name="oltLabel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>92, 13</value>
+  </data>
+  <data name="documentLinksControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>564, 74</value>
+  </data>
+  <data name="&gt;&gt;neverToExceedMinDataLabel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabelData, Operator Log Tool, Version=4.16.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="minFrequency.Location" type="System.Drawing.Point, System.Drawing">
+    <value>306, 61</value>
+  </data>
+  <data name="minFrequencyLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 13</value>
+  </data>
+  <data name="neverToExceedMinLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>89, 84</value>
+  </data>
+  <data name="&gt;&gt;oltLabel2.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="approveButton.Text" xml:space="preserve">
+    <value>Approve</value>
+  </data>
+  <data name="&gt;&gt;scheduleLabel.Name" xml:space="preserve">
+    <value>scheduleLabel</value>
+  </data>
+  <data name="nteMinFrequency.Text" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="gapUnitValueReadWriteTagDirectionLabel.Text" xml:space="preserve">
+    <value>PH Direction label</value>
+  </data>
+  <data name="targetLabel.Text" xml:space="preserve">
+    <value>Target:</value>
+  </data>
+  <data name="&gt;&gt;nteMaxFrequencyLabel.Name" xml:space="preserve">
+    <value>nteMaxFrequencyLabel</value>
+  </data>
+  <data name="&gt;&gt;tagData.Parent" xml:space="preserve">
+    <value>detailsPanel</value>
+  </data>
+  <data name="oltLabel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>81, 13</value>
+  </data>
+  <data name="maxDataLabel.Text" xml:space="preserve">
+    <value>Max Data</value>
+  </data>
+  <data name="&gt;&gt;minFrequencyLabel.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="functionalLocationData.Size" type="System.Drawing.Size, System.Drawing">
+    <value>564, 19</value>
+  </data>
+  <data name="saveGridLayoutButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>88, 22</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="nteMaxFrequency.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="maxFrequency.Size" type="System.Drawing.Size, System.Drawing">
+    <value>13, 13</value>
+  </data>
+  <data name="&gt;&gt;requiresResponseWhenAlertedCheckBox.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="documentLinksControl.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="oltLabel3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>90, 13</value>
+  </data>
+  <data name="nteMinFrequencyLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;maxLabel.Parent" xml:space="preserve">
+    <value>thresholdGroupBox</value>
+  </data>
+  <data name="descriptionTextBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="maxFrequency.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="tagData.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="targetReadWriteTagDirectionLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>106, 13</value>
+  </data>
+  <data name="neverToExceedMinLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="gapUnitValueDataLabel.Text" xml:space="preserve">
+    <value>GUV Data</value>
+  </data>
+  <data name="operationalModeLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>564, 19</value>
+  </data>
+  <data name="scheduleDisplay.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="nteMaxFrequency.Location" type="System.Drawing.Point, System.Drawing">
+    <value>306, 17</value>
+  </data>
+  <data name="&gt;&gt;targetNameData.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabelData, Operator Log Tool, Version=4.16.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="maxReadWriteTagDirectionLabel.Text" xml:space="preserve">
+    <value>PH Direction label</value>
+  </data>
+  <data name="oltLabel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>31, 264</value>
+  </data>
+  <data name="leftPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>133, 899</value>
+  </data>
+  <data name="preApprovedNeverToExceedMaxDataLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 13</value>
+  </data>
+  <data name="minFrequency.Size" type="System.Drawing.Size, System.Drawing">
+    <value>13, 13</value>
+  </data>
+  <data name="targetLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;functionLocationLabel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Operator Log Tool, Version=4.16.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="targetNameLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;targetReadWriteTagDirectionLabel.Parent" xml:space="preserve">
+    <value>thresholdGroupBox</value>
+  </data>
+  <data name="targetReadWriteTagDirectionLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="neverToExceedMaxDataLabel.Text" xml:space="preserve">
+    <value>NTE/SOL Max Data</value>
+  </data>
+  <data name="&gt;&gt;preApprovedNeverToExceedMinDataLabel.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="editedByDataLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>143, 55</value>
+  </data>
+  <data name="&gt;&gt;gapUnitValueReadWriteTagDirectionLabel.Name" xml:space="preserve">
+    <value>gapUnitValueReadWriteTagDirectionLabel</value>
+  </data>
+  <data name="&gt;&gt;preApprovedMaxLabel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Operator Log Tool, Version=4.16.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="gapUnitValueDataLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>160, 106</value>
+  </data>
+  <data name="oltLabel1.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="&gt;&gt;targetNameData.Name" xml:space="preserve">
+    <value>targetNameData</value>
+  </data>
+  <data name="workAssignmentLabelData.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="detailsPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>720, 899</value>
+  </data>
+  <data name="preApprovedNeverToExceedMaxDataLabel.Text" xml:space="preserve">
+    <value>NTE/SOL Max Data</value>
+  </data>
+  <data name="&gt;&gt;guvUnitsLabel.Parent" xml:space="preserve">
+    <value>thresholdGroupBox</value>
+  </data>
+  <data name="&gt;&gt;minDataLabel.Parent" xml:space="preserve">
+    <value>thresholdGroupBox</value>
+  </data>
+  <data name="&gt;&gt;editedByLabel.Parent" xml:space="preserve">
+    <value>leftPanel</value>
+  </data>
+  <data name="toggleShowButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 22</value>
+  </data>
+  <data name="&gt;&gt;maxLabel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Operator Log Tool, Version=4.16.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;toolStrip1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;operationalModeLabel.Parent" xml:space="preserve">
+    <value>detailsPanel</value>
+  </data>
+  <data name="preApprovedNeverToExceedMaxLabel.Text" xml:space="preserve">
+    <value>NTE/SOL Max:</value>
+  </data>
+  <data name="&gt;&gt;requireApprovalCheckBox.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;preApprovedMinLabel.Parent" xml:space="preserve">
+    <value>preApprovedThresholdGroupBox</value>
+  </data>
+  <data name="editHistoryButton.Text" xml:space="preserve">
+    <value>History</value>
+  </data>
+  <data name="minDataLabel.Text" xml:space="preserve">
+    <value>Min Data</value>
+  </data>
+  <data name="&gt;&gt;editButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;categoryData.Name" xml:space="preserve">
+    <value>categoryData</value>
+  </data>
+  <data name="&gt;&gt;dependantTargetPanel.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="preApprovedMaxDataLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 13</value>
+  </data>
+  <data name="targetNameLabel.Text" xml:space="preserve">
+    <value>Target Name</value>
+  </data>
+  <data name="&gt;&gt;preApprovedMinLabel.Name" xml:space="preserve">
+    <value>preApprovedMinLabel</value>
+  </data>
+  <data name="oltLabel3.TabIndex" type="System.Int32, mscorlib">
+    <value>35</value>
+  </data>
+  <data name="maxFrequencyLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 13</value>
+  </data>
+  <data name="commentsButton.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="&gt;&gt;editHistoryButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="commentsPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>143, 688</value>
+  </data>
+  <data name="oltLabel3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;preApprovedNeverToExceedMaxDataLabel.Parent" xml:space="preserve">
+    <value>preApprovedThresholdGroupBox</value>
+  </data>
+  <data name="nteMinFrequencyLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 13</value>
+  </data>
+  <data name="&gt;&gt;tagLabel.Parent" xml:space="preserve">
+    <value>leftPanel</value>
+  </data>
+  <data name="toolStrip1.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="preApprovedThresholdGroupBox.Text" xml:space="preserve">
+    <value>Pre-Approved Target Threshold Values</value>
+  </data>
+  <data name="tagData.Text" xml:space="preserve">
+    <value>Tag Name</value>
+  </data>
+  <data name="&gt;&gt;generateActionItemCheckBox.Parent" xml:space="preserve">
+    <value>detailsPanel</value>
+  </data>
+  <data name="&gt;&gt;neverToExceedMaxDataLabel.Name" xml:space="preserve">
+    <value>neverToExceedMaxDataLabel</value>
+  </data>
+  <data name="maxFrequencyLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>235, 39</value>
+  </data>
+  <data name="tagLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 221</value>
+  </data>
+  <data name="preApprovedThresholdGroupBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="&gt;&gt;toggleShowButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="targetNameData.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="&gt;&gt;scheduleDisplay.Name" xml:space="preserve">
+    <value>scheduleDisplay</value>
+  </data>
+  <data name="&gt;&gt;preApprovedThresholdGroupBox.Parent" xml:space="preserve">
+    <value>detailsPanel</value>
+  </data>
+  <data name="functionalLocationData.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;functionLocationLabel.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;oltLabel2.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Operator Log Tool, Version=4.16.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="preApprovedMinLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;approveButton.Name" xml:space="preserve">
+    <value>approveButton</value>
+  </data>
+  <data name="&gt;&gt;targetReadWriteTagDirectionLabel.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="categoryData.Location" type="System.Drawing.Point, System.Drawing">
+    <value>143, 239</value>
+  </data>
+  <data name="nteMinFrequency.Size" type="System.Drawing.Size, System.Drawing">
+    <value>13, 13</value>
+  </data>
+  <data name="&gt;&gt;maxFrequency.Parent" xml:space="preserve">
+    <value>thresholdGroupBox</value>
+  </data>
+  <data name="&gt;&gt;nteMaxFrequency.Parent" xml:space="preserve">
+    <value>thresholdGroupBox</value>
+  </data>
+  <data name="functionLocationLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 102</value>
+  </data>
+  <data name="categoryData.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="preApprovedMinDataLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="scheduleLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;temporarilyInactiveCheckBox.Name" xml:space="preserve">
+    <value>temporarilyInactiveCheckBox</value>
+  </data>
+  <data name="gapUnitValueDataLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="preApprovedMaxLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>91, 39</value>
+  </data>
+  <data name="generateActionItemCheckBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;temporarilyInactiveCheckBox.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;thresholdLabel.Parent" xml:space="preserve">
+    <value>leftPanel</value>
+  </data>
+  <data name="nteMaxFrequencyLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;exportAllButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;functionalLocationData.Parent" xml:space="preserve">
+    <value>detailsPanel</value>
+  </data>
+  <data name="guvUnitsLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="&gt;&gt;generateActionItemCheckBox.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="minFrequencyLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;thresholdLabel.Name" xml:space="preserve">
+    <value>thresholdLabel</value>
+  </data>
+  <data name="maxDataLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="preApprovedNeverToExceedMinDataLabel.Text" xml:space="preserve">
+    <value>NTE/SOL Min Data</value>
+  </data>
+  <data name="&gt;&gt;gapUnitValueReadWriteTagDirectionLabel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabelReadWriteDirection, Operator Log Tool, Version=4.16.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="minFrequencyLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>235, 61</value>
+  </data>
+  <data name="minReadWriteTagDirectionLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="preApprovedNeverToExceedMaxLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>76, 13</value>
+  </data>
+  <data name="&gt;&gt;neverToExceedMinLabel.Name" xml:space="preserve">
+    <value>neverToExceedMinLabel</value>
+  </data>
+  <data name="&gt;&gt;leftPanel.Name" xml:space="preserve">
+    <value>leftPanel</value>
+  </data>
+  <data name="&gt;&gt;oltLabel3.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Operator Log Tool, Version=4.16.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;minFrequency.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="editedByDataLabel.Text" xml:space="preserve">
+    <value>Edited By</value>
+  </data>
+  <data name="&gt;&gt;preApprovedMaxDataLabel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabelData, Operator Log Tool, Version=4.16.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;descriptionTextBox.Parent" xml:space="preserve">
+    <value>detailsPanel</value>
+  </data>
+  <data name="&gt;&gt;preApprovedMinLabel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Operator Log Tool, Version=4.16.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="thresholdGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="tagData.Size" type="System.Drawing.Size, System.Drawing">
+    <value>564, 19</value>
+  </data>
+  <data name="commentsLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>57, 13</value>
+  </data>
+  <data name="functionalLocationData.Text" xml:space="preserve">
+    <value>The name of the functional location</value>
+  </data>
+  <data name="maxLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="exportAllButton.ToolTipText" xml:space="preserve">
+    <value>Export Grid data to Excel</value>
+  </data>
+  <data name="minDataLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 13</value>
+  </data>
+  <data name="&gt;&gt;toggleShowButton.Name" xml:space="preserve">
+    <value>toggleShowButton</value>
+  </data>
+  <data name="&gt;&gt;maxLabel.ZOrder" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="&gt;&gt;editedByLabel.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="descriptionLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 13</value>
+  </data>
+  <data name="dependentTargetLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>15, 603</value>
+  </data>
+  <data name="minLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>27, 13</value>
+  </data>
+  <data name="&gt;&gt;dependantTargetPanel.Name" xml:space="preserve">
+    <value>dependantTargetPanel</value>
+  </data>
+  <data name="&gt;&gt;oltLabel1.Name" xml:space="preserve">
+    <value>oltLabel1</value>
+  </data>
+  <data name="descriptionLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="maxLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="maxReadWriteTagDirectionLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="oltLabel2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;maxFrequency.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="editHistoryButton.ToolTipText" xml:space="preserve">
+    <value>View Edit History</value>
+  </data>
+  <data name="targetReadWriteTagDirectionLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 130</value>
+  </data>
+  <data name="neverToExceedMinDataLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>164, 84</value>
+  </data>
+  <data name="&gt;&gt;descriptionTextBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltTextBox, Operator Log Tool, Version=4.16.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="preApprovedMaxDataLabel.Text" xml:space="preserve">
+    <value>Max Data</value>
+  </data>
+  <data name="deleteButton.Text" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="requiresResponseWhenAlertedCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>476, 12</value>
+  </data>
+  <data name="&gt;&gt;detailsPanel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="toolStrip1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>720, 25</value>
+  </data>
+  <data name="temporarilyInactiveCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>124, 17</value>
+  </data>
+  <data name="&gt;&gt;scheduleLabel.Parent" xml:space="preserve">
+    <value>leftPanel</value>
+  </data>
+  <data name="&gt;&gt;nteMinFrequencyLabel.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="categoryData.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="preApprovedMinDataLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 13</value>
+  </data>
+  <data name="&gt;&gt;minDataLabel.Name" xml:space="preserve">
+    <value>minDataLabel</value>
+  </data>
+  <data name="targetNameLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="priorityLabelData.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;preApprovedNeverToExceedMinLabel.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="maxFrequencyLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="temporarilyInactiveCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>143, 35</value>
+  </data>
+  <data name="maxFrequency.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="editedByDataLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>564, 19</value>
+  </data>
+  <data name="maxReadWriteTagDirectionLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 39</value>
+  </data>
+  <data name="editButton.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="&gt;&gt;maxDataLabel.Name" xml:space="preserve">
+    <value>maxDataLabel</value>
+  </data>
+  <data name="maxFrequency.Location" type="System.Drawing.Point, System.Drawing">
+    <value>306, 39</value>
+  </data>
+  <data name="&gt;&gt;maxFrequencyLabel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Operator Log Tool, Version=4.16.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;generateActionItemCheckBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltCheckBox, Operator Log Tool, Version=4.16.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="minReadWriteTagDirectionLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>106, 13</value>
+  </data>
+  <data name="editHistoryButton.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="thresholdLabel.Text" xml:space="preserve">
+    <value>Threshold</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.Controls.Details.AbstractDetails, Operator Log Tool, Version=4.16.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;preApprovedMaxLabel.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="scheduleLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 13</value>
+  </data>
+  <data name="toggleShowButton.ToolTipText" xml:space="preserve">
+    <value>Change displayed Date Range</value>
+  </data>
+  <data name="targetReadWriteTagDirectionLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="oltLabel3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>33, 308</value>
+  </data>
+  <data name="&gt;&gt;minLabel.Name" xml:space="preserve">
+    <value>minLabel</value>
+  </data>
+  <data name="&gt;&gt;preApprovedNeverToExceedMinLabel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Operator Log Tool, Version=4.16.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;descriptionLabel.Name" xml:space="preserve">
+    <value>descriptionLabel</value>
+  </data>
+  <data name="&gt;&gt;targetLabel.Name" xml:space="preserve">
+    <value>targetLabel</value>
+  </data>
+  <data name="tagData.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;rejectButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="requireApprovalCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>114, 17</value>
+  </data>
+  <data name="&gt;&gt;minLabel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Operator Log Tool, Version=4.16.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="scheduleLabel.Text" xml:space="preserve">
+    <value>Schedule</value>
+  </data>
+  <data name="preApprovedMaxDataLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="detailsPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 25</value>
+  </data>
+  <data name="&gt;&gt;gapUnitValueLabel.Parent" xml:space="preserve">
+    <value>thresholdGroupBox</value>
+  </data>
+  <data name="nteMaxFrequency.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="workAssignmentLabelData.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;suppressAlertCheckBox.Parent" xml:space="preserve">
+    <value>detailsPanel</value>
+  </data>
+  <data name="&gt;&gt;priorityLabelData.Name" xml:space="preserve">
+    <value>priorityLabelData</value>
+  </data>
+  <data name="suppressAlertCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>300, 35</value>
+  </data>
+  <data name="categoryData.Size" type="System.Drawing.Size, System.Drawing">
+    <value>564, 19</value>
+  </data>
+  <data name="&gt;&gt;toolStrip1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="documentLinksControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>143, 816</value>
+  </data>
+  <data name="&gt;&gt;descriptionTextBox.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="generateActionItemCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>300, 12</value>
+  </data>
+  <data name="oltLabel2.Text" xml:space="preserve">
+    <value>Document Links</value>
+  </data>
+  <data name="&gt;&gt;tagLabel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Operator Log Tool, Version=4.16.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="deleteButton.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>White</value>
+  </data>
+  <data name="&gt;&gt;neverToExceedMinLabel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Operator Log Tool, Version=4.16.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;targetNameLabel.Name" xml:space="preserve">
+    <value>targetNameLabel</value>
+  </data>
+  <data name="minReadWriteTagDirectionLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 61</value>
+  </data>
+  <data name="&gt;&gt;targetDataLabel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabelData, Operator Log Tool, Version=4.16.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="exportAllButton.Text" xml:space="preserve">
+    <value>Export Grid</value>
+  </data>
+  <data name="&gt;&gt;priorityLabelData.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabelData, Operator Log Tool, Version=4.16.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="oltLabel3.Text" xml:space="preserve">
+    <value>Work Assignment</value>
+  </data>
+  <data name="&gt;&gt;requiresResponseWhenAlertedCheckBox.Name" xml:space="preserve">
+    <value>requiresResponseWhenAlertedCheckBox</value>
+  </data>
+  <data name="oltLabel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>40, 816</value>
+  </data>
+  <data name="requiresResponseWhenAlertedCheckBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;descriptionLabel.Parent" xml:space="preserve">
+    <value>leftPanel</value>
+  </data>
+  <data name="scheduleDisplay.Location" type="System.Drawing.Point, System.Drawing">
+    <value>143, 492</value>
+  </data>
+  <data name="descriptionLabel.Text" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="thresholdLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>69, 334</value>
+  </data>
+  <data name="commentsLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>66, 688</value>
+  </data>
+  <data name="preApprovedMinDataLabel.Text" xml:space="preserve">
+    <value>Min Data</value>
+  </data>
+  <data name="preApprovedMaxLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;preApprovedThresholdGroupBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltGroupBox, Operator Log Tool, Version=4.16.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="workAssignmentLabelData.TabIndex" type="System.Int32, mscorlib">
+    <value>36</value>
+  </data>
+  <data name="&gt;&gt;editedByLabel.Name" xml:space="preserve">
+    <value>editedByLabel</value>
+  </data>
+  <data name="&gt;&gt;preApprovedNeverToExceedMaxDataLabel.Name" xml:space="preserve">
+    <value>preApprovedNeverToExceedMaxDataLabel</value>
+  </data>
+  <data name="gapUnitValueLabel.Text" xml:space="preserve">
+    <value>Gap Unit Value:</value>
+  </data>
+  <data name="&gt;&gt;minFrequency.Name" xml:space="preserve">
+    <value>minFrequency</value>
+  </data>
+  <data name="&gt;&gt;commentsButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;thresholdLabel.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="dependentTargetLabel.Text" xml:space="preserve">
+    <value>Dependent Target(s)</value>
+  </data>
+  <data name="&gt;&gt;minReadWriteTagDirectionLabel.Name" xml:space="preserve">
+    <value>minReadWriteTagDirectionLabel</value>
+  </data>
+  <data name="temporarilyInactiveCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="maxDataLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="targetDataLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="targetLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="nteMinFrequency.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="workAssignmentLabelData.Size" type="System.Drawing.Size, System.Drawing">
+    <value>564, 19</value>
+  </data>
+  <data name="leftPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="approveButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 22</value>
+  </data>
+  <data name="&gt;&gt;functionalLocationData.Name" xml:space="preserve">
+    <value>functionalLocationData</value>
+  </data>
+  <data name="&gt;&gt;commentsLabel.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;preApprovedMaxDataLabel.Name" xml:space="preserve">
+    <value>preApprovedMaxDataLabel</value>
+  </data>
+  <data name="&gt;&gt;workAssignmentLabelData.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabelData, Operator Log Tool, Version=4.16.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="functionalLocationData.Location" type="System.Drawing.Point, System.Drawing">
+    <value>143, 99</value>
+  </data>
+  <data name="&gt;&gt;priorityLabelData.Parent" xml:space="preserve">
+    <value>detailsPanel</value>
+  </data>
+  <data name="workAssignmentLabelData.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="categoryData.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="priorityLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>80, 286</value>
+  </data>
+  <data name="thresholdLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;minFrequencyLabel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Operator Log Tool, Version=4.16.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="suppressAlertCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 17</value>
+  </data>
+  <data name="&gt;&gt;minDataLabel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabelData, Operator Log Tool, Version=4.16.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;functionalLocationData.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabelData, Operator Log Tool, Version=4.16.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;maxReadWriteTagDirectionLabel.Parent" xml:space="preserve">
+    <value>thresholdGroupBox</value>
+  </data>
+  <data name="&gt;&gt;nteMaxFrequency.Name" xml:space="preserve">
+    <value>nteMaxFrequency</value>
+  </data>
+  <data name="dependentTargetLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="editedByDataLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;targetDataLabel.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="thresholdGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>143, 329</value>
+  </data>
+  <data name="approveButton.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>White</value>
+  </data>
+  <data name="nteMinFrequencyLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="thresholdLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 13</value>
+  </data>
+  <data name="&gt;&gt;targetLabel.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="targetReadWriteTagDirectionLabel.Text" xml:space="preserve">
+    <value>PH Direction label</value>
+  </data>
+  <data name="targetDataLabel.Text" xml:space="preserve">
+    <value>Target Data</value>
+  </data>
+  <data name="preApprovedNeverToExceedMinLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="targetDataLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;thresholdGroupBox.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="priorityLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>35</value>
+  </data>
+  <data name="&gt;&gt;nteMinFrequencyLabel.Name" xml:space="preserve">
+    <value>nteMinFrequencyLabel</value>
+  </data>
+  <data name="editButton.Text" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="&gt;&gt;categoryData.Parent" xml:space="preserve">
+    <value>detailsPanel</value>
+  </data>
+  <data name="&gt;&gt;documentLinksControl.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.Controls.DocumentLinksControl, Operator Log Tool, Version=4.16.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;nteMinFrequencyLabel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Operator Log Tool, Version=4.16.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;gapUnitValueLabel.Name" xml:space="preserve">
+    <value>gapUnitValueLabel</value>
+  </data>
+  <data name="preApprovedNeverToExceedMinDataLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>124, 84</value>
+  </data>
+  <data name="preApprovedNeverToExceedMaxLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;maxDataLabel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabelData, Operator Log Tool, Version=4.16.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;leftPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;commentsPanel.Name" xml:space="preserve">
+    <value>commentsPanel</value>
+  </data>
+  <data name="dependantTargetPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>143, 603</value>
+  </data>
+  <data name="scheduleLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="functionLocationLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;nteMaxFrequencyLabel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Operator Log Tool, Version=4.16.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;functionalLocationData.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="suppressAlertCheckBox.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;requireApprovalCheckBox.Name" xml:space="preserve">
+    <value>requireApprovalCheckBox</value>
+  </data>
+  <data name="&gt;&gt;preApprovedMaxLabel.Name" xml:space="preserve">
+    <value>preApprovedMaxLabel</value>
+  </data>
+  <data name="functionLocationLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;thresholdGroupBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltGroupBox, Operator Log Tool, Version=4.16.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;requiresResponseWhenAlertedCheckBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltCheckBox, Operator Log Tool, Version=4.16.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="scheduleDisplay.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;commentsLabel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Operator Log Tool, Version=4.16.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="tagData.Location" type="System.Drawing.Point, System.Drawing">
+    <value>143, 218</value>
+  </data>
+  <data name="neverToExceedMaxLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;generateActionItemCheckBox.Name" xml:space="preserve">
+    <value>generateActionItemCheckBox</value>
+  </data>
+  <data name="&gt;&gt;preApprovedThresholdGroupBox.Name" xml:space="preserve">
+    <value>preApprovedThresholdGroupBox</value>
+  </data>
+  <data name="&gt;&gt;nteMinFrequency.Name" xml:space="preserve">
+    <value>nteMinFrequency</value>
+  </data>
+  <data name="maxDataLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>164, 39</value>
+  </data>
+  <data name="commentsButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>81, 22</value>
+  </data>
+  <data name="requireApprovalCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>143, 12</value>
+  </data>
+  <data name="editedByDataLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="categoryLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;targetNameLabel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Operator Log Tool, Version=4.16.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="commentsLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="preApprovedMinLabel.Text" xml:space="preserve">
+    <value>Min:</value>
+  </data>
+  <data name="dependantTargetPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
+  </data>
+  <data name="minDataLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>164, 61</value>
+  </data>
+  <data name="&gt;&gt;priorityLabel.Name" xml:space="preserve">
+    <value>priorityLabel</value>
+  </data>
+  <data name="categoryLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>71, 242</value>
+  </data>
+  <data name="&gt;&gt;oltLabel3.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;preApprovedNeverToExceedMaxDataLabel.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="rejectButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 22</value>
+  </data>
+  <data name="&gt;&gt;maxReadWriteTagDirectionLabel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabelReadWriteDirection, Operator Log Tool, Version=4.16.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;commentsLabel.Name" xml:space="preserve">
+    <value>commentsLabel</value>
+  </data>
+  <data name="minLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;neverToExceedMaxLabel.Parent" xml:space="preserve">
+    <value>thresholdGroupBox</value>
+  </data>
+  <data name="editedByLabel.Text" xml:space="preserve">
+    <value>Edited By</value>
+  </data>
+  <data name="editButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 22</value>
+  </data>
+  <data name="&gt;&gt;preApprovedNeverToExceedMinDataLabel.Name" xml:space="preserve">
+    <value>preApprovedNeverToExceedMinDataLabel</value>
+  </data>
+  <data name="&gt;&gt;maxFrequencyLabel.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="preApprovedNeverToExceedMaxDataLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>124, 17</value>
+  </data>
+  <data name="gapUnitValueDataLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;saveGridLayoutButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="temporarilyInactiveCheckBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="priorityLabelData.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>720, 924</value>
+  </data>
+  <data name="thresholdLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;oltLabel3.Parent" xml:space="preserve">
+    <value>leftPanel</value>
+  </data>
+  <data name="&gt;&gt;oltLabel2.Parent" xml:space="preserve">
+    <value>leftPanel</value>
+  </data>
+  <data name="neverToExceedMinDataLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="priorityLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="minLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>134, 61</value>
+  </data>
+  <data name="requiresResponseWhenAlertedCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>31</value>
+  </data>
+  <data name="nteMaxFrequencyLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>235, 17</value>
+  </data>
+  <data name="&gt;&gt;gapUnitValueDataLabel.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="minDataLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="requiresResponseWhenAlertedCheckBox.Text" xml:space="preserve">
+    <value>Requires Response When Alerted</value>
+  </data>
+  <data name="&gt;&gt;categoryLabel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Operator Log Tool, Version=4.16.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="descriptionTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>564, 94</value>
+  </data>
+  <data name="&gt;&gt;neverToExceedMaxLabel.Name" xml:space="preserve">
+    <value>neverToExceedMaxLabel</value>
+  </data>
+  <data name="functionLocationLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>99, 13</value>
+  </data>
+  <data name="&gt;&gt;preApprovedMinDataLabel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tagLabel.Text" xml:space="preserve">
+    <value>Plant Historian Tag</value>
+  </data>
+  <data name="&gt;&gt;operationalModeLabel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabelData, Operator Log Tool, Version=4.16.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="thresholdGroupBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;categoryLabel.Parent" xml:space="preserve">
+    <value>leftPanel</value>
+  </data>
+  <data name="preApprovedMinDataLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="minFrequency.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="priorityLabelData.Size" type="System.Drawing.Size, System.Drawing">
+    <value>564, 19</value>
+  </data>
+  <data name="preApprovedNeverToExceedMaxDataLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="requireApprovalCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="editedByLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>69, 58</value>
+  </data>
+  <data name="leftPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="workAssignmentLabelData.Location" type="System.Drawing.Point, System.Drawing">
+    <value>143, 305</value>
+  </data>
+  <data name="functionalLocationData.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="nteMinFrequency.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="preApprovedMinLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;preApprovedMaxDataLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="dependantTargetPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>564, 79</value>
+  </data>
+  <data name="&gt;&gt;commentsPanel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltPanel, Operator Log Tool, Version=4.16.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="preApprovedNeverToExceedMinDataLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="minFrequencyLabel.Text" xml:space="preserve">
+    <value>Confidence:</value>
+  </data>
+  <data name="maxLabel.Text" xml:space="preserve">
+    <value>Max:</value>
+  </data>
+  <data name="targetDataLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>164, 130</value>
+  </data>
+  <data name="&gt;&gt;rejectButton.Name" xml:space="preserve">
+    <value>rejectButton</value>
+  </data>
+  <data name="functionLocationLabel.Text" xml:space="preserve">
+    <value>Functional Location</value>
+  </data>
+  <data name="&gt;&gt;minFrequencyLabel.Name" xml:space="preserve">
+    <value>minFrequencyLabel</value>
+  </data>
+  <data name="toolStrip1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="nteMaxFrequency.Size" type="System.Drawing.Size, System.Drawing">
+    <value>13, 13</value>
+  </data>
+  <data name="requireApprovalCheckBox.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="temporarilyInactiveCheckBox.Text" xml:space="preserve">
+    <value>Temporarily Inactive</value>
+  </data>
+  <data name="descriptionTextBox.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;nteMinFrequency.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="neverToExceedMinLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;targetLabel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Operator Log Tool, Version=4.16.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;commentsLabel.Parent" xml:space="preserve">
+    <value>leftPanel</value>
+  </data>
+  <data name="&gt;&gt;requiresResponseWhenAlertedCheckBox.Parent" xml:space="preserve">
+    <value>detailsPanel</value>
+  </data>
+  <data name="&gt;&gt;editedByDataLabel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabelData, Operator Log Tool, Version=4.16.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="requireApprovalCheckBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;minReadWriteTagDirectionLabel.Parent" xml:space="preserve">
+    <value>thresholdGroupBox</value>
+  </data>
+  <data name="tagLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;suppressAlertCheckBox.Name" xml:space="preserve">
+    <value>suppressAlertCheckBox</value>
+  </data>
+  <data name="&gt;&gt;documentLinksControl.Parent" xml:space="preserve">
+    <value>detailsPanel</value>
+  </data>
+  <data name="rejectButton.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>White</value>
+  </data>
+  <data name="&gt;&gt;minLabel.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;editButton.Name" xml:space="preserve">
+    <value>editButton</value>
+  </data>
+  <data name="&gt;&gt;nteMaxFrequency.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="preApprovedMaxLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="neverToExceedMinLabel.Text" xml:space="preserve">
+    <value>NTE/SOL Min:</value>
+  </data>
+  <data name="neverToExceedMinDataLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;nteMinFrequency.Parent" xml:space="preserve">
+    <value>thresholdGroupBox</value>
+  </data>
+  <data name="toolStrip1.Text" xml:space="preserve">
+    <value>toolStrip1</value>
+  </data>
+  <data name="&gt;&gt;oltLabel1.Parent" xml:space="preserve">
+    <value>leftPanel</value>
+  </data>
+  <data name="leftPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="&gt;&gt;gapUnitValueLabel.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="oltLabel2.TabIndex" type="System.Int32, mscorlib">
+    <value>33</value>
+  </data>
+  <data name="&gt;&gt;editedByDataLabel.Name" xml:space="preserve">
+    <value>editedByDataLabel</value>
+  </data>
+  <data name="documentLinksControl.TabIndex" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="targetNameData.Text" xml:space="preserve">
+    <value>The name of this Target Definition</value>
+  </data>
+  <data name="&gt;&gt;detailsPanel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;neverToExceedMinDataLabel.Parent" xml:space="preserve">
+    <value>thresholdGroupBox</value>
+  </data>
+  <data name="&gt;&gt;exportAllButton.Name" xml:space="preserve">
+    <value>exportAllButton</value>
+  </data>
+  <data name="&gt;&gt;leftPanel.Parent" xml:space="preserve">
+    <value>detailsPanel</value>
+  </data>
+  <data name="operationalModeLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;tagLabel.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;scheduleDisplay.Parent" xml:space="preserve">
+    <value>detailsPanel</value>
+  </data>
+  <data name="maxFrequencyLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="preApprovedNeverToExceedMaxLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="dependentTargetLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>108, 13</value>
+  </data>
+  <data name="minLabel.Text" xml:space="preserve">
+    <value>Min:</value>
+  </data>
+  <data name="&gt;&gt;guvUnitsLabel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabelData, Operator Log Tool, Version=4.16.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;operationalModeLabel.Name" xml:space="preserve">
+    <value>operationalModeLabel</value>
+  </data>
+  <data name="&gt;&gt;minLabel.Parent" xml:space="preserve">
+    <value>thresholdGroupBox</value>
+  </data>
+  <data name="&gt;&gt;suppressAlertCheckBox.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="requiresResponseWhenAlertedCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>187, 17</value>
+  </data>
+  <data name="neverToExceedMinDataLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 13</value>
+  </data>
+  <data name="&gt;&gt;toolStrip1.Name" xml:space="preserve">
+    <value>toolStrip1</value>
+  </data>
+  <data name="neverToExceedMaxDataLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="preApprovedMaxDataLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="neverToExceedMaxLabel.Text" xml:space="preserve">
+    <value>NTE/SOL Max:</value>
+  </data>
+  <data name="&gt;&gt;targetDataLabel.Name" xml:space="preserve">
+    <value>targetDataLabel</value>
+  </data>
+  <data name="&gt;&gt;preApprovedNeverToExceedMaxDataLabel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabelData, Operator Log Tool, Version=4.16.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="targetNameData.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="maxFrequencyLabel.Text" xml:space="preserve">
+    <value>Confidence:</value>
+  </data>
+  <data name="preApprovedNeverToExceedMinLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 13</value>
+  </data>
+  <data name="&gt;&gt;targetReadWriteTagDirectionLabel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabelReadWriteDirection, Operator Log Tool, Version=4.16.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;preApprovedThresholdGroupBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tagData.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="thresholdGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>341, 157</value>
+  </data>
+  <data name="maxDataLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 13</value>
+  </data>
+  <data name="&gt;&gt;tagLabel.Name" xml:space="preserve">
+    <value>tagLabel</value>
+  </data>
+  <data name="&gt;&gt;thresholdLabel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Operator Log Tool, Version=4.16.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;maxLabel.Name" xml:space="preserve">
+    <value>maxLabel</value>
+  </data>
+  <data name="categoryLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>52, 13</value>
+  </data>
+  <data name="temporarilyInactiveCheckBox.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="gapUnitValueLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>80, 106</value>
+  </data>
+  <data name="&gt;&gt;targetDataLabel.Parent" xml:space="preserve">
+    <value>thresholdGroupBox</value>
+  </data>
+  <data name="neverToExceedMaxLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="targetNameLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 13</value>
+  </data>
+  <data name="gapUnitValueLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="commentsLabel.Text" xml:space="preserve">
+    <value>Comments</value>
+  </data>
+  <data name="&gt;&gt;targetReadWriteTagDirectionLabel.Name" xml:space="preserve">
+    <value>targetReadWriteTagDirectionLabel</value>
+  </data>
+  <data name="nteMinFrequencyLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>235, 84</value>
+  </data>
+  <data name="&gt;&gt;targetNameLabel.Parent" xml:space="preserve">
+    <value>leftPanel</value>
+  </data>
+  <data name="&gt;&gt;preApprovedNeverToExceedMaxLabel.Name" xml:space="preserve">
+    <value>preApprovedNeverToExceedMaxLabel</value>
+  </data>
+  <data name="&gt;&gt;preApprovedNeverToExceedMinDataLabel.Parent" xml:space="preserve">
+    <value>preApprovedThresholdGroupBox</value>
+  </data>
+  <data name="&gt;&gt;gapUnitValueLabel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Operator Log Tool, Version=4.16.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="guvUnitsLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 13</value>
+  </data>
+  <data name="neverToExceedMinLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 13</value>
+  </data>
+  <data name="&gt;&gt;oltLabel2.Name" xml:space="preserve">
+    <value>oltLabel2</value>
+  </data>
+  <data name="guvUnitsLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;detailsPanel.Name" xml:space="preserve">
+    <value>detailsPanel</value>
+  </data>
+  <data name="thresholdGroupBox.Text" xml:space="preserve">
+    <value>Threshold Values</value>
+  </data>
+  <data name="&gt;&gt;scheduleLabel.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="preApprovedNeverToExceedMinDataLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;operationalModeLabel.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="gapUnitValueDataLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="preApprovedNeverToExceedMinLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="minFrequency.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="toggleShowButton.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="&gt;&gt;gapUnitValueDataLabel.Name" xml:space="preserve">
+    <value>gapUnitValueDataLabel</value>
+  </data>
+  <data name="priorityLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>41, 13</value>
+  </data>
+  <data name="&gt;&gt;documentLinksControl.Name" xml:space="preserve">
+    <value>documentLinksControl</value>
+  </data>
+  <data name="preApprovedMaxLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>31, 13</value>
+  </data>
+  <data name="&gt;&gt;thresholdGroupBox.Parent" xml:space="preserve">
+    <value>detailsPanel</value>
+  </data>
+  <data name="&gt;&gt;oltLabel1.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Operator Log Tool, Version=4.16.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="gapUnitValueDataLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 13</value>
+  </data>
+  <data name="&gt;&gt;preApprovedNeverToExceedMaxLabel.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="rejectButton.Text" xml:space="preserve">
+    <value>Reject</value>
+  </data>
+  <data name="&gt;&gt;descriptionLabel.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="priorityLabelData.Location" type="System.Drawing.Point, System.Drawing">
+    <value>143, 283</value>
+  </data>
+  <data name="gapUnitValueReadWriteTagDirectionLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 106</value>
+  </data>
+  <data name="&gt;&gt;minReadWriteTagDirectionLabel.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;requireApprovalCheckBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltCheckBox, Operator Log Tool, Version=4.16.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;gapUnitValueReadWriteTagDirectionLabel.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;oltLabel1.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="operationalModeLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="generateActionItemCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="&gt;&gt;priorityLabel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Operator Log Tool, Version=4.16.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="neverToExceedMaxLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>76, 13</value>
+  </data>
+  <data name="&gt;&gt;categoryData.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="preApprovedMaxDataLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>124, 39</value>
+  </data>
+  <data name="exportAllButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>85, 22</value>
+  </data>
+  <data name="&gt;&gt;nteMaxFrequencyLabel.Parent" xml:space="preserve">
+    <value>thresholdGroupBox</value>
+  </data>
+  <data name="&gt;&gt;toolStrip1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;minDataLabel.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="editedByLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="commentsPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>564, 122</value>
+  </data>
+  <data name="&gt;&gt;workAssignmentLabelData.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="minReadWriteTagDirectionLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="targetNameData.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;guvUnitsLabel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="commentsPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="&gt;&gt;preApprovedMaxDataLabel.Parent" xml:space="preserve">
+    <value>preApprovedThresholdGroupBox</value>
+  </data>
+  <data name="categoryLabel.Text" xml:space="preserve">
+    <value>Category</value>
+  </data>
+  <data name="maxReadWriteTagDirectionLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;workAssignmentLabelData.Parent" xml:space="preserve">
+    <value>detailsPanel</value>
+  </data>
+  <data name="&gt;&gt;temporarilyInactiveCheckBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltCheckBox, Operator Log Tool, Version=4.16.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="minLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="suppressAlertCheckBox.Text" xml:space="preserve">
+    <value>Suppress Alert</value>
+  </data>
+  <data name="&gt;&gt;neverToExceedMinLabel.Parent" xml:space="preserve">
+    <value>thresholdGroupBox</value>
+  </data>
+  <data name="descriptionTextBox.ScrollBars" type="System.Windows.Forms.ScrollBars, System.Windows.Forms">
+    <value>Vertical</value>
+  </data>
+  <data name="&gt;&gt;descriptionLabel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Operator Log Tool, Version=4.16.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;dependentTargetLabel.Name" xml:space="preserve">
+    <value>dependentTargetLabel</value>
+  </data>
+  <data name="&gt;&gt;requireApprovalCheckBox.Parent" xml:space="preserve">
+    <value>detailsPanel</value>
+  </data>
+  <data name="nteMaxFrequencyLabel.Text" xml:space="preserve">
+    <value>Confidence:</value>
+  </data>
+  <data name="&gt;&gt;targetNameData.Parent" xml:space="preserve">
+    <value>detailsPanel</value>
+  </data>
+  <data name="gapUnitValueReadWriteTagDirectionLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;deleteButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;scheduleDisplay.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="suppressAlertCheckBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;minFrequency.Parent" xml:space="preserve">
+    <value>thresholdGroupBox</value>
+  </data>
+  <data name="&gt;&gt;maxDataLabel.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="commentsPanel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;maxFrequency.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Operator Log Tool, Version=4.16.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;editedByLabel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Operator Log Tool, Version=4.16.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;preApprovedMinDataLabel.Parent" xml:space="preserve">
+    <value>preApprovedThresholdGroupBox</value>
+  </data>
+  <data name="&gt;&gt;maxReadWriteTagDirectionLabel.Name" xml:space="preserve">
+    <value>maxReadWriteTagDirectionLabel</value>
+  </data>
+  <data name="&gt;&gt;deleteButton.Name" xml:space="preserve">
+    <value>deleteButton</value>
+  </data>
+  <data name="preApprovedThresholdGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>217, 157</value>
+  </data>
+  <data name="&gt;&gt;preApprovedNeverToExceedMinLabel.Parent" xml:space="preserve">
+    <value>preApprovedThresholdGroupBox</value>
+  </data>
+  <data name="suppressAlertCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="tagLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="priorityLabelData.TabIndex" type="System.Int32, mscorlib">
+    <value>36</value>
+  </data>
+  <data name="&gt;&gt;preApprovedNeverToExceedMinDataLabel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabelData, Operator Log Tool, Version=4.16.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="saveGridLayoutButton.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="neverToExceedMaxLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>85, 17</value>
+  </data>
+  <data name="targetLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>43, 13</value>
+  </data>
+  <data name="deleteButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 22</value>
+  </data>
+  <data name="&gt;&gt;minFrequency.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Operator Log Tool, Version=4.16.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;targetNameLabel.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;categoryLabel.Name" xml:space="preserve">
+    <value>categoryLabel</value>
+  </data>
+  <data name="&gt;&gt;gapUnitValueReadWriteTagDirectionLabel.Parent" xml:space="preserve">
+    <value>thresholdGroupBox</value>
+  </data>
+  <data name="descriptionTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>143, 121</value>
+  </data>
+  <data name="editedByLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>52, 13</value>
+  </data>
+  <data name="&gt;&gt;neverToExceedMaxLabel.ZOrder" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="&gt;&gt;neverToExceedMinLabel.ZOrder" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="&gt;&gt;priorityLabelData.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="preApprovedNeverToExceedMinDataLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 13</value>
+  </data>
+  <data name="&gt;&gt;nteMaxFrequencyLabel.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;preApprovedMaxLabel.Parent" xml:space="preserve">
+    <value>preApprovedThresholdGroupBox</value>
+  </data>
+  <data name="oltLabel1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;gapUnitValueDataLabel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabelData, Operator Log Tool, Version=4.16.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="commentsButton.Text" xml:space="preserve">
+    <value>Comment</value>
+  </data>
+  <data name="preApprovedMaxLabel.Text" xml:space="preserve">
+    <value>Max:</value>
+  </data>
+  <data name="&gt;&gt;neverToExceedMinDataLabel.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="nteMinFrequency.Location" type="System.Drawing.Point, System.Drawing">
+    <value>306, 84</value>
+  </data>
+  <data name="&gt;&gt;guvUnitsLabel.Name" xml:space="preserve">
+    <value>guvUnitsLabel</value>
+  </data>
+  <data name="nteMaxFrequency.Text" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="neverToExceedMaxDataLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>164, 17</value>
+  </data>
+  <data name="&gt;&gt;dependantTargetPanel.Parent" xml:space="preserve">
+    <value>detailsPanel</value>
+  </data>
+  <data name="functionalLocationData.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="generateActionItemCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>129, 17</value>
+  </data>
+  <data name="&gt;&gt;suppressAlertCheckBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltCheckBox, Operator Log Tool, Version=4.16.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="editedByDataLabel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;neverToExceedMinDataLabel.Name" xml:space="preserve">
+    <value>neverToExceedMinDataLabel</value>
+  </data>
+  <data name="&gt;&gt;commentsPanel.Parent" xml:space="preserve">
+    <value>detailsPanel</value>
+  </data>
+  <data name="scheduleLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>71, 492</value>
+  </data>
+  <data name="maxFrequency.Text" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="tagLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>97, 13</value>
+  </data>
+  <data name="targetNameData.Size" type="System.Drawing.Size, System.Drawing">
+    <value>564, 19</value>
+  </data>
+  <data name="&gt;&gt;editedByDataLabel.Parent" xml:space="preserve">
+    <value>detailsPanel</value>
+  </data>
+  <data name="gapUnitValueReadWriteTagDirectionLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>106, 13</value>
+  </data>
+  <data name="preApprovedMinLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>27, 13</value>
+  </data>
+  <data name="operationalModeLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>143, 261</value>
+  </data>
+  <data name="&gt;&gt;neverToExceedMaxLabel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Operator Log Tool, Version=4.16.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tagData.Name" xml:space="preserve">
+    <value>tagData</value>
+  </data>
+  <data name="&gt;&gt;functionLocationLabel.Name" xml:space="preserve">
+    <value>functionLocationLabel</value>
+  </data>
+  <data name="&gt;&gt;tagData.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;editHistoryButton.Name" xml:space="preserve">
+    <value>editHistoryButton</value>
+  </data>
+  <data name="&gt;&gt;preApprovedMinLabel.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="preApprovedNeverToExceedMinLabel.Text" xml:space="preserve">
+    <value>NTE/SOL Min:</value>
+  </data>
+  <data name="editedByLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="minFrequencyLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="maxLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>31, 13</value>
+  </data>
+  <data name="minFrequency.Text" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="targetDataLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 13</value>
+  </data>
+  <data name="&gt;&gt;preApprovedMinDataLabel.Name" xml:space="preserve">
+    <value>preApprovedMinDataLabel</value>
+  </data>
+  <data name="preApprovedNeverToExceedMaxLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>46, 17</value>
+  </data>
+  <data name="&gt;&gt;maxDataLabel.Parent" xml:space="preserve">
+    <value>thresholdGroupBox</value>
+  </data>
+  <data name="guvUnitsLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;scheduleLabel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Operator Log Tool, Version=4.16.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="generateActionItemCheckBox.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="scheduleDisplay.Size" type="System.Drawing.Size, System.Drawing">
+    <value>564, 105</value>
+  </data>
+  <data name="saveGridLayoutButton.Text" xml:space="preserve">
+    <value>Grid Layout</value>
+  </data>
+  <data name="preApprovedMinDataLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>124, 61</value>
+  </data>
+  <data name="guvUnitsLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>244, 106</value>
+  </data>
+  <data name="&gt;&gt;commentsPanel.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="toggleShowButton.Text" xml:space="preserve">
+    <value>Range</value>
+  </data>
+  <data name="&gt;&gt;categoryLabel.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;dependentTargetLabel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Operator Log Tool, Version=4.16.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="nteMaxFrequencyLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="targetLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>118, 130</value>
+  </data>
+  <data name="&gt;&gt;dependantTargetPanel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltPanel, Operator Log Tool, Version=4.16.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;descriptionTextBox.Name" xml:space="preserve">
+    <value>descriptionTextBox</value>
+  </data>
+  <data name="requireApprovalCheckBox.Text" xml:space="preserve">
+    <value>Requires Approval</value>
+  </data>
+  <data name="&gt;&gt;neverToExceedMaxDataLabel.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;neverToExceedMaxDataLabel.Parent" xml:space="preserve">
+    <value>thresholdGroupBox</value>
+  </data>
+  <data name="&gt;&gt;leftPanel.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="gapUnitValueLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;tagData.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabelData, Operator Log Tool, Version=4.16.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;priorityLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="descriptionTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="neverToExceedMaxDataLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="exportAllButton.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="nteMaxFrequencyLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 13</value>
+  </data>
+  <data name="&gt;&gt;nteMinFrequencyLabel.Parent" xml:space="preserve">
+    <value>thresholdGroupBox</value>
+  </data>
+  <data name="oltLabel1.Text" xml:space="preserve">
+    <value>Operational Mode</value>
+  </data>
+  <data name="&gt;&gt;gapUnitValueDataLabel.Parent" xml:space="preserve">
+    <value>thresholdGroupBox</value>
+  </data>
+  <data name="&gt;&gt;approveButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;scheduleDisplay.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.Controls.ScheduleDisplay, Operator Log Tool, Version=4.16.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;editedByDataLabel.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="preApprovedThresholdGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>490, 329</value>
+  </data>
+  <data name="&gt;&gt;functionLocationLabel.Parent" xml:space="preserve">
+    <value>leftPanel</value>
+  </data>
+  <data name="editHistoryButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 22</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>TargetDefinitionDetails</value>
+  </data>
+  <data name="&gt;&gt;minReadWriteTagDirectionLabel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabelReadWriteDirection, Operator Log Tool, Version=4.16.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;maxFrequency.Name" xml:space="preserve">
+    <value>maxFrequency</value>
+  </data>
+  <data name="requiresResponseWhenAlertedCheckBox.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;commentsButton.Name" xml:space="preserve">
+    <value>commentsButton</value>
+  </data>
+  <data name="&gt;&gt;thresholdGroupBox.Name" xml:space="preserve">
+    <value>thresholdGroupBox</value>
+  </data>
+  <data name="categoryLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="detailsPanel.AutoScroll" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="guvUnitsLabel.Text" xml:space="preserve">
+    <value>&lt;units&gt;</value>
+  </data>
+  <data name="preApprovedThresholdGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>37</value>
+  </data>
+  <data name="&gt;&gt;documentLinksControl.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;nteMinFrequency.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Operator Log Tool, Version=4.16.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="descriptionLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;preApprovedNeverToExceedMaxLabel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Operator Log Tool, Version=4.16.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="neverToExceedMinDataLabel.Text" xml:space="preserve">
+    <value>NTE/SOL Min Data</value>
+  </data>
+  <data name="&gt;&gt;maxFrequencyLabel.Parent" xml:space="preserve">
+    <value>thresholdGroupBox</value>
+  </data>
+  <data name="minDataLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="operationalModeLabel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="descriptionLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>61, 123</value>
+  </data>
+  <data name="&gt;&gt;maxReadWriteTagDirectionLabel.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="generateActionItemCheckBox.Text" xml:space="preserve">
+    <value>Generate Action Item</value>
+  </data>
+  <data name="&gt;&gt;detailsPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="oltLabel3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="detailsPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="&gt;&gt;priorityLabel.Parent" xml:space="preserve">
+    <value>leftPanel</value>
+  </data>
+  <data name="minReadWriteTagDirectionLabel.Text" xml:space="preserve">
+    <value>PH Direction label</value>
+  </data>
+  <data name="preApprovedNeverToExceedMinLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>50, 84</value>
+  </data>
+  <data name="&gt;&gt;preApprovedMinDataLabel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabelData, Operator Log Tool, Version=4.16.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;dependentTargetLabel.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="dependantTargetPanel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="gapUnitValueLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>81, 13</value>
+  </data>
+  <data name="&gt;&gt;maxFrequencyLabel.Name" xml:space="preserve">
+    <value>maxFrequencyLabel</value>
+  </data>
+  <data name="&gt;&gt;targetNameData.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="maxLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>130, 39</value>
+  </data>
+  <data name="&gt;&gt;targetLabel.Parent" xml:space="preserve">
+    <value>thresholdGroupBox</value>
+  </data>
+  <data name="categoryData.Text" xml:space="preserve">
+    <value>Category Data</value>
+  </data>
+  <data name="&gt;&gt;categoryData.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabelData, Operator Log Tool, Version=4.16.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="commentsLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="priorityLabel.Text" xml:space="preserve">
+    <value>Priority</value>
+  </data>
+  <data name="maxReadWriteTagDirectionLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>106, 13</value>
+  </data>
+  <data name="&gt;&gt;oltLabel3.Name" xml:space="preserve">
+    <value>oltLabel3</value>
+  </data>
+  <data name="dependentTargetLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;dependentTargetLabel.Parent" xml:space="preserve">
+    <value>leftPanel</value>
+  </data>
+  <data name="&gt;&gt;nteMaxFrequency.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Operator Log Tool, Version=4.16.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;preApprovedNeverToExceedMinLabel.Name" xml:space="preserve">
+    <value>preApprovedNeverToExceedMinLabel</value>
+  </data>
+  <data name="&gt;&gt;minFrequencyLabel.Parent" xml:space="preserve">
+    <value>thresholdGroupBox</value>
+  </data>
+  <data name="&gt;&gt;workAssignmentLabelData.Name" xml:space="preserve">
+    <value>workAssignmentLabelData</value>
+  </data>
+  <data name="preApprovedNeverToExceedMaxDataLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="targetNameData.Location" type="System.Drawing.Point, System.Drawing">
+    <value>143, 77</value>
+  </data>
+  <data name="&gt;&gt;preApprovedNeverToExceedMaxLabel.Parent" xml:space="preserve">
+    <value>preApprovedThresholdGroupBox</value>
+  </data>
+  <data name="nteMinFrequencyLabel.Text" xml:space="preserve">
+    <value>Confidence:</value>
+  </data>
+  <data name="neverToExceedMaxDataLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 13</value>
+  </data>
+  <data name="&gt;&gt;neverToExceedMaxDataLabel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabelData, Operator Log Tool, Version=4.16.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;temporarilyInactiveCheckBox.Parent" xml:space="preserve">
+    <value>detailsPanel</value>
+  </data>
+  <data name="preApprovedMinLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>95, 61</value>
+  </data>
+  <data name="&gt;&gt;saveGridLayoutButton.Name" xml:space="preserve">
+    <value>saveGridLayoutButton</value>
+  </data>
+  <data name="detailsPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="gapUnitValueReadWriteTagDirectionLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <metadata name="toolStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>0, 0</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>fr</value>
+  </metadata>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>48</value>
+  </metadata>
+</root>

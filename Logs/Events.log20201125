@@ -1,0 +1,28 @@
+2020-11-25 07:16:43,823 [17] INFO  EventService - Subscribe: [ClientAddress=net.tcp://10.9.21.6:9772/] [SiteId=13] [Machine=D126741] [Reason=RefreshConnect]
+2020-11-25 07:40:45,319 [39] INFO  EventService - Unsubscribe: [ClientAddress=net.tcp://10.9.21.6:9772/] [Reason=ApplicationExit]
+2020-11-25 08:17:25,915 [40] INFO  EventService - Subscribe: [ClientAddress=net.tcp://10.9.21.6:9772/] [SiteId=13] [Machine=D126741] [Reason=RefreshConnect]
+2020-11-25 08:19:57,848 [34] INFO  EventService - Unsubscribe: [ClientAddress=net.tcp://10.9.21.6:9772/] [Reason=ApplicationExit]
+2020-11-25 10:54:32,524 [5] INFO  EventService - Subscribe: [ClientAddress=net.tcp://10.9.21.6:9772/] [SiteId=13] [Machine=D126741] [Reason=RefreshConnect]
+2020-11-25 10:59:58,812 [9] DEBUG EventQueue - Pushing event into queue: [Method:WorkPermitCreate] [DomainObject:WorkPermit] [Id:11] [Initiating Event Sink Uri:net.tcp://10.9.21.6:9772/]
+2020-11-25 10:59:59,642 [5] DEBUG EventService - Should Notify Client of Event Called.  IsRelevant = False
+2020-11-25 11:00:36,234 [5] DEBUG EventQueue - Pushing event into queue: [Method:WorkPermitCreate] [DomainObject:WorkPermit] [Id:12] [Initiating Event Sink Uri:net.tcp://10.9.21.6:9772/]
+2020-11-25 11:00:36,459 [9] DEBUG EventService - Should Notify Client of Event Called.  IsRelevant = False
+2020-11-25 11:05:39,766 [9] DEBUG EventQueue - Pushing event into queue: [Method:WorkPermitUpdate] [DomainObject:WorkPermit] [Id:11] [Initiating Event Sink Uri:net.tcp://10.9.21.6:9772/]
+2020-11-25 11:05:40,537 [1] DEBUG EventService - Should Notify Client of Event Called.  IsRelevant = False
+2020-11-25 12:27:51,236 [39] INFO  EventService - Unsubscribe: [ClientAddress=net.tcp://10.9.21.6:9772/] [Reason=ApplicationExit]
+2020-11-25 12:40:43,787 [5] INFO  EventService - Subscribe: [ClientAddress=net.tcp://10.9.21.6:9771/] [SiteId=13] [Machine=D126741] [Reason=RefreshConnect]
+2020-11-25 12:46:16,298 [1] DEBUG EventQueue - Pushing event into queue: [Method:WorkPermitUpdate] [DomainObject:WorkPermit] [Id:11] [Initiating Event Sink Uri:net.tcp://10.9.21.6:9771/]
+2020-11-25 12:46:17,285 [5] DEBUG EventService - Should Notify Client of Event Called.  IsRelevant = False
+2020-11-25 12:46:32,288 [56] DEBUG EventQueue - Pushing event into queue: [Method:WorkPermitUpdate] [DomainObject:WorkPermit] [Id:11] [Initiating Event Sink Uri:net.tcp://10.9.21.6:9771/]
+2020-11-25 12:46:32,537 [1] DEBUG EventService - Should Notify Client of Event Called.  IsRelevant = False
+2020-11-25 13:31:54,655 [19] INFO  EventService - Subscribe: [ClientAddress=net.tcp://10.9.21.6:9771/] [SiteId=13] [Machine=D126741] [Reason=RefreshConnect]
+2020-11-25 13:33:06,688 [21] DEBUG EventQueue - Pushing event into queue: [Method:WorkPermitUpdate] [DomainObject:WorkPermit] [Id:12] [Initiating Event Sink Uri:net.tcp://10.9.21.6:9771/]
+2020-11-25 13:33:07,608 [19] DEBUG EventService - Should Notify Client of Event Called.  IsRelevant = False
+2020-11-25 14:37:51,633 [43] INFO  EventService - Subscribe: [ClientAddress=net.tcp://10.9.21.6:9771/] [SiteId=13] [Machine=D126741] [Reason=RefreshConnect]
+2020-11-25 14:38:54,636 [1] DEBUG EventQueue - Pushing event into queue: [Method:WorkPermitUpdate] [DomainObject:WorkPermit] [Id:12] [Initiating Event Sink Uri:net.tcp://10.9.21.6:9771/]
+2020-11-25 14:38:55,565 [42] DEBUG EventService - Should Notify Client of Event Called.  IsRelevant = False
+2020-11-25 14:40:45,769 [1] DEBUG EventQueue - Pushing event into queue: [Method:WorkPermitCreate] [DomainObject:WorkPermit] [Id:13] [Initiating Event Sink Uri:net.tcp://10.9.21.6:9771/]
+2020-11-25 14:40:45,995 [42] DEBUG EventService - Should Notify Client of Event Called.  IsRelevant = False
+2020-11-25 14:41:37,693 [42] DEBUG EventQueue - Pushing event into queue: [Method:WorkPermitCreateTemplate] [DomainObject:WorkPermit] [Id:10] [Initiating Event Sink Uri:net.tcp://10.9.21.6:9771/]
+2020-11-25 14:41:37,918 [43] DEBUG EventService - Should Notify Client of Event Called.  IsRelevant = False
+2020-11-25 14:41:54,037 [42] INFO  EventService - Unsubscribe: [ClientAddress=net.tcp://10.9.21.6:9771/] [Reason=ApplicationExit]

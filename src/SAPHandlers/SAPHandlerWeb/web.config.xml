@@ -1,0 +1,158 @@
+<?xml version="1.0"?>
+<configuration xmlns="http://schemas.microsoft.com/.NetConfiguration/v2.0">
+  <configSections>
+    <section name="log4net" type="log4net.Config.Log4NetConfigurationSectionHandler, log4net" />
+  </configSections>
+  <appSettings>
+    <add key="RemoteServicesURL" value="$(HttpHandlerRemoteServicesURILocation)" />
+    <add key="ServerTimeZone" value="Mountain Standard Time" />
+    <add key="clientServerBindingType" value="3"/>
+
+    <add key="OLTSAPWebServiceHost" value="$(OLTSAPWebServiceHost)"/>
+    <add key="OLTSAPWebServiceUser" value="$(OLTSAPWebServiceUser)"/>
+    <add key="OLTSAPWebServicePassword" value="$(OLTSAPWebServicePassword)"/>
+    <add key="OLTSAPWebServiceLogRequestURL" value="$(OLTSAPWebServiceLogRequestURL)"/>
+  </appSettings>
+  
+  <system.web>
+    <compilation debug="true" />
+    <authentication mode="Windows" />
+        <trace enabled="true"/>
+    </system.web>
+  <log4net>
+    <appender name="FunctionalLocationAdapterFileAppender" type="log4net.Appender.RollingFileAppender">
+      <file value="$(LogFileLocation)\OLT-SAPHandler-Floc.log" />
+      <appendToFile value="true" />
+      <rollingStyle value="Date" />
+      <maxSizeRollBackups value="90" />
+      <datePattern value="yyyyMMdd" />
+       <layout type="log4net.Layout.PatternLayout">
+        <conversionPattern value="%date [%thread] %-5level %logger{1} - %message%newline" />
+      </layout>
+    </appender>
+
+    <appender name="NotificationAdapterFileAppender" type="log4net.Appender.RollingFileAppender">
+      <file value="$(LogFileLocation)\OLT-SAPHandler-Notification.log" />
+      <appendToFile value="true" />
+      <rollingStyle value="Date" />
+      <maxSizeRollBackups value="90" />
+      <datePattern value="yyyyMMdd" />
+	  <layout type="log4net.Layout.PatternLayout">
+        <conversionPattern value="%date [%thread] %-5level %logger{1} - %message%newline" />
+      </layout>
+    </appender>
+
+    <appender name="WorkOrderAdapterFileAppender" type="log4net.Appender.RollingFileAppender">
+      <file value="$(LogFileLocation)\OLT-SAPHandler-WorkOrder.log" />
+      <appendToFile value="true" />
+      <rollingStyle value="Date" />
+      <maxSizeRollBackups value="90" />
+      <datePattern value="yyyyMMdd" />
+	  <layout type="log4net.Layout.PatternLayout">
+        <conversionPattern value="%date [%thread] %-5level %logger{1} - %message%newline" />
+      </layout>
+    </appender>
+
+    <appender name="RollingFileAppender" type="log4net.Appender.RollingFileAppender">
+      <file value="$(LogFileLocation)\OLT-SAPHandler.log" />
+      <appendToFile value="true" />
+      <rollingStyle value="Date" />
+      <maxSizeRollBackups value="90" />
+      <datePattern value="yyyyMMdd" />
+       <layout type="log4net.Layout.PatternLayout">
+        <conversionPattern value="%date [%thread] %-5level %logger{1} - %message%newline" />
+      </layout>
+      
+      <filter type="log4net.Filter.LoggerMatchFilter">
+        <LoggerToMatch value="Com.Suncor.Olt.Integration.Handlers.Adapters.FlocAdapter"/>
+        <AcceptOnMatch value="false"/>
+      </filter>
+      <filter type="log4net.Filter.LoggerMatchFilter">
+        <LoggerToMatch value="Floc"/>
+        <AcceptOnMatch value="false"/>
+      </filter>
+      <filter type="log4net.Filter.LoggerMatchFilter">
+        <LoggerToMatch value="Com.Suncor.Olt.Integration.Handlers.Validators.FLOCValidator"/>
+        <AcceptOnMatch value="false"/>
+      </filter>
+      
+      <filter type="log4net.Filter.LoggerMatchFilter">
+        <LoggerToMatch value="Com.Suncor.Olt.Integration.Handlers.Adapters.NotificationAdapter"/>
+        <AcceptOnMatch value="false"/>
+      </filter>
+      <filter type="log4net.Filter.LoggerMatchFilter">
+        <LoggerToMatch value="Notification"/>
+        <AcceptOnMatch value="false"/>
+      </filter>
+      <filter type="log4net.Filter.LoggerMatchFilter">
+        <LoggerToMatch value="Com.Suncor.Olt.Integration.Handlers.Validators.NotificationValidator"/>
+        <AcceptOnMatch value="false"/>
+      </filter>
+      
+      <filter type="log4net.Filter.LoggerMatchFilter">
+        <LoggerToMatch value="Com.Suncor.Olt.Integration.Handlers.Adapters.WorkOrderAdapter"/>
+        <AcceptOnMatch value="false"/>
+      </filter>
+      <filter type="log4net.Filter.LoggerMatchFilter">
+        <LoggerToMatch value="WorkOrder"/>
+        <AcceptOnMatch value="false"/>
+      </filter>
+      <filter type="log4net.Filter.LoggerMatchFilter">
+        <LoggerToMatch value="Com.Suncor.Olt.Integration.Handlers.Validators.WorkOrderValidator"/>
+        <AcceptOnMatch value="false"/>
+      </filter>
+    </appender>
+    
+    <root>
+      <level value="$(LogLevel)" />
+      <appender-ref ref="RollingFileAppender" />
+    </root>
+	<logger name="Com.Suncor.Olt.Integration.Handlers.NotificationMessageHandler">
+      <level value="$(LogLevel)" />
+      <appender-ref ref="RollingFileAppender" />
+    </logger>
+	<logger name="Com.Suncor.Olt.Integration.Handlers.WorkOrderMessageHandler">
+      <level value="$(LogLevel)" />
+      <appender-ref ref="RollingFileAppender" />	  
+    </logger>
+    <logger name="Com.Suncor.Olt.Integration.Handlers.Adapters.FlocAdapter">
+      <level value="$(LogLevel)" />
+      <appender-ref ref="FunctionalLocationAdapterFileAppender" />
+    </logger>
+    <logger name="Floc">
+      <level value="$(LogLevel)" />
+      <appender-ref ref="FunctionalLocationAdapterFileAppender" />
+    </logger>
+    <logger name="Com.Suncor.Olt.Integration.Handlers.Validators.FLOCValidator">
+      <level value="$(LogLevel)" />
+      <appender-ref ref="FunctionalLocationAdapterFileAppender" />
+    </logger>
+
+    <logger name="Com.Suncor.Olt.Integration.Handlers.Adapters.NotificationAdapter">
+      <level value="$(LogLevel)" />
+      <appender-ref ref="NotificationAdapterFileAppender" />
+    </logger>
+    <logger name="Notification">
+      <level value="$(LogLevel)" />
+      <appender-ref ref="NotificationAdapterFileAppender" />
+    </logger>
+    <logger name="Com.Suncor.Olt.Integration.Handlers.Validators.NotificationValidator">
+      <level value="$(LogLevel)" />
+      <appender-ref ref="NotificationAdapterFileAppender" />
+    </logger>
+
+    <logger name="Com.Suncor.Olt.Integration.Handlers.Adapters.WorkOrderAdapter">
+      <level value="$(LogLevel)" />
+      <appender-ref ref="WorkOrderAdapterFileAppender" />
+    </logger>
+    <logger name="WorkOrder">
+      <level value="$(LogLevel)" />
+      <appender-ref ref="WorkOrderAdapterFileAppender" />
+    </logger>
+    <logger name="Com.Suncor.Olt.Integration.Handlers.Validators.WorkOrderValidator">
+      <level value="$(LogLevel)" />
+      <appender-ref ref="WorkOrderAdapterFileAppender" />
+    </logger>
+  </log4net>
+ 
+</configuration>

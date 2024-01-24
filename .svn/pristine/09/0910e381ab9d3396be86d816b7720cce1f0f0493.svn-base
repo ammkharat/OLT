@@ -1,0 +1,1350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="targetDefinitionNameTextbox.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="cancelButton.IconAlignment1" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="clearButton.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;gapUnitValueTagSearchButton.Name" xml:space="preserve">
+    <value>gapUnitValueTagSearchButton</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="targetDefinitionNameTextbox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>363, 20</value>
+  </data>
+  <data name="maxThresholdGroupBox.IconAlignment1" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="targetThresholdGroupBox.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="maxThresholdDirectionLabel.Text" xml:space="preserve">
+    <value>Direction</value>
+  </data>
+  <data name="targetThresholdTagNameTextBox.Error1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;gapUnitValueGroupBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="minThresholdTagSearchButton.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="oltPanel1.IconPadding1" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="oltLabel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 13</value>
+  </data>
+  <data name="targetDefinitionNameLabel.Text" xml:space="preserve">
+    <value>Target Definition Name</value>
+  </data>
+  <data name="&gt;&gt;gapUnitValueComboBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="targetThresholdTagSearchButton.Text" xml:space="preserve">
+    <value>Tag Search...</value>
+  </data>
+  <data name="&gt;&gt;minThresholdComboBox.Name" xml:space="preserve">
+    <value>minThresholdComboBox</value>
+  </data>
+  <data name="&gt;&gt;oltLabel2.Name" xml:space="preserve">
+    <value>oltLabel2</value>
+  </data>
+  <data name="targetThresholdTagSearchButton.IconPadding1" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;oltLabel2.Parent" xml:space="preserve">
+    <value>gapUnitValueGroupBox</value>
+  </data>
+  <data name="oltPanel3.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="gapUnitValueTagSearchButton.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;gapUnitValueComboBox.Parent" xml:space="preserve">
+    <value>targetThresholdGroupBox</value>
+  </data>
+  <data name="gapUnitValueTagSearchButton.IconAlignment1" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="targetDefinitionNameLabel.Error1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="maxThresholdTagNameTextBox.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Configure Plant Historian Tags</value>
+  </data>
+  <data name="minThresholdTagSearchButton.Error1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="oltLabel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 13</value>
+  </data>
+  <data name="targetThresholdTagNameTextBox.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="gapUnitValueTagNameTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>212, 20</value>
+  </data>
+  <data name="&gt;&gt;acceptButton.Name" xml:space="preserve">
+    <value>acceptButton</value>
+  </data>
+  <data name="maxThresholdTagSearchButton.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;targetThresholdComboBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltComboBox, Com.Suncor.Olt.Client, Version=4.10.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;targetDefinitionNameLabel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Com.Suncor.Olt.Client, Version=4.10.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="minThresholdTagSearchButton.Text" xml:space="preserve">
+    <value>Tag Search...</value>
+  </data>
+  <data name="targetThresholdGroupBox.IconAlignment1" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="oltPanel2.Error1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;gapUnitValueTagSearchButton.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltButton, Com.Suncor.Olt.Client, Version=4.10.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="minThresholdTagNameTextBox.Error1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="oltLabel3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 13</value>
+  </data>
+  <data name="oltPanel1.Error1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;maxThresholdGroupBox.Parent" xml:space="preserve">
+    <value>oltPanel3</value>
+  </data>
+  <data name="&gt;&gt;maxThresholdComboBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="acceptButton.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;cancelButton.Name" xml:space="preserve">
+    <value>cancelButton</value>
+  </data>
+  <data name="oltPanel3.Error1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="targetThresholdGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>509, 49</value>
+  </data>
+  <data name="maxThresholdTagSearchButton.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;maxThresholdDirectionLabel.Name" xml:space="preserve">
+    <value>maxThresholdDirectionLabel</value>
+  </data>
+  <data name="maxThresholdGroupBox.Error1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="maxThresholdTagNameTextBox.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="gapUnitValueTagNameTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>164, 20</value>
+  </data>
+  <data name="clearButton.Error1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="clearButton.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;maxThresholdGroupBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltGroupBox, Com.Suncor.Olt.Client, Version=4.10.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="maxThresholdDirectionLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="targetThresholdGroupBox.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="targetThresholdComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;gapUnitValueGroupBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltGroupBox, Com.Suncor.Olt.Client, Version=4.10.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="targetDefinitionNameLabel.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="clearButton.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="maxThresholdTagNameTextBox.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;tagErrorProvider.Name" xml:space="preserve">
+    <value>tagErrorProvider</value>
+  </data>
+  <data name="&gt;&gt;cancelButton.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="oltPanel2.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="minThresholdComboBox.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="minThresholdTagSearchButton.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gapUnitValueTagSearchButton.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;oltPanel2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="maxThresholdGroupBox.Text" xml:space="preserve">
+    <value>Max Threshold</value>
+  </data>
+  <data name="maxThresholdComboBox.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="clearButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left</value>
+  </data>
+  <data name="gapUnitValueComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="targetThresholdComboBox.Error1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gapUnitValueGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="oltLabel1.IconPadding1" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="targetThresholdTagNameTextBox.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="targetThresholdGroupBox.Error1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cancelButton.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="minThresholdGroupBox.IconAlignment1" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="maxThresholdComboBox.IconAlignment1" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="targetThresholdTagSearchButton.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="minThresholdGroupBox.IconPadding1" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="maxThresholdComboBox.IconPadding1" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="gapUnitValueTagSearchButton.IconPadding1" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;clearButton.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltButton, Com.Suncor.Olt.Client, Version=4.10.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="gapUnitValueGroupBox.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="oltLabel3.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="minThresholdComboBox.IconAlignment1" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="oltLabel3.IconAlignment1" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="gapUnitValueTagNameTextBox.IconPadding1" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="oltPanel1.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gapUnitValueGroupBox.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="targetDefinitionNameTextbox.Error1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="minThresholdTagNameTextBox.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="targetThresholdComboBox.IconAlignment1" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="maxThresholdComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="gapUnitValueGroupBox.Text" xml:space="preserve">
+    <value>Target Threshold</value>
+  </data>
+  <data name="gapUnitValueComboBox.IconPadding1" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;oltPanel2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;acceptButton.Parent" xml:space="preserve">
+    <value>oltPanel2</value>
+  </data>
+  <data name="minThresholdGroupBox.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;targetThresholdTagSearchButton.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;oltPanel1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="maxThresholdComboBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 21</value>
+  </data>
+  <data name="maxThresholdDirectionLabel.IconPadding1" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="oltPanel2.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.Forms.BaseForm, Com.Suncor.Olt.Client, Version=4.10.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="oltLabel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 25</value>
+  </data>
+  <data name="maxThresholdComboBox.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="targetThresholdGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="oltPanel2.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="oltPanel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 261</value>
+  </data>
+  <data name="gapUnitValueTagSearchButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>90, 23</value>
+  </data>
+  <data name="acceptButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="targetDefinitionNameLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="clearButton.IconPadding1" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;gapUnitValueComboBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltComboBox, Com.Suncor.Olt.Client, Version=4.10.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="oltPanel3.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="maxThresholdGroupBox.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;maxThresholdTagSearchButton.Name" xml:space="preserve">
+    <value>maxThresholdTagSearchButton</value>
+  </data>
+  <data name="minThresholdTagNameTextBox.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;targetThresholdGroupBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="oltLabel1.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="targetDefinitionNameLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 12</value>
+  </data>
+  <data name="gapUnitValueComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>60, 20</value>
+  </data>
+  <data name="&gt;&gt;maxThresholdTagNameTextBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltTextBox, Com.Suncor.Olt.Client, Version=4.10.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="maxThresholdTagNameTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>164, 20</value>
+  </data>
+  <data name="targetThresholdTagNameTextBox.IconAlignment1" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="targetThresholdTagSearchButton.IconAlignment1" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="gapUnitValueComboBox.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="cancelButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="gapUnitValueComboBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 21</value>
+  </data>
+  <data name="oltLabel2.IconPadding1" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="oltPanel1.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="oltLabel3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 24</value>
+  </data>
+  <data name="oltLabel2.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="oltLabel1.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="oltPanel3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 38</value>
+  </data>
+  <data name="&gt;&gt;maxThresholdTagNameTextBox.Name" xml:space="preserve">
+    <value>maxThresholdTagNameTextBox</value>
+  </data>
+  <data name="oltPanel1.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;maxThresholdDirectionLabel.Parent" xml:space="preserve">
+    <value>maxThresholdGroupBox</value>
+  </data>
+  <data name="gapUnitValueTagSearchButton.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;minThresholdTagSearchButton.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltButton, Com.Suncor.Olt.Client, Version=4.10.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;maxThresholdDirectionLabel.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="gapUnitValueTagNameTextBox.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;targetDefinitionNameTextbox.Parent" xml:space="preserve">
+    <value>oltPanel1</value>
+  </data>
+  <data name="targetDefinitionNameTextbox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>132, 8</value>
+  </data>
+  <data name="&gt;&gt;targetThresholdTagSearchButton.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltButton, Com.Suncor.Olt.Client, Version=4.10.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="targetThresholdComboBox.IconPadding1" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;maxThresholdGroupBox.Name" xml:space="preserve">
+    <value>maxThresholdGroupBox</value>
+  </data>
+  <data name="cancelButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="gapUnitValueTagNameTextBox.Error1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;oltPanel2.Name" xml:space="preserve">
+    <value>oltPanel2</value>
+  </data>
+  <data name="maxThresholdTagSearchButton.Error1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;targetDefinitionNameTextbox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltTextBox, Com.Suncor.Olt.Client, Version=4.10.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="targetThresholdComboBox.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="minThresholdGroupBox.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="gapUnitValueTagNameTextBox.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;maxThresholdComboBox.Parent" xml:space="preserve">
+    <value>maxThresholdGroupBox</value>
+  </data>
+  <data name="maxThresholdGroupBox.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="maxThresholdDirectionLabel.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="gapUnitValueTagNameTextBox.IconAlignment1" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="maxThresholdGroupBox.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="minThresholdComboBox.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="oltPanel2.IconAlignment1" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="targetThresholdGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 110</value>
+  </data>
+  <data name="targetThresholdGroupBox.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="maxThresholdTagNameTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="targetThresholdTagSearchButton.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;oltLabel1.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Com.Suncor.Olt.Client, Version=4.10.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="cancelButton.Error1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;oltPanel3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;gapUnitValueTagNameTextBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltTextBox, Com.Suncor.Olt.Client, Version=4.10.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;oltPanel1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="maxThresholdTagSearchButton.Text" xml:space="preserve">
+    <value>Tag Search...</value>
+  </data>
+  <data name="maxThresholdTagSearchButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>90, 23</value>
+  </data>
+  <data name="targetThresholdTagSearchButton.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="minThresholdGroupBox.Text" xml:space="preserve">
+    <value>Min Threshold</value>
+  </data>
+  <data name="gapUnitValueTagSearchButton.Text" xml:space="preserve">
+    <value>Tag Search...</value>
+  </data>
+  <data name="&gt;&gt;maxThresholdGroupBox.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;gapUnitValueGroupBox.Parent" xml:space="preserve">
+    <value>oltPanel3</value>
+  </data>
+  <data name="minThresholdComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>60, 19</value>
+  </data>
+  <data name="minThresholdComboBox.IconPadding1" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="gapUnitValueGroupBox.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="oltLabel1.Error1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="targetThresholdTagSearchButton.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;targetThresholdTagSearchButton.Parent" xml:space="preserve">
+    <value>gapUnitValueGroupBox</value>
+  </data>
+  <data name="oltLabel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 23</value>
+  </data>
+  <data name="minThresholdGroupBox.Error1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="minThresholdGroupBox.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;oltPanel1.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltPanel, Com.Suncor.Olt.Client, Version=4.10.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;oltLabel3.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Com.Suncor.Olt.Client, Version=4.10.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="gapUnitValueComboBox.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;oltPanel3.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltPanel, Com.Suncor.Olt.Client, Version=4.10.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="gapUnitValueComboBox.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="oltPanel1.IconAlignment1" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="oltLabel2.Error1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="maxThresholdGroupBox.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;maxThresholdTagSearchButton.Parent" xml:space="preserve">
+    <value>maxThresholdGroupBox</value>
+  </data>
+  <data name="&gt;&gt;targetDefinitionNameTextbox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="gapUnitValueTagSearchButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>405, 19</value>
+  </data>
+  <data name="minThresholdGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;maxThresholdTagNameTextBox.Parent" xml:space="preserve">
+    <value>maxThresholdGroupBox</value>
+  </data>
+  <data name="oltPanel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="&gt;&gt;clearButton.Name" xml:space="preserve">
+    <value>clearButton</value>
+  </data>
+  <data name="&gt;&gt;tagErrorProvider.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ErrorProvider, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="oltPanel3.IconPadding1" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;maxThresholdTagNameTextBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;cancelButton.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltButton, Com.Suncor.Olt.Client, Version=4.10.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="gapUnitValueTagSearchButton.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="maxThresholdGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>509, 55</value>
+  </data>
+  <data name="oltLabel3.Error1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="maxThresholdGroupBox.IconPadding1" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="maxThresholdComboBox.Error1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;oltPanel3.Name" xml:space="preserve">
+    <value>oltPanel3</value>
+  </data>
+  <data name="oltLabel2.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;minThresholdComboBox.Parent" xml:space="preserve">
+    <value>minThresholdGroupBox</value>
+  </data>
+  <data name="oltLabel3.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;targetThresholdGroupBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltGroupBox, Com.Suncor.Olt.Client, Version=4.10.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;gapUnitValueTagNameTextBox.Parent" xml:space="preserve">
+    <value>targetThresholdGroupBox</value>
+  </data>
+  <data name="targetDefinitionNameTextbox.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="oltLabel2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="maxThresholdGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="acceptButton.Text" xml:space="preserve">
+    <value>&amp;Accept</value>
+  </data>
+  <data name="targetThresholdGroupBox.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="minThresholdTagNameTextBox.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="minThresholdGroupBox.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;maxThresholdComboBox.Name" xml:space="preserve">
+    <value>maxThresholdComboBox</value>
+  </data>
+  <data name="targetThresholdComboBox.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;minThresholdGroupBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltGroupBox, Com.Suncor.Olt.Client, Version=4.10.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="minThresholdGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 55</value>
+  </data>
+  <data name="acceptButton.IconAlignment1" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="targetThresholdTagSearchButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>90, 23</value>
+  </data>
+  <data name="&gt;&gt;minThresholdGroupBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="targetDefinitionNameTextbox.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="oltLabel2.IconAlignment1" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="oltPanel2.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;directionErrorProvider.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ErrorProvider, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="minThresholdTagNameTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;targetDefinitionNameLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="oltPanel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>509, 38</value>
+  </data>
+  <data name="acceptButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>339, 10</value>
+  </data>
+  <data name="cancelButton.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="minThresholdComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="targetDefinitionNameLabel.IconAlignment1" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;minThresholdTagNameTextBox.Name" xml:space="preserve">
+    <value>minThresholdTagNameTextBox</value>
+  </data>
+  <data name="oltPanel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="&gt;&gt;oltPanel3.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;targetThresholdTagNameTextBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltTextBox, Com.Suncor.Olt.Client, Version=4.10.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="minThresholdTagSearchButton.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;oltPanel2.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltPanel, Com.Suncor.Olt.Client, Version=4.10.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="minThresholdGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>509, 55</value>
+  </data>
+  <data name="maxThresholdTagNameTextBox.IconAlignment1" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="gapUnitValueGroupBox.IconAlignment1" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="cancelButton.Text" xml:space="preserve">
+    <value>&amp;Cancel</value>
+  </data>
+  <data name="maxThresholdGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="oltPanel2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="&gt;&gt;minThresholdTagSearchButton.Name" xml:space="preserve">
+    <value>minThresholdTagSearchButton</value>
+  </data>
+  <data name="&gt;&gt;targetThresholdGroupBox.Parent" xml:space="preserve">
+    <value>oltPanel3</value>
+  </data>
+  <data name="oltPanel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>509, 43</value>
+  </data>
+  <data name="&gt;&gt;gapUnitValueTagNameTextBox.Name" xml:space="preserve">
+    <value>gapUnitValueTagNameTextBox</value>
+  </data>
+  <data name="&gt;&gt;minThresholdComboBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;gapUnitValueTagSearchButton.Parent" xml:space="preserve">
+    <value>targetThresholdGroupBox</value>
+  </data>
+  <data name="gapUnitValueGroupBox.Error1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gapUnitValueGroupBox.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>TargetDefinitionReadWriteTagConfigurationForm</value>
+  </data>
+  <data name="maxThresholdDirectionLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 23</value>
+  </data>
+  <data name="minThresholdTagNameTextBox.IconAlignment1" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="maxThresholdTagSearchButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>405, 18</value>
+  </data>
+  <data name="targetDefinitionNameTextbox.IconAlignment1" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;oltLabel3.Name" xml:space="preserve">
+    <value>oltLabel3</value>
+  </data>
+  <data name="&gt;&gt;directionErrorProvider.Name" xml:space="preserve">
+    <value>directionErrorProvider</value>
+  </data>
+  <data name="acceptButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="clearButton.IconAlignment1" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="oltPanel3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>509, 223</value>
+  </data>
+  <data name="oltLabel3.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;acceptButton.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;oltLabel1.Name" xml:space="preserve">
+    <value>oltLabel1</value>
+  </data>
+  <data name="targetThresholdGroupBox.Text" xml:space="preserve">
+    <value>Gap Unit Value ($)</value>
+  </data>
+  <data name="gapUnitValueGroupBox.IconPadding1" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="minThresholdTagNameTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>212, 19</value>
+  </data>
+  <data name="&gt;&gt;minThresholdTagNameTextBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltTextBox, Com.Suncor.Olt.Client, Version=4.10.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="gapUnitValueGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 159</value>
+  </data>
+  <data name="&gt;&gt;targetThresholdComboBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="oltLabel3.IconPadding1" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="acceptButton.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="targetThresholdTagSearchButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>405, 20</value>
+  </data>
+  <data name="maxThresholdComboBox.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="targetThresholdTagNameTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>164, 20</value>
+  </data>
+  <data name="&gt;&gt;targetThresholdTagNameTextBox.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="oltPanel3.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="gapUnitValueTagNameTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="oltLabel3.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="minThresholdComboBox.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;maxThresholdTagSearchButton.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltButton, Com.Suncor.Olt.Client, Version=4.10.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;oltLabel1.Parent" xml:space="preserve">
+    <value>minThresholdGroupBox</value>
+  </data>
+  <data name="acceptButton.IconPadding1" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="oltLabel1.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="targetDefinitionNameLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;targetThresholdTagNameTextBox.Name" xml:space="preserve">
+    <value>targetThresholdTagNameTextBox</value>
+  </data>
+  <data name="minThresholdTagSearchButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>405, 18</value>
+  </data>
+  <data name="&gt;&gt;targetThresholdTagNameTextBox.Parent" xml:space="preserve">
+    <value>gapUnitValueGroupBox</value>
+  </data>
+  <data name="cancelButton.IconPadding1" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;acceptButton.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltButton, Com.Suncor.Olt.Client, Version=4.10.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="gapUnitValueTagNameTextBox.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;targetDefinitionNameLabel.Name" xml:space="preserve">
+    <value>targetDefinitionNameLabel</value>
+  </data>
+  <data name="targetThresholdTagNameTextBox.IconPadding1" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterParent</value>
+  </data>
+  <data name="clearButton.Text" xml:space="preserve">
+    <value>C&amp;lear</value>
+  </data>
+  <data name="oltPanel2.IconPadding1" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="minThresholdTagSearchButton.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="targetThresholdTagNameTextBox.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;maxThresholdDirectionLabel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Com.Suncor.Olt.Client, Version=4.10.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="oltLabel2.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="targetDefinitionNameTextbox.IconPadding1" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;oltLabel3.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;gapUnitValueTagSearchButton.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="cancelButton.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;targetDefinitionNameLabel.Parent" xml:space="preserve">
+    <value>oltPanel1</value>
+  </data>
+  <data name="maxThresholdDirectionLabel.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="oltLabel2.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="gapUnitValueGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>509, 55</value>
+  </data>
+  <data name="maxThresholdTagNameTextBox.IconPadding1" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="targetDefinitionNameLabel.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="targetThresholdComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>60, 21</value>
+  </data>
+  <data name="gapUnitValueComboBox.Error1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cancelButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>420, 10</value>
+  </data>
+  <data name="maxThresholdTagSearchButton.IconAlignment1" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="maxThresholdTagSearchButton.IconPadding1" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="acceptButton.Error1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="minThresholdTagSearchButton.IconPadding1" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;gapUnitValueTagNameTextBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="oltLabel1.IconAlignment1" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;maxThresholdTagSearchButton.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="oltPanel1.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;targetThresholdGroupBox.Name" xml:space="preserve">
+    <value>targetThresholdGroupBox</value>
+  </data>
+  <data name="oltLabel1.Text" xml:space="preserve">
+    <value>Direction</value>
+  </data>
+  <data name="oltPanel3.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="targetThresholdGroupBox.IconPadding1" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="oltPanel3.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="maxThresholdTagSearchButton.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="oltLabel1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;minThresholdComboBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltComboBox, Com.Suncor.Olt.Client, Version=4.10.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="acceptButton.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="minThresholdTagSearchButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>90, 23</value>
+  </data>
+  <data name="oltLabel2.Text" xml:space="preserve">
+    <value>Direction</value>
+  </data>
+  <data name="&gt;&gt;targetThresholdComboBox.Name" xml:space="preserve">
+    <value>targetThresholdComboBox</value>
+  </data>
+  <data name="&gt;&gt;minThresholdTagNameTextBox.Parent" xml:space="preserve">
+    <value>minThresholdGroupBox</value>
+  </data>
+  <data name="&gt;&gt;maxThresholdComboBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltComboBox, Com.Suncor.Olt.Client, Version=4.10.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;minThresholdTagNameTextBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="cancelButton.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="targetDefinitionNameTextbox.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;clearButton.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;clearButton.Parent" xml:space="preserve">
+    <value>oltPanel2</value>
+  </data>
+  <data name="gapUnitValueComboBox.IconAlignment1" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>509, 304</value>
+  </data>
+  <data name="maxThresholdComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>60, 19</value>
+  </data>
+  <data name="maxThresholdDirectionLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 13</value>
+  </data>
+  <data name="&gt;&gt;oltLabel2.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Com.Suncor.Olt.Client, Version=4.10.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="targetDefinitionNameLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>117, 13</value>
+  </data>
+  <data name="targetThresholdComboBox.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;targetThresholdComboBox.Parent" xml:space="preserve">
+    <value>gapUnitValueGroupBox</value>
+  </data>
+  <data name="minThresholdTagNameTextBox.IconPadding1" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="targetDefinitionNameLabel.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="maxThresholdTagNameTextBox.Error1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="oltLabel1.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;gapUnitValueGroupBox.Name" xml:space="preserve">
+    <value>gapUnitValueGroupBox</value>
+  </data>
+  <data name="&gt;&gt;oltLabel3.Parent" xml:space="preserve">
+    <value>targetThresholdGroupBox</value>
+  </data>
+  <data name="maxThresholdDirectionLabel.Error1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;oltLabel2.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="oltLabel3.Text" xml:space="preserve">
+    <value>Direction</value>
+  </data>
+  <data name="&gt;&gt;cancelButton.Parent" xml:space="preserve">
+    <value>oltPanel2</value>
+  </data>
+  <data name="&gt;&gt;oltLabel1.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="targetThresholdTagSearchButton.Error1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="targetDefinitionNameLabel.IconPadding1" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="gapUnitValueTagSearchButton.Error1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="oltLabel3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="targetThresholdComboBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 21</value>
+  </data>
+  <data name="maxThresholdTagSearchButton.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="acceptButton.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;gapUnitValueComboBox.Name" xml:space="preserve">
+    <value>gapUnitValueComboBox</value>
+  </data>
+  <data name="minThresholdTagSearchButton.IconAlignment1" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="maxThresholdDirectionLabel.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="minThresholdTagNameTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>164, 20</value>
+  </data>
+  <data name="maxThresholdTagNameTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>212, 19</value>
+  </data>
+  <data name="&gt;&gt;minThresholdTagSearchButton.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;oltPanel1.Name" xml:space="preserve">
+    <value>oltPanel1</value>
+  </data>
+  <data name="targetThresholdTagNameTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="clearButton.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="maxThresholdDirectionLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="clearButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 10</value>
+  </data>
+  <data name="minThresholdComboBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 21</value>
+  </data>
+  <data name="&gt;&gt;targetDefinitionNameTextbox.Name" xml:space="preserve">
+    <value>targetDefinitionNameTextbox</value>
+  </data>
+  <data name="&gt;&gt;minThresholdGroupBox.Name" xml:space="preserve">
+    <value>minThresholdGroupBox</value>
+  </data>
+  <data name="&gt;&gt;targetThresholdTagSearchButton.Name" xml:space="preserve">
+    <value>targetThresholdTagSearchButton</value>
+  </data>
+  <data name="maxThresholdDirectionLabel.IconAlignment1" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;minThresholdGroupBox.Parent" xml:space="preserve">
+    <value>oltPanel3</value>
+  </data>
+  <data name="oltPanel3.IconAlignment1" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="clearButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="&gt;&gt;minThresholdTagSearchButton.Parent" xml:space="preserve">
+    <value>minThresholdGroupBox</value>
+  </data>
+  <data name="minThresholdComboBox.Error1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="targetThresholdTagNameTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>212, 21</value>
+  </data>
+  <metadata name="directionErrorProvider.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>55</value>
+  </metadata>
+  <metadata name="tagErrorProvider.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>249, 17</value>
+  </metadata>
+</root>

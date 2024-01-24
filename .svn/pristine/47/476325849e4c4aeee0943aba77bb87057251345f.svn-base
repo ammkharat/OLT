@@ -1,0 +1,22 @@
+IF EXISTS (SELECT * FROM sysobjects WHERE type = 'P' AND name = 'GETWORKPERMITMUDSSIGN')
+	BEGIN
+		DROP PROCEDURE [dbo].[GETWORKPERMITMUDSSIGN]
+	END
+	
+GO
+CREATE Procedure [dbo].[GETWORKPERMITMUDSSIGN]    
+(    
+ @WorkPermitId Varchar(100),
+ @SiteId Int=NULL
+
+ 
+     
+)    
+AS    
+    
+
+ 
+ SELECT * FROM  WORKPERMITMUDSSIGN WHERE WorkPermitId=@WorkPermitId and Deleted=0
+ 
+    
+GRANT EXEC ON [GETWORKPERMITMUDSSIGN] TO PUBLIC       

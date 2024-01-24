@@ -1,0 +1,1260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="functionalLocationTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 17</value>
+  </data>
+  <data name="functionalLocationTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>263, 20</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="functionalLocationTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;functionalLocationTextBox.Name" xml:space="preserve">
+    <value>functionalLocationTextBox</value>
+  </data>
+  <data name="&gt;&gt;functionalLocationTextBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltTextBox, Operator Log Tool, Version=5.3.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;functionalLocationTextBox.Parent" xml:space="preserve">
+    <value>flocGroupBox</value>
+  </data>
+  <data name="&gt;&gt;functionalLocationTextBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="descriptionTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 17</value>
+  </data>
+  <data name="descriptionTextBox.MaxLength" type="System.Int32, mscorlib">
+    <value>3000</value>
+  </data>
+  <data name="descriptionTextBox.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="descriptionTextBox.ScrollBars" type="System.Windows.Forms.ScrollBars, System.Windows.Forms">
+    <value>Vertical</value>
+  </data>
+  <data name="descriptionTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>344, 80</value>
+  </data>
+  <data name="descriptionTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;descriptionTextBox.Name" xml:space="preserve">
+    <value>descriptionTextBox</value>
+  </data>
+  <data name="&gt;&gt;descriptionTextBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltTextBox, Operator Log Tool, Version=5.3.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;descriptionTextBox.Parent" xml:space="preserve">
+    <value>descriptionGroupBox</value>
+  </data>
+  <data name="&gt;&gt;descriptionTextBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="cancelButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="cancelButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>738, 326</value>
+  </data>
+  <data name="cancelButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="cancelButton.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="cancelButton.Text" xml:space="preserve">
+    <value>&amp;Cancel</value>
+  </data>
+  <data name="&gt;&gt;cancelButton.Name" xml:space="preserve">
+    <value>cancelButton</value>
+  </data>
+  <data name="&gt;&gt;cancelButton.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltButton, Operator Log Tool, Version=5.3.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;cancelButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;cancelButton.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <metadata name="productionTargetValueErrorProvider.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>694, 17</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>231</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>831, 361</value>
+  </data>
+  <data name="frequencyGroupBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="hourComboBox.Items" xml:space="preserve">
+    <value />
+  </data>
+  <data name="hourComboBox.Items1" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="hourComboBox.Items2" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="hourComboBox.Items3" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="hourComboBox.Items4" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="hourComboBox.Items5" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="hourComboBox.Items6" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="hourComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>137, 9</value>
+  </data>
+  <data name="hourComboBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>62, 21</value>
+  </data>
+  <data name="hourComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;hourComboBox.Name" xml:space="preserve">
+    <value>hourComboBox</value>
+  </data>
+  <data name="&gt;&gt;hourComboBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltComboBox, Operator Log Tool, Version=5.3.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;hourComboBox.Parent" xml:space="preserve">
+    <value>frequencyGroupBox</value>
+  </data>
+  <data name="&gt;&gt;hourComboBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="unitLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="unitLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="unitLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>205, 12</value>
+  </data>
+  <data name="unitLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>17, 13</value>
+  </data>
+  <data name="unitLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="unitLabel.Text" xml:space="preserve">
+    <value>hr</value>
+  </data>
+  <data name="&gt;&gt;unitLabel.Name" xml:space="preserve">
+    <value>unitLabel</value>
+  </data>
+  <data name="&gt;&gt;unitLabel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Operator Log Tool, Version=5.3.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;unitLabel.Parent" xml:space="preserve">
+    <value>frequencyGroupBox</value>
+  </data>
+  <data name="&gt;&gt;unitLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="oltLabel3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="oltLabel3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="oltLabel3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>58, 13</value>
+  </data>
+  <data name="oltLabel3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 13</value>
+  </data>
+  <data name="oltLabel3.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="oltLabel3.Text" xml:space="preserve">
+    <value>Repeat every</value>
+  </data>
+  <data name="&gt;&gt;oltLabel3.Name" xml:space="preserve">
+    <value>oltLabel3</value>
+  </data>
+  <data name="&gt;&gt;oltLabel3.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Operator Log Tool, Version=5.3.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;oltLabel3.Parent" xml:space="preserve">
+    <value>frequencyGroupBox</value>
+  </data>
+  <data name="&gt;&gt;oltLabel3.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="frequencyGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>815, 68</value>
+  </data>
+  <data name="frequencyGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>222, 34</value>
+  </data>
+  <data name="frequencyGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="frequencyGroupBox.Text" xml:space="preserve">
+    <value>Frequency</value>
+  </data>
+  <data name="frequencyGroupBox.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;frequencyGroupBox.Name" xml:space="preserve">
+    <value>frequencyGroupBox</value>
+  </data>
+  <data name="&gt;&gt;frequencyGroupBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltGroupBox, Operator Log Tool, Version=5.3.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;frequencyGroupBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;frequencyGroupBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="toleranceValuelabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="toleranceValuelabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="toleranceValuelabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>361, 298</value>
+  </data>
+  <data name="toleranceValuelabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>112, 13</value>
+  </data>
+  <data name="toleranceValuelabel.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="toleranceValuelabel.Text" xml:space="preserve">
+    <value>Tolerance Value ( %):</value>
+  </data>
+  <data name="&gt;&gt;toleranceValuelabel.Name" xml:space="preserve">
+    <value>toleranceValuelabel</value>
+  </data>
+  <data name="&gt;&gt;toleranceValuelabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toleranceValuelabel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;toleranceValuelabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="toleranceValueNumericBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>487, 295</value>
+  </data>
+  <data name="toleranceValueNumericBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="toleranceValueNumericBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>84, 22</value>
+  </data>
+  <data name="toleranceValueNumericBox.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;toleranceValueNumericBox.Name" xml:space="preserve">
+    <value>toleranceValueNumericBox</value>
+  </data>
+  <data name="&gt;&gt;toleranceValueNumericBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltUltraNumericEditor, Operator Log Tool, Version=5.3.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;toleranceValueNumericBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;toleranceValueNumericBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="hideDeviationAlertsCheckBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="hideDeviationAlertsCheckBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="hideDeviationAlertsCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>182, 298</value>
+  </data>
+  <data name="hideDeviationAlertsCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>126, 17</value>
+  </data>
+  <data name="hideDeviationAlertsCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="hideDeviationAlertsCheckBox.Text" xml:space="preserve">
+    <value>Hide Deviation Alerts</value>
+  </data>
+  <data name="&gt;&gt;hideDeviationAlertsCheckBox.Name" xml:space="preserve">
+    <value>hideDeviationAlertsCheckBox</value>
+  </data>
+  <data name="&gt;&gt;hideDeviationAlertsCheckBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltCheckBox, Operator Log Tool, Version=5.3.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;hideDeviationAlertsCheckBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;hideDeviationAlertsCheckBox.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="lastModifiedDateAuthorHeader.Location" type="System.Drawing.Point, System.Drawing">
+    <value>37, 5</value>
+  </data>
+  <data name="lastModifiedDateAuthorHeader.Size" type="System.Drawing.Size, System.Drawing">
+    <value>776, 38</value>
+  </data>
+  <data name="lastModifiedDateAuthorHeader.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;lastModifiedDateAuthorHeader.Name" xml:space="preserve">
+    <value>lastModifiedDateAuthorHeader</value>
+  </data>
+  <data name="&gt;&gt;lastModifiedDateAuthorHeader.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLastModifiedDateAuthorHeader, Operator Log Tool, Version=5.3.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;lastModifiedDateAuthorHeader.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lastModifiedDateAuthorHeader.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <metadata name="toolTip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 54</value>
+  </metadata>
+  <data name="viewEditHistoryButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left</value>
+  </data>
+  <data name="viewEditHistoryButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>37, 326</value>
+  </data>
+  <data name="viewEditHistoryButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="viewEditHistoryButton.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="viewEditHistoryButton.Text" xml:space="preserve">
+    <value>&amp;History</value>
+  </data>
+  <data name="viewEditHistoryButton.ToolTip" xml:space="preserve">
+    <value>View Edit History</value>
+  </data>
+  <data name="&gt;&gt;viewEditHistoryButton.Name" xml:space="preserve">
+    <value>viewEditHistoryButton</value>
+  </data>
+  <data name="&gt;&gt;viewEditHistoryButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;viewEditHistoryButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;viewEditHistoryButton.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;nameTextBox.Name" xml:space="preserve">
+    <value>nameTextBox</value>
+  </data>
+  <data name="&gt;&gt;nameTextBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltTextBox, Operator Log Tool, Version=5.3.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;nameTextBox.Parent" xml:space="preserve">
+    <value>nameGroupBox</value>
+  </data>
+  <data name="&gt;&gt;nameTextBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="nameGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>37, 68</value>
+  </data>
+  <data name="nameGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>385, 50</value>
+  </data>
+  <data name="nameGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="nameGroupBox.Text" xml:space="preserve">
+    <value>Restriction Definition Name</value>
+  </data>
+  <data name="&gt;&gt;nameGroupBox.Name" xml:space="preserve">
+    <value>nameGroupBox</value>
+  </data>
+  <data name="&gt;&gt;nameGroupBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltGroupBox, Operator Log Tool, Version=5.3.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;nameGroupBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;nameGroupBox.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="temporarilyInactiveCheckBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="temporarilyInactiveCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>37, 298</value>
+  </data>
+  <data name="temporarilyInactiveCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>124, 17</value>
+  </data>
+  <data name="temporarilyInactiveCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="temporarilyInactiveCheckBox.Text" xml:space="preserve">
+    <value>Temporarily Inactive</value>
+  </data>
+  <data name="&gt;&gt;temporarilyInactiveCheckBox.Name" xml:space="preserve">
+    <value>temporarilyInactiveCheckBox</value>
+  </data>
+  <data name="&gt;&gt;temporarilyInactiveCheckBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltCheckBox, Operator Log Tool, Version=5.3.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;temporarilyInactiveCheckBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;temporarilyInactiveCheckBox.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="descriptionGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>37, 178</value>
+  </data>
+  <data name="descriptionGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>385, 109</value>
+  </data>
+  <data name="descriptionGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="descriptionGroupBox.Text" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="&gt;&gt;descriptionGroupBox.Name" xml:space="preserve">
+    <value>descriptionGroupBox</value>
+  </data>
+  <data name="&gt;&gt;descriptionGroupBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltGroupBox, Operator Log Tool, Version=5.3.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;descriptionGroupBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;descriptionGroupBox.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;functionalLocationButton.Name" xml:space="preserve">
+    <value>functionalLocationButton</value>
+  </data>
+  <data name="&gt;&gt;functionalLocationButton.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltButton, Operator Log Tool, Version=5.3.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;functionalLocationButton.Parent" xml:space="preserve">
+    <value>flocGroupBox</value>
+  </data>
+  <data name="&gt;&gt;functionalLocationButton.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="flocGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>37, 124</value>
+  </data>
+  <data name="flocGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>385, 48</value>
+  </data>
+  <data name="flocGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="flocGroupBox.Text" xml:space="preserve">
+    <value>Functional Location</value>
+  </data>
+  <data name="&gt;&gt;flocGroupBox.Name" xml:space="preserve">
+    <value>flocGroupBox</value>
+  </data>
+  <data name="&gt;&gt;flocGroupBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltGroupBox, Operator Log Tool, Version=5.3.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;flocGroupBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;flocGroupBox.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="detailsLine.Label" xml:space="preserve">
+    <value>Details </value>
+  </data>
+  <data name="detailsLine.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 49</value>
+  </data>
+  <data name="detailsLine.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 3</value>
+  </data>
+  <data name="detailsLine.Size" type="System.Drawing.Size, System.Drawing">
+    <value>817, 13</value>
+  </data>
+  <data name="detailsLine.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;detailsLine.Name" xml:space="preserve">
+    <value>detailsLine</value>
+  </data>
+  <data name="&gt;&gt;detailsLine.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabelLine, Operator Log Tool, Version=5.3.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;detailsLine.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;detailsLine.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>productionTargetGroupBox</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;refreshProductionTargetTagValueButton.Name" xml:space="preserve">
+    <value>refreshProductionTargetTagValueButton</value>
+  </data>
+  <data name="&gt;&gt;refreshProductionTargetTagValueButton.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltButton, Operator Log Tool, Version=5.3.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;refreshProductionTargetTagValueButton.Parent" xml:space="preserve">
+    <value>productionTargetGroupBox</value>
+  </data>
+  <data name="&gt;&gt;refreshProductionTargetTagValueButton.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;productionTargetTagValueTextBox.Name" xml:space="preserve">
+    <value>productionTargetTagValueTextBox</value>
+  </data>
+  <data name="&gt;&gt;productionTargetTagValueTextBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltTextBox, Operator Log Tool, Version=5.3.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;productionTargetTagValueTextBox.Parent" xml:space="preserve">
+    <value>productionTargetGroupBox</value>
+  </data>
+  <data name="&gt;&gt;productionTargetTagValueTextBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;productionTargetTagInfoTextBox.Name" xml:space="preserve">
+    <value>productionTargetTagInfoTextBox</value>
+  </data>
+  <data name="&gt;&gt;productionTargetTagInfoTextBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltTextBox, Operator Log Tool, Version=5.3.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;productionTargetTagInfoTextBox.Parent" xml:space="preserve">
+    <value>productionTargetGroupBox</value>
+  </data>
+  <data name="&gt;&gt;productionTargetTagInfoTextBox.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;searchProductionTargetTagButton.Name" xml:space="preserve">
+    <value>searchProductionTargetTagButton</value>
+  </data>
+  <data name="&gt;&gt;searchProductionTargetTagButton.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltButton, Operator Log Tool, Version=5.3.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;searchProductionTargetTagButton.Parent" xml:space="preserve">
+    <value>productionTargetGroupBox</value>
+  </data>
+  <data name="&gt;&gt;searchProductionTargetTagButton.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;productionTargetValueNumericBox.Name" xml:space="preserve">
+    <value>productionTargetValueNumericBox</value>
+  </data>
+  <data name="&gt;&gt;productionTargetValueNumericBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltUltraNumericEditor, Operator Log Tool, Version=5.3.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;productionTargetValueNumericBox.Parent" xml:space="preserve">
+    <value>productionTargetGroupBox</value>
+  </data>
+  <data name="&gt;&gt;productionTargetValueNumericBox.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;productionTargetTagRadioButton.Name" xml:space="preserve">
+    <value>productionTargetTagRadioButton</value>
+  </data>
+  <data name="&gt;&gt;productionTargetTagRadioButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;productionTargetTagRadioButton.Parent" xml:space="preserve">
+    <value>productionTargetGroupBox</value>
+  </data>
+  <data name="&gt;&gt;productionTargetTagRadioButton.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;productionTargetValueRadioButton.Name" xml:space="preserve">
+    <value>productionTargetValueRadioButton</value>
+  </data>
+  <data name="&gt;&gt;productionTargetValueRadioButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;productionTargetValueRadioButton.Parent" xml:space="preserve">
+    <value>productionTargetGroupBox</value>
+  </data>
+  <data name="&gt;&gt;productionTargetValueRadioButton.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="productionTargetGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>428, 178</value>
+  </data>
+  <data name="productionTargetGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>385, 109</value>
+  </data>
+  <data name="productionTargetGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="productionTargetGroupBox.Text" xml:space="preserve">
+    <value>Production Target</value>
+  </data>
+  <data name="&gt;&gt;productionTargetGroupBox.Name" xml:space="preserve">
+    <value>productionTargetGroupBox</value>
+  </data>
+  <data name="&gt;&gt;productionTargetGroupBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltGroupBox, Operator Log Tool, Version=5.3.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;productionTargetGroupBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;productionTargetGroupBox.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="measurementTagValueLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="measurementTagValueLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>37, 65</value>
+  </data>
+  <data name="measurementTagValueLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>128, 13</value>
+  </data>
+  <data name="measurementTagValueLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="measurementTagValueLabel.Text" xml:space="preserve">
+    <value>Last Hourly Tag Reading:</value>
+  </data>
+  <data name="&gt;&gt;measurementTagValueLabel.Name" xml:space="preserve">
+    <value>measurementTagValueLabel</value>
+  </data>
+  <data name="&gt;&gt;measurementTagValueLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;measurementTagValueLabel.Parent" xml:space="preserve">
+    <value>measurementTagGroupBox</value>
+  </data>
+  <data name="&gt;&gt;measurementTagValueLabel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="refreshMeasurementTagValueButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>298, 62</value>
+  </data>
+  <data name="refreshMeasurementTagValueButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>81, 23</value>
+  </data>
+  <data name="refreshMeasurementTagValueButton.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="refreshMeasurementTagValueButton.Text" xml:space="preserve">
+    <value>Refresh</value>
+  </data>
+  <data name="&gt;&gt;refreshMeasurementTagValueButton.Name" xml:space="preserve">
+    <value>refreshMeasurementTagValueButton</value>
+  </data>
+  <data name="&gt;&gt;refreshMeasurementTagValueButton.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltButton, Operator Log Tool, Version=5.3.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;refreshMeasurementTagValueButton.Parent" xml:space="preserve">
+    <value>measurementTagGroupBox</value>
+  </data>
+  <data name="&gt;&gt;refreshMeasurementTagValueButton.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="measurementTagValueTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>171, 62</value>
+  </data>
+  <data name="measurementTagValueTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>99, 20</value>
+  </data>
+  <data name="measurementTagValueTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="measurementTagValueTextBox.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="&gt;&gt;measurementTagValueTextBox.Name" xml:space="preserve">
+    <value>measurementTagValueTextBox</value>
+  </data>
+  <data name="&gt;&gt;measurementTagValueTextBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltTextBox, Operator Log Tool, Version=5.3.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;measurementTagValueTextBox.Parent" xml:space="preserve">
+    <value>measurementTagGroupBox</value>
+  </data>
+  <data name="&gt;&gt;measurementTagValueTextBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="measurementTagInfoTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 21</value>
+  </data>
+  <data name="measurementTagInfoTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>264, 20</value>
+  </data>
+  <data name="measurementTagInfoTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;measurementTagInfoTextBox.Name" xml:space="preserve">
+    <value>measurementTagInfoTextBox</value>
+  </data>
+  <data name="&gt;&gt;measurementTagInfoTextBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltTextBox, Operator Log Tool, Version=5.3.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;measurementTagInfoTextBox.Parent" xml:space="preserve">
+    <value>measurementTagGroupBox</value>
+  </data>
+  <data name="&gt;&gt;measurementTagInfoTextBox.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="searchMeasurementTagButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>298, 19</value>
+  </data>
+  <data name="searchMeasurementTagButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>81, 23</value>
+  </data>
+  <data name="searchMeasurementTagButton.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="searchMeasurementTagButton.Text" xml:space="preserve">
+    <value>&amp;Tag Search ...</value>
+  </data>
+  <data name="&gt;&gt;searchMeasurementTagButton.Name" xml:space="preserve">
+    <value>searchMeasurementTagButton</value>
+  </data>
+  <data name="&gt;&gt;searchMeasurementTagButton.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltButton, Operator Log Tool, Version=5.3.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;searchMeasurementTagButton.Parent" xml:space="preserve">
+    <value>measurementTagGroupBox</value>
+  </data>
+  <data name="&gt;&gt;searchMeasurementTagButton.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="measurementTagGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>428, 69</value>
+  </data>
+  <data name="measurementTagGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>385, 101</value>
+  </data>
+  <data name="measurementTagGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="measurementTagGroupBox.Text" xml:space="preserve">
+    <value>Plant Historian Measurement Tag</value>
+  </data>
+  <data name="&gt;&gt;measurementTagGroupBox.Name" xml:space="preserve">
+    <value>measurementTagGroupBox</value>
+  </data>
+  <data name="&gt;&gt;measurementTagGroupBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltGroupBox, Operator Log Tool, Version=5.3.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;measurementTagGroupBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;measurementTagGroupBox.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="saveAndCloseButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="saveAndCloseButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>650, 326</value>
+  </data>
+  <data name="saveAndCloseButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>81, 23</value>
+  </data>
+  <data name="saveAndCloseButton.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="saveAndCloseButton.Text" xml:space="preserve">
+    <value>&amp;Save &amp;&amp; Close</value>
+  </data>
+  <data name="&gt;&gt;saveAndCloseButton.Name" xml:space="preserve">
+    <value>saveAndCloseButton</value>
+  </data>
+  <data name="&gt;&gt;saveAndCloseButton.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltButton, Operator Log Tool, Version=5.3.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;saveAndCloseButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;saveAndCloseButton.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterParent</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Restriction Definition</value>
+  </data>
+  <metadata name="toolTip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 54</value>
+  </metadata>
+  <data name="$this.ToolTip" xml:space="preserve">
+    <value>View Edit History</value>
+  </data>
+  <data name="&gt;&gt;productionTargetValueErrorProvider.Name" xml:space="preserve">
+    <value>productionTargetValueErrorProvider</value>
+  </data>
+  <data name="&gt;&gt;productionTargetValueErrorProvider.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ErrorProvider, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;functionalLocationErrorProvider.Name" xml:space="preserve">
+    <value>functionalLocationErrorProvider</value>
+  </data>
+  <data name="&gt;&gt;functionalLocationErrorProvider.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ErrorProvider, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;measurementTagInfoErrorProvider.Name" xml:space="preserve">
+    <value>measurementTagInfoErrorProvider</value>
+  </data>
+  <data name="&gt;&gt;measurementTagInfoErrorProvider.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ErrorProvider, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;nameErrorProvider.Name" xml:space="preserve">
+    <value>nameErrorProvider</value>
+  </data>
+  <data name="&gt;&gt;nameErrorProvider.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ErrorProvider, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;descriptionErrorProvider.Name" xml:space="preserve">
+    <value>descriptionErrorProvider</value>
+  </data>
+  <data name="&gt;&gt;descriptionErrorProvider.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ErrorProvider, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolTip.Name" xml:space="preserve">
+    <value>toolTip</value>
+  </data>
+  <data name="&gt;&gt;toolTip.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;productionTargetTagErrorProvider.Name" xml:space="preserve">
+    <value>productionTargetTagErrorProvider</value>
+  </data>
+  <data name="&gt;&gt;productionTargetTagErrorProvider.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ErrorProvider, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;frequencyErrorProvider.Name" xml:space="preserve">
+    <value>frequencyErrorProvider</value>
+  </data>
+  <data name="&gt;&gt;frequencyErrorProvider.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ErrorProvider, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>RestrictionDefinitionForm</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.Forms.BaseForm, Operator Log Tool, Version=5.3.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="nameTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 17</value>
+  </data>
+  <data name="nameTextBox.MaxLength" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="nameTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>344, 20</value>
+  </data>
+  <data name="nameTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;nameTextBox.Name" xml:space="preserve">
+    <value>nameTextBox</value>
+  </data>
+  <data name="&gt;&gt;nameTextBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltTextBox, Operator Log Tool, Version=5.3.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;nameTextBox.Parent" xml:space="preserve">
+    <value>nameGroupBox</value>
+  </data>
+  <data name="&gt;&gt;nameTextBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="functionalLocationButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>298, 16</value>
+  </data>
+  <data name="functionalLocationButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>81, 23</value>
+  </data>
+  <data name="functionalLocationButton.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="functionalLocationButton.Text" xml:space="preserve">
+    <value>Browse ...</value>
+  </data>
+  <data name="&gt;&gt;functionalLocationButton.Name" xml:space="preserve">
+    <value>functionalLocationButton</value>
+  </data>
+  <data name="&gt;&gt;functionalLocationButton.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltButton, Operator Log Tool, Version=5.3.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;functionalLocationButton.Parent" xml:space="preserve">
+    <value>flocGroupBox</value>
+  </data>
+  <data name="&gt;&gt;functionalLocationButton.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>37, 77</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>128, 13</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Last Hourly Tag Reading:</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>productionTargetGroupBox</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="refreshProductionTargetTagValueButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>298, 74</value>
+  </data>
+  <data name="refreshProductionTargetTagValueButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>81, 23</value>
+  </data>
+  <data name="refreshProductionTargetTagValueButton.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="refreshProductionTargetTagValueButton.Text" xml:space="preserve">
+    <value>Refresh</value>
+  </data>
+  <data name="&gt;&gt;refreshProductionTargetTagValueButton.Name" xml:space="preserve">
+    <value>refreshProductionTargetTagValueButton</value>
+  </data>
+  <data name="&gt;&gt;refreshProductionTargetTagValueButton.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltButton, Operator Log Tool, Version=5.3.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;refreshProductionTargetTagValueButton.Parent" xml:space="preserve">
+    <value>productionTargetGroupBox</value>
+  </data>
+  <data name="&gt;&gt;refreshProductionTargetTagValueButton.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="productionTargetTagValueTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>171, 74</value>
+  </data>
+  <data name="productionTargetTagValueTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>99, 20</value>
+  </data>
+  <data name="productionTargetTagValueTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="productionTargetTagValueTextBox.TextAlign" type="System.Windows.Forms.HorizontalAlignment, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="&gt;&gt;productionTargetTagValueTextBox.Name" xml:space="preserve">
+    <value>productionTargetTagValueTextBox</value>
+  </data>
+  <data name="&gt;&gt;productionTargetTagValueTextBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltTextBox, Operator Log Tool, Version=5.3.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;productionTargetTagValueTextBox.Parent" xml:space="preserve">
+    <value>productionTargetGroupBox</value>
+  </data>
+  <data name="&gt;&gt;productionTargetTagValueTextBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="productionTargetTagInfoTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>59, 50</value>
+  </data>
+  <data name="productionTargetTagInfoTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>211, 20</value>
+  </data>
+  <data name="productionTargetTagInfoTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;productionTargetTagInfoTextBox.Name" xml:space="preserve">
+    <value>productionTargetTagInfoTextBox</value>
+  </data>
+  <data name="&gt;&gt;productionTargetTagInfoTextBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltTextBox, Operator Log Tool, Version=5.3.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;productionTargetTagInfoTextBox.Parent" xml:space="preserve">
+    <value>productionTargetGroupBox</value>
+  </data>
+  <data name="&gt;&gt;productionTargetTagInfoTextBox.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="searchProductionTargetTagButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>298, 48</value>
+  </data>
+  <data name="searchProductionTargetTagButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>81, 23</value>
+  </data>
+  <data name="searchProductionTargetTagButton.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="searchProductionTargetTagButton.Text" xml:space="preserve">
+    <value>&amp;Tag Search ...</value>
+  </data>
+  <data name="&gt;&gt;searchProductionTargetTagButton.Name" xml:space="preserve">
+    <value>searchProductionTargetTagButton</value>
+  </data>
+  <data name="&gt;&gt;searchProductionTargetTagButton.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltButton, Operator Log Tool, Version=5.3.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;searchProductionTargetTagButton.Parent" xml:space="preserve">
+    <value>productionTargetGroupBox</value>
+  </data>
+  <data name="&gt;&gt;searchProductionTargetTagButton.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="productionTargetValueNumericBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>59, 20</value>
+  </data>
+  <data name="productionTargetValueNumericBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="productionTargetValueNumericBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>84, 22</value>
+  </data>
+  <data name="productionTargetValueNumericBox.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;productionTargetValueNumericBox.Name" xml:space="preserve">
+    <value>productionTargetValueNumericBox</value>
+  </data>
+  <data name="&gt;&gt;productionTargetValueNumericBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltUltraNumericEditor, Operator Log Tool, Version=5.3.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;productionTargetValueNumericBox.Parent" xml:space="preserve">
+    <value>productionTargetGroupBox</value>
+  </data>
+  <data name="&gt;&gt;productionTargetValueNumericBox.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="productionTargetTagRadioButton.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="productionTargetTagRadioButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 54</value>
+  </data>
+  <data name="productionTargetTagRadioButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 17</value>
+  </data>
+  <data name="productionTargetTagRadioButton.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="productionTargetTagRadioButton.Text" xml:space="preserve">
+    <value>Tag:</value>
+  </data>
+  <data name="&gt;&gt;productionTargetTagRadioButton.Name" xml:space="preserve">
+    <value>productionTargetTagRadioButton</value>
+  </data>
+  <data name="&gt;&gt;productionTargetTagRadioButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;productionTargetTagRadioButton.Parent" xml:space="preserve">
+    <value>productionTargetGroupBox</value>
+  </data>
+  <data name="&gt;&gt;productionTargetTagRadioButton.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="productionTargetValueRadioButton.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="productionTargetValueRadioButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 22</value>
+  </data>
+  <data name="productionTargetValueRadioButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 17</value>
+  </data>
+  <data name="productionTargetValueRadioButton.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="productionTargetValueRadioButton.Text" xml:space="preserve">
+    <value>Value:</value>
+  </data>
+  <data name="productionTargetValueRadioButton.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;productionTargetValueRadioButton.Name" xml:space="preserve">
+    <value>productionTargetValueRadioButton</value>
+  </data>
+  <data name="&gt;&gt;productionTargetValueRadioButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;productionTargetValueRadioButton.Parent" xml:space="preserve">
+    <value>productionTargetGroupBox</value>
+  </data>
+  <data name="&gt;&gt;productionTargetValueRadioButton.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <metadata name="functionalLocationErrorProvider.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>162, 17</value>
+  </metadata>
+  <metadata name="measurementTagInfoErrorProvider.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>541, 17</value>
+  </metadata>
+  <metadata name="nameErrorProvider.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="descriptionErrorProvider.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>370, 17</value>
+  </metadata>
+  <metadata name="productionTargetTagErrorProvider.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>868, 17</value>
+  </metadata>
+  <metadata name="frequencyErrorProvider.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>107, 54</value>
+  </metadata>
+</root>

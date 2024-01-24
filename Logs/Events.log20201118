@@ -1,0 +1,57 @@
+2020-11-18 04:19:03,588 [27] INFO  EventService - Subscribe: [ClientAddress=net.tcp://10.9.21.6:9771/] [SiteId=13] [Machine=D126741] [Reason=RefreshConnect]
+2020-11-18 07:36:22,724 [40] INFO  EventService - Subscribe: [ClientAddress=net.tcp://10.9.21.6:9771/] [SiteId=13] [Machine=D126741] [Reason=RefreshConnect]
+2020-11-18 07:48:59,652 [1] INFO  EventService - Unsubscribe: [ClientAddress=net.tcp://10.9.21.6:9771/] [Reason=ApplicationException]
+2020-11-18 07:49:00,919 [1] ERROR EventService - There was a problem unregistering a client at net.tcp://10.9.21.6:9771/
+Com.Suncor.Olt.Common.Exceptions.SqlWrapperException: Error on Insert/Update for stored procedure RemoveEventSinkByClientUri - System.Data.SqlClient.SqlException (0x80131904): Could not find stored procedure 'RemoveEventSinkByClientUri'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at Com.Suncor.Olt.Remote.DataAccess.SqlCommandExtensions.ExecuteNonQuery(SqlCommand command, String storedProcedureName) in c:\code\windows\csc\OLT\trunk\src\RemoteApp\App\DataAccess\SqlCommandExtensions.cs:line 181
+ClientConnectionId:58157812-f179-44e5-9b90-e2f306c21c35
+Error Number:2812,State:62,Class:16 ---> System.Data.SqlClient.SqlException: Could not find stored procedure 'RemoveEventSinkByClientUri'.
+   at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at Com.Suncor.Olt.Remote.DataAccess.SqlCommandExtensions.ExecuteNonQuery(SqlCommand command, String storedProcedureName) in c:\code\windows\csc\OLT\trunk\src\RemoteApp\App\DataAccess\SqlCommandExtensions.cs:line 181
+   --- End of inner exception stack trace ---
+   at Com.Suncor.Olt.Remote.DataAccess.SqlCommandExtensions.ExecuteNonQuery(SqlCommand command, String storedProcedureName) in c:\code\windows\csc\OLT\trunk\src\RemoteApp\App\DataAccess\SqlCommandExtensions.cs:line 185
+   at Com.Suncor.Olt.Remote.DataAccess.Domain.EventSinkDao.DeleteByClientUri(String clientUri) in c:\code\windows\csc\OLT\trunk\src\RemoteApp\App\DataAccess\Domain\EventSinkDao.cs:line 36
+   at Castle.Proxies.Invocations.IEventSinkDao_DeleteByClientUri.InvokeMethodOnTarget()
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Com.Suncor.Olt.Remote.DataAccess.StoredProcDaoInterceptor.RunCommand(SqlConnection sqlConnection, IInvocation invocation) in c:\code\windows\csc\OLT\trunk\src\RemoteApp\App\DataAccess\StoredProcDaoInterceptor.cs:line 61
+   at Com.Suncor.Olt.Remote.DataAccess.StoredProcDaoInterceptor.Intercept(IInvocation invocation) in c:\code\windows\csc\OLT\trunk\src\RemoteApp\App\DataAccess\StoredProcDaoInterceptor.cs:line 27
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Com.Suncor.Olt.Remote.DataAccess.StoredProcPerformanceInterceptor.Intercept(IInvocation invocation) in c:\code\windows\csc\OLT\trunk\src\RemoteApp\App\DataAccess\StoredProcPerformanceInterceptor.cs:line 22
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.Proxies.IEventSinkDaoProxy.DeleteByClientUri(String clientUri)
+   at Com.Suncor.Olt.Remote.Services.EventService.DoUnsubscribeWithoutLogging(String clientAddress) in c:\code\windows\csc\OLT\trunk\src\RemoteApp\App\Services\EventService.cs:line 94
+2020-11-18 07:59:03,984 [57] INFO  EventService - Subscribe: [ClientAddress=net.tcp://10.9.21.6:9771/] [SiteId=13] [Machine=D126741] [Reason=RefreshConnect]
+2020-11-18 07:59:42,775 [1] INFO  EventService - Unsubscribe: [ClientAddress=net.tcp://10.9.21.6:9771/] [Reason=RefreshConnect]
+2020-11-18 07:59:42,890 [40] INFO  EventService - Subscribe: [ClientAddress=net.tcp://10.9.21.6:9771/] [SiteId=13] [Machine=D126741] [Reason=RefreshConnect]
+2020-11-18 08:00:00,362 [52] INFO  EventService - Unsubscribe: [ClientAddress=net.tcp://10.9.21.6:9771/] [Reason=ShiftGracePeriodEnd]
+2020-11-18 08:15:22,446 [57] INFO  EventService - Subscribe: [ClientAddress=net.tcp://10.9.21.6:9771/] [SiteId=13] [Machine=D126741] [Reason=RefreshConnect]
+2020-11-18 08:42:58,507 [57] DEBUG EventQueue - Pushing event into queue: [Method:WorkPermitCreate] [DomainObject:WorkPermit] [Id:2] [Initiating Event Sink Uri:net.tcp://10.9.21.6:9771/]
+2020-11-18 08:43:05,058 [1] DEBUG EventService - Should Notify Client of Event Called.  IsRelevant = False
+2020-11-18 08:54:49,172 [57] DEBUG EventQueue - Pushing event into queue: [Method:WorkPermitCreate] [DomainObject:WorkPermit] [Id:3] [Initiating Event Sink Uri:net.tcp://10.9.21.6:9771/]
+2020-11-18 08:54:50,188 [40] DEBUG EventService - Should Notify Client of Event Called.  IsRelevant = False
+2020-11-18 08:55:26,404 [52] INFO  EventService - Unsubscribe: [ClientAddress=net.tcp://10.9.21.6:9771/] [Reason=ApplicationExit]
+2020-11-18 09:11:12,147 [57] INFO  EventService - Subscribe: [ClientAddress=net.tcp://10.9.21.6:9771/] [SiteId=13] [Machine=D126741] [Reason=RefreshConnect]
+2020-11-18 09:16:36,025 [57] INFO  EventService - Unsubscribe: [ClientAddress=net.tcp://10.9.21.6:9771/] [Reason=ApplicationException]
+2020-11-18 09:26:03,728 [40] INFO  EventService - Subscribe: [ClientAddress=net.tcp://10.9.21.6:9771/] [SiteId=13] [Machine=D126741] [Reason=RefreshConnect]
+2020-11-18 09:37:03,256 [40] INFO  EventService - Subscribe: [ClientAddress=net.tcp://10.9.21.6:9771/] [SiteId=13] [Machine=D126741] [Reason=RefreshConnect]
+2020-11-18 09:43:17,361 [1] INFO  EventService - Unsubscribe: [ClientAddress=net.tcp://10.9.21.6:9771/] [Reason=RefreshConnect]
+2020-11-18 09:43:17,472 [1] INFO  EventService - Subscribe: [ClientAddress=net.tcp://10.9.21.6:9771/] [SiteId=13] [Machine=D126741] [Reason=RefreshConnect]
+2020-11-18 09:43:47,292 [57] INFO  EventService - Unsubscribe: [ClientAddress=net.tcp://10.9.21.6:9771/] [Reason=ApplicationException]
+2020-11-18 09:46:39,588 [57] INFO  EventService - Subscribe: [ClientAddress=net.tcp://10.9.21.6:9771/] [SiteId=13] [Machine=D126741] [Reason=RefreshConnect]

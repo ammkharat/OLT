@@ -1,0 +1,710 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="preApprovedMinDataLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="preApprovedMinDataLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>124, 78</value>
+  </data>
+  <data name="preApprovedMinDataLabel.Text" xml:space="preserve">
+    <value>Données minimales</value>
+  </data>
+  <data name="preApprovedMaxDataLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="preApprovedMaxDataLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>124, 56</value>
+  </data>
+  <data name="preApprovedMaxDataLabel.Text" xml:space="preserve">
+    <value>Données maximales</value>
+  </data>
+  <data name="preApprovedNeverToExceedMinDataLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="preApprovedNeverToExceedMinDataLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>124, 101</value>
+  </data>
+  <data name="preApprovedNeverToExceedMinDataLabel.Text" xml:space="preserve">
+    <value>Données NTE/SOL minimales</value>
+  </data>
+  <data name="preApprovedMinLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="preApprovedMinLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>91, 78</value>
+  </data>
+  <data name="preApprovedMinLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>34, 13</value>
+  </data>
+  <data name="preApprovedMinLabel.Text" xml:space="preserve">
+    <value>Min. :</value>
+  </data>
+  <data name="preApprovedNeverToExceedMaxDataLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="preApprovedNeverToExceedMaxDataLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>124, 34</value>
+  </data>
+  <data name="preApprovedNeverToExceedMaxDataLabel.Text" xml:space="preserve">
+    <value>Données NTE/SOL maximales</value>
+  </data>
+  <data name="preApprovedNeverToExceedMinLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="preApprovedNeverToExceedMinLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>50, 101</value>
+  </data>
+  <data name="preApprovedNeverToExceedMinLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 13</value>
+  </data>
+  <data name="preApprovedNeverToExceedMinLabel.Text" xml:space="preserve">
+    <value>NTE/SOL Min :</value>
+  </data>
+  <data name="preApprovedMaxLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="preApprovedMaxLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>91, 56</value>
+  </data>
+  <data name="preApprovedMaxLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>34, 13</value>
+  </data>
+  <data name="preApprovedMaxLabel.Text" xml:space="preserve">
+    <value>Max :</value>
+  </data>
+  <data name="preApprovedNeverToExceedMaxLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="preApprovedNeverToExceedMaxLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>46, 34</value>
+  </data>
+  <data name="preApprovedNeverToExceedMaxLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>79, 13</value>
+  </data>
+  <data name="preApprovedNeverToExceedMaxLabel.Text" xml:space="preserve">
+    <value>NTE/SOL Max :</value>
+  </data>
+  <data name="preApprovedThresholdGroupBox.Text" xml:space="preserve">
+    <value>Valeurs seuils pré-approuvées de l’objectif</value>
+  </data>
+  <data name="priorityLabelData.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="operationalModeLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="requiresResponseWhenAlertedCheckBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="requiresResponseWhenAlertedCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>240, 17</value>
+  </data>
+  <data name="requiresResponseWhenAlertedCheckBox.Text" xml:space="preserve">
+    <value>Nécessite une réponse après l’avertissement</value>
+  </data>
+  <data name="guvUnitsLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>245, 106</value>
+  </data>
+  <data name="nteMinFrequency.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="minFrequency.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="maxFrequency.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="nteMaxFrequency.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="nteMinFrequencyLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="nteMinFrequencyLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 13</value>
+  </data>
+  <data name="nteMinFrequencyLabel.Text" xml:space="preserve">
+    <value>Confiance:</value>
+  </data>
+  <data name="minFrequencyLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="minFrequencyLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 13</value>
+  </data>
+  <data name="minFrequencyLabel.Text" xml:space="preserve">
+    <value>Confiance:</value>
+  </data>
+  <data name="maxFrequencyLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="maxFrequencyLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 13</value>
+  </data>
+  <data name="maxFrequencyLabel.Text" xml:space="preserve">
+    <value>Confiance:</value>
+  </data>
+  <data name="gapUnitValueReadWriteTagDirectionLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="gapUnitValueReadWriteTagDirectionLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 13</value>
+  </data>
+  <data name="gapUnitValueReadWriteTagDirectionLabel.Text" xml:space="preserve">
+    <value>Tag Dir.</value>
+  </data>
+  <data name="nteMaxFrequencyLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="nteMaxFrequencyLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 13</value>
+  </data>
+  <data name="nteMaxFrequencyLabel.Text" xml:space="preserve">
+    <value>Confiance:</value>
+  </data>
+  <data name="targetReadWriteTagDirectionLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="targetReadWriteTagDirectionLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>82, 13</value>
+  </data>
+  <data name="targetReadWriteTagDirectionLabel.Text" xml:space="preserve">
+    <value>Tag Direction</value>
+  </data>
+  <data name="maxReadWriteTagDirectionLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="maxReadWriteTagDirectionLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>82, 13</value>
+  </data>
+  <data name="maxReadWriteTagDirectionLabel.Text" xml:space="preserve">
+    <value>Tag Direction</value>
+  </data>
+  <data name="minReadWriteTagDirectionLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="minReadWriteTagDirectionLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>82, 13</value>
+  </data>
+  <data name="minReadWriteTagDirectionLabel.Text" xml:space="preserve">
+    <value>Tag Direction</value>
+  </data>
+  <data name="gapUnitValueDataLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>163, 106</value>
+  </data>
+  <data name="gapUnitValueDataLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>66, 13</value>
+  </data>
+  <data name="gapUnitValueDataLabel.Text" xml:space="preserve">
+    <value>Données</value>
+  </data>
+  <data name="targetDataLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="targetDataLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>165, 130</value>
+  </data>
+  <data name="targetDataLabel.Text" xml:space="preserve">
+    <value>Données de l’objectif</value>
+  </data>
+  <data name="minDataLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="minDataLabel.Text" xml:space="preserve">
+    <value>Données minimales</value>
+  </data>
+  <data name="gapUnitValueLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="gapUnitValueLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>71, 106</value>
+  </data>
+  <data name="gapUnitValueLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>93, 13</value>
+  </data>
+  <data name="gapUnitValueLabel.Text" xml:space="preserve">
+    <value>Valeur marginale :</value>
+  </data>
+  <data name="maxDataLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="maxDataLabel.Text" xml:space="preserve">
+    <value>Données maximales</value>
+  </data>
+  <data name="targetLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="targetLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>127, 130</value>
+  </data>
+  <data name="targetLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>37, 13</value>
+  </data>
+  <data name="targetLabel.Text" xml:space="preserve">
+    <value>Cible :</value>
+  </data>
+  <data name="neverToExceedMinDataLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="neverToExceedMinDataLabel.Text" xml:space="preserve">
+    <value>Données NTE/SOL minimales</value>
+  </data>
+  <data name="minLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="minLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>130, 61</value>
+  </data>
+  <data name="minLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>34, 13</value>
+  </data>
+  <data name="minLabel.Text" xml:space="preserve">
+    <value>Min. :</value>
+  </data>
+  <data name="neverToExceedMaxDataLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="neverToExceedMaxDataLabel.Text" xml:space="preserve">
+    <value>Données NTE/SOL maximales</value>
+  </data>
+  <data name="neverToExceedMinLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="neverToExceedMinLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 13</value>
+  </data>
+  <data name="neverToExceedMinLabel.Text" xml:space="preserve">
+    <value>NTE/SOL Min :</value>
+  </data>
+  <data name="maxLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="maxLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>34, 13</value>
+  </data>
+  <data name="maxLabel.Text" xml:space="preserve">
+    <value>Max :</value>
+  </data>
+  <data name="neverToExceedMaxLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="neverToExceedMaxLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>79, 13</value>
+  </data>
+  <data name="neverToExceedMaxLabel.Text" xml:space="preserve">
+    <value>NTE/SOL Max :</value>
+  </data>
+  <data name="thresholdGroupBox.Text" xml:space="preserve">
+    <value>Valeurs seuil</value>
+  </data>
+  <data name="categoryData.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="categoryData.Text" xml:space="preserve">
+    <value>Données de catégorie</value>
+  </data>
+  <data name="tagData.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="tagData.Text" xml:space="preserve">
+    <value>Nom étiquette</value>
+  </data>
+  <data name="functionalLocationData.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="functionalLocationData.Text" xml:space="preserve">
+    <value>Le nom du poste technique</value>
+  </data>
+  <data name="editedByDataLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="editedByDataLabel.Text" xml:space="preserve">
+    <value>Modifié par</value>
+  </data>
+  <data name="targetNameData.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="targetNameData.Text" xml:space="preserve">
+    <value>Le nom de cette définition de l’objectif</value>
+  </data>
+  <data name="generateActionItemCheckBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="generateActionItemCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>286, 12</value>
+  </data>
+  <data name="generateActionItemCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>190, 17</value>
+  </data>
+  <data name="generateActionItemCheckBox.Text" xml:space="preserve">
+    <value>Générer une tâche de préparation</value>
+  </data>
+  <data name="temporarilyInactiveCheckBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="temporarilyInactiveCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>136, 17</value>
+  </data>
+  <data name="temporarilyInactiveCheckBox.Text" xml:space="preserve">
+    <value>Temporairement inactif</value>
+  </data>
+  <data name="suppressAlertCheckBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="suppressAlertCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>286, 35</value>
+  </data>
+  <data name="suppressAlertCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>109, 17</value>
+  </data>
+  <data name="suppressAlertCheckBox.Text" xml:space="preserve">
+    <value>Supprimer l’alerte</value>
+  </data>
+  <data name="requireApprovalCheckBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="requireApprovalCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>123, 17</value>
+  </data>
+  <data name="requireApprovalCheckBox.Text" xml:space="preserve">
+    <value>Approbation requise</value>
+  </data>
+  <data name="oltLabel3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>26, 308</value>
+  </data>
+  <data name="oltLabel3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>97, 13</value>
+  </data>
+  <data name="oltLabel3.Text" xml:space="preserve">
+    <value>Assignation tâches</value>
+  </data>
+  <data name="priorityLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="priorityLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>82, 286</value>
+  </data>
+  <data name="priorityLabel.Text" xml:space="preserve">
+    <value>Priorité</value>
+  </data>
+  <data name="oltLabel2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="oltLabel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>25, 816</value>
+  </data>
+  <data name="oltLabel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 13</value>
+  </data>
+  <data name="oltLabel2.Text" xml:space="preserve">
+    <value>Liens du document</value>
+  </data>
+  <data name="oltLabel1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="oltLabel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>27, 264</value>
+  </data>
+  <data name="oltLabel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 13</value>
+  </data>
+  <data name="oltLabel1.Text" xml:space="preserve">
+    <value>Mode opérationnel</value>
+  </data>
+  <data name="thresholdLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="thresholdLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>94, 329</value>
+  </data>
+  <data name="thresholdLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>29, 13</value>
+  </data>
+  <data name="thresholdLabel.Text" xml:space="preserve">
+    <value>Seuil</value>
+  </data>
+  <data name="categoryLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="categoryLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>69, 242</value>
+  </data>
+  <data name="categoryLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 13</value>
+  </data>
+  <data name="categoryLabel.Text" xml:space="preserve">
+    <value>Catégorie</value>
+  </data>
+  <data name="dependentTargetLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="dependentTargetLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 603</value>
+  </data>
+  <data name="dependentTargetLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>115, 13</value>
+  </data>
+  <data name="dependentTargetLabel.Text" xml:space="preserve">
+    <value>Objectif(s) assujetti(s)</value>
+  </data>
+  <data name="editedByLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="editedByLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>63, 58</value>
+  </data>
+  <data name="editedByLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 13</value>
+  </data>
+  <data name="editedByLabel.Text" xml:space="preserve">
+    <value>Modifié par</value>
+  </data>
+  <data name="targetNameLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="targetNameLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>56, 80</value>
+  </data>
+  <data name="targetNameLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>67, 13</value>
+  </data>
+  <data name="targetNameLabel.Text" xml:space="preserve">
+    <value>Nom de cible</value>
+  </data>
+  <data name="tagLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="tagLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 221</value>
+  </data>
+  <data name="tagLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>101, 13</value>
+  </data>
+  <data name="tagLabel.Text" xml:space="preserve">
+    <value>Étiquette (PHD tag)</value>
+  </data>
+  <data name="functionLocationLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="functionLocationLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>39, 102</value>
+  </data>
+  <data name="functionLocationLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>84, 13</value>
+  </data>
+  <data name="functionLocationLabel.Text" xml:space="preserve">
+    <value>Poste technique</value>
+  </data>
+  <data name="descriptionLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="descriptionLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>63, 123</value>
+  </data>
+  <data name="commentsLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="commentsLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>60, 688</value>
+  </data>
+  <data name="commentsLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>61, 13</value>
+  </data>
+  <data name="commentsLabel.Text" xml:space="preserve">
+    <value>Remarques</value>
+  </data>
+  <data name="scheduleLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="scheduleLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>81, 492</value>
+  </data>
+  <data name="scheduleLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>42, 13</value>
+  </data>
+  <data name="scheduleLabel.Text" xml:space="preserve">
+    <value>Horaire</value>
+  </data>
+  <data name="approveButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>83, 22</value>
+  </data>
+  <data name="approveButton.Text" xml:space="preserve">
+    <value>Approuver</value>
+  </data>
+  <data name="rejectButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>66, 22</value>
+  </data>
+  <data name="rejectButton.Text" xml:space="preserve">
+    <value>Refuser</value>
+  </data>
+  <data name="deleteButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>82, 22</value>
+  </data>
+  <data name="deleteButton.Text" xml:space="preserve">
+    <value>Supprimer</value>
+  </data>
+  <data name="editButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>57, 22</value>
+  </data>
+  <data name="editButton.Text" xml:space="preserve">
+    <value>Éditer</value>
+  </data>
+  <data name="commentsButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>143, 22</value>
+  </data>
+  <data name="commentsButton.Text" xml:space="preserve">
+    <value>Faire un commentaire</value>
+  </data>
+  <data name="exportAllButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>127, 22</value>
+  </data>
+  <data name="exportAllButton.Text" xml:space="preserve">
+    <value>Grille d’exportation</value>
+  </data>
+  <data name="exportAllButton.ToolTipText" xml:space="preserve">
+    <value>Exporter les données de la grille vers Excel</value>
+  </data>
+  <data name="editHistoryButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>82, 22</value>
+  </data>
+  <data name="editHistoryButton.Text" xml:space="preserve">
+    <value>Historique</value>
+  </data>
+  <data name="editHistoryButton.ToolTipText" xml:space="preserve">
+    <value>Afficher l'historique des modifications</value>
+  </data>
+  <data name="toggleShowButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 22</value>
+  </data>
+  <data name="toggleShowButton.Text" xml:space="preserve">
+    <value>Plage</value>
+  </data>
+  <data name="toggleShowButton.ToolTipText" xml:space="preserve">
+    <value>Modifier la plage de dates affichée</value>
+  </data>
+  <data name="saveGridLayoutButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>112, 20</value>
+  </data>
+  <data name="saveGridLayoutButton.Text" xml:space="preserve">
+    <value>Modèle de grille</value>
+  </data>
+</root>

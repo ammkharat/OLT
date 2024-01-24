@@ -1,0 +1,25 @@
+if exists (select * from dbo.sysobjects where id = object_id(N'[dbo].[QueryAllShifts]') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+drop procedure [dbo].[QueryAllShifts]
+
+GO
+CREATE  Procedure [dbo].[QueryAllShifts]
+
+As
+SELECT 
+	Shift.*,
+   	
+	siteconfig.PreShiftPaddingInMinutes,
+	siteconfig.PostShiftPaddingInMinutes
+
+FROM
+	Shift
+	INNER JOIN SiteConfiguration siteconfig ON siteconfig.SiteId = Shift.SiteId
+
+	where Shift.Deleted=0
+
+GO
+
+GRANT EXEC ON QueryAllShifts TO PUBLIC
+GO
+ 
+

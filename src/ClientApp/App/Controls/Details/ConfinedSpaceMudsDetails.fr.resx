@@ -1,0 +1,743 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="deleteButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+        AAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="deleteButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>82, 22</value>
+  </data>
+  <data name="editButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFkSURBVDhPldJdS8JgFAfwfZuu+h5tFV10s+zC6z5ADa0I
+        KoIy0QoMpBd7sTIMMcsUNSuNMKIicmSLIIyIokJCuwj2b2dDHpCo7YH/BnvOfmznOVzlS4UKQNUu5qLV
+        aykWZbim/eC0d1F+/8axUkO+VEWu9IkjuYLs9QcyV29IXbwgef6MvbMn7BTK2D55QCR3j2j6FA6HExyp
+        hzc1NDftm85ivAhfuABR7DKA/G3118LG0KJ7W3sHXIEkWnjeAOizG4v/CgETCwkIQqsB0D/Txn+LauvA
+        +FycAdQwMwCtOjDmjzGAum0VGJmNMiB9+WoZGPZFGEDnbBUYmtliAA2JVWDQu8mA3cKjZcDpWa8Dqj6e
+        tGE2OjAZZEAoqyCQkPUNsxnwhg1AUe6wEslgKngA91JKH1EaEjrnUe2oqNvUMPrnfs8GHO41SK5V2Ht6
+        jVGeXw6hT5Jgs3XrD0g1E14Q0Cna8QOTZfUbsylKVAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="editButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>57, 22</value>
+  </data>
+  <data name="cloneButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAF5SURBVDhPlZNNSwJRGIX9S7Vp1yaInJZtso3rfkBkRkRR
+        gZmVGZaiZaaoiAzTh5qlWUmiFApSKEURRtJGcBEtIk++13BSR5wGHoYZOM/ce+a9ispnFXRVa7f/kM8X
+        oN+wQkHhYvkLicJHg4u7CmK5MiOSeWeEbt5wnHrFQfIF/NUThLM0NJopKMg2ONDbEX+iiJ6+/jbMgTRU
+        qjFRUCoF2/grAJIN6FnvOMGQUtld4Ik/SwqWd8LguOHuAlf0UVKgswXlCZyRAgu0smQ9lCfYDd3DdpSD
+        Rciw4kz+FIzeayxsCfIEFJZawbyZbxZ0wiJkWaC1g1lTQBTQkFDbVBjtuWnZ/K2kYGbdLwpowtrDWRam
+        PUsJtKseUUDjSWFHuDm8+VsYBVrRrrjrgu+awXf+0DFscF8ydI4YFu0Rxtx2UNwCnap9PgqjOw7D3ikb
+        URoS+s/0q6htKowC02te9uVJvQvq8Yn6KNudPnaq6GDQC7LKQclxGBlV4wc6w9NCqzJIFwAAAABJRU5E
+        rkJggg==
+</value>
+  </data>
+  <data name="cloneButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>62, 22</value>
+  </data>
+  <data name="printButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGGSURBVDhPlZNfSwJBFMX9eLk99NBL9mIQPfQBIjUiKhFq
+        E6OiwtTMspIIsWzxb1EiQlEEkihGUBFEobAF9WDtzTPLulqLbgOHgTvn/nZ25oxB/JQIQ6pP+iQxFYsl
+        4hfcZEDzY7VG2fIHJfIiDfBJTQ250hTJPdBB7p7CmTuKpM7JYrGSAdTTotwcvaww8+/x9S01QIFEidaF
+        G1oKZclk6pcBytfbARQImr1HeeL9ceoyGmVApvROPaZBJi0ARq0urCm+WV+MOK5bBpwVRFZ8q74wUzvB
+        A++MR1ABx/lqA6BH8Drch38B/5F9JaICUtevrChWnjW33Sx44J1aDquA+JVcVABa24aaAROL+ypAuHhq
+        AWDWUjNgfH6vFRBM37KFTjuAx+FLks21owAkFk8kzB8rdASgeXotRra5oAoInZRZMxIGUzvZPXGaXBXU
+        X8Cr2gynWbadG0kWUYQE94yrwmnjwNAw5tolq3ObRvktMg+PyFH2BkLsVeFhoACqHhk5jnr7zPQDvTYH
+        j91yqUEAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="printButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>76, 22</value>
+  </data>
+  <data name="printPreviewButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACzSURBVDhPzZLRDcMgDEQZiY1gFUbpBEWIARgl6iJuHsIV
+        IYF85KcnOQ747mxIjCKlJN57sdb+gjX7jTJHCKEKyDlnKaXU3O836hl0gIRgEzmF1qeTMCYdIL8++6OD
+        mlCH1yRHjN2vTKjDa5IjKHBmNRhNWFNfGlydX014jzHODfo7GAMT8vIO7r6Cnn9qAOgAiYxg/A8Qy/Ze
+        mzAJBAQarPv9W5MVnHNV/NjkvyZpyycw5guF1HTDR2HMtwAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="printPreviewButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>114, 22</value>
+  </data>
+  <data name="exportallButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACiSURBVDhPrU+BDcAgCON4bvMtRxEYOly2ZU0aFNqiJOgf
+        GdDGG0DPzBFi7d5ba48qPGXAHZhYCcDz/wtQV2ZjNRcqVIRKSNWb3EHpuRnVaduLANRNSDaXAQDOdyHZ
+        bFUxhDA7cS9CNhwHT/cNuxDM/TvmJdGdzxGcQ5g2IbFoQQxDABPOmabT+YIpIESomcPo8wkxnFgERPiK
+        vN0p7QtHn+gA3HQUkF2via8AAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="exportallButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>127, 22</value>
+  </data>
+  <data name="exportallButton.ToolTipText" xml:space="preserve">
+    <value>Exporter les données de la grille vers Excel</value>
+  </data>
+  <data name="rangeButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACuSURBVDhPjZHRDcMgDEQZpRuxQkZhA0bIKszAAh2EDzeH
+        sHV1gXLSCYxzDycJP3pdws45SylFRnet/tATqLV+GYBTmLTWJMZoRmAFm4E6gL2CGciph973LenZwzMY
+        wluAmkHYK+QvQIMMUx8BePzjCcYXtZsYwOtuAgv7oHoJ8Ld7AK+rCSyo1nfmP4HaA1JKYhN4EMQ1PAWo
+        GASjiTMNo94CvEbTjDCfbcPnCuED8iL2y4kLiS0AAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="rangeButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 22</value>
+  </data>
+  <data name="rangeButton.ToolTipText" xml:space="preserve">
+    <value>Filtrer selon la période et les états</value>
+  </data>
+  <data name="editHistoryButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACmSURBVDhPlY4BEoMwCATz+LzNb1mWQHpGYu3OIMLBhXah
+        9/NVlJgAXfJxHLNO9ibL4A7mML6bhIFeUOU0uJvEwFtsIyPIF6wJvKC56tNjdTDO8VPJOQRPfYuJD6Wz
+        Qk1fTYB/C2cuw1NWE7JdPhpr6FKly953GF9fWEx/6HFOipmtfzm30CPss4osiMFOj3DKZerKJHXvgxRT
+        ZJiAnR51YM1/aa2dH5agYxHoaNCQAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="editHistoryButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>82, 22</value>
+  </data>
+  <data name="editHistoryButton.ToolTipText" xml:space="preserve">
+    <value>Afficher l'historique des modifications</value>
+  </data>
+  <data name="saveGridLayoutButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALeSURBVDhPlZHbUxNXHID9W3jSsS99rH+Bjz73zXZ8qNxs
+        px3HqS1e8AK0ypRWTZmqUydkTUiINSSEDDFBakloICpIriTZDUmAkpBALpsYPg+rztZHfzM758zZc77v
+        dzmEiIGRK5wd6uH88Bl+HOnlwq1eLhl66P+jh6v3uxl40M3QWBc/SZ3cMHcyaP6SCZfx4Cka4PT3J5le
+        tOMIGLEH7mIN3MYSvMnDhWtIoQtI4XNIy98hrfZijJ7CED3Ob9J5HfCVAFie3kPyGZBmf8U0d4OxZ9cx
+        BfsxL13mz8Vv+CVwgsHgMYbCn3IzfoRRa78OOPn15/xu/5k7EwMY/rrKnccXMTj7GLafoWv0M74Y7aDT
+        eJhvbUc5N/kJPzzp4JapTwd4p93QbNKqViltbNKuq6iVXbKJNfa2dmgUazRLDbJRBbWo0iq18Hv9OsBq
+        ltjIyeSUFInoK/GtEFkJEwr8TWQ5TGz1pXYW/GeOZOwVqfgqUy6nDphyPqZRLVOt7CCvxSlvF6iUtshm
+        kmK/wV55m9puiUwqLtYdmrVdfE+8OsBqkchn08ipBPNzPmFbJikyWQoFiEdWSMYjpJMxQgvzpIVATidx
+        T7l0wPTUJGq1IqybpBNRkUlRM+azGWEvUhf/mvUq60qGVqPG/msVv8+nA2zjZhRhj0eWWZifY00YU4kY
+        z5dCwh4VqSdQMinCiyEUOU0uqzB90Pj3AI/bSV0YD2qVRZ31vbLoSYXN/Lpmb6k12q0mhXwO2q+1h7Oz
+        /5vChNWidTYZW+Xf4DOt3sxagpfPl0TNwi6s68L64kWYfG6dzY0CHo9HB3jcLlq1CmqtLEaZpt2sa3Xu
+        FP8Ta1O7eBCl4va7ncjg6ay2aoBxixm3y4HL6cAsmXhkt2ln9+/dxTRmxGYdZ9LhwGaz4fV68fv9zMzM
+        6ID3sb8PDVWlVBITKBRQFAVZlsnn8xSLYhr1Bu12+93tt/EB4OMD3gDpGngjicbeMQAAAABJRU5ErkJg
+        gg==
+</value>
+  </data>
+  <data name="saveGridLayoutButton.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="saveGridLayoutButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>112, 22</value>
+  </data>
+  <data name="saveGridLayoutButton.Text" xml:space="preserve">
+    <value>Modèle de grille</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="tableLayoutPanel3.ColumnCount" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="bacteriesCheckBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="bacteriesCheckBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="bacteriesCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>271, 127</value>
+  </data>
+  <data name="bacteriesCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>152, 17</value>
+  </data>
+  <data name="h2s1CheckBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="h2s1CheckBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="h2s1CheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 6</value>
+  </data>
+  <data name="h2s1CheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>152, 17</value>
+  </data>
+  <data name="so2CheckBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="so2CheckBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="so2CheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 36</value>
+  </data>
+  <data name="so2CheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>152, 17</value>
+  </data>
+  <data name="nh3CheckBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="nh3CheckBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="nh3CheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 66</value>
+  </data>
+  <data name="nh3CheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>152, 17</value>
+  </data>
+  <data name="acidCheckBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="acidCheckBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="acidCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 96</value>
+  </data>
+  <data name="acidCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>152, 17</value>
+  </data>
+  <data name="coCheckBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="coCheckBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="coCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>271, 6</value>
+  </data>
+  <data name="coCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>199, 17</value>
+  </data>
+  <data name="hydrocarbure1CheckBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="hydrocarbure1CheckBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="hydrocarbure1CheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>271, 36</value>
+  </data>
+  <data name="hydrocarbure1CheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>199, 17</value>
+  </data>
+  <data name="azoteCheckBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="azoteCheckBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="azoteCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>271, 66</value>
+  </data>
+  <data name="azoteCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>199, 17</value>
+  </data>
+  <data name="refluxCheckBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="refluxCheckBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="refluxCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>271, 96</value>
+  </data>
+  <data name="refluxCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>199, 17</value>
+  </data>
+  <data name="naohCheckBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="naohCheckBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="naohCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>476, 6</value>
+  </data>
+  <data name="naohCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>176, 17</value>
+  </data>
+  <data name="sbsCheckBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="sbsCheckBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="sbsCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>476, 36</value>
+  </data>
+  <data name="sbsCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>176, 17</value>
+  </data>
+  <data name="soufreCheckBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="soufreCheckBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="soufreCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>476, 66</value>
+  </data>
+  <data name="soufreCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>191, 17</value>
+  </data>
+  <data name="autreCheckBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="autreCheckBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="autreCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>476, 96</value>
+  </data>
+  <data name="autreCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>176, 17</value>
+  </data>
+  <data name="autresSLabelData.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="autresSLabelData.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="autresSLabelData.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="autresSLabelData.Location" type="System.Drawing.Point, System.Drawing">
+    <value>673, 98</value>
+  </data>
+  <data name="autresSLabelData.Size" type="System.Drawing.Size, System.Drawing">
+    <value>117, 13</value>
+  </data>
+  <data name="autresSLabelData.Text" xml:space="preserve">
+    <value>autres Conditions Data</value>
+  </data>
+  <data name="aminateCheckBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="aminateCheckBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="aminateCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 127</value>
+  </data>
+  <data name="aminateCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>152, 17</value>
+  </data>
+  <data name="tableLayoutPanel3.RowCount" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="tableLayoutPanel3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>794, 151</value>
+  </data>
+  <data name="oltGroupBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>800, 170</value>
+  </data>
+  <data name="tableLayoutPanel4.ColumnCount" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="autreCLabelData.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="autreCLabelData.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="autreCLabelData.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="autreCLabelData.Location" type="System.Drawing.Point, System.Drawing">
+    <value>673, 129</value>
+  </data>
+  <data name="autreCLabelData.Size" type="System.Drawing.Size, System.Drawing">
+    <value>112, 13</value>
+  </data>
+  <data name="autreCLabelData.Text" xml:space="preserve">
+    <value>autre Conditions Data</value>
+  </data>
+  <data name="autreCCheckBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="autreCCheckBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="autreCCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>476, 127</value>
+  </data>
+  <data name="autreCCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>176, 17</value>
+  </data>
+  <data name="autreCCheckBox.Text" xml:space="preserve">
+    <value>Autre:</value>
+  </data>
+  <data name="pssCheckBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="pssCheckBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="pssCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>271, 127</value>
+  </data>
+  <data name="pssCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>152, 17</value>
+  </data>
+  <data name="depressCheckBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="depressCheckBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="depressCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 6</value>
+  </data>
+  <data name="depressCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>152, 17</value>
+  </data>
+  <data name="rinceCheckBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="rinceCheckBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="rinceCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 36</value>
+  </data>
+  <data name="rinceCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>152, 17</value>
+  </data>
+  <data name="obture1CheckBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="obture1CheckBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="obture1CheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 66</value>
+  </data>
+  <data name="obture1CheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>152, 17</value>
+  </data>
+  <data name="nettoyesCheckBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="nettoyesCheckBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="nettoyesCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 96</value>
+  </data>
+  <data name="nettoyesCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>152, 17</value>
+  </data>
+  <data name="aere1CheckBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="aere1CheckBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="aere1CheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>271, 6</value>
+  </data>
+  <data name="aere1CheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>199, 17</value>
+  </data>
+  <data name="videCheckBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="videCheckBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="videCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>271, 36</value>
+  </data>
+  <data name="videCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>199, 17</value>
+  </data>
+  <data name="dessinsCheckBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="dessinsCheckBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="dessinsCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>271, 66</value>
+  </data>
+  <data name="dessinsCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>199, 17</value>
+  </data>
+  <data name="detectionGazCheckBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="detectionGazCheckBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="detectionGazCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>271, 96</value>
+  </data>
+  <data name="detectionGazCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>199, 17</value>
+  </data>
+  <data name="ventilationEnCheckBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="ventilationEnCheckBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="ventilationEnCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>476, 6</value>
+  </data>
+  <data name="ventilationEnCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>176, 17</value>
+  </data>
+  <data name="ventilationFCheckBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="ventilationFCheckBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="ventilationFCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>476, 36</value>
+  </data>
+  <data name="ventilationFCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>176, 17</value>
+  </data>
+  <data name="harnaisCheckBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="harnaisCheckBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="harnaisCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>476, 66</value>
+  </data>
+  <data name="harnaisCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>191, 17</value>
+  </data>
+  <data name="boiteCheckBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="boiteCheckBox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="boiteCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>476, 96</value>
+  </data>
+  <data name="boiteCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>176, 17</value>
+  </data>
+  <data name="boiteCheckBox.Text" xml:space="preserve">
+    <value>Boîte de cadenassage :</value>
+  </data>
+  <data name="boiteLabelData.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="boiteLabelData.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="boiteLabelData.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="boiteLabelData.Location" type="System.Drawing.Point, System.Drawing">
+    <value>673, 98</value>
+  </data>
+  <data name="boiteLabelData.Size" type="System.Drawing.Size, System.Drawing">
+    <value>110, 13</value>
+  </data>
+  <data name="boiteLabelData.Text" xml:space="preserve">
+    <value>boite Conditions Data</value>
+  </data>
+  <data name="purgeCheckox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="purgeCheckox.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="purgeCheckox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 127</value>
+  </data>
+  <data name="purgeCheckox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>152, 17</value>
+  </data>
+  <data name="tableLayoutPanel4.RowCount" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="tableLayoutPanel4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>794, 151</value>
+  </data>
+  <data name="oltGroupBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 248</value>
+  </data>
+  <data name="oltGroupBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>800, 170</value>
+  </data>
+  <data name="oltPanel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 421</value>
+  </data>
+  <data name="oltPanel1.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="substancesGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 525</value>
+  </data>
+  <data name="substancesGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="aereCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>191, 17</value>
+  </data>
+  <data name="conditionsGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 601</value>
+  </data>
+  <data name="conditionsGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+</root>

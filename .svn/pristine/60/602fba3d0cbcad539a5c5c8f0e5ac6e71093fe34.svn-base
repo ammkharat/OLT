@@ -1,0 +1,17 @@
+﻿using System;
+
+namespace Com.Suncor.Olt.Common.Domain.Excursions
+{
+    [Serializable]
+    public class ExcursionResponseHistory : DomainObjectHistorySnapshot
+    {
+        public ExcursionResponseHistory(long id,  User lastModifiedBy, DateTime lastModifiedDate, string response)
+            : base(id, lastModifiedBy, lastModifiedDate)
+        {
+            Response = response;
+        }
+
+        public string Response { get; private set; }
+
+    }
+}

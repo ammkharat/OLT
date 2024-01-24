@@ -1,0 +1,724 @@
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Text;
+using System.Windows.Forms;
+using Com.Suncor.Olt.Client.Controls.Details;
+using Com.Suncor.Olt.Client.Controls.Page;
+using Com.Suncor.Olt.Client.Forms;
+using Com.Suncor.Olt.Client.OltControls;
+using Com.Suncor.Olt.Client.Presenters.History;
+using Com.Suncor.Olt.Client.Presenters.Validation;
+using Com.Suncor.Olt.Client.Presenters.Validation.ValidationError;
+using Com.Suncor.Olt.Client.Security;
+using Com.Suncor.Olt.Client.Services;
+using Com.Suncor.Olt.Client.Validation;
+using Com.Suncor.Olt.Common.DTO;
+using Com.Suncor.Olt.Common.Domain;
+using Com.Suncor.Olt.Common.Domain.WorkPermit;
+using Com.Suncor.Olt.Common.Extension;
+using Com.Suncor.Olt.Common.Localization;
+using Com.Suncor.Olt.Common.Remote;
+using Com.Suncor.Olt.Common.Services;
+using Com.Suncor.Olt.Common.Utility;
+
+namespace Com.Suncor.Olt.Client.Presenters.Page
+{
+    public class WorkPermitPagePresenter : AbstractApprovableDomainPagePresenter<WorkPermitDTO, WorkPermit, IWorkPermitDetails, IWorkPermitPage>
+    {
+        private readonly IWorkPermitService workPermitService;
+        private readonly IGasTestElementInfoService gasTestElementInfoService;
+
+        private readonly IWorkPermitFilterSelectorPresenter filterPresenter;
+        private readonly WorkPermitForms workPermitForms;
+        private readonly IWorkPermitBinder workPermitBinder;
+
+        public WorkPermitPagePresenter() : this(new WorkPermitPage())
+        {
+        }
+
+        public WorkPermitPagePresenter(IWorkPermitPage page) : this(
+            page,
+            new WorkPermitFilterSelectorPresenter(new WorkPermitFilterSelectorForm()), 
+            new Authorized(), 
+            new WorkPermitBinder(ClientSession.GetUserContext().SiteId),
+            ClientServiceRegistry.Instance.RemoteEventRepeater,
+            ClientServiceRegistry.Instance.GetService<IObjectLockingService>(),
+            ClientServiceRegistry.Instance.GetService<IWorkPermitService>(),
+            ClientServiceRegistry.Instance.GetService<IGasTestElementInfoService>(),
+            ClientServiceRegistry.Instance.GetService<ITimeService>(),
+            ClientServiceRegistry.Instance.GetService<IUserService>())
+        {
+        }
+
+        protected WorkPermitPagePresenter(
+            IWorkPermitPage page, 
+            IWorkPermitFilterSelectorPresenter filterPresenter, 
+            IAuthorized authorized,
+            IWorkPermitBinder workPermitBinder,
+            IRemoteEventRepeater remoteEventRepeater,
+            IObjectLockingService objectLockingService,
+            IWorkPermitService workPermitService,
+            IGasTestElementInfoService gasTestElementInfoService,
+            ITimeService timeService,
+            IUserService userService)
+            : base(page, authorized, remoteEventRepeater, objectLockingService, timeService, userService)
+        {            
+            this.workPermitBinder = workPermitBinder;
+            this.workPermitService = workPermitService;
+            this.gasTestElementInfoService = gasTestElementInfoService;
+
+            workPermitForms = new WorkPermitFormsFactory().Build();
+
+            this.filterPresenter = filterPresenter;
+
+            SubscribeToEvents();
+        }
+
+        private void SubscribeToEvents()
+        {
+            page.Details.CloseWorkPermit += CloseWorkPermit;
+            page.Details.Print += Print;
+            page.Details.PrintPreview += PrintPreview;
+            page.Details.Copy += Copy;
+            page.Details.Clone += Clone;
+            page.Details.RefreshAll += RefreshAll;
+            page.Details.SetFilter += SetFilter;
+
+            page.Details.ViewAttachment += ViewAttachment;
+        }
+
+        protected override void UnSubscribeFromEvents()
+        {
+            base.UnSubscribeFromEvents();
+            page.Details.CloseWorkPermit -= CloseWorkPermit;
+            page.Details.Print -= Print;
+            page.Details.PrintPreview -= PrintPreview;
+            page.Details.Copy -= Copy;
+            page.Details.Clone -= Clone;
+            page.Details.RefreshAll -= RefreshAll;
+            page.Details.SetFilter -= SetFilter;
+
+            page.Details.ViewAttachment -= ViewAttachment;
+        }
+
+        protected override EditHistoryFormPresenter CreateHistoryPresenter(WorkPermit item)
+        {
+            return new EditWorkPermitHistoryFormPresenter(item);
+        }
+
+        protected override IForm CreateEditForm(WorkPermit item)
+        {
+            return workPermitForms.EditForm(item);
+        }
+
+        protected override void Edit(WorkPermit domainObject)
+        {
+            if (userContext.IsDenverSite && WorkPermit.IsOldVersionForDenver(domainObject.Version))
+            {
+                DialogResult dialogResult = OltMessageBox.Show(page.ParentForm, StringResources.WorkPermit_CannotEditOldFormat, StringResources.WorkPermit_CannotEditOldFormat_Title, MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (dialogResult == DialogResult.Yes)
+                {
+                    Clone(this, EventArgs.Empty);    
+                }
+            }
+            //ayman USPipeline workpermit
+            else if (userContext.IsUSPipelineSite && WorkPermit.IsOldVersionForUSPipeline(domainObject.Version))
+            {
+                DialogResult dialogResult = OltMessageBox.Show(page.ParentForm, StringResources.WorkPermit_CannotEditOldFormat, StringResources.WorkPermit_CannotEditOldFormat_Title, MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (dialogResult == DialogResult.Yes)
+                {
+                    Clone(this, EventArgs.Empty);
+                }
+            }
+            else
+            {
+                base.Edit(domainObject);
+            }
+        }
+
+        protected virtual WorkAssignment WorkAssignment
+        {
+            // This is null for this presenter because it is used to query data, and 'null' means 'all work assignments'
+            get { return null; }
+        }
+
+        public override void ApproveButton_Clicked()
+        {
+            List<WorkPermitDTO> permitDtos = page.SelectedItems;
+
+            if (page.ShowOKCancelDialog(string.Format(StringResources.ApproveItemDialogText, DomainObjectName),
+                                        string.Format(StringResources.ApproveItemDialogTitle, DomainObjectName)))
+            {
+                List<WorkPermit> permits = ConvertAllTo(permitDtos);
+
+                if (permits.Count == 1)
+                {
+                    ApproveSingleSelectedPermit(permits[0]);
+                }
+                else
+                {
+                    ApproveMultipleSelectedPermits(permits);
+                }
+            }
+        }
+
+        private void ApproveSingleSelectedPermit(WorkPermit permit)
+        {
+            if (AllowPermitToBeApproved(permit))
+            {
+                LockMultipleDomainObjects(Approve, new List<WorkPermit> { permit }, null);
+            }
+        }
+
+        private void ApproveMultipleSelectedPermits(List<WorkPermit> permits)
+        {
+            var validPermits = new List<WorkPermit>();
+            var permitsWithWarnings = new List<WorkPermit>();
+
+            permits.Classify(validPermits, permitsWithWarnings,
+                             permit =>
+                                 {
+                                     var issues = new WorkPermitSectionsValidator(permit, authorized).Validate();
+                                     return issues.Count == 0;
+                                 });
+
+            LockMultipleDomainObjects(Approve, validPermits, null);
+
+            if (permitsWithWarnings.Count > 0 &&
+                page.ShowYesNoDialog(ApprovePermitsWithWarningsConfirmationMessage(permitsWithWarnings),
+                                     StringResources.ApprovePermitsWithWarningsConfirmationTitle))
+            {
+                LockMultipleDomainObjects(Approve, permitsWithWarnings, null);
+            }
+        }
+
+        private static string ApprovePermitsWithWarningsConfirmationMessage(List<WorkPermit> permits)
+        {
+            using (StringWriter writer = new StringWriter())
+            {
+                writer.WriteLine(StringResources.ApprovePermitsWithWarningsConfirmationHeader);
+                writer.WriteLine();
+
+                permits.ForEach(
+                    permit =>
+                    writer.WriteLine(StringResources.ApprovePermitsWithWarningsConfirmationBodyDetail, permit.PermitNumber));
+
+                writer.WriteLine();
+                writer.WriteLine(StringResources.ApprovePermitsWithWarningsConfirmationFooter);
+                return writer.ToString();
+            }
+        }
+
+        public void Print(object sender, EventArgs args)
+        {
+            if (ClientSession.GetUserContext().IsSarniaSite && ClientSession.GetUserContext().SiteConfiguration.EnableWorkPermitSignature && page.SelectedItems.Count==1)
+            {
+                WorkPermitSarniaSign workPermitSign = new WorkPermitSarniaSign(page.SelectedItems[0]);
+                DialogResult Result=  workPermitSign.ShowDialog();
+                if(Result==DialogResult.Yes)
+                {
+                    PrintWithDialogFocus(Print);
+                    
+                }
+                return;
+            }
+
+            PrintWithDialogFocus(Print);
+        }
+
+        private void Print()
+        {
+            List<WorkPermit> permits = ConvertAllTo(page.SelectedItems);
+            //ayman USPipeline workpermit
+            if (ClientSession.GetUserContext().IsDenverSite)
+            {
+                int numberOfOldPermits = permits.Count(permit => WorkPermit.IsOldVersionForDenver(permit.Version));
+                int numberOfNewPermits = permits.Count(permit => !WorkPermit.IsOldVersionForDenver(permit.Version));
+
+                if (numberOfOldPermits > 0 && numberOfNewPermits > 0)
+                {
+                    OltMessageBox.ShowError(StringResources.WorkPermit_CannotPrintMultipleFormats, StringResources.WorkPermit_CannotPrintMultipleFormats_Title);
+                    return;
+                }
+            }
+
+            if (ClientSession.GetUserContext().IsUSPipelineSite)
+            {
+                int numberOfOldPermitsUSPipeline = permits.Count(permit => WorkPermit.IsOldVersionForUSPipeline(permit.Version));
+                int numberOfNewPermitsUSPipeline = permits.Count(permit => !WorkPermit.IsOldVersionForUSPipeline(permit.Version));
+                if (numberOfOldPermitsUSPipeline > 0 && numberOfNewPermitsUSPipeline > 0)
+                {
+                    OltMessageBox.ShowError(StringResources.WorkPermit_CannotPrintMultipleFormats, StringResources.WorkPermit_CannotPrintMultipleFormats_Title);
+                    return;
+                }
+            }
+
+            workPermitForms.ReportPrintManager(workPermitService, page, permits[0].Version).PrintReport(permits);
+        }
+
+        public void PrintPreview(object sender, EventArgs args)
+        {
+            WorkPermit permit = QueryForFirstSelectedItem();
+            workPermitForms.ReportPrintManager(workPermitService, page, permit.Version).PreviewReport(permit);
+        }
+
+        public static List<WorkPermitStatus> DefaultStatuses
+        {
+            get
+            {
+                return new List<WorkPermitStatus>
+                           {
+                               WorkPermitStatus.Pending,
+                               WorkPermitStatus.Approved,
+                               WorkPermitStatus.Complete,
+                               WorkPermitStatus.Rejected,
+                               WorkPermitStatus.Issued
+                           };
+            }
+        }
+       
+        protected override void ControlDetailButtons()
+        {
+            UserRoleElements userRoleElements = userContext.UserRoleElements;
+
+            UserShift userShift = userContext.UserShift;
+            
+            List<WorkPermit> workPermits = ConvertAllTo(page.SelectedItems);
+            bool hasSingleItemSelected = workPermits.Count == 1;
+            bool hasItemsSelected = workPermits.Count > 0;
+            
+            IWorkPermitDetails details = page.Details;
+            
+            //COMMENT: trg - if this changes .. it means that the PriorityPagePresenter AuthorizeWorkPermitContextMenu needs to reflect change as well.
+            List<GasTestElementInfo> standardGasTestElementInfoList = gasTestElementInfoService.QueryStandardElementInfosBySiteId(userContext.SiteId);
+            details.ApproveEnabled = hasItemsSelected
+                                     && authorized.ToApproveWorkPermits(userRoleElements, userShift, workPermits)
+                                     &&
+                                     new WorkPermitApprovableValidator(workPermits, authorized, standardGasTestElementInfoList).
+                                         PermitsAreValidEnoughToBeApproved();
+            details.RejectEnabled = hasItemsSelected && authorized.ToRejectWorkPermits(userRoleElements, workPermits);
+
+            bool closeEnabled = authorized.ToCloseWorkPermits(userRoleElements, workPermits);
+            details.CloseEnabled = hasItemsSelected && closeEnabled;
+            details.CommentEnabled = hasSingleItemSelected && authorized.ToCommentWorkPermit(userRoleElements);
+
+            details.DeleteEnabled = hasItemsSelected && authorized.ToDeleteWorkPermits(userRoleElements, workPermits);
+
+            details.EditEnabled = hasSingleItemSelected && authorized.ToEditWorkPermit(userRoleElements, workPermits[0]);
+
+            bool printAuthorization = hasItemsSelected && authorized.ToPrintWorkPermits(userRoleElements, userShift, workPermits);
+            details.PrintEnabled = printAuthorization;
+            details.PrintPreviewEnabled = hasSingleItemSelected && authorized.ToPrintPreviewWorkPermit(userRoleElements, userShift, workPermits[0]);
+            details.RefreshAllEnabled = true;
+            details.ViewEditHistoryEnabled = hasSingleItemSelected;
+            details.CopyEnabled = hasSingleItemSelected && (authorized.ToCopyWorkPermitWithNoRestriction(userRoleElements) || authorized.ToCopyWorkPermitWithSomeRestrictions(userRoleElements));
+            if (ClientSession.GetUserContext().IsUSPipelineSite)       //ayman USPipeline workpermit
+            {
+                bool bothtrue = false;
+                bothtrue = (authorized.ToCloneWorkPermitWithNoRestriction(userRoleElements) && authorized.ToCloneWorkPermitWithSomeRestrictions(userRoleElements));
+                if (bothtrue)
+                {
+                    details.CloneEnabled = false;
+                }
+                else
+                {
+                    details.CloneEnabled = hasSingleItemSelected;
+                }
+            }
+            else
+            {
+                details.CloneEnabled = hasSingleItemSelected && (authorized.ToCloneWorkPermitWithNoRestriction(userRoleElements) || authorized.ToCloneWorkPermitWithSomeRestrictions(userRoleElements));
+            }
+
+
+
+            // DMND0010609-OLT - Edmonton Work permit Scan
+            if (userContext.IsSarniaSite || userContext.IsDenverSite)
+            {
+                IWorkPermitEdmontonService formService = ClientServiceRegistry.Instance.GetService<IWorkPermitEdmontonService>();
+                details.ViewAttachEnabled = hasSingleItemSelected && formService.GetWorkpermitScan(Convert.ToString(page.SelectedItems[0].PermitNumber), Convert.ToInt32(userContext.Site.Id)).Count > 0;
+                details.ViewScanEnabled = hasSingleItemSelected && userRoleElements.HasRoleElement(RoleElement.WORKPERMIT_SCAN);
+            }
+            // End DMND0010609-OLT - Edmonton Work permit Scan
+
+            //if (ClientSession.GetUserContext().IsSarniaSite && ClientSession.GetUserContext().SiteConfiguration.EnableWorkPermitSignature && page.SelectedItems.Count>1)
+            //{
+            //    details.PrintEnabled = false;
+            //}
+        }
+        
+        private void RefreshAll(object sender, EventArgs e)
+        {
+            RefreshData();
+        }
+
+        private void SetStatusAndUpdate(WorkPermit workPermit, WorkPermitStatus status)
+        {
+            User approver = ClientSession.GetUserContext().User;
+            workPermit.SetWorkPermitStatusAndApprover(status, approver);
+            workPermit.LastModifiedBy = approver;
+            workPermit.LastModifiedDate = Clock.Now;
+            ServiceEventDispatcher.CallServiceAndDispatchImmediateEventNotification(workPermitService.Update, workPermit);
+        }
+
+        public void CloseWorkPermit(object sender, EventArgs e)
+        {
+            LockMultipleDomainObjects(CloseWorkPermits, LockType.Close);
+        }
+
+        private void CloseWorkPermits(List<WorkPermit> workPermits)
+        {
+            IWorkPermitCloseFormView workPermitCloseView = new WorkPermitCloseForm();
+            new WorkPermitCloseFormPresenter(workPermitCloseView, workPermits);
+            workPermitCloseView.ShowDialog(page.ParentForm);
+        }
+
+        protected override void Comment(WorkPermit workPermit)
+        {
+            page.DisplayCommentsForm(workPermit);
+        }
+
+        protected override void Approve(WorkPermit permit)
+        {
+            try
+            {
+                if (permit.StartAndOrEndTimesFinalized == false)
+                {
+                    permit.StartAndOrEndTimesFinalized = true;
+                }
+
+                SetStatusAndUpdate(permit, WorkPermitStatus.Approved);
+            }
+            catch (Exception)
+            {
+                page.DisplayInvalidActionMessage(
+                    StringResources.WorkPermitApprovalFailureMessageBoxText, 
+                    StringResources.WorkPermitApprovalFailureMessageBoxCaption);
+            }
+        }
+
+        protected override void Reject(WorkPermit workPermit)
+        {
+           try
+            {
+                SetStatusAndUpdate(workPermit, WorkPermitStatus.Rejected);
+            }
+            catch
+            {
+                page.DisplayInvalidActionMessage(
+                    StringResources.WorkPermitRejectionFailureMessageBoxText,
+                    StringResources.WorkPermitRejectionFailureMessageBoxCaption);
+            }
+        }
+
+        protected override void Delete(WorkPermit workPermit)
+        {
+            try
+            {
+                workPermit.LastModifiedBy = ClientSession.GetUserContext().User;
+                workPermit.LastModifiedDate = Clock.Now;
+                ServiceEventDispatcher.CallServiceAndDispatchImmediateEventNotification(workPermitService.Remove, workPermit);
+            }
+            catch
+            {
+                page.DisplayInvalidActionMessage(
+                    StringResources.WorkPermitDeletionFailureMessageBoxText, 
+                    StringResources.WorkPermitDeletionFailureMessageBoxCaption);
+            }
+        }
+
+        protected override bool ShouldBeDisplayed(WorkPermit item)
+        {
+            return item.IsNot(WorkPermitStatus.Archived);
+        }
+
+        public void Clone(object sender, EventArgs args)
+        {
+            WorkPermit workPermit = QueryForFirstSelectedItem();
+            if (workPermit != null)
+            {
+                ICloneWorkPermitFormView cloneWorkPermitView = workPermitForms.CloneForm();
+                cloneWorkPermitView.OriginalWorkPermit = workPermit;
+                if (cloneWorkPermitView.ShowDialog(page.ParentForm) == DialogResult.OK)
+                {
+                    
+                    WorkPermit clonedWorkPermit = cloneWorkPermitView.ClonedWorkPermit;
+
+// Added by Vibhor : DMND0011077 - Work Permit Clone History
+
+                    if (ClientSession.GetUserContext().Site.Id == Site.SARNIA_ID)
+                    {
+                        clonedWorkPermit.ClonedFormDetailSarnia = cloneWorkPermitView.OriginalWorkPermit.PermitNumber;
+                    }
+                    if (ClientSession.GetUserContext().Site.Id == Site.DENVER_ID)
+                    {
+                        clonedWorkPermit.ClonedFormDetailDenver = cloneWorkPermitView.OriginalWorkPermit.PermitNumber;
+                    }
+                   
+                    
+                    
+
+                    //update the created by to the current user
+                    clonedWorkPermit.SetCreatedBy(userContext.User, !userContext.Role.IsWorkPermitNonOperationsRole);
+                    clonedWorkPermit.LastModifiedDate = Clock.Now;
+
+                    IForm newForm = workPermitForms.EditForm(clonedWorkPermit);
+                    newForm.ShowDialog(page.ParentForm);
+                }
+            }
+        }
+
+        public void Copy(object sender, EventArgs args)
+        {
+            WorkPermit workPermit = QueryForFirstSelectedItem();
+            if (workPermit != null)
+            {
+                ICopyWorkPermitFormView copyForm = workPermitForms.CopyForm();
+                new CopyWorkPermitFormPresenter(copyForm, workPermit);
+                copyForm.ShowDialog(page.ParentForm);
+            }
+        }
+
+        private void SetFilter(object sender, EventArgs e)
+        {
+            if(page.Details.ShowButtonAppearance == Constants.SHOW_DATE_RANGE_WIDGET_APPEARANCE)
+            {
+                bool confirmedChanges = filterPresenter.DisplaySelector();
+
+                if (confirmedChanges)
+                {
+                    Range<Date> dateRange = filterPresenter.DateRange;
+                    List<WorkPermitStatus> statuses = filterPresenter.SelectedStatuses;
+
+                    List<WorkPermitDTO> dtos = workPermitService.QueryByDateRangeAndStatuses(
+                        ClientSession.GetUserContext().RootFlocSet,
+                        statuses,
+                        dateRange,
+                        WorkAssignment);
+
+                    RefreshData(dtos, dateRange);
+                    page.Details.ShowButtonAppearance = Constants.SHOW_CURRENT_WIDGET_APPEARANCE;
+                }
+            }
+            else
+            {
+                IList<WorkPermitDTO> workPermitDtos = GetDtos(null);
+                RefreshData(workPermitDtos, GetDefaultDateRange());
+                page.Details.ShowButtonAppearance = Constants.SHOW_DATE_RANGE_WIDGET_APPEARANCE;
+            }
+        }
+
+        protected override bool IsItemInDateRange(WorkPermit workPermit, Range<Date> dateRange)
+        {
+            DateTime startDateTime = dateRange.LowerBound.CreateDateTime(Time.START_OF_DAY);
+            Date bound = dateRange.UpperBound;
+
+            if (bound == null)
+            {
+                return workPermit.StartDateTime >= startDateTime;
+            }
+            
+            DateTime endDateTime = bound.CreateDateTime(Time.END_OF_DAY);
+            return workPermit.StartDateTime >= startDateTime && workPermit.StartDateTime <= endDateTime;
+        }
+
+        protected override Range<Date> GetDefaultDateRange()
+        {
+            SiteConfiguration siteConfiguration = userContext.SiteConfiguration;
+            DateTime currentTimeAtSite = Clock.Now;
+
+            int daysToDisplayWorkPermitsBackwards = siteConfiguration != null ? siteConfiguration.DaysToDisplayWorkPermitsBackwards : 15;
+            Date startRange = new Date(currentTimeAtSite.SubtractDays(daysToDisplayWorkPermitsBackwards));
+
+            Date endRange = null;
+            if (siteConfiguration != null && siteConfiguration.DaysToDisplayWorkPermitsForwards > 0)
+            {
+                endRange = new Date(currentTimeAtSite.AddDays(siteConfiguration.DaysToDisplayWorkPermitsForwards));    
+            }
+
+            return new Range<Date>(startRange, endRange);
+        }
+
+        protected override void HookToServiceEvents(IRemoteEventRepeater remoteEventRepeater)
+        {
+            remoteEventRepeater.ServerWorkPermitCreated += repeater_Created;
+            remoteEventRepeater.ServerWorkPermitUpdated += repeater_Updated;
+            remoteEventRepeater.ServerWorkPermitRemoved += repeater_Removed;
+        }
+
+        protected override void UnHookToServiceEvents(IRemoteEventRepeater remoteEventRepeater)
+        {
+            remoteEventRepeater.ServerWorkPermitCreated -= repeater_Created;
+            remoteEventRepeater.ServerWorkPermitUpdated -= repeater_Updated;
+            remoteEventRepeater.ServerWorkPermitRemoved -= repeater_Removed;
+        }
+
+        protected override WorkPermit QueryByDto(WorkPermitDTO dto)
+        {
+            if (ClientSession.GetUserContext().IsUSPipelineSite)
+                return workPermitService.QueryByIdForUSPipeline(dto.IdValue);         //ayman USPipeline workpermit
+            return workPermitService.QueryById(dto.IdValue);
+        }
+
+        protected override void SetDetailData(IWorkPermitDetails details, WorkPermit permit)
+        {
+            // Need to set version first, before any other properties on the details.
+            // When we have more time to make bigger changes, we can enforce this.
+            details.WorkPermitVersion = permit.Version;
+
+            details.SetRequiredSpecialPrecautionsComments(); // JOE: Not going to do it this way anymore, going to define an ISpecialPrecautionXYZ property on the interface
+            details.SpecialProtectiveClothingTypeAcidClothingTypeChoices = new List<AcidClothingType>(AcidClothingType.All);
+
+            workPermitBinder.ToView(permit, details.BindingTarget, permit.Version);
+
+            // JOE: Not flagged with the attribute (CreatedBy, ApprovedBy, LastModifiedBy)
+            details.Author = permit.CreatedBy;
+            details.Approver = permit.ApprovedBy;
+            details.LastModifier = permit.LastModifiedBy;
+
+            LoadWorkItemGasTests(details, permit);
+        }
+
+
+        private static void LoadWorkItemGasTests(IWorkPermitDetails details, WorkPermit permit)
+        {
+            details.GasTestElementResults = new GasTestElementResultDTOConverter().ConvertAll(permit);
+
+        }
+
+        private bool AllowPermitToBeApproved(WorkPermit workPermit)
+        {
+            var workPermitSectionsValidator = new WorkPermitSectionsValidator(workPermit, authorized);
+            var issues = workPermitSectionsValidator.Validate();
+            if (issues.Count == 0)
+            {
+                return true;
+            }
+
+            // TODO: Not sure how you get here if the button is disabled first because there are required and required for approval validation issues.
+
+            var requiredPermitSections = issues.FindAll(issue => issue.ProblemLevel > ProblemLevel.Warning)
+                .ConvertAll(issue => ((SectionValidationError) issue).WorkPermitSection);
+            var optionalPermitSections = issues.FindAll(issue => issue.ProblemLevel == ProblemLevel.Warning)
+                .ConvertAll(issue => ((SectionValidationError)issue).WorkPermitSection);
+
+            string requiredText = BuildRequiredValidationText(workPermit, requiredPermitSections);
+            string optionalText = BuildOptionalValidationText(workPermit, optionalPermitSections);
+
+            if (issues.Exists(issue => issue.ProblemLevel == ProblemLevel.Warning) && issues.Exists(issue => issue.ProblemLevel > ProblemLevel.Warning))
+            {
+                page.DisplayInvalidWorkPermitMessage(optionalText + requiredText, StringResources.PermitMissingRequiredSectionsTitle);
+                return false;
+            }
+            if (issues.Exists(issue => issue.ProblemLevel > ProblemLevel.Warning))
+            {
+                page.DisplayInvalidWorkPermitMessage(requiredText, StringResources.PermitMissingRequiredSectionsTitle);
+                return false;
+            }
+            if (issues.Exists(issue => issue.ProblemLevel == ProblemLevel.Warning))
+            {
+                string message = optionalText + " " + StringResources.PermitMissingOptionalSectionsFooter;
+                return page.DisplayOptionalInvalidWorkPermitMessage(message, 
+                                                                    StringResources.PermitMissingOptionalSectionsTitle);
+            }
+
+            return true;
+        }
+
+        private static string BuildOptionalValidationText(WorkPermit workPermit, ICollection<WorkPermitSection> sections)
+        {
+            var optionalText = new StringBuilder();
+
+            if (sections.Count > 0)
+            {
+                optionalText.AppendFormat(StringResources.PermitMissingOptionalSectionsMessage, 
+                                          workPermit.PermitNumber);
+                optionalText.AppendLine();
+                optionalText.AppendLine();
+                foreach (WorkPermitSection section in sections)
+                {
+                    optionalText.AppendFormat(StringResources.PermitMissingSectionName, section.Name);
+                    optionalText.AppendLine();
+                }
+                optionalText.AppendLine();
+            }
+
+            return optionalText.ToString();
+        }
+
+        private static string BuildRequiredValidationText(WorkPermit workPermit, ICollection<WorkPermitSection> sections)
+        {
+            var requiredText = new StringBuilder();
+
+            if (sections.Count > 0)
+            {
+                requiredText.AppendFormat(StringResources.PermitMissingRequiredSectionsMessage, 
+                                          workPermit.PermitNumber);
+                requiredText.AppendLine();
+                requiredText.AppendLine();
+                foreach (WorkPermitSection section in sections)
+                {
+                    requiredText.AppendFormat(StringResources.PermitMissingSectionName, section.Name);
+                    requiredText.AppendLine();
+                }
+
+                requiredText.AppendLine();
+                requiredText.AppendFormat(StringResources.PermitMissingRequiredSectionsFooter);
+                requiredText.AppendLine();
+            }
+
+            return requiredText.ToString();
+        }
+
+        protected override WorkPermitDTO CreateDTOFromDomainObject(WorkPermit domainObject)
+        {
+            return new WorkPermitDTO(domainObject);
+        }
+
+        protected override string DomainObjectName
+        {
+            get { return StringResources.DomainObjectName_WorkPermit; }
+        }
+
+        protected override IList<WorkPermitDTO> GetDtos(Range<Date> dateRange)
+        {
+            if (dateRange == null)
+            {
+                return workPermitService.QueryByDateRangeAndStatuses(
+                    ClientSession.GetUserContext().RootFlocSet,
+                    DefaultStatuses,
+                    GetDefaultDateRange(), 
+                    WorkAssignment);         
+            }
+            return workPermitService.QueryByDateRangeAndStatuses(
+                ClientSession.GetUserContext().RootFlocSet,
+                DefaultStatuses,
+                dateRange,
+                WorkAssignment);
+        }
+
+        protected override UserGridLayoutIdentifier GridIdentifier
+        {
+            get { return UserGridLayoutIdentifier.WorkPermits; }
+        }
+
+
+        private void ViewAttachment(object sender, EventArgs e)
+        {
+
+            WorkPermit workPermit = QueryForFirstSelectedItem();
+            IWorkPermitEdmontonService workPermitEdmontonService = ClientServiceRegistry.Instance.GetService<IWorkPermitEdmontonService>();
+            List<WorkpermitScan> lst = workPermitEdmontonService.GetWorkpermitScan(Convert.ToString(workPermit.PermitNumber), Convert.ToInt32(userContext.Site.Id));
+            WorkPermitAttachment AttachementForm = new WorkPermitAttachment(lst);
+
+            if (lst != null && lst.Count > 0)
+            {
+
+                AttachementForm.ShowDialog();
+            }
+            //workPermit.Id
+        }
+    }
+}

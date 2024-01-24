@@ -1,0 +1,39 @@
+IF  OBJECT_ID('dbo.FormOP14Read', 'U') IS  NULL 
+BEGIN
+
+  CREATE TABLE [dbo].[FormOP14Read](
+	[FormOP14Id] [bigint] NOT NULL,
+	[UserId] [bigint] NOT NULL,
+	[DateTime] [datetime] NOT NULL,
+	[ShiftId] [bigint] NOT NULL,
+	[Deleted] [bit] NOT NULL,
+ CONSTRAINT [PK_FormOP14Read] PRIMARY KEY CLUSTERED 
+(
+	[FormOP14Id] ASC,
+	[UserId] ASC,
+	[DateTime] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+
+
+ALTER TABLE [dbo].[FormOP14Read]  WITH CHECK ADD  CONSTRAINT [FK_FormOP14Read_FormOP14] FOREIGN KEY([FormOP14Id])
+REFERENCES [dbo].[FormOP14] ([Id])
+
+
+ALTER TABLE [dbo].[FormOP14Read] CHECK CONSTRAINT [FK_FormOP14Read_FormOP14]
+
+
+ALTER TABLE [dbo].[FormOP14Read]  WITH CHECK ADD  CONSTRAINT [FK_FormOP14Read_User] FOREIGN KEY([UserId])
+REFERENCES [dbo].[User] ([Id])
+
+
+ALTER TABLE [dbo].[FormOP14Read] CHECK CONSTRAINT [FK_FormOP14Read_User]
+
+
+ALTER TABLE [dbo].[FormOP14Read] ADD  CONSTRAINT [DF_FormOP14Read_Deleted]  DEFAULT ((0)) FOR [Deleted]
+ 
+
+END
+
+

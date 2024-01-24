@@ -1,0 +1,355 @@
+using System.Windows.Forms;
+using Com.Suncor.Olt.Client.OltControls;
+
+namespace Com.Suncor.Olt.Client.Forms
+{
+    partial class MultiExcursionResponsesForm
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MultiExcursionResponsesForm));
+            Infragistics.Win.Appearance appearance1 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinGrid.UltraGridBand ultraGridBand1 = new Infragistics.Win.UltraWinGrid.UltraGridBand("ExcursionResponseEditingGridRowDTO", -1);
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn1 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("OpmExcursionId");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn2 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("HistorianTag");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn3 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("ToeName");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn4 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("ToeType");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn5 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Status");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn6 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("StartDateTime", -1, null, 0, Infragistics.Win.UltraWinGrid.SortIndicator.Descending, false);
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn7 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Peak");
+            Infragistics.Win.Appearance appearance2 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn8 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Average");
+            Infragistics.Win.Appearance appearance3 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn9 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Duration");
+            Infragistics.Win.Appearance appearance4 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn10 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("OpmTrendUrl");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn11 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("IlpNumber");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn12 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("ToeLimitValue");
+            Infragistics.Win.Appearance appearance5 = new Infragistics.Win.Appearance();
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn13 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("Answered");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn14 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("ExcursionResponseComment");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn15 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("IsDirty");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn16 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("ResponseLastUpdated");
+            Infragistics.Win.UltraWinGrid.UltraGridColumn ultraGridColumn17 = new Infragistics.Win.UltraWinGrid.UltraGridColumn("OltExcursionResponseId");
+            Infragistics.Win.Appearance appearance6 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance7 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance8 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance9 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance10 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance11 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance12 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance13 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance14 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance15 = new Infragistics.Win.Appearance();
+            Infragistics.Win.Appearance appearance16 = new Infragistics.Win.Appearance();
+            this.responsesWillBeOverwrittenWarning = new Com.Suncor.Olt.Client.OltControls.OltLabel();
+            this.oltLabel2 = new Com.Suncor.Olt.Client.OltControls.OltLabel();
+            this.bulkCauseAndActionOltTextBox = new Com.Suncor.Olt.Client.OltControls.OltTextBox();
+            this.overtimeItemsPanel = new Com.Suncor.Olt.Client.OltControls.OltPanel();
+            this.excursionsToUpdateOltGrid = new Com.Suncor.Olt.Client.OltControls.OltGrid();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.saveAndCloseButton = new Com.Suncor.Olt.Client.OltControls.OltButton();
+            this.cancelButton = new Com.Suncor.Olt.Client.OltControls.OltButton();
+            this.recentExcursionsLine = new Com.Suncor.Olt.Client.OltControls.OltLabelLine();
+            this.errorProvider = new System.Windows.Forms.ErrorProvider(this.components);
+            this.excursionResponseEditingGridRowDTOBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.overtimeItemsPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.excursionsToUpdateOltGrid)).BeginInit();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.excursionResponseEditingGridRowDTOBindingSource)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // responsesWillBeOverwrittenWarning
+            // 
+            resources.ApplyResources(this.responsesWillBeOverwrittenWarning, "responsesWillBeOverwrittenWarning");
+            this.responsesWillBeOverwrittenWarning.ForeColor = System.Drawing.Color.DarkRed;
+            this.responsesWillBeOverwrittenWarning.Name = "responsesWillBeOverwrittenWarning";
+            // 
+            // oltLabel2
+            // 
+            resources.ApplyResources(this.oltLabel2, "oltLabel2");
+            this.oltLabel2.Name = "oltLabel2";
+            // 
+            // bulkCauseAndActionOltTextBox
+            // 
+            resources.ApplyResources(this.bulkCauseAndActionOltTextBox, "bulkCauseAndActionOltTextBox");
+            this.bulkCauseAndActionOltTextBox.BackColor = System.Drawing.Color.White;
+            this.bulkCauseAndActionOltTextBox.Name = "bulkCauseAndActionOltTextBox";
+            this.bulkCauseAndActionOltTextBox.OltAcceptsReturn = true;
+            this.bulkCauseAndActionOltTextBox.OltTrimWhitespace = true;
+            // 
+            // overtimeItemsPanel
+            // 
+            resources.ApplyResources(this.overtimeItemsPanel, "overtimeItemsPanel");
+            this.overtimeItemsPanel.Controls.Add(this.excursionsToUpdateOltGrid);
+            this.overtimeItemsPanel.Name = "overtimeItemsPanel";
+            // 
+            // excursionsToUpdateOltGrid
+            // 
+            resources.ApplyResources(this.excursionsToUpdateOltGrid, "excursionsToUpdateOltGrid");
+            this.excursionsToUpdateOltGrid.DataMember = null;
+            this.excursionsToUpdateOltGrid.DataSource = this.excursionResponseEditingGridRowDTOBindingSource;
+            appearance1.BackColor = System.Drawing.SystemColors.Window;
+            appearance1.BorderColor = System.Drawing.SystemColors.InactiveCaption;
+            this.excursionsToUpdateOltGrid.DisplayLayout.Appearance = appearance1;
+            this.excursionsToUpdateOltGrid.DisplayLayout.AutoFitStyle = Infragistics.Win.UltraWinGrid.AutoFitStyle.ExtendLastColumn;
+            ultraGridColumn1.CellActivation = Infragistics.Win.UltraWinGrid.Activation.NoEdit;
+            ultraGridColumn1.Header.VisiblePosition = 0;
+            ultraGridColumn1.Hidden = true;
+            ultraGridColumn1.Width = 65;
+            ultraGridColumn2.CellActivation = Infragistics.Win.UltraWinGrid.Activation.NoEdit;
+            ultraGridColumn2.Header.VisiblePosition = 1;
+            ultraGridColumn2.Hidden = true;
+            ultraGridColumn2.MaxWidth = 80;
+            ultraGridColumn3.CellActivation = Infragistics.Win.UltraWinGrid.Activation.NoEdit;
+            ultraGridColumn3.Header.Caption = resources.GetString("resource.Caption");
+            ultraGridColumn3.Header.VisiblePosition = 2;
+            ultraGridColumn3.LockedWidth = true;
+            ultraGridColumn3.MaxWidth = 300;
+            ultraGridColumn3.MinWidth = 300;
+            ultraGridColumn4.CellActivation = Infragistics.Win.UltraWinGrid.Activation.NoEdit;
+            ultraGridColumn4.Header.Caption = resources.GetString("resource.Caption1");
+            ultraGridColumn4.Header.VisiblePosition = 4;
+            ultraGridColumn4.MaxWidth = 65;
+            ultraGridColumn4.MinWidth = 65;
+            ultraGridColumn4.Width = 65;
+            ultraGridColumn5.CellActivation = Infragistics.Win.UltraWinGrid.Activation.NoEdit;
+            ultraGridColumn5.Header.VisiblePosition = 5;
+            ultraGridColumn5.LockedWidth = true;
+            ultraGridColumn6.CellActivation = Infragistics.Win.UltraWinGrid.Activation.NoEdit;
+            resources.ApplyResources(ultraGridColumn6, "ultraGridColumn6");
+            ultraGridColumn6.Header.Caption = resources.GetString("resource.Caption2");
+            ultraGridColumn6.Header.VisiblePosition = 3;
+            ultraGridColumn6.LockedWidth = true;
+            ultraGridColumn6.Width = 100;
+            ultraGridColumn7.CellActivation = Infragistics.Win.UltraWinGrid.Activation.NoEdit;
+            resources.ApplyResources(appearance2, "appearance2");
+            ultraGridColumn7.CellAppearance = appearance2;
+            resources.ApplyResources(ultraGridColumn7, "ultraGridColumn7");
+            ultraGridColumn7.Header.Caption = resources.GetString("resource.Caption3");
+            ultraGridColumn7.Header.VisiblePosition = 8;
+            ultraGridColumn7.LockedWidth = true;
+            ultraGridColumn7.MinWidth = 60;
+            ultraGridColumn7.Width = 70;
+            ultraGridColumn8.CellActivation = Infragistics.Win.UltraWinGrid.Activation.NoEdit;
+            resources.ApplyResources(appearance3, "appearance3");
+            ultraGridColumn8.CellAppearance = appearance3;
+            resources.ApplyResources(ultraGridColumn8, "ultraGridColumn8");
+            ultraGridColumn8.Header.VisiblePosition = 9;
+            ultraGridColumn8.LockedWidth = true;
+            ultraGridColumn8.Width = 60;
+            ultraGridColumn9.CellActivation = Infragistics.Win.UltraWinGrid.Activation.NoEdit;
+            resources.ApplyResources(appearance4, "appearance4");
+            ultraGridColumn9.CellAppearance = appearance4;
+            ultraGridColumn9.Header.Caption = resources.GetString("resource.Caption4");
+            ultraGridColumn9.Header.VisiblePosition = 10;
+            ultraGridColumn9.LockedWidth = true;
+            ultraGridColumn9.Width = 90;
+            ultraGridColumn10.CellActivation = Infragistics.Win.UltraWinGrid.Activation.NoEdit;
+            ultraGridColumn10.Header.VisiblePosition = 12;
+            ultraGridColumn10.Hidden = true;
+            ultraGridColumn10.LockedWidth = true;
+            ultraGridColumn10.Width = 85;
+            ultraGridColumn11.CellActivation = Infragistics.Win.UltraWinGrid.Activation.NoEdit;
+            ultraGridColumn11.Header.Caption = resources.GetString("resource.Caption5");
+            ultraGridColumn11.Header.VisiblePosition = 11;
+            ultraGridColumn11.LockedWidth = true;
+            ultraGridColumn12.CellActivation = Infragistics.Win.UltraWinGrid.Activation.NoEdit;
+            resources.ApplyResources(appearance5, "appearance5");
+            ultraGridColumn12.CellAppearance = appearance5;
+            resources.ApplyResources(ultraGridColumn12, "ultraGridColumn12");
+            ultraGridColumn12.Header.Caption = resources.GetString("resource.Caption6");
+            ultraGridColumn12.Header.VisiblePosition = 7;
+            ultraGridColumn13.Header.VisiblePosition = 6;
+            ultraGridColumn13.LockedWidth = true;
+            ultraGridColumn13.Width = 60;
+            ultraGridColumn14.AutoSizeMode = Infragistics.Win.UltraWinGrid.ColumnAutoSizeMode.AllRowsInBand;
+            ultraGridColumn14.Header.VisiblePosition = 13;
+            ultraGridColumn14.Hidden = true;
+            ultraGridColumn14.MaxLength = 4000;
+            ultraGridColumn14.Nullable = Infragistics.Win.UltraWinGrid.Nullable.Nothing;
+            ultraGridColumn15.Header.VisiblePosition = 14;
+            ultraGridColumn15.Hidden = true;
+            ultraGridColumn16.Header.VisiblePosition = 15;
+            ultraGridColumn16.Hidden = true;
+            ultraGridColumn17.CellActivation = Infragistics.Win.UltraWinGrid.Activation.NoEdit;
+            ultraGridColumn17.Header.VisiblePosition = 16;
+            ultraGridColumn17.Hidden = true;
+            ultraGridBand1.Columns.AddRange(new object[] {
+            ultraGridColumn1,
+            ultraGridColumn2,
+            ultraGridColumn3,
+            ultraGridColumn4,
+            ultraGridColumn5,
+            ultraGridColumn6,
+            ultraGridColumn7,
+            ultraGridColumn8,
+            ultraGridColumn9,
+            ultraGridColumn10,
+            ultraGridColumn11,
+            ultraGridColumn12,
+            ultraGridColumn13,
+            ultraGridColumn14,
+            ultraGridColumn15,
+            ultraGridColumn16,
+            ultraGridColumn17});
+            this.excursionsToUpdateOltGrid.DisplayLayout.BandsSerializer.Add(ultraGridBand1);
+            this.excursionsToUpdateOltGrid.DisplayLayout.BorderStyle = Infragistics.Win.UIElementBorderStyle.Solid;
+            this.excursionsToUpdateOltGrid.DisplayLayout.CaptionVisible = Infragistics.Win.DefaultableBoolean.False;
+            appearance6.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            appearance6.BackColor2 = System.Drawing.SystemColors.ControlDark;
+            appearance6.BackGradientStyle = Infragistics.Win.GradientStyle.Vertical;
+            appearance6.BorderColor = System.Drawing.SystemColors.Window;
+            this.excursionsToUpdateOltGrid.DisplayLayout.GroupByBox.Appearance = appearance6;
+            appearance7.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.excursionsToUpdateOltGrid.DisplayLayout.GroupByBox.BandLabelAppearance = appearance7;
+            this.excursionsToUpdateOltGrid.DisplayLayout.GroupByBox.BorderStyle = Infragistics.Win.UIElementBorderStyle.Solid;
+            appearance8.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            appearance8.BackColor2 = System.Drawing.SystemColors.Control;
+            appearance8.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance8.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.excursionsToUpdateOltGrid.DisplayLayout.GroupByBox.PromptAppearance = appearance8;
+            this.excursionsToUpdateOltGrid.DisplayLayout.MaxColScrollRegions = 1;
+            this.excursionsToUpdateOltGrid.DisplayLayout.MaxRowScrollRegions = 1;
+            appearance9.BackColor = System.Drawing.SystemColors.Window;
+            appearance9.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.excursionsToUpdateOltGrid.DisplayLayout.Override.ActiveCellAppearance = appearance9;
+            appearance10.BackColor = System.Drawing.SystemColors.Highlight;
+            appearance10.ForeColor = System.Drawing.SystemColors.HighlightText;
+            this.excursionsToUpdateOltGrid.DisplayLayout.Override.ActiveRowAppearance = appearance10;
+            this.excursionsToUpdateOltGrid.DisplayLayout.Override.AllowAddNew = Infragistics.Win.UltraWinGrid.AllowAddNew.No;
+            this.excursionsToUpdateOltGrid.DisplayLayout.Override.AllowColMoving = Infragistics.Win.UltraWinGrid.AllowColMoving.NotAllowed;
+            this.excursionsToUpdateOltGrid.DisplayLayout.Override.AllowColSwapping = Infragistics.Win.UltraWinGrid.AllowColSwapping.NotAllowed;
+            this.excursionsToUpdateOltGrid.DisplayLayout.Override.AllowDelete = Infragistics.Win.DefaultableBoolean.False;
+            this.excursionsToUpdateOltGrid.DisplayLayout.Override.AllowRowSummaries = Infragistics.Win.UltraWinGrid.AllowRowSummaries.False;
+            this.excursionsToUpdateOltGrid.DisplayLayout.Override.AllowUpdate = Infragistics.Win.DefaultableBoolean.True;
+            this.excursionsToUpdateOltGrid.DisplayLayout.Override.BorderStyleCell = Infragistics.Win.UIElementBorderStyle.Dotted;
+            this.excursionsToUpdateOltGrid.DisplayLayout.Override.BorderStyleRow = Infragistics.Win.UIElementBorderStyle.Dotted;
+            appearance11.BackColor = System.Drawing.SystemColors.Window;
+            this.excursionsToUpdateOltGrid.DisplayLayout.Override.CardAreaAppearance = appearance11;
+            appearance12.BorderColor = System.Drawing.Color.Silver;
+            appearance12.TextTrimming = Infragistics.Win.TextTrimming.EllipsisCharacter;
+            this.excursionsToUpdateOltGrid.DisplayLayout.Override.CellAppearance = appearance12;
+            this.excursionsToUpdateOltGrid.DisplayLayout.Override.CellClickAction = Infragistics.Win.UltraWinGrid.CellClickAction.EditAndSelectText;
+            this.excursionsToUpdateOltGrid.DisplayLayout.Override.CellPadding = 0;
+            appearance13.BackColor = System.Drawing.SystemColors.Control;
+            appearance13.BackColor2 = System.Drawing.SystemColors.ControlDark;
+            appearance13.BackGradientAlignment = Infragistics.Win.GradientAlignment.Element;
+            appearance13.BackGradientStyle = Infragistics.Win.GradientStyle.Horizontal;
+            appearance13.BorderColor = System.Drawing.SystemColors.Window;
+            this.excursionsToUpdateOltGrid.DisplayLayout.Override.GroupByRowAppearance = appearance13;
+            resources.ApplyResources(appearance14, "appearance14");
+            this.excursionsToUpdateOltGrid.DisplayLayout.Override.HeaderAppearance = appearance14;
+            this.excursionsToUpdateOltGrid.DisplayLayout.Override.HeaderClickAction = Infragistics.Win.UltraWinGrid.HeaderClickAction.SortMulti;
+            this.excursionsToUpdateOltGrid.DisplayLayout.Override.HeaderStyle = Infragistics.Win.HeaderStyle.WindowsXPCommand;
+            appearance15.BackColor = System.Drawing.SystemColors.Window;
+            appearance15.BorderColor = System.Drawing.Color.Silver;
+            this.excursionsToUpdateOltGrid.DisplayLayout.Override.RowAppearance = appearance15;
+            this.excursionsToUpdateOltGrid.DisplayLayout.Override.RowSelectors = Infragistics.Win.DefaultableBoolean.False;
+            this.excursionsToUpdateOltGrid.DisplayLayout.Override.RowSizing = Infragistics.Win.UltraWinGrid.RowSizing.AutoFixed;
+            this.excursionsToUpdateOltGrid.DisplayLayout.Override.RowSizingArea = Infragistics.Win.UltraWinGrid.RowSizingArea.RowBordersOnly;
+            this.excursionsToUpdateOltGrid.DisplayLayout.Override.SummaryDisplayArea = Infragistics.Win.UltraWinGrid.SummaryDisplayAreas.None;
+            this.excursionsToUpdateOltGrid.DisplayLayout.Override.SupportDataErrorInfo = Infragistics.Win.UltraWinGrid.SupportDataErrorInfo.None;
+            appearance16.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.excursionsToUpdateOltGrid.DisplayLayout.Override.TemplateAddRowAppearance = appearance16;
+            this.excursionsToUpdateOltGrid.DisplayLayout.ScrollBounds = Infragistics.Win.UltraWinGrid.ScrollBounds.ScrollToFill;
+            this.excursionsToUpdateOltGrid.DisplayLayout.ScrollStyle = Infragistics.Win.UltraWinGrid.ScrollStyle.Immediate;
+            this.excursionsToUpdateOltGrid.Name = "excursionsToUpdateOltGrid";
+            // 
+            // panel1
+            // 
+            resources.ApplyResources(this.panel1, "panel1");
+            this.panel1.Controls.Add(this.saveAndCloseButton);
+            this.panel1.Controls.Add(this.cancelButton);
+            this.panel1.Name = "panel1";
+            // 
+            // saveAndCloseButton
+            // 
+            resources.ApplyResources(this.saveAndCloseButton, "saveAndCloseButton");
+            this.saveAndCloseButton.Name = "saveAndCloseButton";
+            this.saveAndCloseButton.UseVisualStyleBackColor = true;
+            // 
+            // cancelButton
+            // 
+            resources.ApplyResources(this.cancelButton, "cancelButton");
+            this.cancelButton.Name = "cancelButton";
+            this.cancelButton.UseVisualStyleBackColor = true;
+            // 
+            // recentExcursionsLine
+            // 
+            resources.ApplyResources(this.recentExcursionsLine, "recentExcursionsLine");
+            this.recentExcursionsLine.Name = "recentExcursionsLine";
+            this.recentExcursionsLine.TabStop = false;
+            // 
+            // errorProvider
+            // 
+            this.errorProvider.ContainerControl = this;
+            // 
+            // excursionResponseEditingGridRowDTOBindingSource
+            // 
+            this.excursionResponseEditingGridRowDTOBindingSource.DataSource = typeof(Com.Suncor.Olt.Common.DTO.Excursions.ExcursionResponseEditingGridRowDTO);
+            // 
+            // MultiExcursionResponsesForm
+            // 
+            resources.ApplyResources(this, "$this");
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.responsesWillBeOverwrittenWarning);
+            this.Controls.Add(this.oltLabel2);
+            this.Controls.Add(this.bulkCauseAndActionOltTextBox);
+            this.Controls.Add(this.overtimeItemsPanel);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.recentExcursionsLine);
+            this.MaximizeBox = false;
+            this.Name = "MultiExcursionResponsesForm";
+            this.overtimeItemsPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.excursionsToUpdateOltGrid)).EndInit();
+            this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.excursionResponseEditingGridRowDTOBindingSource)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private OltButton cancelButton;
+        private OltButton saveAndCloseButton;
+        private OltLabelLine recentExcursionsLine;
+        private Panel panel1;
+        private OltPanel overtimeItemsPanel;
+        private OltGrid excursionsToUpdateOltGrid;
+        private OltLabel oltLabel2;
+        private OltTextBox bulkCauseAndActionOltTextBox;
+        private BindingSource excursionResponseEditingGridRowDTOBindingSource;
+        private ErrorProvider errorProvider;
+        private OltLabel responsesWillBeOverwrittenWarning;
+
+    }
+}

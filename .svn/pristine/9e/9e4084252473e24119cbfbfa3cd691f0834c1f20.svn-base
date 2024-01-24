@@ -1,0 +1,62 @@
+using System;
+using Com.Suncor.Olt.Common.Utility;
+
+namespace Com.Suncor.Olt.Common.Domain.WorkPermit
+{
+    /// <summary>
+    ///     The 'Permit Attributes' section of a Work Permit.
+    /// </summary>
+    [Serializable]
+    public class WorkPermitAttributes : ComparableObject
+    {
+        [SarniaWorkPermit, DenverWorkPermit, USPipelineWorkPermit]          //ayman USPipeline workpermit
+        public bool IsConfinedSpaceEntry { get; set; }
+
+        [DenverWorkPermit, USPipelineWorkPermit]
+        public bool IsInertConfinedSpaceEntry { get; set; }
+
+        [DenverWorkPermit, USPipelineWorkPermit]
+        public bool IsLeadAbatement { get; set; }
+
+        [DenverWorkPermit, USPipelineWorkPermit]
+        public bool IsBreathingAirOrSCBA { get; set; }
+
+        [SarniaWorkPermit, DenverWorkPermit(Constants.VERSION_4_9_STRING, null), USPipelineWorkPermit(Constants.VERSION_4_9_STRING,null)]
+        public bool IsVehicleEntry { get; set; }
+
+        [DenverWorkPermit, USPipelineWorkPermit]
+        public bool IsHotTap { get; set; }
+
+        [SarniaWorkPermit, DenverWorkPermit, USPipelineWorkPermit]
+        public bool IsBurnOrOpenFlame { get; set; }
+
+        [DenverWorkPermit, USPipelineWorkPermit]
+        public bool IsSystemEntry { get; set; }
+
+        [DenverWorkPermit, USPipelineWorkPermit]
+        public bool IsCriticalLift { get; set; }
+
+        [SarniaWorkPermit, DenverWorkPermit, USPipelineWorkPermit]
+        public bool IsExcavation { get; set; }
+
+        [DenverWorkPermit, USPipelineWorkPermit]
+        public bool IsElectricalWork { get; set; }
+
+        [SarniaWorkPermit, DenverWorkPermit, USPipelineWorkPermit]
+        public bool IsAsbestos { get; set; }
+
+        [SarniaWorkPermit, DenverWorkPermit, USPipelineWorkPermit]
+        public bool IsRadiationRadiography { get; set; }
+
+        [SarniaWorkPermit]
+        public bool IsFreshAir { get; set; } // RITM0422801 : Added By Vibhor - Changes in work permit for Sarnia 
+
+        [DenverWorkPermit, USPipelineWorkPermit]
+        public bool IsRadiationSealed { get; set; }
+
+        public WorkPermitAttributes Copy()
+        {
+            return (WorkPermitAttributes) MemberwiseClone();
+        }
+    }
+}

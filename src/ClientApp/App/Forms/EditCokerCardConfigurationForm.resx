@@ -1,0 +1,798 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="toolTip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="errorProvider.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>102, 17</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>666, 594</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="workAssignmentGroupBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left</value>
+  </data>
+  <data name="workAssignmentButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="workAssignmentButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>129, 373</value>
+  </data>
+  <data name="workAssignmentButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>153, 23</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="workAssignmentButton.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="workAssignmentButton.Text" xml:space="preserve">
+    <value>Select Work Assignments...</value>
+  </data>
+  <data name="&gt;&gt;workAssignmentButton.Name" xml:space="preserve">
+    <value>workAssignmentButton</value>
+  </data>
+  <data name="&gt;&gt;workAssignmentButton.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Common.Controls.OltButton, Com.Suncor.Olt.Common, Version=1.0.0.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;workAssignmentButton.Parent" xml:space="preserve">
+    <value>workAssignmentGroupBox</value>
+  </data>
+  <data name="&gt;&gt;workAssignmentButton.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="workAssignmentListBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="workAssignmentListBox.HorizontalScrollbar" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="workAssignmentListBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 20</value>
+  </data>
+  <data name="workAssignmentListBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>273, 342</value>
+  </data>
+  <data name="workAssignmentListBox.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;workAssignmentListBox.Name" xml:space="preserve">
+    <value>workAssignmentListBox</value>
+  </data>
+  <data name="&gt;&gt;workAssignmentListBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Common.Controls.OltListBox, Com.Suncor.Olt.Common, Version=1.0.0.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;workAssignmentListBox.Parent" xml:space="preserve">
+    <value>workAssignmentGroupBox</value>
+  </data>
+  <data name="&gt;&gt;workAssignmentListBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="workAssignmentGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 133</value>
+  </data>
+  <data name="workAssignmentGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>303, 404</value>
+  </data>
+  <data name="workAssignmentGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="workAssignmentGroupBox.Text" xml:space="preserve">
+    <value>Include In Shift Handovers For</value>
+  </data>
+  <data name="&gt;&gt;workAssignmentGroupBox.Name" xml:space="preserve">
+    <value>workAssignmentGroupBox</value>
+  </data>
+  <data name="&gt;&gt;workAssignmentGroupBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Common.Controls.OltGroupBox, Com.Suncor.Olt.Common, Version=1.0.0.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;workAssignmentGroupBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;workAssignmentGroupBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="stepGroupBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="moveStepUpButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="moveStepUpButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>252, 20</value>
+  </data>
+  <data name="moveStepUpButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="moveStepUpButton.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="moveStepUpButton.Text" xml:space="preserve">
+    <value>Move Up</value>
+  </data>
+  <data name="&gt;&gt;moveStepUpButton.Name" xml:space="preserve">
+    <value>moveStepUpButton</value>
+  </data>
+  <data name="&gt;&gt;moveStepUpButton.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Common.Controls.OltButton, Com.Suncor.Olt.Common, Version=1.0.0.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;moveStepUpButton.Parent" xml:space="preserve">
+    <value>stepGroupBox</value>
+  </data>
+  <data name="&gt;&gt;moveStepUpButton.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="moveStepDownButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="moveStepDownButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>252, 49</value>
+  </data>
+  <data name="moveStepDownButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="moveStepDownButton.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="moveStepDownButton.Text" xml:space="preserve">
+    <value>Move Down</value>
+  </data>
+  <data name="&gt;&gt;moveStepDownButton.Name" xml:space="preserve">
+    <value>moveStepDownButton</value>
+  </data>
+  <data name="&gt;&gt;moveStepDownButton.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Common.Controls.OltButton, Com.Suncor.Olt.Common, Version=1.0.0.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;moveStepDownButton.Parent" xml:space="preserve">
+    <value>stepGroupBox</value>
+  </data>
+  <data name="&gt;&gt;moveStepDownButton.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="deleteStepButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="deleteStepButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>171, 228</value>
+  </data>
+  <data name="deleteStepButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="deleteStepButton.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="deleteStepButton.Text" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="&gt;&gt;deleteStepButton.Name" xml:space="preserve">
+    <value>deleteStepButton</value>
+  </data>
+  <data name="&gt;&gt;deleteStepButton.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Common.Controls.OltButton, Com.Suncor.Olt.Common, Version=1.0.0.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;deleteStepButton.Parent" xml:space="preserve">
+    <value>stepGroupBox</value>
+  </data>
+  <data name="&gt;&gt;deleteStepButton.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="addStepButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="addStepButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 228</value>
+  </data>
+  <data name="addStepButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="addStepButton.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="addStepButton.Text" xml:space="preserve">
+    <value>Add...</value>
+  </data>
+  <data name="&gt;&gt;addStepButton.Name" xml:space="preserve">
+    <value>addStepButton</value>
+  </data>
+  <data name="&gt;&gt;addStepButton.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Common.Controls.OltButton, Com.Suncor.Olt.Common, Version=1.0.0.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;addStepButton.Parent" xml:space="preserve">
+    <value>stepGroupBox</value>
+  </data>
+  <data name="&gt;&gt;addStepButton.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="editStepButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="editStepButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>90, 228</value>
+  </data>
+  <data name="editStepButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="editStepButton.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="editStepButton.Text" xml:space="preserve">
+    <value>Edit...</value>
+  </data>
+  <data name="&gt;&gt;editStepButton.Name" xml:space="preserve">
+    <value>editStepButton</value>
+  </data>
+  <data name="&gt;&gt;editStepButton.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Common.Controls.OltButton, Com.Suncor.Olt.Common, Version=1.0.0.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;editStepButton.Parent" xml:space="preserve">
+    <value>stepGroupBox</value>
+  </data>
+  <data name="&gt;&gt;editStepButton.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="stepPanel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="stepPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 20</value>
+  </data>
+  <data name="stepPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>237, 197</value>
+  </data>
+  <data name="stepPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;stepPanel.Name" xml:space="preserve">
+    <value>stepPanel</value>
+  </data>
+  <data name="&gt;&gt;stepPanel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Common.Controls.OltPanel, Com.Suncor.Olt.Common, Version=1.0.0.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;stepPanel.Parent" xml:space="preserve">
+    <value>stepGroupBox</value>
+  </data>
+  <data name="&gt;&gt;stepPanel.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="stepGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>320, 278</value>
+  </data>
+  <data name="stepGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>333, 259</value>
+  </data>
+  <data name="stepGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="stepGroupBox.Text" xml:space="preserve">
+    <value>Cycle Steps</value>
+  </data>
+  <data name="&gt;&gt;stepGroupBox.Name" xml:space="preserve">
+    <value>stepGroupBox</value>
+  </data>
+  <data name="&gt;&gt;stepGroupBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Common.Controls.OltGroupBox, Com.Suncor.Olt.Common, Version=1.0.0.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;stepGroupBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;stepGroupBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="drumConfigurationGroupBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="moveDrumUpButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="moveDrumUpButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>251, 20</value>
+  </data>
+  <data name="moveDrumUpButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="moveDrumUpButton.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="moveDrumUpButton.Text" xml:space="preserve">
+    <value>Move Up</value>
+  </data>
+  <data name="&gt;&gt;moveDrumUpButton.Name" xml:space="preserve">
+    <value>moveDrumUpButton</value>
+  </data>
+  <data name="&gt;&gt;moveDrumUpButton.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Common.Controls.OltButton, Com.Suncor.Olt.Common, Version=1.0.0.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;moveDrumUpButton.Parent" xml:space="preserve">
+    <value>drumConfigurationGroupBox</value>
+  </data>
+  <data name="&gt;&gt;moveDrumUpButton.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="moveDrumDownButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="moveDrumDownButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>251, 49</value>
+  </data>
+  <data name="moveDrumDownButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="moveDrumDownButton.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="moveDrumDownButton.Text" xml:space="preserve">
+    <value>Move Down</value>
+  </data>
+  <data name="&gt;&gt;moveDrumDownButton.Name" xml:space="preserve">
+    <value>moveDrumDownButton</value>
+  </data>
+  <data name="&gt;&gt;moveDrumDownButton.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Common.Controls.OltButton, Com.Suncor.Olt.Common, Version=1.0.0.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;moveDrumDownButton.Parent" xml:space="preserve">
+    <value>drumConfigurationGroupBox</value>
+  </data>
+  <data name="&gt;&gt;moveDrumDownButton.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="deleteDrumButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="deleteDrumButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>171, 227</value>
+  </data>
+  <data name="deleteDrumButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="deleteDrumButton.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="deleteDrumButton.Text" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="&gt;&gt;deleteDrumButton.Name" xml:space="preserve">
+    <value>deleteDrumButton</value>
+  </data>
+  <data name="&gt;&gt;deleteDrumButton.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Common.Controls.OltButton, Com.Suncor.Olt.Common, Version=1.0.0.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;deleteDrumButton.Parent" xml:space="preserve">
+    <value>drumConfigurationGroupBox</value>
+  </data>
+  <data name="&gt;&gt;deleteDrumButton.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="addDrumButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="addDrumButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 227</value>
+  </data>
+  <data name="addDrumButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="addDrumButton.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="addDrumButton.Text" xml:space="preserve">
+    <value>Add...</value>
+  </data>
+  <data name="&gt;&gt;addDrumButton.Name" xml:space="preserve">
+    <value>addDrumButton</value>
+  </data>
+  <data name="&gt;&gt;addDrumButton.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Common.Controls.OltButton, Com.Suncor.Olt.Common, Version=1.0.0.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;addDrumButton.Parent" xml:space="preserve">
+    <value>drumConfigurationGroupBox</value>
+  </data>
+  <data name="&gt;&gt;addDrumButton.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="editDrumButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="editDrumButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>90, 227</value>
+  </data>
+  <data name="editDrumButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="editDrumButton.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="editDrumButton.Text" xml:space="preserve">
+    <value>Edit...</value>
+  </data>
+  <data name="&gt;&gt;editDrumButton.Name" xml:space="preserve">
+    <value>editDrumButton</value>
+  </data>
+  <data name="&gt;&gt;editDrumButton.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Common.Controls.OltButton, Com.Suncor.Olt.Common, Version=1.0.0.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;editDrumButton.Parent" xml:space="preserve">
+    <value>drumConfigurationGroupBox</value>
+  </data>
+  <data name="&gt;&gt;editDrumButton.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="drumPanel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="drumPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 20</value>
+  </data>
+  <data name="drumPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>237, 197</value>
+  </data>
+  <data name="drumPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;drumPanel.Name" xml:space="preserve">
+    <value>drumPanel</value>
+  </data>
+  <data name="&gt;&gt;drumPanel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Common.Controls.OltPanel, Com.Suncor.Olt.Common, Version=1.0.0.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;drumPanel.Parent" xml:space="preserve">
+    <value>drumConfigurationGroupBox</value>
+  </data>
+  <data name="&gt;&gt;drumPanel.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="drumConfigurationGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>320, 13</value>
+  </data>
+  <data name="drumConfigurationGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>333, 259</value>
+  </data>
+  <data name="drumConfigurationGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="drumConfigurationGroupBox.Text" xml:space="preserve">
+    <value>Drums</value>
+  </data>
+  <data name="&gt;&gt;drumConfigurationGroupBox.Name" xml:space="preserve">
+    <value>drumConfigurationGroupBox</value>
+  </data>
+  <data name="&gt;&gt;drumConfigurationGroupBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Common.Controls.OltGroupBox, Com.Suncor.Olt.Common, Version=1.0.0.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;drumConfigurationGroupBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;drumConfigurationGroupBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="functionalLocationTextBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="functionalLocationTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 20</value>
+  </data>
+  <data name="functionalLocationTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>187, 21</value>
+  </data>
+  <data name="functionalLocationTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;functionalLocationTextBox.Name" xml:space="preserve">
+    <value>functionalLocationTextBox</value>
+  </data>
+  <data name="&gt;&gt;functionalLocationTextBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Common.Controls.OltTextBox, Com.Suncor.Olt.Common, Version=1.0.0.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;functionalLocationTextBox.Parent" xml:space="preserve">
+    <value>flocGroupBox</value>
+  </data>
+  <data name="&gt;&gt;functionalLocationTextBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="functionalLocationButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="functionalLocationButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>216, 18</value>
+  </data>
+  <data name="functionalLocationButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>81, 23</value>
+  </data>
+  <data name="functionalLocationButton.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="functionalLocationButton.Text" xml:space="preserve">
+    <value>Browse...</value>
+  </data>
+  <data name="&gt;&gt;functionalLocationButton.Name" xml:space="preserve">
+    <value>functionalLocationButton</value>
+  </data>
+  <data name="&gt;&gt;functionalLocationButton.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Common.Controls.OltButton, Com.Suncor.Olt.Common, Version=1.0.0.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;functionalLocationButton.Parent" xml:space="preserve">
+    <value>flocGroupBox</value>
+  </data>
+  <data name="&gt;&gt;functionalLocationButton.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="flocGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 73</value>
+  </data>
+  <data name="flocGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>303, 54</value>
+  </data>
+  <data name="flocGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="flocGroupBox.Text" xml:space="preserve">
+    <value>Functional Location</value>
+  </data>
+  <data name="&gt;&gt;flocGroupBox.Name" xml:space="preserve">
+    <value>flocGroupBox</value>
+  </data>
+  <data name="&gt;&gt;flocGroupBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Common.Controls.OltGroupBox, Com.Suncor.Olt.Common, Version=1.0.0.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;flocGroupBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;flocGroupBox.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="nameTextBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="nameTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 20</value>
+  </data>
+  <data name="nameTextBox.MaxLength" type="System.Int32, mscorlib">
+    <value>40</value>
+  </data>
+  <data name="nameTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>273, 21</value>
+  </data>
+  <data name="nameTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;nameTextBox.Name" xml:space="preserve">
+    <value>nameTextBox</value>
+  </data>
+  <data name="&gt;&gt;nameTextBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Common.Controls.OltTextBox, Com.Suncor.Olt.Common, Version=1.0.0.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;nameTextBox.Parent" xml:space="preserve">
+    <value>nameGroupBox</value>
+  </data>
+  <data name="&gt;&gt;nameTextBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="nameGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 13</value>
+  </data>
+  <data name="nameGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>303, 54</value>
+  </data>
+  <data name="nameGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="nameGroupBox.Text" xml:space="preserve">
+    <value>Configuration Name</value>
+  </data>
+  <data name="&gt;&gt;nameGroupBox.Name" xml:space="preserve">
+    <value>nameGroupBox</value>
+  </data>
+  <data name="&gt;&gt;nameGroupBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Common.Controls.OltGroupBox, Com.Suncor.Olt.Common, Version=1.0.0.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;nameGroupBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;nameGroupBox.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="saveAndCloseButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="saveAndCloseButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>472, 559</value>
+  </data>
+  <data name="saveAndCloseButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>94, 23</value>
+  </data>
+  <data name="saveAndCloseButton.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="saveAndCloseButton.Text" xml:space="preserve">
+    <value>Save And Close</value>
+  </data>
+  <data name="&gt;&gt;saveAndCloseButton.Name" xml:space="preserve">
+    <value>saveAndCloseButton</value>
+  </data>
+  <data name="&gt;&gt;saveAndCloseButton.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Common.Controls.OltButton, Com.Suncor.Olt.Common, Version=1.0.0.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;saveAndCloseButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;saveAndCloseButton.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="cancelButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="cancelButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>571, 559</value>
+  </data>
+  <data name="cancelButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="cancelButton.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="cancelButton.Text" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="&gt;&gt;cancelButton.Name" xml:space="preserve">
+    <value>cancelButton</value>
+  </data>
+  <data name="&gt;&gt;cancelButton.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Common.Controls.OltButton, Com.Suncor.Olt.Common, Version=1.0.0.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;cancelButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;cancelButton.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>672, 619</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterParent</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Edit Coker Card Configuration</value>
+  </data>
+  <data name="&gt;&gt;toolTip.Name" xml:space="preserve">
+    <value>toolTip</value>
+  </data>
+  <data name="&gt;&gt;toolTip.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;errorProvider.Name" xml:space="preserve">
+    <value>errorProvider</value>
+  </data>
+  <data name="&gt;&gt;errorProvider.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ErrorProvider, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>EditCokerCardConfigurationForm</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.Forms.BaseForm, Com.Suncor.Olt.Client, Version=1.0.0.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+</root>

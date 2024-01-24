@@ -1,0 +1,41 @@
+﻿DROP INDEX [IDX_User_Id_Include] ON [dbo].[User]
+
+CREATE UNIQUE NONCLUSTERED INDEX [IDX_User_Id_Include]
+ON [dbo].[User]
+([Id])
+INCLUDE ([Username], [Firstname], [Lastname])
+WITH
+(
+PAD_INDEX = OFF,
+FILLFACTOR = 100,
+IGNORE_DUP_KEY = OFF,
+STATISTICS_NORECOMPUTE = OFF,
+ALLOW_ROW_LOCKS = ON,
+ALLOW_PAGE_LOCKS = ON,
+DATA_COMPRESSION = NONE
+)
+ON [PRIMARY];
+GO
+
+DROP INDEX [IDX_FunctionalLocation_Id] ON [dbo].[FunctionalLocation]
+
+CREATE UNIQUE NONCLUSTERED INDEX [IDX_FunctionalLocation_Id]
+ON [dbo].[FunctionalLocation]
+([Id])
+INCLUDE ([FullHierarchy])
+WITH
+(
+PAD_INDEX = OFF,
+FILLFACTOR = 100,
+IGNORE_DUP_KEY = OFF,
+STATISTICS_NORECOMPUTE = OFF,
+ALLOW_ROW_LOCKS = ON,
+ALLOW_PAGE_LOCKS = ON,
+DATA_COMPRESSION = NONE
+)
+ON [PRIMARY];
+GO
+
+
+GO
+

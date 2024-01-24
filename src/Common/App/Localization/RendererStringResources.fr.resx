@@ -1,0 +1,1069 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Active" xml:space="preserve">
+    <value>Actif</value>
+  </data>
+  <data name="ActiveFrom" xml:space="preserve">
+    <value>Actif à partir du</value>
+  </data>
+  <data name="ActiveTo" xml:space="preserve">
+    <value>Actif jusqu'au</value>
+  </data>
+  <data name="Actual" xml:space="preserve">
+    <value>Réel</value>
+  </data>
+  <data name="ActualNumber" xml:space="preserve">
+    <value>Nombre réel</value>
+  </data>
+  <data name="Add" xml:space="preserve">
+    <value>Ajouter</value>
+  </data>
+  <data name="AdditionalFollowUpRequired" xml:space="preserve">
+    <value>Suivi supplémentaire requis</value>
+  </data>
+  <data name="AllBusinessCategories" xml:space="preserve">
+    <value>Toutes catégories activités</value>
+  </data>
+  <data name="AllowManualSelection" xml:space="preserve">
+    <value>Permettre la sélection manuelle</value>
+  </data>
+  <data name="ApplicableSections" xml:space="preserve">
+    <value>Applicable Sections</value>
+  </data>
+  <data name="Approved" xml:space="preserve">
+    <value>Approuvé</value>
+  </data>
+  <data name="ApprovedBy" xml:space="preserve">
+    <value>Approuvé par</value>
+  </data>
+  <data name="Approver" xml:space="preserve">
+    <value>Approbateur</value>
+  </data>
+  <data name="AreaLabel" xml:space="preserve">
+    <value>Secteur émetteur</value>
+  </data>
+  <data name="AssignedAmount" xml:space="preserve">
+    <value>Nombre attribué</value>
+  </data>
+  <data name="Assignment" xml:space="preserve">
+    <value>Assignation</value>
+  </data>
+  <data name="AssignedTo" xml:space="preserve">
+    <value>Assigné à</value>
+  </data>
+  <data name="AssociatedBusinessCategories" xml:space="preserve">
+    <value>Catégories activités associées</value>
+  </data>
+  <data name="AssociatedReasonCode" xml:space="preserve">
+    <value>Code raison associé</value>
+  </data>
+  <data name="AssociatedReasonCodeFloc" xml:space="preserve">
+    <value>PT associé code raison</value>
+  </data>
+  <data name="AssociatedFormGN75BNumber" xml:space="preserve">
+    <value>GN-75B Form</value>
+  </data>
+  <data name="AutoInsertTheLogTemplateForThisAssignment" xml:space="preserve">
+    <value>Insertion automatique de ce  gabarit de registre</value>
+  </data>
+  <data name="AvailableQuestionnaires" xml:space="preserve">
+    <value>Questionnaires disponibles</value>
+  </data>
+  <data name="AvailabilityReason" xml:space="preserve">
+    <value>Raison disponibilité</value>
+  </data>
+  <data name="BlockCompleted" xml:space="preserve">
+    <value>Bloc terminé</value>
+  </data>
+  <data name="BusinessCategory" xml:space="preserve">
+    <value>Catégorie activité</value>
+  </data>
+  <data name="Cancelled" xml:space="preserve">
+    <value>Annulé</value>
+  </data>
+  <data name="Category" xml:space="preserve">
+    <value>Catégorie</value>
+  </data>
+  <data name="ChangedValue" xml:space="preserve">
+    <value>Valeur modifiée</value>
+  </data>
+  <data name="Closed" xml:space="preserve">
+    <value>Fermé</value>
+  </data>
+  <data name="ClosedBy" xml:space="preserve">
+    <value>Fermé Par</value>
+  </data>
+  <data name="ClosedDate" xml:space="preserve">
+    <value>Date de fermeture</value>
+  </data>
+  <data name="CokerCard" xml:space="preserve">
+    <value>Fiches de cokeur</value>
+  </data>
+  <data name="Comments" xml:space="preserve">
+    <value>Remarques</value>
+  </data>
+  <data name="CompanyName" xml:space="preserve">
+    <value>Nom</value>
+  </data>
+  <data name="ConfinedSpace" xml:space="preserve">
+    <value>Espace clos</value>
+  </data>
+  <data name="Contractor" xml:space="preserve">
+    <value>Compagnie</value>
+  </data>
+  <data name="Craft" xml:space="preserve">
+    <value>Corps de métier</value>
+  </data>
+  <data name="CraftTrade" xml:space="preserve">
+    <value>Métier</value>
+  </data>
+  <data name="Created" xml:space="preserve">
+    <value>Créé</value>
+  </data>
+  <data name="CreatedBy" xml:space="preserve">
+    <value>Créé par</value>
+  </data>
+  <data name="CreatedAssignment" xml:space="preserve">
+    <value>Tâche créée</value>
+  </data>
+  <data name="CreatedDate" xml:space="preserve">
+    <value>Date création</value>
+  </data>
+  <data name="CreatedDateTime" xml:space="preserve">
+    <value>Date/heure création</value>
+  </data>
+  <data name="CustomFieldGroup" xml:space="preserve">
+    <value>Groupe champs personnalisés</value>
+  </data>
+  <data name="CycleStep" xml:space="preserve">
+    <value>Étape de cycle</value>
+  </data>
+  <data name="Date" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="DateApproved" xml:space="preserve">
+    <value>Date d’approbation</value>
+  </data>
+  <data name="DateTime" xml:space="preserve">
+    <value>Date/heure</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="Deviation" xml:space="preserve">
+    <value>Écart</value>
+  </data>
+  <data name="DirectiveDateTime" xml:space="preserve">
+    <value>Heure d'instruction</value>
+  </data>
+  <data name="DisplayOrder" xml:space="preserve">
+    <value>#</value>
+  </data>
+  <data name="Drum" xml:space="preserve">
+    <value>Fût</value>
+  </data>
+  <data name="EarliestDate" xml:space="preserve">
+    <value>Date la plus proche</value>
+  </data>
+  <data name="EditedBy" xml:space="preserve">
+    <value>Modifié par</value>
+  </data>
+  <data name="EHS" xml:space="preserve">
+    <value>ESP</value>
+  </data>
+  <data name="Element" xml:space="preserve">
+    <value>Élément</value>
+  </data>
+  <data name="EmailAddresses" xml:space="preserve">
+    <value>Adresses de courriel</value>
+  </data>
+  <data name="End" xml:space="preserve">
+    <value>Fin</value>
+  </data>
+  <data name="EndDate" xml:space="preserve">
+    <value>Date de fin</value>
+  </data>
+  <data name="EndTime" xml:space="preserve">
+    <value>Heure de fin</value>
+  </data>
+  <data name="Entry" xml:space="preserve">
+    <value>Entrée</value>
+  </data>
+  <data name="EquipmentType" xml:space="preserve">
+    <value>Type d'équipement</value>
+  </data>
+  <data name="ExpiredDate" xml:space="preserve">
+    <value>Date d’expiration</value>
+  </data>
+  <data name="FieldName" xml:space="preserve">
+    <value>Nom du champ</value>
+  </data>
+  <data name="FilterSectionItem" xml:space="preserve">
+    <value>Filtres section (2e niveau PT)</value>
+  </data>
+  <data name="FilterUnitItem" xml:space="preserve">
+    <value>Filtres unité (3e niveau PT)</value>
+  </data>
+  <data name="Flag" xml:space="preserve">
+    <value>Indicateur</value>
+  </data>
+  <data name="Floc" xml:space="preserve">
+    <value>PT</value>
+  </data>
+  <data name="FlocDescription" xml:space="preserve">
+    <value>PT (Description)</value>
+  </data>
+  <data name="FollowUp" xml:space="preserve">
+    <value>Suivi</value>
+  </data>
+  <data name="Follow-up" xml:space="preserve">
+    <value>Suivi</value>
+  </data>
+  <data name="FollowupRequired" xml:space="preserve">
+    <value>Suivi requis</value>
+  </data>
+  <data name="FormNumber" xml:space="preserve">
+    <value>No de formule</value>
+  </data>
+  <data name="FormType" xml:space="preserve">
+    <value>Type de formule</value>
+  </data>
+  <data name="FunctionalLocation" xml:space="preserve">
+    <value>Poste technique</value>
+  </data>
+  <data name="FunctionalLocations" xml:space="preserve">
+    <value>Postes techniques</value>
+  </data>
+  <data name="Group" xml:space="preserve">
+    <value>Groupe</value>
+  </data>
+  <data name="Guv" xml:space="preserve">
+    <value>Valeur écart de l'unité</value>
+  </data>
+  <data name="HasAYesAnswer" xml:space="preserve">
+    <value>A répondu oui à une question</value>
+  </data>
+  <data name="IlpIsRecommended" xml:space="preserve">
+    <value>ILP was recommended</value>
+  </data>
+  <data name="IlpIsNotRecommended" xml:space="preserve">
+    <value>ILP was not recommended</value>
+  </data>
+  <data name="IsIlpRecommended" xml:space="preserve">
+    <value>ILP Recommended</value>
+  </data>
+  <data name="HazardsAndOrRequirements" xml:space="preserve">
+    <value>Hazards and/or Requirements</value>
+  </data>
+  <data name="DoesNotHaveAYesAnswer" xml:space="preserve">
+    <value>A répondu non à toutes les questions</value>
+  </data>
+  <data name="HasIrregularHours" xml:space="preserve">
+    <value>Training hours are irregular</value>
+  </data>
+  <data name="HelpText" xml:space="preserve">
+    <value>Texte aide</value>
+  </data>
+  <data name="Hours" xml:space="preserve">
+    <value>Heures</value>
+  </data>
+  <data name="HoursIntoLastCycle" xml:space="preserve">
+    <value>Nombre d'heures</value>
+  </data>
+  <data name="ImmediateArea" xml:space="preserve">
+    <value>Aire immédiate</value>
+  </data>
+  <data name="Inactive" xml:space="preserve">
+    <value>Inactif</value>
+  </data>
+  <data name="IncidentId" xml:space="preserve">
+    <value>Code incident</value>
+  </data>
+  <data name="InitiatedBy" xml:space="preserve">
+    <value>Lancé par</value>
+  </data>
+  <data name="Inspection" xml:space="preserve">
+    <value>Inspection</value>
+  </data>
+  <data name="InThread" xml:space="preserve">
+    <value>Dans le fil</value>
+  </data>
+  <data name="Issued" xml:space="preserve">
+    <value>Émis</value>
+  </data>
+  <data name="IssuedBy" xml:space="preserve">
+    <value>Émis par</value>
+  </data>
+  <data name="IssuedDate" xml:space="preserve">
+    <value>Date d'émission</value>
+  </data>
+  <data name="JobDescription" xml:space="preserve">
+    <value>Job Description</value>
+  </data>
+  <data name="JobSteps" xml:space="preserve">
+    <value>Étapes travail</value>
+  </data>
+  <data name="LastCycleStep" xml:space="preserve">
+    <value>Dernier cycle</value>
+  </data>
+  <data name="LastEditor" xml:space="preserve">
+    <value>Dernier éditeur</value>
+  </data>
+  <data name="LastImportedBy" xml:space="preserve">
+    <value>Importé par</value>
+  </data>
+  <data name="LastImported" xml:space="preserve">
+    <value>Dernière importation</value>
+  </data>
+  <data name="LastModified" xml:space="preserve">
+    <value>Dernière modification</value>
+  </data>
+  <data name="LastModifiedBy" xml:space="preserve">
+    <value>Dernière modification par</value>
+  </data>
+  <data name="LastViolatedDateTime" xml:space="preserve">
+    <value>Dernière enfreint</value>
+  </data>
+  <data name="LastSubmittedBy" xml:space="preserve">
+    <value>Soumis par</value>
+  </data>
+  <data name="LastSubmitted" xml:space="preserve">
+    <value>Dernière soumission</value>
+  </data>
+  <data name="LatestDate" xml:space="preserve">
+    <value>Date limite</value>
+  </data>
+  <data name="Limit" xml:space="preserve">
+    <value>Limite</value>
+  </data>
+  <data name="Location" xml:space="preserve">
+    <value>Emplacement</value>
+  </data>
+  <data name="LogDate" xml:space="preserve">
+    <value>Date de registre</value>
+  </data>
+  <data name="LogTime" xml:space="preserve">
+    <value>Heure de registre</value>
+  </data>
+  <data name="Losses" xml:space="preserve">
+    <value>Pertes</value>
+  </data>
+  <data name="PermitType" xml:space="preserve">
+    <value>Permit Type</value>
+  </data>
+  <data name="TotalScore" xml:space="preserve">
+    <value>Total Score</value>
+  </data>
+  <data name="OverallFeedback" xml:space="preserve">
+    <value>Overall Feedback</value>
+  </data>
+  <data name="ManualNonOperations" xml:space="preserve">
+    <value>Opérations non manuelles</value>
+  </data>
+  <data name="ManualOperations" xml:space="preserve">
+    <value>Opérations manuelles</value>
+  </data>
+  <data name="Max" xml:space="preserve">
+    <value>Max.</value>
+  </data>
+  <data name="Measurement" xml:space="preserve">
+    <value>Mesure</value>
+  </data>
+  <data name="MeasurementTag" xml:space="preserve">
+    <value>Étiquette - mesure</value>
+  </data>
+  <data name="Message" xml:space="preserve">
+    <value>Message</value>
+  </data>
+  <data name="Min" xml:space="preserve">
+    <value>Min.</value>
+  </data>
+  <data name="MinNumber" xml:space="preserve">
+    <value>Nombre minimal</value>
+  </data>
+  <data name="Modified" xml:space="preserve">
+    <value>Modifié</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Nom</value>
+  </data>
+  <data name="Version" xml:space="preserve">
+    <value>Version</value>
+  </data>
+  <data name="NeverToExceedMax" xml:space="preserve">
+    <value>NTE/SOL Max</value>
+  </data>
+  <data name="NeverToExceedMin" xml:space="preserve">
+    <value>NTE/SOL Min</value>
+  </data>
+  <data name="NoAdditionalFollowUpRequired" xml:space="preserve">
+    <value>Aucun suivi supplémentaire requis</value>
+  </data>
+  <data name="NoFollowUp" xml:space="preserve">
+    <value>Aucun suivi</value>
+  </data>
+  <data name="NotInThread" xml:space="preserve">
+    <value>Non dans le fil</value>
+  </data>
+  <data name="Number" xml:space="preserve">
+    <value>Nombre</value>
+  </data>
+  <data name="Occupation" xml:space="preserve">
+    <value>Occupation</value>
+  </data>
+  <data name="OperationalMode" xml:space="preserve">
+    <value>Mode opérationnel</value>
+  </data>
+  <data name="OperationNumber" xml:space="preserve">
+    <value>No. d'opération</value>
+  </data>
+  <data name="Operations" xml:space="preserve">
+    <value>Opérations</value>
+  </data>
+  <data name="OriginalValue" xml:space="preserve">
+    <value>Valeur initiale</value>
+  </data>
+  <data name="Other" xml:space="preserve">
+    <value>Autre</value>
+  </data>
+  <data name="Provider" xml:space="preserve">
+    <value>Provider_fr_olt</value>
+  </data>
+  <data name="PercentageWeighting" xml:space="preserve">
+    <value>Poids %</value>
+  </data>
+  <data name="PermitAcceptor" xml:space="preserve">
+    <value>Acceptation du permis</value>
+  </data>
+  <data name="PermitNumber" xml:space="preserve">
+    <value>Numéro permis</value>
+  </data>
+  <data name="PHTag" xml:space="preserve">
+    <value>Étiquette pH</value>
+  </data>
+  <data name="PlantState" xml:space="preserve">
+    <value>État de l'installation</value>
+  </data>
+  <data name="PrimaryDefaultTab" xml:space="preserve">
+    <value>Onglet principal par défaut</value>
+  </data>
+  <data name="Priority" xml:space="preserve">
+    <value>Priorité</value>
+  </data>
+  <data name="ProcessControl" xml:space="preserve">
+    <value>Contrôle de production</value>
+  </data>
+  <data name="ProductionTarget" xml:space="preserve">
+    <value>Cible de production</value>
+  </data>
+  <data name="PSV" xml:space="preserve">
+    <value>PSV</value>
+  </data>
+  <data name="Questions" xml:space="preserve">
+    <value>Questions</value>
+  </data>
+  <data name="QuestionResponses" xml:space="preserve">
+    <value>Réponses aux questions</value>
+  </data>
+  <data name="QuestionText" xml:space="preserve">
+    <value>Texte - question</value>
+  </data>
+  <data name="ReasonCode" xml:space="preserve">
+    <value>Code de raison</value>
+  </data>
+  <data name="RecommendedForSummary" xml:space="preserve">
+    <value>Recommander pour
+registres des superviseurs</value>
+  </data>
+  <data name="RecommendedForSummary_NoNewLines" xml:space="preserve">
+    <value>Recommander pour registres des superviseurs</value>
+  </data>
+  <data name="RecommendedForSummaryHeading" xml:space="preserve">
+    <value>Recommander pour superviseurs</value>
+  </data>
+  <data name="Recurring" xml:space="preserve">
+    <value>Périodique</value>
+  </data>
+  <data name="RemainingApprovals" xml:space="preserve">
+    <value>Approbations restantes</value>
+  </data>
+  <data name="Requested" xml:space="preserve">
+    <value>Demandé</value>
+  </data>
+  <data name="RequestedBy" xml:space="preserve">
+    <value>Demandé par</value>
+  </data>
+  <data name="RequestedByUser" xml:space="preserve">
+    <value>Demandé par l'utilisateur</value>
+  </data>
+  <data name="RequestedDate" xml:space="preserve">
+    <value>Date demandée</value>
+  </data>
+  <data name="RequiresFollowUp" xml:space="preserve">
+    <value>Nécessite suivi :</value>
+  </data>
+  <data name="RequiresApproval" xml:space="preserve">
+    <value>Approbation requise</value>
+  </data>
+  <data name="TemporarilyInnactive" xml:space="preserve">
+    <value>Temporairement désactivé</value>
+  </data>
+  <data name="ResponseRequired" xml:space="preserve">
+    <value>Réponse requise</value>
+  </data>
+  <data name="RestrictionDefinition" xml:space="preserve">
+    <value>Définition de restriction</value>
+  </data>
+  <data name="Role" xml:space="preserve">
+    <value>Rôle</value>
+  </data>
+  <data name="SAP" xml:space="preserve">
+    <value>SAP</value>
+  </data>
+  <data name="SAPNotificationDefault" xml:space="preserve">
+    <value>Notification SAP par défaut</value>
+  </data>
+  <data name="SAPPlannerGroup" xml:space="preserve">
+    <value>Groupe de planification SAP</value>
+  </data>
+  <data name="SAPWorkOrderDefault" xml:space="preserve">
+    <value>Ordre exécution SAP par défaut</value>
+  </data>
+  <data name="Scheduling" xml:space="preserve">
+    <value>Ordonnancement</value>
+  </data>
+  <data name="SecondaryDefaultTab" xml:space="preserve">
+    <value>Onglet secondaire par défaut</value>
+  </data>
+  <data name="Section" xml:space="preserve">
+    <value>Section</value>
+  </data>
+  <data name="Sections" xml:space="preserve">
+    <value>Sections</value>
+  </data>
+  <data name="SectionLevelFloc" xml:space="preserve">
+    <value>PT niveau section</value>
+  </data>
+  <data name="Selected" xml:space="preserve">
+    <value>Sélectionné</value>
+  </data>
+  <data name="SendTime" xml:space="preserve">
+    <value>Heure d'envoi</value>
+  </data>
+  <data name="Shift" xml:space="preserve">
+    <value>Quart</value>
+  </data>
+  <data name="ShiftGroup" xml:space="preserve">
+    <value>Groupe de quart</value>
+  </data>
+  <data name="ShortName" xml:space="preserve">
+    <value>Nom abrégé</value>
+  </data>
+  <data name="Single" xml:space="preserve">
+    <value>Ponctuel</value>
+  </data>
+  <data name="Site" xml:space="preserve">
+    <value>Emplacement</value>
+  </data>
+  <data name="Source" xml:space="preserve">
+    <value>Source</value>
+  </data>
+  <data name="Start" xml:space="preserve">
+    <value>Début</value>
+  </data>
+  <data name="SystemDefeated" xml:space="preserve">
+    <value>Date de Mise hors Service</value>
+  </data>
+  <data name="SystemToBeDefeated" xml:space="preserve">
+    <value>Équipment hors service</value>
+  </data>
+  <data name="EstimatedBackInService" xml:space="preserve">
+    <value>Date remise en service prévue</value>
+  </data>
+  <data name="DisableOn" xml:space="preserve">
+    <value>Disable On</value>
+  </data>
+  <data name="Expiry" xml:space="preserve">
+    <value>Expiry</value>
+  </data>
+  <data name="Alarm" xml:space="preserve">
+    <value>Alarm</value>
+  </data>
+  <data name="Criticality" xml:space="preserve">
+    <value>Criticality</value>
+  </data>
+  <data name="SapNotification" xml:space="preserve">
+    <value>SAP Notification</value>
+  </data>
+  <data name="StartDate" xml:space="preserve">
+    <value>Date de début</value>
+  </data>
+  <data name="StartTime" xml:space="preserve">
+    <value>Heure de début</value>
+  </data>
+  <data name="State" xml:space="preserve">
+    <value>État</value>
+  </data>
+  <data name="Status" xml:space="preserve">
+    <value>Statut</value>
+  </data>
+  <data name="SubmittedByUser" xml:space="preserve">
+    <value>Soumis par l'utilisateur</value>
+  </data>
+  <data name="Supervision" xml:space="preserve">
+    <value>Supervision</value>
+  </data>
+  <data name="SystemEntry" xml:space="preserve">
+    <value>Entrée système</value>
+  </data>
+  <data name="Tag" xml:space="preserve">
+    <value>Étiquette</value>
+  </data>
+  <data name="TagName" xml:space="preserve">
+    <value>Nom étiquette</value>
+  </data>
+  <data name="Target" xml:space="preserve">
+    <value>Cible</value>
+  </data>
+  <data name="TargetName" xml:space="preserve">
+    <value>Nom de cible</value>
+  </data>
+  <data name="TemplateNumber" xml:space="preserve">
+    <value>No.</value>
+  </data>
+  <data name="TotalHours" xml:space="preserve">
+    <value>Total des heures</value>
+  </data>
+  <data name="Trade" xml:space="preserve">
+    <value>Métier</value>
+  </data>
+  <data name="Trades" xml:space="preserve">
+    <value>Métiers</value>
+  </data>
+  <data name="TrainingBlock" xml:space="preserve">
+    <value>Bloc de formation</value>
+  </data>
+  <data name="TrainingCode" xml:space="preserve">
+    <value>Code de la formation</value>
+  </data>
+  <data name="TrainingDate" xml:space="preserve">
+    <value>Date de la formation</value>
+  </data>
+  <data name="Type" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="UNCPath" xml:space="preserve">
+    <value>Chemin</value>
+  </data>
+  <data name="Units" xml:space="preserve">
+    <value>Unités</value>
+  </data>
+  <data name="UserName" xml:space="preserve">
+    <value>Nom utilisateur</value>
+  </data>
+  <data name="ValidFrom" xml:space="preserve">
+    <value>Valide à partir du</value>
+  </data>
+  <data name="ValidTo" xml:space="preserve">
+    <value>Valide jusqu’au</value>
+  </data>
+  <data name="View" xml:space="preserve">
+    <value>Afficher</value>
+  </data>
+  <data name="Visible" xml:space="preserve">
+    <value>Visible</value>
+  </data>
+  <data name="VisibleOnlyOnReports" xml:space="preserve">
+    <value>Visible uniquement dans les rapports</value>
+  </data>
+  <data name="VisibleAlways" xml:space="preserve">
+    <value>Toujours Visible</value>
+  </data>
+  <data name="VisibilityGroups" xml:space="preserve">
+    <value>Groupes </value>
+  </data>
+  <data name="WarnIfWorkAssignmentIsNotSelectedDuringLogIn" xml:space="preserve">
+    <value>Avertir si assignation permis travail n'est pas sélectionné pendant la registre</value>
+  </data>
+  <data name="Weight" xml:space="preserve">
+    <value>Poids</value>
+  </data>
+  <data name="WODescription" xml:space="preserve">
+    <value>Description ordre exéc.</value>
+  </data>
+  <data name="WONumber" xml:space="preserve">
+    <value>No. ordre</value>
+  </data>
+  <data name="WorkArea" xml:space="preserve">
+    <value>Aire des travaux</value>
+  </data>
+  <data name="WorkAssignment" xml:space="preserve">
+    <value>Assignation</value>
+  </data>
+  <data name="WorkAssignments" xml:space="preserve">
+    <value>Assignations tâches</value>
+  </data>
+  <data name="WorkOrderNumber" xml:space="preserve">
+    <value>No ordre exécution</value>
+  </data>
+  <data name="WorkCentre" xml:space="preserve">
+    <value>Centre de Travail</value>
+  </data>
+  <data name="ExcelTab_ShiftHandover" xml:space="preserve">
+    <value>Relève de quart</value>
+  </data>
+  <data name="ExcelTab_Logs" xml:space="preserve">
+    <value>Registres</value>
+  </data>
+  <data name="ExcelTab_RestrictionReport" xml:space="preserve">
+    <value>Rapport de restriction</value>
+  </data>
+  <data name="ExcelTab_CokerCardReport" xml:space="preserve">
+    <value>Rapport de fiche du cokeur</value>
+  </data>
+  <data name="ExcelTab_TargetAlertReport" xml:space="preserve">
+    <value>Rapport d'alertes cibles</value>
+  </data>
+  <data name="ExcelTab_Directives" xml:space="preserve">
+    <value>Instructions quotidiennes</value>
+  </data>
+  <data name="ExcelHeading_User" xml:space="preserve">
+    <value>L'utilisateur</value>
+  </data>
+  <data name="ExcelHeading_Type" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="ExcelHeading_LogDate" xml:space="preserve">
+    <value>Date de registre</value>
+  </data>
+  <data name="ExcelHeading_Shift" xml:space="preserve">
+    <value>Quart</value>
+  </data>
+  <data name="ExcelHeading_FLOC" xml:space="preserve">
+    <value>PT </value>
+  </data>
+  <data name="ExcelHeading_EditedBy" xml:space="preserve">
+    <value>Modifié par</value>
+  </data>
+  <data name="ExcelHeading_Log" xml:space="preserve">
+    <value>Registre</value>
+  </data>
+  <data name="ExcelHeading_Directive" xml:space="preserve">
+    <value>Instruction quotidienne</value>
+  </data>
+  <data name="ExcelHeading_CreatedDate" xml:space="preserve">
+    <value>Date création</value>
+  </data>
+  <data name="ExcelHeading_CreatedBy" xml:space="preserve">
+    <value>Créé par</value>
+  </data>
+  <data name="ExcelHeading_Assignment" xml:space="preserve">
+    <value>Assignation</value>
+  </data>
+  <data name="ExcelHeading_Answer" xml:space="preserve">
+    <value>Réponse</value>
+  </data>
+  <data name="ExcelHeading_Comments" xml:space="preserve">
+    <value>Commentaires</value>
+  </data>
+  <data name="ExcelHeading_DeviationId" xml:space="preserve">
+    <value>ID écart</value>
+  </data>
+  <data name="ExcelHeading_DeviationName" xml:space="preserve">
+    <value>Nom de l'écart</value>
+  </data>
+  <data name="ExcelHeading_DeviationFunctionalLocation" xml:space="preserve">
+    <value>Poste technique de l'écart</value>
+  </data>
+  <data name="ExcelHeading_Division" xml:space="preserve">
+    <value>Division</value>
+  </data>
+  <data name="ExcelHeading_Section" xml:space="preserve">
+    <value>Section</value>
+  </data>
+  <data name="ExcelHeading_Unit" xml:space="preserve">
+    <value>Unité</value>
+  </data>
+  <data name="ExcelHeading_Equipment1" xml:space="preserve">
+    <value>Équipement 1</value>
+  </data>
+  <data name="ExcelHeading_Equipment2" xml:space="preserve">
+    <value>Équipement 2</value>
+  </data>
+  <data name="ExcelHeading_MeasuredTag" xml:space="preserve">
+    <value>Étiquette - mesure</value>
+  </data>
+  <data name="ExcelHeading_MeasuredValue" xml:space="preserve">
+    <value>Valeur mesurée</value>
+  </data>
+  <data name="ExcelHeading_TargetTag" xml:space="preserve">
+    <value>Étiquette de cible</value>
+  </data>
+  <data name="ExcelHeading_TargetValue" xml:space="preserve">
+    <value>Valeur de cible</value>
+  </data>
+  <data name="ExcelHeading_DeviationAmount" xml:space="preserve">
+    <value>Valeur de cible</value>
+  </data>
+  <data name="ExcelHeading_HiddenDeviation" xml:space="preserve">
+    <value>Écart caché</value>
+  </data>
+  <data name="ExcelHeading_Date" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="ExcelHeading_StartTime" xml:space="preserve">
+    <value>Heure de début</value>
+  </data>
+  <data name="ExcelHeading_EndTime" xml:space="preserve">
+    <value>Heure de fin</value>
+  </data>
+  <data name="ExcelHeading_ReasonCode" xml:space="preserve">
+    <value>Code de raison</value>
+  </data>
+  <data name="ExcelHeading_AssignedAmount" xml:space="preserve">
+    <value>Nombre attribué</value>
+  </data>
+  <data name="ExcelHeading_PlantState" xml:space="preserve">
+    <value>État de l'installation</value>
+  </data>
+  <data name="ExcelHeading_ReasonCodeFunctionalLocation" xml:space="preserve">
+    <value>Code de raison Poste technique</value>
+  </data>
+  <data name="ExcelHeading_Description" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="ExcelHeading_Drum" xml:space="preserve">
+    <value>Ballon</value>
+  </data>
+  <data name="ExcelHeading_Cycle" xml:space="preserve">
+    <value>Cycle</value>
+  </data>
+  <data name="ExcelHeading_Start" xml:space="preserve">
+    <value>Heure de début</value>
+  </data>
+  <data name="ExcelHeading_End" xml:space="preserve">
+    <value>Heure de fin</value>
+  </data>
+  <data name="ExcelHeading_Status" xml:space="preserve">
+    <value>Statut</value>
+  </data>
+  <data name="ExcelHeading_FormNumber" xml:space="preserve">
+    <value>Form #</value>
+  </data>
+  <data name="ExcelHeading_TrainingDate" xml:space="preserve">
+    <value>Training Date</value>
+  </data>
+  <data name="ExcelHeading_CreatedByWorkAssignment" xml:space="preserve">
+    <value>Created By Work Assignment</value>
+  </data>
+  <data name="ExcelHeading_CreatedByName" xml:space="preserve">
+    <value>Created By Name</value>
+  </data>
+  <data name="ExcelHeading_CreatedByBadge" xml:space="preserve">
+    <value>Created By Badge</value>
+  </data>
+  <data name="ExcelHeading_CreatedDateTime" xml:space="preserve">
+    <value>Date/heure créée</value>
+  </data>
+  <data name="ExcelHeading_Block" xml:space="preserve">
+    <value>Block</value>
+  </data>
+  <data name="ExcelHeading_TrainingCode" xml:space="preserve">
+    <value>Training Code</value>
+  </data>
+  <data name="ExcelHeading_TotalHours" xml:space="preserve">
+    <value>Total Hours</value>
+  </data>
+  <data name="ExcelHeading_BlockCompleted" xml:space="preserve">
+    <value>Block Completed</value>
+  </data>
+  <data name="ExcelHeading_ApprovedByWorkAssignment" xml:space="preserve">
+    <value>Approved By Work Assignment</value>
+  </data>
+  <data name="ExcelHeading_ApprovedByName" xml:space="preserve">
+    <value>Approved By Name</value>
+  </data>
+  <data name="ExcelHeading_ApprovedDateTime" xml:space="preserve">
+    <value>Approved Date/Time</value>
+  </data>
+  <data name="ExcelHeading_TrainingBlockComments" xml:space="preserve">
+    <value>Training Block Comments</value>
+  </data>
+  <data name="ExcelHeading_GeneralComments" xml:space="preserve">
+    <value>General Comments</value>
+  </data>
+  <data name="ExcelHeading_MarkedAsReadTime" xml:space="preserve">
+    <value>Heure marquée comme lue</value>
+  </data>
+  <data name="ExcelHeading_Site" xml:space="preserve">
+    <value>Emplacement</value>
+  </data>
+  <data name="ExcelHeading_Name" xml:space="preserve">
+    <value>Nom</value>
+  </data>
+  <data name="ExcelHeading_LastViolated" xml:space="preserve">
+    <value>Dernière enfreint</value>
+  </data>
+  <data name="ExcelHeading_DefinitionName" xml:space="preserve">
+    <value>Nom de définition</value>
+  </data>
+  <data name="ExcelHeading_Tag" xml:space="preserve">
+    <value>Étiquette</value>
+  </data>
+  <data name="ExcelHeading_ActualValue" xml:space="preserve">
+    <value>Valeur réelle</value>
+  </data>
+  <data name="ExcelHeading_ActualValueViolated" xml:space="preserve">
+    <value>Valeur réelle (enfreinte)</value>
+  </data>
+  <data name="ExcelHeading_NTESOLMaxViolated" xml:space="preserve">
+    <value>NTE/SOL max (enfreint)</value>
+  </data>
+  <data name="ExcelHeading_NTESOLMinViolated" xml:space="preserve">
+    <value>NTE/SOL min (enfreint)</value>
+  </data>
+  <data name="ExcelHeading_MaxViolated" xml:space="preserve">
+    <value>Max (enfreint)</value>
+  </data>
+  <data name="ExcelHeading_MinViolated" xml:space="preserve">
+    <value>Min (enfreint)</value>
+  </data>
+  <data name="ExcelHeading_DefinitionActive" xml:space="preserve">
+    <value>Définition active</value>
+  </data>
+  <data name="ExcelHeading_ResponseDateTime" xml:space="preserve">
+    <value>Date / heure de la réponse</value>
+  </data>
+  <data name="ExcelHeading_Responder" xml:space="preserve">
+    <value>Auteur de la réponse</value>
+  </data>
+  <data name="ExcelHeading_GapReason" xml:space="preserve">
+    <value>Motif d'écart</value>
+  </data>
+  <data name="ExcelHeading_ResponseText" xml:space="preserve">
+    <value>Texte de la réponse</value>
+  </data>
+  <data name="YesNo" xml:space="preserve">
+    <value>Oui Non</value>
+  </data>
+  <data name="Id" xml:space="preserve">
+    <value>Id</value>
+  </data>
+</root>

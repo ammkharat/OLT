@@ -1,0 +1,1302 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="envelopeCommentsHistoryButton.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="envelopeCommentsHistoryButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>178, 22</value>
+  </data>
+  <data name="envelopeCommentsHistoryButton.Text" xml:space="preserve">
+    <value>Envelope Comments History</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="envelopeCommentsHistoryButton.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="toolStrip.Size" type="System.Drawing.Size, System.Drawing">
+    <value>880, 25</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="oltGroupBox2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="oltGroupBox4.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="excursionIlpNumberLabelValue.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="excursionIlpNumberLabelValue.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="excursionIlpNumberLabelValue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>631, 17</value>
+  </data>
+  <data name="excursionIlpNumberLabelValue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 13</value>
+  </data>
+  <data name="excursionIlpNumberLabelValue.Text" xml:space="preserve">
+    <value>&lt;name&gt;</value>
+  </data>
+  <data name="oltLabel17.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="oltLabel17.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="oltLabel17.Location" type="System.Drawing.Point, System.Drawing">
+    <value>591, 17</value>
+  </data>
+  <data name="oltLabel17.Size" type="System.Drawing.Size, System.Drawing">
+    <value>37, 13</value>
+  </data>
+  <data name="oltLabel17.Text" xml:space="preserve">
+    <value>ILP #:</value>
+  </data>
+  <data name="excursionReasonCodeLabelValue.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="excursionReasonCodeLabelValue.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="excursionReasonCodeLabelValue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>86, 17</value>
+  </data>
+  <data name="excursionReasonCodeLabelValue.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>450, 26</value>
+  </data>
+  <data name="excursionReasonCodeLabelValue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>445, 26</value>
+  </data>
+  <data name="excursionReasonCodeLabelValue.Text" xml:space="preserve">
+    <value>12345678901234512345678901234567890123456789012345678906789012345678901234567890123456789012345678901234567890</value>
+  </data>
+  <data name="oltLabel18.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="oltLabel18.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="oltLabel18.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 17</value>
+  </data>
+  <data name="oltLabel18.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 13</value>
+  </data>
+  <data name="oltLabel18.Text" xml:space="preserve">
+    <value>Reason Code:</value>
+  </data>
+  <data name="expandEngineeringCommentsLink.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="expandEngineeringCommentsLink.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="expandEngineeringCommentsLink.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="expandEngineeringCommentsLink.Location" type="System.Drawing.Point, System.Drawing">
+    <value>733, 16</value>
+  </data>
+  <data name="expandEngineeringCommentsLink.Size" type="System.Drawing.Size, System.Drawing">
+    <value>51, 13</value>
+  </data>
+  <data name="expandEngineeringCommentsLink.Text" xml:space="preserve">
+    <value>[Expand]</value>
+  </data>
+  <data name="excursionEngineerCommentsOltTextBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="excursionEngineerCommentsOltTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 47</value>
+  </data>
+  <data name="excursionEngineerCommentsOltTextBox.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="excursionEngineerCommentsOltTextBox.ScrollBars" type="System.Windows.Forms.ScrollBars, System.Windows.Forms">
+    <value>Vertical</value>
+  </data>
+  <data name="excursionEngineerCommentsOltTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>776, 74</value>
+  </data>
+  <data name="oltGroupBox4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>791, 127</value>
+  </data>
+  <data name="oltGroupBox4.Text" xml:space="preserve">
+    <value>Engineering Comments</value>
+  </data>
+  <data name="excursionResponseLastModifiedDateTimeLabelValue.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="excursionResponseLastModifiedDateTimeLabelValue.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="excursionResponseLastModifiedDateTimeLabelValue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>520, 15</value>
+  </data>
+  <data name="excursionResponseLastModifiedDateTimeLabelValue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 13</value>
+  </data>
+  <data name="excursionResponseLastModifiedDateTimeLabelValue.Text" xml:space="preserve">
+    <value>&lt;name&gt;</value>
+  </data>
+  <data name="oltLabel16.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="oltLabel16.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="oltLabel16.Location" type="System.Drawing.Point, System.Drawing">
+    <value>442, 15</value>
+  </data>
+  <data name="oltLabel16.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 13</value>
+  </data>
+  <data name="oltLabel16.Text" xml:space="preserve">
+    <value>Last Updated:</value>
+  </data>
+  <data name="excursionResponseResponderFullNameLabelValue.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="excursionResponseResponderFullNameLabelValue.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="excursionResponseResponderFullNameLabelValue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>75, 15</value>
+  </data>
+  <data name="excursionResponseResponderFullNameLabelValue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 13</value>
+  </data>
+  <data name="excursionResponseResponderFullNameLabelValue.Text" xml:space="preserve">
+    <value>&lt;name&gt;</value>
+  </data>
+  <data name="oltLabel15.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="oltLabel15.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="oltLabel15.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 15</value>
+  </data>
+  <data name="oltLabel15.Size" type="System.Drawing.Size, System.Drawing">
+    <value>63, 13</value>
+  </data>
+  <data name="oltLabel15.Text" xml:space="preserve">
+    <value>Responder:</value>
+  </data>
+  <data name="expandExursionResponseLink.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="expandExursionResponseLink.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="expandExursionResponseLink.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="expandExursionResponseLink.Location" type="System.Drawing.Point, System.Drawing">
+    <value>730, 14</value>
+  </data>
+  <data name="expandExursionResponseLink.Size" type="System.Drawing.Size, System.Drawing">
+    <value>51, 13</value>
+  </data>
+  <data name="expandExursionResponseLink.Text" xml:space="preserve">
+    <value>[Expand]</value>
+  </data>
+  <data name="excursionResponseCommentsOltTextBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="excursionResponseCommentsOltTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 33</value>
+  </data>
+  <data name="excursionResponseCommentsOltTextBox.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="excursionResponseCommentsOltTextBox.ScrollBars" type="System.Windows.Forms.ScrollBars, System.Windows.Forms">
+    <value>Vertical</value>
+  </data>
+  <data name="excursionResponseCommentsOltTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>776, 86</value>
+  </data>
+  <data name="oltGroupBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 149</value>
+  </data>
+  <data name="oltGroupBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>791, 127</value>
+  </data>
+  <data name="oltGroupBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="oltGroupBox1.Text" xml:space="preserve">
+    <value>OLT Operator Response</value>
+  </data>
+  <data name="excursionLastUpdatedDateTimeLabelValue.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="excursionLastUpdatedDateTimeLabelValue.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="excursionLastUpdatedDateTimeLabelValue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>127, 103</value>
+  </data>
+  <data name="excursionLastUpdatedDateTimeLabelValue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 13</value>
+  </data>
+  <data name="excursionLastUpdatedDateTimeLabelValue.Text" xml:space="preserve">
+    <value>&lt;name&gt;</value>
+  </data>
+  <data name="oltLabel9.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="oltLabel9.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="oltLabel9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 103</value>
+  </data>
+  <data name="oltLabel9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>115, 13</value>
+  </data>
+  <data name="oltLabel9.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="oltLabel9.Text" xml:space="preserve">
+    <value>Last Updated by OPM:</value>
+  </data>
+  <data name="excursionEndDateTimeLabelValue.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="excursionEndDateTimeLabelValue.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="excursionEndDateTimeLabelValue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>127, 81</value>
+  </data>
+  <data name="excursionEndDateTimeLabelValue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 13</value>
+  </data>
+  <data name="excursionEndDateTimeLabelValue.Text" xml:space="preserve">
+    <value>&lt;name&gt;</value>
+  </data>
+  <data name="oltLabel12.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="oltLabel12.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="oltLabel12.Location" type="System.Drawing.Point, System.Drawing">
+    <value>90, 81</value>
+  </data>
+  <data name="oltLabel12.Size" type="System.Drawing.Size, System.Drawing">
+    <value>29, 13</value>
+  </data>
+  <data name="oltLabel12.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="oltLabel12.Text" xml:space="preserve">
+    <value>End:</value>
+  </data>
+  <data name="excursionStartDateTimeLabelValue.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="excursionStartDateTimeLabelValue.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="excursionStartDateTimeLabelValue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>127, 59</value>
+  </data>
+  <data name="excursionStartDateTimeLabelValue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 13</value>
+  </data>
+  <data name="excursionStartDateTimeLabelValue.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="excursionStartDateTimeLabelValue.Text" xml:space="preserve">
+    <value>&lt;name&gt;</value>
+  </data>
+  <data name="oltLabel13.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="oltLabel13.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="oltLabel13.Location" type="System.Drawing.Point, System.Drawing">
+    <value>84, 59</value>
+  </data>
+  <data name="oltLabel13.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 13</value>
+  </data>
+  <data name="oltLabel13.Text" xml:space="preserve">
+    <value>Start:</value>
+  </data>
+  <data name="excursionDurationLabelValue.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="excursionDurationLabelValue.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="excursionDurationLabelValue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>127, 37</value>
+  </data>
+  <data name="excursionDurationLabelValue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 13</value>
+  </data>
+  <data name="excursionDurationLabelValue.Text" xml:space="preserve">
+    <value>&lt;name&gt;</value>
+  </data>
+  <data name="oltLabel14.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="oltLabel14.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="oltLabel14.Location" type="System.Drawing.Point, System.Drawing">
+    <value>35, 37</value>
+  </data>
+  <data name="oltLabel14.Size" type="System.Drawing.Size, System.Drawing">
+    <value>84, 13</value>
+  </data>
+  <data name="oltLabel14.Text" xml:space="preserve">
+    <value>Duration (mins):</value>
+  </data>
+  <data name="excursionStatusLabelValue.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="excursionStatusLabelValue.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="excursionStatusLabelValue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 18</value>
+  </data>
+  <data name="excursionStatusLabelValue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>37, 13</value>
+  </data>
+  <data name="excursionStatusLabelValue.Text" xml:space="preserve">
+    <value>closed</value>
+  </data>
+  <data name="oltGroupBox3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>574, 13</value>
+  </data>
+  <data name="oltGroupBox3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>223, 127</value>
+  </data>
+  <data name="oltGroupBox3.Text" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="excursionUnitOfMeasureLabelValue.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="excursionUnitOfMeasureLabelValue.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="excursionUnitOfMeasureLabelValue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 13</value>
+  </data>
+  <data name="excursionUnitOfMeasureLabelValue.Text" xml:space="preserve">
+    <value>&lt;name&gt;</value>
+  </data>
+  <data name="oltLabel10.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="oltLabel10.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="oltLabel10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>42, 103</value>
+  </data>
+  <data name="oltLabel10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 13</value>
+  </data>
+  <data name="oltLabel10.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="oltLabel10.Text" xml:space="preserve">
+    <value>Unit:</value>
+  </data>
+  <data name="excursionToeLimitValueLabelValue.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="excursionToeLimitValueLabelValue.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="excursionToeLimitValueLabelValue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>78, 59</value>
+  </data>
+  <data name="excursionToeLimitValueLabelValue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 13</value>
+  </data>
+  <data name="excursionToeLimitValueLabelValue.Text" xml:space="preserve">
+    <value>&lt;name&gt;</value>
+  </data>
+  <data name="oltLabel5.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="oltLabel5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="oltLabel5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 59</value>
+  </data>
+  <data name="oltLabel5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 13</value>
+  </data>
+  <data name="oltLabel5.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="oltLabel5.Text" xml:space="preserve">
+    <value>TOE Limit:</value>
+  </data>
+  <data name="excursionAverageLabelValue.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="excursionAverageLabelValue.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="excursionAverageLabelValue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 13</value>
+  </data>
+  <data name="excursionAverageLabelValue.Text" xml:space="preserve">
+    <value>&lt;name&gt;</value>
+  </data>
+  <data name="oltLabel6.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="oltLabel6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="oltLabel6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>20, 81</value>
+  </data>
+  <data name="oltLabel6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>52, 13</value>
+  </data>
+  <data name="oltLabel6.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="oltLabel6.Text" xml:space="preserve">
+    <value>Average:</value>
+  </data>
+  <data name="excursionPeakLabelValue.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="excursionPeakLabelValue.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="excursionPeakLabelValue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 13</value>
+  </data>
+  <data name="excursionPeakLabelValue.Text" xml:space="preserve">
+    <value>&lt;name&gt;</value>
+  </data>
+  <data name="oltLabel7.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="oltLabel7.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="oltLabel7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 37</value>
+  </data>
+  <data name="oltLabel7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>66, 13</value>
+  </data>
+  <data name="oltLabel7.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="oltLabel7.Text" xml:space="preserve">
+    <value>Peak/Valley:</value>
+  </data>
+  <data name="currentTagValueLabelValue.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="currentTagValueLabelValue.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="currentTagValueLabelValue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 13</value>
+  </data>
+  <data name="currentTagValueLabelValue.Text" xml:space="preserve">
+    <value>N/A from OPM</value>
+  </data>
+  <data name="oltLabel8.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="oltLabel8.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="oltLabel8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 15</value>
+  </data>
+  <data name="oltLabel8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>48, 13</value>
+  </data>
+  <data name="oltLabel8.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="oltLabel8.Text" xml:space="preserve">
+    <value>Current:</value>
+  </data>
+  <data name="flocGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>413, 13</value>
+  </data>
+  <data name="flocGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>157, 127</value>
+  </data>
+  <data name="flocGroupBox.Text" xml:space="preserve">
+    <value>Values</value>
+  </data>
+  <data name="excursionFunctionalLocationLabelValue.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="excursionFunctionalLocationLabelValue.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="excursionFunctionalLocationLabelValue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>116, 111</value>
+  </data>
+  <data name="excursionFunctionalLocationLabelValue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 13</value>
+  </data>
+  <data name="excursionFunctionalLocationLabelValue.Text" xml:space="preserve">
+    <value>&lt;name&gt;</value>
+  </data>
+  <data name="oltLabel4.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="oltLabel4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="oltLabel4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 111</value>
+  </data>
+  <data name="oltLabel4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>103, 13</value>
+  </data>
+  <data name="oltLabel4.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="oltLabel4.Text" xml:space="preserve">
+    <value>Functional Location:</value>
+  </data>
+  <data name="excursionHistorieanTagLabelValue.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="excursionHistorieanTagLabelValue.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="excursionHistorieanTagLabelValue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>116, 78</value>
+  </data>
+  <data name="excursionHistorieanTagLabelValue.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>300, 30</value>
+  </data>
+  <data name="excursionHistorieanTagLabelValue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>295, 30</value>
+  </data>
+  <data name="excursionHistorieanTagLabelValue.Text" xml:space="preserve">
+    <value>1234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890</value>
+  </data>
+  <data name="oltLabel3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="oltLabel3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="oltLabel3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>35, 78</value>
+  </data>
+  <data name="oltLabel3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>74, 13</value>
+  </data>
+  <data name="oltLabel3.Text" xml:space="preserve">
+    <value>Historian Tag:</value>
+  </data>
+  <data name="excursionToeTypeLabelValue.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="excursionToeTypeLabelValue.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="excursionToeTypeLabelValue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>116, 50</value>
+  </data>
+  <data name="excursionToeTypeLabelValue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 13</value>
+  </data>
+  <data name="excursionToeTypeLabelValue.Text" xml:space="preserve">
+    <value>&lt;name&gt;</value>
+  </data>
+  <data name="oltLabel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>74, 50</value>
+  </data>
+  <data name="oltLabel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 13</value>
+  </data>
+  <data name="oltLabel2.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="oltLabel2.Text" xml:space="preserve">
+    <value>Type:</value>
+  </data>
+  <data name="excursionToeNameLabelValue.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="excursionToeNameLabelValue.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="excursionToeNameLabelValue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>116, 18</value>
+  </data>
+  <data name="excursionToeNameLabelValue.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>300, 35</value>
+  </data>
+  <data name="excursionToeNameLabelValue.Size" type="System.Drawing.Size, System.Drawing">
+    <value>295, 26</value>
+  </data>
+  <data name="excursionToeNameLabelValue.Text" xml:space="preserve">
+    <value>12345678901234567890123456789012345678901234567890123456789012345678901234567890</value>
+  </data>
+  <data name="oltLabel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>71, 18</value>
+  </data>
+  <data name="oltLabel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>38, 13</value>
+  </data>
+  <data name="oltLabel1.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="oltLabel1.Text" xml:space="preserve">
+    <value>Name:</value>
+  </data>
+  <data name="oltGroupBox2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="oltGroupBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 4</value>
+  </data>
+  <data name="oltGroupBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>803, 418</value>
+  </data>
+  <data name="oltGroupBox2.TabIndex" type="System.Int32, mscorlib">
+    <value>113</value>
+  </data>
+  <data name="oltGroupBox2.Text" xml:space="preserve">
+    <value>Excursion</value>
+  </data>
+  <data name="oltGroupBox5.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="documentLinksControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>782, 81</value>
+  </data>
+  <data name="documentLinksGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 379</value>
+  </data>
+  <data name="documentLinksGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>788, 100</value>
+  </data>
+  <data name="documentLinksGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>99</value>
+  </data>
+  <data name="oltGroupBox9.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="expandExcursionCorrectiveActionsLink.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="expandExcursionCorrectiveActionsLink.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="expandExcursionCorrectiveActionsLink.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="expandExcursionCorrectiveActionsLink.Location" type="System.Drawing.Point, System.Drawing">
+    <value>730, 10</value>
+  </data>
+  <data name="expandExcursionCorrectiveActionsLink.Size" type="System.Drawing.Size, System.Drawing">
+    <value>51, 13</value>
+  </data>
+  <data name="expandExcursionCorrectiveActionsLink.Text" xml:space="preserve">
+    <value>[Expand]</value>
+  </data>
+  <data name="toeDefinitionCorrectiveActionOltTextBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="toeDefinitionCorrectiveActionOltTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 28</value>
+  </data>
+  <data name="toeDefinitionCorrectiveActionOltTextBox.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="toeDefinitionCorrectiveActionOltTextBox.ScrollBars" type="System.Windows.Forms.ScrollBars, System.Windows.Forms">
+    <value>Vertical</value>
+  </data>
+  <data name="toeDefinitionCorrectiveActionOltTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>776, 46</value>
+  </data>
+  <data name="oltGroupBox9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 294</value>
+  </data>
+  <data name="oltGroupBox9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>788, 79</value>
+  </data>
+  <data name="oltGroupBox9.Text" xml:space="preserve">
+    <value>Possible Corrective Actions</value>
+  </data>
+  <data name="oltGroupBox8.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="expandExcursionConsequencesLink.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="expandExcursionConsequencesLink.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="expandExcursionConsequencesLink.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="expandExcursionConsequencesLink.Location" type="System.Drawing.Point, System.Drawing">
+    <value>730, 10</value>
+  </data>
+  <data name="expandExcursionConsequencesLink.Size" type="System.Drawing.Size, System.Drawing">
+    <value>51, 13</value>
+  </data>
+  <data name="expandExcursionConsequencesLink.Text" xml:space="preserve">
+    <value>[Expand]</value>
+  </data>
+  <data name="toeDefinitionConsequencesDescriptionOltTextBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="toeDefinitionConsequencesDescriptionOltTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 28</value>
+  </data>
+  <data name="toeDefinitionConsequencesDescriptionOltTextBox.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="toeDefinitionConsequencesDescriptionOltTextBox.ScrollBars" type="System.Windows.Forms.ScrollBars, System.Windows.Forms">
+    <value>Vertical</value>
+  </data>
+  <data name="toeDefinitionConsequencesDescriptionOltTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>776, 46</value>
+  </data>
+  <data name="oltGroupBox8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 209</value>
+  </data>
+  <data name="oltGroupBox8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>788, 79</value>
+  </data>
+  <data name="oltGroupBox8.TabIndex" type="System.Int32, mscorlib">
+    <value>40</value>
+  </data>
+  <data name="oltGroupBox8.Text" xml:space="preserve">
+    <value>Possible Consequences of the Deviation</value>
+  </data>
+  <data name="toeDefinitionToeVersionPublishDateValueLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="toeDefinitionToeVersionPublishDateValueLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="toeDefinitionToeVersionPublishDateValueLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>548, 66</value>
+  </data>
+  <data name="toeDefinitionToeVersionPublishDateValueLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 13</value>
+  </data>
+  <data name="toeDefinitionToeVersionPublishDateValueLabel.Text" xml:space="preserve">
+    <value>&lt;name&gt;</value>
+  </data>
+  <data name="oltLabel22.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="oltLabel22.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="oltLabel22.Location" type="System.Drawing.Point, System.Drawing">
+    <value>475, 66</value>
+  </data>
+  <data name="oltLabel22.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 13</value>
+  </data>
+  <data name="oltLabel22.Text" xml:space="preserve">
+    <value>Publish Date:</value>
+  </data>
+  <data name="toeDefinitionUnitOfMeasureValueLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="toeDefinitionUnitOfMeasureValueLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="toeDefinitionUnitOfMeasureValueLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>548, 43</value>
+  </data>
+  <data name="toeDefinitionUnitOfMeasureValueLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 13</value>
+  </data>
+  <data name="toeDefinitionUnitOfMeasureValueLabel.Text" xml:space="preserve">
+    <value>&lt;name&gt;</value>
+  </data>
+  <data name="oltGroupBox6.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="expandExcursionCausesLink.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="expandExcursionCausesLink.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="expandExcursionCausesLink.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="expandExcursionCausesLink.Location" type="System.Drawing.Point, System.Drawing">
+    <value>730, 10</value>
+  </data>
+  <data name="expandExcursionCausesLink.Size" type="System.Drawing.Size, System.Drawing">
+    <value>51, 13</value>
+  </data>
+  <data name="expandExcursionCausesLink.Text" xml:space="preserve">
+    <value>[Expand]</value>
+  </data>
+  <data name="toeDefinitionCausesDescriptionOltTextBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="toeDefinitionCausesDescriptionOltTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 28</value>
+  </data>
+  <data name="toeDefinitionCausesDescriptionOltTextBox.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="toeDefinitionCausesDescriptionOltTextBox.ScrollBars" type="System.Windows.Forms.ScrollBars, System.Windows.Forms">
+    <value>Vertical</value>
+  </data>
+  <data name="toeDefinitionCausesDescriptionOltTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>776, 46</value>
+  </data>
+  <data name="oltGroupBox6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 124</value>
+  </data>
+  <data name="oltGroupBox6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>788, 79</value>
+  </data>
+  <data name="oltGroupBox6.Text" xml:space="preserve">
+    <value>Possible Causes of the Deviation</value>
+  </data>
+  <data name="oltLabel26.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="oltLabel26.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="oltLabel26.Location" type="System.Drawing.Point, System.Drawing">
+    <value>515, 43</value>
+  </data>
+  <data name="oltLabel26.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 13</value>
+  </data>
+  <data name="oltLabel26.Text" xml:space="preserve">
+    <value>Unit:</value>
+  </data>
+  <data name="oltGroupBox7.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="toeDefinitionCommentLastUpdatedDateTimeValueLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="toeDefinitionCommentLastUpdatedDateTimeValueLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="toeDefinitionCommentLastUpdatedDateTimeValueLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>420, 17</value>
+  </data>
+  <data name="toeDefinitionCommentLastUpdatedDateTimeValueLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 13</value>
+  </data>
+  <data name="toeDefinitionCommentLastUpdatedDateTimeValueLabel.Text" xml:space="preserve">
+    <value>&lt;name&gt;</value>
+  </data>
+  <data name="oltLabel20.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="oltLabel20.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="oltLabel20.Location" type="System.Drawing.Point, System.Drawing">
+    <value>342, 17</value>
+  </data>
+  <data name="oltLabel20.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 13</value>
+  </data>
+  <data name="oltLabel20.Text" xml:space="preserve">
+    <value>Last Updated:</value>
+  </data>
+  <data name="toeDefinitionCommentOltOperatorLastUpdatedByValueLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="toeDefinitionCommentOltOperatorLastUpdatedByValueLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="toeDefinitionCommentOltOperatorLastUpdatedByValueLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>76, 17</value>
+  </data>
+  <data name="toeDefinitionCommentOltOperatorLastUpdatedByValueLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 13</value>
+  </data>
+  <data name="toeDefinitionCommentOltOperatorLastUpdatedByValueLabel.Text" xml:space="preserve">
+    <value>&lt;name&gt;</value>
+  </data>
+  <data name="oltLabel21.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="oltLabel21.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="oltLabel21.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 17</value>
+  </data>
+  <data name="oltLabel21.Size" type="System.Drawing.Size, System.Drawing">
+    <value>63, 13</value>
+  </data>
+  <data name="oltLabel21.Text" xml:space="preserve">
+    <value>Responder:</value>
+  </data>
+  <data name="expandOltToeDefinitionCommentLink.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="expandOltToeDefinitionCommentLink.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="expandOltToeDefinitionCommentLink.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="expandOltToeDefinitionCommentLink.Location" type="System.Drawing.Point, System.Drawing">
+    <value>-32, 17</value>
+  </data>
+  <data name="expandOltToeDefinitionCommentLink.Size" type="System.Drawing.Size, System.Drawing">
+    <value>51, 13</value>
+  </data>
+  <data name="expandOltToeDefinitionCommentLink.Text" xml:space="preserve">
+    <value>[Expand]</value>
+  </data>
+  <data name="toeDefinitionCommentOltOperatorCommentsOltTextBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="toeDefinitionCommentOltOperatorCommentsOltTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 35</value>
+  </data>
+  <data name="toeDefinitionCommentOltOperatorCommentsOltTextBox.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="toeDefinitionCommentOltOperatorCommentsOltTextBox.ScrollBars" type="System.Windows.Forms.ScrollBars, System.Windows.Forms">
+    <value>Vertical</value>
+  </data>
+  <data name="toeDefinitionCommentOltOperatorCommentsOltTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>14, 0</value>
+  </data>
+  <data name="oltGroupBox7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 20</value>
+  </data>
+  <data name="oltGroupBox7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>29, 21</value>
+  </data>
+  <data name="oltGroupBox7.Text" xml:space="preserve">
+    <value>OLT Operator Comments for Engineer to Review</value>
+  </data>
+  <data name="oltGroupBox7.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="toeDefinitionToeLimitValueValueLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="toeDefinitionToeLimitValueValueLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="toeDefinitionToeLimitValueValueLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>548, 20</value>
+  </data>
+  <data name="toeDefinitionToeLimitValueValueLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 13</value>
+  </data>
+  <data name="toeDefinitionToeLimitValueValueLabel.Text" xml:space="preserve">
+    <value>&lt;name&gt;</value>
+  </data>
+  <data name="oltLabel27.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="oltLabel27.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="oltLabel27.Location" type="System.Drawing.Point, System.Drawing">
+    <value>490, 20</value>
+  </data>
+  <data name="oltLabel27.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 13</value>
+  </data>
+  <data name="oltLabel27.Text" xml:space="preserve">
+    <value>TOE Limit:</value>
+  </data>
+  <data name="toeDefinitionFunctionalLocationValueLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="toeDefinitionFunctionalLocationValueLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="toeDefinitionFunctionalLocationValueLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>117, 101</value>
+  </data>
+  <data name="toeDefinitionFunctionalLocationValueLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 13</value>
+  </data>
+  <data name="toeDefinitionFunctionalLocationValueLabel.Text" xml:space="preserve">
+    <value>&lt;name&gt;</value>
+  </data>
+  <data name="oltLabel31.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="oltLabel31.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="oltLabel31.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 101</value>
+  </data>
+  <data name="oltLabel31.Size" type="System.Drawing.Size, System.Drawing">
+    <value>103, 13</value>
+  </data>
+  <data name="oltLabel31.Text" xml:space="preserve">
+    <value>Functional Location:</value>
+  </data>
+  <data name="toeDefinitionHistorianTagValueLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="toeDefinitionHistorianTagValueLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="toeDefinitionHistorianTagValueLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>117, 69</value>
+  </data>
+  <data name="toeDefinitionHistorianTagValueLabel.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>295, 26</value>
+  </data>
+  <data name="toeDefinitionHistorianTagValueLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>295, 26</value>
+  </data>
+  <data name="toeDefinitionHistorianTagValueLabel.Text" xml:space="preserve">
+    <value>12345678901234512345678901234567890123456789012345678906789012345678901234567890123456789012345678901234567890</value>
+  </data>
+  <data name="oltLabel32.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="oltLabel32.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="oltLabel32.Location" type="System.Drawing.Point, System.Drawing">
+    <value>40, 69</value>
+  </data>
+  <data name="oltLabel32.Size" type="System.Drawing.Size, System.Drawing">
+    <value>74, 13</value>
+  </data>
+  <data name="oltLabel32.Text" xml:space="preserve">
+    <value>Historian Tag:</value>
+  </data>
+  <data name="toeDefinitionToeTypeValueLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="toeDefinitionToeTypeValueLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="toeDefinitionToeTypeValueLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>117, 49</value>
+  </data>
+  <data name="toeDefinitionToeTypeValueLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 13</value>
+  </data>
+  <data name="toeDefinitionToeTypeValueLabel.Text" xml:space="preserve">
+    <value>&lt;name&gt;</value>
+  </data>
+  <data name="oltLabel33.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="oltLabel33.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="oltLabel33.Location" type="System.Drawing.Point, System.Drawing">
+    <value>79, 49</value>
+  </data>
+  <data name="oltLabel33.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 13</value>
+  </data>
+  <data name="oltLabel33.Text" xml:space="preserve">
+    <value>Type:</value>
+  </data>
+  <data name="toeDefinitionToeNameValueLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="toeDefinitionToeNameValueLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="toeDefinitionToeNameValueLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>117, 17</value>
+  </data>
+  <data name="toeDefinitionToeNameValueLabel.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>300, 35</value>
+  </data>
+  <data name="toeDefinitionToeNameValueLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>295, 35</value>
+  </data>
+  <data name="toeDefinitionToeNameValueLabel.Text" xml:space="preserve">
+    <value>12345678901234512345678901234567890123456789012345678906789012345678901234567890123456789012345678901234567890</value>
+  </data>
+  <data name="oltLabel34.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="oltLabel34.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="oltLabel34.Location" type="System.Drawing.Point, System.Drawing">
+    <value>76, 17</value>
+  </data>
+  <data name="oltLabel34.Size" type="System.Drawing.Size, System.Drawing">
+    <value>38, 13</value>
+  </data>
+  <data name="oltLabel34.Text" xml:space="preserve">
+    <value>Name:</value>
+  </data>
+  <data name="oltGroupBox5.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="oltGroupBox5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 428</value>
+  </data>
+  <data name="oltGroupBox5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>800, 478</value>
+  </data>
+  <data name="oltGroupBox5.TabIndex" type="System.Int32, mscorlib">
+    <value>114</value>
+  </data>
+  <data name="oltGroupBox5.Text" xml:space="preserve">
+    <value>TOE Definition</value>
+  </data>
+  <data name="detailsPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>880, 786</value>
+  </data>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>880, 811</value>
+  </data>
+</root>

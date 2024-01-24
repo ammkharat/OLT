@@ -1,0 +1,681 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="notificationsAuthorizationsCheckBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="notificationsAuthorizationsCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 342</value>
+  </data>
+  <data name="notificationsAuthorizationsCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>164, 17</value>
+  </data>
+  <data name="notificationsAuthorizationsCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="notificationsAuthorizationsCheckBox.Text" xml:space="preserve">
+    <value>Notifications /autorisations</value>
+  </data>
+  <data name="&gt;&gt;notificationsAuthorizationsCheckBox.Name" xml:space="preserve">
+    <value>notificationsAuthorizationsCheckBox</value>
+  </data>
+  <data name="&gt;&gt;notificationsAuthorizationsCheckBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Common.Controls.OltCheckBox, Com.Suncor.Olt.Common, Version=3.6.9876.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;notificationsAuthorizationsCheckBox.Parent" xml:space="preserve">
+    <value>flowLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;notificationsAuthorizationsCheckBox.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="gasTestInformationCheckBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gasTestInformationCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 273</value>
+  </data>
+  <data name="gasTestInformationCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>127, 17</value>
+  </data>
+  <data name="gasTestInformationCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="gasTestInformationCheckBox.Text" xml:space="preserve">
+    <value>Renseignements sur les essais de gaz</value>
+  </data>
+  <data name="&gt;&gt;gasTestInformationCheckBox.Name" xml:space="preserve">
+    <value>gasTestInformationCheckBox</value>
+  </data>
+  <data name="&gt;&gt;gasTestInformationCheckBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Common.Controls.OltCheckBox, Com.Suncor.Olt.Common, Version=3.6.9876.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;gasTestInformationCheckBox.Parent" xml:space="preserve">
+    <value>flowLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;gasTestInformationCheckBox.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="specialPrecautionsConsiderationsCheckBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="specialPrecautionsConsiderationsCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 296</value>
+  </data>
+  <data name="specialPrecautionsConsiderationsCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>199, 17</value>
+  </data>
+  <data name="specialPrecautionsConsiderationsCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="specialPrecautionsConsiderationsCheckBox.Text" xml:space="preserve">
+    <value>Précautions et considérations spéciales</value>
+  </data>
+  <data name="&gt;&gt;specialPrecautionsConsiderationsCheckBox.Name" xml:space="preserve">
+    <value>specialPrecautionsConsiderationsCheckBox</value>
+  </data>
+  <data name="&gt;&gt;specialPrecautionsConsiderationsCheckBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Common.Controls.OltCheckBox, Com.Suncor.Olt.Common, Version=3.6.9876.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;specialPrecautionsConsiderationsCheckBox.Parent" xml:space="preserve">
+    <value>flowLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;specialPrecautionsConsiderationsCheckBox.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="specialPpeRequirementsCheckBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="specialPpeRequirementsCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 250</value>
+  </data>
+  <data name="specialPpeRequirementsCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>149, 17</value>
+  </data>
+  <data name="specialPpeRequirementsCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="specialPpeRequirementsCheckBox.Text" xml:space="preserve">
+    <value>Special PPE Requirements</value>
+  </data>
+  <data name="&gt;&gt;specialPpeRequirementsCheckBox.Name" xml:space="preserve">
+    <value>specialPpeRequirementsCheckBox</value>
+  </data>
+  <data name="&gt;&gt;specialPpeRequirementsCheckBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Common.Controls.OltCheckBox, Com.Suncor.Olt.Common, Version=3.6.9876.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;specialPpeRequirementsCheckBox.Parent" xml:space="preserve">
+    <value>flowLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;specialPpeRequirementsCheckBox.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="respiratoryProtectionRequirementsCheckBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="respiratoryProtectionRequirementsCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 227</value>
+  </data>
+  <data name="respiratoryProtectionRequirementsCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>203, 17</value>
+  </data>
+  <data name="respiratoryProtectionRequirementsCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="respiratoryProtectionRequirementsCheckBox.Text" xml:space="preserve">
+    <value>Exigences de protection respiratoire</value>
+  </data>
+  <data name="&gt;&gt;respiratoryProtectionRequirementsCheckBox.Name" xml:space="preserve">
+    <value>respiratoryProtectionRequirementsCheckBox</value>
+  </data>
+  <data name="&gt;&gt;respiratoryProtectionRequirementsCheckBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Common.Controls.OltCheckBox, Com.Suncor.Olt.Common, Version=3.6.9876.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;respiratoryProtectionRequirementsCheckBox.Parent" xml:space="preserve">
+    <value>flowLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;respiratoryProtectionRequirementsCheckBox.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="fireConfinedSpaceProtectionRequirementsCheckBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="fireConfinedSpaceProtectionRequirementsCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 204</value>
+  </data>
+  <data name="fireConfinedSpaceProtectionRequirementsCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>250, 17</value>
+  </data>
+  <data name="fireConfinedSpaceProtectionRequirementsCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="fireConfinedSpaceProtectionRequirementsCheckBox.Text" xml:space="preserve">
+    <value>Exigences de protection - incendie / espace confiné</value>
+  </data>
+  <data name="&gt;&gt;fireConfinedSpaceProtectionRequirementsCheckBox.Name" xml:space="preserve">
+    <value>fireConfinedSpaceProtectionRequirementsCheckBox</value>
+  </data>
+  <data name="&gt;&gt;fireConfinedSpaceProtectionRequirementsCheckBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Common.Controls.OltCheckBox, Com.Suncor.Olt.Common, Version=3.6.9876.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;fireConfinedSpaceProtectionRequirementsCheckBox.Parent" xml:space="preserve">
+    <value>flowLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;fireConfinedSpaceProtectionRequirementsCheckBox.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="radiationInformationCheckBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="radiationInformationCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 181</value>
+  </data>
+  <data name="radiationInformationCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>130, 17</value>
+  </data>
+  <data name="radiationInformationCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="radiationInformationCheckBox.Text" xml:space="preserve">
+    <value>Renseignements sur les radiations</value>
+  </data>
+  <data name="&gt;&gt;radiationInformationCheckBox.Name" xml:space="preserve">
+    <value>radiationInformationCheckBox</value>
+  </data>
+  <data name="&gt;&gt;radiationInformationCheckBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Common.Controls.OltCheckBox, Com.Suncor.Olt.Common, Version=3.6.9876.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;radiationInformationCheckBox.Parent" xml:space="preserve">
+    <value>flowLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;radiationInformationCheckBox.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="jobWorksitePreparationCheckBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="jobWorksitePreparationCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 135</value>
+  </data>
+  <data name="jobWorksitePreparationCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>154, 17</value>
+  </data>
+  <data name="jobWorksitePreparationCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="jobWorksitePreparationCheckBox.Text" xml:space="preserve">
+    <value>Préparation du travail / du lieu de travail</value>
+  </data>
+  <data name="&gt;&gt;jobWorksitePreparationCheckBox.Name" xml:space="preserve">
+    <value>jobWorksitePreparationCheckBox</value>
+  </data>
+  <data name="&gt;&gt;jobWorksitePreparationCheckBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Common.Controls.OltCheckBox, Com.Suncor.Olt.Common, Version=3.6.9876.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;jobWorksitePreparationCheckBox.Parent" xml:space="preserve">
+    <value>flowLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;jobWorksitePreparationCheckBox.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="equipmentPreparationConditionCheckBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="equipmentPreparationConditionCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 89</value>
+  </data>
+  <data name="equipmentPreparationConditionCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>193, 17</value>
+  </data>
+  <data name="equipmentPreparationConditionCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="equipmentPreparationConditionCheckBox.Text" xml:space="preserve">
+    <value>Equipment Preparation &amp;&amp; Condition</value>
+  </data>
+  <data name="&gt;&gt;equipmentPreparationConditionCheckBox.Name" xml:space="preserve">
+    <value>equipmentPreparationConditionCheckBox</value>
+  </data>
+  <data name="&gt;&gt;equipmentPreparationConditionCheckBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Common.Controls.OltCheckBox, Com.Suncor.Olt.Common, Version=3.6.9876.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;equipmentPreparationConditionCheckBox.Parent" xml:space="preserve">
+    <value>flowLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;equipmentPreparationConditionCheckBox.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="toolsCheckBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="toolsCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 66</value>
+  </data>
+  <data name="toolsCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>108, 17</value>
+  </data>
+  <data name="toolsCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="toolsCheckBox.Text" xml:space="preserve">
+    <value>Outils à utiliser</value>
+  </data>
+  <data name="&gt;&gt;toolsCheckBox.Name" xml:space="preserve">
+    <value>toolsCheckBox</value>
+  </data>
+  <data name="&gt;&gt;toolsCheckBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Common.Controls.OltCheckBox, Com.Suncor.Olt.Common, Version=3.6.9876.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;toolsCheckBox.Parent" xml:space="preserve">
+    <value>flowLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;toolsCheckBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="sectionSelectionLinkLabel1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="sectionSelectionLinkLabel1.LinkArea" type="System.Windows.Forms.LinkArea, System.Windows.Forms">
+    <value>7, 10</value>
+  </data>
+  <data name="sectionSelectionLinkLabel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 0</value>
+  </data>
+  <data name="sectionSelectionLinkLabel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>86, 18</value>
+  </data>
+  <data name="sectionSelectionLinkLabel1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="sectionSelectionLinkLabel1.Text" xml:space="preserve">
+    <value>Select: All, None</value>
+  </data>
+  <data name="&gt;&gt;sectionSelectionLinkLabel1.Name" xml:space="preserve">
+    <value>sectionSelectionLinkLabel1</value>
+  </data>
+  <data name="&gt;&gt;sectionSelectionLinkLabel1.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Common.Controls.OltLinkLabel, Com.Suncor.Olt.Common, Version=3.6.9876.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;sectionSelectionLinkLabel1.Parent" xml:space="preserve">
+    <value>flowLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;sectionSelectionLinkLabel1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="permitTypeAttributeCheckBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="permitTypeAttributeCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="permitTypeAttributeCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>141, 17</value>
+  </data>
+  <data name="permitTypeAttributeCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="permitTypeAttributeCheckBox.Text" xml:space="preserve">
+    <value>Type / attributs du permis</value>
+  </data>
+  <data name="&gt;&gt;permitTypeAttributeCheckBox.Name" xml:space="preserve">
+    <value>permitTypeAttributeCheckBox</value>
+  </data>
+  <data name="&gt;&gt;permitTypeAttributeCheckBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Common.Controls.OltCheckBox, Com.Suncor.Olt.Common, Version=3.6.9876.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;permitTypeAttributeCheckBox.Parent" xml:space="preserve">
+    <value>extraCloneSectionsPanel1</value>
+  </data>
+  <data name="&gt;&gt;permitTypeAttributeCheckBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="locationCheckBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="locationCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 22</value>
+  </data>
+  <data name="locationCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>176, 17</value>
+  </data>
+  <data name="locationCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="locationCheckBox.Text" xml:space="preserve">
+    <value>Poste / Caractéristiques d'emploi / Portée</value>
+  </data>
+  <data name="&gt;&gt;locationCheckBox.Name" xml:space="preserve">
+    <value>locationCheckBox</value>
+  </data>
+  <data name="&gt;&gt;locationCheckBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Common.Controls.OltCheckBox, Com.Suncor.Olt.Common, Version=3.6.9876.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;locationCheckBox.Parent" xml:space="preserve">
+    <value>extraCloneSectionsPanel1</value>
+  </data>
+  <data name="&gt;&gt;locationCheckBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="extraCloneSectionsPanel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 21</value>
+  </data>
+  <data name="extraCloneSectionsPanel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>306, 39</value>
+  </data>
+  <data name="extraCloneSectionsPanel1.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;extraCloneSectionsPanel1.Name" xml:space="preserve">
+    <value>extraCloneSectionsPanel1</value>
+  </data>
+  <data name="&gt;&gt;extraCloneSectionsPanel1.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Common.Controls.OltPanel, Com.Suncor.Olt.Common, Version=3.6.9876.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;extraCloneSectionsPanel1.Parent" xml:space="preserve">
+    <value>flowLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;extraCloneSectionsPanel1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="flowLayoutPanel1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="flowLayoutPanel1.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
+  </data>
+  <data name="asbestosCheckBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="asbestosCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 112</value>
+  </data>
+  <data name="asbestosCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 17</value>
+  </data>
+  <data name="asbestosCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="asbestosCheckBox.Text" xml:space="preserve">
+    <value>Amiante</value>
+  </data>
+  <data name="&gt;&gt;asbestosCheckBox.Name" xml:space="preserve">
+    <value>asbestosCheckBox</value>
+  </data>
+  <data name="&gt;&gt;asbestosCheckBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Common.Controls.OltCheckBox, Com.Suncor.Olt.Common, Version=3.6.9876.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;asbestosCheckBox.Parent" xml:space="preserve">
+    <value>flowLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;asbestosCheckBox.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="communicationMethodCheckBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="communicationMethodCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 158</value>
+  </data>
+  <data name="communicationMethodCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>137, 17</value>
+  </data>
+  <data name="communicationMethodCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="communicationMethodCheckBox.Text" xml:space="preserve">
+    <value>Moyens de communication</value>
+  </data>
+  <data name="&gt;&gt;communicationMethodCheckBox.Name" xml:space="preserve">
+    <value>communicationMethodCheckBox</value>
+  </data>
+  <data name="&gt;&gt;communicationMethodCheckBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Common.Controls.OltCheckBox, Com.Suncor.Olt.Common, Version=3.6.9876.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;communicationMethodCheckBox.Parent" xml:space="preserve">
+    <value>flowLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;communicationMethodCheckBox.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="additionalFormsCheckBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="additionalFormsCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="additionalFormsCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>302, 17</value>
+  </data>
+  <data name="additionalFormsCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="additionalFormsCheckBox.Text" xml:space="preserve">
+    <value>Évaluations / autorisations / formulaires supplémentaires requis</value>
+  </data>
+  <data name="&gt;&gt;additionalFormsCheckBox.Name" xml:space="preserve">
+    <value>additionalFormsCheckBox</value>
+  </data>
+  <data name="&gt;&gt;additionalFormsCheckBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Common.Controls.OltCheckBox, Com.Suncor.Olt.Common, Version=3.6.9876.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;additionalFormsCheckBox.Parent" xml:space="preserve">
+    <value>extraCloneSectionsPanel2</value>
+  </data>
+  <data name="&gt;&gt;additionalFormsCheckBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="extraCloneSectionsPanel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 319</value>
+  </data>
+  <data name="extraCloneSectionsPanel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>305, 17</value>
+  </data>
+  <data name="extraCloneSectionsPanel2.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;extraCloneSectionsPanel2.Name" xml:space="preserve">
+    <value>extraCloneSectionsPanel2</value>
+  </data>
+  <data name="&gt;&gt;extraCloneSectionsPanel2.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Common.Controls.OltPanel, Com.Suncor.Olt.Common, Version=3.6.9876.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;extraCloneSectionsPanel2.Parent" xml:space="preserve">
+    <value>flowLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;extraCloneSectionsPanel2.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="miscellaneousCheckBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="miscellaneousCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 365</value>
+  </data>
+  <data name="miscellaneousCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>91, 17</value>
+  </data>
+  <data name="miscellaneousCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="miscellaneousCheckBox.Text" xml:space="preserve">
+    <value>Divers</value>
+  </data>
+  <data name="&gt;&gt;miscellaneousCheckBox.Name" xml:space="preserve">
+    <value>miscellaneousCheckBox</value>
+  </data>
+  <data name="&gt;&gt;miscellaneousCheckBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Common.Controls.OltCheckBox, Com.Suncor.Olt.Common, Version=3.6.9876.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;miscellaneousCheckBox.Parent" xml:space="preserve">
+    <value>flowLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;miscellaneousCheckBox.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="flowLayoutPanel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="flowLayoutPanel1.FlowDirection" type="System.Windows.Forms.FlowDirection, System.Windows.Forms">
+    <value>TopDown</value>
+  </data>
+  <data name="flowLayoutPanel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="flowLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>312, 385</value>
+  </data>
+  <data name="flowLayoutPanel1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;flowLayoutPanel1.Name" xml:space="preserve">
+    <value>flowLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;flowLayoutPanel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;flowLayoutPanel1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;flowLayoutPanel1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="$this.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
+    <value>GrowAndShrink</value>
+  </data>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>312, 385</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>WorkPermitSectionPicker</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.UserControl, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+</root>

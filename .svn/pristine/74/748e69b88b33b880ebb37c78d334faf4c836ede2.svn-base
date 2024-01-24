@@ -1,0 +1,449 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ServiceModel;
+using System.Text;
+using Com.Suncor.Olt.Common.DTO;
+using Com.Suncor.Olt.Common.Domain;
+using Com.Suncor.Olt.Common.Domain.FlocSet;
+using Com.Suncor.Olt.Common.Domain.Form;
+using Com.Suncor.Olt.Common.Domain.WorkPermit;
+using Com.Suncor.Olt.Common.Extension;
+using Com.Suncor.Olt.Common.Localization;
+using Com.Suncor.Olt.Common.Services;
+using Com.Suncor.Olt.Common.Utility;
+using Com.Suncor.Olt.Remote.DataAccess;
+using Com.Suncor.Olt.Remote.DataAccess.DTO;
+using Com.Suncor.Olt.Remote.DataAccess.Domain;
+using Com.Suncor.Olt.Remote.Utilities;
+
+namespace Com.Suncor.Olt.Remote.Services
+{
+    [ServiceBehavior(InstanceContextMode = InstanceContextMode.PerCall)]
+    public class WorkPermitEdmontonService : IWorkPermitEdmontonService
+    {
+        private readonly IWorkPermitEdmontonDao workPermitDao;
+        private readonly IWorkPermitEdmontonDTODao workPermitDtoDao;
+        private readonly IWorkPermitEdmontonHazardDTODao workPermitHazardDtoDao;
+        private readonly IWorkPermitEdmontonGroupDao groupDao;
+
+        private readonly IWorkPermitEdmontonHistoryDao historyDao;
+        private readonly IFormGN1Dao formGn1Dao;
+        private readonly IFormGN6Dao formGn6Dao;
+        private readonly IFormGN7Dao formGn7Dao;
+        private readonly IFormGN24Dao formGn24Dao;
+        private readonly IFormGN59Dao formGn59Dao;
+        private readonly IFormGN75ADao formGn75ADao;
+
+        private readonly IEditHistoryService editHistoryService;
+
+        
+        private readonly ILogService logService;
+
+        public WorkPermitEdmontonService(IWorkPermitEdmontonDao workPermitDao, IWorkPermitEdmontonDTODao workPermitDtoDao, IWorkPermitEdmontonHazardDTODao hazardDtoDao, IWorkPermitEdmontonGroupDao groupDao, IEditHistoryService historyService, ILogService logService, IWorkPermitEdmontonHistoryDao historyDao, IFormGN6Dao formGn6Dao, IFormGN7Dao formGn7Dao, IFormGN24Dao formGn24Dao, IFormGN59Dao formGn59Dao, IFormGN1Dao formGn1Dao, IFormGN75ADao formGn75ADao)
+        {
+            this.workPermitDao = workPermitDao;
+            this.workPermitDtoDao = workPermitDtoDao;
+            workPermitHazardDtoDao = hazardDtoDao;
+            this.groupDao = groupDao;
+            editHistoryService = historyService;
+            this.logService = logService;
+            this.historyDao = historyDao;
+            this.formGn6Dao = formGn6Dao;
+            this.formGn7Dao = formGn7Dao;
+            this.formGn24Dao = formGn24Dao;
+            this.formGn59Dao = formGn59Dao;
+            this.formGn1Dao = formGn1Dao;
+            this.formGn75ADao = formGn75ADao;
+        }
+
+        public WorkPermitEdmontonService()
+            : this(
+                DaoRegistry.GetDao<IWorkPermitEdmontonDao>(), DaoRegistry.GetDao<IWorkPermitEdmontonDTODao>(), DaoRegistry.GetDao<IWorkPermitEdmontonHazardDTODao>(),
+                DaoRegistry.GetDao<IWorkPermitEdmontonGroupDao>(),
+                new EditHistoryService(), new LogService(), DaoRegistry.GetDao<IWorkPermitEdmontonHistoryDao>(),
+                DaoRegistry.GetDao<IFormGN6Dao>(),
+                DaoRegistry.GetDao<IFormGN7Dao>(),
+                DaoRegistry.GetDao<IFormGN24Dao>(),
+                DaoRegistry.GetDao<IFormGN59Dao>(),
+                DaoRegistry.GetDao<IFormGN1Dao>(),
+                DaoRegistry.GetDao<IFormGN75ADao>())
+        {
+        }
+
+        public List<NotifiedEvent> Insert(WorkPermitEdmonton workPermit)
+        {
+            workPermitDao.Insert(workPermit, null);
+            return TakeSnapshotAndNotifyEvents(workPermit);
+        }
+
+        public List<NotifiedEvent> InsertMergePermit(WorkPermitEdmonton workPermit, List<long> mergeSourceIds)
+        {
+            workPermitDao.Insert(workPermit, null);
+
+            List<NotifiedEvent> notifiedEvents = new List<NotifiedEvent>();
+
+            foreach (long mergeSourceId in mergeSourceIds)
+            {
+                WorkPermitEdmonton mergeSourcePermit = workPermitDao.QueryById(mergeSourceId);
+
+                if (PermitRequestBasedWorkPermitStatus.Requested.Equals(mergeSourcePermit.WorkPermitStatus)
+                    || PermitRequestBasedWorkPermitStatus.Pending.Equals(mergeSourcePermit.WorkPermitStatus))
+                {
+                    mergeSourcePermit.LastModifiedDateTime = workPermit.LastModifiedDateTime;
+                    mergeSourcePermit.LastModifiedBy = workPermit.LastModifiedBy;
+                        
+                    mergeSourcePermit.WorkPermitStatus = PermitRequestBasedWorkPermitStatus.Merged;
+                    notifiedEvents.AddRange(Update(mergeSourcePermit));
+                }
+            }
+
+            notifiedEvents.AddRange(TakeSnapshotAndNotifyEvents(workPermit));
+
+            return notifiedEvents;            
+        }
+
+        public List<NotifiedEvent> Update(WorkPermitEdmonton workPermit)
+        {
+            if (workPermit.IsTemplate)
+            {
+                workPermitDao.InsertTemplate(workPermit);
+            }
+            else
+            {
+                workPermitDao.Update(workPermit);
+                editHistoryService.TakeSnapshot(workPermit);
+            }
+            List<NotifiedEvent> notifiedEvents = new List<NotifiedEvent>();
+            notifiedEvents.Add(ServiceUtility.PushEventIntoQueue(ApplicationEvent.WorkPermitEdmontonUpdate, workPermit));
+            AddEventsForForms(workPermit, notifiedEvents);
+            return notifiedEvents;
+        }
+
+        public WorkPermitEdmonton QueryByIdTemplate(long id, string templateName, string categories)
+        {
+            return workPermitDao.QueryByIdTemplate(id, templateName, categories);
+        }
+
+        public WorkPermitEdmonton QueryPreviousDayIssuedPermitForSamePermitRequest(WorkPermitEdmonton permit)
+        {
+            return workPermitDao.QueryPreviousDayIssuedPermitForSamePermitRequest(permit);
+        }
+
+        public List<NotifiedEvent> InsertWithPermitRequestEdmontonAssociation(WorkPermitEdmonton workPermit, PermitRequestEdmonton request)
+        {
+            workPermitDao.Insert(workPermit, request.Id);
+            return TakeSnapshotAndNotifyEvents(workPermit);
+        }
+
+        public bool DoesPermitRequestEdmontonAssociationExist(List<PermitRequestEdmontonDTO> submittedRequests, Date workPermitStartDate)
+        {
+            if (submittedRequests.Count == 0)
+            {
+                return false;
+            }
+
+            UserShiftandIds collection = new UserShiftandIds();
+           
+            // Get all the Start DateTimes for each request that may have day and/or night times selected.
+            // Then create the UserShift that the issued datetime would be in.
+            foreach(PermitRequestEdmontonDTO request in submittedRequests)
+            {
+                if (request.RequestedStartTimeDay != null)
+                {
+                    DateTime requestedStartDateTime = workPermitStartDate.CreateDateTime(request.RequestedStartTimeDay);
+
+                    UserShift userShift = WorkPermitEdmonton.UserShift(requestedStartDateTime);
+                    collection.Add(userShift, request.IdValue);
+                }
+                if (request.RequestedStartTimeNight != null)
+                {
+                    DateTime requestedStartDateTime = workPermitStartDate.CreateDateTime(request.RequestedStartTimeNight);
+
+                    UserShift userShift = WorkPermitEdmonton.UserShift(requestedStartDateTime);
+                    collection.Add(userShift, request.IdValue);
+                }
+            }
+
+            bool associationExists = false;
+            foreach(UserShift userShift in collection.Keys)
+            {
+                associationExists = workPermitDao.DoesPermitRequestEdmontonAssociationExist(collection.GetIdsFor(userShift), userShift.DateTimeRangeWithoutPadding);
+                if (associationExists)
+                    break;
+            }
+            return associationExists;
+        }
+
+        public List<NotifiedEvent> Remove(WorkPermitEdmonton permit)
+        {
+            workPermitDao.Remove(permit);
+
+            List<NotifiedEvent> notifiedEvents = new List<NotifiedEvent>();
+            notifiedEvents.Add(ServiceUtility.PushEventIntoQueue(ApplicationEvent.WorkPermitEdmontonRemove, permit));
+            return notifiedEvents;
+        }
+
+        public List<NotifiedEvent> UpdateAndInsertLogs(List<WorkPermitEdmonton> workPermits, Dictionary<long, Log> permitIdToAssociatedLogMap)
+        {
+            List<NotifiedEvent> notifiedEvents = new List<NotifiedEvent>();
+
+            foreach (WorkPermitEdmonton permit in workPermits)
+            {
+                notifiedEvents.AddRange(Update(permit));
+
+                if (permitIdToAssociatedLogMap.ContainsKey(permit.IdValue))
+                {
+                    Log associatedLog = permitIdToAssociatedLogMap[permit.IdValue];
+                    string text = BuildAssociatedLogComments(associatedLog, permit);
+                    associatedLog.PlainTextComments = text;
+                    associatedLog.RtfComments = text;
+                    notifiedEvents.AddRange(logService.InsertForWorkPermitEdmonton(associatedLog, permit));
+                }
+            }
+
+            return notifiedEvents;
+       }
+          
+        private string BuildAssociatedLogComments(Log log, WorkPermitEdmonton permit)
+        {
+            StringBuilder builder = new StringBuilder();
+
+            builder.Append(permit.DescriptionForLog);
+
+            if (log.PlainTextComments.HasValue())
+            {
+                builder.AppendLine(string.Format(StringResources.WorkPermitEdmontonAndLubesAndMontrealCloseCommentForLog, log.PlainTextComments));
+            }
+
+            return builder.ToString();
+        }
+
+        public WorkPermitEdmonton QueryById(long id)
+        {
+            return workPermitDao.QueryById(id);
+        }
+
+        public DateTime? QueryLatestExpiryDateByPermitRequestId(long permitRequestId)
+        {
+            return workPermitDao.QueryLatestExpiryDateByPermitRequestId(permitRequestId);
+        }
+
+        public IList<WorkPermitEdmontonDTO> QueryByDateRangeAndFlocsForTurnaround(Range<Date> dateRange, RootFlocSet flocSet)
+        {
+            return workPermitDtoDao.QueryByDateRangeAndFlocsAndPriorityIds(dateRange, flocSet, new List<long> { WorkOrderPriority.P3.IdValue, WorkOrderPriority.P4.IdValue }, false);
+        }
+
+        public IList<WorkPermitEdmontonDTO> QueryByDateRangeAndFlocsForAllButTurnaround(Range<Date> dateRange, RootFlocSet flocSet)
+        {
+            return workPermitDtoDao.QueryByDateRangeAndFlocsAndPriorityIds(dateRange, flocSet, new List<long> { WorkOrderPriority.P3.IdValue, WorkOrderPriority.P4.IdValue }, true);
+        }
+
+        public IList<WorkPermitEdmontonDTO> QueryByDateRangeAndFlocs(Range<Date> dateRange, RootFlocSet flocSet)
+        {
+            return workPermitDtoDao.QueryByDateRangeAndFlocs(dateRange, flocSet);
+        }
+        public IList<WorkPermitEdmontonDTO> QueryByDateRangeAndFlocsForTemplate(Range<Date> dateRange, RootFlocSet flocSet, string username)
+        {
+            return workPermitDtoDao.QueryByDateRangeAndFlocsForTemplate(dateRange, flocSet, username);
+        }
+
+        private List<NotifiedEvent> TakeSnapshotAndNotifyEvents(WorkPermitEdmonton workPermit)
+        {
+            editHistoryService.TakeSnapshot(workPermit);
+
+            List<NotifiedEvent> notifiedEvents = new List<NotifiedEvent>();
+            notifiedEvents.Add(ServiceUtility.PushEventIntoQueue(ApplicationEvent.WorkPermitEdmontonCreate, workPermit));
+            AddEventsForForms(workPermit, notifiedEvents);
+            return notifiedEvents;
+        }
+
+        private void AddEventsForForms(WorkPermitEdmonton workPermit, List<NotifiedEvent> notifiedEvents)
+        {
+            List<WorkPermitEdmontonHistory> histories = historyDao.GetById(workPermit.IdValue);
+            histories.Sort(h => h.LastModifiedDate);
+            histories.Reverse();
+
+            WorkPermitEdmontonHistory previousHistory = histories.Count > 1 ? histories[1] : null;
+
+            if (previousHistory == null)   // the permit is being created for the first time
+            {
+                if (workPermit.FormGN1 != null)
+                {
+                    notifiedEvents.Add(ServiceUtility.PushEventIntoQueue(ApplicationEvent.FormGN1Update, workPermit.FormGN1));
+                }
+                if (workPermit.FormGN75A != null)
+                {
+                    notifiedEvents.Add(ServiceUtility.PushEventIntoQueue(ApplicationEvent.FormGN75AUpdate, workPermit.FormGN75A));
+                }
+                if (workPermit.FormGN6 != null)
+                {
+                    notifiedEvents.Add(ServiceUtility.PushEventIntoQueue(ApplicationEvent.FormGN6Update, workPermit.FormGN6));
+                }
+
+                if (workPermit.FormGN7 != null)
+                {
+                    notifiedEvents.Add(ServiceUtility.PushEventIntoQueue(ApplicationEvent.FormGN7Update, workPermit.FormGN7));
+                }
+
+                if (workPermit.FormGN24 != null)
+                {
+                    notifiedEvents.Add(ServiceUtility.PushEventIntoQueue(ApplicationEvent.FormGN24Update, workPermit.FormGN24));
+                }
+
+                if (workPermit.FormGN59 != null)
+                {
+                    notifiedEvents.Add(ServiceUtility.PushEventIntoQueue(ApplicationEvent.FormGN59Update, workPermit.FormGN59));
+                }
+            }
+            else   // the permit is being edited
+            {
+                FormGN1 previousFormGn1 = previousHistory.FormGN1Id == null ? null : formGn1Dao.QueryById(previousHistory.FormGN1Id.Value);
+                FormGN1 latestFormGn1 = workPermit.FormGN1;
+                AddFormEventsForPermitUpdate(previousFormGn1, latestFormGn1, ApplicationEvent.FormGN1Update, notifiedEvents);
+
+                FormGN6 previousFormGn6 = previousHistory.FormGN6Id == null ? null : formGn6Dao.QueryById(previousHistory.FormGN6Id.Value);
+                FormGN6 latestFormGn6 = workPermit.FormGN6;
+                AddFormEventsForPermitUpdate(previousFormGn6, latestFormGn6, ApplicationEvent.FormGN6Update, notifiedEvents);
+
+                FormGN7 previousFormGn7 = previousHistory.FormGN7Id == null ? null : formGn7Dao.QueryById(previousHistory.FormGN7Id.Value);
+                FormGN7 latestFormGn7 = workPermit.FormGN7;
+                AddFormEventsForPermitUpdate(previousFormGn7, latestFormGn7, ApplicationEvent.FormGN7Update, notifiedEvents);
+
+                FormGN24 previousFormGn24 = previousHistory.FormGN24Id == null ? null : formGn24Dao.QueryById(previousHistory.FormGN24Id.Value);
+                FormGN24 latestFormGn24 = workPermit.FormGN24;
+                AddFormEventsForPermitUpdate(previousFormGn24, latestFormGn24, ApplicationEvent.FormGN24Update, notifiedEvents);
+
+                FormGN59 previousFormGn59 = previousHistory.FormGN59Id == null ? null : formGn59Dao.QueryById(previousHistory.FormGN59Id.Value);
+                FormGN59 latestFormGn59 = workPermit.FormGN59;
+                AddFormEventsForPermitUpdate(previousFormGn59, latestFormGn59, ApplicationEvent.FormGN59Update, notifiedEvents);
+
+                FormGN75A previousFormGn75A = previousHistory.FormGN75AId == null ? null : formGn75ADao.QueryById(previousHistory.FormGN75AId.Value);
+                FormGN75A latestFormGn75A = workPermit.FormGN75A;
+                AddFormEventsForPermitUpdate(previousFormGn75A, latestFormGn75A, ApplicationEvent.FormGN75AUpdate, notifiedEvents);
+            }
+        }
+
+        private void AddFormEventsForPermitUpdate(DomainObject previousForm, DomainObject latestForm, ApplicationEvent updateFormEvent, List<NotifiedEvent> notifiedEvents)
+        {
+            long? previousFormId = previousForm == null ? null : previousForm.Id;
+            long? latestFormId = latestForm == null ? null : latestForm.Id;
+
+            if (previousFormId != latestFormId)
+            {
+                if (previousFormId != null && latestFormId != null)
+                {
+                    notifiedEvents.Add(ServiceUtility.PushEventIntoQueue(updateFormEvent, previousForm));
+                    notifiedEvents.Add(ServiceUtility.PushEventIntoQueue(updateFormEvent, latestForm));
+                }
+                else if (previousFormId == null)  // user changed form from empty to something
+                {
+                    notifiedEvents.Add(ServiceUtility.PushEventIntoQueue(updateFormEvent, latestForm));
+                }
+                else if (latestFormId == null)  // user changed form from something to empty
+                {
+                    notifiedEvents.Add(ServiceUtility.PushEventIntoQueue(updateFormEvent, previousForm));
+                }
+            }            
+        }
+
+        public List<WorkPermitEdmontonGroup> QueryAllGroups()
+        {
+            return groupDao.QueryAll();
+        }
+
+        public List<WorkPermitEdmontonDTO> QueryDtosByFormGN59Id(long id)
+        {
+            return workPermitDtoDao.QueryByFormGN59Id(id);
+        }
+
+        public List<WorkPermitEdmontonDTO> QueryDtosByFormGN7Id(long id)
+        {
+            return workPermitDtoDao.QueryByFormGN7Id(id);
+        }
+
+        public List<WorkPermitEdmontonDTO> QueryDtosByFormGN24Id(long id)
+        {
+            return workPermitDtoDao.QueryByFormGN24Id(id);
+        }
+
+        public List<WorkPermitEdmontonDTO> QueryDtosByFormGN6Id(long id)
+        {
+            return workPermitDtoDao.QueryByFormGN6Id(id);
+        }
+
+        public List<WorkPermitEdmontonDTO> QueryDtosByFormGN75AId(long id)
+        {
+            return workPermitDtoDao.QueryByFormGN75AId(id);
+        }
+
+        public List<WorkPermitEdmontonDTO> QueryDtosByFormGN1Id(long id)
+        {
+            return workPermitDtoDao.QueryByFormGN1Id(id);
+        }
+
+        public List<WorkPermitEdmonton> QueryByFormGN59Id(long id)
+        {
+            return workPermitDao.QueryByFormGN59Id(id);
+        }
+
+        public List<WorkPermitEdmonton> QueryByFormGN7Id(long id)
+        {
+            return workPermitDao.QueryByFormGN7Id(id);
+        }
+
+        public List<WorkPermitEdmonton> QueryByFormGN24Id(long id)
+        {
+            return workPermitDao.QueryByFormGN24Id(id);
+        }
+
+        public List<WorkPermitEdmonton> QueryByFormGN75AId(long id)
+        {
+            return workPermitDao.QueryByFormGN75AId(id);
+        }
+
+        public List<WorkPermitEdmonton> QueryByFormGN1Id(long id)
+        {
+            return workPermitDao.QueryByFormGN1Id(id);
+        }
+
+        public List<WorkPermitEdmonton> QueryByFormGN6Id(long id)
+        {
+            return workPermitDao.QueryByFormGN6Id(id);
+        }
+
+        public List<WorkPermitEdmontonHazardDTO> QueryByFlocsAndStatuses(IFlocSet flocSet, List<PermitRequestBasedWorkPermitStatus> statuses)
+        {
+            return workPermitHazardDtoDao.QueryByFlocsAndStatus(flocSet, statuses);
+        }
+
+        //Mukesh -DMND0010609-OLT - Work permit Scan and Index
+        public void InsertWorkpermitScan(WorkpermitScan Scan)
+        {
+            workPermitDao.InsertWorkpermitScan(Scan);
+        }
+
+        public List<WorkpermitScan> GetWorkpermitScan(string WorkpermitId, int SiteId)
+        {
+            return workPermitDao.GetWorkpermitScan(WorkpermitId, SiteId);
+        }
+
+        public List<ScanDocumentType> GetWorkPermitDocumentType(long siteId)
+        {
+            return workPermitDao.GetWorkPermitDocumentType(siteId);
+        }
+        public ScanCOnfiguration GetScanConfiguration(long siteId, string userlogin)
+        {
+            return workPermitDao.GetScanConfiguration(siteId, userlogin);
+        }
+        public int isPermitnumberExist(long siteId, string PermitNumber)
+        {
+            return workPermitDao.isPermitnumberExist(siteId, PermitNumber);
+        }
+
+       public List<string> GetAutoSearchWorkpermit(long siteid)
+        {
+            return workPermitDao.GetAutoSearchWorkpermit(siteid);
+        }
+        //End Mukesh -DMND0010609-OLT - Work permit Scan and Index
+    }
+}

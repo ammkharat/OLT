@@ -1,0 +1,416 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Windows.Forms;
+using Com.Suncor.Olt.Common.DTO.Excursions;
+using Com.Suncor.Olt.Common.Extension;
+using DevExpress.XtraSplashScreen;
+using Infragistics.Win;
+using Infragistics.Win.UltraWinGrid;
+
+namespace Com.Suncor.Olt.Client.Forms
+{
+    public partial class ExcursionResponseForm : BaseForm, IExcursionResponseForm
+    {
+        private string lastUpdatedComment;
+        private string toeOpmHistoryUrl;
+        private readonly SplashScreenManager splashScreenManager;
+
+        public ExcursionResponseForm()
+        {
+            components = null;
+            InitializeComponent();
+            excursionsToUpdateOltGrid.DisplayLayout.Override.RowSizing = RowSizing.AutoFree;
+            excursionsToUpdateOltGrid.DisplayLayout.Override.RowSizingAutoMaxLines = 3;
+            excursionsToUpdateOltGrid.DisplayLayout.Override.CellMultiLine = DefaultableBoolean.True;
+            excursionsToUpdateOltGrid.DisplayLayout.Override.CellAppearance.TextTrimming = TextTrimming.EllipsisWord;
+            excursionsToUpdateOltGrid.AfterCellUpdate += ExcursionsToUpdateOltGridOnAfterCellUpdate;
+            excursionsToUpdateOltGrid.AfterSelectChange += ExcursionsToUpdateOltGridOnAfterSelectChange;
+            viewTrendButton.Click += ViewTrendButtonOnClick;
+            toeDefinitionHistoryButton.Click += ToeHistoryButtonOnClick;
+            excursionsToUpdateOltGrid.AfterCellUpdate += ExcursionsToUpdateOltGridOnAfterCellUpdate;
+            copyLastResponseButton.Click += CopyLastResponseButtonOnClick;
+            toeEngineerCommentYes.Click += ToeEngineerCommentYesNoOnClick;
+            toeEngineerCommentNo.Click += ToeEngineerCommentYesNoOnClick;
+            cancelButton.Click += HandleCancelButtonClicked;
+            saveAndCloseButton.Click += HandleSaveButtonClicked;
+            splashScreenManager = new SplashScreenManager(ParentForm, typeof(WaitForm), true, true);
+
+        }
+
+        private ExcursionResponseEditingGridRowDTO SelectedExcursionResponseRow
+        {
+            get
+            {
+                var ultraGridRow = excursionsToUpdateOltGrid.ActiveRow;
+                if (ultraGridRow == null) return null;
+                var excursionResponseEditingGridRowDTO = ultraGridRow.ListObject as ExcursionResponseEditingGridRowDTO;
+                return excursionResponseEditingGridRowDTO;
+            }
+        }
+
+        public event EventHandler SaveButtonClicked;
+        public event EventHandler CancelButtonClicked;
+
+        public void ClearErrorProviders()
+        {
+            errorProvider.Clear();
+        }
+
+        public string ExcursionToeName
+        {
+            set { excursionToeNameLabelValue.Text = value; }
+        }
+
+        public string CurrentTagValue
+        {
+            set
+            {
+                if (InvokeRequired)
+                {
+                    BeginInvoke(new MethodInvoker(delegate { currentTagValueLabelValue.Text = value; }));
+                }
+                else
+                {
+                    currentTagValueLabelValue.Text = value;
+                }
+            }
+        }
+
+        public string ExcursionHistorianTag
+        {
+            set { excursionHistorianTagValueLabel.Text = value; }
+            get { return excursionHistorianTagValueLabel.Text; }
+        }
+
+        public string ExcursionUnitOfMeasure
+        {
+            set { excursionUnitValueLabel.Text = value; }
+        }
+
+        public string ToeOpmHistoryUrl
+        {
+            set
+            {
+                toeOpmHistoryUrl = value;
+                toeDefinitionHistoryButton.Enabled = !value.IsNullOrEmptyOrWhitespace();
+            }
+        }
+
+        public bool CopyToLog
+        {
+            get { return copyResponseToLogCheckBox.Checked; }
+        }
+
+        public bool EditEnabled
+        {
+            set
+            {
+                excursionsToUpdateOltGrid.DisplayLayout.Bands[0].Columns["ExcursionResponseComment"].CellActivation =
+                    (value) ? Activation.AllowEdit : Activation.NoEdit;
+                copyResponseToLogCheckBox.Enabled = value;
+                copyLastResponseButton.Enabled = value;
+                blindsRequiredPanel.Enabled = value;
+                saveAndCloseButton.Enabled = value;
+            }
+        }
+
+        public string ToeFloc
+        {
+            set { toeFunctionalLocationValueLabel.Text = value; }
+        }
+
+        public DateTime? ToePublishDate
+        {
+            set { toePublishDateValueLabel.Text = value.ToShortDateAndTimeStringOrEmptyString(); }
+        }
+
+        public bool IsToeDefinitionCommentingEnabled
+        {
+            set
+            {
+                toeEngineerCommentYes.Enabled = value;
+                toeEngineerCommentNo.Enabled = value;
+            }
+            get { return toeEngineerCommentYes.Enabled; }
+        }
+
+        public bool HasCommentForEngineer
+        {
+            set
+            {
+                toeEngineerCommentYes.Checked = value;
+                toeEngineerCommentNo.Checked = !value;
+                toeDefinitionOltCommentsForEngineerTextBox.Enabled = value;
+            }
+            get { return toeEngineerCommentYes.Checked; }
+        }
+
+        public string ToeCommentForEngineer
+        {
+            set { toeDefinitionOltCommentsForEngineerTextBox.Text = value; }
+            get { return toeDefinitionOltCommentsForEngineerTextBox.Text; }
+        }
+
+        public string ToeCauseOfDeviation
+        {
+            set { toeCauseOfDeviationOltTextBox.Text = value; }
+        }
+
+        public string ToeReferenceDocuments
+        {
+            set { documentLinksControl.Text = value; }
+        }
+
+        public string ToeConsequencesOfDeviation
+        {
+            set { toeConsequencesOfDeviationOltTextBox.Text = value; }
+        }
+
+        public string ToeCorrectiveActions
+        {
+            set { toeDefinitionCorrectiveActionOltTextBox.Text = value; }
+        }
+
+        public List<ExcursionResponseEditingGridRowDTO> ExcursionsToUpdate
+        {
+            get { return (List<ExcursionResponseEditingGridRowDTO>) excursionsToUpdateOltGrid.DataSource; }
+            set
+            {
+                excursionsToUpdateOltGrid.DataSource = value;
+                excursionsToUpdateOltGrid.ResetBindings();
+                viewTrendButton.Enabled = value.Count > 0 && !value.First().OpmTrendUrl.IsNullOrEmptyOrWhitespace();
+            }
+        }
+
+        public string MostRecentExcursionResponseComment
+        {
+            set { lastUpdatedComment = value; }
+        }
+
+        public void SetErrorForMissingResponses()
+        {
+            errorProvider.SetError(excursionsToUpdateOltGrid, "All Exursions must have a Response");
+        }
+
+        public void SetErrorForMissingToeCommentForEngineer()
+        {
+            errorProvider.SetError(toeDefinitionOltCommentsForEngineerTextBox,
+                "Comment for Engineer is required when Yes is checked");
+        }
+
+        public event Action HistoryButtonClicked;
+
+        private void HandleSaveButtonClicked(object sender, EventArgs e)
+        {
+            if (SaveButtonClicked != null)
+            {
+                splashScreenManager.ShowWaitForm();
+                SaveButtonClicked(sender, e);
+                splashScreenManager.CloseWaitForm();
+                splashScreenManager.WaitForSplashFormClose();    
+            }
+        }
+
+        private void HandleCancelButtonClicked(object sender, EventArgs e)
+        {
+            if (CancelButtonClicked != null)
+            {
+                CancelButtonClicked(sender, e);
+            }
+        }
+
+        private void ToeEngineerCommentYesNoOnClick(object sender, EventArgs eventArgs)
+        {
+            if (!toeDefinitionOltCommentsForEngineerTextBox.Text.IsNullOrEmptyOrWhitespace() &&
+                toeEngineerCommentNo.Checked)
+            {
+                toeDefinitionOltCommentsForEngineerTextBox.Text = null;
+            }
+
+            ToggleComments();
+        }
+
+        private void ToggleComments()
+        {
+            toeDefinitionOltCommentsForEngineerTextBox.Enabled = toeEngineerCommentYes.Checked;
+        }
+
+        private void CopyLastResponseButtonOnClick(object sender, EventArgs eventArgs)
+        {
+            if (lastUpdatedComment.IsNullOrEmptyOrWhitespace()) return;
+            excursionsToUpdateOltGrid.BeginUpdate();
+            var excursions = ExcursionsToUpdate;
+            foreach (var excursion in excursions)
+            {
+                if (excursion.ExcursionResponseComment.IsNullOrEmptyOrWhitespace())
+                {
+                    excursion.ExcursionResponseComment = lastUpdatedComment;
+                }
+            }
+            ExcursionsToUpdate = excursions;
+            excursionsToUpdateOltGrid.EndUpdate();
+        }
+
+        private void SetupTrendUrl()
+        {
+            viewTrendButton.Enabled = SelectedExcursionResponseRow != null &&
+                                      !SelectedExcursionResponseRow.OpmTrendUrl.IsNullOrEmptyOrWhitespace();
+        }
+
+        private void ExcursionsToUpdateOltGridOnAfterSelectChange(object sender,
+            AfterSelectChangeEventArgs afterSelectChangeEventArgs)
+        {
+            SetupTrendUrl();
+        }
+
+        private void ViewTrendButtonOnClick(object sender, EventArgs eventArgs)
+        {
+            if (SelectedExcursionResponseRow != null &&
+                !SelectedExcursionResponseRow.OpmTrendUrl.IsNullOrEmptyOrWhitespace())
+            {
+                UIUtils.LaunchURL(SelectedExcursionResponseRow.OpmTrendUrl);
+            }
+        }
+
+        private void ToeHistoryButtonOnClick(object sender, EventArgs eventArgs)
+        {
+            if (toeOpmHistoryUrl.IsNullOrEmptyOrWhitespace()) return;
+            UIUtils.LaunchURL(toeOpmHistoryUrl);
+        }
+
+
+        private void ExcursionsToUpdateOltGridOnAfterCellUpdate(object sender, CellEventArgs cellEventArgs)
+        {
+            var ultraGridCell = cellEventArgs.Cell;
+            ultraGridCell.Row.PerformAutoSize();
+            if (ultraGridCell.Column.Key == "ExcursionResponseComment" &&
+                !ultraGridCell.Text.IsNullOrEmptyOrWhitespace())
+            {
+                lastUpdatedComment = ultraGridCell.Text;
+            }
+        }
+//Added by Vibhor : RITM0581488 -  Transferring OLT data to OPM
+
+        private void excursionsToUpdateOltGrid_InitializeLayout(object sender, InitializeLayoutEventArgs e)
+        {
+             foreach (UltraGridColumn column in e.Layout.Bands[0].Columns)
+             {
+                 string key = column.Key;
+
+                 switch (key)
+                 {
+                     case "Assest":
+                         ValueList vl = new ValueList();
+                         vl.ValueListItems.Add(1, "Shovels");
+                         vl.ValueListItems.Add(2, "Shift Change");
+                         vl.ValueListItems.Add(3, "Trucks");
+                         vl.ValueListItems.Add(4, "Support Equipment");
+                         vl.ValueListItems.Add(5, "Incident");
+                         vl.ValueListItems.Add(6, "Crushing Plant 1");
+                         vl.ValueListItems.Add(7, "Crushing Plant 2");
+                         vl.ValueListItems.Add(8, "Slurry Prep 1");
+                         vl.ValueListItems.Add(9, "Slurry Prep 2");
+                         vl.ValueListItems.Add(10, "Slurry Prep 3");
+                         vl.ValueListItems.Add(11, "Extraction Train 1");
+                         vl.ValueListItems.Add(12, "Extraction Train 2");
+                         vl.ValueListItems.Add(13, "Tailings 1");
+                         vl.ValueListItems.Add(14, "Tailings 2");
+                         vl.ValueListItems.Add(15, "Tailings 3");
+                         vl.ValueListItems.Add(16, "Secondary");
+                         vl.ValueListItems.Add(17, "Utilities");
+                         vl.ValueListItems.Add(18, "Ore");
+                         vl.ValueListItems.Add(19, "Other");
+
+                         column.ValueList = vl;
+                         break;
+                 }
+
+                 switch (key)
+
+                 {
+                     case "Code":
+                         ValueList vl = new ValueList();
+
+                         vl.ValueListItems.Add(1,"GET - Replace/Repair");
+vl.ValueListItems.Add(2,"Shovel Move/Relocation");
+vl.ValueListItems.Add(3,"Cable/Utility Work ");
+vl.ValueListItems.Add(4,"Shovel Availability ");
+vl.ValueListItems.Add(5,"Frozen Lumps");
+vl.ValueListItems.Add(6,"Damage");
+vl.ValueListItems.Add(7,"Having Bucket Cleaned");
+vl.ValueListItems.Add(8,"Stuck");
+vl.ValueListItems.Add(9,"High D50");
+vl.ValueListItems.Add(10,"High Fines");
+vl.ValueListItems.Add(11,"Split face");
+vl.ValueListItems.Add(12,"Waste");
+vl.ValueListItems.Add(13,"Other blend restriction");
+vl.ValueListItems.Add(14,"Air Compressor/Hydraulics/Mechanical ");
+vl.ValueListItems.Add(15,"Face Prep/Overhang/Pit Clean up");
+vl.ValueListItems.Add(16,"Other");
+vl.ValueListItems.Add(17,"Safety stand down");
+vl.ValueListItems.Add(18,"Park-up Congestion/Start up Delay");
+vl.ValueListItems.Add(19,"Shift Change Bus/Truck Availability ");
+vl.ValueListItems.Add(20,"Soft pit conditions");
+vl.ValueListItems.Add(21,"Visibility (Dust/Dawn/Dusk)");
+vl.ValueListItems.Add(22,"Long Haul/Roads/Routes");
+vl.ValueListItems.Add(23,"Operators");
+vl.ValueListItems.Add(24,"Availability");
+vl.ValueListItems.Add(25,"AHS");
+vl.ValueListItems.Add(26,"Haul road restriction");
+vl.ValueListItems.Add(27,"Dozer");
+vl.ValueListItems.Add(28,"RTD");
+vl.ValueListItems.Add(29,"Loader");
+vl.ValueListItems.Add(30,"Excavator");
+vl.ValueListItems.Add(31,"EMS Entry/Emergency in Mine");
+vl.ValueListItems.Add(32,"Fire");
+vl.ValueListItems.Add(33,"Power Supply");
+vl.ValueListItems.Add(34,"Equipment Damage ");
+vl.ValueListItems.Add(35,"Right of Way/Mine Rule Violation");
+vl.ValueListItems.Add(36,"Weather");
+vl.ValueListItems.Add(37,"Sizer");
+vl.ValueListItems.Add(38,"Conveyor");
+vl.ValueListItems.Add(39,"Apron Feeder");
+vl.ValueListItems.Add(40,"Voith Coupling");
+vl.ValueListItems.Add(41,"Back feeding");
+vl.ValueListItems.Add(42,"Pluggage");
+vl.ValueListItems.Add(43,"RWS");
+vl.ValueListItems.Add(44,"HT pump speed");
+vl.ValueListItems.Add(45,"HT pump motor load");
+vl.ValueListItems.Add(46,"HT Pressure");
+vl.ValueListItems.Add(47,"Rupture disc/leaks");
+vl.ValueListItems.Add(48,"Instrument Air");
+vl.ValueListItems.Add(49,"PSC UF Velocity");
+vl.ValueListItems.Add(50,"PSC UF Density");
+vl.ValueListItems.Add(51,"PSC UF Pump Performance");
+vl.ValueListItems.Add(52,"High Middlings Density");
+vl.ValueListItems.Add(53,"Tertiary's");
+vl.ValueListItems.Add(54,"Secondary's");
+vl.ValueListItems.Add(55,"Cyclopak/Thickener bypass");
+vl.ValueListItems.Add(56,"Leak");
+vl.ValueListItems.Add(57,"Line pressure");
+vl.ValueListItems.Add(58,"Tailings Density");
+vl.ValueListItems.Add(59,"Flow");
+vl.ValueListItems.Add(60,"Pump Speed");
+vl.ValueListItems.Add(61,"Pump Motor Load");
+vl.ValueListItems.Add(62,"leaks (include rupture disk events)");
+vl.ValueListItems.Add(63,"delay in RTS");
+vl.ValueListItems.Add(64,"Pacing froth inventory");
+vl.ValueListItems.Add(65,"Fouling/skin temps");
+vl.ValueListItems.Add(66,"Unplanned maintenance");
+vl.ValueListItems.Add(67,"CLCW");
+vl.ValueListItems.Add(68,"Utility Instrument Air");
+vl.ValueListItems.Add(69,"Steam");
+vl.ValueListItems.Add(70,"Power Supply");
+vl.ValueListItems.Add(71,"Hot Process Water");
+vl.ValueListItems.Add(72,"Process Effected Water");
+
+
+
+                         column.ValueList = vl;
+                         break;
+                 }
+             }
+        }
+    }
+}

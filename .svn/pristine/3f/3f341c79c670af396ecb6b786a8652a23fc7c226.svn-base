@@ -1,0 +1,5 @@
+
+IF NOT EXISTS (SELECT COLUMN_NAME FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'DocumentLink' AND COLUMN_NAME = 'PermitRequestFortHillsId')
+BEGIN
+    ALTER TABLE DocumentLink ADD PermitRequestFortHillsId bigint NULL;  
+END

@@ -1,0 +1,49 @@
+﻿DROP INDEX [IDX_SummaryLog_Id_CreatedDateTime]
+ON [dbo].[SummaryLog];
+GO
+
+DROP INDEX [IDX_SummaryLog_Deleted_CreatedDateTime]
+ON [dbo].[SummaryLog];
+GO
+
+CREATE NONCLUSTERED INDEX [IDX_SummaryLog_ReplyToLogId]
+ON [dbo].[SummaryLog]
+([ReplyToLogId])
+WHERE (DELETED = 0)
+WITH
+(
+PAD_INDEX = OFF,
+FILLFACTOR = 100,
+IGNORE_DUP_KEY = OFF,
+STATISTICS_NORECOMPUTE = OFF,
+ONLINE = OFF,
+ALLOW_ROW_LOCKS = ON,
+ALLOW_PAGE_LOCKS = ON,
+DATA_COMPRESSION = NONE,
+DROP_EXISTING = ON
+)
+ON [PRIMARY];
+GO
+
+CREATE NONCLUSTERED INDEX [IDX_SummaryLog_DTO]
+ON [dbo].[SummaryLog]
+([CreatedDateTime] , [Id] , [CreationUserShiftPatternId])
+INCLUDE ([CreatedByUserId], [WorkAssignmentId])
+WHERE (DELETED = 0)
+WITH
+(
+PAD_INDEX = OFF,
+FILLFACTOR = 100,
+IGNORE_DUP_KEY = OFF,
+STATISTICS_NORECOMPUTE = OFF,
+ONLINE = OFF,
+ALLOW_ROW_LOCKS = ON,
+ALLOW_PAGE_LOCKS = ON,
+DATA_COMPRESSION = NONE,
+DROP_EXISTING = ON
+)
+ON [PRIMARY];
+
+
+GO
+

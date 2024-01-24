@@ -1,0 +1,6 @@
+﻿ALTER TABLE ActionItemDefinitionHistory
+  ADD GN75BId BIGINT SPARSE NULL
+
+
+GO
+

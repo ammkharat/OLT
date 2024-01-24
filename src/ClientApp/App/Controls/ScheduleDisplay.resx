@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="oltLabel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 13</value>
+  </data>
+  <data name="endTimeLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>127, 23</value>
+  </data>
+  <data name="&gt;&gt;endDateLabel.Name" xml:space="preserve">
+    <value>endDateLabel</value>
+  </data>
+  <data name="&gt;&gt;oltLabel1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="oltLabel1.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.UserControl, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="startTimeLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>63, 13</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="RangeGroupBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;startDateLabel.Parent" xml:space="preserve">
+    <value>RangeGroupBox</value>
+  </data>
+  <data name="startTimeLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="oltLabel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 23</value>
+  </data>
+  <data name="PatternGroupBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;oltLabel1.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Com.Suncor.Olt.Client, Version=4.10.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>ScheduleDisplay</value>
+  </data>
+  <data name="&gt;&gt;startTimeLabel.Name" xml:space="preserve">
+    <value>startTimeLabel</value>
+  </data>
+  <data name="&gt;&gt;PatternGroupBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;oltLabel1.Parent" xml:space="preserve">
+    <value>PatternGroupBox</value>
+  </data>
+  <data name="endDateLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;startTimeLabel.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;endDateLabel.Parent" xml:space="preserve">
+    <value>RangeGroupBox</value>
+  </data>
+  <data name="&gt;&gt;startTimeData.Parent" xml:space="preserve">
+    <value>TimeGroupBox</value>
+  </data>
+  <data name="&gt;&gt;startTimeData.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;TimeGroupBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltGroupBox, Com.Suncor.Olt.Client, Version=4.10.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;RangeGroupBox.Name" xml:space="preserve">
+    <value>RangeGroupBox</value>
+  </data>
+  <data name="endTimeData.Text" xml:space="preserve">
+    <value>13:45</value>
+  </data>
+  <data name="endDateLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="startDateLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 13</value>
+  </data>
+  <data name="endTimeData.Location" type="System.Drawing.Point, System.Drawing">
+    <value>180, 23</value>
+  </data>
+  <data name="&gt;&gt;oltLabel1.Name" xml:space="preserve">
+    <value>oltLabel1</value>
+  </data>
+  <data name="endTimeLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="occursData.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;endDateLabel.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="TimeGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>311, 0</value>
+  </data>
+  <data name="startDateLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="startTimeData.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;PatternGroupBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltGroupBox, Com.Suncor.Olt.Client, Version=4.10.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;endDateLabel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Com.Suncor.Olt.Client, Version=4.10.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="occursData.Location" type="System.Drawing.Point, System.Drawing">
+    <value>53, 23</value>
+  </data>
+  <data name="occursData.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="startTimeLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;endTimeLabel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Com.Suncor.Olt.Client, Version=4.10.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="PatternGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>551, 48</value>
+  </data>
+  <data name="startTimeLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 23</value>
+  </data>
+  <data name="&gt;&gt;startDateLabel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Com.Suncor.Olt.Client, Version=4.10.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="endDateData.Location" type="System.Drawing.Point, System.Drawing">
+    <value>210, 23</value>
+  </data>
+  <data name="oltLabel1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;endDateData.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabelData, Com.Suncor.Olt.Client, Version=4.10.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="startDateLabel.Text" xml:space="preserve">
+    <value>Start Date :</value>
+  </data>
+  <data name="endDateLabel.Text" xml:space="preserve">
+    <value>End Date :</value>
+  </data>
+  <data name="&gt;&gt;endTimeData.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="endDateData.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;startTimeLabel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Com.Suncor.Olt.Client, Version=4.10.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="startTimeData.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;startTimeData.Name" xml:space="preserve">
+    <value>startTimeData</value>
+  </data>
+  <data name="&gt;&gt;endDateData.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="startTimeData.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 13</value>
+  </data>
+  <data name="&gt;&gt;startTimeLabel.Parent" xml:space="preserve">
+    <value>TimeGroupBox</value>
+  </data>
+  <data name="endDateLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>152, 23</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="&gt;&gt;endTimeLabel.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;endTimeData.Parent" xml:space="preserve">
+    <value>TimeGroupBox</value>
+  </data>
+  <data name="&gt;&gt;RangeGroupBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltGroupBox, Com.Suncor.Olt.Client, Version=4.10.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;PatternGroupBox.Name" xml:space="preserve">
+    <value>PatternGroupBox</value>
+  </data>
+  <data name="&gt;&gt;TimeGroupBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="RangeGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;startDateLabel.Name" xml:space="preserve">
+    <value>startDateLabel</value>
+  </data>
+  <data name="&gt;&gt;startTimeData.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabelData, Com.Suncor.Olt.Client, Version=4.10.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;TimeGroupBox.Name" xml:space="preserve">
+    <value>TimeGroupBox</value>
+  </data>
+  <data name="&gt;&gt;RangeGroupBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="endTimeLabel.Text" xml:space="preserve">
+    <value>End Time :</value>
+  </data>
+  <data name="&gt;&gt;PatternGroupBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="RangeGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>305, 48</value>
+  </data>
+  <data name="endDateData.Text" xml:space="preserve">
+    <value>25 Dec 2005</value>
+  </data>
+  <data name="endDateData.Size" type="System.Drawing.Size, System.Drawing">
+    <value>67, 13</value>
+  </data>
+  <data name="PatternGroupBox.Text" xml:space="preserve">
+    <value>Recurrence Pattern</value>
+  </data>
+  <data name="endTimeLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;endTimeData.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabelData, Com.Suncor.Olt.Client, Version=4.10.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="startDateData.Text" xml:space="preserve">
+    <value>25 Dec 2005</value>
+  </data>
+  <data name="RangeGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="startDateLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 23</value>
+  </data>
+  <data name="&gt;&gt;occursData.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;endTimeLabel.Parent" xml:space="preserve">
+    <value>TimeGroupBox</value>
+  </data>
+  <data name="&gt;&gt;endTimeLabel.Name" xml:space="preserve">
+    <value>endTimeLabel</value>
+  </data>
+  <data name="endTimeLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>57, 13</value>
+  </data>
+  <data name="&gt;&gt;occursData.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabelData, Com.Suncor.Olt.Client, Version=4.10.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="startTimeData.Text" xml:space="preserve">
+    <value>12:45</value>
+  </data>
+  <data name="endTimeData.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="TimeGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>240, 48</value>
+  </data>
+  <data name="&gt;&gt;occursData.Parent" xml:space="preserve">
+    <value>PatternGroupBox</value>
+  </data>
+  <data name="&gt;&gt;endDateData.Name" xml:space="preserve">
+    <value>endDateData</value>
+  </data>
+  <data name="&gt;&gt;TimeGroupBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;endDateData.Parent" xml:space="preserve">
+    <value>RangeGroupBox</value>
+  </data>
+  <data name="TimeGroupBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="startTimeData.Location" type="System.Drawing.Point, System.Drawing">
+    <value>66, 23</value>
+  </data>
+  <data name="RangeGroupBox.Text" xml:space="preserve">
+    <value>Range of Recurrence</value>
+  </data>
+  <data name="startDateData.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="endDateLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>58, 13</value>
+  </data>
+  <data name="endDateData.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;endTimeData.Name" xml:space="preserve">
+    <value>endTimeData</value>
+  </data>
+  <data name="occursData.Text" xml:space="preserve">
+    <value>First day of Jan, March, May</value>
+  </data>
+  <data name="endTimeData.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="startTimeLabel.Text" xml:space="preserve">
+    <value>Start Time :</value>
+  </data>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>551, 105</value>
+  </data>
+  <data name="&gt;&gt;RangeGroupBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="startDateData.Size" type="System.Drawing.Size, System.Drawing">
+    <value>67, 13</value>
+  </data>
+  <data name="PatternGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;startDateLabel.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;startDateData.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;startDateData.Name" xml:space="preserve">
+    <value>startDateData</value>
+  </data>
+  <data name="startDateData.Location" type="System.Drawing.Point, System.Drawing">
+    <value>67, 23</value>
+  </data>
+  <data name="&gt;&gt;occursData.Name" xml:space="preserve">
+    <value>occursData</value>
+  </data>
+  <data name="&gt;&gt;startDateData.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabelData, Com.Suncor.Olt.Client, Version=4.10.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="startDateData.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TimeGroupBox.Text" xml:space="preserve">
+    <value>Action Time</value>
+  </data>
+  <data name="startDateLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="PatternGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 53</value>
+  </data>
+  <data name="oltLabel1.Text" xml:space="preserve">
+    <value>Occurs :</value>
+  </data>
+  <data name="endTimeData.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 13</value>
+  </data>
+  <data name="TimeGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;startDateData.Parent" xml:space="preserve">
+    <value>RangeGroupBox</value>
+  </data>
+  <data name="occursData.Size" type="System.Drawing.Size, System.Drawing">
+    <value>145, 13</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+</root>

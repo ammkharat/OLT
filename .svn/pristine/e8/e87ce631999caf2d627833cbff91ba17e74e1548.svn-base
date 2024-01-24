@@ -1,0 +1,68 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using Com.Suncor.Olt.Client.Forms;
+using Com.Suncor.Olt.Common.Domain;
+
+namespace Com.Suncor.Olt.Client.Presenters
+{
+    class MarkAsTemplateNameFormPresenter
+    {
+        private readonly IMarkAsTemplateNameForm view;
+        public string WpTemplatename;
+
+        public MarkAsTemplateNameFormPresenter()
+        {
+            
+        }
+        public MarkAsTemplateNameFormPresenter(IMarkAsTemplateNameForm view)
+        {
+            this.view = view;
+            //List<WorkAssignment> assignments = service.QueryBySite(ClientSession.GetUserContext().Site);
+            
+        }
+
+        public void HandleSelectButtonClicked(object sender, EventArgs e)
+        {
+            
+            bool flag = false;
+            view.ClearError();
+            if (view.WorkPermitTemplateName == String.Empty)
+            {
+                view.SetErrorForTemplateName();
+                flag = true;
+            }
+            if (view.Category == null)
+            {
+                view.SetErrorForCategories();
+                flag = true;
+            }
+             if (!view.Global && ! view.Individual)
+            {
+                view.SetErrorForGlobal();
+                flag = true;
+            }
+             if (!view.Global && !view.Individual)
+             {
+                 view.SetErrorForIndividual();
+                 flag = true;
+             }
+            if (flag == false)
+            {
+                WPname = view.WorkPermitTemplateName;
+                view.Close();
+            }
+        }
+        public void HandleCancelButtonClicked(object sender, EventArgs e)
+        {
+         
+            view.ClearError();
+            view.Close();
+        }
+
+        
+
+        public string WPname { get; set; }
+    }
+}

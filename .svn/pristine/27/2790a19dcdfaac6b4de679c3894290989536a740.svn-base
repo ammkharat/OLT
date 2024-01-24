@@ -1,0 +1,789 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="openFileDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="oltchklstPermityType.HorizontalScrollbar" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="oltchklstPermityType.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 45</value>
+  </data>
+  <data name="oltchklstPermityType.Size" type="System.Drawing.Size, System.Drawing">
+    <value>311, 34</value>
+  </data>
+  <data name="oltchklstPermityType.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;oltchklstPermityType.Name" xml:space="preserve">
+    <value>oltchklstPermityType</value>
+  </data>
+  <data name="&gt;&gt;oltchklstPermityType.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckedListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;oltchklstPermityType.Parent" xml:space="preserve">
+    <value>OLTgrpboxPermitspecifi</value>
+  </data>
+  <data name="&gt;&gt;oltchklstPermityType.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="txtPermitNumber.Location" type="System.Drawing.Point, System.Drawing">
+    <value>107, 19</value>
+  </data>
+  <data name="txtPermitNumber.Size" type="System.Drawing.Size, System.Drawing">
+    <value>167, 20</value>
+  </data>
+  <data name="txtPermitNumber.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;txtPermitNumber.Name" xml:space="preserve">
+    <value>txtPermitNumber</value>
+  </data>
+  <data name="&gt;&gt;txtPermitNumber.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltTextBox, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;txtPermitNumber.Parent" xml:space="preserve">
+    <value>OLTgrpboxPermitspecifi</value>
+  </data>
+  <data name="&gt;&gt;txtPermitNumber.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="oltPermitNumber.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="oltPermitNumber.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 22</value>
+  </data>
+  <data name="oltPermitNumber.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 13</value>
+  </data>
+  <data name="oltPermitNumber.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="oltPermitNumber.Text" xml:space="preserve">
+    <value>Permit Number</value>
+  </data>
+  <data name="&gt;&gt;oltPermitNumber.Name" xml:space="preserve">
+    <value>oltPermitNumber</value>
+  </data>
+  <data name="&gt;&gt;oltPermitNumber.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;oltPermitNumber.Parent" xml:space="preserve">
+    <value>OLTgrpboxPermitspecifi</value>
+  </data>
+  <data name="&gt;&gt;oltPermitNumber.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="OLTgrpboxPermitspecifi.Location" type="System.Drawing.Point, System.Drawing">
+    <value>224, 11</value>
+  </data>
+  <data name="OLTgrpboxPermitspecifi.Size" type="System.Drawing.Size, System.Drawing">
+    <value>326, 86</value>
+  </data>
+  <data name="OLTgrpboxPermitspecifi.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;OLTgrpboxPermitspecifi.Name" xml:space="preserve">
+    <value>OLTgrpboxPermitspecifi</value>
+  </data>
+  <data name="&gt;&gt;OLTgrpboxPermitspecifi.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltGroupBox, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;OLTgrpboxPermitspecifi.Parent" xml:space="preserve">
+    <value>grpPermitselection</value>
+  </data>
+  <data name="&gt;&gt;OLTgrpboxPermitspecifi.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="oltGroupBox3.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="oltRadioAuotmatic.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="oltRadioAuotmatic.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="oltRadioAuotmatic.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="oltRadioAuotmatic.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 15</value>
+  </data>
+  <data name="oltRadioAuotmatic.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 17</value>
+  </data>
+  <data name="oltRadioAuotmatic.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="oltRadioAuotmatic.Text" xml:space="preserve">
+    <value>Automatic</value>
+  </data>
+  <data name="&gt;&gt;oltRadioAuotmatic.Name" xml:space="preserve">
+    <value>oltRadioAuotmatic</value>
+  </data>
+  <data name="&gt;&gt;oltRadioAuotmatic.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltRadioButton, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;oltRadioAuotmatic.Parent" xml:space="preserve">
+    <value>oltGroupBox3</value>
+  </data>
+  <data name="&gt;&gt;oltRadioAuotmatic.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="oltRadiobuttonPermitSpecific.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="oltRadiobuttonPermitSpecific.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="oltRadiobuttonPermitSpecific.Location" type="System.Drawing.Point, System.Drawing">
+    <value>103, 15</value>
+  </data>
+  <data name="oltRadiobuttonPermitSpecific.Size" type="System.Drawing.Size, System.Drawing">
+    <value>94, 17</value>
+  </data>
+  <data name="oltRadiobuttonPermitSpecific.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="oltRadiobuttonPermitSpecific.Text" xml:space="preserve">
+    <value>Permit Specific</value>
+  </data>
+  <data name="&gt;&gt;oltRadiobuttonPermitSpecific.Name" xml:space="preserve">
+    <value>oltRadiobuttonPermitSpecific</value>
+  </data>
+  <data name="&gt;&gt;oltRadiobuttonPermitSpecific.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltRadioButton, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;oltRadiobuttonPermitSpecific.Parent" xml:space="preserve">
+    <value>oltGroupBox3</value>
+  </data>
+  <data name="&gt;&gt;oltRadiobuttonPermitSpecific.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="oltGroupBox3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 8</value>
+  </data>
+  <data name="oltGroupBox3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>206, 44</value>
+  </data>
+  <data name="oltGroupBox3.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;oltGroupBox3.Name" xml:space="preserve">
+    <value>oltGroupBox3</value>
+  </data>
+  <data name="&gt;&gt;oltGroupBox3.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltGroupBox, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;oltGroupBox3.Parent" xml:space="preserve">
+    <value>grpPermitselection</value>
+  </data>
+  <data name="&gt;&gt;oltGroupBox3.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="grpPermitselection.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 5</value>
+  </data>
+  <data name="grpPermitselection.Size" type="System.Drawing.Size, System.Drawing">
+    <value>556, 103</value>
+  </data>
+  <data name="grpPermitselection.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;grpPermitselection.Name" xml:space="preserve">
+    <value>grpPermitselection</value>
+  </data>
+  <data name="&gt;&gt;grpPermitselection.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;grpPermitselection.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;grpPermitselection.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="oltGroupBox5.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="btnClose.Location" type="System.Drawing.Point, System.Drawing">
+    <value>128, 230</value>
+  </data>
+  <data name="btnClose.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 25</value>
+  </data>
+  <data name="btnClose.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="btnClose.Text" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="&gt;&gt;btnClose.Name" xml:space="preserve">
+    <value>btnClose</value>
+  </data>
+  <data name="&gt;&gt;btnClose.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltButton, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;btnClose.Parent" xml:space="preserve">
+    <value>oltGroupBox5</value>
+  </data>
+  <data name="&gt;&gt;btnClose.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="oltBtnAttachDocument.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="oltBtnAttachDocument.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 230</value>
+  </data>
+  <data name="oltBtnAttachDocument.Size" type="System.Drawing.Size, System.Drawing">
+    <value>110, 25</value>
+  </data>
+  <data name="oltBtnAttachDocument.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="oltBtnAttachDocument.Text" xml:space="preserve">
+    <value>Attach document</value>
+  </data>
+  <data name="&gt;&gt;oltBtnAttachDocument.Name" xml:space="preserve">
+    <value>oltBtnAttachDocument</value>
+  </data>
+  <data name="&gt;&gt;oltBtnAttachDocument.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltButton, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;oltBtnAttachDocument.Parent" xml:space="preserve">
+    <value>oltGroupBox5</value>
+  </data>
+  <data name="&gt;&gt;oltBtnAttachDocument.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="OLTDGVWorkPermit.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <metadata name="ColCheckBox.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="ColCheckBox.HeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <metadata name="WorkPermit.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="WorkPermit.HeaderText" xml:space="preserve">
+    <value>Work Permit Number</value>
+  </data>
+  <metadata name="File.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="File.HeaderText" xml:space="preserve">
+    <value>File</value>
+  </data>
+  <metadata name="Comment.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="Comment.HeaderText" xml:space="preserve">
+    <value>Comment</value>
+  </data>
+  <metadata name="DocumentTypes.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="DocumentTypes.HeaderText" xml:space="preserve">
+    <value>DocumentType</value>
+  </data>
+  <data name="OLTDGVWorkPermit.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="OLTDGVWorkPermit.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 35</value>
+  </data>
+  <data name="OLTDGVWorkPermit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>551, 183</value>
+  </data>
+  <data name="OLTDGVWorkPermit.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;OLTDGVWorkPermit.Name" xml:space="preserve">
+    <value>OLTDGVWorkPermit</value>
+  </data>
+  <data name="&gt;&gt;OLTDGVWorkPermit.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltDataGridView, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;OLTDGVWorkPermit.Parent" xml:space="preserve">
+    <value>oltGroupBox5</value>
+  </data>
+  <data name="&gt;&gt;OLTDGVWorkPermit.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="oltGroupBox5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 294</value>
+  </data>
+  <data name="oltGroupBox5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>562, 261</value>
+  </data>
+  <data name="oltGroupBox5.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="oltGroupBox5.Text" xml:space="preserve">
+    <value>Indexed Document</value>
+  </data>
+  <data name="&gt;&gt;oltGroupBox5.Name" xml:space="preserve">
+    <value>oltGroupBox5</value>
+  </data>
+  <data name="&gt;&gt;oltGroupBox5.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltGroupBox, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;oltGroupBox5.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;oltGroupBox5.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="oltGroupBox1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="oltScanandIndex.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 31</value>
+  </data>
+  <data name="oltScanandIndex.Size" type="System.Drawing.Size, System.Drawing">
+    <value>97, 25</value>
+  </data>
+  <data name="oltScanandIndex.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="oltScanandIndex.Text" xml:space="preserve">
+    <value>Scan and Index</value>
+  </data>
+  <data name="&gt;&gt;oltScanandIndex.Name" xml:space="preserve">
+    <value>oltScanandIndex</value>
+  </data>
+  <data name="&gt;&gt;oltScanandIndex.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltButton, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;oltScanandIndex.Parent" xml:space="preserve">
+    <value>oltGroupScanner</value>
+  </data>
+  <data name="&gt;&gt;oltScanandIndex.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="oltGroupScanner.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="oltGroupScanner.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 65</value>
+  </data>
+  <data name="oltGroupScanner.Size" type="System.Drawing.Size, System.Drawing">
+    <value>262, 90</value>
+  </data>
+  <data name="oltGroupScanner.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="oltGroupScanner.Text" xml:space="preserve">
+    <value>Scanner</value>
+  </data>
+  <data name="&gt;&gt;oltGroupScanner.Name" xml:space="preserve">
+    <value>oltGroupScanner</value>
+  </data>
+  <data name="&gt;&gt;oltGroupScanner.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltGroupBox, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;oltGroupScanner.Parent" xml:space="preserve">
+    <value>oltGroupBox1</value>
+  </data>
+  <data name="&gt;&gt;oltGroupScanner.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="oltGroupBox2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="OltRadioScanner.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="OltRadioScanner.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="OltRadioScanner.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="OltRadioScanner.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 15</value>
+  </data>
+  <data name="OltRadioScanner.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 17</value>
+  </data>
+  <data name="OltRadioScanner.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="OltRadioScanner.Text" xml:space="preserve">
+    <value>Scanner</value>
+  </data>
+  <data name="&gt;&gt;OltRadioScanner.Name" xml:space="preserve">
+    <value>OltRadioScanner</value>
+  </data>
+  <data name="&gt;&gt;OltRadioScanner.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltRadioButton, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;OltRadioScanner.Parent" xml:space="preserve">
+    <value>oltGroupBox2</value>
+  </data>
+  <data name="&gt;&gt;OltRadioScanner.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="oltRadioManual.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="oltRadioManual.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="oltRadioManual.Location" type="System.Drawing.Point, System.Drawing">
+    <value>90, 15</value>
+  </data>
+  <data name="oltRadioManual.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 17</value>
+  </data>
+  <data name="oltRadioManual.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="oltRadioManual.Text" xml:space="preserve">
+    <value>Manual</value>
+  </data>
+  <data name="&gt;&gt;oltRadioManual.Name" xml:space="preserve">
+    <value>oltRadioManual</value>
+  </data>
+  <data name="&gt;&gt;oltRadioManual.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltRadioButton, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;oltRadioManual.Parent" xml:space="preserve">
+    <value>oltGroupBox2</value>
+  </data>
+  <data name="&gt;&gt;oltRadioManual.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="oltGroupBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 16</value>
+  </data>
+  <data name="oltGroupBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>226, 43</value>
+  </data>
+  <data name="oltGroupBox2.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;oltGroupBox2.Name" xml:space="preserve">
+    <value>oltGroupBox2</value>
+  </data>
+  <data name="&gt;&gt;oltGroupBox2.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltGroupBox, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;oltGroupBox2.Parent" xml:space="preserve">
+    <value>oltGroupBox1</value>
+  </data>
+  <data name="&gt;&gt;oltGroupBox2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="oltGroupManual.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="btnManualScanIndex.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btnManualScanIndex.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 45</value>
+  </data>
+  <data name="btnManualScanIndex.Size" type="System.Drawing.Size, System.Drawing">
+    <value>103, 25</value>
+  </data>
+  <data name="btnManualScanIndex.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="btnManualScanIndex.Text" xml:space="preserve">
+    <value>Scan and Index</value>
+  </data>
+  <data name="&gt;&gt;btnManualScanIndex.Name" xml:space="preserve">
+    <value>btnManualScanIndex</value>
+  </data>
+  <data name="&gt;&gt;btnManualScanIndex.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltButton, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;btnManualScanIndex.Parent" xml:space="preserve">
+    <value>oltGroupManual</value>
+  </data>
+  <data name="&gt;&gt;btnManualScanIndex.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="oltBtnBrowse.Location" type="System.Drawing.Point, System.Drawing">
+    <value>196, 17</value>
+  </data>
+  <data name="oltBtnBrowse.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 23</value>
+  </data>
+  <data name="oltBtnBrowse.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="oltBtnBrowse.Text" xml:space="preserve">
+    <value>Browse</value>
+  </data>
+  <data name="&gt;&gt;oltBtnBrowse.Name" xml:space="preserve">
+    <value>oltBtnBrowse</value>
+  </data>
+  <data name="&gt;&gt;oltBtnBrowse.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltButton, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;oltBtnBrowse.Parent" xml:space="preserve">
+    <value>oltGroupManual</value>
+  </data>
+  <data name="&gt;&gt;oltBtnBrowse.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="txtFilePath.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 19</value>
+  </data>
+  <data name="txtFilePath.Size" type="System.Drawing.Size, System.Drawing">
+    <value>178, 20</value>
+  </data>
+  <data name="txtFilePath.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;txtFilePath.Name" xml:space="preserve">
+    <value>txtFilePath</value>
+  </data>
+  <data name="&gt;&gt;txtFilePath.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltTextBox, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;txtFilePath.Parent" xml:space="preserve">
+    <value>oltGroupManual</value>
+  </data>
+  <data name="&gt;&gt;txtFilePath.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="oltGroupManual.Location" type="System.Drawing.Point, System.Drawing">
+    <value>274, 65</value>
+  </data>
+  <data name="oltGroupManual.Size" type="System.Drawing.Size, System.Drawing">
+    <value>299, 90</value>
+  </data>
+  <data name="oltGroupManual.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="oltGroupManual.Text" xml:space="preserve">
+    <value>Manual</value>
+  </data>
+  <data name="&gt;&gt;oltGroupManual.Name" xml:space="preserve">
+    <value>oltGroupManual</value>
+  </data>
+  <data name="&gt;&gt;oltGroupManual.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltGroupBox, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;oltGroupManual.Parent" xml:space="preserve">
+    <value>oltGroupBox1</value>
+  </data>
+  <data name="&gt;&gt;oltGroupManual.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="oltGroupBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 114</value>
+  </data>
+  <data name="oltGroupBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>563, 171</value>
+  </data>
+  <data name="oltGroupBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="oltGroupBox1.Text" xml:space="preserve">
+    <value>Scan Document</value>
+  </data>
+  <data name="&gt;&gt;oltGroupBox1.Name" xml:space="preserve">
+    <value>oltGroupBox1</value>
+  </data>
+  <data name="&gt;&gt;oltGroupBox1.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltGroupBox, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;oltGroupBox1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;oltGroupBox1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <metadata name="errorProviderPermitValidate.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>157, 17</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>589, 597</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>ScanWorkPermit</value>
+  </data>
+  <data name="&gt;&gt;openFileDialog1.Name" xml:space="preserve">
+    <value>openFileDialog1</value>
+  </data>
+  <data name="&gt;&gt;openFileDialog1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.OpenFileDialog, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ColCheckBox.Name" xml:space="preserve">
+    <value>ColCheckBox</value>
+  </data>
+  <data name="&gt;&gt;ColCheckBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewCheckBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;WorkPermit.Name" xml:space="preserve">
+    <value>WorkPermit</value>
+  </data>
+  <data name="&gt;&gt;WorkPermit.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;File.Name" xml:space="preserve">
+    <value>File</value>
+  </data>
+  <data name="&gt;&gt;File.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewLinkColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Comment.Name" xml:space="preserve">
+    <value>Comment</value>
+  </data>
+  <data name="&gt;&gt;Comment.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DocumentTypes.Name" xml:space="preserve">
+    <value>DocumentTypes</value>
+  </data>
+  <data name="&gt;&gt;DocumentTypes.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;errorProviderPermitValidate.Name" xml:space="preserve">
+    <value>errorProviderPermitValidate</value>
+  </data>
+  <data name="&gt;&gt;errorProviderPermitValidate.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ErrorProvider, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>ScanWorkPermit</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.Forms.BaseForm, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+</root>

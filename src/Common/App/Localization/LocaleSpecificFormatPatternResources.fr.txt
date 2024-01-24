@@ -1,0 +1,20 @@
+# Short Date Pattern ("d" format specifier)
+ShortDatePattern=yyyy-MM-dd
+# Long Date Pattern ("D" format specifier) 
+LongDatePattern=ddd yyyy-MM-dd
+
+# Short Time Pattern ("t" format specifier) - Note. This isn't really 't'. 't' includes AM/PM, but we don't want to show AM/PM in our app. We want to force 24/hr time.
+ShortTimePattern=HH:mm
+# Long Time Pattern ("T" format specifier) 
+LongTimePattern=HH:mm:ss
+
+# This is equivalent to the "g" format specifier, but used by Excel and Infragistics which need the pattern, and not the .NET specifier.
+ShortDateShortTimePattern=yyyy-MM-dd HH:mm
+
+# Default Decimal
+ExcelDecimalFormat=#,??
+
+ExcelCurrencyFormat=$#.##0_);($#.##0)
+
+CurrencySymbol=$
+

@@ -1,0 +1,216 @@
+using System;
+using Com.Suncor.Olt.Common.Domain;
+using Com.Suncor.Olt.Common.Domain.WorkPermit;
+using Com.Suncor.Olt.Common.Localization;
+using Com.Suncor.Olt.Common.Utility;
+
+namespace Com.Suncor.Olt.Common.DTO
+{
+    [Serializable]
+    public class WorkPermitDTO : DomainObject, IHasStatus<WorkPermitStatus>
+    {
+        private readonly string approvedByFullNameWithUserName;
+        private readonly string craftOrTradeName;
+        private readonly string createdByFullNameWithUserName;
+        private readonly string functionalLocationName;
+        private readonly string jobStepsDescription;
+        private readonly string lastModifiedByFullNameWithUserName;
+        private readonly long? lastModifiedByUserId;
+        private readonly bool operations;
+        private readonly string permitNumber;
+        private readonly long sourceId;
+        private readonly DateTime startDateTime;
+        private readonly long statusId;
+        private readonly string statusName;
+        private readonly string workAssignment;
+        private readonly string workOrderDescription;
+        private readonly string workOrderNumber;
+        private readonly long workPermitTypeId;
+        private DateTime? endDateTime;
+
+        public WorkPermitDTO
+            (long id, long statusId, string statusName, string functionalLocationName,
+                string permitNumber, DateTime startDateTime, DateTime? endDateTime,
+                string jobStepsDescription, string workOrderDescription, string workOrderNumber, long workPermitTypeId,
+                long sourceId, bool isOperations, string craftOrTradeName, long? lastModifiedByUserId,
+                string createdByFullNameWithUserName, string lastModifiedByFullNameWithUserName,
+                string approvedByFullNameWithUserName, string workAssignment)
+        {
+            this.id = id;
+            this.statusId = statusId;
+            this.statusName = statusName;
+            this.functionalLocationName = functionalLocationName;
+            this.permitNumber = permitNumber;
+            this.startDateTime = startDateTime;
+            this.endDateTime = endDateTime;
+            this.jobStepsDescription = jobStepsDescription;
+            this.workOrderDescription = workOrderDescription;
+            this.workOrderNumber = workOrderNumber;
+            this.workPermitTypeId = workPermitTypeId;
+            this.sourceId = sourceId;
+            operations = isOperations;
+            this.craftOrTradeName = craftOrTradeName;
+            this.lastModifiedByUserId = lastModifiedByUserId;
+            this.createdByFullNameWithUserName = createdByFullNameWithUserName;
+            this.lastModifiedByFullNameWithUserName = lastModifiedByFullNameWithUserName;
+            this.approvedByFullNameWithUserName = approvedByFullNameWithUserName;
+            this.workAssignment = workAssignment;
+        }
+
+        public WorkPermitDTO(WorkPermit workPermit)
+            :
+                this
+                (
+                workPermit.Id.GetValueOrDefault(),
+                workPermit.WorkPermitStatus.Id.Value,
+                workPermit.WorkPermitStatus.Name,
+                workPermit.Specifics.FunctionalLocation.FullHierarchy,
+                workPermit.PermitNumber,
+                workPermit.Specifics.StartDateTime,
+                workPermit.Specifics.EndDateTime,
+                workPermit.Specifics.JobStepDescription,
+                workPermit.Specifics.WorkOrderDescription,
+                workPermit.Specifics.WorkOrderNumber,
+                workPermit.WorkPermitType.IdValue,
+                workPermit.Source.IdValue,
+                workPermit.IsOperations,
+                workPermit.Specifics.CraftOrTrade.Name,
+                workPermit.LastModifiedBy != null ? workPermit.LastModifiedBy.Id : null,
+                workPermit.CreatedBy != null ? workPermit.CreatedBy.FullNameWithUserName : string.Empty,
+                workPermit.LastModifiedBy != null ? workPermit.LastModifiedBy.FullNameWithUserName : string.Empty,
+                workPermit.ApprovedBy != null ? workPermit.ApprovedBy.FullNameWithUserName : string.Empty,
+                workPermit.WorkAssignment != null ? workPermit.WorkAssignment.Name : string.Empty
+                )
+        {
+        }
+
+        [IncludeInSearch]
+        public string CraftOrTradeName
+        {
+            get { return craftOrTradeName; }
+        }
+
+        public DateTime EndDateTime
+        {
+            get { return endDateTime.HasValue ? endDateTime.Value : DateTime.MaxValue; }
+        }
+
+        [IncludeInSearch]
+        public string FunctionalLocationName
+        {
+            get { return functionalLocationName; }
+        }
+
+        [IncludeInSearch]
+        public string PermitNumber
+        {
+            get { return permitNumber; }
+        }
+
+        [IncludeInSearch]
+        public DateTime StartDate
+        {
+            get { return new DateTime(StartDateTime.Year, StartDateTime.Month, StartDateTime.Day); }
+        }
+
+        [IncludeInSearch]
+        public DateTime StartTime
+        {
+            get { return startDateTime; }
+        }
+
+        public DateTime StartDateTime
+        {
+            get { return startDateTime; }
+        }
+
+        [IncludeInSearch]
+        public string StatusName
+        {
+            get { return statusName; }
+        }
+
+        public long StatusId
+        {
+            get { return statusId; }
+        }
+
+        public long? LastModifiedByUserId
+        {
+            get { return lastModifiedByUserId; }
+        }
+
+        [IncludeInSearch]
+        public string LastModifiedByFullNameWithUserName
+        {
+            get { return lastModifiedByFullNameWithUserName; }
+        }
+
+        public string CreatedByFullNameWithUserName
+        {
+            get { return createdByFullNameWithUserName; }
+        }
+
+        [IncludeInSearch]
+        public string ApprovedByFullNameWithUserName
+        {
+            get { return approvedByFullNameWithUserName; }
+        }
+
+        [IncludeInSearch]
+        public string JobStepsDescription
+        {
+            get { return jobStepsDescription; }
+        }
+
+        [IncludeInSearch]
+        public string WorkOrderDescription
+        {
+            get { return workOrderDescription; }
+        }
+
+        [IncludeInSearch]
+        public string WorkOrderNumber
+        {
+            get { return workOrderNumber; }
+        }
+
+        public string WorkPermitTypeName
+        {
+            get { return WorkPermitType.Get(workPermitTypeId).Name; }
+        }
+
+        [IncludeInSearch]
+        public WorkPermitType WorkPermitType
+        {
+            get { return WorkPermitType.Get(workPermitTypeId); }
+        }
+
+        [IncludeInSearch]
+        public string SourceName
+        {
+            get { return DataSource.GetById(sourceId).Name; }
+        }
+
+        public long SourceId
+        {
+            get { return sourceId; }
+        }
+
+        public bool Operations
+        {
+            get { return operations; }
+        }
+
+        [IncludeInSearch]
+        public string WorkAssignment
+        {
+            get { return string.IsNullOrEmpty(workAssignment) ? StringResources.NoData : workAssignment; }
+        }
+
+        public WorkPermitStatus Status
+        {
+            get { return WorkPermitStatus.Get(statusId); }
+        }
+    }
+}

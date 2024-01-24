@@ -1,0 +1,2130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="saveAndEmailButton.Text" xml:space="preserve">
+    <value>Save &amp;&amp; Email</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="oltGroupBox3.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="hasAttachmentsNoRadioButton.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="saveButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>461, 12</value>
+  </data>
+  <data name="&gt;&gt;oltLabel2.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="cancelButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="dateLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 23</value>
+  </data>
+  <data name="lastModifiedGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>426, 3</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="oltLabel8.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="oltLabel4.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="oltLabel6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 36</value>
+  </data>
+  <data name="approvalsGridControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>743, 123</value>
+  </data>
+  <data name="&gt;&gt;validFromDatePicker.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="oltLabel4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 19</value>
+  </data>
+  <data name="invisibleLabel.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="documentLinksControl.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="functionalLocationListBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 20</value>
+  </data>
+  <data name="oltLabel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>34, 13</value>
+  </data>
+  <data name="&gt;&gt;createdByUserLabel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="oltPanel3.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="hasAttachmentsNoRadioButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>38, 17</value>
+  </data>
+  <data name="createdDateLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 13</value>
+  </data>
+  <data name="approvalsGridControl.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;createdByUserLabel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Operator Log Tool, Version=4.20.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="documentLinksControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>291, 95</value>
+  </data>
+  <data name="&gt;&gt;functionalLocationListBox.Name" xml:space="preserve">
+    <value>functionalLocationListBox</value>
+  </data>
+  <data name="documentLinksControl.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="oltLabel3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>33, 13</value>
+  </data>
+  <data name="oltLabel5.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="hasBeenCommunicatedNoRadioButton.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="historyButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>14, 12</value>
+  </data>
+  <data name="&gt;&gt;lastModifiedDateLabel.Parent" xml:space="preserve">
+    <value>lastModifiedGroupBox</value>
+  </data>
+  <data name="documentLinksGroupBox.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="hasBeenCommunicatedNoRadioButton.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="hasBeenCommunicatedYesRadioButton.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="oltLabel4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>166, 13</value>
+  </data>
+  <data name="mainPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="functionalLocationGroupBox.Text" xml:space="preserve">
+    <value>Functional Locations</value>
+  </data>
+  <data name="oltLabel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 48</value>
+  </data>
+  <data name="&gt;&gt;hasBeenCommunicatedYesRadioButton.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="validFromTimePicker.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="hasAttachmentsYesRadioButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 0</value>
+  </data>
+  <data name="contentGroupBox.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="contentRichTextEditor.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>8, 3, 3, 3</value>
+  </data>
+  <data name="&gt;&gt;removeFunctionalLocatnButton.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltButton, Operator Log Tool, Version=4.20.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="createdByGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>417, 75</value>
+  </data>
+  <data name="&gt;&gt;historyButton.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltButton, Operator Log Tool, Version=4.20.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="documentLinksControl.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="oltLabel5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>198, 13</value>
+  </data>
+  <data name="cancelButton.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;approvalsGridControl.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;oltPanel4.Parent" xml:space="preserve">
+    <value>oltGroupBox1</value>
+  </data>
+  <data name="&gt;&gt;lastModifiedUserLabel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Operator Log Tool, Version=4.20.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;createdByUserLabel.Name" xml:space="preserve">
+    <value>createdByUserLabel</value>
+  </data>
+  <data name="documentLinksGroupBox.Text" xml:space="preserve">
+    <value>Document Links</value>
+  </data>
+  <data name="expandLinkLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;errorProvider.Name" xml:space="preserve">
+    <value>errorProvider</value>
+  </data>
+  <data name="oltLabel1.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="oltGroupBox3.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="oltLabel6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>129, 13</value>
+  </data>
+  <data name="csdReasonTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>381, 45</value>
+  </data>
+  <data name="saveButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>99, 23</value>
+  </data>
+  <data name="&gt;&gt;validToDatePicker.Name" xml:space="preserve">
+    <value>validToDatePicker</value>
+  </data>
+  <data name="&gt;&gt;oltPanel2.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltPanel, Operator Log Tool, Version=4.20.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="hasAttachmentsYesRadioButton.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;oltGroupBox3.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltGroupBox, Operator Log Tool, Version=4.20.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;removeFunctionalLocatnButton.Parent" xml:space="preserve">
+    <value>functionalLocationGroupBox</value>
+  </data>
+  <data name="pressureSafetyValveNoRadioButton.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="historyButton.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="oltLabel6.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel2.Name" xml:space="preserve">
+    <value>tableLayoutPanel2</value>
+  </data>
+  <data name="oltLabel7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>94, 13</value>
+  </data>
+  <data name="validFromDatePicker.Size" type="System.Drawing.Size, System.Drawing">
+    <value>128, 21</value>
+  </data>
+  <data name="estimatedBackInServiceLabel.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;dateLabel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Operator Log Tool, Version=4.20.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;createdDateLabel.Parent" xml:space="preserve">
+    <value>createdByGroupBox</value>
+  </data>
+  <data name="functionalLocationGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="createdByGroupBox.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="hasAttachmentsYesRadioButton.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="oltLabel3.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;oltLabel6.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;pressureSafetyValveYesRadioButton.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="mainPanel.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="createdByUserLabel.Text" xml:space="preserve">
+    <value>[created by user]</value>
+  </data>
+  <data name="documentLinksGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>317, 123</value>
+  </data>
+  <data name="csdReasonTextBox.ScrollBars" type="System.Windows.Forms.ScrollBars, System.Windows.Forms">
+    <value>Vertical</value>
+  </data>
+  <data name="&gt;&gt;validFromTimePicker.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltTimePicker, Operator Log Tool, Version=4.20.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="oltLabel3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="oltLabel2.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="removeFunctionalLocatnButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="&gt;&gt;lastModifiedUserLabel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="questionsAndActivePeriodTableLayoutPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>751, 134</value>
+  </data>
+  <data name="createdByUserLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;oltLabel8.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;pressureSafetyValveYesRadioButton.Name" xml:space="preserve">
+    <value>pressureSafetyValveYesRadioButton</value>
+  </data>
+  <data name="&gt;&gt;oltLabel2.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Operator Log Tool, Version=4.20.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;hasBeenCommunicatedNoRadioButton.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltRadioButton, Operator Log Tool, Version=4.20.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="mainPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="&gt;&gt;oltGroupBox3.Parent" xml:space="preserve">
+    <value>tableLayoutPanel2</value>
+  </data>
+  <data name="&gt;&gt;systemDefeatedLabel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Operator Log Tool, Version=4.20.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;oltPanel3.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltPanel, Operator Log Tool, Version=4.20.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="addFunctionalLocationButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="oltPanel4.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="validToTimePicker.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="functionalLocationListBox.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>FormMontrealCsdForm</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="functionalLocationListBox.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;cancelButton.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="createdByUserLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>45, 48</value>
+  </data>
+  <data name="&gt;&gt;op14GroupBox.Parent" xml:space="preserve">
+    <value>questionsAndActivePeriodTableLayoutPanel</value>
+  </data>
+  <data name="hasBeenCommunicatedNoRadioButton.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="oltLabel2.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;saveButton.Parent" xml:space="preserve">
+    <value>oltPanel1</value>
+  </data>
+  <data name="lastModifiedGroupBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel2.Parent" xml:space="preserve">
+    <value>mainPanel</value>
+  </data>
+  <data name="oltLabel7.Text" xml:space="preserve">
+    <value>Has Attachments?</value>
+  </data>
+  <data name="pressureSafetyValveYesRadioButton.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="invisibleLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;validToTimePicker.Parent" xml:space="preserve">
+    <value>oltGroupBox3</value>
+  </data>
+  <data name="oltLabel3.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="removeFunctionalLocatnButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="functionalLocationGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>418, 102</value>
+  </data>
+  <data name="contentRichTextEditor.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 25</value>
+  </data>
+  <data name="&gt;&gt;createdByGroupBox.Name" xml:space="preserve">
+    <value>createdByGroupBox</value>
+  </data>
+  <data name="&gt;&gt;oltPanel2.Parent" xml:space="preserve">
+    <value>oltGroupBox1</value>
+  </data>
+  <data name="oltLabel2.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;createdDateLabel.Name" xml:space="preserve">
+    <value>createdDateLabel</value>
+  </data>
+  <data name="tableLayoutPanel1.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="createdByGroupBox" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="lastModifiedGroupBox" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,56.77507,Percent,43.22493" /&gt;&lt;Rows Styles="Percent,50" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="questionsAndActivePeriodTableLayoutPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 216</value>
+  </data>
+  <data name="&gt;&gt;saveAndEmailButton.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="validToTimePicker.Size" type="System.Drawing.Size, System.Drawing">
+    <value>67, 21</value>
+  </data>
+  <data name="historyButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="&gt;&gt;oltLabel3.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Operator Log Tool, Version=4.20.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="oltLabel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>33, 13</value>
+  </data>
+  <data name="functionalLocationGroupBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="criticalSystemDefeatedTextBox.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="questionsAndActivePeriodTableLayoutPanel.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="cancelButton.Text" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="&gt;&gt;oltLabel7.Parent" xml:space="preserve">
+    <value>oltGroupBox1</value>
+  </data>
+  <data name="tableLayoutPanel2.ColumnCount" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="hasBeenCommunicatedNoRadioButton.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;estimatedBackInServiceLabel.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="tableLayoutPanel1.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;addFunctionalLocationButton.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltButton, Operator Log Tool, Version=4.20.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;validToTimePicker.Name" xml:space="preserve">
+    <value>validToTimePicker</value>
+  </data>
+  <data name="validToDatePicker.Location" type="System.Drawing.Point, System.Drawing">
+    <value>90, 54</value>
+  </data>
+  <data name="oltPanel2.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lastModifiedUserLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;oltLabel5.Name" xml:space="preserve">
+    <value>oltLabel5</value>
+  </data>
+  <data name="&gt;&gt;hasBeenCommunicatedYesRadioButton.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltRadioButton, Operator Log Tool, Version=4.20.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="pressureSafetyValveNoRadioButton.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;oltGroupBox3.Name" xml:space="preserve">
+    <value>oltGroupBox3</value>
+  </data>
+  <data name="hasBeenCommunicatedNoRadioButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>52, 0</value>
+  </data>
+  <data name="documentLinksGroupBox.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="oltLabel5.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;oltLabel1.Name" xml:space="preserve">
+    <value>oltLabel1</value>
+  </data>
+  <data name="saveButton.Text" xml:space="preserve">
+    <value>Save &amp;&amp; Close</value>
+  </data>
+  <data name="&gt;&gt;functionalLocationGroupBox.Parent" xml:space="preserve">
+    <value>tableLayoutPanel2</value>
+  </data>
+  <data name="oltPanel4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>236, 41</value>
+  </data>
+  <data name="functionalLocationGroupBox.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="oltLabel2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="approvalsGridControl.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="oltLabel5.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;oltPanel2.Name" xml:space="preserve">
+    <value>oltPanel2</value>
+  </data>
+  <data name="validFromTimePicker.Location" type="System.Drawing.Point, System.Drawing">
+    <value>234, 24</value>
+  </data>
+  <data name="oltLabel6.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;oltPanel3.Parent" xml:space="preserve">
+    <value>op14GroupBox</value>
+  </data>
+  <data name="mainPanel.FlowDirection" type="System.Windows.Forms.FlowDirection, System.Windows.Forms">
+    <value>TopDown</value>
+  </data>
+  <data name="systemDefeatedLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 22</value>
+  </data>
+  <data name="&gt;&gt;oltGroupBox1.Parent" xml:space="preserve">
+    <value>mainPanel</value>
+  </data>
+  <data name="cancelButton.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="oltPanel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 590</value>
+  </data>
+  <data name="tableLayoutPanel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>746, 108</value>
+  </data>
+  <data name="saveAndEmailButton.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;criticalSystemDefeatedTextBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="tableLayoutPanel1.RowCount" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;validFromDatePicker.Name" xml:space="preserve">
+    <value>validFromDatePicker</value>
+  </data>
+  <data name="&gt;&gt;contentRichTextEditor.Name" xml:space="preserve">
+    <value>contentRichTextEditor</value>
+  </data>
+  <data name="tableLayoutPanel2.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="oltLabel8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>66, 13</value>
+  </data>
+  <data name="addFunctionalLocationButton.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="validToTimePicker.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="&gt;&gt;criticalSystemDefeatedTextBox.Parent" xml:space="preserve">
+    <value>op14GroupBox</value>
+  </data>
+  <data name="&gt;&gt;hasAttachmentsNoRadioButton.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="validToTimePicker.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="createdByUserLabel.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.Forms.BaseForm, Operator Log Tool, Version=4.20.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;validFromTimePicker.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;createdByGroupBox.Parent" xml:space="preserve">
+    <value>tableLayoutPanel1</value>
+  </data>
+  <data name="historyButton.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="lastModifiedGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>317, 75</value>
+  </data>
+  <data name="&gt;&gt;historyButton.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="removeFunctionalLocatnButton.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;contentGroupBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltGroupBox, Operator Log Tool, Version=4.20.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="oltGroupBox3.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;questionsAndActivePeriodTableLayoutPanel.Parent" xml:space="preserve">
+    <value>mainPanel</value>
+  </data>
+  <data name="oltLabel8.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="oltLabel3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 48</value>
+  </data>
+  <data name="oltPanel1.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="oltLabel1.Text" xml:space="preserve">
+    <value>User:</value>
+  </data>
+  <data name="&gt;&gt;saveAndEmailButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="pressureSafetyValveYesRadioButton.Text" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="hasBeenCommunicatedNoRadioButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>38, 17</value>
+  </data>
+  <data name="&gt;&gt;pressureSafetyValveNoRadioButton.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tableLayoutPanel2.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="functionalLocationGroupBox" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="oltGroupBox3" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,56.91057,Percent,43.08943" /&gt;&lt;Rows Styles="Percent,50" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="createdByUserLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>91, 13</value>
+  </data>
+  <data name="&gt;&gt;approvalsGridControl.Name" xml:space="preserve">
+    <value>approvalsGridControl</value>
+  </data>
+  <data name="&gt;&gt;invisibleLabel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Operator Log Tool, Version=4.20.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="contentGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 353</value>
+  </data>
+  <data name="expandLinkLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="createdByGroupBox.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;oltPanel2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="oltLabel5.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Form</value>
+  </data>
+  <data name="hasBeenCommunicatedYesRadioButton.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="documentLinksControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 19</value>
+  </data>
+  <data name="mainPanel.WrapContents" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="op14GroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="saveAndEmailButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>566, 12</value>
+  </data>
+  <data name="oltLabel2.Text" xml:space="preserve">
+    <value>Date:</value>
+  </data>
+  <data name="oltLabel4.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="functionalLocationListBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="dateLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="historyButton.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="tableLayoutPanel2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>8, 3, 3, 3</value>
+  </data>
+  <data name="expandLinkLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>686, 9</value>
+  </data>
+  <data name="&gt;&gt;mainPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="tableLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>746, 83</value>
+  </data>
+  <data name="contentGroupBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="oltLabel3.Text" xml:space="preserve">
+    <value>User:</value>
+  </data>
+  <data name="&gt;&gt;lastModifiedDateLabel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Operator Log Tool, Version=4.20.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="saveButton.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lastModifiedDateLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 13</value>
+  </data>
+  <data name="oltPanel1.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="dateLabel.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="oltGroupBox3.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="oltLabel7.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="oltLabel4.Text" xml:space="preserve">
+    <value>Has this CSD been communicated</value>
+  </data>
+  <data name="validFromTimePicker.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="oltPanel3.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="oltGroupBox1.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="createdDateLabel.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="oltGroupBox3.Text" xml:space="preserve">
+    <value>Valid</value>
+  </data>
+  <data name="mainPanel.AutoScroll" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="oltLabel1.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;hasAttachmentsYesRadioButton.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="lastModifiedUserLabel.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel1.Parent" xml:space="preserve">
+    <value>mainPanel</value>
+  </data>
+  <data name="&gt;&gt;oltPanel3.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="oltLabel5.Text" xml:space="preserve">
+    <value>Is the CSD for a Pressure Safety Valve?</value>
+  </data>
+  <data name="questionsAndActivePeriodTableLayoutPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;oltLabel5.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="oltLabel8.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="invisibleLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;functionalLocationListBox.Parent" xml:space="preserve">
+    <value>functionalLocationGroupBox</value>
+  </data>
+  <data name="&gt;&gt;saveAndEmailButton.Parent" xml:space="preserve">
+    <value>oltPanel1</value>
+  </data>
+  <data name="&gt;&gt;errorProvider.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ErrorProvider, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;oltLabel8.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Operator Log Tool, Version=4.20.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="addFunctionalLocationButton.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="oltLabel6.Text" xml:space="preserve">
+    <value>Critical System Defeated:</value>
+  </data>
+  <data name="removeFunctionalLocatnButton.Text" xml:space="preserve">
+    <value>Remove</value>
+  </data>
+  <data name="lastModifiedDateLabel.Text" xml:space="preserve">
+    <value>[last modified date]</value>
+  </data>
+  <data name="&gt;&gt;dateLabel.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;systemDefeatedLabel.Name" xml:space="preserve">
+    <value>systemDefeatedLabel</value>
+  </data>
+  <data name="hasAttachmentsNoRadioButton.Text" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="oltLabel8.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;functionalLocationGroupBox.Name" xml:space="preserve">
+    <value>functionalLocationGroupBox</value>
+  </data>
+  <data name="&gt;&gt;systemDefeatedLabel.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="dateLabel.Text" xml:space="preserve">
+    <value>Date:</value>
+  </data>
+  <data name="hasAttachmentsNoRadioButton.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;expandLinkLabel.Name" xml:space="preserve">
+    <value>expandLinkLabel</value>
+  </data>
+  <data name="&gt;&gt;oltLabel4.Parent" xml:space="preserve">
+    <value>oltGroupBox1</value>
+  </data>
+  <data name="&gt;&gt;estimatedBackInServiceLabel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Operator Log Tool, Version=4.20.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;contentGroupBox.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="validFromDatePicker.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;functionalLocationGroupBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;oltLabel6.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Operator Log Tool, Version=4.20.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;pressureSafetyValveYesRadioButton.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltRadioButton, Operator Log Tool, Version=4.20.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;validToTimePicker.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltTimePicker, Operator Log Tool, Version=4.20.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="tableLayoutPanel1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>8, 3, 3, 3</value>
+  </data>
+  <data name="hasAttachmentsYesRadioButton.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="validToDatePicker.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="documentLinksGroupBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="oltLabel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 23</value>
+  </data>
+  <data name="estimatedBackInServiceLabel.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;functionalLocationGroupBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltGroupBox, Operator Log Tool, Version=4.20.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="createdDateLabel.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="csdReasonTextBox.MaxLength" type="System.Int32, mscorlib">
+    <value>255</value>
+  </data>
+  <data name="&gt;&gt;documentLinksControl.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.Controls.DocumentLinksControl, Operator Log Tool, Version=4.20.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;contentRichTextEditor.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="lastModifiedUserLabel.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;documentLinksGroupBox.Name" xml:space="preserve">
+    <value>documentLinksGroupBox</value>
+  </data>
+  <data name="lastModifiedDateLabel.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="contentRichTextEditor.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="op14GroupBox.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="validToDatePicker.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pressureSafetyValveNoRadioButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>52, 0</value>
+  </data>
+  <data name="hasAttachmentsYesRadioButton.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;contentGroupBox.Name" xml:space="preserve">
+    <value>contentGroupBox</value>
+  </data>
+  <data name="contentGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="historyButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left</value>
+  </data>
+  <data name="lastModifiedDateLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;op14GroupBox.Name" xml:space="preserve">
+    <value>op14GroupBox</value>
+  </data>
+  <data name="&gt;&gt;validFromTimePicker.Parent" xml:space="preserve">
+    <value>oltGroupBox3</value>
+  </data>
+  <data name="lastModifiedDateLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="systemDefeatedLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 26</value>
+  </data>
+  <data name="validFromDatePicker.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="removeFunctionalLocatnButton.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;lastModifiedUserLabel.Parent" xml:space="preserve">
+    <value>lastModifiedGroupBox</value>
+  </data>
+  <data name="oltPanel3.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="pressureSafetyValveYesRadioButton.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="oltPanel1.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;op14GroupBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltGroupBox, Operator Log Tool, Version=4.20.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="createdByUserLabel.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="csdReasonTextBox.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;pressureSafetyValveNoRadioButton.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltRadioButton, Operator Log Tool, Version=4.20.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="lastModifiedUserLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;oltLabel3.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="estimatedBackInServiceLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 51</value>
+  </data>
+  <data name="approvalsGridControl.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;questionsAndActivePeriodTableLayoutPanel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltTableLayoutPanel, Operator Log Tool, Version=4.20.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="addFunctionalLocationButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>91, 23</value>
+  </data>
+  <data name="validToDatePicker.Size" type="System.Drawing.Size, System.Drawing">
+    <value>128, 21</value>
+  </data>
+  <data name="expandLinkLabel.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;createdDateLabel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Operator Log Tool, Version=4.20.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="oltPanel3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>225, 10</value>
+  </data>
+  <data name="expandLinkLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="validFromTimePicker.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="approvalsGridControl.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;oltLabel3.Name" xml:space="preserve">
+    <value>oltLabel3</value>
+  </data>
+  <data name="oltLabel7.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="expandLinkLabel.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;hasBeenCommunicatedNoRadioButton.Parent" xml:space="preserve">
+    <value>oltPanel2</value>
+  </data>
+  <data name="&gt;&gt;contentRichTextEditor.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.Controls.RichTextEditor, Operator Log Tool, Version=4.20.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;oltLabel2.Parent" xml:space="preserve">
+    <value>lastModifiedGroupBox</value>
+  </data>
+  <data name="expandLinkLabel.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;invisibleLabel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="oltLabel8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 61</value>
+  </data>
+  <data name="documentLinksGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>431, 3</value>
+  </data>
+  <data name="tableLayoutPanel2.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="saveButton.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="csdReasonTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="oltLabel7.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="approvalsGridControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 651</value>
+  </data>
+  <data name="contentRichTextEditor.Size" type="System.Drawing.Size, System.Drawing">
+    <value>731, 185</value>
+  </data>
+  <data name="&gt;&gt;oltPanel4.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterParent</value>
+  </data>
+  <data name="oltLabel4.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="documentLinksControl.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="dateLabel.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="tableLayoutPanel2.RowCount" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="addFunctionalLocationButton.Text" xml:space="preserve">
+    <value>Add...</value>
+  </data>
+  <data name="questionsAndActivePeriodTableLayoutPanel.RowCount" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="functionalLocationListBox.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;removeFunctionalLocatnButton.Name" xml:space="preserve">
+    <value>removeFunctionalLocatnButton</value>
+  </data>
+  <data name="&gt;&gt;documentLinksGroupBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltGroupBox, Operator Log Tool, Version=4.20.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;questionsAndActivePeriodTableLayoutPanel.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="oltLabel7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 43</value>
+  </data>
+  <data name="createdByGroupBox.Text" xml:space="preserve">
+    <value>Created By</value>
+  </data>
+  <data name="oltLabel5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 12</value>
+  </data>
+  <data name="&gt;&gt;invisibleLabel.Name" xml:space="preserve">
+    <value>invisibleLabel</value>
+  </data>
+  <data name="oltPanel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>236, 17</value>
+  </data>
+  <data name="validToTimePicker.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;dateLabel.Name" xml:space="preserve">
+    <value>dateLabel</value>
+  </data>
+  <data name="approvalsGridControl.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>11, 3, 3, 3</value>
+  </data>
+  <data name="oltPanel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>786, 47</value>
+  </data>
+  <data name="&gt;&gt;op14GroupBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="oltLabel8.Text" xml:space="preserve">
+    <value>CSD Reason</value>
+  </data>
+  <data name="oltPanel2.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="questionsAndActivePeriodTableLayoutPanel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="hasBeenCommunicatedNoRadioButton.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="pressureSafetyValveNoRadioButton.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="oltGroupBox3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>316, 102</value>
+  </data>
+  <data name="oltLabel8.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;documentLinksGroupBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="pressureSafetyValveNoRadioButton.Text" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="oltPanel3.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="oltPanel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>104, 18</value>
+  </data>
+  <data name="questionsAndActivePeriodTableLayoutPanel.ColumnCount" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="contentGroupBox.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="validToTimePicker.Location" type="System.Drawing.Point, System.Drawing">
+    <value>234, 54</value>
+  </data>
+  <data name="&gt;&gt;expandLinkLabel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLinkLabel1, Operator Log Tool, Version=4.20.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="tableLayoutPanel1.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="createdByUserLabel.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cancelButton.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;lastModifiedUserLabel.Name" xml:space="preserve">
+    <value>lastModifiedUserLabel</value>
+  </data>
+  <data name="pressureSafetyValveYesRadioButton.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;documentLinksControl.Parent" xml:space="preserve">
+    <value>documentLinksGroupBox</value>
+  </data>
+  <data name="&gt;&gt;addFunctionalLocationButton.Parent" xml:space="preserve">
+    <value>functionalLocationGroupBox</value>
+  </data>
+  <data name="oltPanel3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>104, 18</value>
+  </data>
+  <data name="oltPanel4.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;oltLabel1.Parent" xml:space="preserve">
+    <value>createdByGroupBox</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel2.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="pressureSafetyValveYesRadioButton.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="oltLabel7.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="lastModifiedDateLabel.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="oltLabel2.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="oltPanel4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>104, 18</value>
+  </data>
+  <data name="op14GroupBox.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="&gt;&gt;criticalSystemDefeatedTextBox.Name" xml:space="preserve">
+    <value>criticalSystemDefeatedTextBox</value>
+  </data>
+  <data name="contentGroupBox.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 0, 3, 3</value>
+  </data>
+  <data name="&gt;&gt;createdByUserLabel.Parent" xml:space="preserve">
+    <value>createdByGroupBox</value>
+  </data>
+  <data name="hasBeenCommunicatedYesRadioButton.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="op14GroupBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>11, 3, 3, 3</value>
+  </data>
+  <data name="op14GroupBox.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="hasBeenCommunicatedYesRadioButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>42, 17</value>
+  </data>
+  <data name="historyButton.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lastModifiedGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="mainPanel.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;hasAttachmentsYesRadioButton.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltRadioButton, Operator Log Tool, Version=4.20.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;functionalLocationListBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.Controls.FunctionalLocationListBox, Operator Log Tool, Version=4.20.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="oltGroupBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>751, 70</value>
+  </data>
+  <data name="lastModifiedUserLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>46, 48</value>
+  </data>
+  <data name="&gt;&gt;lastModifiedGroupBox.Name" xml:space="preserve">
+    <value>lastModifiedGroupBox</value>
+  </data>
+  <data name="pressureSafetyValveNoRadioButton.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="tableLayoutPanel1.ColumnCount" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;oltLabel8.Parent" xml:space="preserve">
+    <value>op14GroupBox</value>
+  </data>
+  <data name="oltPanel2.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="oltLabel3.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;oltPanel4.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltPanel, Operator Log Tool, Version=4.20.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="addFunctionalLocationButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>321, 25</value>
+  </data>
+  <data name="documentLinksGroupBox.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="criticalSystemDefeatedTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>141, 34</value>
+  </data>
+  <data name="op14GroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 3</value>
+  </data>
+  <data name="functionalLocationListBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>294, 69</value>
+  </data>
+  <data name="&gt;&gt;oltGroupBox3.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="validFromDatePicker.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;oltLabel1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="oltPanel4.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="lastModifiedDateLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>46, 23</value>
+  </data>
+  <data name="createdDateLabel.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="createdByGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="validToTimePicker.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="tableLayoutPanel2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="oltLabel3.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;saveAndEmailButton.Name" xml:space="preserve">
+    <value>saveAndEmailButton</value>
+  </data>
+  <data name="pressureSafetyValveNoRadioButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>38, 17</value>
+  </data>
+  <data name="&gt;&gt;validToDatePicker.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltDatePicker, Operator Log Tool, Version=4.20.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>794, 675</value>
+  </data>
+  <data name="hasAttachmentsNoRadioButton.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="saveAndEmailButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>99, 23</value>
+  </data>
+  <data name="&gt;&gt;contentGroupBox.Parent" xml:space="preserve">
+    <value>mainPanel</value>
+  </data>
+  <data name="&gt;&gt;hasBeenCommunicatedNoRadioButton.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="documentLinksGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;cancelButton.Parent" xml:space="preserve">
+    <value>oltPanel1</value>
+  </data>
+  <data name="&gt;&gt;oltPanel1.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltPanel, Operator Log Tool, Version=4.20.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;oltLabel6.Name" xml:space="preserve">
+    <value>oltLabel6</value>
+  </data>
+  <data name="oltLabel6.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;estimatedBackInServiceLabel.Name" xml:space="preserve">
+    <value>estimatedBackInServiceLabel</value>
+  </data>
+  <data name="&gt;&gt;csdReasonTextBox.Parent" xml:space="preserve">
+    <value>op14GroupBox</value>
+  </data>
+  <data name="op14GroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>414, 128</value>
+  </data>
+  <data name="validFromDatePicker.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="hasBeenCommunicatedYesRadioButton.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="mainPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;oltLabel2.Name" xml:space="preserve">
+    <value>oltLabel2</value>
+  </data>
+  <data name="criticalSystemDefeatedTextBox.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="invisibleLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 0</value>
+  </data>
+  <data name="expandLinkLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>51, 13</value>
+  </data>
+  <data name="removeFunctionalLocatnButton.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="historyButton.Text" xml:space="preserve">
+    <value>History</value>
+  </data>
+  <data name="&gt;&gt;tableLayoutPanel1.Name" xml:space="preserve">
+    <value>tableLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;pressureSafetyValveYesRadioButton.Parent" xml:space="preserve">
+    <value>oltPanel3</value>
+  </data>
+  <data name="&gt;&gt;createdDateLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="saveAndEmailButton.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="systemDefeatedLabel.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="invisibleLabel.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="systemDefeatedLabel.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="oltLabel1.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pressureSafetyValveNoRadioButton.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="tableLayoutPanel2.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="csdReasonTextBox.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="questionsAndActivePeriodTableLayoutPanel.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="documentLinksGroupBox" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="op14GroupBox" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,57.06595,Percent,42.93405" /&gt;&lt;Rows Styles="Percent,50" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="&gt;&gt;documentLinksControl.Name" xml:space="preserve">
+    <value>documentLinksControl</value>
+  </data>
+  <data name="&gt;&gt;questionsAndActivePeriodTableLayoutPanel.Name" xml:space="preserve">
+    <value>questionsAndActivePeriodTableLayoutPanel</value>
+  </data>
+  <data name="lastModifiedUserLabel.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;oltLabel1.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Operator Log Tool, Version=4.20.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;hasBeenCommunicatedNoRadioButton.Name" xml:space="preserve">
+    <value>hasBeenCommunicatedNoRadioButton</value>
+  </data>
+  <data name="criticalSystemDefeatedTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;addFunctionalLocationButton.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;createdByGroupBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltGroupBox, Operator Log Tool, Version=4.20.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="functionalLocationListBox.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="createdDateLabel.Text" xml:space="preserve">
+    <value>[created date]</value>
+  </data>
+  <data name="&gt;&gt;expandLinkLabel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;saveButton.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="oltGroupBox3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>427, 3</value>
+  </data>
+  <data name="oltGroupBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 575</value>
+  </data>
+  <data name="&gt;&gt;saveButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;oltGroupBox1.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="hasAttachmentsNoRadioButton.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;csdReasonTextBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tableLayoutPanel1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;oltLabel7.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;hasAttachmentsNoRadioButton.Name" xml:space="preserve">
+    <value>hasAttachmentsNoRadioButton</value>
+  </data>
+  <data name="&gt;&gt;lastModifiedGroupBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltGroupBox, Operator Log Tool, Version=4.20.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="oltLabel7.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lastModifiedGroupBox.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="createdDateLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>46, 23</value>
+  </data>
+  <data name="oltGroupBox1.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;cancelButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="oltGroupBox3.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="validFromDatePicker.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;addFunctionalLocationButton.Name" xml:space="preserve">
+    <value>addFunctionalLocationButton</value>
+  </data>
+  <data name="documentLinksControl.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="hasAttachmentsYesRadioButton.Text" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="oltGroupBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="estimatedBackInServiceLabel.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>786, 637</value>
+  </data>
+  <data name="csdReasonTextBox.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="hasAttachmentsYesRadioButton.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="mainPanel.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;oltLabel6.Parent" xml:space="preserve">
+    <value>op14GroupBox</value>
+  </data>
+  <data name="pressureSafetyValveYesRadioButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 0</value>
+  </data>
+  <data name="&gt;&gt;csdReasonTextBox.Name" xml:space="preserve">
+    <value>csdReasonTextBox</value>
+  </data>
+  <data name="&gt;&gt;validToTimePicker.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="validFromTimePicker.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="dateLabel.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;mainPanel.Name" xml:space="preserve">
+    <value>mainPanel</value>
+  </data>
+  <data name="functionalLocationGroupBox.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="contentGroupBox.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="oltGroupBox1.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lastModifiedGroupBox.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;hasAttachmentsYesRadioButton.Name" xml:space="preserve">
+    <value>hasAttachmentsYesRadioButton</value>
+  </data>
+  <data name="&gt;&gt;createdByGroupBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;documentLinksGroupBox.Parent" xml:space="preserve">
+    <value>questionsAndActivePeriodTableLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;pressureSafetyValveNoRadioButton.Name" xml:space="preserve">
+    <value>pressureSafetyValveNoRadioButton</value>
+  </data>
+  <data name="&gt;&gt;oltPanel1.Name" xml:space="preserve">
+    <value>oltPanel1</value>
+  </data>
+  <data name="oltLabel4.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;hasAttachmentsNoRadioButton.Parent" xml:space="preserve">
+    <value>oltPanel4</value>
+  </data>
+  <data name="&gt;&gt;validFromDatePicker.Parent" xml:space="preserve">
+    <value>oltGroupBox3</value>
+  </data>
+  <data name="createdByGroupBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="contentRichTextEditor.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;approvalsGridControl.Parent" xml:space="preserve">
+    <value>mainPanel</value>
+  </data>
+  <data name="hasBeenCommunicatedYesRadioButton.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="createdByUserLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;mainPanel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="removeFunctionalLocatnButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>91, 23</value>
+  </data>
+  <data name="approvalsGridControl.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="expandLinkLabel.Text" xml:space="preserve">
+    <value>[Expand]</value>
+  </data>
+  <data name="validToDatePicker.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="saveAndEmailButton.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;estimatedBackInServiceLabel.Parent" xml:space="preserve">
+    <value>oltGroupBox3</value>
+  </data>
+  <data name="tableLayoutPanel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 13</value>
+  </data>
+  <data name="&gt;&gt;dateLabel.Parent" xml:space="preserve">
+    <value>createdByGroupBox</value>
+  </data>
+  <data name="&gt;&gt;historyButton.Name" xml:space="preserve">
+    <value>historyButton</value>
+  </data>
+  <data name="&gt;&gt;validToDatePicker.Parent" xml:space="preserve">
+    <value>oltGroupBox3</value>
+  </data>
+  <data name="hasAttachmentsYesRadioButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>42, 17</value>
+  </data>
+  <data name="estimatedBackInServiceLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 26</value>
+  </data>
+  <data name="tableLayoutPanel1.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="questionsAndActivePeriodTableLayoutPanel.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="oltLabel6.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="criticalSystemDefeatedTextBox.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="criticalSystemDefeatedTextBox.MaxLength" type="System.Int32, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="contentRichTextEditor.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="oltLabel4.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="validFromTimePicker.Size" type="System.Drawing.Size, System.Drawing">
+    <value>67, 21</value>
+  </data>
+  <data name="invisibleLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>743, 10</value>
+  </data>
+  <data name="oltLabel1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;approvalsGridControl.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.Controls.ApprovalsGridControl, Operator Log Tool, Version=4.20.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="estimatedBackInServiceLabel.Text" xml:space="preserve">
+    <value>Estimated Back in Service:</value>
+  </data>
+  <data name="criticalSystemDefeatedTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>243, 20</value>
+  </data>
+  <data name="&gt;&gt;removeFunctionalLocatnButton.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="pressureSafetyValveYesRadioButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>42, 17</value>
+  </data>
+  <data name="contentRichTextEditor.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;oltLabel5.Parent" xml:space="preserve">
+    <value>op14GroupBox</value>
+  </data>
+  <data name="&gt;&gt;historyButton.Parent" xml:space="preserve">
+    <value>oltPanel1</value>
+  </data>
+  <data name="hasBeenCommunicatedNoRadioButton.Text" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="estimatedBackInServiceLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;functionalLocationListBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;systemDefeatedLabel.Parent" xml:space="preserve">
+    <value>oltGroupBox3</value>
+  </data>
+  <data name="addFunctionalLocationButton.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;oltLabel8.Name" xml:space="preserve">
+    <value>oltLabel8</value>
+  </data>
+  <data name="mainPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>786, 590</value>
+  </data>
+  <data name="&gt;&gt;oltLabel7.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Operator Log Tool, Version=4.20.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;oltPanel4.Name" xml:space="preserve">
+    <value>oltPanel4</value>
+  </data>
+  <data name="oltLabel6.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;expandLinkLabel.Parent" xml:space="preserve">
+    <value>contentGroupBox</value>
+  </data>
+  <data name="tableLayoutPanel1.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="contentGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>743, 216</value>
+  </data>
+  <data name="oltPanel1.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="oltPanel4.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="csdReasonTextBox.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="hasBeenCommunicatedYesRadioButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 0</value>
+  </data>
+  <data name="$this.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>1000, 675</value>
+  </data>
+  <data name="saveButton.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="createdByGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="oltLabel1.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="validToDatePicker.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="lastModifiedUserLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>99, 13</value>
+  </data>
+  <data name="&gt;&gt;validToDatePicker.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;oltPanel1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="lastModifiedGroupBox.Text" xml:space="preserve">
+    <value>Last Modified</value>
+  </data>
+  <data name="addFunctionalLocationButton.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;cancelButton.Name" xml:space="preserve">
+    <value>cancelButton</value>
+  </data>
+  <data name="&gt;&gt;validFromDatePicker.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltDatePicker, Operator Log Tool, Version=4.20.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="op14GroupBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;invisibleLabel.Parent" xml:space="preserve">
+    <value>mainPanel</value>
+  </data>
+  <data name="validToDatePicker.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="contentGroupBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>11, 0, 3, 3</value>
+  </data>
+  <data name="&gt;&gt;oltGroupBox1.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltGroupBox, Operator Log Tool, Version=4.20.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;lastModifiedDateLabel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;oltLabel4.Name" xml:space="preserve">
+    <value>oltLabel4</value>
+  </data>
+  <data name="invisibleLabel.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;hasBeenCommunicatedYesRadioButton.Parent" xml:space="preserve">
+    <value>oltPanel2</value>
+  </data>
+  <data name="functionalLocationGroupBox.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="removeFunctionalLocatnButton.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;lastModifiedDateLabel.Name" xml:space="preserve">
+    <value>lastModifiedDateLabel</value>
+  </data>
+  <data name="&gt;&gt;oltLabel4.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Operator Log Tool, Version=4.20.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;pressureSafetyValveNoRadioButton.Parent" xml:space="preserve">
+    <value>oltPanel3</value>
+  </data>
+  <data name="functionalLocationGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="hasAttachmentsNoRadioButton.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="systemDefeatedLabel.Text" xml:space="preserve">
+    <value>System Defeated:</value>
+  </data>
+  <data name="&gt;&gt;criticalSystemDefeatedTextBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltTextBox, Operator Log Tool, Version=4.20.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;oltLabel4.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="oltPanel2.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="expandLinkLabel.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="createdDateLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;contentRichTextEditor.Parent" xml:space="preserve">
+    <value>contentGroupBox</value>
+  </data>
+  <data name="csdReasonTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 78</value>
+  </data>
+  <data name="removeFunctionalLocatnButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>321, 54</value>
+  </data>
+  <data name="cancelButton.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;lastModifiedGroupBox.Parent" xml:space="preserve">
+    <value>tableLayoutPanel1</value>
+  </data>
+  <data name="systemDefeatedLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="tableLayoutPanel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 102</value>
+  </data>
+  <data name="&gt;&gt;oltPanel3.Name" xml:space="preserve">
+    <value>oltPanel3</value>
+  </data>
+  <data name="&gt;&gt;lastModifiedGroupBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;oltLabel3.Parent" xml:space="preserve">
+    <value>lastModifiedGroupBox</value>
+  </data>
+  <data name="systemDefeatedLabel.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;documentLinksControl.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="criticalSystemDefeatedTextBox.ScrollBars" type="System.Windows.Forms.ScrollBars, System.Windows.Forms">
+    <value>Vertical</value>
+  </data>
+  <data name="hasBeenCommunicatedYesRadioButton.Text" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="&gt;&gt;validFromTimePicker.Name" xml:space="preserve">
+    <value>validFromTimePicker</value>
+  </data>
+  <data name="op14GroupBox.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lastModifiedUserLabel.Text" xml:space="preserve">
+    <value>[last modified user]</value>
+  </data>
+  <data name="dateLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>34, 13</value>
+  </data>
+  <data name="&gt;&gt;oltLabel5.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Operator Log Tool, Version=4.20.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="pressureSafetyValveYesRadioButton.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="dateLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="saveAndEmailButton.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;mainPanel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="saveButton.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="addFunctionalLocationButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;hasAttachmentsYesRadioButton.Parent" xml:space="preserve">
+    <value>oltPanel4</value>
+  </data>
+  <data name="lastModifiedDateLabel.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;oltLabel7.Name" xml:space="preserve">
+    <value>oltLabel7</value>
+  </data>
+  <data name="&gt;&gt;saveButton.Name" xml:space="preserve">
+    <value>saveButton</value>
+  </data>
+  <data name="&gt;&gt;hasAttachmentsNoRadioButton.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltRadioButton, Operator Log Tool, Version=4.20.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="createdByGroupBox.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="lastModifiedGroupBox.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;csdReasonTextBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltTextBox, Operator Log Tool, Version=4.20.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="tableLayoutPanel2.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="oltLabel5.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="cancelButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>671, 12</value>
+  </data>
+  <data name="&gt;&gt;hasBeenCommunicatedYesRadioButton.Name" xml:space="preserve">
+    <value>hasBeenCommunicatedYesRadioButton</value>
+  </data>
+  <data name="oltPanel1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="questionsAndActivePeriodTableLayoutPanel.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="contentRichTextEditor.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;oltPanel1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;oltGroupBox1.Name" xml:space="preserve">
+    <value>oltGroupBox1</value>
+  </data>
+  <data name="hasAttachmentsNoRadioButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>52, 0</value>
+  </data>
+  <data name="validFromDatePicker.Location" type="System.Drawing.Point, System.Drawing">
+    <value>90, 24</value>
+  </data>
+  <data name="validFromTimePicker.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="createdDateLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>fr</value>
+  </metadata>
+  <metadata name="errorProvider.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+</root>

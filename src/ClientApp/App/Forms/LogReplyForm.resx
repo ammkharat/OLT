@@ -1,0 +1,1791 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="eHSFollowUpCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>58, 17</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="followupGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;isOperatingEngineerLogCheckBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="functionalLocationListBox.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="detailsTableLayoutPanel.ColumnCount" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="entryReplyDetailsLabelLine.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 3</value>
+  </data>
+  <data name="functionalLocationGroupBox.Text" xml:space="preserve">
+    <value>Functional Locations</value>
+  </data>
+  <data name="parentLogTimeLabelData.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 13</value>
+  </data>
+  <data name="&gt;&gt;detailsTableLayoutPanel.Name" xml:space="preserve">
+    <value>detailsTableLayoutPanel</value>
+  </data>
+  <data name="otherFollowUpCheckBox.Text" xml:space="preserve">
+    <value>Other (See Comments)</value>
+  </data>
+  <data name="isOperatingEngineerLogCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>119, 17</value>
+  </data>
+  <data name="functionalLocationGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="parentShiftLabelData.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="oltLabelLine1.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="logTimeGroupBox.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="documentLinksControl.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="ultraExplorerBarContainerControl2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>713, 108</value>
+  </data>
+  <data name="inspectionFollowUpCheckbox.Text" xml:space="preserve">
+    <value>Inspection</value>
+  </data>
+  <data name="ultraExplorerBarContainerControl2.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="recommendForShiftSummaryCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;documentLinksControl.Parent" xml:space="preserve">
+    <value>linkGroupBox</value>
+  </data>
+  <data name="&gt;&gt;operationsFollowUpCheckbox.Parent" xml:space="preserve">
+    <value>followupGroupBox</value>
+  </data>
+  <data name="inspectionFollowUpCheckbox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>76, 17</value>
+  </data>
+  <data name="&gt;&gt;cancelButton.Parent" xml:space="preserve">
+    <value>panelActions</value>
+  </data>
+  <data name="optionsGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>517, 3</value>
+  </data>
+  <data name="ultraExplorerBarContainerControl3.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;functionalLocationListBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.Controls.FunctionalLocationListBox, Com.Suncor.Olt.Client, Version=1.0.0.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;ShiftGroupBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltGroupBox, Com.Suncor.Olt.Client, Version=1.0.0.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="createdByGroupBox.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="flowLayoutPanel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>183, 73</value>
+  </data>
+  <data name="parentCommentsTextBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="parentShiftLabelData.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="panelActions.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="oltLabelLine1.Label" xml:space="preserve">
+    <value>Document Links</value>
+  </data>
+  <data name="parentCreatedByGroupBox.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Log Entry Reply</value>
+  </data>
+  <data name="&gt;&gt;createdByLabelData.Name" xml:space="preserve">
+    <value>createdByLabelData</value>
+  </data>
+  <data name="logDateTimeLabelData.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 13</value>
+  </data>
+  <data name="parentLogTimeLabelData.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="isOperatingEngineerLogCheckBox.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;oltLabelLine1.Parent" xml:space="preserve">
+    <value>ultraExplorerBarContainerControl5</value>
+  </data>
+  <data name="logTimeGroupBox.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="parentShiftLabelData.Text" xml:space="preserve">
+    <value>&lt;Shift&gt;</value>
+  </data>
+  <data name="isOperatingEngineerLogCheckBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="optionsGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>196, 97</value>
+  </data>
+  <data name="&gt;&gt;entryReplyDetailsLabelLine.Parent" xml:space="preserve">
+    <value>ultraExplorerBarContainerControl3</value>
+  </data>
+  <data name="ultraExplorerBarContainerControl1.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="logDateTimeLabelData.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;commentsLabelLine.Name" xml:space="preserve">
+    <value>commentsLabelLine</value>
+  </data>
+  <data name="&gt;&gt;createdByLabelData.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="parentCreatedByGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>370, 45</value>
+  </data>
+  <data name="detailsTableLayoutPanel.RowCount" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;explorerBar.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltExplorerBar, Com.Suncor.Olt.Client, Version=1.0.0.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="supervisorFollowUpCheckbox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 66</value>
+  </data>
+  <data name="inspectionFollowUpCheckbox.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="functionalLocationListBox.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;entryReplyDetailsLabelLine.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="ShiftGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 45</value>
+  </data>
+  <data name="ultraExplorerBarContainerControl1.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="functionalLocationGroupBox.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;parentCreatedByGroupBox.Parent" xml:space="preserve">
+    <value>ultraExplorerBarContainerControl4</value>
+  </data>
+  <data name="&gt;&gt;logTimeGroupBox.Name" xml:space="preserve">
+    <value>logTimeGroupBox</value>
+  </data>
+  <data name="logDateTimeLabelData.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="parentShiftLabelData.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="logCommentExplorerBarContainerControl.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;cancelButton.Name" xml:space="preserve">
+    <value>cancelButton</value>
+  </data>
+  <data name="linkGroupBox.Text" xml:space="preserve">
+    <value>Document Links</value>
+  </data>
+  <data name="&gt;&gt;logCommentExplorerBarContainerControl.Parent" xml:space="preserve">
+    <value>explorerBar</value>
+  </data>
+  <data name="&gt;&gt;logCommentExplorerBarContainerControl.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="panelActions.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="supervisorFollowUpCheckbox.Text" xml:space="preserve">
+    <value>Supervision</value>
+  </data>
+  <data name="commentLabelLine.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 3</value>
+  </data>
+  <data name="parentCommentsTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 20</value>
+  </data>
+  <data name="recommendForShiftSummaryCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>160, 17</value>
+  </data>
+  <data name="&gt;&gt;parentShiftLabelData.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="detailsTableLayoutPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;parentCommentsTextBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.Controls.RichTextDisplay, Com.Suncor.Olt.Client, Version=1.0.0.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="ShiftGroupBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;inspectionFollowUpCheckbox.Name" xml:space="preserve">
+    <value>inspectionFollowUpCheckbox</value>
+  </data>
+  <data name="linkGroupBox.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="ShiftGroupBox.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;logCommentControl.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.Controls.LogCommentControl, Com.Suncor.Olt.Client, Version=1.0.0.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="eHSFollowUpCheckBox.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="logCommentControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>713, 170</value>
+  </data>
+  <data name="&gt;&gt;parentCommentsTextBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="parentCreatedByLabelData.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;ReplyShiftGroupBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="optionsGroupBox.Text" xml:space="preserve">
+    <value>Options</value>
+  </data>
+  <data name="&gt;&gt;linkGroupBox.Parent" xml:space="preserve">
+    <value>ultraExplorerBarContainerControl5</value>
+  </data>
+  <data name="&gt;&gt;createdByLabelData.Parent" xml:space="preserve">
+    <value>createdByGroupBox</value>
+  </data>
+  <data name="&gt;&gt;parentLogTimeGroupBox.Parent" xml:space="preserve">
+    <value>ultraExplorerBarContainerControl4</value>
+  </data>
+  <data name="isOperatingEngineerLogCheckBox.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;createdByGroupBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltGroupBox, Com.Suncor.Olt.Client, Version=1.0.0.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="followupGroupBox.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="otherFollowUpCheckBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;cancelButton.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="ReplyShiftGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>674, 0</value>
+  </data>
+  <data name="logDateTimeLabelData.Text" xml:space="preserve">
+    <value>&lt;log time&gt;</value>
+  </data>
+  <data name="&gt;&gt;oltLabelLine1.Name" xml:space="preserve">
+    <value>oltLabelLine1</value>
+  </data>
+  <data name="oltLabelLine1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 3</value>
+  </data>
+  <data name="parentLogTimeGroupBox.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;ultraExplorerBarContainerControl2.Type" xml:space="preserve">
+    <value>Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarContainerControl, Infragistics2.Win.UltraWinExplorerBar.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb</value>
+  </data>
+  <data name="commentsGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;explorerBar.Name" xml:space="preserve">
+    <value>explorerBar</value>
+  </data>
+  <data name="ultraExplorerBarContainerControl5.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="linkGroupBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;ShiftGroupBox.Parent" xml:space="preserve">
+    <value>ultraExplorerBarContainerControl4</value>
+  </data>
+  <data name="&gt;&gt;commentsGroupBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltGroupBox, Com.Suncor.Olt.Client, Version=1.0.0.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;commentLabelLine.Name" xml:space="preserve">
+    <value>commentLabelLine</value>
+  </data>
+  <data name="&gt;&gt;parentLogTimeLabelData.Parent" xml:space="preserve">
+    <value>parentLogTimeGroupBox</value>
+  </data>
+  <data name="functionalLocationGroupBox.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="cancelButton.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;recommendForShiftSummaryCheckBox.Name" xml:space="preserve">
+    <value>recommendForShiftSummaryCheckBox</value>
+  </data>
+  <data name="commentsGroupBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="processControlFollowUpCheckBox.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;parentCreatedByGroupBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltGroupBox, Com.Suncor.Olt.Client, Version=1.0.0.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="optionsGroupBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="&gt;&gt;functionalLocationGroupBox.Name" xml:space="preserve">
+    <value>functionalLocationGroupBox</value>
+  </data>
+  <data name="$this.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>802, 678</value>
+  </data>
+  <data name="parentCreatedByLabelData.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;optionsGroupBox.Name" xml:space="preserve">
+    <value>optionsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;commentsErrorProvider.Name" xml:space="preserve">
+    <value>commentsErrorProvider</value>
+  </data>
+  <data name="functionalLocationGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>250, 97</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="&gt;&gt;ultraExplorerBarContainerControl2.Parent" xml:space="preserve">
+    <value>explorerBar</value>
+  </data>
+  <data name="parentCommentsTextBox.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;parentLogTimeLabelData.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>794, 644</value>
+  </data>
+  <data name="followupGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>256, 3</value>
+  </data>
+  <data name="logTimeGroupBox.Text" xml:space="preserve">
+    <value>Log Time</value>
+  </data>
+  <data name="&gt;&gt;ultraExplorerBarContainerControl1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="saveButton.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;detailsTableLayoutPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="followupGroupBox.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="createdByGroupBox.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;parentLogTimeGroupBox.Name" xml:space="preserve">
+    <value>parentLogTimeGroupBox</value>
+  </data>
+  <data name="&gt;&gt;documentLinksControl.Name" xml:space="preserve">
+    <value>documentLinksControl</value>
+  </data>
+  <data name="ultraExplorerBarContainerControl2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>32, -64</value>
+  </data>
+  <data name="cancelButton.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;functionalLocationListBox.Parent" xml:space="preserve">
+    <value>functionalLocationGroupBox</value>
+  </data>
+  <data name="&gt;&gt;flowLayoutPanel1.Parent" xml:space="preserve">
+    <value>optionsGroupBox</value>
+  </data>
+  <data name="ReplyShiftGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="processControlFollowUpCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 43</value>
+  </data>
+  <data name="followupGroupBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 3, 0, 3</value>
+  </data>
+  <data name="detailsTableLayoutPanel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="otherFollowUpCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>136, 17</value>
+  </data>
+  <data name="commentLabelLine.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;entryReplyDetailsLabelLine.Name" xml:space="preserve">
+    <value>entryReplyDetailsLabelLine</value>
+  </data>
+  <data name="commentsLabelLine.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="parentCommentsTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>697, 125</value>
+  </data>
+  <data name="&gt;&gt;linkGroupBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltGroupBox, Com.Suncor.Olt.Client, Version=1.0.0.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;logCommentControl.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="processControlFollowUpCheckBox.Text" xml:space="preserve">
+    <value>Process Control</value>
+  </data>
+  <data name="ultraExplorerBarContainerControl2.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;parentLogTimeLabelData.Name" xml:space="preserve">
+    <value>parentLogTimeLabelData</value>
+  </data>
+  <data name="&gt;&gt;parentLogTimeGroupBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="parentLogTimeLabelData.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ultraExplorerBarGroup3.Text" xml:space="preserve">
+    <value>New Group</value>
+  </data>
+  <data name="commentsLabelLine.Label" xml:space="preserve">
+    <value>Comments</value>
+  </data>
+  <data name="&gt;&gt;entryReplyDetailsLabelLine.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabelLine, Com.Suncor.Olt.Client, Version=1.0.0.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;commentsGroupBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="saveButton.Text" xml:space="preserve">
+    <value>&amp;Save &amp;&amp; Close</value>
+  </data>
+  <data name="processControlFollowUpCheckBox.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="cancelButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>670, 14</value>
+  </data>
+  <data name="&gt;&gt;eHSFollowUpCheckBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="parentCreatedByLabelData.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="createdByGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="functionalLocationListBox.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;createdByLabelData.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabelData, Com.Suncor.Olt.Client, Version=1.0.0.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;ultraExplorerBarContainerControl3.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="panelActions.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 593</value>
+  </data>
+  <data name="&gt;&gt;commentsGroupBox.Parent" xml:space="preserve">
+    <value>ultraExplorerBarContainerControl4</value>
+  </data>
+  <data name="&gt;&gt;recommendForShiftSummaryCheckBox.Parent" xml:space="preserve">
+    <value>flowLayoutPanel1</value>
+  </data>
+  <data name="logCommentExplorerBarContainerControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 50</value>
+  </data>
+  <data name="&gt;&gt;flowLayoutPanel1.Name" xml:space="preserve">
+    <value>flowLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;optionsGroupBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltGroupBox, Com.Suncor.Olt.Client, Version=1.0.0.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;commentsLabelLine.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabelLine, Com.Suncor.Olt.Client, Version=1.0.0.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="logCommentControl.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="parentCreatedByGroupBox.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="parentCreatedByLabelData.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;parentCommentsTextBox.Name" xml:space="preserve">
+    <value>parentCommentsTextBox</value>
+  </data>
+  <data name="flowLayoutPanel1.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="otherFollowUpCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>116, 66</value>
+  </data>
+  <data name="parentCreatedByGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>298, 15</value>
+  </data>
+  <data name="processControlFollowUpCheckBox.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;documentLinksControl.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="commentLabelLine.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="ReplyShiftGroupBox.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="commentsGroupBox.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="entryReplyDetailsLabelLine.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="shiftLabelData.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 13</value>
+  </data>
+  <data name="parentCreatedByGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="inspectionFollowUpCheckbox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>116, 20</value>
+  </data>
+  <data name="logDateTimeLabelData.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="operationsFollowUpCheckbox.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="recommendForShiftSummaryCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 26</value>
+  </data>
+  <data name="&gt;&gt;eHSFollowUpCheckBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltCheckBox, Com.Suncor.Olt.Client, Version=1.0.0.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="operationsFollowUpCheckbox.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;ultraExplorerBarContainerControl5.Name" xml:space="preserve">
+    <value>ultraExplorerBarContainerControl5</value>
+  </data>
+  <data name="&gt;&gt;supervisorFollowUpCheckbox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltCheckBox, Com.Suncor.Olt.Client, Version=1.0.0.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="commentsGroupBox.Text" xml:space="preserve">
+    <value>Comments</value>
+  </data>
+  <data name="&gt;&gt;functionalLocationGroupBox.Parent" xml:space="preserve">
+    <value>detailsTableLayoutPanel</value>
+  </data>
+  <data name="recommendForShiftSummaryCheckBox.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="createdByLabelData.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 21</value>
+  </data>
+  <data name="cancelButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="&gt;&gt;logDateTimeLabelData.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="shiftLabelData.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="operationsFollowUpCheckbox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="explorerBar.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;logDateTimeLabelData.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabelData, Com.Suncor.Olt.Client, Version=1.0.0.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="parentCreatedByLabelData.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="commentsGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>713, 151</value>
+  </data>
+  <data name="parentCreatedByLabelData.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 13</value>
+  </data>
+  <data name="shiftLabelData.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="commentsLabelLine.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="inspectionFollowUpCheckbox.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="commentLabelLine.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="explorerBar.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;parentShiftLabelData.Name" xml:space="preserve">
+    <value>parentShiftLabelData</value>
+  </data>
+  <data name="ultraExplorerBarContainerControl2.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="logCommentExplorerBarContainerControl.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="saveButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>86, 23</value>
+  </data>
+  <data name="ReplyShiftGroupBox.Text" xml:space="preserve">
+    <value>Shift</value>
+  </data>
+  <data name="detailsTableLayoutPanel.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="shiftLabelData.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="functionalLocationListBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;ultraExplorerBarContainerControl3.Type" xml:space="preserve">
+    <value>Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarContainerControl, Infragistics2.Win.UltraWinExplorerBar.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb</value>
+  </data>
+  <data name="&gt;&gt;eHSFollowUpCheckBox.Parent" xml:space="preserve">
+    <value>followupGroupBox</value>
+  </data>
+  <data name="otherFollowUpCheckBox.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="parentCreatedByLabelData.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 21</value>
+  </data>
+  <data name="&gt;&gt;isOperatingEngineerLogCheckBox.Parent" xml:space="preserve">
+    <value>flowLayoutPanel1</value>
+  </data>
+  <data name="ultraExplorerBarContainerControl4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 371</value>
+  </data>
+  <data name="parentLogTimeLabelData.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;parentCommentsTextBox.Parent" xml:space="preserve">
+    <value>commentsGroupBox</value>
+  </data>
+  <data name="&gt;&gt;operationsFollowUpCheckbox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="parentCommentsTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;explorerBar.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;supervisorFollowUpCheckbox.Name" xml:space="preserve">
+    <value>supervisorFollowUpCheckbox</value>
+  </data>
+  <data name="&gt;&gt;ReplyShiftGroupBox.Parent" xml:space="preserve">
+    <value>ultraExplorerBarContainerControl1</value>
+  </data>
+  <data name="detailsTableLayoutPanel.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="entryReplyDetailsLabelLine.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="entryReplyDetailsLabelLine.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="logCommentExplorerBarContainerControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>763, 189</value>
+  </data>
+  <data name="processControlFollowUpCheckBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="recommendForShiftSummaryCheckBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="saveButton.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="shiftLabelData.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="parentShiftLabelData.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;commentLabelLine.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="cancelButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="saveButton.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ShiftGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;commentsErrorProvider.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ErrorProvider, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="linkGroupBox.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;inspectionFollowUpCheckbox.Parent" xml:space="preserve">
+    <value>followupGroupBox</value>
+  </data>
+  <data name="inspectionFollowUpCheckbox.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="followupGroupBox.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;parentShiftLabelData.Parent" xml:space="preserve">
+    <value>ShiftGroupBox</value>
+  </data>
+  <data name="&gt;&gt;ultraExplorerBarContainerControl1.Type" xml:space="preserve">
+    <value>Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarContainerControl, Infragistics2.Win.UltraWinExplorerBar.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb</value>
+  </data>
+  <data name="&gt;&gt;logTimeGroupBox.Parent" xml:space="preserve">
+    <value>ultraExplorerBarContainerControl1</value>
+  </data>
+  <data name="&gt;&gt;ultraExplorerBarContainerControl1.Name" xml:space="preserve">
+    <value>ultraExplorerBarContainerControl1</value>
+  </data>
+  <data name="parentLogTimeGroupBox.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;processControlFollowUpCheckBox.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;saveButton.Name" xml:space="preserve">
+    <value>saveButton</value>
+  </data>
+  <data name="supervisorFollowUpCheckbox.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="ultraExplorerBarContainerControl3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>-10000, -10000</value>
+  </data>
+  <data name="ShiftGroupBox.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;ReplyShiftGroupBox.Name" xml:space="preserve">
+    <value>ReplyShiftGroupBox</value>
+  </data>
+  <data name="&gt;&gt;isOperatingEngineerLogCheckBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltCheckBox, Com.Suncor.Olt.Client, Version=1.0.0.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;logTimeGroupBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltGroupBox, Com.Suncor.Olt.Client, Version=1.0.0.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;commentsLabelLine.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;linkGroupBox.Name" xml:space="preserve">
+    <value>linkGroupBox</value>
+  </data>
+  <data name="functionalLocationListBox.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="createdByLabelData.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="functionalLocationListBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 20</value>
+  </data>
+  <data name="&gt;&gt;optionsGroupBox.Parent" xml:space="preserve">
+    <value>detailsTableLayoutPanel</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterParent</value>
+  </data>
+  <data name="logDateTimeLabelData.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 21</value>
+  </data>
+  <data name="explorerBar.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt</value>
+  </data>
+  <data name="otherFollowUpCheckBox.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;parentLogTimeGroupBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltGroupBox, Com.Suncor.Olt.Client, Version=1.0.0.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="parentCommentsTextBox.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;panelActions.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ultraExplorerBarContainerControl1.Parent" xml:space="preserve">
+    <value>explorerBar</value>
+  </data>
+  <data name="&gt;&gt;oltLabelLine1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;detailsTableLayoutPanel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="optionsGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="recommendForShiftSummaryCheckBox.Text" xml:space="preserve">
+    <value>Recommended for Summary</value>
+  </data>
+  <data name="&gt;&gt;cancelButton.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltButton, Com.Suncor.Olt.Client, Version=1.0.0.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;followupGroupBox.Parent" xml:space="preserve">
+    <value>detailsTableLayoutPanel</value>
+  </data>
+  <data name="eHSFollowUpCheckBox.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="parentCreatedByGroupBox.Text" xml:space="preserve">
+    <value>Created By</value>
+  </data>
+  <data name="&gt;&gt;ShiftGroupBox.Name" xml:space="preserve">
+    <value>ShiftGroupBox</value>
+  </data>
+  <data name="parentCreatedByLabelData.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="logTimeGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="createdByGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>370, 45</value>
+  </data>
+  <data name="supervisorFollowUpCheckbox.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;createdByGroupBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;saveButton.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="parentLogTimeGroupBox.Text" xml:space="preserve">
+    <value>Log Time</value>
+  </data>
+  <data name="logCommentControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>25, 19</value>
+  </data>
+  <data name="panelActions.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;createdByGroupBox.Parent" xml:space="preserve">
+    <value>ultraExplorerBarContainerControl1</value>
+  </data>
+  <data name="ultraExplorerBarGroup5.Text" xml:space="preserve">
+    <value>Comments</value>
+  </data>
+  <data name="&gt;&gt;functionalLocationGroupBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="logCommentControl.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;panelActions.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="ultraExplorerBarContainerControl3.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;logTimeGroupBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;inspectionFollowUpCheckbox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltCheckBox, Com.Suncor.Olt.Client, Version=1.0.0.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="createdByLabelData.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="oltLabelLine1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;parentCreatedByLabelData.Name" xml:space="preserve">
+    <value>parentCreatedByLabelData</value>
+  </data>
+  <data name="oltLabelLine1.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="linkGroupBox.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="eHSFollowUpCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;otherFollowUpCheckBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltCheckBox, Com.Suncor.Olt.Client, Version=1.0.0.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="linkGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;shiftLabelData.Parent" xml:space="preserve">
+    <value>ReplyShiftGroupBox</value>
+  </data>
+  <data name="linkGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>713, 99</value>
+  </data>
+  <data name="commentsGroupBox.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="parentLogTimeLabelData.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 21</value>
+  </data>
+  <data name="ShiftGroupBox.Text" xml:space="preserve">
+    <value>Shift</value>
+  </data>
+  <data name="&gt;&gt;ultraExplorerBarContainerControl3.Parent" xml:space="preserve">
+    <value>explorerBar</value>
+  </data>
+  <data name="&gt;&gt;followupGroupBox.Name" xml:space="preserve">
+    <value>followupGroupBox</value>
+  </data>
+  <data name="recommendForShiftSummaryCheckBox.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="optionsGroupBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 3, 0, 3</value>
+  </data>
+  <data name="eHSFollowUpCheckBox.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="detailsTableLayoutPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="ultraExplorerBarContainerControl5.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="detailsTableLayoutPanel.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="functionalLocationGroupBox" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="followupGroupBox" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="optionsGroupBox" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,100,AutoSize,0,AutoSize,0" /&gt;&lt;Rows Styles="Percent,100" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="optionsGroupBox.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="parentCreatedByLabelData.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="commentsLabelLine.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="inspectionFollowUpCheckbox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="otherFollowUpCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;saveButton.Parent" xml:space="preserve">
+    <value>panelActions</value>
+  </data>
+  <data name="&gt;&gt;otherFollowUpCheckBox.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="otherFollowUpCheckBox.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;ultraExplorerBarContainerControl5.Type" xml:space="preserve">
+    <value>Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarContainerControl, Infragistics2.Win.UltraWinExplorerBar.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb</value>
+  </data>
+  <data name="oltLabelLine1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="&gt;&gt;recommendForShiftSummaryCheckBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="panelActions.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.Forms.BaseForm, Com.Suncor.Olt.Client, Version=1.0.0.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;operationsFollowUpCheckbox.Name" xml:space="preserve">
+    <value>operationsFollowUpCheckbox</value>
+  </data>
+  <data name="commentsGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>25, 65</value>
+  </data>
+  <data name="createdByLabelData.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="logDateTimeLabelData.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="&gt;&gt;ultraExplorerBarContainerControl3.Name" xml:space="preserve">
+    <value>ultraExplorerBarContainerControl3</value>
+  </data>
+  <data name="optionsGroupBox.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;eHSFollowUpCheckBox.Name" xml:space="preserve">
+    <value>eHSFollowUpCheckBox</value>
+  </data>
+  <data name="commentsGroupBox.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="logCommentControl.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="functionalLocationGroupBox.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 3, 0, 3</value>
+  </data>
+  <data name="&gt;&gt;ultraExplorerBarContainerControl4.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="createdByGroupBox.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="shiftLabelData.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 21</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>LogReplyForm</value>
+  </data>
+  <data name="documentLinksControl.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="detailsTableLayoutPanel.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="logCommentExplorerBarContainerControl.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="logDateTimeLabelData.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;ultraExplorerBarContainerControl5.Parent" xml:space="preserve">
+    <value>explorerBar</value>
+  </data>
+  <data name="saveButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>578, 14</value>
+  </data>
+  <data name="logDateTimeLabelData.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;parentCreatedByLabelData.Parent" xml:space="preserve">
+    <value>parentCreatedByGroupBox</value>
+  </data>
+  <data name="&gt;&gt;createdByGroupBox.Name" xml:space="preserve">
+    <value>createdByGroupBox</value>
+  </data>
+  <data name="ShiftGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>674, 15</value>
+  </data>
+  <data name="entryReplyDetailsLabelLine.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="parentLogTimeGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>25, 15</value>
+  </data>
+  <data name="&gt;&gt;detailsTableLayoutPanel.Parent" xml:space="preserve">
+    <value>ultraExplorerBarContainerControl2</value>
+  </data>
+  <data name="commentsLabelLine.Size" type="System.Drawing.Size, System.Drawing">
+    <value>763, 13</value>
+  </data>
+  <data name="ultraExplorerBarGroup2.Text" xml:space="preserve">
+    <value>New Group</value>
+  </data>
+  <data name="ultraExplorerBarContainerControl4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>763, 220</value>
+  </data>
+  <data name="&gt;&gt;isOperatingEngineerLogCheckBox.Name" xml:space="preserve">
+    <value>isOperatingEngineerLogCheckBox</value>
+  </data>
+  <data name="parentCommentsTextBox.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;panelActions.Name" xml:space="preserve">
+    <value>panelActions</value>
+  </data>
+  <data name="&gt;&gt;shiftLabelData.Name" xml:space="preserve">
+    <value>shiftLabelData</value>
+  </data>
+  <data name="parentLogTimeGroupBox.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="createdByLabelData.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;ultraExplorerBarContainerControl4.Parent" xml:space="preserve">
+    <value>explorerBar</value>
+  </data>
+  <data name="&gt;&gt;shiftLabelData.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabelData, Com.Suncor.Olt.Client, Version=1.0.0.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;followupGroupBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="detailsTableLayoutPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="optionsGroupBox.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="operationsFollowUpCheckbox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>79, 17</value>
+  </data>
+  <data name="commentsLabelLine.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="&gt;&gt;ultraExplorerBarContainerControl5.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="appearance1.FontData.BoldAsString" xml:space="preserve">
+    <value>True</value>
+  </data>
+  <data name="functionalLocationListBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>237, 69</value>
+  </data>
+  <data name="&gt;&gt;logDateTimeLabelData.Name" xml:space="preserve">
+    <value>logDateTimeLabelData</value>
+  </data>
+  <data name="&gt;&gt;logCommentExplorerBarContainerControl.Type" xml:space="preserve">
+    <value>Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarContainerControl, Infragistics2.Win.UltraWinExplorerBar.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb</value>
+  </data>
+  <data name="&gt;&gt;explorerBar.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="oltLabelLine1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>763, 13</value>
+  </data>
+  <data name="&gt;&gt;linkGroupBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="parentLogTimeGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>267, 45</value>
+  </data>
+  <data name="&gt;&gt;ultraExplorerBarContainerControl2.Name" xml:space="preserve">
+    <value>ultraExplorerBarContainerControl2</value>
+  </data>
+  <data name="ultraExplorerBarContainerControl5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>763, 120</value>
+  </data>
+  <data name="&gt;&gt;functionalLocationListBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="flowLayoutPanel1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="ultraExplorerBarContainerControl3.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="explorerBar.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ultraExplorerBarContainerControl3.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="documentLinksControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>698, 71</value>
+  </data>
+  <data name="parentLogTimeLabelData.Text" xml:space="preserve">
+    <value>&lt;log time&gt;</value>
+  </data>
+  <data name="&gt;&gt;ShiftGroupBox.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="saveButton.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="ultraExplorerBarContainerControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>-10000, -10000</value>
+  </data>
+  <data name="supervisorFollowUpCheckbox.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="commentLabelLine.Size" type="System.Drawing.Size, System.Drawing">
+    <value>763, 13</value>
+  </data>
+  <data name="inspectionFollowUpCheckbox.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="ShiftGroupBox.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;processControlFollowUpCheckBox.Name" xml:space="preserve">
+    <value>processControlFollowUpCheckBox</value>
+  </data>
+  <data name="panelActions.Size" type="System.Drawing.Size, System.Drawing">
+    <value>794, 51</value>
+  </data>
+  <data name="ultraExplorerBarContainerControl5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 245</value>
+  </data>
+  <data name="processControlFollowUpCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>101, 17</value>
+  </data>
+  <data name="entryReplyDetailsLabelLine.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="ultraExplorerBarGroup6.Text" xml:space="preserve">
+    <value>Document Links</value>
+  </data>
+  <data name="commentLabelLine.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;logDateTimeLabelData.Parent" xml:space="preserve">
+    <value>logTimeGroupBox</value>
+  </data>
+  <data name="&gt;&gt;parentShiftLabelData.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabelData, Com.Suncor.Olt.Client, Version=1.0.0.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="supervisorFollowUpCheckbox.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="flowLayoutPanel1.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="processControlFollowUpCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="recommendForShiftSummaryCheckBox.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="createdByLabelData.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 13</value>
+  </data>
+  <data name="&gt;&gt;ReplyShiftGroupBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltGroupBox, Com.Suncor.Olt.Client, Version=1.0.0.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="operationsFollowUpCheckbox.Text" xml:space="preserve">
+    <value>Operations</value>
+  </data>
+  <data name="eHSFollowUpCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>116, 43</value>
+  </data>
+  <data name="ultraExplorerBarContainerControl3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>763, 13</value>
+  </data>
+  <data name="cancelButton.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ultraExplorerBarGroup1.Text" xml:space="preserve">
+    <value>New Group</value>
+  </data>
+  <data name="&gt;&gt;parentLogTimeLabelData.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabelData, Com.Suncor.Olt.Client, Version=1.0.0.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="entryReplyDetailsLabelLine.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="ultraExplorerBarContainerControl5.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;operationsFollowUpCheckbox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltCheckBox, Com.Suncor.Olt.Client, Version=1.0.0.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="documentLinksControl.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;ultraExplorerBarContainerControl4.Name" xml:space="preserve">
+    <value>ultraExplorerBarContainerControl4</value>
+  </data>
+  <data name="parentLogTimeLabelData.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="parentCreatedByGroupBox.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;oltLabelLine1.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabelLine, Com.Suncor.Olt.Client, Version=1.0.0.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="logDateTimeLabelData.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="operationsFollowUpCheckbox.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="detailsTableLayoutPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>713, 108</value>
+  </data>
+  <data name="operationsFollowUpCheckbox.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;commentsLabelLine.Parent" xml:space="preserve">
+    <value>logCommentExplorerBarContainerControl</value>
+  </data>
+  <data name="supervisorFollowUpCheckbox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="explorerBar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>794, 593</value>
+  </data>
+  <data name="logCommentExplorerBarContainerControl.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="eHSFollowUpCheckBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;documentLinksControl.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.Controls.DocumentLinksControl, Com.Suncor.Olt.Client, Version=1.0.0.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;commentsGroupBox.Name" xml:space="preserve">
+    <value>commentsGroupBox</value>
+  </data>
+  <data name="createdByLabelData.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="ReplyShiftGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 45</value>
+  </data>
+  <data name="ultraExplorerBarContainerControl1.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="documentLinksControl.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;functionalLocationGroupBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltGroupBox, Com.Suncor.Olt.Client, Version=1.0.0.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="ultraExplorerBarGroup4.Text" xml:space="preserve">
+    <value>Main Group</value>
+  </data>
+  <data name="shiftLabelData.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="parentShiftLabelData.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="createdByLabelData.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;flowLayoutPanel1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="ultraExplorerBarContainerControl4.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="ReplyShiftGroupBox.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="logCommentControl.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="ultraExplorerBarContainerControl4.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="logTimeGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>267, 45</value>
+  </data>
+  <data name="&gt;&gt;saveButton.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltButton, Com.Suncor.Olt.Client, Version=1.0.0.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="supervisorFollowUpCheckbox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>81, 17</value>
+  </data>
+  <data name="explorerBar.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="isOperatingEngineerLogCheckBox.Text" xml:space="preserve">
+    <value>Operating Engineer</value>
+  </data>
+  <data name="isOperatingEngineerLogCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="ultraExplorerBarContainerControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>763, 45</value>
+  </data>
+  <data name="oltLabelLine1.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="functionalLocationGroupBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="ReplyShiftGroupBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="createdByGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>298, 0</value>
+  </data>
+  <data name="logCommentControl.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;otherFollowUpCheckBox.Name" xml:space="preserve">
+    <value>otherFollowUpCheckBox</value>
+  </data>
+  <data name="ReplyShiftGroupBox.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="entryReplyDetailsLabelLine.Size" type="System.Drawing.Size, System.Drawing">
+    <value>763, 13</value>
+  </data>
+  <data name="commentsLabelLine.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;supervisorFollowUpCheckbox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="cancelButton.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;recommendForShiftSummaryCheckBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltCheckBox, Com.Suncor.Olt.Client, Version=1.0.0.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;followupGroupBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltGroupBox, Com.Suncor.Olt.Client, Version=1.0.0.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="parentShiftLabelData.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 21</value>
+  </data>
+  <data name="commentLabelLine.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="&gt;&gt;panelActions.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;functionalLocationListBox.Name" xml:space="preserve">
+    <value>functionalLocationListBox</value>
+  </data>
+  <data name="documentLinksControl.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="createdByLabelData.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="isOperatingEngineerLogCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="shiftLabelData.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="commentsLabelLine.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 3</value>
+  </data>
+  <data name="&gt;&gt;flowLayoutPanel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;commentLabelLine.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabelLine, Com.Suncor.Olt.Client, Version=1.0.0.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;parentCreatedByGroupBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;logCommentControl.Name" xml:space="preserve">
+    <value>logCommentControl</value>
+  </data>
+  <data name="&gt;&gt;processControlFollowUpCheckBox.Parent" xml:space="preserve">
+    <value>followupGroupBox</value>
+  </data>
+  <data name="documentLinksControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 20</value>
+  </data>
+  <data name="&gt;&gt;commentLabelLine.Parent" xml:space="preserve">
+    <value>ultraExplorerBarContainerControl4</value>
+  </data>
+  <data name="linkGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>25, 19</value>
+  </data>
+  <data name="&gt;&gt;supervisorFollowUpCheckbox.Parent" xml:space="preserve">
+    <value>followupGroupBox</value>
+  </data>
+  <data name="&gt;&gt;optionsGroupBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="commentLabelLine.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="flowLayoutPanel1.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="oltLabelLine1.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="explorerBar.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="&gt;&gt;flocColumnHeader.Name" xml:space="preserve">
+    <value>flocColumnHeader</value>
+  </data>
+  <data name="functionalLocationGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 3</value>
+  </data>
+  <data name="flowLayoutPanel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 20</value>
+  </data>
+  <data name="createdByLabelData.Text" xml:space="preserve">
+    <value>&lt;created by&gt;</value>
+  </data>
+  <data name="&gt;&gt;flocColumnHeader.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;parentCreatedByLabelData.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabelData, Com.Suncor.Olt.Client, Version=1.0.0.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;ultraExplorerBarContainerControl4.Type" xml:space="preserve">
+    <value>Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarContainerControl, Infragistics2.Win.UltraWinExplorerBar.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb</value>
+  </data>
+  <data name="ultraExplorerBarContainerControl4.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="parentLogTimeLabelData.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="parentLogTimeGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="functionalLocationGroupBox.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="followupGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>255, 97</value>
+  </data>
+  <data name="parentLogTimeLabelData.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="shiftLabelData.Text" xml:space="preserve">
+    <value>&lt;Shift&gt;</value>
+  </data>
+  <data name="&gt;&gt;logCommentExplorerBarContainerControl.Name" xml:space="preserve">
+    <value>logCommentExplorerBarContainerControl</value>
+  </data>
+  <data name="ultraExplorerBarContainerControl4.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;ultraExplorerBarContainerControl2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="ultraExplorerBarContainerControl2.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="explorerBar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="commentsLabelLine.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;inspectionFollowUpCheckbox.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="isOperatingEngineerLogCheckBox.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="commentLabelLine.Label" xml:space="preserve">
+    <value>Parent Log Entry Details</value>
+  </data>
+  <data name="cancelButton.Text" xml:space="preserve">
+    <value>&amp;Cancel</value>
+  </data>
+  <data name="&gt;&gt;parentCreatedByLabelData.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="parentLogTimeLabelData.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="logTimeGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>25, 0</value>
+  </data>
+  <data name="entryReplyDetailsLabelLine.Label" xml:space="preserve">
+    <value>Log Entry Reply Details</value>
+  </data>
+  <data name="ultraExplorerBarContainerControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="panelActions.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="ultraExplorerBarContainerControl5.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="logTimeGroupBox.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="parentShiftLabelData.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 13</value>
+  </data>
+  <data name="followupGroupBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="operationsFollowUpCheckbox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 20</value>
+  </data>
+  <data name="followupGroupBox.Text" xml:space="preserve">
+    <value>Requires Follow-up By</value>
+  </data>
+  <data name="eHSFollowUpCheckBox.Text" xml:space="preserve">
+    <value>EH &amp;&amp; S</value>
+  </data>
+  <data name="&gt;&gt;otherFollowUpCheckBox.Parent" xml:space="preserve">
+    <value>followupGroupBox</value>
+  </data>
+  <data name="createdByGroupBox.Text" xml:space="preserve">
+    <value>Created By</value>
+  </data>
+  <data name="&gt;&gt;processControlFollowUpCheckBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltCheckBox, Com.Suncor.Olt.Client, Version=1.0.0.1, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="saveButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="&gt;&gt;parentCreatedByGroupBox.Name" xml:space="preserve">
+    <value>parentCreatedByGroupBox</value>
+  </data>
+  <data name="&gt;&gt;logCommentControl.Parent" xml:space="preserve">
+    <value>logCommentExplorerBarContainerControl</value>
+  </data>
+  <data name="&gt;&gt;shiftLabelData.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="parentCreatedByLabelData.Text" xml:space="preserve">
+    <value>&lt;created by&gt;</value>
+  </data>
+  <metadata name="commentsErrorProvider.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+</root>

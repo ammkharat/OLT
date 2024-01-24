@@ -1,0 +1,570 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="editsRequiringReApprovalGroupBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="suppressAlertCheckBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="suppressAlertCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 297</value>
+  </data>
+  <data name="suppressAlertCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 17</value>
+  </data>
+  <data name="suppressAlertCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="suppressAlertCheckBox.Text" xml:space="preserve">
+    <value>Suppress Alert</value>
+  </data>
+  <data name="&gt;&gt;suppressAlertCheckBox.Name" xml:space="preserve">
+    <value>suppressAlertCheckBox</value>
+  </data>
+  <data name="&gt;&gt;suppressAlertCheckBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltCheckBox, Com.Suncor.Olt.Client, Version=4.10.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;suppressAlertCheckBox.Parent" xml:space="preserve">
+    <value>editsRequiringReApprovalGroupBox</value>
+  </data>
+  <data name="&gt;&gt;suppressAlertCheckBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="requiresResponseWhenAlertedChangeCheckBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="requiresResponseWhenAlertedChangeCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 273</value>
+  </data>
+  <data name="requiresResponseWhenAlertedChangeCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>187, 17</value>
+  </data>
+  <data name="requiresResponseWhenAlertedChangeCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="requiresResponseWhenAlertedChangeCheckBox.Text" xml:space="preserve">
+    <value>Requires Response When Alerted</value>
+  </data>
+  <data name="&gt;&gt;requiresResponseWhenAlertedChangeCheckBox.Name" xml:space="preserve">
+    <value>requiresResponseWhenAlertedChangeCheckBox</value>
+  </data>
+  <data name="&gt;&gt;requiresResponseWhenAlertedChangeCheckBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltCheckBox, Com.Suncor.Olt.Client, Version=4.10.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;requiresResponseWhenAlertedChangeCheckBox.Parent" xml:space="preserve">
+    <value>editsRequiringReApprovalGroupBox</value>
+  </data>
+  <data name="&gt;&gt;requiresResponseWhenAlertedChangeCheckBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="generateActionItemCheckBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="generateActionItemCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 250</value>
+  </data>
+  <data name="generateActionItemCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>129, 17</value>
+  </data>
+  <data name="generateActionItemCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="generateActionItemCheckBox.Text" xml:space="preserve">
+    <value>Generate Action Item</value>
+  </data>
+  <data name="&gt;&gt;generateActionItemCheckBox.Name" xml:space="preserve">
+    <value>generateActionItemCheckBox</value>
+  </data>
+  <data name="&gt;&gt;generateActionItemCheckBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltCheckBox, Com.Suncor.Olt.Client, Version=4.10.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;generateActionItemCheckBox.Parent" xml:space="preserve">
+    <value>editsRequiringReApprovalGroupBox</value>
+  </data>
+  <data name="&gt;&gt;generateActionItemCheckBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="scheduleChangeCheckBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="scheduleChangeCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 227</value>
+  </data>
+  <data name="scheduleChangeCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>109, 17</value>
+  </data>
+  <data name="scheduleChangeCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="scheduleChangeCheckBox.Text" xml:space="preserve">
+    <value>Schedule Change</value>
+  </data>
+  <data name="&gt;&gt;scheduleChangeCheckBox.Name" xml:space="preserve">
+    <value>scheduleChangeCheckBox</value>
+  </data>
+  <data name="&gt;&gt;scheduleChangeCheckBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltCheckBox, Com.Suncor.Olt.Client, Version=4.10.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;scheduleChangeCheckBox.Parent" xml:space="preserve">
+    <value>editsRequiringReApprovalGroupBox</value>
+  </data>
+  <data name="&gt;&gt;scheduleChangeCheckBox.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="targetDependenciesCheckBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="targetDependenciesCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 204</value>
+  </data>
+  <data name="targetDependenciesCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>128, 17</value>
+  </data>
+  <data name="targetDependenciesCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="targetDependenciesCheckBox.Text" xml:space="preserve">
+    <value>Target Dependencies</value>
+  </data>
+  <data name="&gt;&gt;targetDependenciesCheckBox.Name" xml:space="preserve">
+    <value>targetDependenciesCheckBox</value>
+  </data>
+  <data name="&gt;&gt;targetDependenciesCheckBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltCheckBox, Com.Suncor.Olt.Client, Version=4.10.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;targetDependenciesCheckBox.Parent" xml:space="preserve">
+    <value>editsRequiringReApprovalGroupBox</value>
+  </data>
+  <data name="&gt;&gt;targetDependenciesCheckBox.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="phTagChangeCheckBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="phTagChangeCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 181</value>
+  </data>
+  <data name="phTagChangeCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>116, 17</value>
+  </data>
+  <data name="phTagChangeCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="phTagChangeCheckBox.Text" xml:space="preserve">
+    <value>Plant Historian Tag</value>
+  </data>
+  <data name="&gt;&gt;phTagChangeCheckBox.Name" xml:space="preserve">
+    <value>phTagChangeCheckBox</value>
+  </data>
+  <data name="&gt;&gt;phTagChangeCheckBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltCheckBox, Com.Suncor.Olt.Client, Version=4.10.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;phTagChangeCheckBox.Parent" xml:space="preserve">
+    <value>editsRequiringReApprovalGroupBox</value>
+  </data>
+  <data name="&gt;&gt;phTagChangeCheckBox.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="functionalLocationChangeCheckBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="functionalLocationChangeCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 158</value>
+  </data>
+  <data name="functionalLocationChangeCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>118, 17</value>
+  </data>
+  <data name="functionalLocationChangeCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="functionalLocationChangeCheckBox.Text" xml:space="preserve">
+    <value>Functional Location</value>
+  </data>
+  <data name="&gt;&gt;functionalLocationChangeCheckBox.Name" xml:space="preserve">
+    <value>functionalLocationChangeCheckBox</value>
+  </data>
+  <data name="&gt;&gt;functionalLocationChangeCheckBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltCheckBox, Com.Suncor.Olt.Client, Version=4.10.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;functionalLocationChangeCheckBox.Parent" xml:space="preserve">
+    <value>editsRequiringReApprovalGroupBox</value>
+  </data>
+  <data name="&gt;&gt;functionalLocationChangeCheckBox.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="documentLinksCheckBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="documentLinksCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 135</value>
+  </data>
+  <data name="documentLinksCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 17</value>
+  </data>
+  <data name="documentLinksCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="documentLinksCheckBox.Text" xml:space="preserve">
+    <value>Document Links</value>
+  </data>
+  <data name="&gt;&gt;documentLinksCheckBox.Name" xml:space="preserve">
+    <value>documentLinksCheckBox</value>
+  </data>
+  <data name="&gt;&gt;documentLinksCheckBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltCheckBox, Com.Suncor.Olt.Client, Version=4.10.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;documentLinksCheckBox.Parent" xml:space="preserve">
+    <value>editsRequiringReApprovalGroupBox</value>
+  </data>
+  <data name="&gt;&gt;documentLinksCheckBox.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="descriptionChangeCheckBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="descriptionChangeCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 112</value>
+  </data>
+  <data name="descriptionChangeCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>79, 17</value>
+  </data>
+  <data name="descriptionChangeCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="descriptionChangeCheckBox.Text" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="&gt;&gt;descriptionChangeCheckBox.Name" xml:space="preserve">
+    <value>descriptionChangeCheckBox</value>
+  </data>
+  <data name="&gt;&gt;descriptionChangeCheckBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltCheckBox, Com.Suncor.Olt.Client, Version=4.10.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;descriptionChangeCheckBox.Parent" xml:space="preserve">
+    <value>editsRequiringReApprovalGroupBox</value>
+  </data>
+  <data name="&gt;&gt;descriptionChangeCheckBox.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="priorityChangeCheckBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="priorityChangeCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 89</value>
+  </data>
+  <data name="priorityChangeCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 17</value>
+  </data>
+  <data name="priorityChangeCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="priorityChangeCheckBox.Text" xml:space="preserve">
+    <value>Priority</value>
+  </data>
+  <data name="&gt;&gt;priorityChangeCheckBox.Name" xml:space="preserve">
+    <value>priorityChangeCheckBox</value>
+  </data>
+  <data name="&gt;&gt;priorityChangeCheckBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltCheckBox, Com.Suncor.Olt.Client, Version=4.10.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;priorityChangeCheckBox.Parent" xml:space="preserve">
+    <value>editsRequiringReApprovalGroupBox</value>
+  </data>
+  <data name="&gt;&gt;priorityChangeCheckBox.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="operationalModeChangeoltCheckBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="operationalModeChangeoltCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 66</value>
+  </data>
+  <data name="operationalModeChangeoltCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>111, 17</value>
+  </data>
+  <data name="operationalModeChangeoltCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="operationalModeChangeoltCheckBox.Text" xml:space="preserve">
+    <value>Operational Mode</value>
+  </data>
+  <data name="&gt;&gt;operationalModeChangeoltCheckBox.Name" xml:space="preserve">
+    <value>operationalModeChangeoltCheckBox</value>
+  </data>
+  <data name="&gt;&gt;operationalModeChangeoltCheckBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltCheckBox, Com.Suncor.Olt.Client, Version=4.10.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;operationalModeChangeoltCheckBox.Parent" xml:space="preserve">
+    <value>editsRequiringReApprovalGroupBox</value>
+  </data>
+  <data name="&gt;&gt;operationalModeChangeoltCheckBox.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="categoryChangeCheckBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="categoryChangeCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 43</value>
+  </data>
+  <data name="categoryChangeCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 17</value>
+  </data>
+  <data name="categoryChangeCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="categoryChangeCheckBox.Text" xml:space="preserve">
+    <value>Category</value>
+  </data>
+  <data name="&gt;&gt;categoryChangeCheckBox.Name" xml:space="preserve">
+    <value>categoryChangeCheckBox</value>
+  </data>
+  <data name="&gt;&gt;categoryChangeCheckBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltCheckBox, Com.Suncor.Olt.Client, Version=4.10.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;categoryChangeCheckBox.Parent" xml:space="preserve">
+    <value>editsRequiringReApprovalGroupBox</value>
+  </data>
+  <data name="&gt;&gt;categoryChangeCheckBox.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="nameChangeCheckBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="nameChangeCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 20</value>
+  </data>
+  <data name="nameChangeCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>136, 17</value>
+  </data>
+  <data name="nameChangeCheckBox.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="nameChangeCheckBox.Text" xml:space="preserve">
+    <value>Target Definition Name</value>
+  </data>
+  <data name="&gt;&gt;nameChangeCheckBox.Name" xml:space="preserve">
+    <value>nameChangeCheckBox</value>
+  </data>
+  <data name="&gt;&gt;nameChangeCheckBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltCheckBox, Com.Suncor.Olt.Client, Version=4.10.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;nameChangeCheckBox.Parent" xml:space="preserve">
+    <value>editsRequiringReApprovalGroupBox</value>
+  </data>
+  <data name="&gt;&gt;nameChangeCheckBox.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="editsRequiringReApprovalGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="editsRequiringReApprovalGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>208, 320</value>
+  </data>
+  <data name="editsRequiringReApprovalGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="editsRequiringReApprovalGroupBox.Text" xml:space="preserve">
+    <value>Edits Requiring Re-Approval</value>
+  </data>
+  <data name="&gt;&gt;editsRequiringReApprovalGroupBox.Name" xml:space="preserve">
+    <value>editsRequiringReApprovalGroupBox</value>
+  </data>
+  <data name="&gt;&gt;editsRequiringReApprovalGroupBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltGroupBox, Com.Suncor.Olt.Client, Version=4.10.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;editsRequiringReApprovalGroupBox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;editsRequiringReApprovalGroupBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="selectAllButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="selectAllButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>52, 326</value>
+  </data>
+  <data name="selectAllButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="selectAllButton.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="selectAllButton.Text" xml:space="preserve">
+    <value>Select All</value>
+  </data>
+  <data name="&gt;&gt;selectAllButton.Name" xml:space="preserve">
+    <value>selectAllButton</value>
+  </data>
+  <data name="&gt;&gt;selectAllButton.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltButton, Com.Suncor.Olt.Client, Version=4.10.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;selectAllButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;selectAllButton.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="clearButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="clearButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>133, 326</value>
+  </data>
+  <data name="clearButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="clearButton.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="clearButton.Text" xml:space="preserve">
+    <value>Clear</value>
+  </data>
+  <data name="&gt;&gt;clearButton.Name" xml:space="preserve">
+    <value>clearButton</value>
+  </data>
+  <data name="&gt;&gt;clearButton.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltButton, Com.Suncor.Olt.Client, Version=4.10.9876.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;clearButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;clearButton.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>208, 351</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>TargetDefinitionAutoReApprovalConfigurationControl</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.UserControl, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+</root>

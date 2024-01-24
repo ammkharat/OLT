@@ -1,0 +1,1334 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="btnSaveIssue.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="txtDETENTEUR.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="oltExplorerBar1.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="rdbDETENTEURManual.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 14</value>
+  </data>
+  <data name="txtDETENTEUR.Location" type="System.Drawing.Point, System.Drawing">
+    <value>203, 65</value>
+  </data>
+  <data name="&gt;&gt;oltPanel3.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="rdbEMETTEUROLT.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="rdbVerifierId.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;rdbVerifierId.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;oltGroupBox2.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="oltTableLayoutPanel1.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="oltTableLayoutPanel1.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;oltTableLayoutPanel1.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltTableLayoutPanel, Operator Log Tool, Version=5.10.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="ultraExplorerBarContainerControl2.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;oltLabel2.Name" xml:space="preserve">
+    <value>oltLabel2</value>
+  </data>
+  <data name="gasTestElementInfoTableLayoutPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1, 52</value>
+  </data>
+  <data name="&gt;&gt;oltLabel2.Parent" xml:space="preserve">
+    <value>oltTableLayoutPanel2</value>
+  </data>
+  <data name="&gt;&gt;oltBtnshowDetails.Parent" xml:space="preserve">
+    <value>oltPanel1</value>
+  </data>
+  <data name="rdbVerifierOLT.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;oltGroupBox1.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltGroupBox, Operator Log Tool, Version=5.10.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;oltGroupBox3.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="cancelButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>740, 17</value>
+  </data>
+  <data name="&gt;&gt;rdbVerifierManual.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="rdbEMETTEURtxt.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;rdbVerifierManual.Parent" xml:space="preserve">
+    <value>oltGroupBox6</value>
+  </data>
+  <data name="rdbGastTesttxt.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;oltPanel1.Name" xml:space="preserve">
+    <value>oltPanel1</value>
+  </data>
+  <data name="saveAndCloseButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>465, 18</value>
+  </data>
+  <data name="&gt;&gt;rdbVerifiertxt.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;btnSaveIssue.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="gasTestElementInfoTableLayoutPanel.FourthResultTime" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFFDb20uU3VuY29yLk9sdC5Db21tb24sIFZlcnNpb249NS4xMC42
+        NTUzMy4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPW51bGwFAQAAACFDb20uU3VuY29y
+        Lk9sdC5Db21tb24uRG9tYWluLlRpbWUBAAAAEGludGVybmFsVGltZVNwYW4ADAIAAAAA4rp++U4AAAs=
+</value>
+  </data>
+  <data name="rdbVerifiertxt.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;saveAndCloseButton.Parent" xml:space="preserve">
+    <value>oltPanel1</value>
+  </data>
+  <data name="oltPanel2.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;ultraExplorerBarContainerControl2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;rdbDETENTEURtxt.Parent" xml:space="preserve">
+    <value>oltGroupBox1</value>
+  </data>
+  <data name="&gt;&gt;rdbGasTestManual.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltRadioButton, Operator Log Tool, Version=5.10.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="cancelButton.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;oltBtnshowDetails.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltButton, Operator Log Tool, Version=5.10.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="ultraExplorerBarContainerControl1.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="oltGroupBox2.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;rdbGastTesttxt.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;rdbEMETTEURManual.Parent" xml:space="preserve">
+    <value>oltGroupBox3</value>
+  </data>
+  <data name="&gt;&gt;rdbDETENTEUROLT.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;oltLabel4.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Operator Log Tool, Version=5.10.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="oltPanel2.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="btnSaveIssue.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;oltExplorerBar1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="oltPanel3.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="rdbEMETTEURManual.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;txtEMETTEUR.Parent" xml:space="preserve">
+    <value>oltTableLayoutPanel1</value>
+  </data>
+  <data name="rdbEMETTEUROLT.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="rdbVerifierOLT.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;rdbGasTestOLT.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;rdbEMETTEURManual.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltRadioButton, Operator Log Tool, Version=5.10.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;rdbGasTestId.Parent" xml:space="preserve">
+    <value>oltGroupBox2</value>
+  </data>
+  <data name="oltLabel4.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;txtDETENTEUR.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="txtEMETTEUR.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="oltGroupBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>653, 55</value>
+  </data>
+  <data name="&gt;&gt;cancelButton.Name" xml:space="preserve">
+    <value>cancelButton</value>
+  </data>
+  <data name="lblNextLvlIssuer.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="rdbEMETTEURManual.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;oltGroupBox2.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltGroupBox, Operator Log Tool, Version=5.10.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;rdbVerifierOLT.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltRadioButton, Operator Log Tool, Version=5.10.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="oltLabel4.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;rdbEMETTEUROLT.Name" xml:space="preserve">
+    <value>rdbEMETTEUROLT</value>
+  </data>
+  <data name="&gt;&gt;saveAndCloseButton.Name" xml:space="preserve">
+    <value>saveAndCloseButton</value>
+  </data>
+  <data name="&gt;&gt;btnSaveIssue.Name" xml:space="preserve">
+    <value>btnSaveIssue</value>
+  </data>
+  <data name="oltPanel3.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="rdbDETENTEURtxt.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="rdbGastTesttxt.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;rdbGastTesttxt.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltTextBox, Operator Log Tool, Version=5.10.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="olttblpnlHot.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;cancelButton.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;oltGroupBox1.Parent" xml:space="preserve">
+    <value>oltPanel3</value>
+  </data>
+  <data name="&gt;&gt;txtGasTest.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;oltBtnshowDetails.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;ultraExplorerBarContainerControl2.Type" xml:space="preserve">
+    <value>Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarContainerControl, Infragistics2.Win.UltraWinExplorerBar.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb</value>
+  </data>
+  <data name="&gt;&gt;saveAndCloseButton.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltButton, Operator Log Tool, Version=5.10.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="oltTableLayoutPanel1.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="rdbEMETTEURId.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;rdbGasTestId.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="rdbGastTesttxt.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rdbVerifierManual.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;saveAndCloseButton.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="rdbVerifierManual.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 12</value>
+  </data>
+  <data name="btnHistory.Location" type="System.Drawing.Point, System.Drawing">
+    <value>158, 18</value>
+  </data>
+  <data name="&gt;&gt;txtVerifier.Name" xml:space="preserve">
+    <value>txtVerifier</value>
+  </data>
+  <data name="&gt;&gt;txtGasTest.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltTextBox, Operator Log Tool, Version=5.10.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="rdbEMETTEURManual.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="rdbVerifierManual.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;ultraExplorerBarContainerControl2.Parent" xml:space="preserve">
+    <value>oltExplorerBar1</value>
+  </data>
+  <data name="rdbVerifierOLT.Location" type="System.Drawing.Point, System.Drawing">
+    <value>72, 12</value>
+  </data>
+  <data name="oltGroupBox3.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="oltPanel1.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rdbEMETTEUROLT.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="oltGroupBox1.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="rdbDETENTEURtxt.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="txtDETENTEUR.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;ultraExplorerBarContainerControl1.Type" xml:space="preserve">
+    <value>Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarContainerControl, Infragistics2.Win.UltraWinExplorerBar.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb</value>
+  </data>
+  <data name="ultraExplorerBarContainerControl2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 254</value>
+  </data>
+  <data name="&gt;&gt;oltPanel2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;txtEMETTEUR.Name" xml:space="preserve">
+    <value>txtEMETTEUR</value>
+  </data>
+  <data name="&gt;&gt;oltPanel1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="oltLabel4.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.Forms.BaseForm, Operator Log Tool, Version=5.10.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="rdbGasTestOLT.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="oltLabel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 22</value>
+  </data>
+  <data name="oltPanel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="txtVerifier.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;txtGasTest.Name" xml:space="preserve">
+    <value>txtGasTest</value>
+  </data>
+  <data name="ultraExplorerBarContainerControl2.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cancelButton.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="&gt;&gt;btnSaveIssue.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltButton, Operator Log Tool, Version=5.10.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;rdbDETENTEURId.Name" xml:space="preserve">
+    <value>rdbDETENTEURId</value>
+  </data>
+  <data name="oltPanel3.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;olttblpnlHot.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;rdbDETENTEUROLT.Parent" xml:space="preserve">
+    <value>oltGroupBox1</value>
+  </data>
+  <data name="&gt;&gt;lblNextLvlIssuer.Name" xml:space="preserve">
+    <value>lblNextLvlIssuer</value>
+  </data>
+  <data name="&gt;&gt;rdbVerifierId.Parent" xml:space="preserve">
+    <value>oltGroupBox6</value>
+  </data>
+  <data name="rdbDETENTEURtxt.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;rdbDETENTEURManual.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="rdbDETENTEUROLT.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="oltTableLayoutPanel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 3</value>
+  </data>
+  <data name="oltLabel1.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;gasTestElementInfoTableLayoutPanel.Name" xml:space="preserve">
+    <value>gasTestElementInfoTableLayoutPanel</value>
+  </data>
+  <data name="&gt;&gt;rdbDETENTEURManual.Name" xml:space="preserve">
+    <value>rdbDETENTEURManual</value>
+  </data>
+  <data name="rdbGasTestOLT.Location" type="System.Drawing.Point, System.Drawing">
+    <value>72, 12</value>
+  </data>
+  <data name="&gt;&gt;errorProvider1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ErrorProvider, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="rdbDETENTEURManual.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="rdbDETENTEURId.Location" type="System.Drawing.Point, System.Drawing">
+    <value>129, 14</value>
+  </data>
+  <data name="rdbVerifierManual.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="gasTestElementInfoTableLayoutPanel.ThirdResultTime" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFFDb20uU3VuY29yLk9sdC5Db21tb24sIFZlcnNpb249NS4xMC42
+        NTUzMy4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPW51bGwFAQAAACFDb20uU3VuY29y
+        Lk9sdC5Db21tb24uRG9tYWluLlRpbWUBAAAAEGludGVybmFsVGltZVNwYW4ADAIAAAAA4rp++U4AAAs=
+</value>
+  </data>
+  <data name="btnSaveIssue.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="oltTableLayoutPanel2.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;oltPanel2.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltPanel, Operator Log Tool, Version=5.10.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="oltExplorerBar1.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="oltPanel1.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="rdbDETENTEURManual.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="oltLabel2.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="oltLabel1.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;oltGroupBox6.Name" xml:space="preserve">
+    <value>oltGroupBox6</value>
+  </data>
+  <data name="&gt;&gt;oltGroupBox3.Parent" xml:space="preserve">
+    <value>oltTableLayoutPanel1</value>
+  </data>
+  <data name="gasTestElementInfoTableLayoutPanel.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;txtDETENTEUR.Name" xml:space="preserve">
+    <value>txtDETENTEUR</value>
+  </data>
+  <data name="rdbVerifierManual.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;rdbDETENTEUROLT.Name" xml:space="preserve">
+    <value>rdbDETENTEUROLT</value>
+  </data>
+  <data name="ultraExplorerBarContainerControl2.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="rdbEMETTEUROLT.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rdbGasTestId.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;oltLabel4.Name" xml:space="preserve">
+    <value>oltLabel4</value>
+  </data>
+  <data name="oltGroupBox6.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="oltGroupBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>657, 3</value>
+  </data>
+  <data name="oltExplorerBar1.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;oltGroupBox6.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;rdbVerifierOLT.Name" xml:space="preserve">
+    <value>rdbVerifierOLT</value>
+  </data>
+  <data name="&gt;&gt;oltPanel2.Name" xml:space="preserve">
+    <value>oltPanel2</value>
+  </data>
+  <data name="rdbGasTestManual.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;rdbGasTestId.Name" xml:space="preserve">
+    <value>rdbGasTestId</value>
+  </data>
+  <data name="oltGroupBox3.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;oltGroupBox3.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltGroupBox, Operator Log Tool, Version=5.10.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="txtGasTest.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;rdbVerifierId.Name" xml:space="preserve">
+    <value>rdbVerifierId</value>
+  </data>
+  <data name="oltTableLayoutPanel2.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="oltLabel2" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="txtGasTest" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="oltGroupBox2" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,30.73383,Percent,69.26617,Absolute,229" /&gt;&lt;Rows Styles="Absolute,57" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="txtGasTest.Location" type="System.Drawing.Point, System.Drawing">
+    <value>204, 18</value>
+  </data>
+  <data name="&gt;&gt;oltExplorerBar1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="oltGroupBox6.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="oltGroupBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="btnSaveIssue.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="oltGroupBox3.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="oltGroupBox3.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="txtEMETTEUR.Location" type="System.Drawing.Point, System.Drawing">
+    <value>203, 15</value>
+  </data>
+  <data name="&gt;&gt;oltLabel1.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Operator Log Tool, Version=5.10.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="oltLabel4.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;oltPanel2.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;oltPanel3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="oltPanel3.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
+  </data>
+  <data name="&gt;&gt;oltPanel1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="lblNextLvlIssuer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 68</value>
+  </data>
+  <data name="&gt;&gt;rdbEMETTEURManual.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="rdbGasTestOLT.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rdbDETENTEUROLT.Location" type="System.Drawing.Point, System.Drawing">
+    <value>72, 14</value>
+  </data>
+  <data name="oltGroupBox1.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;lblNextLvlIssuer.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="rdbEMETTEURManual.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 11</value>
+  </data>
+  <data name="oltLabel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 18</value>
+  </data>
+  <data name="&gt;&gt;ultraExplorerBarContainerControl1.Name" xml:space="preserve">
+    <value>ultraExplorerBarContainerControl1</value>
+  </data>
+  <data name="txtGasTest.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="rdbVerifierOLT.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;rdbVerifierManual.Name" xml:space="preserve">
+    <value>rdbVerifierManual</value>
+  </data>
+  <data name="&gt;&gt;oltPanel1.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltPanel, Operator Log Tool, Version=5.10.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="txtVerifier.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="oltPanel3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 147</value>
+  </data>
+  <data name="&gt;&gt;rdbVerifiertxt.Parent" xml:space="preserve">
+    <value>oltGroupBox6</value>
+  </data>
+  <data name="&gt;&gt;txtEMETTEUR.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;cancelButton.Parent" xml:space="preserve">
+    <value>oltPanel1</value>
+  </data>
+  <data name="rdbDETENTEURId.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="rdbVerifiertxt.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="oltGroupBox6.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="txtDETENTEUR.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="rdbDETENTEURManual.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="oltGroupBox2.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtEMETTEUR.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="oltPanel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 683</value>
+  </data>
+  <data name="rdbEMETTEURId.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;ultraExplorerBarContainerControl1.Parent" xml:space="preserve">
+    <value>oltExplorerBar1</value>
+  </data>
+  <data name="&gt;&gt;cancelButton.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltButton, Operator Log Tool, Version=5.10.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;oltPanel3.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltPanel, Operator Log Tool, Version=5.10.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;btnSaveIssue.Parent" xml:space="preserve">
+    <value>oltPanel1</value>
+  </data>
+  <data name="rdbEMETTEURId.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;oltGroupBox3.Name" xml:space="preserve">
+    <value>oltGroupBox3</value>
+  </data>
+  <data name="olttblpnlHot.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="oltLabel4" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="txtVerifier" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="oltGroupBox6" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,30.57692,Percent,69.42308,Absolute,231" /&gt;&lt;Rows Styles="Absolute,57" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="oltGroupBox2.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="btnHistory.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="saveAndCloseButton.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;oltTableLayoutPanel2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="olttblpnlHot.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 0</value>
+  </data>
+  <data name="oltPanel2.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="olttblpnlHot.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="rdbDETENTEURId.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;oltExplorerBar1.Name" xml:space="preserve">
+    <value>oltExplorerBar1</value>
+  </data>
+  <data name="rdbGasTestId.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;olttblpnlHot.Parent" xml:space="preserve">
+    <value>ultraExplorerBarContainerControl1</value>
+  </data>
+  <data name="rdbVerifiertxt.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="saveAndCloseButton.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;oltLabel4.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="txtGasTest.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;rdbEMETTEURId.Parent" xml:space="preserve">
+    <value>oltGroupBox3</value>
+  </data>
+  <data name="rdbVerifierOLT.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="rdbVerifiertxt.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="rdbVerifiertxt.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2000, 2000</value>
+  </data>
+  <data name="&gt;&gt;gasTestElementInfoTableLayoutPanel.Parent" xml:space="preserve">
+    <value>ultraExplorerBarContainerControl2</value>
+  </data>
+  <data name="oltExplorerBar1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="&gt;&gt;rdbEMETTEURtxt.Parent" xml:space="preserve">
+    <value>oltGroupBox3</value>
+  </data>
+  <data name="&gt;&gt;btnHistory.Parent" xml:space="preserve">
+    <value>oltPanel1</value>
+  </data>
+  <data name="oltTableLayoutPanel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 59</value>
+  </data>
+  <data name="&gt;&gt;rdbDETENTEURManual.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltRadioButton, Operator Log Tool, Version=5.10.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;lblNextLvlIssuer.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Operator Log Tool, Version=5.10.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;rdbEMETTEUROLT.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="rdbDETENTEURtxt.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="rdbVerifierId.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="rdbGasTestManual.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 12</value>
+  </data>
+  <data name="btnHistory.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="rdbEMETTEURId.Location" type="System.Drawing.Point, System.Drawing">
+    <value>129, 11</value>
+  </data>
+  <data name="&gt;&gt;rdbGasTestOLT.Parent" xml:space="preserve">
+    <value>oltGroupBox2</value>
+  </data>
+  <data name="rdbEMETTEURtxt.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="oltBtnshowDetails.Location" type="System.Drawing.Point, System.Drawing">
+    <value>8, 18</value>
+  </data>
+  <data name="&gt;&gt;btnHistory.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="oltPanel1.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;txtVerifier.Parent" xml:space="preserve">
+    <value>olttblpnlHot</value>
+  </data>
+  <data name="&gt;&gt;txtGasTest.Parent" xml:space="preserve">
+    <value>oltTableLayoutPanel2</value>
+  </data>
+  <data name="&gt;&gt;oltGroupBox2.Parent" xml:space="preserve">
+    <value>oltTableLayoutPanel2</value>
+  </data>
+  <data name="oltTableLayoutPanel2.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;rdbGasTestManual.Parent" xml:space="preserve">
+    <value>oltGroupBox2</value>
+  </data>
+  <data name="oltLabel2.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="saveAndCloseButton.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;rdbVerifierOLT.Parent" xml:space="preserve">
+    <value>oltGroupBox6</value>
+  </data>
+  <data name="&gt;&gt;rdbEMETTEURtxt.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="rdbEMETTEURId.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;rdbEMETTEURManual.Name" xml:space="preserve">
+    <value>rdbEMETTEURManual</value>
+  </data>
+  <data name="oltPanel1.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;rdbGastTesttxt.Parent" xml:space="preserve">
+    <value>oltGroupBox2</value>
+  </data>
+  <data name="&gt;&gt;rdbEMETTEURId.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltRadioButton, Operator Log Tool, Version=5.10.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;oltPanel3.Name" xml:space="preserve">
+    <value>oltPanel3</value>
+  </data>
+  <data name="&gt;&gt;oltLabel1.Name" xml:space="preserve">
+    <value>oltLabel1</value>
+  </data>
+  <data name="rdbGasTestId.Location" type="System.Drawing.Point, System.Drawing">
+    <value>129, 12</value>
+  </data>
+  <data name="&gt;&gt;rdbDETENTEURManual.Parent" xml:space="preserve">
+    <value>oltGroupBox1</value>
+  </data>
+  <data name="&gt;&gt;oltTableLayoutPanel2.Parent" xml:space="preserve">
+    <value>ultraExplorerBarContainerControl2</value>
+  </data>
+  <data name="&gt;&gt;oltGroupBox6.Parent" xml:space="preserve">
+    <value>olttblpnlHot</value>
+  </data>
+  <data name="&gt;&gt;rdbEMETTEURId.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;rdbEMETTEURtxt.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltTextBox, Operator Log Tool, Version=5.10.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="rdbVerifierId.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;rdbDETENTEURtxt.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltTextBox, Operator Log Tool, Version=5.10.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;oltLabel4.Parent" xml:space="preserve">
+    <value>olttblpnlHot</value>
+  </data>
+  <data name="rdbVerifierId.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;lblNextLvlIssuer.Parent" xml:space="preserve">
+    <value>oltPanel3</value>
+  </data>
+  <data name="&gt;&gt;rdbVerifierManual.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltRadioButton, Operator Log Tool, Version=5.10.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="lblNextLvlIssuer.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;ultraExplorerBarContainerControl2.Name" xml:space="preserve">
+    <value>ultraExplorerBarContainerControl2</value>
+  </data>
+  <data name="&gt;&gt;rdbGasTestManual.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;rdbEMETTEURId.Name" xml:space="preserve">
+    <value>rdbEMETTEURId</value>
+  </data>
+  <data name="rdbEMETTEURtxt.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;rdbGasTestOLT.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltRadioButton, Operator Log Tool, Version=5.10.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;oltTableLayoutPanel1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;oltLabel1.Parent" xml:space="preserve">
+    <value>oltTableLayoutPanel1</value>
+  </data>
+  <data name="oltGroupBox3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>653, 6</value>
+  </data>
+  <data name="&gt;&gt;txtVerifier.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="txtVerifier.Location" type="System.Drawing.Point, System.Drawing">
+    <value>201, 18</value>
+  </data>
+  <data name="oltBtnshowDetails.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="oltExplorerBar1.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="olttblpnlHot.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;btnHistory.Name" xml:space="preserve">
+    <value>btnHistory</value>
+  </data>
+  <data name="saveAndCloseButton.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;txtDETENTEUR.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltTextBox, Operator Log Tool, Version=5.10.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;rdbDETENTEURId.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="oltTableLayoutPanel1.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;rdbGasTestId.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltRadioButton, Operator Log Tool, Version=5.10.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>WorkPermitMudsSign</value>
+  </data>
+  <data name="oltGroupBox6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>652, 9</value>
+  </data>
+  <data name="oltGroupBox1.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;rdbEMETTEURtxt.Name" xml:space="preserve">
+    <value>rdbEMETTEURtxt</value>
+  </data>
+  <data name="&gt;&gt;oltGroupBox6.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltGroupBox, Operator Log Tool, Version=5.10.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="oltLabel1.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;oltTableLayoutPanel1.Name" xml:space="preserve">
+    <value>oltTableLayoutPanel1</value>
+  </data>
+  <data name="&gt;&gt;rdbVerifierOLT.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;oltBtnshowDetails.Name" xml:space="preserve">
+    <value>oltBtnshowDetails</value>
+  </data>
+  <data name="rdbDETENTEURId.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;rdbVerifiertxt.Name" xml:space="preserve">
+    <value>rdbVerifiertxt</value>
+  </data>
+  <data name="rdbEMETTEUROLT.Location" type="System.Drawing.Point, System.Drawing">
+    <value>72, 11</value>
+  </data>
+  <data name="oltLabel2.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="rdbVerifierId.Location" type="System.Drawing.Point, System.Drawing">
+    <value>129, 12</value>
+  </data>
+  <data name="&gt;&gt;olttblpnlHot.Name" xml:space="preserve">
+    <value>olttblpnlHot</value>
+  </data>
+  <data name="&gt;&gt;gasTestElementInfoTableLayoutPanel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="cancelButton.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="olttblpnlHot.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="oltLabel2.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="oltTableLayoutPanel2.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;oltTableLayoutPanel2.Name" xml:space="preserve">
+    <value>oltTableLayoutPanel2</value>
+  </data>
+  <data name="ultraExplorerBarContainerControl2.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;rdbDETENTEURId.Parent" xml:space="preserve">
+    <value>oltGroupBox1</value>
+  </data>
+  <data name="oltTableLayoutPanel1.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="oltGroupBox3" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="oltLabel1" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="txtEMETTEUR" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,30.74141,Percent,69.25859,Absolute,230" /&gt;&lt;Rows Styles="Absolute,66,Absolute,66,Absolute,66,Absolute,66" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="txtEMETTEUR.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="oltPanel2.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rdbDETENTEURId.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="ultraExplorerBarContainerControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 21</value>
+  </data>
+  <data name="btnHistory.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;olttblpnlHot.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltTableLayoutPanel, Operator Log Tool, Version=5.10.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="gasTestElementInfoTableLayoutPanel.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtVerifier.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="ultraExplorerBarContainerControl1.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;errorProvider1.Name" xml:space="preserve">
+    <value>errorProvider1</value>
+  </data>
+  <data name="oltGroupBox6.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;rdbGastTesttxt.Name" xml:space="preserve">
+    <value>rdbGastTesttxt</value>
+  </data>
+  <data name="&gt;&gt;rdbGasTestManual.Name" xml:space="preserve">
+    <value>rdbGasTestManual</value>
+  </data>
+  <data name="txtGasTest.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;rdbEMETTEUROLT.Parent" xml:space="preserve">
+    <value>oltGroupBox3</value>
+  </data>
+  <data name="rdbGastTesttxt.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2000, 2000</value>
+  </data>
+  <data name="txtEMETTEUR.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;btnHistory.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltButton, Operator Log Tool, Version=5.10.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="ultraExplorerBarContainerControl1.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rdbGasTestManual.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;rdbVerifierId.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltRadioButton, Operator Log Tool, Version=5.10.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;gasTestElementInfoTableLayoutPanel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.Controls.GasTestElementLayoutPanelMuds, Operator Log Tool, Version=5.10.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;rdbDETENTEURtxt.Name" xml:space="preserve">
+    <value>rdbDETENTEURtxt</value>
+  </data>
+  <data name="&gt;&gt;txtEMETTEUR.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltTextBox, Operator Log Tool, Version=5.10.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="lblNextLvlIssuer.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;rdbEMETTEUROLT.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltRadioButton, Operator Log Tool, Version=5.10.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;oltTableLayoutPanel1.Parent" xml:space="preserve">
+    <value>ultraExplorerBarContainerControl1</value>
+  </data>
+  <data name="&gt;&gt;oltGroupBox1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="rdbDETENTEURManual.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;txtVerifier.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltTextBox, Operator Log Tool, Version=5.10.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="rdbDETENTEUROLT.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="cancelButton.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="btnHistory.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rdbDETENTEUROLT.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="rdbGasTestId.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="oltPanel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 100</value>
+  </data>
+  <data name="rdbGasTestOLT.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="txtVerifier.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="rdbEMETTEURtxt.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;rdbDETENTEUROLT.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltRadioButton, Operator Log Tool, Version=5.10.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="oltLabel1.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;rdbDETENTEURtxt.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;ultraExplorerBarContainerControl1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="rdbEMETTEURManual.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;oltLabel2.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="oltLabel4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 22</value>
+  </data>
+  <data name="oltBtnshowDetails.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="&gt;&gt;oltLabel1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="txtDETENTEUR.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnSaveIssue.Location" type="System.Drawing.Point, System.Drawing">
+    <value>577, 18</value>
+  </data>
+  <data name="oltTableLayoutPanel2.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="rdbGasTestId.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;txtDETENTEUR.Parent" xml:space="preserve">
+    <value>oltPanel3</value>
+  </data>
+  <data name="&gt;&gt;oltTableLayoutPanel2.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltTableLayoutPanel, Operator Log Tool, Version=5.10.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;rdbVerifiertxt.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltTextBox, Operator Log Tool, Version=5.10.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;rdbGasTestOLT.Name" xml:space="preserve">
+    <value>rdbGasTestOLT</value>
+  </data>
+  <data name="rdbDETENTEURtxt.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2000, 2024</value>
+  </data>
+  <data name="ultraExplorerBarContainerControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="gasTestElementInfoTableLayoutPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="rdbGasTestManual.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="oltBtnshowDetails.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblNextLvlIssuer.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="rdbEMETTEURtxt.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2000, 2000</value>
+  </data>
+  <data name="rdbGasTestOLT.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="oltBtnshowDetails.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;oltGroupBox2.Name" xml:space="preserve">
+    <value>oltGroupBox2</value>
+  </data>
+  <data name="rdbDETENTEUROLT.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="gasTestElementInfoTableLayoutPanel.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="oltGroupBox2.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="rdbGastTesttxt.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;oltLabel2.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Operator Log Tool, Version=5.10.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;rdbDETENTEURId.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltRadioButton, Operator Log Tool, Version=5.10.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;oltExplorerBar1.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltExplorerBar, Operator Log Tool, Version=5.10.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;oltGroupBox1.Name" xml:space="preserve">
+    <value>oltGroupBox1</value>
+  </data>
+  <data name="rdbGasTestManual.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="errorProvider1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>fr</value>
+  </metadata>
+</root>

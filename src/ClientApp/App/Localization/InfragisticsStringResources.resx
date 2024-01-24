@@ -1,0 +1,375 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="GroupByBoxDefaultPrompt" xml:space="preserve">
+    <value>Drag a column header here to group by that column.</value>
+  </data>
+  <data name="GroupByButtonToolTip" xml:space="preserve">
+    <value>Click to toggle sort direction</value>
+  </data>
+  <data name="LDR_Layout_mask" xml:space="preserve">
+    <value>[caption] : [value] ([count] [count,items,item,items])</value>
+  </data>
+  <data name="FilterDialogAllComboItem" xml:space="preserve">
+    <value>All</value>
+  </data>
+  <data name="FilterDialogAnyComboItem" xml:space="preserve">
+    <value>Any</value>
+  </data>
+  <data name="FilterDialogApplyLabelText" xml:space="preserve">
+    <value>Filter based on {0} of the following conditions:</value>
+  </data>
+  <data name="FilterDialogCancelButtonText" xml:space="preserve">
+    <value>&amp;Cancel</value>
+  </data>
+  <data name="FilterDialogConditionAddButtonText" xml:space="preserve">
+    <value>&amp;Add</value>
+  </data>
+  <data name="FilterDialogConditionDeleteButtonText" xml:space="preserve">
+    <value>&amp;Delete</value>
+  </data>
+  <data name="FilterDialogOkButtonText" xml:space="preserve">
+    <value>&amp;OK</value>
+  </data>
+  <data name="FilterDialogTitle" xml:space="preserve">
+    <value>Custom Filter</value>
+  </data>
+  <data name="FilterUIProvider_Menu_ClearFilter" xml:space="preserve">
+    <value>Clear Filter</value>
+  </data>
+  <data name="FilterUIProvider_Menu_DateFilters" xml:space="preserve">
+    <value>Date &amp;Filters</value>
+  </data>
+  <data name="FilterUIProvider_Menu_NumberFilters" xml:space="preserve">
+    <value>Number &amp;Filters</value>
+  </data>
+  <data name="FilterUIProvider_Menu_TextFilters" xml:space="preserve">
+    <value>Text &amp;Filters</value>
+  </data>
+  <data name="FilterUIProvider_OKButton" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="FilterUIProvider_CancelButton" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="RowFilterDialogDBNullItem" xml:space="preserve">
+    <value>Is Empty</value>
+  </data>
+  <data name="RowFilterDialogBlanksItem" xml:space="preserve">
+    <value>Blanks</value>
+  </data>
+  <data name="RowFilterDialogEmptyTextItem" xml:space="preserve">
+    <value>Empty Text</value>
+  </data>
+  <data name="RowFilterDropDown_Operator_Contains" xml:space="preserve">
+    <value>Contains</value>
+  </data>
+  <data name="RowFilterDropDown_Operator_DoesNotContain" xml:space="preserve">
+    <value>Does not contain</value>
+  </data>
+  <data name="RowFilterDropDown_Operator_DoesNotEndWith" xml:space="preserve">
+    <value>Does not end with</value>
+  </data>
+  <data name="RowFilterDropDown_Operator_EndsWith" xml:space="preserve">
+    <value>Ends with</value>
+  </data>
+  <data name="RowFilterDropDownAllItem" xml:space="preserve">
+    <value>(All)</value>
+  </data>
+  <data name="RowFilterDropDownBlanksItem" xml:space="preserve">
+    <value>(Blanks)</value>
+  </data>
+  <data name="RowFilterDropDownEquals" xml:space="preserve">
+    <value>Equals</value>
+  </data>
+  <data name="RowFilterDropDownGreaterThan" xml:space="preserve">
+    <value>Greater than</value>
+  </data>
+  <data name="RowFilterDropDownGreaterThanOrEqualTo" xml:space="preserve">
+    <value>Greater than or equal to</value>
+  </data>
+  <data name="RowFilterDropDownLessThan" xml:space="preserve">
+    <value>Less than</value>
+  </data>
+  <data name="RowFilterDropDownLessThanOrEqualTo" xml:space="preserve">
+    <value>Less than or equal to</value>
+  </data>
+  <data name="RowFilterDropDownLike" xml:space="preserve">
+    <value>Like</value>
+  </data>
+  <data name="RowFilterDropDown_Operator_DoesNotStartWith" xml:space="preserve">
+    <value>Does not start with</value>
+  </data>
+  <data name="RowFilterDropDown_Operator_DoesNotMatch" xml:space="preserve">
+    <value>Does not match</value>
+  </data>
+  <data name="RowFilterDropDownMatch" xml:space="preserve">
+    <value>Matches Regular Expression</value>
+  </data>
+  <data name="RowFilterDropDownNotEquals" xml:space="preserve">
+    <value>Does not equal</value>
+  </data>
+  <data name="RowFilterDropDown_Operator_NotLike" xml:space="preserve">
+    <value>Not Like</value>
+  </data>
+  <data name="RowFilterDropDown_Operator_StartsWith" xml:space="preserve">
+    <value>Starts with</value>
+  </data>
+  <data name="SpecialFilterOperand_April" xml:space="preserve">
+    <value>&amp;April</value>
+  </data>
+  <data name="SpecialFilterOperand_August" xml:space="preserve">
+    <value>Augus&amp;t</value>
+  </data>
+  <data name="SpecialFilterOperand_December" xml:space="preserve">
+    <value>&amp;December</value>
+  </data>
+  <data name="SpecialFilterOperand_February" xml:space="preserve">
+    <value>&amp;February</value>
+  </data>
+  <data name="SpecialFilterOperand_January" xml:space="preserve">
+    <value>&amp;January</value>
+  </data>
+  <data name="SpecialFilterOperand_July" xml:space="preserve">
+    <value>Ju&amp;ly</value>
+  </data>
+  <data name="SpecialFilterOperand_June" xml:space="preserve">
+    <value>J&amp;une</value>
+  </data>
+  <data name="SpecialFilterOperand_LastMonth" xml:space="preserve">
+    <value>Last Mo&amp;nth</value>
+  </data>
+  <data name="SpecialFilterOperand_LastQuarter" xml:space="preserve">
+    <value>Last Qua&amp;rter</value>
+  </data>
+  <data name="SpecialFilterOperand_LastWeek" xml:space="preserve">
+    <value>&amp;Last Week</value>
+  </data>
+  <data name="SpecialFilterOperand_LastYear" xml:space="preserve">
+    <value>Last &amp;Year</value>
+  </data>
+  <data name="SpecialFilterOperand_March" xml:space="preserve">
+    <value>&amp;March</value>
+  </data>
+  <data name="SpecialFilterOperand_May" xml:space="preserve">
+    <value>Ma&amp;y</value>
+  </data>
+  <data name="SpecialFilterOperand_NextMonth" xml:space="preserve">
+    <value>Next &amp;Month</value>
+  </data>
+  <data name="SpecialFilterOperand_NextQuarter" xml:space="preserve">
+    <value>Next &amp;Quarter</value>
+  </data>
+  <data name="SpecialFilterOperand_NextWeek" xml:space="preserve">
+    <value>Next Wee&amp;k</value>
+  </data>
+  <data name="SpecialFilterOperand_NextYear" xml:space="preserve">
+    <value>Ne&amp;xt Year</value>
+  </data>
+  <data name="SpecialFilterOperand_November" xml:space="preserve">
+    <value>&amp;November</value>
+  </data>
+  <data name="SpecialFilterOperand_October" xml:space="preserve">
+    <value>&amp;October</value>
+  </data>
+  <data name="SpecialFilterOperand_Quarter1" xml:space="preserve">
+    <value>Quarter &amp;1</value>
+  </data>
+  <data name="SpecialFilterOperand_Quarter2" xml:space="preserve">
+    <value>Quarter &amp;2</value>
+  </data>
+  <data name="SpecialFilterOperand_Quarter3" xml:space="preserve">
+    <value>Quarter &amp;3</value>
+  </data>
+  <data name="SpecialFilterOperand_Quarter4" xml:space="preserve">
+    <value>Quarter &amp;4</value>
+  </data>
+  <data name="SpecialFilterOperand_September" xml:space="preserve">
+    <value>&amp;September</value>
+  </data>
+  <data name="SpecialFilterOperand_ThisMonth" xml:space="preserve">
+    <value>Thi&amp;s Month</value>
+  </data>
+  <data name="SpecialFilterOperand_ThisQuarter" xml:space="preserve">
+    <value>This Q&amp;uarter</value>
+  </data>
+  <data name="SpecialFilterOperand_ThisWeek" xml:space="preserve">
+    <value>T&amp;his Week</value>
+  </data>
+  <data name="SpecialFilterOperand_ThisYear" xml:space="preserve">
+    <value>Th&amp;is Year</value>
+  </data>
+  <data name="SpecialFilterOperand_Today" xml:space="preserve">
+    <value>T&amp;oday</value>
+  </data>
+  <data name="SpecialFilterOperand_Tomorrow" xml:space="preserve">
+    <value>&amp;Tomorrow</value>
+  </data>
+  <data name="SpecialFilterOperand_YearToDate" xml:space="preserve">
+    <value>Year To Date</value>
+  </data>
+  <data name="SpecialFilterOperand_Yesterday" xml:space="preserve">
+    <value>Yester&amp;day</value>
+  </data>
+  <data name="UltraGridFilterUIProvider_AfterOperand" xml:space="preserve">
+    <value>&amp;After...</value>
+  </data>
+  <data name="UltraGridFilterUIProvider_AllDatesInPeriod_Menu" xml:space="preserve">
+    <value>All Dates in the &amp;Period</value>
+  </data>
+  <data name="UltraGridFilterUIProvider_BeforeOperand" xml:space="preserve">
+    <value>&amp;Before...</value>
+  </data>
+  <data name="UltraGridFilterUIProvider_BeginsWithOperand" xml:space="preserve">
+    <value>Begins W&amp;ith...</value>
+  </data>
+  <data name="UltraGridFilterUIProvider_BetweenOperand" xml:space="preserve">
+    <value>Bet&amp;ween...</value>
+  </data>
+  <data name="UltraGridFilterUIProvider_ContainsOperand" xml:space="preserve">
+    <value>Cont&amp;ains...</value>
+  </data>
+  <data name="UltraGridFilterUIProvider_CustomFilter" xml:space="preserve">
+    <value>Custom &amp;Filter...</value>
+  </data>
+  <data name="UltraGridFilterUIProvider_DoesNotContainOperand" xml:space="preserve">
+    <value>&amp;Does Not Contain...</value>
+  </data>
+  <data name="UltraGridFilterUIProvider_DoesNotEqualOperand" xml:space="preserve">
+    <value>Does &amp;Not Equal...</value>
+  </data>
+  <data name="UltraGridFilterUIProvider_EndsWithOperand" xml:space="preserve">
+    <value>Ends Wi&amp;th...</value>
+  </data>
+  <data name="UltraGridFilterUIProvider_EqualsOperand" xml:space="preserve">
+    <value>&amp;Equals...</value>
+  </data>
+  <data name="UltraGridFilterUIProvider_GreaterThanOperand" xml:space="preserve">
+    <value>&amp;Greater Than...</value>
+  </data>
+  <data name="UltraGridFilterUIProvider_GreaterThanOrEqualToOperand" xml:space="preserve">
+    <value>Greater Than &amp;Or Equal To...</value>
+  </data>
+  <data name="UltraGridFilterUIProvider_LessThanOperand" xml:space="preserve">
+    <value>&amp;Less Than...</value>
+  </data>
+  <data name="UltraGridFilterUIProvider_LessThanOrEqualToOperand" xml:space="preserve">
+    <value>Less Than Or E&amp;qual To...</value>
+  </data>
+</root>

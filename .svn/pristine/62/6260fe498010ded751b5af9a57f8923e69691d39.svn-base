@@ -1,0 +1,945 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{69FA8ADA-E17D-4FFF-93FC-C5DB1D39599E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Com.Suncor.Olt.Remote</RootNamespace>
+    <AssemblyName>Com.Suncor.Olt.Remote</AssemblyName>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Castle.Core, Version=3.2.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\lib\NET-4-0\Castle.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Couchbase, Version=1.2.9.0, Culture=neutral, PublicKeyToken=05e9c6b5a9ec94c2, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\lib\Couchbase-Net-Client-1.2.9\net40\Couchbase.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Data.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v13.2.Core, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Office.v13.2.Core, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v13.2.Core, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraRichEdit.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Enyim.Caching, Version=1.2.9.0, Culture=neutral, PublicKeyToken=05e9c6b5a9ec94c2, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\lib\Couchbase-Net-Client-1.2.9\net40\Enyim.Caching.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics.Excel">
+      <HintPath>..\..\..\lib\Infragistics.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.13.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\lib\NET-4-0\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel.Activation" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\GlobalAssemblyInfo.cs">
+      <Link>Properties\GlobalAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="Bootstrap\Bootstrapper.cs" />
+    <Compile Include="Caching\CachedInsertOrUpdateAttribute.cs" />
+    <Compile Include="Caching\CachedQueryAttribute.cs" />
+    <Compile Include="Caching\CachedQueryBySiteIdAttribute.cs" />
+    <Compile Include="Caching\CachedQueryListAttribute.cs" />
+    <Compile Include="Caching\CachedRemoveAttribute.cs" />
+    <Compile Include="Caching\CacheHistoryInsertInterceptor.cs" />
+    <Compile Include="Caching\CacheHistoryInterceptor.cs" />
+    <Compile Include="Caching\CacheInsertOrUpdateInterceptor.cs" />
+    <Compile Include="Caching\CacheInterceptorSelector.cs" />
+    <Compile Include="Caching\CacheQueryAllBySiteIdInterceptor.cs" />
+    <Compile Include="Caching\CacheQueryAllInterceptor.cs" />
+    <Compile Include="Caching\CacheQueryByIdInterceptor.cs" />
+    <Compile Include="Caching\CacheQueryInterceptor.cs" />
+    <Compile Include="Caching\CacheQueryListByIdInterceptor.cs" />
+    <Compile Include="Caching\CacheQueryListInterceptor.cs" />
+    <Compile Include="Caching\CacheRemoveInterceptor.cs" />
+    <Compile Include="Caching\CacheKeyGenerator.cs" />
+    <Compile Include="Caching\Configuration\CachingConfigurationSection.cs" />
+    <Compile Include="Caching\Couchbase\CouchbaseCache.cs" />
+    <Compile Include="Caching\DistributedCacheImplementationFactory.cs" />
+    <Compile Include="Caching\ICache.cs" />
+    <Compile Include="Caching\ICacheHistoryInterceptor.cs" />
+    <Compile Include="Caching\ICacheInsertOrUpdateInterceptor.cs" />
+    <Compile Include="Caching\ICacheInterceptor.cs" />
+    <Compile Include="Caching\ICacheQueryByIdInterceptor.cs" />
+    <Compile Include="Caching\ICacheRemoveInterceptor.cs" />
+    <Compile Include="Caching\InvocationExtensions.cs" />
+    <Compile Include="Caching\RelatedCacheExpireHelper.cs" />
+    <Compile Include="Clients\OpmXhqImporter.cs" />
+    <Compile Include="DataAccess\AbstractManagedDao.cs" />
+    <Compile Include="DataAccess\DaoRegistry.cs" />
+    <Compile Include="DataAccess\Domain\AbstractCustomFieldEntryDao.cs" />
+    <Compile Include="DataAccess\Domain\AbstractPermitRequestDao.cs" />
+    <Compile Include="DataAccess\Domain\ActionItemDao.cs" />
+    <Compile Include="DataAccess\Domain\ActionItemDefinitionAutoReApprovalConfigurationDao.cs" />
+    <Compile Include="DataAccess\Domain\ActionItemDefinitionDao.cs" />
+    <Compile Include="DataAccess\Domain\ActionItemDefinitionHistoryDao.cs" />
+    <Compile Include="DataAccess\Domain\AdministratorListDao.cs" />
+    <Compile Include="DataAccess\Domain\AreaLabelDao.cs" />
+    <Compile Include="DataAccess\Domain\BusinessCategoryDao.cs" />
+    <Compile Include="DataAccess\Domain\BusinessCategoryFLOCAssociationDao.cs" />
+    <Compile Include="DataAccess\Domain\CokerCardConfigurationCycleStepDao.cs" />
+    <Compile Include="DataAccess\Domain\CokerCardConfigurationDao.cs" />
+    <Compile Include="DataAccess\Domain\CokerCardConfigurationDrumDao.cs" />
+    <Compile Include="DataAccess\Domain\CokerCardConfigurationWorkAssignmentDao.cs" />
+    <Compile Include="DataAccess\Domain\CokerCardCycleStepEntryDao.cs" />
+    <Compile Include="DataAccess\Domain\CokerCardDao.cs" />
+    <Compile Include="DataAccess\Domain\CokerCardDrumEntryDao.cs" />
+    <Compile Include="DataAccess\Domain\CokerCardDrumEntryHistoryDao.cs" />
+    <Compile Include="DataAccess\Domain\CokerCardHistoryDao.cs" />
+    <Compile Include="DataAccess\Domain\ConfinedSpaceMudsDao.cs" />
+    <Compile Include="DataAccess\Domain\ConfinedSpaceMudsHistoryDao.cs" />
+    <Compile Include="DataAccess\Domain\FormGenericTemplateDao.cs" />
+    <Compile Include="DataAccess\Domain\FormGenericTemplateHistoryDao.cs" />
+    <Compile Include="DataAccess\Domain\FormGN75BDevicePositionDao.cs" />
+    <Compile Include="DataAccess\Domain\GenricTemplateApprovalDao.cs" />
+    <Compile Include="DataAccess\Domain\IAdministratorListDao.cs" />
+    <Compile Include="DataAccess\Domain\IConfinedSpaceMudsDao.cs" />
+    <Compile Include="DataAccess\Domain\IConfinedSpaceMudsHistoryDao.cs" />
+    <Compile Include="DataAccess\Domain\IFormGenericTemplateDao.cs" />
+    <Compile Include="DataAccess\Domain\IFormGenericTemplateHistoryDao.cs" />
+    <Compile Include="DataAccess\Domain\IGenericTemplateApprovalDao.cs" />
+    <Compile Include="DataAccess\Domain\IPermitRequestFortHillsDao.cs" />
+    <Compile Include="DataAccess\Domain\IPermitRequestFortHillsHistoryDao.cs" />
+    <Compile Include="DataAccess\Domain\IPermitRequestFortHillsSAPImportDataDao.cs" />
+    <Compile Include="DataAccess\Domain\IPermitRequestFortHillsWorkOrderSourceDao.cs" />
+    <Compile Include="DataAccess\Domain\IPermitRequestMudsDao.cs" />
+    <Compile Include="DataAccess\Domain\IPermitRequestMudsHistoryDao.cs" />
+    <Compile Include="DataAccess\Domain\IProcedureDeviationCauseDeterminationDao.cs" />
+    <Compile Include="DataAccess\Domain\ISpecialWorkDao.cs" />
+    <Compile Include="DataAccess\Domain\ITemporaryInstallationsMudsDao.cs" />
+    <Compile Include="DataAccess\Domain\IActionItemCustomFieldEntryDao.cs" />
+    <Compile Include="DataAccess\Domain\ITemporaryInstallationsMudsHistoryDao.cs" />
+    <Compile Include="DataAccess\Domain\IWorkPermitFortHillsDao.cs" />
+    <Compile Include="DataAccess\Domain\IWorkPermitFortHillsGroupDao.cs" />
+    <Compile Include="DataAccess\Domain\IWorkPermitFortHillsHistoryDao.cs" />
+    <Compile Include="DataAccess\Domain\PermitRequestFortHillsDao.cs" />
+    <Compile Include="DataAccess\Domain\PermitRequestFortHillsHistoryDao.cs" />
+    <Compile Include="DataAccess\Domain\PermitRequestFortHillsSAPImportDataDao.cs" />
+    <Compile Include="DataAccess\Domain\PermitRequestFortHillsWorkOrderSourceDao.cs" />
+    <Compile Include="DataAccess\Domain\IWorkPermitMudsDao.cs" />
+    <Compile Include="DataAccess\Domain\IWorkPermitMudsGroupDao.cs" />
+    <Compile Include="DataAccess\Domain\IWorkPermitMudsHistoryDao.cs" />
+    <Compile Include="DataAccess\Domain\IWorkPermitMudsTemplateDao.cs" />
+    <Compile Include="DataAccess\Domain\PermitRequestMudsDao.cs" />
+    <Compile Include="DataAccess\Domain\PermitRequestMudsHistoryDao.cs" />
+    <Compile Include="DataAccess\Domain\ProcedureDeviationCauseDeterminationDao.cs" />
+    <Compile Include="DataAccess\Domain\CommentDao.cs" />
+    <Compile Include="DataAccess\Domain\ConfiguredDocumentLinkDao.cs" />
+    <Compile Include="DataAccess\Domain\ConfinedSpaceDao.cs" />
+    <Compile Include="DataAccess\Domain\ConfinedSpaceHistoryDao.cs" />
+    <Compile Include="DataAccess\Domain\ContractorDao.cs" />
+    <Compile Include="DataAccess\Domain\IProcedureDeviationHistoryDao.cs" />
+    <Compile Include="DataAccess\Domain\IProcedureDeviationDao.cs" />
+    <Compile Include="DataAccess\Domain\ProcedureDeviationHistoryDao.cs" />
+    <Compile Include="DataAccess\Domain\ProcedureDeviationDao.cs" />
+    <Compile Include="DataAccess\Domain\EdmontonPersonDao.cs" />
+    <Compile Include="DataAccess\Domain\ExcursionResponseHistoryDao.cs" />
+    <Compile Include="DataAccess\Domain\IDocumentSuggestionDao.cs" />
+    <Compile Include="DataAccess\Domain\IDocumentSuggestionHistoryDao.cs" />
+    <Compile Include="DataAccess\Domain\IPermitAssessmentHistoryDao.cs" />
+    <Compile Include="DataAccess\Domain\IPermitAssessmentAnswerHistoryDao.cs" />
+    <Compile Include="DataAccess\Domain\DocumentSuggestionDao.cs" />
+    <Compile Include="DataAccess\Domain\DocumentSuggestionHistoryDao.cs" />
+    <Compile Include="DataAccess\Domain\PermitAssessmentHistoryDao.cs" />
+    <Compile Include="DataAccess\Domain\IExcursionResponseHistoryDao.cs" />
+    <Compile Include="DataAccess\Domain\IOpmExcursionImportStatusDTODao.cs" />
+    <Compile Include="DataAccess\Domain\IOpmExcursionEventPriorityPageDTODao.cs" />
+    <Compile Include="DataAccess\Domain\IOpmExcursionDao.cs" />
+    <Compile Include="DataAccess\Domain\IOpmExcursionResponseDao.cs" />
+    <Compile Include="DataAccess\Domain\IOpmExcursionResponseDTODao.cs" />
+    <Compile Include="DataAccess\Domain\IOpmToeDefinitionComentHistoryDao.cs" />
+    <Compile Include="DataAccess\Domain\IOpmToeDefinitionCommentDao.cs" />
+    <Compile Include="DataAccess\Domain\IOpmToeDefinitionDao.cs" />
+    <Compile Include="DataAccess\Domain\IPermitAssessmentDao.cs" />
+    <Compile Include="DataAccess\Domain\IQuestionnaireConfigurationDao.cs" />
+    <Compile Include="DataAccess\Domain\IQuestionnaireSectionDao.cs" />
+    <Compile Include="DataAccess\Domain\IQuestionnaireSectionQuestionDao.cs" />
+    <Compile Include="DataAccess\Domain\IPermitAssessmentAnswerDao.cs" />
+    <Compile Include="DataAccess\Domain\LubesAlarmDisableHistoryDao.cs" />
+    <Compile Include="DataAccess\Domain\ILubesAlarmDisableHistoryDao.cs" />
+    <Compile Include="DataAccess\Domain\LubesAlarmDisableDao.cs" />
+    <Compile Include="DataAccess\Domain\FormLubesCsdDao.cs" />
+    <Compile Include="DataAccess\Domain\FormLubesCsdHistoryDao.cs" />
+    <Compile Include="DataAccess\Domain\FormOvertimeFormHistoryDao.cs" />
+    <Compile Include="DataAccess\Domain\IEdmontonPersonDao.cs" />
+    <Compile Include="DataAccess\Domain\ILubesAlarmDisableDao.cs" />
+    <Compile Include="DataAccess\Domain\IFormLubesCsdDao.cs" />
+    <Compile Include="DataAccess\Domain\IFormLubesCsdHistoryDao.cs" />
+    <Compile Include="DataAccess\Domain\IFormOvertimeFormHistoryDao.cs" />
+    <Compile Include="DataAccess\Domain\IMontrealCsdDao.cs" />
+    <Compile Include="DataAccess\Domain\IMontrealCsdHistoryDao.cs" />
+    <Compile Include="DataAccess\Domain\IOvertimeFormDao.cs" />
+    <Compile Include="DataAccess\Domain\IUserPreferences.cs" />
+    <Compile Include="DataAccess\Domain\MontrealCsdDao.cs" />
+    <Compile Include="DataAccess\Domain\MontrealCsdHistoryDao.cs" />
+    <Compile Include="DataAccess\Domain\OnPremiseContractorDao.cs" />
+    <Compile Include="DataAccess\Domain\OpmExcursionEventPriorityPageDTODao.cs" />
+    <Compile Include="DataAccess\Domain\OpmExcursionDao.cs" />
+    <Compile Include="DataAccess\Domain\OpmExcursionResponseDao.cs" />
+    <Compile Include="DataAccess\Domain\OpmExcursionResponseDTODao.cs" />
+    <Compile Include="DataAccess\Domain\OpmToeDefinitionCommentDao.cs" />
+    <Compile Include="DataAccess\Domain\OpmToeDefinitionCommentHistoryDao.cs" />
+    <Compile Include="DataAccess\Domain\OpmToeDefinitionDao.cs" />
+    <Compile Include="DataAccess\Domain\OvertimeFormDao.cs" />
+    <Compile Include="DataAccess\Domain\PermitAssessmentDao.cs" />
+    <Compile Include="DataAccess\Domain\PermitRequestLubesWorkOrderSourceDao.cs" />
+    <Compile Include="DataAccess\Domain\IPermitRequestLubesWorkOrderSourceDao.cs" />
+    <Compile Include="DataAccess\Domain\ITradeChecklistHistoryDao.cs" />
+    <Compile Include="DataAccess\Domain\QuestionnaireConfigurationDao.cs" />
+    <Compile Include="DataAccess\Domain\QuestionnaireSectionDao.cs" />
+    <Compile Include="DataAccess\Domain\QuestionnaireSectionQuestionDao.cs" />
+    <Compile Include="DataAccess\Domain\OpmExcursionImportStatusDTODao.cs" />
+    <Compile Include="DataAccess\Domain\PermitAssessmentAnswerDao.cs" />
+    <Compile Include="DataAccess\Domain\PermitAssessmentAnswerHistoryDao.cs" />
+    <Compile Include="DataAccess\Domain\SpecialWorkDao.cs" />
+    <Compile Include="DataAccess\Domain\ActionItemCustomFieldEntryDao.cs" />
+    <Compile Include="DataAccess\Domain\TemporaryInstallationsMudsDao.cs" />
+    <Compile Include="DataAccess\Domain\TemporaryInstallationsMudsHistoryDao.cs" />
+    <Compile Include="DataAccess\Domain\TradeChecklistHistoryDao.cs" />
+    <Compile Include="DataAccess\Domain\IFormGN1HistoryDao.cs" />
+    <Compile Include="DataAccess\Domain\FormGN1HistoryDao.cs" />
+    <Compile Include="DataAccess\Domain\IRestrictionLocationItemReasonCodeAssociationDao.cs" />
+    <Compile Include="DataAccess\Domain\RestrictionLocationItemDao.cs" />
+    <Compile Include="DataAccess\Domain\RestrictionLocationItemReasonCodeAssociationDao.cs" />
+    <Compile Include="DataAccess\Domain\RestrictionLocationWorkAssignmentDao.cs" />
+    <Compile Include="DataAccess\Domain\TradeChecklistDao.cs" />
+    <Compile Include="DataAccess\Domain\ITradeChecklistDao.cs" />
+    <Compile Include="DataAccess\Domain\IFormGN1Dao.cs" />
+    <Compile Include="DataAccess\Domain\FormGN1Dao.cs" />
+    <Compile Include="DataAccess\Domain\IPriorityPageSectionConfigurationWorkAssignmentDao.cs" />
+    <Compile Include="DataAccess\Domain\IRestrictionLocationDao.cs" />
+    <Compile Include="DataAccess\Domain\PriorityPageSectionConfigurationWorkAssignmentDao.cs" />
+    <Compile Include="DataAccess\Domain\DirectiveReadDao.cs" />
+    <Compile Include="DataAccess\Domain\FormGN75AHistoryDao.cs" />
+    <Compile Include="DataAccess\Domain\FormGN75BHistoryDao.cs" />
+    <Compile Include="DataAccess\Domain\IDirectiveReadDao.cs" />
+    <Compile Include="DataAccess\Domain\CraftOrTradeDao.cs" />
+    <Compile Include="DataAccess\Domain\CustomFieldDao.cs" />
+    <Compile Include="DataAccess\Domain\CustomFieldDropDownValueDao.cs" />
+    <Compile Include="DataAccess\Domain\CustomFieldGroupDao.cs" />
+    <Compile Include="DataAccess\Domain\CustomFieldGroupWorkAssignmentDao.cs" />
+    <Compile Include="DataAccess\Domain\DeviationAlertDao.cs" />
+    <Compile Include="DataAccess\Domain\DeviationAlertResponseDao.cs" />
+    <Compile Include="DataAccess\Domain\DeviationAlertResponseHistoryDao.cs" />
+    <Compile Include="DataAccess\Domain\DeviationAlertResponseReasonCodeAssignmentDao.cs" />
+    <Compile Include="DataAccess\Domain\DirectiveDao.cs" />
+    <Compile Include="DataAccess\Domain\DirectiveHistoryDao.cs" />
+    <Compile Include="DataAccess\Domain\DropdownValueDao.cs" />
+    <Compile Include="DataAccess\Domain\EventDao.cs" />
+    <Compile Include="DataAccess\Domain\EventSinkDao.cs" />
+    <Compile Include="DataAccess\Domain\FormApprovalDao.cs" />
+    <Compile Include="DataAccess\Domain\FormGN24Dao.cs" />
+    <Compile Include="DataAccess\Domain\FormGN24HistoryDao.cs" />
+    <Compile Include="DataAccess\Domain\FormGN59Dao.cs" />
+    <Compile Include="DataAccess\Domain\FormGN59HistoryDao.cs" />
+    <Compile Include="DataAccess\Domain\FormGN6Dao.cs" />
+    <Compile Include="DataAccess\Domain\FormGN6HistoryDao.cs" />
+    <Compile Include="DataAccess\Domain\FormGN75ADao.cs" />
+    <Compile Include="DataAccess\Domain\FormGN75BDao.cs" />
+    <Compile Include="DataAccess\Domain\FormGN75BIsolationDao.cs" />
+    <Compile Include="DataAccess\Domain\FormGN7Dao.cs" />
+    <Compile Include="DataAccess\Domain\FormGN7HistoryDao.cs" />
+    <Compile Include="DataAccess\Domain\FormOilsandsTrainingDao.cs" />
+    <Compile Include="DataAccess\Domain\FormOilsandsTrainingHistoryDao.cs" />
+    <Compile Include="DataAccess\Domain\FormOilsandsTrainingItemDao.cs" />
+    <Compile Include="DataAccess\Domain\FormOP14Dao.cs" />
+    <Compile Include="DataAccess\Domain\FormOP14HistoryDao.cs" />
+    <Compile Include="DataAccess\Domain\FormTemplateDao.cs" />
+    <Compile Include="DataAccess\Domain\FunctionalLocationDao.cs" />
+    <Compile Include="DataAccess\Domain\FunctionalLocationInfoDao.cs" />
+    <Compile Include="DataAccess\Domain\FunctionalLocationOperationalModeDao.cs" />
+    <Compile Include="DataAccess\Domain\FunctionalLocationOperationalModeHistoryDao.cs" />
+    <Compile Include="DataAccess\Domain\GasTestElementDao.cs" />
+    <Compile Include="DataAccess\Domain\GasTestElementInfoConfigurationFieldMapper.cs" />
+    <Compile Include="DataAccess\Domain\GasTestElementInfoConfigurationHistoryDao.cs" />
+    <Compile Include="DataAccess\Domain\GasTestElementInfoDao.cs" />
+    <Compile Include="DataAccess\Domain\ScadaConfigurationDao.cs" />
+    <Compile Include="DataAccess\Domain\IActionItemDao.cs" />
+    <Compile Include="DataAccess\Domain\IActionItemDefinitionAutoReApprovalConfigurationDao.cs" />
+    <Compile Include="DataAccess\Domain\IActionItemDefinitionDao.cs" />
+    <Compile Include="DataAccess\Domain\IActionItemDefinitionHistoryDao.cs" />
+    <Compile Include="DataAccess\Domain\IAreaLabelDao.cs" />
+    <Compile Include="DataAccess\Domain\IBusinessCategoryDao.cs" />
+    <Compile Include="DataAccess\Domain\IBusinessCategoryFLOCAssociationDao.cs" />
+    <Compile Include="DataAccess\Domain\ICokerCardConfigurationCycleStepDao.cs" />
+    <Compile Include="DataAccess\Domain\ICokerCardConfigurationDao.cs" />
+    <Compile Include="DataAccess\Domain\ICokerCardConfigurationDrumDao.cs" />
+    <Compile Include="DataAccess\Domain\ICokerCardConfigurationWorkAssignmentDao.cs" />
+    <Compile Include="DataAccess\Domain\ICokerCardCycleStepEntryDao.cs" />
+    <Compile Include="DataAccess\Domain\ICokerCardDao.cs" />
+    <Compile Include="DataAccess\Domain\ICokerCardDrumEntryDao.cs" />
+    <Compile Include="DataAccess\Domain\ICokerCardDrumEntryHistoryDao.cs" />
+    <Compile Include="DataAccess\Domain\ICokerCardHistoryDao.cs" />
+    <Compile Include="DataAccess\Domain\ICommentDao.cs" />
+    <Compile Include="DataAccess\Domain\IConfiguredDocumentLinkDao.cs" />
+    <Compile Include="DataAccess\Domain\IConfinedSpaceDao.cs" />
+    <Compile Include="DataAccess\Domain\IConfinedSpaceHistoryDao.cs" />
+    <Compile Include="DataAccess\Domain\IContractorDao.cs" />
+    <Compile Include="DataAccess\Domain\ICraftOrTradeDao.cs" />
+    <Compile Include="DataAccess\Domain\ICustomFieldDao.cs" />
+    <Compile Include="DataAccess\Domain\ICustomFieldDropDownValueDao.cs" />
+    <Compile Include="DataAccess\Domain\ICustomFieldGroupDao.cs" />
+    <Compile Include="DataAccess\Domain\ICustomFieldGroupWorkAssignmentDao.cs" />
+    <Compile Include="DataAccess\Domain\IDeviationAlertDao.cs" />
+    <Compile Include="DataAccess\Domain\IDeviationAlertResponseDao.cs" />
+    <Compile Include="DataAccess\Domain\IDeviationAlertResponseHistoryDao.cs" />
+    <Compile Include="DataAccess\Domain\IDeviationAlertResponseReasonCodeAssignmentDao.cs" />
+    <Compile Include="DataAccess\Domain\IDirectiveDao.cs" />
+    <Compile Include="DataAccess\Domain\IDirectiveHistoryDao.cs" />
+    <Compile Include="DataAccess\Domain\IDocumentLinkDao.cs" />
+    <Compile Include="DataAccess\Domain\IEventDao.cs" />
+    <Compile Include="DataAccess\Domain\IEventSinkDao.cs" />
+    <Compile Include="DataAccess\Domain\IFormApprovalDao.cs" />
+    <Compile Include="DataAccess\Domain\IFormGN24Dao.cs" />
+    <Compile Include="DataAccess\Domain\IFormGN24HistoryDao.cs" />
+    <Compile Include="DataAccess\Domain\IFormGN59Dao.cs" />
+    <Compile Include="DataAccess\Domain\IFormGN59HistoryDao.cs" />
+    <Compile Include="DataAccess\Domain\IFormGN6Dao.cs" />
+    <Compile Include="DataAccess\Domain\IFormGN6HistoryDao.cs" />
+    <Compile Include="DataAccess\Domain\IFormGN75ADao.cs" />
+    <Compile Include="DataAccess\Domain\IFormGN75AHistoryDao.cs" />
+    <Compile Include="DataAccess\Domain\IFormGN75BDao.cs" />
+    <Compile Include="DataAccess\Domain\IFormGN75BHistoryDao.cs" />
+    <Compile Include="DataAccess\Domain\IFormGN7Dao.cs" />
+    <Compile Include="DataAccess\Domain\IFormGN7HistoryDao.cs" />
+    <Compile Include="DataAccess\Domain\IFormOilsandsTrainingDao.cs" />
+    <Compile Include="DataAccess\Domain\IFormOilsandsTrainingHistoryDao.cs" />
+    <Compile Include="DataAccess\Domain\IFormOilsandsTrainingItemDao.cs" />
+    <Compile Include="DataAccess\Domain\IFormOP14Dao.cs" />
+    <Compile Include="DataAccess\Domain\IFormOP14HistoryDao.cs" />
+    <Compile Include="DataAccess\Domain\IFormTemplateDao.cs" />
+    <Compile Include="DataAccess\Domain\IFunctionalLocationDao.cs" />
+    <Compile Include="DataAccess\Domain\IFunctionalLocationInfoDao.cs" />
+    <Compile Include="DataAccess\Domain\IFunctionalLocationOperationalModeHistoryDao.cs" />
+    <Compile Include="DataAccess\Domain\IGasTestElementDao.cs" />
+    <Compile Include="DataAccess\Domain\IGasTestElementInfoConfigurationHistoryDao.cs" />
+    <Compile Include="DataAccess\Domain\IGasTestElementInfoDao.cs" />
+    <Compile Include="DataAccess\Domain\IScadaConfigurationDao.cs" />
+    <Compile Include="DataAccess\Domain\ILabAlertDao.cs" />
+    <Compile Include="DataAccess\Domain\ILabAlertDefinitionDao.cs" />
+    <Compile Include="DataAccess\Domain\ILabAlertDefinitionHistoryDao.cs" />
+    <Compile Include="DataAccess\Domain\ILabAlertResponseDao.cs" />
+    <Compile Include="DataAccess\Domain\ILogCustomFieldEntryDao.cs" />
+    <Compile Include="DataAccess\Domain\ILogCustomFieldEntryHistoryDao.cs" />
+    <Compile Include="DataAccess\Domain\ILogDao.cs" />
+    <Compile Include="DataAccess\Domain\ILogDefinitionCustomFieldEntryDao.cs" />
+    <Compile Include="DataAccess\Domain\ILogDefinitionCustomFieldEntryHistoryDao.cs" />
+    <Compile Include="DataAccess\Domain\ILogDefinitionDao.cs" />
+    <Compile Include="DataAccess\Domain\ILogDefinitionFunctionalLocationDao.cs" />
+    <Compile Include="DataAccess\Domain\ILogDefinitionHistoryDao.cs" />
+    <Compile Include="DataAccess\Domain\ILogFunctionalLocationDao.cs" />
+    <Compile Include="DataAccess\Domain\ILogGuidelineDao.cs" />
+    <Compile Include="DataAccess\Domain\ILogHistoryDao.cs" />
+    <Compile Include="DataAccess\Domain\ILogReadDao.cs" />
+    <Compile Include="DataAccess\Domain\ILogTemplateDao.cs" />
+    <Compile Include="DataAccess\Domain\ILogTemplateWorkAssignmentDao.cs" />
+    <Compile Include="DataAccess\Domain\IObjectLockDao.cs" />
+    <Compile Include="DataAccess\Domain\IPermitAttributeDao.cs" />
+    <Compile Include="DataAccess\Domain\IPermitRequestDao.cs" />
+    <Compile Include="DataAccess\Domain\IPermitRequestEdmontonDao.cs" />
+    <Compile Include="DataAccess\Domain\IPermitRequestEdmontonHistoryDao.cs" />
+    <Compile Include="DataAccess\Domain\IPermitRequestEdmontonSAPImportDataDao.cs" />
+    <Compile Include="DataAccess\Domain\IPermitRequestEdmontonWorkOrderSourceDao.cs" />
+    <Compile Include="DataAccess\Domain\IPermitRequestLubesDao.cs" />
+    <Compile Include="DataAccess\Domain\IPermitRequestLubesHistoryDao.cs" />
+    <Compile Include="DataAccess\Domain\IPermitRequestMontrealDao.cs" />
+    <Compile Include="DataAccess\Domain\IPermitRequestMontrealHistoryDao.cs" />
+    <Compile Include="DataAccess\Domain\IPlantDao.cs" />
+    <Compile Include="DataAccess\Domain\IPriorityPageSectionConfigurationDao.cs" />
+    <Compile Include="DataAccess\Domain\IPropertyDao.cs" />
+    <Compile Include="DataAccess\Domain\IQuestionnaireReadDao.cs" />
+    <Compile Include="DataAccess\Domain\IRestrictionDefinitionDao.cs" />
+    <Compile Include="DataAccess\Domain\IRestrictionDefinitionHistoryDao.cs" />
+    <Compile Include="DataAccess\Domain\IRestrictionReasonCodeDao.cs" />
+    <Compile Include="DataAccess\Domain\IRoleDao.cs" />
+    <Compile Include="DataAccess\Domain\IRoleDisplayConfigurationDao.cs" />
+    <Compile Include="DataAccess\Domain\IRoleElementDao.cs" />
+    <Compile Include="DataAccess\Domain\IRoleElementTemplateDao.cs" />
+    <Compile Include="DataAccess\Domain\IRolePermissionDao.cs" />
+    <Compile Include="DataAccess\Domain\ISapAutoImportConfigurationDao.cs" />
+    <Compile Include="DataAccess\Domain\ISAPNotificationDao.cs" />
+    <Compile Include="DataAccess\Domain\ISapWorkOrderOperationDao.cs" />
+    <Compile Include="DataAccess\Domain\IScheduleDao.cs" />
+    <Compile Include="DataAccess\Domain\IShiftHandoverAnswerDao.cs" />
+    <Compile Include="DataAccess\Domain\IShiftHandoverAnswerHistoryDao.cs" />
+    <Compile Include="DataAccess\Domain\IShiftHandoverConfigurationDao.cs" />
+    <Compile Include="DataAccess\Domain\IShiftHandoverConfigurationWorkAssignmentDao.cs" />
+    <Compile Include="DataAccess\Domain\IShiftHandoverEmailConfigurationDao.cs" />
+    <Compile Include="DataAccess\Domain\IShiftHandoverQuestionDao.cs" />
+    <Compile Include="DataAccess\Domain\IShiftHandoverQuestionnaireAssociationDao.cs" />
+    <Compile Include="DataAccess\Domain\IShiftHandoverQuestionnaireCokerCardConfigurationDao.cs" />
+    <Compile Include="DataAccess\Domain\IShiftHandoverQuestionnaireDao.cs" />
+    <Compile Include="DataAccess\Domain\IShiftHandoverQuestionnaireHistoryDao.cs" />
+    <Compile Include="DataAccess\Domain\IShiftPatternDao.cs" />
+    <Compile Include="DataAccess\Domain\ISiteCommunicationDao.cs" />
+    <Compile Include="DataAccess\Domain\ISiteConfigurationDao.cs" />
+    <Compile Include="DataAccess\Domain\ISiteConfigurationDefaultsDao.cs" />
+    <Compile Include="DataAccess\Domain\ISiteDao.cs" />
+    <Compile Include="DataAccess\Domain\ISummaryLogCustomFieldEntryDao.cs" />
+    <Compile Include="DataAccess\Domain\ISummaryLogCustomFieldEntryHistoryDao.cs" />
+    <Compile Include="DataAccess\Domain\ISummaryLogDao.cs" />
+    <Compile Include="DataAccess\Domain\ISummaryLogHistoryDao.cs" />
+    <Compile Include="DataAccess\Domain\ISummaryLogReadDao.cs" />
+    <Compile Include="DataAccess\Domain\ITagDao.cs" />
+    <Compile Include="DataAccess\Domain\ITagGroupDao.cs" />
+    <Compile Include="DataAccess\Domain\ITargetAlertDao.cs" />
+    <Compile Include="DataAccess\Domain\ITargetAlertResponseDao.cs" />
+    <Compile Include="DataAccess\Domain\ITargetDefinitionAutoReApprovalConfigurationDao.cs" />
+    <Compile Include="DataAccess\Domain\ITargetDefinitionDao.cs" />
+    <Compile Include="DataAccess\Domain\ITargetDefinitionHistoryDao.cs" />
+    <Compile Include="DataAccess\Domain\ITargetDefinitionReadWriteTagConfigurationDao.cs" />
+    <Compile Include="DataAccess\Domain\ITargetDefinitionStateDao.cs" />
+    <Compile Include="DataAccess\Domain\ITimeDao.cs" />
+    <Compile Include="DataAccess\Domain\ITimeZoneDao.cs" />
+    <Compile Include="DataAccess\Domain\ITrainingBlockDao.cs" />
+    <Compile Include="DataAccess\Domain\IUserDao.cs" />
+    <Compile Include="DataAccess\Domain\IUserGridLayoutDao.cs" />
+    <Compile Include="DataAccess\Domain\IUserLoginHistoryDao.cs" />
+    <Compile Include="DataAccess\Domain\IUserLoginHistoryFunctionalLocationDao.cs" />
+    <Compile Include="DataAccess\Domain\IUserPrintPreferenceDao.cs" />
+    <Compile Include="DataAccess\Domain\IUserWorkPermitDefaultTimePreferencesDao.cs" />
+    <Compile Include="DataAccess\Domain\IVisibilityGroupDao.cs" />
+    <Compile Include="DataAccess\Domain\IWorkAssignmentDao.cs" />
+    <Compile Include="DataAccess\Domain\IWorkAssignmentVisibilityGroupDao.cs" />
+    <Compile Include="DataAccess\Domain\IWorkOrderImportDataDao.cs" />
+    <Compile Include="DataAccess\Domain\IWorkPermitDao.cs" />
+    <Compile Include="DataAccess\Domain\IWorkPermitEdmontonDao.cs" />
+    <Compile Include="DataAccess\Domain\IWorkPermitEdmontonGroupDao.cs" />
+    <Compile Include="DataAccess\Domain\IWorkPermitEdmontonHistoryDao.cs" />
+    <Compile Include="DataAccess\Domain\IWorkPermitHistoryDao.cs" />
+    <Compile Include="DataAccess\Domain\IWorkPermitLubesDao.cs" />
+    <Compile Include="DataAccess\Domain\IWorkPermitLubesGroupDao.cs" />
+    <Compile Include="DataAccess\Domain\IWorkPermitLubesHistoryDao.cs" />
+    <Compile Include="DataAccess\Domain\IWorkPermitMontrealDao.cs" />
+    <Compile Include="DataAccess\Domain\IWorkPermitMontrealDropdownValueDao.cs" />
+    <Compile Include="DataAccess\Domain\IWorkPermitMontrealGroupDao.cs" />
+    <Compile Include="DataAccess\Domain\IWorkPermitMontrealHistoryDao.cs" />
+    <Compile Include="DataAccess\Domain\IWorkPermitMontrealTemplateDao.cs" />
+    <Compile Include="DataAccess\Domain\LabAlertDao.cs" />
+    <Compile Include="DataAccess\Domain\LabAlertDefinitionDao.cs" />
+    <Compile Include="DataAccess\Domain\LabAlertDefinitionHistoryDao.cs" />
+    <Compile Include="DataAccess\Domain\LabAlertResponseDao.cs" />
+    <Compile Include="DataAccess\Domain\LiveLinkDocumentLinkDao.cs" />
+    <Compile Include="DataAccess\Domain\LogCustomFieldEntryDao.cs" />
+    <Compile Include="DataAccess\Domain\LogCustomFieldEntryHistoryDao.cs" />
+    <Compile Include="DataAccess\Domain\LogDao.cs" />
+    <Compile Include="DataAccess\Domain\LogDefinitionCustomFieldEntryDao.cs" />
+    <Compile Include="DataAccess\Domain\LogDefinitionCustomFieldEntryHistoryDao.cs" />
+    <Compile Include="DataAccess\Domain\LogDefinitionDao.cs" />
+    <Compile Include="DataAccess\Domain\LogDefinitionFunctionalLocationDao.cs" />
+    <Compile Include="DataAccess\Domain\LogDefinitionHistoryDao.cs" />
+    <Compile Include="DataAccess\Domain\LogFunctionalLocationDao.cs" />
+    <Compile Include="DataAccess\Domain\LogGuidelineDao.cs" />
+    <Compile Include="DataAccess\Domain\LogHistoryDao.cs" />
+    <Compile Include="DataAccess\Domain\LogReadDao.cs" />
+    <Compile Include="DataAccess\Domain\LogTemplateDao.cs" />
+    <Compile Include="DataAccess\Domain\LogTemplateWorkAssignmentDao.cs" />
+    <Compile Include="DataAccess\Domain\ObjectLockDao.cs" />
+    <Compile Include="DataAccess\Domain\PermitAttributeDao.cs" />
+    <Compile Include="DataAccess\Domain\PermitRequestEdmontonDao.cs" />
+    <Compile Include="DataAccess\Domain\PermitRequestEdmontonHistoryDao.cs" />
+    <Compile Include="DataAccess\Domain\PermitRequestEdmontonSAPImportDataDao.cs" />
+    <Compile Include="DataAccess\Domain\PermitRequestEdmontonWorkOrderSourceDao.cs" />
+    <Compile Include="DataAccess\Domain\PermitRequestLubesDao.cs" />
+    <Compile Include="DataAccess\Domain\PermitRequestLubesHistoryDao.cs" />
+    <Compile Include="DataAccess\Domain\PermitRequestMontrealDao.cs" />
+    <Compile Include="DataAccess\Domain\PermitRequestMontrealHistoryDao.cs" />
+    <Compile Include="DataAccess\Domain\PlantDao.cs" />
+    <Compile Include="DataAccess\Domain\PriorityPageSectionConfigurationDao.cs" />
+    <Compile Include="DataAccess\Domain\PropertyDao.cs" />
+    <Compile Include="DataAccess\Domain\QuestionnaireReadDao.cs" />
+    <Compile Include="DataAccess\Domain\RestrictionDefinitionDao.cs" />
+    <Compile Include="DataAccess\Domain\RestrictionDefinitionHistoryDao.cs" />
+    <Compile Include="DataAccess\Domain\RestrictionLocationDao.cs" />
+    <Compile Include="DataAccess\Domain\RestrictionReasonCodeDao.cs" />
+    <Compile Include="DataAccess\Domain\RoleDao.cs" />
+    <Compile Include="DataAccess\Domain\RoleDisplayConfigurationDao.cs" />
+    <Compile Include="DataAccess\Domain\RoleElementDao.cs" />
+    <Compile Include="DataAccess\Domain\RoleElementTemplateDao.cs" />
+    <Compile Include="DataAccess\Domain\RolePermissionDao.cs" />
+    <Compile Include="DataAccess\Domain\SapAutoImportConfigurationDao.cs" />
+    <Compile Include="DataAccess\Domain\SAPNotificationDao.cs" />
+    <Compile Include="DataAccess\Domain\SapWorkOrderOperationDao.cs" />
+    <Compile Include="DataAccess\Domain\ScheduleDao.cs" />
+    <Compile Include="DataAccess\Domain\ShiftHandoverAnswerDao.cs" />
+    <Compile Include="DataAccess\Domain\ShiftHandoverAnswerHistoryDao.cs" />
+    <Compile Include="DataAccess\Domain\ShiftHandoverConfigurationDao.cs" />
+    <Compile Include="DataAccess\Domain\ShiftHandoverConfigurationWorkAssignmentDao.cs" />
+    <Compile Include="DataAccess\Domain\ShiftHandoverEmailConfigurationDao.cs" />
+    <Compile Include="DataAccess\Domain\ShiftHandoverQuestionDao.cs" />
+    <Compile Include="DataAccess\Domain\ShiftHandoverQuestionnaireAssociationDao.cs" />
+    <Compile Include="DataAccess\Domain\ShiftHandoverQuestionnaireCokerCardConfigurationDao.cs" />
+    <Compile Include="DataAccess\Domain\ShiftHandoverQuestionnaireDao.cs" />
+    <Compile Include="DataAccess\Domain\ShiftHandoverQuestionnaireHistoryDao.cs" />
+    <Compile Include="DataAccess\Domain\ShiftPatternDao.cs" />
+    <Compile Include="DataAccess\Domain\SiteCommunicationDao.cs" />
+    <Compile Include="DataAccess\Domain\SiteConfigurationDao.cs" />
+    <Compile Include="DataAccess\Domain\SiteConfigurationDefaultsDao.cs" />
+    <Compile Include="DataAccess\Domain\SiteDao.cs" />
+    <Compile Include="DataAccess\Domain\SummaryLogCustomFieldEntryDao.cs" />
+    <Compile Include="DataAccess\Domain\SummaryLogCustomFieldEntryHistoryDao.cs" />
+    <Compile Include="DataAccess\Domain\SummaryLogDao.cs" />
+    <Compile Include="DataAccess\Domain\SummaryLogHistoryDao.cs" />
+    <Compile Include="DataAccess\Domain\SummaryLogReadDao.cs" />
+    <Compile Include="DataAccess\Domain\TagDao.cs" />
+    <Compile Include="DataAccess\Domain\TagGroupDao.cs" />
+    <Compile Include="DataAccess\Domain\TargetAlertDao.cs" />
+    <Compile Include="DataAccess\Domain\TargetAlertResponseDao.cs" />
+    <Compile Include="DataAccess\Domain\TargetDefinitionAutoReApprovalConfigurationDao.cs" />
+    <Compile Include="DataAccess\Domain\TargetDefinitionDao.cs" />
+    <Compile Include="DataAccess\Domain\TargetDefinitionHistoryDao.cs" />
+    <Compile Include="DataAccess\Domain\TargetDefinitionReadWriteTagConfigurationDao.cs" />
+    <Compile Include="DataAccess\Domain\TargetDefinitionStateDao.cs" />
+    <Compile Include="DataAccess\Domain\TimeDao.cs" />
+    <Compile Include="DataAccess\Domain\TrainingBlockDao.cs" />
+    <Compile Include="DataAccess\Domain\UserDao.cs" />
+    <Compile Include="DataAccess\Domain\UserGridLayoutDao.cs" />
+    <Compile Include="DataAccess\Domain\UserLoginHistoryDao.cs" />
+    <Compile Include="DataAccess\Domain\UserLoginHistoryFunctionalLocationDao.cs" />
+    <Compile Include="DataAccess\Domain\UserPreferencesDao.cs" />
+    <Compile Include="DataAccess\Domain\UserPrintPreferenceDao.cs" />
+    <Compile Include="DataAccess\Domain\UserWorkPermitDefaultTimePreferencesDao.cs" />
+    <Compile Include="DataAccess\Domain\WorkAssignmentDao.cs" />
+    <Compile Include="DataAccess\Domain\WorkAssignmentVisibilityGroupDao.cs" />
+    <Compile Include="DataAccess\Domain\WorkOrderImportDataDao.cs" />
+    <Compile Include="DataAccess\Domain\WorkPermitDao.cs" />
+    <Compile Include="DataAccess\Domain\WorkPermitEdmontonDao.cs" />
+    <Compile Include="DataAccess\Domain\WorkPermitEdmontonGroupDao.cs" />
+    <Compile Include="DataAccess\Domain\WorkPermitEdmontonHistoryDao.cs" />
+    <Compile Include="DataAccess\Domain\WorkPermitFortHillsDao.cs" />
+    <Compile Include="DataAccess\Domain\WorkPermitFortHillsGroupDao.cs" />
+    <Compile Include="DataAccess\Domain\WorkPermitFortHillsHistoryDao.cs" />
+    <Compile Include="DataAccess\Domain\WorkPermitHistoryDao.cs" />
+    <Compile Include="DataAccess\Domain\WorkPermitLubesDao.cs" />
+    <Compile Include="DataAccess\Domain\WorkPermitLubesGroupDao.cs" />
+    <Compile Include="DataAccess\Domain\WorkPermitLubesHistoryDao.cs" />
+    <Compile Include="DataAccess\Domain\WorkPermitMontrealDao.cs" />
+    <Compile Include="DataAccess\Domain\WorkPermitMontrealGroupDao.cs" />
+    <Compile Include="DataAccess\Domain\WorkPermitMontrealHistoryDao.cs" />
+    <Compile Include="DataAccess\Domain\WorkPermitMontrealTemplateDao.cs" />
+    <Compile Include="DataAccess\Domain\WorkPermitSignHistory.cs" />
+    <Compile Include="DataAccess\DTO\IPermitRequestFortHillsDTODao.cs" />
+    <Compile Include="DataAccess\Domain\WorkPermitMudsDao.cs" />
+    <Compile Include="DataAccess\Domain\WorkPermitMudsGroupDao.cs" />
+    <Compile Include="DataAccess\Domain\WorkPermitMudsHistoryDao.cs" />
+    <Compile Include="DataAccess\Domain\WorkPermitMudsTemplateDao.cs" />
+    <Compile Include="DataAccess\DTO\ConfinedSpaceMudsDTODao.cs" />
+    <Compile Include="DataAccess\DTO\IConfinedSpaceMudsDTODao.cs" />
+    <Compile Include="DataAccess\DTO\IPermitRequestMudsDTODao.cs" />
+    <Compile Include="DataAccess\DTO\IProcedureDeviationDTODao.cs" />
+    <Compile Include="DataAccess\DTO\ITemporaryInstallationsMudsDTODao.cs" />
+    <Compile Include="DataAccess\DTO\IWorkPermitMudsDTODao.cs" />
+    <Compile Include="DataAccess\DTO\PermitRequestMudsDTODao.cs" />
+    <Compile Include="DataAccess\DTO\IWorkPermitFortHillsDTODao.cs" />
+    <Compile Include="DataAccess\DTO\IWorkPermitFortHillsHazardDTODao.cs" />
+    <Compile Include="DataAccess\DTO\PermitRequestFortHillsDTODao.cs" />
+    <Compile Include="DataAccess\DTO\ProcedureDeviationDTODao.cs" />
+    <Compile Include="DataAccess\DTO\ILubesAlarmDisableFormDTODao.cs" />
+    <Compile Include="DataAccess\DTO\IDocumentSuggestionDTODao.cs" />
+    <Compile Include="DataAccess\DTO\IPermitAssessmentDTODao.cs" />
+    <Compile Include="DataAccess\DTO\ISafeWorkPermitAssessmentDTODao.cs" />
+    <Compile Include="DataAccess\DTO\LubesAlarmDisableFormDTODao.cs" />
+    <Compile Include="DataAccess\DTO\FormLubesCsdDTODao.cs" />
+    <Compile Include="DataAccess\DTO\IFormEdmontonGN1DTODao.cs" />
+    <Compile Include="DataAccess\DTO\FormEdmontonGN1DTODao.cs" />
+    <Compile Include="DataAccess\DTO\FormEdmontonGN75ADTODao.cs" />
+    <Compile Include="DataAccess\DTO\IFormEdmontonGN75ADTODao.cs" />
+    <Compile Include="DataAccess\DTO\DirectiveDTODao.cs" />
+    <Compile Include="DataAccess\DTO\IDirectiveDTODao.cs" />
+    <Compile Include="DataAccess\DTO\IFormLubesCsdDTODao.cs" />
+    <Compile Include="DataAccess\DTO\IFormEdmontonOP14DTODao.cs" />
+    <Compile Include="DataAccess\DTO\FormEdmontonOP14DTODao.cs" />
+    <Compile Include="DataAccess\DTO\FormEdmontonGN75BDTODao.cs" />
+    <Compile Include="DataAccess\DTO\IFormEdmontonGN75BDTODao.cs" />
+    <Compile Include="DataAccess\DTO\FormEdmontonGN6DTODao.cs" />
+    <Compile Include="DataAccess\DTO\IFormEdmontonGN6DTODao.cs" />
+    <Compile Include="DataAccess\DTO\IFormEdmontonGN24DTODao.cs" />
+    <Compile Include="DataAccess\DTO\FormEdmontonGN24DTODao.cs" />
+    <Compile Include="DataAccess\DTO\ILogTemplateDTODao.cs" />
+    <Compile Include="DataAccess\DTO\IMontrealCsdDTODao.cs" />
+    <Compile Include="DataAccess\DTO\IOnPremisePersonnelDtoDao.cs" />
+    <Compile Include="DataAccess\DTO\IOvertimeFormDTODao.cs" />
+    <Compile Include="DataAccess\DTO\ISiteCommunicationDTODao.cs" />
+    <Compile Include="DataAccess\DTO\IUserDTODao.cs" />
+    <Compile Include="DataAccess\DTO\LogTemplateDTODao.cs" />
+    <Compile Include="DataAccess\DTO\MontrealCsdDTODao.cs" />
+    <Compile Include="DataAccess\DTO\OnPremisePersonnelDtoDao.cs" />
+    <Compile Include="DataAccess\DTO\OvertimeFormDTODao.cs" />
+    <Compile Include="DataAccess\DTO\DocumentSuggestionDTODao.cs" />
+    <Compile Include="DataAccess\DTO\PermitAssessmentDTODao.cs" />
+    <Compile Include="DataAccess\DTO\SafeWorkPermitAssessmentReportDTODao.cs" />
+    <Compile Include="DataAccess\DTO\SiteCommunicationDTODao.cs" />
+    <Compile Include="DataAccess\DTO\FormOilsandsTrainingReportDTODao.cs" />
+    <Compile Include="DataAccess\DTO\IFormOilsandsTrainingReportDTODao.cs" />
+    <Compile Include="DataAccess\DTO\FormOilsandsPriorityPageDTODao.cs" />
+    <Compile Include="DataAccess\DTO\IFormOilsandsPriorityPageDTODao.cs" />
+    <Compile Include="DataAccess\DTO\FormOilsandsTrainingDTODao.cs" />
+    <Compile Include="DataAccess\DTO\IFormOilsandsTrainingDTODao.cs" />
+    <Compile Include="DataAccess\DTO\IPermitRequestLubesDTODao.cs" />
+    <Compile Include="DataAccess\DTO\PermitRequestLubesDTODao.cs" />
+    <Compile Include="DataAccess\DTO\IWorkPermitLubesDTODao.cs" />
+    <Compile Include="DataAccess\DTO\TemporaryInstallationsMudsDTODao.cs" />
+    <Compile Include="DataAccess\DTO\UserDTODao.cs" />
+    <Compile Include="DataAccess\DTO\WorkPermitFortHillsDTODao.cs" />
+    <Compile Include="DataAccess\DTO\WorkPermitFortHillsHazardDTODao.cs" />
+    <Compile Include="DataAccess\DTO\WorkPermitLubesDTODao.cs" />
+    <Compile Include="DataAccess\DTO\IWorkPermitEdmontonDTODao.cs" />
+    <Compile Include="DataAccess\DTO\WorkPermitEdmontonHazardDTODao.cs" />
+    <Compile Include="DataAccess\DTO\CustomFieldTrendReportDTODao.cs" />
+    <Compile Include="DataAccess\DTO\FormEdmontonDTODao.cs" />
+    <Compile Include="DataAccess\DTO\ICustomFieldTrendReportDTODao.cs" />
+    <Compile Include="DataAccess\DTO\IFormEdmontonDTODao.cs" />
+    <Compile Include="DataAccess\DTO\IWorkPermitEdmontonHazardoDTODao.cs" />
+    <Compile Include="DataAccess\DTO\WorkPermitEdmontonDTODao.cs" />
+    <Compile Include="DataAccess\DTO\PermitRequestEdmontonDTODao.cs" />
+    <Compile Include="DataAccess\DTO\IPermitRequestEdmontonDTODao.cs" />
+    <Compile Include="DataAccess\DTO\IPermitRequestMontrealDTODao.cs" />
+    <Compile Include="DataAccess\DTO\PermitRequestMontrealDTODao.cs" />
+    <Compile Include="DataAccess\DTO\ConfinedSpaceDTODao.cs" />
+    <Compile Include="DataAccess\DTO\IDetailedLogReportDTODao.cs" />
+    <Compile Include="DataAccess\DTO\DetailedLogReportDTODao.cs" />
+    <Compile Include="DataAccess\DTO\IConfinedSpaceDTODao.cs" />
+    <Compile Include="DataAccess\DTO\IWorkPermitMontrealDTODao.cs" />
+    <Compile Include="DataAccess\DTO\WorkPermitMontrealDTODao.cs" />
+    <Compile Include="DataAccess\DTO\CokerCardCycleStepEntryDTODao.cs" />
+    <Compile Include="DataAccess\DTO\ICokerCardCycleStepEntryDTODao.cs" />
+    <Compile Include="DataAccess\DTO\CokerCardDTODao.cs" />
+    <Compile Include="DataAccess\DTO\ICokerCardDTODao.cs" />
+    <Compile Include="DataAccess\DTO\IWorkAssignmentDTODao.cs" />
+    <Compile Include="DataAccess\DTO\WorkAssignmentDTODao.cs" />
+    <Compile Include="DataAccess\DTO\ILabAlertDTODao.cs" />
+    <Compile Include="DataAccess\DTO\LabAlertDTODao.cs" />
+    <Compile Include="DataAccess\DTO\LabAlertDefinitionDTODao.cs" />
+    <Compile Include="DataAccess\DTO\ILabAlertDefinitionDTODao.cs" />
+    <Compile Include="DataAccess\DTO\IShiftHandoverConfigurationDTODao.cs" />
+    <Compile Include="DataAccess\DTO\ShiftHandoverConfigurationDTODao.cs" />
+    <Compile Include="DataAccess\DTO\ISummaryLogDTODao.cs" />
+    <Compile Include="DataAccess\DTO\SummaryLogDTODao.cs" />
+    <Compile Include="DataAccess\DTO\IShiftHandoverQuestionnaireDTODao.cs" />
+    <Compile Include="DataAccess\DTO\ShiftHandoverQuestionnaireDTODao.cs" />
+    <Compile Include="DataAccess\DTO\DeviationAlertDTODao.cs" />
+    <Compile Include="DataAccess\DTO\IDeviationAlertDTODao.cs" />
+    <Compile Include="DataAccess\DTO\IDeviationAlertReportDTODao.cs" />
+    <Compile Include="DataAccess\DTO\DeviationAlertReportDTODao.cs" />
+    <Compile Include="DataAccess\DTO\IRestrictionDefinitionDTODao.cs" />
+    <Compile Include="DataAccess\DTO\RestrictionDefinitionDTODao.cs" />
+    <Compile Include="DataAccess\DTO\ActionItemDefinitionDTODao.cs" />
+    <Compile Include="DataAccess\DTO\ActionItemDTODao.cs" />
+    <Compile Include="DataAccess\DTO\FunctionalLocationDTODao.cs" />
+    <Compile Include="DataAccess\DTO\FunctionalLocationOperationalModeDTODao.cs" />
+    <Compile Include="DataAccess\DTO\GasTestElementInfoDTODao.cs" />
+    <Compile Include="DataAccess\DTO\IFunctionalLocationDTODao.cs" />
+    <Compile Include="DataAccess\DTO\IFunctionalLocationOperationalModeDao.cs" />
+    <Compile Include="DataAccess\DTO\IFunctionalLocationOperationalModeDTODao.cs" />
+    <Compile Include="DataAccess\DTO\IGasTestElementInfoDTODao.cs" />
+    <Compile Include="DataAccess\DTO\IActionItemDefinitionDTODao.cs" />
+    <Compile Include="DataAccess\DTO\IActionItemDTODao.cs" />
+    <Compile Include="DataAccess\DTO\ILogDefinitionDTODao.cs" />
+    <Compile Include="DataAccess\DTO\ILogDTODao.cs" />
+    <Compile Include="DataAccess\DTO\ISAPNotificationDTODao.cs" />
+    <Compile Include="DataAccess\DTO\ITargetAlertDTODao.cs" />
+    <Compile Include="DataAccess\DTO\ITargetDefinitionDTODao.cs" />
+    <Compile Include="DataAccess\DTO\IWorkPermitDTODao.cs" />
+    <Compile Include="DataAccess\DTO\LogDefinitionDTODao.cs" />
+    <Compile Include="DataAccess\DTO\LogDTODao.cs" />
+    <Compile Include="DataAccess\DTO\SAPNotificationDTODao.cs" />
+    <Compile Include="DataAccess\DTO\TargetAlertDTODao.cs" />
+    <Compile Include="DataAccess\DTO\TargetDefinitionDTODao.cs" />
+    <Compile Include="DataAccess\DTO\WorkPermitMudsDTODao.cs" />
+    <Compile Include="DataAccess\IDao.cs" />
+    <Compile Include="DataAccess\ReflectionMapper.cs" />
+    <Compile Include="DataAccess\SqlCommandExtensions.cs" />
+    <Compile Include="DataAccess\SqlDataReaderExtensions.cs" />
+    <Compile Include="DataAccess\StoredProcDaoInterceptor.cs" />
+    <Compile Include="DataAccess\StoredProcPerformanceInterceptor.cs" />
+    <Compile Include="DataAccess\TargetValueType.cs" />
+    <Compile Include="DataAccess\DTO\WorkPermitDTODao.cs" />
+    <Compile Include="Exceptions\EdmontonCardSwipeSystemReadException.cs" />
+    <Compile Include="Exceptions\OpmXhqInvalidAuthenticationException.cs" />
+    <Compile Include="Exceptions\WorkOrderSAPImportException.cs" />
+    <Compile Include="Exceptions\OpmXhqImportException.cs" />
+    <Compile Include="Integration\EdmontonSwipeCardReader.cs" />
+    <Compile Include="Integration\EdmontonSwipeCards.cs" />
+    <Compile Include="Integration\OpmXhqServiceClient.cs" />
+    <Compile Include="Integration\WorkOrderRequestClient.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Providers\IAuthenticationProvider.cs" />
+    <Compile Include="Providers\LdapAuthenticationProvider.cs" />
+    <Compile Include="Providers\MockAuthenticationProvider.cs" />
+    <Compile Include="Services\ActionItemDefinitionService.cs" />
+    <Compile Include="Services\ActionItemService.cs" />
+    <Compile Include="Services\AdministratorListService.cs" />
+    <Compile Include="Services\AnalyticsService.cs" />
+    <Compile Include="Services\ApplicationService.cs" />
+    <Compile Include="Services\AreaLabelService.cs" />
+    <Compile Include="Services\BusinessCategoryFLOCAssociationService.cs" />
+    <Compile Include="Services\BusinessCategoryService.cs" />
+    <Compile Include="Services\CokerCardService.cs" />
+    <Compile Include="Services\ConfiguredDocumentLinkService.cs" />
+    <Compile Include="Services\ConfinedSpaceMudsService.cs" />
+    <Compile Include="Services\ConfinedSpaceService.cs" />
+    <Compile Include="Services\ContractorService.cs" />
+    <Compile Include="Services\DirectiveConversionService.cs" />
+    <Compile Include="Services\DirectiveService.cs" />
+    <Compile Include="Services\EdmontonSwipeCardService.cs" />
+    <Compile Include="Services\Excel\AnalyticsExcelExportDataRenderer.cs" />
+    <Compile Include="Services\Excel\MarkedAsNotReadReportDataByUser.cs" />
+    <Compile Include="Services\Excel\MarkedAsNotReadReportExcelDataRenderer.cs" />
+    <Compile Include="Services\Excel\SafeWorkPermitAssessmentReportExcelDataRenderer.cs" />
+    <Compile Include="Services\ExcursionImportService.cs" />
+    <Compile Include="Services\ExcursionResponseService.cs" />
+    <Compile Include="Services\FormGenericTemplateService.cs" />
+    <Compile Include="Services\FormOilsandsService.cs" />
+    <Compile Include="Services\GenericPermitRequestMultiDayImportService.cs" />
+    <Compile Include="Services\GenericTemplateFormApprovalService.cs" />
+    <Compile Include="Services\HoneywellPhdConfigurationService.cs" />
+    <Compile Include="Services\LubesPermitRequestMultiDayImportService.cs" />
+    <Compile Include="Services\MontrealPermitRequestMultiDayImportService.cs" />
+    <Compile Include="Services\OnPremisePersonnelService.cs" />
+    <Compile Include="Services\PermitRequestFortHillsService.cs" />
+    <Compile Include="Services\PermitRequestMudsService.cs" />
+    <Compile Include="Services\PriorityPageSectionConfigurationService.cs" />
+    <Compile Include="Services\QuestionnaireConfigurationService.cs" />
+    <Compile Include="Services\RestrictionFlocsConfigurationService.cs" />
+    <Compile Include="Services\RestrictionLocationService.cs" />
+    <Compile Include="Services\SiteCommunicationService.cs" />
+    <Compile Include="Services\Excel\ExcelExtensions.cs" />
+    <Compile Include="Services\Excel\FormOilsandsTrainingReportExcelDataRenderer.cs" />
+    <Compile Include="Services\Excel\RoleMatrixSqlGenerator.cs" />
+    <Compile Include="Services\PermitRequestLubesService.cs" />
+    <Compile Include="Services\RoleElementTemplateService.cs" />
+    <Compile Include="Services\SpecialWorkService.cs" />
+    <Compile Include="Services\StreamingRequestRoleService.cs" />
+    <Compile Include="Services\TrainingBlockService.cs" />
+    <Compile Include="Services\VisibilityGroupService.cs" />
+    <Compile Include="Services\WorkPermitAssignmentConfigurationService.cs" />
+    <Compile Include="Services\Excel\AbstractExcelDataRenderer.cs" />
+    <Compile Include="Services\Excel\CokerCardReportExcelDataRenderer.cs" />
+    <Compile Include="Services\Excel\CustomFieldTrendReportExcelDataRenderer.cs" />
+    <Compile Include="Services\Excel\IExcelDataRenderer.cs" />
+    <Compile Include="Services\Excel\MarkedAsReadReportDataByUser.cs" />
+    <Compile Include="Services\Excel\MarkedAsReadReportExcelDataRenderer.cs" />
+    <Compile Include="Services\Excel\RestrictionReportExcelDataRenderer.cs" />
+    <Compile Include="Services\Excel\RoleMatrixExcelDataRenderer.cs" />
+    <Compile Include="Services\Excel\TargetAlertReportExcelDataRenderer.cs" />
+    <Compile Include="Services\FormEdmontonService.cs" />
+    <Compile Include="Services\PermitRequestEdmontonService.cs" />
+    <Compile Include="Services\PermitRequestMontrealService.cs" />
+    <Compile Include="Services\ShiftPatternService.cs" />
+    <Compile Include="Services\StreamingCokerCardService.cs" />
+    <Compile Include="Services\StreamingReportingService.cs" />
+    <Compile Include="Services\StreamingRoleService.cs" />
+    <Compile Include="Services\WorkPermitEdmontonService.cs" />
+    <Compile Include="Services\WorkPermitFortHillsService.cs" />
+    <Compile Include="Services\WorkPermitLubesService.cs" />
+    <Compile Include="Services\PermitAttributeService.cs" />
+    <Compile Include="Services\RolePermissionService.cs" />
+    <Compile Include="Services\WorkPermitAutoAssignmentConfigurationService.cs" />
+    <Compile Include="Services\CustomFieldService.cs" />
+    <Compile Include="Services\DocumentLinkService.cs" />
+    <Compile Include="Services\LabAlertDefinitionService.cs" />
+    <Compile Include="Services\CraftOrTradeService.cs" />
+    <Compile Include="Services\DeviationAlertService.cs" />
+    <Compile Include="Services\EditHistoryService.cs" />
+    <Compile Include="Services\EventService.cs" />
+    <Compile Include="Services\FunctionalLocationDTOService.cs" />
+    <Compile Include="Services\LabAlertService.cs" />
+    <Compile Include="Services\LogTemplateService.cs" />
+    <Compile Include="Services\PlantService.cs" />
+    <Compile Include="Services\FunctionalLocationInfoService.cs" />
+    <Compile Include="Services\FunctionalLocationOperationalModeService.cs" />
+    <Compile Include="Services\FunctionalLocationService.cs" />
+    <Compile Include="Services\GasTestElementInfoService.cs" />
+    <Compile Include="Services\LogDefinitionService.cs" />
+    <Compile Include="Services\LogService.cs" />
+    <Compile Include="Services\ObjectLockingService.cs" />
+    <Compile Include="Services\ServiceUtility.cs" />
+    <Compile Include="Services\RoleDisplayConfigurationService.cs" />
+    <Compile Include="Services\WorkAssignmentService.cs" />
+    <Compile Include="Services\PlantHistorianService.cs" />
+    <Compile Include="Services\RestrictionDefinitionService.cs" />
+    <Compile Include="Services\RestrictionReasonCodeService.cs" />
+    <Compile Include="Services\RoleElementService.cs" />
+    <Compile Include="Services\RoleService.cs" />
+    <Compile Include="Services\ReportingService.cs" />
+    <Compile Include="Services\SAPNotificationService.cs" />
+    <Compile Include="Services\ScheduleService.cs" />
+    <Compile Include="Services\SecurityService.cs" />
+    <Compile Include="Services\SharedServiceUtilities.cs" />
+    <Compile Include="Services\ShiftHandoverService.cs" />
+    <Compile Include="Services\SiteConfigurationService.cs" />
+    <Compile Include="Services\SiteService.cs" />
+    <Compile Include="Services\SummaryLogService.cs" />
+    <Compile Include="Services\TagInfoGroupService.cs" />
+    <Compile Include="Services\TagService.cs" />
+    <Compile Include="Services\TargetAlertService.cs" />
+    <Compile Include="Services\TargetDefinitionService.cs" />
+    <Compile Include="Services\TimeService.cs" />
+    <Compile Include="Services\UserLoginHistoryService.cs" />
+    <Compile Include="Services\UserService.cs" />
+    <Compile Include="Services\DropdownValueService.cs" />
+    <Compile Include="Services\WorkPermitMontrealService.cs" />
+    <Compile Include="Services\WorkPermitMontrealTemplateService.cs" />
+    <Compile Include="Services\WorkPermitMudsService.cs" />
+    <Compile Include="Services\WorkPermitMudsTemplateService.cs" />
+    <Compile Include="Services\WorkPermitService.cs" />
+    <Compile Include="Utilities\AbstractMergeTool.cs" />
+    <Compile Include="Utilities\EdmontonMergingPermitRequestPersistanceProcessor.cs" />
+    <Compile Include="Utilities\FortHillsPermitRequestPersistanceProcessor.cs" />
+    <Compile Include="Utilities\FortHillsWorkOrderToWorkPermitRequestDataConverter.cs" />
+    <Compile Include="Utilities\LubesMergingPermitRequestPersistenceProcessor.cs" />
+    <Compile Include="Utilities\OpmExcursionToOpmExcursionDTOConverter.cs" />
+    <Compile Include="Utilities\OpmTagValueToOpmTagValueDTOConverter.cs" />
+    <Compile Include="Utilities\OpmToeDefinitionToOpmToeDefinitionDTOConverter.cs" />
+    <Compile Include="Utilities\OpmXhqImporterDataConversionUtility.cs" />
+    <Compile Include="Utilities\PermitRequestLubesMergeTool.cs" />
+    <Compile Include="Utilities\WorkOrderToActionItemDefinition.cs" />
+    <Compile Include="Utilities\WorkOrderWorkPermitFortHillsTypeConverter.cs" />
+    <Compile Include="Utilities\WorkOrderWorkPermitLubesTypeConverter.cs" />
+    <Compile Include="Utilities\WorkOrderDataToPermitRequestDataConverter.cs" />
+    <Compile Include="Utilities\WorkOrderDataTPermitRequestLubesDataConverter.cs" />
+    <Compile Include="Utilities\SAPWorkOrderToPersistableDataConverter.cs" />
+    <Compile Include="Utilities\MontrealPermitRequestPersistanceProcessor.cs" />
+    <Compile Include="Utilities\EdmontonPermitRequestPersistanceProcessor.cs" />
+    <Compile Include="Utilities\AbstractMergingPermitRequestPersistanceProcessor.cs" />
+    <Compile Include="Utilities\PermitRequestEdmontonMergeTool.cs" />
+    <Compile Include="Utilities\UserShiftAndIds.cs" />
+    <Compile Include="Utilities\WorkOrderWorkPermitEdmontonTypeConverter.cs" />
+    <Compile Include="Utilities\EdmontonWorkOrderToWorkPermitRequestDataConverter.cs" />
+    <Compile Include="Utilities\MontrealWorkOrderToWorkPermitRequestDataConverter.cs" />
+    <Compile Include="Utilities\EventQueue.cs" />
+    <Compile Include="Utilities\EventQueueItem.cs" />
+    <Compile Include="Utilities\AbstractPermitRequestPersistanceProcessor.cs" />
+    <Compile Include="Utilities\WorkOrderToWorkPermitRequestDataConverter.cs" />
+    <Compile Include="Utilities\WorkOrderWorkPermitMontrealTypeConverter.cs" />
+    <Compile Include="Wcf\ClientEventPushServiceRegistry.cs" />
+    <Compile Include="Clients\OpmXhqServiceSettings.cs" />
+    <Compile Include="Wcf\WorkOrderImportFilter.cs" />
+    <Compile Include="Wcf\WorkOrderImporter.cs" />
+    <Compile Include="Wcf\WorkOrderImportSettings.cs" />
+    <Compile Include="Wcf\ServerOperationBehavior.cs" />
+    <Compile Include="Wcf\ServerOperationInvoker.cs" />
+    <Compile Include="Wcf\ServerServiceHostFactory.cs" />
+    <Compile Include="Utilities\IOltGroupMembership.cs" />
+    <Compile Include="Utilities\LdapGroupMembership.cs" />
+    <Compile Include="Utilities\UserInformation.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Common\App\Common.App.csproj">
+      <Project>{31784A4C-5836-4671-88CD-5FE0B962BC3E}</Project>
+      <Name>Common.App</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DataHistorian\DataHistorian.App\PlantDataHistorian.App.csproj">
+      <Project>{1CBD3F68-A8CE-48C4-AA51-64E375CC3E75}</Project>
+      <Name>PlantDataHistorian.App</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildProjectDirectory)\..\..\..\olt.msbuild" />
+  <Target Name="BeforeBuild">
+    <CallTarget Targets="CreateWebAppConfigFiles" />
+  </Target>
+  <Target Name="AfterBuild">
+    <CallTarget Targets="CopyRemoteServices" />
+  </Target>
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

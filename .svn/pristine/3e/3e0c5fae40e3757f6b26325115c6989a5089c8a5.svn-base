@@ -1,0 +1,81 @@
+﻿
+
+IF  NOT EXISTS (SELECT * FROM sys.objects 
+WHERE object_id = OBJECT_ID(N'[dbo].[WORKPERMITMUDSSIGN]') AND type in (N'U'))
+BEGIN
+Create TABLE WORKPERMITMUDSSIGN
+(
+ ID bigint Identity(1,1),
+ WorkPermitId Varchar(100),
+ 
+ Verifier_FNAME  Nvarchar(500),
+ Verifier_LNAME   Nvarchar(500),
+ Verifier_BADGENUMBER NVARCHAR(100),
+ Verifier_BADGETYPE VARCHAR(100),
+ Verifier_SOURCE   VARCHAR(100),
+ DETENTEUR_FNAME  Nvarchar(500),
+ DETENTEUR_LNAME  Nvarchar(500),
+ DETENTEUR_BADGENUMBER NVARCHAR(100),
+ DETENTEUR_BADGETYPE VARCHAR(100),
+ DETENTEUR_SOURCE VARCHAR(100),
+ EMETTEUR_FNAME  Nvarchar(500),
+ EMETTEUR_LNAME  Nvarchar(500),
+ EMETTEUR_BADGENUMBER NVARCHAR(100), 
+ EMETTEUR_BADGETYPE VARCHAR(100),
+ EMETTEUR_SOURCE VARCHAR(100),
+ Deleted bit default(0),
+ UpdatedBy int,
+ CreatedBy int,
+ CreatedDate Datetime,
+ UpdatedDate Datetime,
+ SiteId Int,
+
+ 
+ )
+END
+
+
+
+
+GO
+
+
+
+IF  NOT EXISTS (SELECT * FROM sys.objects 
+WHERE object_id = OBJECT_ID(N'[dbo].[WORKPERMITMUDSSIGN_HISTORY]') AND type in (N'U'))
+BEGIN
+Create TABLE WORKPERMITMUDSSIGN_HISTORY
+(
+ ID bigint Identity(1,1),
+ WorkPermitId Varchar(100),
+ Verifier_FNAME  Nvarchar(500),
+ Verifier_LNAME   Nvarchar(500),
+ Verifier_BADGENUMBER NVARCHAR(100),
+ Verifier_BADGETYPE VARCHAR(100),
+ Verifier_SOURCE   VARCHAR(100),
+ DETENTEUR_FNAME  Nvarchar(500),
+ DETENTEUR_LNAME  Nvarchar(500),
+ DETENTEUR_BADGENUMBER NVARCHAR(100),
+ DETENTEUR_BADGETYPE VARCHAR(100),
+ DETENTEUR_SOURCE VARCHAR(100),
+ EMETTEUR_FNAME  Nvarchar(500),
+ EMETTEUR_LNAME  Nvarchar(500),
+ EMETTEUR_BADGENUMBER NVARCHAR(100), 
+ EMETTEUR_BADGETYPE VARCHAR(100),
+ EMETTEUR_SOURCE VARCHAR(100),
+ Deleted bit default(0),
+ UpdatedBy int,
+ CreatedBy int,
+ CreatedDate Datetime,
+ UpdatedDate Datetime,
+ SiteId Int,
+
+ 
+ )
+END
+
+
+
+
+GO
+

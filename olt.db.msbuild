@@ -1,0 +1,291 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  
+  <PropertyGroup>
+    <SqlTimeoutInSeconds Condition=" '$(SqlTimeoutInSeconds)' == '' " >7000</SqlTimeoutInSeconds>
+    <UpgradeTestDatabaseOnlyInsteadOfAFullRefresh Condition=" '$(UpgradeTestDatabaseOnlyInsteadOfAFullRefresh)' == '' " >false</UpgradeTestDatabaseOnlyInsteadOfAFullRefresh>
+  </PropertyGroup>
+   
+	<ItemGroup>
+		<DBUpgradeMergeFiles Include="$(DbDirectory)\DevMerging\*.sql" />
+	</ItemGroup>
+
+	<Target Name="DbInitTrainingDataSetup">
+		<PropertyGroup>
+			<ApplicationEnvironment>Training</ApplicationEnvironment>
+		</PropertyGroup>
+	</Target>
+	
+	<Target Name="DbInitTrainingData" DependsOnTargets="DbInitTrainingDataSetup">
+		<Message Text="*************************************************************" />
+		<Message Text="UpgradeTestDatabaseOnlyInsteadOfAFullRefresh: $(UpgradeTestDatabaseOnlyInsteadOfAFullRefresh)" />
+		<Message Text="*************************************************************" />
+		<CallTarget Targets="DbInit" Condition="'$(UpgradeTestDatabaseOnlyInsteadOfAFullRefresh)'!='true'" />
+		<CallTarget Targets="DbTestConfigChanges" Condition="'$(UpgradeTestDatabaseOnlyInsteadOfAFullRefresh)'!='true'" />
+		<CallTarget Targets="DbUpgrade" Condition="'$(UpgradeTestDatabaseOnlyInsteadOfAFullRefresh)'=='true'" />
+	</Target>
+
+	<Target Name="DropDbObjects" >
+		<ItemGroup>
+			<RemoteSqlViewsDrop Include="$(DbDirectory)\DDL Scripts\DropViews.sql" />
+			<RemoteSqlStoredProceduresDrop Include="$(DbDirectory)\DDL Scripts\DropStoredProcedures.sql" />
+			<RemoteSqlFunctionsDrop Include="$(DbDirectory)\DDL Scripts\DropFunctions.sql" />
+		</ItemGroup>
+		
+		<Sql Scripts="@(RemoteSqlViewsDrop)" ConnectionString="$(DbConnectionString)" TimeoutInSeconds="$(SqlTimeoutInSeconds)" />
+		<Sql Scripts="@(RemoteSqlStoredProceduresDrop)" ConnectionString="$(DbConnectionString)" TimeoutInSeconds="$(SqlTimeoutInSeconds)" />
+		<Sql Scripts="@(RemoteSqlFunctionsDrop)" ConnectionString="$(DbConnectionString)" TimeoutInSeconds="$(SqlTimeoutInSeconds)" />
+	</Target>
+	
+	<Target Name="EchoDbConfiguration">
+		<Message Text="ComputerName: $(COMPUTERNAME)" />
+		<Message Text="DBConnection: $(DbConnectionString)" />
+		<Message Text="ApplicationEnvironment: $(ApplicationEnvironment)" />
+		<Message Text="BuildNumber: $(BuildNumber)" />    
+	</Target>
+	
+
+	<Target Name="DbInit" DependsOnTargets="EchoDbConfiguration;RemoveDbReplication">
+		<PropertyGroup>
+			<BeforeUpgradeScriptDir>$(DbDirectory)\Data_Baseline_Run_Before_Upgrade\Data</BeforeUpgradeScriptDir>
+		</PropertyGroup>
+		<ItemGroup>
+			<RemoteSqlConstraintsEnableAll Include="$(DbDirectory)\DDL Scripts\EnableAllConstraints.sql" />
+			<RemoteSqlConstraintsDisableAll Include="$(DbDirectory)\DDL Scripts\DisableAllConstraints.sql" />
+			
+			<RemoteSqlTablesCreate Include="$(DbDirectory)\Data_Baseline_Run_Before_Upgrade\DropConstraints.sql; $(DbDirectory)\Data_Baseline_Run_Before_Upgrade\DropTables.sql; $(DbDirectory)\Data_Baseline_Run_Before_Upgrade\CreateTables.sql" />
+
+		    <DbVersionBaseline Include="$(BeforeUpgradeScriptDir)\000_DbVersion.sql"/>    
+			<BulkDataFiles Include="$(BeforeUpgradeScriptDir)\**\*.dat" />
+			<ReseedDates Include="$(BeforeUpgradeScriptDir)\reseed-dates.sql" />
+			<DisableIndexesForBcp Include="$(BeforeUpgradeScriptDir)\DisableIndexesForBcp.sql" />
+			<RebuildIndexesAfterBcp Include="$(BeforeUpgradeScriptDir)\RebuildIndexesAfterBcp.sql" />
+			
+			<!-- test alter table script - ayman -->
+			<DbTables Include="$(DbDirectory)\Data_Baseline_Run_Before_Upgrade\NewCreateAlertTables\*.sql" />
+			
+			
+			<RemoteSqlDataTrainingInsert Include="$(DbDirectory)\Data_Test_Run_After_Upgrade\Training\*.sql" />
+			<RemoteSqlDataTestInsert Include="$(DbDirectory)\Data_Test_Run_After_Upgrade\Test\*.sql" />
+		</ItemGroup>
+		
+		<CallTarget Targets="DropDbObjects"/>
+		
+		<Sql Scripts="@(RemoteSqlTablesCreate)" ConnectionString="$(DbConnectionString)" TimeoutInSeconds="$(SqlTimeoutInSeconds)"/>			
+		
+		<Sql Scripts="@(RemoteSqlConstraintsDisableAll)" ConnectionString="$(DbConnectionString)" TimeoutInSeconds="$(SqlTimeoutInSeconds)"/>
+
+		<Sql Scripts="@(DbVersionBaseline)" ConnectionString="$(DbConnectionString)" TimeoutInSeconds="$(SqlTimeoutInSeconds)"/>
+		
+		<Sql Scripts="@(DisableIndexesForBcp)" ConnectionString="$(DbConnectionString)" TimeoutInSeconds="$(SqlTimeoutInSeconds)"/>
+		<Exec Command='bcp.exe [dbo].[%(BulkDataFiles.FileName)] in %(BulkDataFiles.Identity) -c -t"|"\t"|" -r\n~~ -E -U$(SqlUser) -S$(SqlServer) -P$(SqlPassword) -d$(SqlDatabase) -b5000' />
+
+
+		<!--  test alter table script - ayman -->
+		<Sql Scripts="@(DbTables)" ConnectionString="$(DbConnectionString)" TimeoutInSeconds="$(SqlTimeoutInSeconds)"/>			
+
+
+		<Sql Scripts="@(ReseedDates)" ConnectionString="$(DbConnectionString)" TimeoutInSeconds="$(SqlTimeoutInSeconds)"/>
+		<Sql Scripts="@(RebuildIndexesAfterBcp)" ConnectionString="$(DbConnectionString)" TimeoutInSeconds="$(SqlTimeoutInSeconds)"/>									
+									
+		<Sql Scripts="@(RemoteSqlConstraintsEnableAll)" ConnectionString="$(DbConnectionString)" TimeoutInSeconds="$(SqlTimeoutInSeconds)" />
+		
+		<DBUpgrade ConnectionString="$(DbConnectionString)" UpgradeVersion="$(BuildNumber)" UpgradeScriptsPath="$(DbUpgradeDirectory)" TimeoutInSeconds="$(SqlTimeoutInSeconds)"/>
+		<DBVersion ConnectionString="$(DbConnectionString)" VersionNumber="$(BuildNumber)" />   		
+		<Sql Scripts="@(DBUpgradeMergeFiles)" ConnectionString="$(DbConnectionString)" Condition="'$(IsBuildServer)' == 'false'" TimeoutInSeconds="$(SqlTimeoutInSeconds)" />
+
+		<Sql Scripts="@(RemoteSqlConstraintsDisableAll)" ConnectionString="$(DbConnectionString)" TimeoutInSeconds="$(SqlTimeoutInSeconds)"/>		
+		<Sql Scripts="@(RemoteSqlDataTrainingInsert)" ConnectionString="$(DbConnectionString)" Condition="'$(ApplicationEnvironment)' == 'Training'" TimeoutInSeconds="$(SqlTimeoutInSeconds)"/>
+		<Sql Scripts="@(RemoteSqlDataTestInsert)" ConnectionString="$(DbConnectionString)" Condition="'$(ApplicationEnvironment)' == 'Developer'" TimeoutInSeconds="$(SqlTimeoutInSeconds)"/>		
+		<CallTarget Targets="DbTestConfigChanges" />
+		<Sql Scripts="@(RemoteSqlConstraintsEnableAll)" ConnectionString="$(DbConnectionString)"  TimeoutInSeconds="$(SqlTimeoutInSeconds)"/>
+
+		<CallTarget Targets="CreateDbObjects"/>
+	</Target>
+			
+	
+	<Target Name="DbTestConfigChanges" DependsOnTargets="EchoDbConfiguration;RemoveDbReplication">
+		<ItemGroup>
+			<RemoteSqlDataConfigChanges Include="$(DbDirectory)\Data_Configuration_Changes\*.sql" />
+		</ItemGroup>
+		
+		<Sql Scripts="@(RemoteSqlDataConfigChanges)" ConnectionString="$(DbConnectionString)" TimeoutInSeconds="$(SqlTimeoutInSeconds)"/>
+	</Target>
+
+	<Target Name="CreateDbObjects" >
+		<ItemGroup>
+		
+<DbTables Include="$(DbDirectory)\Data_Baseline_Run_Before_Upgrade\NewCreateAlertTables\*.sql" />			
+		
+			<RemoteSqlFunctionsCreate Include="$(DbDirectory)\Functions\*.sql"/>
+			<RemoteSqlViewsCreate Include="$(DbDirectory)\Views\*.sql" />
+			<RemoteSqlStoredProceduresCreate Include="$(DbDirectory)\Stored Procedures\*.sql"  />
+
+			
+			
+			
+		</ItemGroup>		
+
+  		<Message Text="Updating Database functions, and stored procedures" />
+<Sql Scripts="@(DbTables)" ConnectionString="$(DbConnectionString)" TimeoutInSeconds="$(SqlTimeoutInSeconds)"/>			  		
+<Sql Scripts="@(RemoteSqlFunctionsCreate)" ConnectionString="$(DbConnectionString)" TimeoutInSeconds="$(SqlTimeoutInSeconds)" />
+		<Sql Scripts="@(RemoteSqlViewsCreate)" ConnectionString="$(DbConnectionString)" TimeoutInSeconds="$(SqlTimeoutInSeconds)" />
+  		<Sql Scripts="@(RemoteSqlStoredProceduresCreate)" ConnectionString="$(DbConnectionString)" TimeoutInSeconds="$(SqlTimeoutInSeconds)" />
+  		
+		
+		
+		
+		
+		
+		
+	</Target>
+	
+	<Target Name="RemoveDbReplication" Condition=" '$(BuildConfiguration)' != 'Release-PRD' ">
+		<ItemGroup>
+			<RemoveDbReplicationSql Include="$(DbDirectory)\DDL Scripts\RemoveDbReplication.sql" />
+		</ItemGroup>
+		
+		<ItemGroup>
+			<Variable Include="SqlDatabase">
+				<Value>$(SqlDatabase)</Value>
+			</Variable>
+		</ItemGroup>
+
+		<MSBuild.ExtensionPack.SqlServer.SqlCmd TaskAction="Execute" InputFiles="@(RemoveDbReplicationSql)" 
+												CommandLineQuery=""
+												Database="MASTER" Server="$(SqlServer)" Logon="$(SqlUser)" Password="$(SqlPassword)" 
+												EchoInput="true" SeverityLevel="16" Variables="@(Variable)" />
+	</Target>
+	
+  	<!-- Used to only upgrade the database to the new build version.  
+  	     1. Drops secondary objects
+  	     2. Runs upgrade scripts up to, and including the current build version.
+  	     3. Updates the version table in the database 
+  	     4. Rebuilds seconds objects -->
+	<Target Name="DbUpgrade" DependsOnTargets="EchoDbConfiguration;RemoveDbReplication">
+		<ItemGroup>
+			<SqlCleanEventSink Include="$(DbDirectory)\DDL Scripts\CleanEventSink.sql"/>
+			<RebuildFunctionalLocationIndexes Include="$(DbDirectory)\DDL Scripts\RebuildFunctionalLocationIndexes.sql"/>
+		</ItemGroup>
+		
+		<Message Text="Upgrading Database from current version to $(BuildNumber) using scripts in $(DbUpgradeDirectory)" />
+    
+		<CallTarget Targets="DropDbObjects"/>	
+		
+		<DBUpgrade ConnectionString="$(DbConnectionString)" UpgradeVersion="$(BuildNumber)" UpgradeScriptsPath="$(DbUpgradeDirectory)" TimeoutInSeconds="$(SqlTimeoutInSeconds)"/>
+  		<DBVersion ConnectionString="$(DbConnectionString)" VersionNumber="$(BuildNumber)" />
+    
+		<Sql Scripts="@(DBUpgradeMergeFiles)" ConnectionString="$(DbConnectionString)" 
+			 Condition="'$(IsBuildServer)' == 'false' and '$(ApplicationEnvironment)' == 'Developer'" 
+			 TimeoutInSeconds="$(SqlTimeoutInSeconds)" />	
+
+		<CallTarget Targets="CreateDbObjects" />
+		<Sql Scripts="@(RebuildFunctionalLocationIndexes)" ConnectionString="$(DbConnectionString)" TimeoutInSeconds="$(SqlTimeoutInSeconds)" />
+		
+		<Message Text="Cleaning up Event Sink table." />
+		<Sql Scripts="@(SqlCleanEventSink)" ConnectionString="$(DbConnectionString)" TimeoutInSeconds="$(SqlTimeoutInSeconds)" />
+  	</Target>
+
+	<Target Name="CreateMergeDBScripts">
+		<Message Text="Attempting to Merge Files: @(DBUpgradeMergeFiles) into $(BuildNumber).sql" />
+		<FileMerge OutputFile="$(DbUpgradeDirectory)\$(BuildNumber).sql" 
+				   Files="@(DBUpgradeMergeFiles)" 
+				   CreateNewFile="true" >
+		  <Output TaskParameter="MergeCount" PropertyName="MergedFileCount"/>
+		</FileMerge>
+		<Message Text="Merged $(MergeCount) files into $(BuildNumber).sql" />
+		<Message Text="Upgrading Database from current version to $(BuildNumber) using scripts in $(DbUpgradeDirectory)" />
+	</Target>
+
+	<Target Name="CheckinMergedDBScripts" Condition="'$(MergedFileCount)'!='0'">
+		<ItemGroup>
+			<CommitDirectories Include="$(DbDirectory)\DevMerging" />
+			<CommitDirectories Include="$(DbUpgradeDirectory)" />
+		</ItemGroup>
+
+		<Message Text="Attempting to check in merged file: $(DbUpgradeDirectory)\$(BuildNumber).sql" />
+		<MSBuild.ExtensionPack.Subversion.Svn TaskAction="Add" Items="$(DbUpgradeDirectory)\$(BuildNumber).sql" />
+		<MSBuild.ExtensionPack.Subversion.Svn TaskAction="Delete" Items="@(DbUpgradeMergeFiles)" />
+		<MSBuild.ExtensionPack.Subversion.Svn TaskAction="Commit" Items="@(CommitDirectories)" UserName="$(SvnUserName)" UserPassword="$(SvnPassword)" />
+  	</Target>
+	
+	<Target Name="Cutover_Testing">
+		<!-- Restore database from snapshot -->
+		<Message Text="Restoring database from snapshot" />
+		<MSBuild.ExtensionPack.SqlServer.SqlCmd TaskAction="Execute" CommandLineQuery="RESTORE DATABASE PROD_BACKUP from DATABASE_SNAPSHOT = 'olt_prd_snapshot_1'"
+												Database="MASTER" Server="$(SqlServer)" Logon="$(SqlUser)" Password="$(SqlPassword)" 
+												EchoInput="true" SeverityLevel="16" />
+												
+		<CallTarget Targets="DbUpgrade" />
+	</Target>
+
+  <Target Name="RestoreSnapshotDatabase" DependsOnTargets="EchoDbConfiguration;RemoveDbReplication">
+
+    <Message Text="*************************************************************" />
+	<Message Text="RestoreSnapshot: $(RestoreSnapshot)" />
+    <Message Text="*************************************************************" />
+
+    <!-- Restore database from snapshot -->
+	<Message Text="Restoring database $(SqlDatabase) from snapshot $(SqlDatabase)_SnapShot" />
+	<MSBuild.ExtensionPack.SqlServer.SqlCmd TaskAction="Execute" CommandLineQuery="RESTORE DATABASE $(SqlDatabase) from DATABASE_SNAPSHOT = '$(SqlDatabase)_SnapShot'"
+												Database="MASTER" Server="$(SqlServer)" Logon="$(SqlUser)" Password="$(SqlPassword)" 
+												EchoInput="true" SeverityLevel="16" 
+												Condition="'$(RestoreSnapshot)'=='true'"
+												/>
+													
+    <CallTarget Targets="CleanupTargetData;CleanupShiftHandoverEmailConfiguration" />
+  </Target>
+
+	<!-- Since we are restoring production data to our non-prod environments, 
+		let's make sure we do the following:
+			1.  Soft delete all target definitions
+			2.  Clear all Target Alerts
+			3.  Change all Writes to None and clear the tag id
+		so that we aren't reading and writing to site's PHD servers in non-production environments -->
+  <Target Name="CleanupTargetData">
+	<ItemGroup>
+		<CleanupTargetsSql Include="$(DbDirectory)\DDL Scripts\CleanWriteTargets.sql" />
+		<CleanupTargetsSql Include="$(DbDirectory)\DDL Scripts\SoftDeleteTargets.sql" />
+	</ItemGroup>
+	<MSBuild.ExtensionPack.SqlServer.SqlCmd TaskAction="Execute" InputFiles="@(CleanupTargetsSql)" 
+											Database="$(SqlDatabase)" Server="$(SqlServer)" Logon="$(SqlUser)" Password="$(SqlPassword)" 
+											EchoInput="true" SeverityLevel="16" 
+											/>
+  </Target>
+
+  <Target Name="CleanupShiftHandoverEmailConfiguration">
+	<ItemGroup>
+		<CleanupHandoverEmailSql Include="$(DbDirectory)\DDL Scripts\CleanEmailHandoverConfiguration.sql" />
+	</ItemGroup>
+
+	<MSBuild.ExtensionPack.SqlServer.SqlCmd TaskAction="Execute" InputFiles="@(CleanupHandoverEmailSql)" 
+											Database="$(SqlDatabase)" Server="$(SqlServer)" Logon="$(SqlUser)" Password="$(SqlPassword)" 
+											EchoInput="true" SeverityLevel="16" 
+											/>
+  </Target>
+  <Target Name="DisableAutoPermitImport">
+    <ItemGroup>
+      <DisableAutoPermitScript Include="$(DbDirectory)\DDL Scripts\DisableAutoPermitImport.sql" />
+    </ItemGroup>
+
+    <MSBuild.ExtensionPack.SqlServer.SqlCmd TaskAction="Execute" InputFiles="@(DisableAutoPermitScript)"
+                        Database="$(SqlDatabase)" Server="$(SqlServer)" Logon="$(SqlUser)" Password="$(SqlPassword)"
+                        EchoInput="true" SeverityLevel="16"
+											/>
+  </Target>
+
+  <Target Name="RunAutoPermitImportAtFivePM">
+    <ItemGroup>
+      <RunAtFiveFiles Include="$(DbDirectory)\DDL Scripts\RunAutoPermitImportAtFivePM.sql" />
+    </ItemGroup>
+
+    <MSBuild.ExtensionPack.SqlServer.SqlCmd TaskAction="Execute" InputFiles="@(RunAtFiveFiles)"
+                        Database="$(SqlDatabase)" Server="$(SqlServer)" Logon="$(SqlUser)" Password="$(SqlPassword)"
+                        EchoInput="true" SeverityLevel="16"
+											/>
+  </Target>
+
+  <!-- Useful for developers to drop all view, functions and stored procs and build them all without doing a full db rebuild -->
+  <!-- For example, when you create a new stored proc, run this instead! -->
+  <Target Name="RebuildDbObjects" DependsOnTargets="DropDbObjects;CreateDbObjects" />
+  
+</Project>

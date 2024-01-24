@@ -1,0 +1,108 @@
+201|	|deviation_response_plant_state|	|Scheduled Maintenance/Shutdown/Turnaround|	|0|	|1|	|3
+~~202|	|deviation_response_plant_state|	|Break-In/Unscheduled Maintenance|	|0|	|2|	|3
+~~203|	|deviation_response_plant_state|	|Production Variant|	|0|	|3|	|3
+~~204|	|edm_overtime_primary_locations|	|Heavy Oils|	|0|	|1|	|8
+~~205|	|edm_overtime_primary_locations|	|Light Oils|	|0|	|2|	|8
+~~206|	|edm_overtime_primary_locations|	|Syncrude|	|0|	|3|	|8
+~~207|	|edm_overtime_primary_locations|	|Unionfining|	|0|	|4|	|8
+~~208|	|edm_overtime_primary_locations|	|Utilities|	|0|	|5|	|8
+~~209|	|edm_overtime_primary_locations|	|P&S|	|0|	|6|	|8
+~~210|	|edm_overtime_primary_locations|	|OTC|	|0|	|7|	|8
+~~195|	|gn75b_equipment_types|	|Pump|	|0|	|1|	|8
+~~196|	|gn75b_equipment_types|	|Compressor|	|0|	|2|	|8
+~~197|	|gn75b_equipment_types|	|Exchanger|	|0|	|3|	|8
+~~198|	|gn75b_equipment_types|	|Piping Circuit|	|0|	|4|	|8
+~~199|	|gn75b_equipment_types|	|Control Valve|	|0|	|5|	|8
+~~200|	|gn75b_equipment_types|	|Vessel|	|0|	|6|	|8
+~~191|	|gn75b_isolation_types|	|Single Valve|	|0|	|1|	|8
+~~192|	|gn75b_isolation_types|	|DB&B|	|0|	|2|	|8
+~~193|	|gn75b_isolation_types|	|Air Gap|	|0|	|3|	|8
+~~194|	|gn75b_isolation_types|	|Breaker|	|0|	|4|	|8
+~~174|	|shift_supervisors|	|Mark Schweitzer|	|0|	|0|	|8
+~~175|	|shift_supervisors|	|Tim McIntosh|	|0|	|1|	|8
+~~176|	|shift_supervisors|	|Robert Martin|	|0|	|2|	|8
+~~177|	|shift_supervisors|	|Robert McKenzie|	|0|	|3|	|8
+~~178|	|shift_supervisors|	|Dean Park|	|0|	|4|	|8
+~~179|	|shift_supervisors|	|Brad Zibrowski|	|0|	|5|	|8
+~~180|	|shift_supervisors|	|Chris Kemp|	|0|	|6|	|8
+~~181|	|shift_supervisors|	|Willie Ducherer|	|0|	|7|	|8
+~~182|	|shift_supervisors|	|Sam Jamieson|	|0|	|8|	|8
+~~183|	|shift_supervisors|	|Robert Beaton|	|0|	|9|	|8
+~~184|	|shift_supervisors|	|Howard Bergeron|	|0|	|10|	|8
+~~185|	|shift_supervisors|	|Trish Davies|	|0|	|11|	|8
+~~132|	|aromatique|	|BenzŠne|	|0|	|0|	|9
+~~133|	|aromatique|	|ToluŠne|	|0|	|1|	|9
+~~134|	|aromatique|	|XylŠne|	|0|	|2|	|9
+~~135|	|aromatique|	|OrthoxylŠne|	|0|	|3|	|9
+~~136|	|aromatique|	|BTX|	|0|	|4|	|9
+~~137|	|aromatique|	|Extract|	|0|	|5|	|9
+~~138|	|aromatique|	|Sulfolane|	|0|	|6|	|9
+~~123|	|autre_protection|	|Manchon|	|0|	|0|	|9
+~~162|	|autre_securite|	|Cabane anti-‚tincelle|	|0|	|0|	|9
+~~163|	|autre_securite|	|Extraction … la source|	|0|	|1|	|9
+~~165|	|autre_securite|	|Chariot ‚l‚vateur|	|1|	|2|	|9
+~~167|	|autre_securite|	|Dossard r‚fl‚chissant|	|0|	|2|	|9
+~~152|	|autres_conditions|	|Flamme nue|	|0|	|0|	|9
+~~153|	|autres_conditions|	|Travail de meulage|	|0|	|1|	|9
+~~166|	|autres_conditions|	|Chariot ‚l‚vateur|	|0|	|2|	|9
+~~124|	|autres_equipement_dincendie|	|Boyau … vapeur|	|0|	|0|	|9
+~~125|	|autres_equipement_dincendie|	|Boyau d'incendie|	|0|	|1|	|9
+~~126|	|autres_equipement_dincendie|	|Hydrant|	|0|	|2|	|9
+~~139|	|autres_substances|	|Air|	|0|	|0|	|9
+~~140|	|autres_substances|	|Asphalte|	|0|	|1|	|9
+~~141|	|autres_substances|	|Catalyseur|	|0|	|2|	|9
+~~142|	|autres_substances|	|Eau|	|0|	|3|	|9
+~~143|	|autres_substances|	|Electricit‚|	|0|	|4|	|9
+~~144|	|autres_substances|	|Gaz de carneau|	|0|	|5|	|9
+~~145|	|autres_substances|	|Gaz de carneau+catalyseur|	|0|	|6|	|9
+~~146|	|autres_substances|	|Huile|	|0|	|7|	|9
+~~147|	|autres_substances|	|HydrogŠne|	|0|	|8|	|9
+~~148|	|autres_substances|	|Mercaptan|	|0|	|9|	|9
+~~149|	|autres_substances|	|Soude caustique|	|0|	|10|	|9
+~~150|	|autres_substances|	|Sulfure de fer|	|0|	|11|	|9
+~~151|	|autres_substances|	|Vapeur|	|0|	|12|	|9
+~~127|	|corrosif|	|Acide sulfurique|	|0|	|0|	|9
+~~128|	|corrosif|	|Acide phosphorique|	|0|	|1|	|9
+~~129|	|corrosif|	|Benfield|	|0|	|2|	|9
+~~130|	|corrosif|	|Chlorure ferreux|	|0|	|3|	|9
+~~131|	|corrosif|	|Soude caustique|	|0|	|4|	|9
+~~160|	|detection_continue_des_gaz|	|3 Gaz|	|0|	|0|	|9
+~~161|	|detection_continue_des_gaz|	|4 Gaz|	|0|	|1|	|9
+~~111|	|habits|	|Bottes de caoutchouc|	|0|	|0|	|9
+~~112|	|habits|	|Couvre-botte en Tyvex|	|0|	|1|	|9
+~~113|	|habits|	|Couvre-tout en Tyvex|	|0|	|2|	|9
+~~114|	|habits|	|Gants caoutchouc|	|1|	|3|	|9
+~~115|	|habits|	|Gants/Bottes caoutchouc|	|0|	|3|	|9
+~~116|	|habits|	|Gants haute temp‚rature|	|0|	|4|	|9
+~~117|	|habits|	|Gants nitrile|	|0|	|5|	|9
+~~118|	|habits|	|Gants PVC|	|0|	|6|	|9
+~~119|	|habits|	|Habit anti-arc (40 calories)|	|0|	|7|	|9
+~~120|	|habits|	|Manchons|	|0|	|8|	|9
+~~121|	|habits|	|Vˆtements anti-corrosif|	|0|	|9|	|9
+~~122|	|habits|	|Vˆtement de pluie|	|0|	|10|	|9
+~~168|	|habits|	|Habit jet abrasif|	|0|	|11|	|9
+~~169|	|habits|	|Gilet de flottaison|	|0|	|12|	|9
+~~186|	|habits|	|Gant anti-coupant|	|0|	|13|	|9
+~~100|	|protection_respiratoire|	|VO/GA|	|0|	|0|	|9
+~~101|	|protection_respiratoire|	|Demi jetable N-100|	|1|	|1|	|9
+~~102|	|protection_respiratoire|	|Demi P-100|	|0|	|1|	|9
+~~103|	|protection_respiratoire|	|Demi multi gaz|	|0|	|2|	|9
+~~104|	|protection_respiratoire|	|Demi P-100 + multi gaz|	|0|	|3|	|9
+~~105|	|protection_respiratoire|	|Complet multi gaz|	|0|	|4|	|9
+~~106|	|protection_respiratoire|	|Complet P-100|	|0|	|5|	|9
+~~107|	|protection_respiratoire|	|Complet P-100 + multi gaz|	|0|	|6|	|9
+~~108|	|protection_respiratoire|	|GVP P-100|	|0|	|7|	|9
+~~109|	|protection_respiratoire|	|GVP P-100 + multi gaz|	|0|	|8|	|9
+~~110|	|protection_respiratoire|	|Masque pour amiante|	|0|	|9|	|9
+~~164|	|protection_respiratoire|	|Adduction d'air Type CE|	|0|	|10|	|9
+~~154|	|surveillant|	|Espace clos|	|0|	|0|	|9
+~~155|	|surveillant|	|Nacelle|	|0|	|1|	|9
+~~156|	|surveillant|	|Excavation|	|0|	|2|	|9
+~~157|	|surveillant|	|D‚placement de v‚hicule|	|0|	|3|	|9
+~~158|	|surveillant|	|Excavation et d‚placement|	|0|	|4|	|9
+~~159|	|surveillant|	|Adduct. d'air et d‚placement|	|0|	|5|	|9
+~~187|	|special_work_types|	|Hot Tapping|	|0|	|1|	|10
+~~188|	|special_work_types|	|Line Freeze|	|0|	|2|	|10
+~~189|	|special_work_types|	|Diving Operations|	|0|	|3|	|10
+~~190|	|special_work_types|	|High Voltage Electrical Work|	|0|	|4|	|10
+~~

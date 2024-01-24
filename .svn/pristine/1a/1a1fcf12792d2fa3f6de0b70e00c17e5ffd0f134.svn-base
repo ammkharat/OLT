@@ -1,0 +1,96 @@
+using System;
+using System.Collections.Generic;
+using Com.Suncor.Olt.Common.DTO.Excursions;
+using DevExpress.XtraSplashScreen;
+using Infragistics.Win;
+using Infragistics.Win.UltraWinGrid;
+
+namespace Com.Suncor.Olt.Client.Forms
+{
+    public partial class MultiExcursionResponsesForm : BaseForm, IMultiExcursionResponsesForm
+    {
+        private readonly SplashScreenManager splashScreenManager;
+
+        public MultiExcursionResponsesForm()
+        {
+            components = null;
+            InitializeComponent();
+            excursionsToUpdateOltGrid.DisplayLayout.Override.RowSizing = RowSizing.AutoFree;
+            excursionsToUpdateOltGrid.DisplayLayout.Override.RowSizingAutoMaxLines = 6;
+            excursionsToUpdateOltGrid.DisplayLayout.Override.CellMultiLine = DefaultableBoolean.True;
+            excursionsToUpdateOltGrid.DisplayLayout.Override.CellAppearance.TextTrimming = TextTrimming.EllipsisWord;
+            cancelButton.Click += HandleCancelButtonClicked;
+            saveAndCloseButton.Click += HandleSaveButtonClicked;
+            responsesWillBeOverwrittenWarning.Visible = false;
+            splashScreenManager = new SplashScreenManager(ParentForm, typeof(WaitForm), true, true);
+
+        }
+
+
+        private ExcursionResponseEditingGridRowDTO SelectedExcursionResponseRow
+        {
+            get
+            {
+                var ultraGridRow = excursionsToUpdateOltGrid.ActiveRow;
+                if (ultraGridRow == null) return null;
+                var excursionResponseEditingGridRowDTO = ultraGridRow.ListObject as ExcursionResponseEditingGridRowDTO;
+                return excursionResponseEditingGridRowDTO;
+            }
+        }
+
+        public event EventHandler SaveButtonClicked;
+        public event EventHandler CancelButtonClicked;
+
+        public void ClearErrorProviders()
+        {
+//            throw new NotImplementedException();
+        }
+
+
+        public List<ExcursionResponseEditingGridRowDTO> ExcursionsToUpdate
+        {
+            get { return (List<ExcursionResponseEditingGridRowDTO>) excursionsToUpdateOltGrid.DataSource; }
+            set
+            {
+                excursionsToUpdateOltGrid.DataSource = value;
+                excursionsToUpdateOltGrid.ResetBindings();
+            }
+        }
+
+        public string ExcursionResponseCommentForAllExcursions
+        {
+            get { return bulkCauseAndActionOltTextBox.Text; }
+        }
+
+        public void SetErrorForMissingResponse()
+        {
+            errorProvider.SetError(bulkCauseAndActionOltTextBox, "A response is required");
+        }
+
+        public void WarnThatSomePreviousExcursionResponsesWillBeOverwritten()
+        {
+            responsesWillBeOverwrittenWarning.Visible = true;
+        }
+
+        public event Action HistoryButtonClicked;
+
+        private void HandleSaveButtonClicked(object sender, EventArgs e)
+        {
+            if (SaveButtonClicked != null)
+            {
+                splashScreenManager.ShowWaitForm();
+                SaveButtonClicked(sender, e);
+                splashScreenManager.CloseWaitForm();
+                splashScreenManager.WaitForSplashFormClose();
+            }
+        }
+
+        private void HandleCancelButtonClicked(object sender, EventArgs e)
+        {
+            if (CancelButtonClicked != null)
+            {
+                CancelButtonClicked(sender, e);
+            }
+        }
+    }
+}

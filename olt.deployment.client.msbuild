@@ -1,0 +1,236 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+
+ <Target Name="BuildClient">
+    <MSBuild Projects="olt.msbuild" Targets="CreateClientAppConfigFiles" />
+    <CallTarget Targets="ClientAppFileGeneration" />
+    <CallTarget Targets="CreateClickOnceManifests" />
+    <CallTarget Targets="CopyClientFiles" />
+  </Target>
+
+  
+  <Target Name="CreateClientAppConfigFiles">
+    <ItemGroup>
+      <ConfigFiles Include="$(ClientDirectory)\App\*.config.xml" />
+    </ItemGroup>
+    <CreateProperty Value="@(ConfigFiles)">
+      <Output TaskParameter="Value" PropertyName="FilesToDetokenize" />
+    </CreateProperty>
+    <MSBuild Projects="$(MSBuildProjectFile)"
+             Targets="UnTokenizeConfigTemplateFiles"
+             Properties="FilesToDetokenize=$(FilesToDetokenize)"
+             ContinueOnError="false" />
+  </Target>
+
+  <Target Name="ClientAppFileGeneration">
+    <ItemGroup>
+      <ClientAppConfigFile Include="$(ClientExecDirectory)\Operator Log Tool.exe.config" />
+    </ItemGroup>
+
+    <Delete Files="@(ClientAppConfigFile)" />
+	<MSBuild.ExtensionPack.FileSystem.File TaskAction="Move" Path="$(ClientDirectory)\App\App.config" TargetPath="$(ClientExecDirectory)\Operator Log Tool.exe.config"/>
+
+    <Delete Files="$(ClientExecDirectory)\wcf.config" />
+	<MSBuild.ExtensionPack.FileSystem.File TaskAction="Move" Path="$(ClientDirectory)\App\wcf.config" TargetPath="$(ClientExecDirectory)\wcf.config"/>
+    
+    <Delete Files="$(ClientExecDirectory)\log4net.config" />
+	<MSBuild.ExtensionPack.FileSystem.File TaskAction="Move" Path="$(ClientDirectory)\App\log4net.config" TargetPath="$(ClientExecDirectory)\log4net.config" />
+   
+  </Target>
+
+  
+  <Target Name="CopyClientFiles" >
+    <PropertyGroup>
+      <ClientFilesBackupDirectory>$(ClientFilesSourceDirectory)_backup</ClientFilesBackupDirectory>
+      <RoboCopyPath Condition=" '$(RoboCopyPath)' == '' " >C:\Windows\System32\robocopy.exe</RoboCopyPath>
+    </PropertyGroup>
+
+    <Message Text="Backup client files to $(ClientFilesBackupDirectory)" />
+    <MakeDir Directories="$(ClientFilesBackupDirectory)" />
+
+    <ItemGroup>
+      <RoboCopyCommonParams Include="Options">
+        <value>/XF</value>
+      </RoboCopyCommonParams>
+      <RoboCopyCommonParams Include="Options">
+        <value>*.chm</value>
+      </RoboCopyCommonParams>
+      <RoboCopyCommonParams Include="Options">
+        <value>*.log</value>
+      </RoboCopyCommonParams>
+	  <RoboCopyCommonParams Include="Options">
+        <value>/MIR</value>
+      </RoboCopyCommonParams>
+      <RoboCopyCommonParams Include="Options">
+        <value>/NP</value>
+      </RoboCopyCommonParams>
+      <RoboCopyCommonParams Include="Options">
+        <value>/R:0</value>
+      </RoboCopyCommonParams>
+      <RoboCopyCommonParams Include="Options">
+        <value>/W:0</value>
+      </RoboCopyCommonParams>
+      <RoboCopyCommonParams Include="Options">
+        <value>/fft</value>
+      </RoboCopyCommonParams>
+    </ItemGroup>
+
+    <ItemGroup>
+      <BackupParams Include="Source">
+        <value>$(ClientFilesSourceDirectory)</value>
+      </BackupParams>
+      <BackupParams Include="Destination">
+        <value>$(ClientFilesBackupDirectory)</value>
+      </BackupParams>
+    </ItemGroup>
+
+    <MSBuild.ExtensionPack.Framework.GenericTool Executable="$(RoboCopyPath)"
+												 Parameters="@(BackupParams);@(RoboCopyCommonParams)"
+												 SuccessExitCodes="0;1" WarningExitCodes="2;3;4" ErrorExitCodes="8;16" />
+
+    <ItemGroup>
+      <ClientSharedPathParams Include="Source">
+        <value>$(ClientExecDirectory)</value>
+      </ClientSharedPathParams>
+      <ClientSharedPathParams Include="Destination">
+        <value>$(ClientFilesSourceDirectory)</value>
+      </ClientSharedPathParams>
+    </ItemGroup>
+
+    <Message Text="Copy client files to $(ClientFilesSourceDirectory)" />
+    <MSBuild.ExtensionPack.Framework.GenericTool Executable="$(RoboCopyPath)"
+												 Parameters="@(ClientSharedPathParams);@(RoboCopyCommonParams)"
+												 SuccessExitCodes="0;1" WarningExitCodes="2;3;4" ErrorExitCodes="8;16" />
+
+  </Target>
+
+    <ItemGroup>
+      <Language Include="English">
+        <LanguageDisplayName>English</LanguageDisplayName>
+        <CultureName>en</CultureName>
+      </Language>
+      <Language Include="French">
+        <LanguageDisplayName>Français</LanguageDisplayName>
+        <CultureName>fr</CultureName>
+      </Language>
+    </ItemGroup>
+  
+  <Target Name="CreateClickOnceManifests">
+	<PropertyGroup>
+      <ClickOnceWorkingDirectory>$(ClientExecDirectory)</ClickOnceWorkingDirectory>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ManifestFiles Include="$(ClickOnceWorkingDirectory)\*.application;$(ClickOnceWorkingDirectory)\*.manifest" />
+    </ItemGroup>
+    <Delete Files="@(ManifestFiles)" />
+
+	<CallTarget Targets="CreateClickOnceClientForCulture" />
+  </Target>
+
+  <Target Name="CreateClickOnceClientForCulture" Inputs="@(Language)" Outputs="%(Identity).Dummy">
+	
+    <PropertyGroup>
+      <Language>%(Language.Identity)</Language>
+	  <CultureName>%(Language.CultureName)</CultureName>
+	  <LanguageDisplayName>%(Language.LanguageDisplayName)</LanguageDisplayName>
+	  <ToolsVersion>4.0</ToolsVersion>
+      <ClickOnceWorkingDirectory>$(ClientExecDirectory)</ClickOnceWorkingDirectory>
+      <IconFile>$(ClickOnceWorkingDirectory)\OLT.ico</IconFile>
+	  
+
+     <SDKPath Condition="Exists('C:\Program Files\Microsoft SDKs\Windows\v6.0A\bin')">C:\Program Files\Microsoft SDKs\Windows\v6.0A\bin</SDKPath> <!-- windows xp dev machines -->
+     <SDKPath Condition="Exists('C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin')">C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin</SDKPath> <!-- windows 7 dev machines -->
+     <SDKPath Condition="Exists('D:\Program Files\Microsoft SDKs\Windows\v7.0\bin')">D:\Program Files\Microsoft SDKs\Windows\v7.0\bin</SDKPath>    <!--OLT build server -->
+      
+      
+      <ClickOnceBuildEnvironment Condition="'$(BuildConfiguration)' == ''">Developer</ClickOnceBuildEnvironment>
+      <ClickOnceBuildEnvironment Condition="'$(BuildConfiguration)' != ''">$(BuildConfiguration)</ClickOnceBuildEnvironment>
+      
+      <ApplicationManifestName>OLT.$(ClickOnceBuildEnvironment).$(Language).manifest</ApplicationManifestName>
+      <DeploymentManifestName>OLT.$(ClickOnceBuildEnvironment).$(Language).application</DeploymentManifestName>
+      <AssemblyAndPublisherName>Operator Log Tool ($(ClickOnceBuildEnvironment)) - $(LanguageDisplayName)</AssemblyAndPublisherName>
+
+      <DeploymentURLBase Condition="'$(FileUpdateSourceDirectory)' == ''">$(ClientExecDirectory)</DeploymentURLBase>
+      <DeploymentURLBase Condition="'$(FileUpdateSourceDirectory)' != ''">$(FileUpdateSourceDirectory)</DeploymentURLBase>
+      <DeploymentUrl>$(DeploymentURLBase)\$(DeploymentManifestName)</DeploymentUrl>
+
+    </PropertyGroup>
+
+    <Message Text=""/>
+    <Message Text=""/>
+    <Message Text="*****************************************************************************"/>
+    <Message Text="Language=$(Language)"/>
+    <Message Text="LanguageDisplayName=$(LanguageDisplayName)"/>
+    <Message Text="CultureName=$(CultureName)"/>
+    <Message Text="-"/>
+    <Message Text="ClickOnceWorkingDirectory=$(ClickOnceWorkingDirectory)"/>
+    <Message Text="SDKPath=$(SDKPath)"/>
+    <Message Text="IconFile=$(IconFile)"/>
+    <Message Text="-"/>
+    <Message Text="ClickOnceBuildEnvironment=$(ClickOnceBuildEnvironment)"/>
+    <Message Text="-"/>
+    <Message Text="ApplicationManifestName=$(ApplicationManifestName)"/>
+    <Message Text="DeploymentManifestName=$(DeploymentManifestName)"/>
+    <Message Text="AssemblyAndPublisherName=$(AssemblyAndPublisherName)"/>
+    <Message Text="-"/>
+    <Message Text="DeploymentUrl=$(DeploymentUrl)"/>
+    <Message Text="FileUpdateSourceDirectory=$(FileUpdateSourceDirectory)"/>
+    <Message Text="ClientRemoteServicesURILocation=$(ClientRemoteServicesURILocation)"/>
+    <Message Text="BuildNumber=$(BuildNumber)"/>
+    <Message Text="*****************************************************************************"/>
+    <Message Text=""/>
+
+    <Exec Condition="Exists('$(SDKPath)')" Command="&quot;$(SDKPath)\mage.exe&quot; -cc" />
+    <Message Text=""/>
+	
+    <ItemGroup>
+      <LocalizationFiles Include="$(ClickOnceWorkingDirectory)\**\uiculture.$(CultureName)"/>
+      <AllApplicationFiles Include="$(ClickOnceWorkingDirectory)\**\*.*"
+                           Exclude="$(ClickOnceWorkingDirectory)\LocalizationData\*;$(ClickOnceWorkingDirectory)\*.log*;$(ClickOnceWorkingDirectory)\*.pdb;$(ClickOnceWorkingDirectory)\*.manifest;$(ClickOnceWorkingDirectory)\*.application;$(ClickOnceWorkingDirectory)\*.pdf"/>
+      <DependencyFiles Include="@(AllApplicationFiles)" Condition="%(Extension) == '.dll'">
+        <TargetPath>%(RecursiveDir)%(Filename)%(Extension)</TargetPath>
+      </DependencyFiles>
+      <RegularFiles Include="@(AllApplicationFiles);@(LocalizationFiles)"
+                    Exclude="@(DependencyFiles);$(ClickOnceWorkingDirectory)\**\*.exe">
+        <TargetPath>%(RecursiveDir)%(Filename)%(Extension)</TargetPath>
+      </RegularFiles>
+    </ItemGroup>
+	
+	<!--  msbuild task for generating the application manifest. - the files in the app -->
+    <GenerateApplicationManifest AssemblyName="$(ApplicationManifestName)"
+                                 AssemblyVersion="$(BuildNumber).0"
+                                 IconFile="$(IconFile)"
+                                 EntryPoint="$(ClickOnceWorkingDirectory)\Operator Log Tool.exe"
+                                 Dependencies="@(DependencyFiles)"
+                                 Files="@(RegularFiles)"
+                                 OutputManifest="$(ClickOnceWorkingDirectory)\$(ApplicationManifestName)"
+								 ClrVersion="4.0.30319.0"
+								 TargetCulture="$(CultureName)"
+								 TargetFrameworkVersion="v4.0"
+								 TargetFrameworkMoniker=".NETFramework,Version=v4.0"								
+								 />
+								 
+<!--	<Exec Command="&quot;$(SDKPath)\mage.exe&quot; -Sign -Update -a sha256RSA  &quot;$(ClickOnceWorkingDirectory)\$(ApplicationManifestName)&quot; -CertHash 411a4ea8e18942aa77fa67a9938aa077c51de918"
+		  Condition="'$(IsBuildServer)' == 'false' and '$(ApplicationEnvironment)' != 'Developer'"/>
+	-->
+	
+	<!--  msbuild task for generating the deployment manifest - the place the app is published to for clickonce to update from. -->
+    <GenerateDeploymentManifest AssemblyName="$(AssemblyAndPublisherName)"
+                                AssemblyVersion="$(BuildNumber).0"
+                                DeploymentUrl="$(DeploymentUrl)"
+                                Publisher="$(AssemblyAndPublisherName)"
+                                EntryPoint="$(ClickOnceWorkingDirectory)\$(ApplicationManifestName)"
+                                Install="false"
+                                UpdateEnabled="true"
+                                OutputManifest="$(ClickOnceWorkingDirectory)\$(DeploymentManifestName)"
+								TargetCulture ="$(CultureName)" 
+								TargetFrameworkMoniker=".NETFramework,Version=v4.0"	/>
+
+	<!-- signs the deployment manifest -->
+<!--	<Exec Command="&quot;$(SDKPath)\mage.exe&quot; -Sign -Update -a sha256RSA &quot;$(ClickOnceWorkingDirectory)\$(DeploymentManifestName)&quot; -CertHash 411a4ea8e18942aa77fa67a9938aa077c51de918"
+		  Condition="'$(IsBuildServer)' == 'false' and '$(ApplicationEnvironment)' != 'Developer'" />
+-->
+	
+  </Target>
+  
+</Project>

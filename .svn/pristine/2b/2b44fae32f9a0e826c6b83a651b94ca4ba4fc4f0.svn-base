@@ -1,0 +1,885 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+
+  <!-- 
+		This is where the defaults for config settings are set. 
+		This allows anyone that wants to use a different one to be able to config in their section
+	
+--> 
+  <PropertyGroup>
+
+    <!-- If Logging location isn't defined, place in the same directory as the dll -->
+    <LogFileLocation>.</LogFileLocation>
+    <LogLevel>ALL</LogLevel>
+    <Scheduler-LocalRootPath>C:\OLTSchedulers</Scheduler-LocalRootPath>
+ 
+    <OLTSAPWebServiceHost>http://wmdev001:5651</OLTSAPWebServiceHost>
+    <OLTSAPWebServiceUser>SuncorOLT</OLTSAPWebServiceUser>
+    <OLTSAPWebServicePassword>30dogday</OLTSAPWebServicePassword>
+    <OLTSAPWebServiceLogRequestURL>/soap/webservice/OltSapLogRequest</OLTSAPWebServiceLogRequestURL>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <MajorMinorVersionLabel Condition=" '$(MajorMinorVersionLabel)' == '' " >5.07</MajorMinorVersionLabel>
+    <BuildNumber Condition=" '$(BuildNumber)' == '' " >$(MajorMinorVersionLabel).65533</BuildNumber>
+    <SqlAdditionalOptions>MultipleActiveResultSets=True</SqlAdditionalOptions>
+    <IsBuildServer>false</IsBuildServer>
+    <BuildConfiguration Condition=" '$(BuildConfiguration)' == '' "></BuildConfiguration>
+    <ApplicationName>Operator Log Tool $(MajorMinorVersionLabel)</ApplicationName>
+    <ActionItemSchedulerServiceName>OLTActionItemScheduler</ActionItemSchedulerServiceName>
+    <ActionItemSchedulerServiceDisplayName>OLT Action Item Scheduler</ActionItemSchedulerServiceDisplayName>
+    <LogSchedulerServiceName>OLTLogScheduler</LogSchedulerServiceName>
+    <LogSchedulerServiceDisplayName>OLT Log Scheduler</LogSchedulerServiceDisplayName>
+    <TargetSchedulerServiceName>OLTTargetScheduler</TargetSchedulerServiceName>
+    <TargetSchedulerServiceDisplayName>OLT Target Scheduler</TargetSchedulerServiceDisplayName>
+    <ProcessSchedulerServiceName>OLTProcessScheduler</ProcessSchedulerServiceName>
+    <ProcessSchedulerServiceDisplayName>OLT Process Scheduler</ProcessSchedulerServiceDisplayName>
+    <ShiftSchedulerServiceName>OLTShiftScheduler</ShiftSchedulerServiceName>
+    <ShiftSchedulerServiceDisplayName>OLT Shift Scheduler</ShiftSchedulerServiceDisplayName>
+    <RestrictionSchedulerServiceName>OLTRestrictionScheduler</RestrictionSchedulerServiceName>
+    <RestrictionSchedulerServiceDisplayName>OLT Restriction Scheduler</RestrictionSchedulerServiceDisplayName>
+    <LabAlertSchedulerServiceName>OLTLabAlertScheduler</LabAlertSchedulerServiceName>
+    <LabAlertSchedulerServiceDisplayName>OLT Lab Alert Scheduler</LabAlertSchedulerServiceDisplayName>
+	
+	<CouchbaseRamQuota>256</CouchbaseRamQuota>
+	<CouchbaseServer>http://oltqut002z:9090</CouchbaseServer>
+	<DisableCachingForISiteConfigurationDaoForUnitTests></DisableCachingForISiteConfigurationDaoForUnitTests>
+  </PropertyGroup>
+
+  <Choose>
+	<When Condition=" '$(BuildConfiguration)' == ''">  
+      <PropertyGroup>
+        <CachingBucket>$(COMPUTERNAME)</CachingBucket>
+	  </PropertyGroup>
+	</When>
+	<Otherwise>
+      <PropertyGroup>
+        <CachingBucket>$(BuildConfiguration)</CachingBucket>
+	  </PropertyGroup>
+	</Otherwise>
+  </Choose>
+  <PropertyGroup>
+	<CouchbaseConfig>
+		<![CDATA[<servers bucket="$(CachingBucket)">
+			<add uri="http://oltqut001z:9090/pools/"/>
+			<add uri="http://oltqut002z:9090/pools/"/>
+			<add uri="http://oltqut003z:9090/pools/"/>
+		</servers>]]>
+	</CouchbaseConfig>
+  </PropertyGroup>
+  
+  <Choose>
+
+    <When Condition=" '$(COMPUTERNAME)' == 'D126741' "> <!-- Mangesh Jason -->
+      <PropertyGroup>
+        <LogLevel>ALL</LogLevel>
+            <ApplicationEnvironment>Developer</ApplicationEnvironment>
+        <UseMockAuthentication>true</UseMockAuthentication>
+
+	<!--<SqlServer>D126741</SqlServer>
+        <SqlDatabase>OLT5.05</SqlDatabase>
+        <SqlUser>oltuser</SqlUser> 
+        <SqlPassword>Pass@123</SqlPassword> -->
+
+
+           
+                <SqlUser>colt_adm</SqlUser>
+                <SqlPassword>pw4Olt5</SqlPassword>
+                <SqlServer>SQLQUTCGY130-LS</SqlServer>
+                <SqlDatabase>COLTQUT</SqlDatabase> 
+
+                
+        <SolutionDir>C:\code\windows\csc\OLT\trunk</SolutionDir>
+        <DefineConstants>DEBUG;TRACE</DefineConstants>
+    
+        <RemoteServicesURILocation>http://$(COMPUTERNAME):8090</RemoteServicesURILocation>
+        <HTTPHandlerSite>http://$(COMPUTERNAME):8091</HTTPHandlerSite>
+                
+        <LdapPath>LDAP://network.dev/DC=network,DC=dev</LdapPath>
+        <LdapUserDomain>network.dev</LdapUserDomain>
+
+        <FileUpdateSourceDirectory></FileUpdateSourceDirectory>        
+        <LogFileLocation>$(SolutionDir)\Logs</LogFileLocation>
+        
+        <EmailSMTPServer>localhost</EmailSMTPServer>
+        <EmailSMTPServerPort>4001</EmailSMTPServerPort>
+        <EmailFromAddress>do-not-reply@localhost</EmailFromAddress>     
+
+        <OpmRefreshRateMins>2</OpmRefreshRateMins>
+
+        <!--WorkOrderImportServiceURI>http://wmidevcgy000-sn.network.dev:5651/ws/SapCommonSoaRequest.WS:MrSapUtils</WorkOrderImportServiceURI-->
+        <WorkOrderImportServiceURI>http://wmi1.network.qut/ws/SapCommonSoaRequest.WS:MrSapUtils</WorkOrderImportServiceURI>
+        <WorkOrderImportServiceUserName>OltSysClient</WorkOrderImportServiceUserName>
+        <WorkOrderImportServicePassword>setpassqut</WorkOrderImportServicePassword>
+
+        <!--OpmXhqServiceURI>http://opmprdcgy002.network.lan/OPMXHQWrapper/OPMXHQService.svc</OpmXhqServiceURI-->
+        <OpmXhqServiceURI>http://10.9.98.123:8882</OpmXhqServiceURI>
+        <OpmXhqServiceDomain>NETWORK.LAN</OpmXhqServiceDomain>
+        <OpmXhqServiceUserName>OPMTESTWEBSVC</OpmXhqServiceUserName>
+        <OpmXhqServicePassword>Ozx3v198XmSHk</OpmXhqServicePassword>
+
+        <CouchbaseRamQuota>128</CouchbaseRamQuota>
+
+        <DisableCachingForISiteConfigurationDaoForUnitTests>ISiteConfigurationDao</DisableCachingForISiteConfigurationDaoForUnitTests>
+        
+      </PropertyGroup>
+     
+    </When>
+   	
+ 
+	<When Condition=" '$(BuildConfiguration)' == 'CI' ">
+          <PropertyGroup>
+            <LogLevel>ALL</LogLevel>
+		    <IsBuildServer>true</IsBuildServer>
+            <ApplicationEnvironment>Developer</ApplicationEnvironment>
+
+ <!--       <SqlUser>OLTUser</SqlUser>
+            <SqlPassword>password</SqlPassword>
+            <SqlServer>OLTDEVCGY001\SQL2008</SqlServer>
+            <SqlDatabase>BUILD_AGENT_$(COMPUTERNAME)</SqlDatabase>   -->
+
+	    <SqlUser>OLTUser</SqlUser>
+            <SqlPassword>Pass@123</SqlPassword>
+            <SqlServer>OLTDEV001</SqlServer>
+            <SqlDatabase>BUILD_AGENT_$(COMPUTERNAME)</SqlDatabase> 
+
+            <LdapPath>LDAP://network.dev/DC=network,DC=dev</LdapPath>
+            <LdapUserDomain>network.dev</LdapUserDomain>
+
+            <DefineConstants>TRACE</DefineConstants>
+            <HTTPHandlerSite>http://localhost:$(HttpHandlerPort)</HTTPHandlerSite>
+
+            <ServerMachine>$(COMPUTERNAME)</ServerMachine>
+            <LogFileLocation>$(SolutionDir)\Logs</LogFileLocation>
+            <FileUpdateSourceDirectory></FileUpdateSourceDirectory>
+			
+				<WorkOrderImportServiceURI>http://wmidevcgy000-sn.network.dev:5651/ws/SapCommonSoaRequest.WS:MrSapUtils</WorkOrderImportServiceURI>
+			<WorkOrderImportServiceUserName>OltSysClient</WorkOrderImportServiceUserName>
+			<WorkOrderImportServicePassword>mydevpass</WorkOrderImportServicePassword>
+
+			<OpmXhqServiceURI>http://opmprdcgy002.network.lan/OPMXHQWrapper/OPMXHQService.svc</OpmXhqServiceURI>
+			<OpmXhqServiceDomain>NETWORK.LAN</OpmXhqServiceDomain>
+			<OpmXhqServiceUserName>OPMTESTWEBSVC</OpmXhqServiceUserName>
+			<OpmXhqServicePassword>Ozx3v198XmSHk</OpmXhqServicePassword>
+
+			<EmailSMTPServer>localhost</EmailSMTPServer>
+			<EmailSMTPServerPort>4001</EmailSMTPServerPort>
+			<EmailFromAddress>do-not-reply@localhost</EmailFromAddress>					
+		
+			<OpmRefreshRateMins>15</OpmRefreshRateMins>
+
+					<DisableCachingForISiteConfigurationDaoForUnitTests>ISiteConfigurationDao</DisableCachingForISiteConfigurationDaoForUnitTests>
+
+          </PropertyGroup>
+    </When>
+	
+    <When Condition=" '$(BuildConfiguration)' == 'CI-Training-Data' ">
+          <PropertyGroup>
+            <LogLevel>ALL</LogLevel>
+			<IsBuildServer>true</IsBuildServer>
+            <ApplicationEnvironment>Training</ApplicationEnvironment>
+
+            <SqlUser>OLTUser</SqlUser>
+            <SqlPassword>password</SqlPassword>
+            <SqlServer>OLTDEVCGY001\SQL2008</SqlServer>
+            <SqlDatabase>BUILD_AGENT_$(COMPUTERNAME)</SqlDatabase>
+          </PropertyGroup>
+    </When>
+	
+    <When Condition=" '$(BuildConfiguration)' == 'Release-Sandbox'">
+          <PropertyGroup>
+            <LogLevel>ALL</LogLevel>
+ 		    <ApplicationEnvironment>Training</ApplicationEnvironment>
+
+        <!-- <SqlUser>colt_adm</SqlUser>
+            <SqlPassword>pw4Olt5</SqlPassword>
+            <SqlServer>SQLDEVCGY128</SqlServer>
+            <SqlDatabase>AMIT</SqlDatabase>  -->
+
+	<SqlUser>colt_adm</SqlUser>
+            <SqlPassword>pw4Olt5</SqlPassword>
+            <SqlServer>SQLDEVCGY128</SqlServer>
+            <SqlDatabase>COLTSBX</SqlDatabase>
+
+
+
+
+            <LdapPath>LDAP://network.dev/DC=network,DC=dev</LdapPath>
+            <LdapUserDomain>network.dev</LdapUserDomain>
+
+            <LogFileLocation>C:\OLTLogs</LogFileLocation>
+           
+           <FileUpdateSourceDirectory>\\oltdev001\OLTClients\Sandbox</FileUpdateSourceDirectory>
+            <ClientFilesSourceDirectory>\\oltdev001\OLTClients\Sandbox</ClientFilesSourceDirectory> 
+
+
+
+
+            <DefineConstants>TRACE</DefineConstants>
+            <LoadBalancer>OLTSBX001Z.network.sbx</LoadBalancer>
+            <RemoteAppPort>8090</RemoteAppPort>
+
+            <RemoteAppWebDirectoryName>OLTRemoteServices</RemoteAppWebDirectoryName>
+            <SAPHandlersWebDirectoryName>OLTSAPHandlers</SAPHandlersWebDirectoryName>
+            <SchedulersDirectoryName>OLTSchedulers</SchedulersDirectoryName>
+
+            <UseMockAuthentication>true</UseMockAuthentication>
+			
+			<WorkOrderImportServiceURI>http://wmidevcgy000-sn.network.dev:5651/ws/SapCommonSoaRequest.WS:MrSapUtils</WorkOrderImportServiceURI>
+			<WorkOrderImportServiceUserName>OltSysClient</WorkOrderImportServiceUserName>
+			<WorkOrderImportServicePassword>mydevpass</WorkOrderImportServicePassword>			
+			
+			<OpmXhqServiceURI>http://opmprdcgy002.network.lan/OPMXHQWrapper/OPMXHQService.svc</OpmXhqServiceURI>
+			<OpmXhqServiceDomain>NETWORK.LAN</OpmXhqServiceDomain>
+			<OpmXhqServiceUserName>OPMTESTWEBSVC</OpmXhqServiceUserName>
+			<OpmXhqServicePassword>Ozx3v198XmSHk</OpmXhqServicePassword>
+
+			<EmailSMTPServer>localhost</EmailSMTPServer>
+			<EmailSMTPServerPort>4001</EmailSMTPServerPort>
+			<EmailFromAddress>do-not-reply@localhost</EmailFromAddress>						
+
+			<OpmRefreshRateMins>15</OpmRefreshRateMins>
+
+		<CouchbaseRamQuota>256</CouchbaseRamQuota>
+	<CouchbaseServer>http://oltqut002z:9090</CouchbaseServer>
+			
+          </PropertyGroup>
+		   
+          <PropertyGroup Condition="$(Instance) == '001'">
+            <ServerMachine>OLTSBX001Z</ServerMachine>         
+	    <StartActionItemScheduler>true</StartActionItemScheduler>
+            <StartLogScheduler>false</StartLogScheduler>
+            <StartProcessScheduler>true</StartProcessScheduler>
+            <StartShiftScheduler>true</StartShiftScheduler>
+            <StartTargetScheduler>true</StartTargetScheduler>
+            <StartRestrictionScheduler>true</StartRestrictionScheduler>
+            <StartLabAlertScheduler>true</StartLabAlertScheduler>
+			<SitesToLoadTargets>3,6</SitesToLoadTargets>
+          </PropertyGroup>
+          <PropertyGroup Condition="$(Instance) == '002'">
+            <ServerMachine>OLTSBX002Z</ServerMachine> 
+            <StartActionItemScheduler>false</StartActionItemScheduler>
+            <StartLogScheduler>true</StartLogScheduler>
+            <StartProcessScheduler>false</StartProcessScheduler>
+            <StartShiftScheduler>false</StartShiftScheduler>
+            <StartTargetScheduler>true</StartTargetScheduler>
+            <StartRestrictionScheduler>false</StartRestrictionScheduler>
+            <StartLabAlertScheduler>false</StartLabAlertScheduler>
+			<SitesToLoadTargets>1,2,5,8,9,10</SitesToLoadTargets>
+          </PropertyGroup>
+
+
+		
+    </When>
+
+    <When Condition=" '$(BuildConfiguration)' == 'Release-UAT' ">
+          <PropertyGroup>
+            <LogLevel>ALL</LogLevel>
+			<ApplicationEnvironment>Training</ApplicationEnvironment>
+
+            <SqlUser>colt_adm</SqlUser>
+            <SqlPassword>pw4Olt5</SqlPassword>
+            <SqlServer>SQLQUTCGY130-LS</SqlServer>
+            <SqlDatabase>COLTUAT</SqlDatabase> 
+
+
+	 <!--<SqlUser>colt_adm</SqlUser>
+            <SqlPassword>pw4Olt5</SqlPassword>
+            <SqlServer>SQLDEVCGY128</SqlServer>
+            <SqlDatabase>AMIT</SqlDatabase>-->
+	
+
+            <LdapPath>LDAP://network.dev/DC=network,DC=dev</LdapPath>
+            <LdapUserDomain>network.dev</LdapUserDomain>
+
+            <LogFileLocation>C:\OLTLogs</LogFileLocation>
+            <!--<FileUpdateSourceDirectory>\\oltdevcgy001\OLTClients\UAT</FileUpdateSourceDirectory>
+            <ClientFilesSourceDirectory>\\oltdevcgy001\OLTClients\UAT</ClientFilesSourceDirectory>-->
+
+
+	    <FileUpdateSourceDirectory>\\oltdev001\OLTClients\UAT</FileUpdateSourceDirectory>
+            <ClientFilesSourceDirectory>\\oltdev001\OLTClients\UAT</ClientFilesSourceDirectory>
+
+
+            <DefineConstants>DEBUG;TRACE</DefineConstants>
+			<LoadBalancer>oltsbx003z.network.sbx</LoadBalancer>
+            <RemoteAppPort>8090</RemoteAppPort>
+
+            <RemoteAppWebDirectoryName>OLTRemoteServices</RemoteAppWebDirectoryName>
+            <SAPHandlersWebDirectoryName>OLTSAPHandlers</SAPHandlersWebDirectoryName>
+            <SchedulersDirectoryName>OLTSchedulers</SchedulersDirectoryName>
+
+            <UseMockAuthentication>true</UseMockAuthentication>
+
+			<!-- Use Production SAP -->
+			<WorkOrderImportServiceURI>http://wmi1.network.lan/ws/SapCommonSoaRequest.WS:MrSapUtils</WorkOrderImportServiceURI>
+			<WorkOrderImportServiceUserName>OltSysClient</WorkOrderImportServiceUserName>
+			<WorkOrderImportServicePassword>PRD!pass</WorkOrderImportServicePassword>
+			
+			<!--WorkOrderImportServiceURI>http://wmidevcgy000-sn.network.dev:5651/ws/SapCommonSoaRequest.WS:MrSapUtils</WorkOrderImportServiceURI>
+			<WorkOrderImportServiceUserName>OltSysClient</WorkOrderImportServiceUserName>
+			<WorkOrderImportServicePassword>mydevpass</WorkOrderImportServicePassword-->
+			
+			<!--OpmXhqServiceURI>http://opmprdcgy002.network.lan/OPMXHQWrapper/OPMXHQService.svc</OpmXhqServiceURI-->
+
+			<OpmXhqServiceURI>http://opmdevwebserver.network.lan/OPMXHQWrapper/OPMXHQService.svc</OpmXhqServiceURI>
+
+			<OpmXhqServiceDomain>NETWORK.LAN</OpmXhqServiceDomain>
+			<OpmXhqServiceUserName>OPMTESTWEBSVC</OpmXhqServiceUserName>
+			<OpmXhqServicePassword>Ozx3v198XmSHk</OpmXhqServicePassword>
+
+			<EmailSMTPServer>localhost</EmailSMTPServer>
+			<EmailSMTPServerPort>4001</EmailSMTPServerPort>
+			<EmailFromAddress>do-not-reply@localhost</EmailFromAddress>		
+
+			<OpmRefreshRateMins>15</OpmRefreshRateMins>
+			
+          </PropertyGroup>
+		  
+          <PropertyGroup Condition="$(Instance) == '001'">
+            <ServerMachine>oltsbx003z</ServerMachine>
+            <!--<ServerMachine>10.146.97.48</ServerMachine>--> 
+
+           <StartActionItemScheduler>true</StartActionItemScheduler>
+            <StartLogScheduler>true</StartLogScheduler>
+            <StartProcessScheduler>true</StartProcessScheduler>
+            <StartShiftScheduler>true</StartShiftScheduler>
+            <StartTargetScheduler>true</StartTargetScheduler>
+            <StartRestrictionScheduler>true</StartRestrictionScheduler>
+            <StartLabAlertScheduler>true</StartLabAlertScheduler>
+			<SitesToLoadTargets>1,2,3,5,6,8,9,10</SitesToLoadTargets> 
+          </PropertyGroup>
+    </When>
+	
+    <When Condition=" '$(BuildConfiguration)' == 'Release-Sandbox-Developers' ">
+          <PropertyGroup>
+            <ApplicationEnvironment>Training</ApplicationEnvironment>
+			<LogLevel>ALL</LogLevel>
+            <SqlUser>colt_adm</SqlUser>
+            <SqlPassword>pw4Olt5</SqlPassword>
+            <SqlServer>SQLDEVCGY128</SqlServer>
+            <SqlDatabase>COLTDEV</SqlDatabase>
+
+            <LdapPath>LDAP://network.dev/DC=network,DC=dev</LdapPath>
+            <LdapUserDomain>network.dev</LdapUserDomain>
+
+            <LogFileLocation>C:\OLTLogs</LogFileLocation>
+           <!-- <FileUpdateSourceDirectory>\\oltdevcgy001\OLTClients\Sandbox-dev</FileUpdateSourceDirectory>
+            <ClientFilesSourceDirectory>\\oltdevcgy001\OLTClients\Sandbox-dev</ClientFilesSourceDirectory> -->
+
+	    <FileUpdateSourceDirectory>\\oltdev001\OLTClients\Sandbox-dev</FileUpdateSourceDirectory>
+            <ClientFilesSourceDirectory>\\oltdev001\OLTClients\Sandbox-dev</ClientFilesSourceDirectory>
+
+            <DefineConstants>TRACE</DefineConstants>
+            <LoadBalancer>oltsbx005z.network.sbx</LoadBalancer>
+            <RemoteAppPort>8090</RemoteAppPort>
+
+            <RemoteAppWebDirectoryName>OLTRemoteServices</RemoteAppWebDirectoryName>
+            <SAPHandlersWebDirectoryName>OLTSAPHandlers</SAPHandlersWebDirectoryName>
+            <SchedulersDirectoryName>OLTSchedulers</SchedulersDirectoryName>
+
+            <UseMockAuthentication>true</UseMockAuthentication>
+			
+			<WorkOrderImportServiceURI>http://wmidevcgy000-sn.network.dev:5651/ws/SapCommonSoaRequest.WS:MrSapUtils</WorkOrderImportServiceURI>
+			<WorkOrderImportServiceUserName>OltSysClient</WorkOrderImportServiceUserName>
+			<WorkOrderImportServicePassword>mydevpass</WorkOrderImportServicePassword>
+			
+			<OpmXhqServiceURI>http://opmprdcgy002.network.lan/OPMXHQWrapper/OPMXHQService.svc</OpmXhqServiceURI>
+			<OpmXhqServiceDomain>NETWORK.LAN</OpmXhqServiceDomain>
+			<OpmXhqServiceUserName>OPMTESTWEBSVC</OpmXhqServiceUserName>
+			<OpmXhqServicePassword>Ozx3v198XmSHk</OpmXhqServicePassword>
+
+			<EmailSMTPServer>localhost</EmailSMTPServer>
+			<EmailSMTPServerPort>4001</EmailSMTPServerPort>
+			<EmailFromAddress>do-not-reply@localhost</EmailFromAddress>			
+
+			<OpmRefreshRateMins>15</OpmRefreshRateMins>
+
+		<CouchbaseRamQuota>256</CouchbaseRamQuota>	
+		<CouchbaseServer>http://oltqut002z:9090</CouchbaseServer>
+			
+          </PropertyGroup>
+		  
+          <PropertyGroup Condition="$(Instance) == '001'">
+	 <ServerMachine>OLTSBX005Z</ServerMachine> 
+	<!--    <ServerMachine>OLTSBXCGY005</ServerMachine> -->
+            <StartActionItemScheduler>true</StartActionItemScheduler>
+            <StartLogScheduler>true</StartLogScheduler>
+            <StartProcessScheduler>true</StartProcessScheduler>
+            <StartShiftScheduler>true</StartShiftScheduler>
+            <StartTargetScheduler>true</StartTargetScheduler>
+            <StartRestrictionScheduler>true</StartRestrictionScheduler>
+            <StartLabAlertScheduler>true</StartLabAlertScheduler>
+			<SitesToLoadTargets>1,2,3,5,6,8,9,10</SitesToLoadTargets> 
+          </PropertyGroup>
+    </When>
+	
+    <When Condition=" '$(BuildConfiguration)' == 'Release-Training' ">
+      <PropertyGroup>
+		<LogLevel>ALL</LogLevel>       
+	    <ApplicationEnvironment>Training</ApplicationEnvironment>
+
+	<SqlUser>colt_adm</SqlUser>
+        <SqlPassword>pw4Olt5</SqlPassword>
+        <SqlServer>SQLQUTCGY130-LS</SqlServer>
+        <SqlDatabase>COLTTRN</SqlDatabase>
+
+
+  	<!--<SqlUser>colt_adm</SqlUser>
+            <SqlPassword>pw4Olt5</SqlPassword>
+            <SqlServer>SQLDEVCGY128</SqlServer>
+            <SqlDatabase>ARTI</SqlDatabase>-->
+		
+        <LdapPath>LDAP://network.dev/DC=network,DC=dev</LdapPath>
+        <LdapUserDomain>network.dev</LdapUserDomain>
+
+        <LogFileLocation>C:\OLTLogs</LogFileLocation>
+<!--        <FileUpdateSourceDirectory>\\oltdevcgy001\OLTClients\Training</FileUpdateSourceDirectory>
+        <ClientFilesSourceDirectory>\\oltdevcgy001\OLTClients\Training</ClientFilesSourceDirectory>  -->
+
+
+ <FileUpdateSourceDirectory>\\oltdev001\OLTClients\Training</FileUpdateSourceDirectory>
+        <ClientFilesSourceDirectory>\\oltdev001\OLTClients\Training</ClientFilesSourceDirectory>
+
+        <DefineConstants>TRACE</DefineConstants>
+<!--        <LoadBalancer>olttrncl1.network.trn</LoadBalancer> -->
+	<LoadBalancer>olttrn001z.network.trn</LoadBalancer>
+        <RemoteAppPort>8090</RemoteAppPort>
+
+        <RemoteAppWebDirectoryName>OLTRemoteServices</RemoteAppWebDirectoryName>
+        <SAPHandlersWebDirectoryName>OLTSAPHandlers</SAPHandlersWebDirectoryName>
+        <SchedulersDirectoryName>OLTSchedulers</SchedulersDirectoryName>
+
+        <UseMockAuthentication>true</UseMockAuthentication>
+
+		<!-- Use Production SAP -->
+		<WorkOrderImportServiceURI>http://wmi1.network.lan/ws/SapCommonSoaRequest.WS:MrSapUtils</WorkOrderImportServiceURI>
+		<WorkOrderImportServiceUserName>OltSysClient</WorkOrderImportServiceUserName>
+		<WorkOrderImportServicePassword>PRD!pass</WorkOrderImportServicePassword>
+
+		<!--WorkOrderImportServiceURI>http://wmidevcgy000-sn.network.dev:5651/ws/SapCommonSoaRequest.WS:MrSapUtils</WorkOrderImportServiceURI>
+		<WorkOrderImportServiceUserName>OltSysClient</WorkOrderImportServiceUserName>
+		<WorkOrderImportServicePassword>mydevpass</WorkOrderImportServicePassword-->
+						
+		<!--<OpmXhqServiceURI>http://opm-training.network.lan/OPMXHQWrapper/OPMXHQService.svc</OpmXhqServiceURI>-->
+				  
+		<OpmXhqServiceURI>http://opmqutwebserver.network.lan/OPMXHQWrapper/OPMXHQService.svc</OpmXhqServiceURI>
+
+		<OpmXhqServiceDomain>NETWORK.LAN</OpmXhqServiceDomain>
+		<OpmXhqServiceUserName>OPMTESTWEBSVC</OpmXhqServiceUserName>
+		<OpmXhqServicePassword>Ozx3v198XmSHk</OpmXhqServicePassword>
+
+		<EmailSMTPServer>localhost</EmailSMTPServer>
+		<EmailSMTPServerPort>4001</EmailSMTPServerPort>
+		<EmailFromAddress>do-not-reply@localhost</EmailFromAddress>						
+
+			<OpmRefreshRateMins>15</OpmRefreshRateMins>
+		
+      </PropertyGroup>
+    
+    
+	 <PropertyGroup Condition="$(Instance) == '001'">
+            <ServerMachine>OLTTRN001Z</ServerMachine>
+            <StartActionItemScheduler>false</StartActionItemScheduler>
+            <StartLogScheduler>false</StartLogScheduler>
+            <StartProcessScheduler>true</StartProcessScheduler>
+            <StartShiftScheduler>true</StartShiftScheduler>
+            <StartTargetScheduler>false</StartTargetScheduler>
+            <StartRestrictionScheduler>true</StartRestrictionScheduler>
+            <StartLabAlertScheduler>false</StartLabAlertScheduler>
+          </PropertyGroup>
+
+          <PropertyGroup Condition="$(Instance) == '002'">
+            <ServerMachine>OLTTRN002Z</ServerMachine>
+            <StartActionItemScheduler>true</StartActionItemScheduler>
+            <StartLogScheduler>true</StartLogScheduler>
+            <StartProcessScheduler>false</StartProcessScheduler>
+            <StartShiftScheduler>false</StartShiftScheduler>
+            <StartTargetScheduler>true</StartTargetScheduler>
+            <StartRestrictionScheduler>false</StartRestrictionScheduler>
+            <StartLabAlertScheduler>true</StartLabAlertScheduler>
+	    <SitesToLoadTargets>3,6</SitesToLoadTargets>
+          </PropertyGroup>
+
+          <PropertyGroup Condition="$(Instance) == '003'">
+            <ServerMachine>OLTTRN003Z</ServerMachine> 
+            <StartActionItemScheduler>false</StartActionItemScheduler>
+            <StartLogScheduler>false</StartLogScheduler>
+            <StartProcessScheduler>false</StartProcessScheduler>
+            <StartShiftScheduler>false</StartShiftScheduler>
+            <StartTargetScheduler>true</StartTargetScheduler>
+            <StartRestrictionScheduler>false</StartRestrictionScheduler>
+            <StartLabAlertScheduler>false</StartLabAlertScheduler>
+	    <SitesToLoadTargets>1,2,5,8,9,10</SitesToLoadTargets>
+          </PropertyGroup>
+
+
+	
+    </When>
+
+    <When Condition=" '$(BuildConfiguration)' == 'Release-QUT' ">
+      <PropertyGroup>
+		<LogLevel>ALL</LogLevel>       
+	    <ApplicationEnvironment>Training</ApplicationEnvironment>
+
+        <SqlUser>colt_adm</SqlUser>
+        <SqlPassword>pw4Olt5</SqlPassword>
+        <SqlServer>SQLQUTCGY130-LS</SqlServer>
+        <SqlDatabase>COLTQUT</SqlDatabase> 
+
+	<!--	<SqlUser>colt_adm</SqlUser>
+            <SqlPassword>pw4Olt5</SqlPassword>
+            <SqlServer>SQLDEVCGY128</SqlServer>
+            <SqlDatabase>ARTI</SqlDatabase>  -->
+
+        <LdapPath>LDAP://network.dev/DC=network,DC=dev</LdapPath>
+        <LdapUserDomain>network.dev</LdapUserDomain>
+
+        <LogFileLocation>C:\OLTLogs</LogFileLocation>
+
+        <FileUpdateSourceDirectory>\\oltdev001\OLTClients\QUT</FileUpdateSourceDirectory>
+        <ClientFilesSourceDirectory>\\oltdev001\OLTClients\QUT</ClientFilesSourceDirectory>
+
+
+        <DefineConstants>TRACE</DefineConstants>
+        <LoadBalancer>OLTQUT001Z.network.qut</LoadBalancer>
+        <RemoteAppPort>8090</RemoteAppPort>
+
+        <RemoteAppWebDirectoryName>OLTRemoteServices</RemoteAppWebDirectoryName>
+        <SAPHandlersWebDirectoryName>OLTSAPHandlers</SAPHandlersWebDirectoryName>
+        <SchedulersDirectoryName>OLTSchedulers</SchedulersDirectoryName>
+
+        <AuthenticationProvider>Com.Suncor.Olt.Remote.Providers.LdapAuthenticationProvider</AuthenticationProvider>
+		<!--
+		<WorkOrderImportServiceURI>http://wmi1.network.qut/ws/SapCommonSoaRequest.WS:MrSapUtils</WorkOrderImportServiceURI>
+		<WorkOrderImportServiceUserName>OltSysClient</WorkOrderImportServiceUserName>
+		<WorkOrderImportServicePassword>setpassqut</WorkOrderImportServicePassword>
+		-->
+		
+		<WorkOrderImportServiceURI>http://wmidevcgy000-sn.network.dev:5651/ws/SapCommonSoaRequest.WS:MrSapUtils</WorkOrderImportServiceURI>
+		<WorkOrderImportServiceUserName>OltSysClient</WorkOrderImportServiceUserName>
+		<WorkOrderImportServicePassword>mydevpass</WorkOrderImportServicePassword>				
+
+		<!--<OpmXhqServiceURI>http://opm-training.network.lan/OPMXHQWrapper/OPMXHQService.svc</OpmXhqServiceURI>-->
+		<OpmXhqServiceURI>http://opmqutwebserver.network.lan/OPMXHQWrapper/OPMXHQService.svc </OpmXhqServiceURI>
+				  
+
+		<OpmXhqServiceDomain>NETWORK.LAN</OpmXhqServiceDomain>
+		<OpmXhqServiceUserName>OPMTESTWEBSVC</OpmXhqServiceUserName>
+		<OpmXhqServicePassword>Ozx3v198XmSHk</OpmXhqServicePassword>
+
+		<EmailSMTPServer>smtp.network.qut</EmailSMTPServer>
+		<EmailSMTPServerPort>25</EmailSMTPServerPort>
+		<EmailFromAddress>do-not-reply@suncor.com</EmailFromAddress>				
+
+		<OpmRefreshRateMins>15</OpmRefreshRateMins>
+		
+		<CouchbaseRamQuota>256</CouchbaseRamQuota>	
+		<CouchbaseServer>http://oltqut002z:9090</CouchbaseServer>
+		
+      </PropertyGroup>
+          
+	<PropertyGroup Condition="$(Instance) == '001'">
+	     <ServerMachine>OLTQUT001Z.NETWORK.QUT</ServerMachine> 
+            <StartActionItemScheduler>false</StartActionItemScheduler>
+            <StartLogScheduler>false</StartLogScheduler>
+            <StartProcessScheduler>true</StartProcessScheduler>
+            <StartShiftScheduler>true</StartShiftScheduler>
+            <StartTargetScheduler>false</StartTargetScheduler>
+            <StartRestrictionScheduler>true</StartRestrictionScheduler>
+            <StartLabAlertScheduler>false</StartLabAlertScheduler>
+          </PropertyGroup>
+
+          <PropertyGroup Condition="$(Instance) == '002'">
+	    <ServerMachine>OLTQUT002Z.NETWORK.QUT</ServerMachine> 
+            <StartActionItemScheduler>true</StartActionItemScheduler>
+            <StartLogScheduler>true</StartLogScheduler>
+            <StartProcessScheduler>false</StartProcessScheduler>
+            <StartShiftScheduler>false</StartShiftScheduler>
+            <StartTargetScheduler>true</StartTargetScheduler>
+            <StartRestrictionScheduler>false</StartRestrictionScheduler>
+            <StartLabAlertScheduler>true</StartLabAlertScheduler>
+          <SitesToLoadTargets>3,6</SitesToLoadTargets>
+          </PropertyGroup>
+
+          <PropertyGroup Condition="$(Instance) == '003'">
+         <ServerMachine>OLTQUT003Z.NETWORK.QUT</ServerMachine> 
+            <StartActionItemScheduler>false</StartActionItemScheduler>
+            <StartLogScheduler>false</StartLogScheduler>
+            <StartProcessScheduler>false</StartProcessScheduler>
+            <StartShiftScheduler>false</StartShiftScheduler>
+            <StartTargetScheduler>true</StartTargetScheduler>
+            <StartRestrictionScheduler>false</StartRestrictionScheduler>
+            <StartLabAlertScheduler>false</StartLabAlertScheduler>
+			<SitesToLoadTargets>1,2,5,8,9,10</SitesToLoadTargets>
+          </PropertyGroup>
+    </When>
+    <When Condition=" '$(BuildConfiguration)' == 'Release-PCP' ">
+          <PropertyGroup>
+            <LogLevel>ALL</LogLevel>
+			<ApplicationInstance>PlantOperations</ApplicationInstance>
+            <ApplicationEnvironment>Training</ApplicationEnvironment>
+
+            <SqlUser>colt_adm</SqlUser>
+            <SqlPassword>pw4Olt5</SqlPassword>
+            <SqlServer>SQLQUTCGY130-LS</SqlServer>
+            <SqlDatabase>COLTPCP</SqlDatabase>
+
+            <LdapPath>LDAP://network.dev/DC=network,DC=dev</LdapPath>
+            <LdapUserDomain>network.dev</LdapUserDomain>
+
+            <LogFileLocation>C:\OLTLogs</LogFileLocation>
+            <!-- <FileUpdateSourceDirectory>\\oltdevcgy001\OLTClients\PCP</FileUpdateSourceDirectory>
+            <ClientFilesSourceDirectory>\\oltdevcgy001\OLTClients\PCP</ClientFilesSourceDirectory> -->
+
+<FileUpdateSourceDirectory>\\oltdev001\OLTClients\PCP</FileUpdateSourceDirectory>
+            <ClientFilesSourceDirectory>\\oltdev001\OLTClients\PCP</ClientFilesSourceDirectory>
+
+            <DefineConstants>DEBUG;TRACE</DefineConstants>
+			<LoadBalancer>oltsbx004z.network.sbx</LoadBalancer>
+            <RemoteAppPort>8090</RemoteAppPort>
+
+            <RemoteAppWebDirectoryName>OLTRemoteServices</RemoteAppWebDirectoryName>
+            <SAPHandlersWebDirectoryName>OLTSAPHandlers</SAPHandlersWebDirectoryName>
+            <SchedulersDirectoryName>OLTSchedulers</SchedulersDirectoryName>
+
+            <UseMockAuthentication>true</UseMockAuthentication>
+			<WorkOrderImportServiceURI>http://wmi1.network.lan/ws/SapCommonSoaRequest.WS:MrSapUtils</WorkOrderImportServiceURI>
+			<WorkOrderImportServiceUserName>OltSysClient</WorkOrderImportServiceUserName>
+			<WorkOrderImportServicePassword>PRD!pass</WorkOrderImportServicePassword>
+			 			
+			<OpmXhqServiceURI>http://opmprdcgy002.network.lan/OPMXHQWrapper/OPMXHQService.svc</OpmXhqServiceURI>
+			<OpmXhqServiceDomain>NETWORK.LAN</OpmXhqServiceDomain>
+			<OpmXhqServiceUserName>OPMTESTWEBSVC</OpmXhqServiceUserName>
+			<OpmXhqServicePassword>Ozx3v198XmSHk</OpmXhqServicePassword>
+
+			<EmailSMTPServer>localhost</EmailSMTPServer>
+			<EmailSMTPServerPort>4001</EmailSMTPServerPort>
+			<EmailFromAddress>do-not-reply@localhost</EmailFromAddress>							
+
+			<OpmRefreshRateMins>15</OpmRefreshRateMins>
+			
+          </PropertyGroup>
+          <PropertyGroup Condition="$(Instance) == '001'">
+            <ServerMachine>oltsbx004z</ServerMachine>
+            <StartActionItemScheduler>true</StartActionItemScheduler>
+            <StartLogScheduler>true</StartLogScheduler>
+            <StartProcessScheduler>true</StartProcessScheduler>
+            <StartShiftScheduler>true</StartShiftScheduler>
+            <StartTargetScheduler>false</StartTargetScheduler> <!-- IMPORTANT: don't start targets because they can write to production tags -->
+            <StartRestrictionScheduler>true</StartRestrictionScheduler>
+            <StartLabAlertScheduler>true</StartLabAlertScheduler>
+			<SitesToLoadTargets>1,2,3,5,6,8,9,10</SitesToLoadTargets>
+          </PropertyGroup>
+    </When>	
+  </Choose>
+
+  <!-- This is here instead of where all the other imports are because the following items need the LoadBalancer and RemoteAppPort set -->
+  <Import Project="$(ProductionBuildFilePath)" Condition="Exists('$(ProductionBuildFilePath)')"/>
+  
+  <Choose>
+    <!-- Environment with a Load Balancer -->
+    <When Condition=" '$(BuildConfiguration)' != '' AND '$(LoadBalancer)' != ''">
+      <PropertyGroup>
+        <ClientRemoteServicesURILocation>http://$(LoadBalancer):$(RemoteAppPort)</ClientRemoteServicesURILocation>
+        <HttpHandlerRemoteServicesURILocation>http://$(ServerMachine):$(RemoteAppPort)</HttpHandlerRemoteServicesURILocation>
+        <SchedulerRemoteServicesURILocation>http://$(ServerMachine):$(RemoteAppPort)</SchedulerRemoteServicesURILocation>
+        <WebsiteRemoteServicesURILocation>http://$(ServerMachine):$(RemoteAppPort)</WebsiteRemoteServicesURILocation>
+		<ServerHostname>$(LoadBalancer)</ServerHostname>
+      </PropertyGroup>
+    </When>
+    <!-- Environment without a Load Balancer -->
+    <When Condition=" '$(BuildConfiguration)' != '' AND '$(LoadBalancer)' == ''">
+      <PropertyGroup>
+        <ClientRemoteServicesURILocation>http://$(ServerMachine):$(RemoteAppPort)$(RemoteServicesVirtualDirectory)</ClientRemoteServicesURILocation>
+        <HttpHandlerRemoteServicesURILocation>http://$(ServerMachine):$(RemoteAppPort)$(RemoteServicesVirtualDirectory)</HttpHandlerRemoteServicesURILocation>
+        <SchedulerRemoteServicesURILocation>http://$(ServerMachine):$(RemoteAppPort)$(RemoteServicesVirtualDirectory)</SchedulerRemoteServicesURILocation>
+        <WebsiteRemoteServicesURILocation>http://$(ServerMachine):$(RemoteAppPort)$(RemoteServicesVirtualDirectory)</WebsiteRemoteServicesURILocation>      
+		<ServerHostname>$(ServerMachine)</ServerHostname>
+    </PropertyGroup>
+    </When>
+    <!-- Local Developer build -->
+    <When Condition=" '$(BuildConfiguration)' == '' ">
+      <PropertyGroup>
+        <ClientRemoteServicesURILocation>$(RemoteServicesURILocation)</ClientRemoteServicesURILocation>
+        <HttpHandlerRemoteServicesURILocation>$(RemoteServicesURILocation)</HttpHandlerRemoteServicesURILocation>
+        <SchedulerRemoteServicesURILocation>$(RemoteServicesURILocation)</SchedulerRemoteServicesURILocation>
+        <WebsiteRemoteServicesURILocation>$(RemoteServicesURILocation)</WebsiteRemoteServicesURILocation>
+		<SitesToLoadTargets>1,2,3,5,6,8,9,10</SitesToLoadTargets> 
+		<ServerHostname>localhost</ServerHostname>
+	  </PropertyGroup>	              
+    </When>
+  </Choose>
+
+  <PropertyGroup>
+    <ToolsDirectory>$(SolutionDir)\Tools</ToolsDirectory>
+	<ExtensionTasksPath>$(ToolsDirectory)\CustomTasks\MSBuildExtensionPack\</ExtensionTasksPath>
+	
+    <CommonDirectory>$(SolutionDir)\src\Common</CommonDirectory>
+    <ClientDirectory>$(SolutionDir)\src\ClientApp</ClientDirectory>
+	<ClientExecDirectory>$(ClientDirectory)\App\Bin\$(Configuration)</ClientExecDirectory>
+    <RemoteDirectory>$(SolutionDir)\src\RemoteApp</RemoteDirectory>
+	<DbDirectory>$(RemoteDirectory)\DatabaseScripts</DbDirectory>
+	<DbUpgradeDirectory>$(DbDirectory)\DDL Scripts\UPGRADE</DbUpgradeDirectory>
+    <SchedulerDirectory>$(SolutionDir)\src\RemoteScheduler</SchedulerDirectory>
+    <IntegrationDirectory>$(SolutionDir)\src\Integration</IntegrationDirectory>
+    <PlantDataHistorianDirectory>$(SolutionDir)\src\DataHistorian</PlantDataHistorianDirectory>
+    <SAPHandlersDirectory>$(SolutionDir)\src\SAPHandlers</SAPHandlersDirectory>
+    <NUnitDirectory>$(ToolsDirectory)\nunit</NUnitDirectory>    
+    <RemoteServiceDLLFileLocation>$(RemoteDirectory)\App\bin\$(Configuration)</RemoteServiceDLLFileLocation>
+
+	<WebMethodsPullTests>$(SolutionDir)\src\Remoteapp\Test.UnitTest\Integration\TestData\</WebMethodsPullTests>
+	<HTTPHandlerTests>$(SolutionDir)\src\Integration\Test\Integration.Test\HTTPHandlers\TestData\</HTTPHandlerTests>
+	
+    <UnitTestOutputFile>unittest-output.xml</UnitTestOutputFile>
+    <PersistenceTestOutputFile>persistencetest-output.xml</PersistenceTestOutputFile>
+    <IntegrationTestOutputFile>integrationtest-output.xml</IntegrationTestOutputFile>
+    <IntegrationTestPlantHistorianOutputFile>integrationtest-planthistorian-output.xml</IntegrationTestPlantHistorianOutputFile>
+    
+
+    <DbConnectionString>Data Source=$(SqlServer);Initial Catalog=$(SqlDatabase);User Id=$(SqlUser);Password=$(SqlPassword);$(SqlAdditionalOptions);Connection Timeout=60;</DbConnectionString>
+  </PropertyGroup>
+
+  <Choose>
+	<When Condition=" '$(UseMockAuthentication)' == 'true'">  
+      <PropertyGroup>
+        <AuthenticationProvider>Com.Suncor.Olt.Remote.Providers.MockAuthenticationProvider</AuthenticationProvider>
+        <MockAuthenticationProviderUserName>oltuser1</MockAuthenticationProviderUserName>
+        <MockAuthenticationProviderPassword>olt05T$T</MockAuthenticationProviderPassword>
+	  </PropertyGroup>
+	</When>
+	<Otherwise>
+      <PropertyGroup>
+		<AuthenticationProvider>Com.Suncor.Olt.Remote.Providers.LdapAuthenticationProvider</AuthenticationProvider>	  	  
+	  </PropertyGroup>
+	</Otherwise>
+  </Choose>
+  
+  <ItemGroup>
+    <TokenValues Include="LdapPath">
+      <Replacement>$(LdapPath)</Replacement>
+    </TokenValues>
+    <TokenValues Include="LdapUserDomain">
+      <Replacement>$(LdapUserDomain)</Replacement>
+      </TokenValues>
+
+    <TokenValues Include="ClientRemoteServicesURILocation">
+      <Replacement>$(ClientRemoteServicesURILocation)</Replacement>
+    </TokenValues>
+    <TokenValues Include="HttpHandlerRemoteServicesURILocation">
+      <Replacement>$(HttpHandlerRemoteServicesURILocation)</Replacement>
+    </TokenValues>
+    <TokenValues Include="SchedulerRemoteServicesURILocation">
+      <Replacement>$(SchedulerRemoteServicesURILocation)</Replacement>
+    </TokenValues>
+    <TokenValues Include="WebsiteRemoteServicesURILocation">
+      <Replacement>$(WebsiteRemoteServicesURILocation)</Replacement>
+    </TokenValues>
+
+    <TokenValues Include="FileUpdateSourceDirectory">
+      <Replacement>$(FileUpdateSourceDirectory)</Replacement>
+    </TokenValues>
+    <TokenValues Include="AuthenticationProvider">
+      <Replacement>$(AuthenticationProvider)</Replacement>
+    </TokenValues>
+    <TokenValues Include="MockAuthenticationProviderUserName">
+      <Replacement>$(MockAuthenticationProviderUserName)</Replacement>
+    </TokenValues>
+    <TokenValues Include="MockAuthenticationProviderPassword">
+      <Replacement>$(MockAuthenticationProviderPassword)</Replacement>
+    </TokenValues>
+    <TokenValues Include="ConnectionString">
+      <Replacement>$(DbConnectionString)</Replacement>
+    </TokenValues>
+    <TokenValues Include="HTTPHandlerTests">
+      <Replacement>$(HTTPHandlerTests)</Replacement>
+    </TokenValues>
+    <TokenValues Include="BuildNumber">
+      <Replacement>$(BuildNumber)</Replacement>
+    </TokenValues>
+    <TokenValues Include="BuildConfiguration">
+      <Replacement>$(BuildConfiguration)</Replacement>
+    </TokenValues>
+    <TokenValues Include="LogFileLocation">
+      <Replacement>$(LogFileLocation)</Replacement>
+    </TokenValues>
+    <TokenValues Include="LogLevel">
+      <Replacement>$(LogLevel)</Replacement>
+    </TokenValues>
+    <TokenValues Include="OLTSAPWebServiceHost">
+      <Replacement>$(OLTSAPWebServiceHost)</Replacement>
+    </TokenValues>
+    <TokenValues Include="OLTSAPWebServiceUser">
+      <Replacement>$(OLTSAPWebServiceUser)</Replacement>
+    </TokenValues>
+    <TokenValues Include="OLTSAPWebServicePassword">
+      <Replacement>$(OLTSAPWebServicePassword)</Replacement>
+    </TokenValues>
+    <TokenValues Include="OLTSAPWebServiceLogRequestURL">
+      <Replacement>$(OLTSAPWebServiceLogRequestURL)</Replacement>
+    </TokenValues>								    
+	<TokenValues Include="WorkOrderImportServiceURI">
+      <Replacement>$(WorkOrderImportServiceURI)</Replacement>
+    </TokenValues>
+	<TokenValues Include="WorkOrderImportServiceUserName">
+      <Replacement>$(WorkOrderImportServiceUserName)</Replacement>
+    </TokenValues>
+	<TokenValues Include="WorkOrderImportServicePassword">
+      <Replacement>$(WorkOrderImportServicePassword)</Replacement>
+    </TokenValues>
+	<TokenValues Include="EmailSMTPServer">
+      <Replacement>$(EmailSMTPServer)</Replacement>
+    </TokenValues>
+	<TokenValues Include="EmailSMTPServerPort">
+      <Replacement>$(EmailSMTPServerPort)</Replacement>
+    </TokenValues>
+	<TokenValues Include="EmailFromAddress">
+      <Replacement>$(EmailFromAddress)</Replacement>
+    </TokenValues>
+		
+    <!-- used by some tests -->
+    <TokenValues Include="HTTPHandlerSite">
+      <Replacement>$(HTTPHandlerSite)</Replacement>
+    </TokenValues>
+    <TokenValues Include="IntegrationDirectory">
+      <Replacement>$(IntegrationDirectory)</Replacement>
+    </TokenValues>
+    <TokenValues Include="HandlerFunctionalTestDataDirectory">
+      <Replacement>$(SolutionDir)\src\Integration\Test\Integration.Test\Bin\$(Configuration)\HTTPHandlers\TestData</Replacement>
+    </TokenValues>
+	<TokenValues Include="SitesToLoadTargets">
+      <Replacement>$(SitesToLoadTargets)</Replacement>
+    </TokenValues>
+	<TokenValues Include="WebMethodsPullTests">
+      <Replacement>$(WebMethodsPullTests)</Replacement>
+    </TokenValues>
+	<TokenValues Include="ServerHostname">
+      <Replacement>$(ServerHostname)</Replacement>
+    </TokenValues>
+	<TokenValues Include="CouchbaseConfig">
+		<Replacement>$(CouchbaseConfig)</Replacement>
+	</TokenValues>	
+	
+	<!-- Disable caching of SiteConfiguration (i.e. any targets that perform unit testing) -->
+	<TokenValues Include="DisableCachingForISiteConfigurationDaoForUnitTests">
+		<Replacement>$(DisableCachingForISiteConfigurationDaoForUnitTests)</Replacement>
+	</TokenValues>	
+
+	<!-- OPM XHQ WCF Web Service URI and Credentials -->
+	<TokenValues Include="OpmXhqServiceURI">
+      <Replacement>$(OpmXhqServiceURI)</Replacement>
+    </TokenValues>
+	<TokenValues Include="OpmXhqServiceDomain">
+      <Replacement>$(OpmXhqServiceDomain)</Replacement>
+    </TokenValues>
+	<TokenValues Include="OpmXhqServiceUserName">
+      <Replacement>$(OpmXhqServiceUserName)</Replacement>
+    </TokenValues>
+	<TokenValues Include="OpmXhqServicePassword">
+      <Replacement>$(OpmXhqServicePassword)</Replacement>
+    </TokenValues>
+		
+	<!-- OPM Import Settings -->
+	<TokenValues Include="OpmRefreshRateMins">
+      <Replacement>$(OpmRefreshRateMins)</Replacement>
+    </TokenValues>
+</ItemGroup>
+  
+</Project>

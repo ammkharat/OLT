@@ -1,0 +1,46 @@
+2021-02-01 08:39:21,699 [1] INFO  CachingLogger - Found 2 items to skip caching
+2021-02-01 08:39:21,701 [1] INFO  CachingLogger - Skipping caching for dao named 'IUserDTODao'.
+2021-02-01 08:39:21,701 [1] INFO  CachingLogger - Skipping caching for dao named 'ISiteConfigurationDao'.
+2021-02-01 08:39:32,334 [13] DEBUG CachingLogger - Pulling QueryAllBySiteId:Plant:1 from database took 36ms.
+2021-02-01 08:39:32,334 [13] DEBUG CachingLogger - Updating QueryAllBySiteId:Plant:1 in cache after Insert, Update or Query from DB.
+2021-02-01 08:39:32,336 [13] DEBUG CachingLogger - Pulling SiteByPlantId:4000 from database took 585ms.
+2021-02-01 08:39:32,336 [13] DEBUG CachingLogger - Updating SiteByPlantId:4000 in cache after Insert, Update or Query from DB.
+2021-02-01 08:39:34,757 [15] DEBUG CachingLogger - Updating FunctionalLocation:424950 in cache after Insert, Update or Query from DB.
+2021-02-01 08:40:14,680 [15] DEBUG CachingLogger - Pulling QueryAllBySiteId:Plant:1 from database took 1ms.
+2021-02-01 08:40:14,680 [15] DEBUG CachingLogger - Updating QueryAllBySiteId:Plant:1 in cache after Insert, Update or Query from DB.
+2021-02-01 08:40:14,680 [15] DEBUG CachingLogger - Pulling SiteByPlantId:4000 from database took 1ms.
+2021-02-01 08:40:14,680 [15] DEBUG CachingLogger - Updating SiteByPlantId:4000 in cache after Insert, Update or Query from DB.
+2021-02-01 08:40:14,714 [1] DEBUG CachingLogger - Updating FunctionalLocation:424951 in cache after Insert, Update or Query from DB.
+2021-02-01 08:40:24,237 [1] DEBUG CachingLogger - Pulling QueryAllBySiteId:Plant:1 from database took 0ms.
+2021-02-01 08:40:24,237 [1] DEBUG CachingLogger - Updating QueryAllBySiteId:Plant:1 in cache after Insert, Update or Query from DB.
+2021-02-01 08:40:24,237 [1] DEBUG CachingLogger - Pulling SiteByPlantId:4000 from database took 0ms.
+2021-02-01 08:40:24,237 [1] DEBUG CachingLogger - Updating SiteByPlantId:4000 in cache after Insert, Update or Query from DB.
+2021-02-01 08:40:24,256 [15] DEBUG CachingLogger - Updating FunctionalLocation:424952 in cache after Insert, Update or Query from DB.
+2021-02-01 08:40:50,637 [15] DEBUG CachingLogger - Pulling QueryAllBySiteId:Plant:1 from database took 0ms.
+2021-02-01 08:40:50,637 [15] DEBUG CachingLogger - Updating QueryAllBySiteId:Plant:1 in cache after Insert, Update or Query from DB.
+2021-02-01 08:40:50,637 [15] DEBUG CachingLogger - Pulling SiteByPlantId:4000 from database took 0ms.
+2021-02-01 08:40:50,637 [15] DEBUG CachingLogger - Updating SiteByPlantId:4000 in cache after Insert, Update or Query from DB.
+2021-02-01 08:40:50,656 [1] DEBUG CachingLogger - Updating FunctionalLocation:424953 in cache after Insert, Update or Query from DB.
+2021-02-01 08:41:59,082 [1] DEBUG CachingLogger - Pulling QueryAllBySiteId:Plant:1 from database took 0ms.
+2021-02-01 08:41:59,082 [1] DEBUG CachingLogger - Updating QueryAllBySiteId:Plant:1 in cache after Insert, Update or Query from DB.
+2021-02-01 08:41:59,082 [1] DEBUG CachingLogger - Pulling SiteByPlantId:4000 from database took 0ms.
+2021-02-01 08:41:59,082 [1] DEBUG CachingLogger - Updating SiteByPlantId:4000 in cache after Insert, Update or Query from DB.
+2021-02-01 08:41:59,116 [15] DEBUG CachingLogger - Updating FunctionalLocation:424954 in cache after Insert, Update or Query from DB.
+2021-02-01 08:42:16,990 [15] DEBUG CachingLogger - Pulling QueryAllBySiteId:Plant:1 from database took 0ms.
+2021-02-01 08:42:16,990 [15] DEBUG CachingLogger - Updating QueryAllBySiteId:Plant:1 in cache after Insert, Update or Query from DB.
+2021-02-01 08:42:16,990 [15] DEBUG CachingLogger - Pulling SiteByPlantId:4000 from database took 1ms.
+2021-02-01 08:42:16,990 [15] DEBUG CachingLogger - Updating SiteByPlantId:4000 in cache after Insert, Update or Query from DB.
+2021-02-01 08:42:17,027 [1] DEBUG CachingLogger - Updating FunctionalLocation:424955 in cache after Insert, Update or Query from DB.
+2021-02-01 08:42:17,063 [1] DEBUG CachingLogger - Pulling QueryAllBySiteId:Plant:1 from database took 0ms.
+2021-02-01 08:42:17,063 [1] DEBUG CachingLogger - Updating QueryAllBySiteId:Plant:1 in cache after Insert, Update or Query from DB.
+2021-02-01 08:42:17,063 [1] DEBUG CachingLogger - Pulling SiteByPlantId:4000 from database took 0ms.
+2021-02-01 08:42:17,063 [1] DEBUG CachingLogger - Updating SiteByPlantId:4000 in cache after Insert, Update or Query from DB.
+2021-02-01 08:42:17,083 [1] DEBUG CachingLogger - Pulling QueryAllBySiteId:Plant:1 from database took 0ms.
+2021-02-01 08:42:17,083 [1] DEBUG CachingLogger - Updating QueryAllBySiteId:Plant:1 in cache after Insert, Update or Query from DB.
+2021-02-01 08:42:17,083 [1] DEBUG CachingLogger - Pulling Site:1 from database took 16ms.
+2021-02-01 08:42:17,083 [1] DEBUG CachingLogger - Updating Site:1 in cache after Insert, Update or Query from DB.
+2021-02-01 08:42:17,088 [1] DEBUG CachingLogger - Pulling QueryAllBySiteId:Plant:1 from database took 0ms.
+2021-02-01 08:42:17,088 [1] DEBUG CachingLogger - Updating QueryAllBySiteId:Plant:1 in cache after Insert, Update or Query from DB.
+2021-02-01 08:42:17,088 [1] DEBUG CachingLogger - Pulling Site:1 from database took 0ms.
+2021-02-01 08:42:17,088 [1] DEBUG CachingLogger - Updating Site:1 in cache after Insert, Update or Query from DB.
+2021-02-01 08:42:17,207 [1] DEBUG CachingLogger - Updating FunctionalLocation:424955 in cache after Insert, Update or Query from DB.

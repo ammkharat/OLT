@@ -1,0 +1,1065 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="printBarManager1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="printButton.Caption" xml:space="preserve">
+    <value>&amp;Print...</value>
+  </data>
+  <data name="printButton.Hint" xml:space="preserve">
+    <value>Print</value>
+  </data>
+  <data name="printPreviewBarItem17.Caption" xml:space="preserve">
+    <value>First Page</value>
+  </data>
+  <data name="printPreviewBarItem17.Hint" xml:space="preserve">
+    <value>First Page</value>
+  </data>
+  <data name="printPreviewBarItem18.Caption" xml:space="preserve">
+    <value>Previous Page</value>
+  </data>
+  <data name="printPreviewBarItem18.Hint" xml:space="preserve">
+    <value>Previous Page</value>
+  </data>
+  <data name="printPreviewBarItem19.Caption" xml:space="preserve">
+    <value>Next Page</value>
+  </data>
+  <data name="printPreviewBarItem19.Hint" xml:space="preserve">
+    <value>Next Page</value>
+  </data>
+  <data name="printPreviewBarItem20.Caption" xml:space="preserve">
+    <value>Last Page</value>
+  </data>
+  <data name="printPreviewBarItem20.Hint" xml:space="preserve">
+    <value>Last Page</value>
+  </data>
+  <data name="printPreviewBarItem4.Caption" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="printPreviewBarItem4.Hint" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="printPreviewBarItem15.Caption" xml:space="preserve">
+    <value>Zoom Out</value>
+  </data>
+  <data name="printPreviewBarItem15.Hint" xml:space="preserve">
+    <value>Zoom Out</value>
+  </data>
+  <data name="zoomBarEditItem1.Caption" xml:space="preserve">
+    <value>Zoom</value>
+  </data>
+  <assembly alias="DevExpress.Utils.v13.2" name="DevExpress.Utils.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+  <data name="printPreviewRepositoryItemComboBox1.Buttons" type="DevExpress.XtraEditors.Controls.ButtonPredefines, DevExpress.Utils.v13.2">
+    <value>Combo</value>
+  </data>
+  <data name="zoomBarEditItem1.Hint" xml:space="preserve">
+    <value>Zoom</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="zoomBarEditItem1.Width" type="System.Int32, mscorlib">
+    <value>70</value>
+  </data>
+  <data name="printPreviewBarItem16.Caption" xml:space="preserve">
+    <value>Zoom In</value>
+  </data>
+  <data name="printPreviewBarItem16.Hint" xml:space="preserve">
+    <value>Zoom In</value>
+  </data>
+  <data name="printPreviewBarItem24.Caption" xml:space="preserve">
+    <value>Export Document...</value>
+  </data>
+  <data name="printPreviewBarItem24.Hint" xml:space="preserve">
+    <value>Export Document...</value>
+  </data>
+  <data name="printPreviewBarItem25.Caption" xml:space="preserve">
+    <value>Send via E-Mail...</value>
+  </data>
+  <data name="printPreviewBarItem25.Hint" xml:space="preserve">
+    <value>Send via E-Mail...</value>
+  </data>
+  <data name="previewBar1.Text" xml:space="preserve">
+    <value>Toolbar</value>
+  </data>
+  <data name="printPreviewStaticItem1.Caption" xml:space="preserve">
+    <value>Nothing</value>
+  </data>
+  <data name="progressBarEditItem1.Width" type="System.Int32, mscorlib">
+    <value>150</value>
+  </data>
+  <data name="printPreviewBarItem1.Caption" xml:space="preserve">
+    <value>Stop</value>
+  </data>
+  <data name="printPreviewBarItem1.Hint" xml:space="preserve">
+    <value>Stop</value>
+  </data>
+  <data name="printPreviewStaticItem2.Caption" xml:space="preserve">
+    <value>100%</value>
+  </data>
+  <data name="printPreviewStaticItem2.Width" type="System.Int32, mscorlib">
+    <value>40</value>
+  </data>
+  <data name="zoomTrackBarEditItem1.Width" type="System.Int32, mscorlib">
+    <value>140</value>
+  </data>
+  <data name="previewBar2.Text" xml:space="preserve">
+    <value>Status Bar</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="barDockControlTop.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="barDockControlTop.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="barDockControlTop.Size" type="System.Drawing.Size, System.Drawing">
+    <value>827, 31</value>
+  </data>
+  <data name="&gt;&gt;barDockControlTop.Name" xml:space="preserve">
+    <value>barDockControlTop</value>
+  </data>
+  <data name="&gt;&gt;barDockControlTop.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;barDockControlTop.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;barDockControlTop.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="barDockControlBottom.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="barDockControlBottom.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 172</value>
+  </data>
+  <data name="barDockControlBottom.Size" type="System.Drawing.Size, System.Drawing">
+    <value>827, 28</value>
+  </data>
+  <data name="&gt;&gt;barDockControlBottom.Name" xml:space="preserve">
+    <value>barDockControlBottom</value>
+  </data>
+  <data name="&gt;&gt;barDockControlBottom.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;barDockControlBottom.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;barDockControlBottom.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="barDockControlLeft.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="barDockControlLeft.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 31</value>
+  </data>
+  <data name="barDockControlLeft.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 141</value>
+  </data>
+  <data name="&gt;&gt;barDockControlLeft.Name" xml:space="preserve">
+    <value>barDockControlLeft</value>
+  </data>
+  <data name="&gt;&gt;barDockControlLeft.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;barDockControlLeft.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;barDockControlLeft.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="barDockControlRight.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Right</value>
+  </data>
+  <data name="barDockControlRight.Location" type="System.Drawing.Point, System.Drawing">
+    <value>827, 31</value>
+  </data>
+  <data name="barDockControlRight.Size" type="System.Drawing.Size, System.Drawing">
+    <value>0, 141</value>
+  </data>
+  <data name="&gt;&gt;barDockControlRight.Name" xml:space="preserve">
+    <value>barDockControlRight</value>
+  </data>
+  <data name="&gt;&gt;barDockControlRight.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarDockControl, DevExpress.XtraBars.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;barDockControlRight.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;barDockControlRight.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="printControl.BackColor" type="System.Drawing.Color, System.Drawing">
+    <value />
+  </data>
+  <data name="printControl.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="printControl.ForeColor" type="System.Drawing.Color, System.Drawing">
+    <value />
+  </data>
+  <data name="printControl.IsMetric" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="printControl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 31</value>
+  </data>
+  <data name="printControl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>827, 141</value>
+  </data>
+  <data name="printControl.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="printControl.TooltipFont" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt</value>
+  </data>
+  <data name="&gt;&gt;printControl.Name" xml:space="preserve">
+    <value>printControl</value>
+  </data>
+  <data name="&gt;&gt;printControl.Type" xml:space="preserve">
+    <value>DevExpress.XtraPrinting.Control.PrintControl, DevExpress.XtraPrinting.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;printControl.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;printControl.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>827, 200</value>
+  </data>
+  <data name="&gt;&gt;printBarManager1.Name" xml:space="preserve">
+    <value>printBarManager1</value>
+  </data>
+  <data name="&gt;&gt;printBarManager1.Type" xml:space="preserve">
+    <value>DevExpress.XtraPrinting.Preview.PrintBarManager, DevExpress.XtraPrinting.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;previewBar1.Name" xml:space="preserve">
+    <value>previewBar1</value>
+  </data>
+  <data name="&gt;&gt;previewBar1.Type" xml:space="preserve">
+    <value>DevExpress.XtraPrinting.Preview.PreviewBar, DevExpress.XtraPrinting.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;printButton.Name" xml:space="preserve">
+    <value>printButton</value>
+  </data>
+  <data name="&gt;&gt;printButton.Type" xml:space="preserve">
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarItem, DevExpress.XtraPrinting.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;printPreviewBarItem17.Name" xml:space="preserve">
+    <value>printPreviewBarItem17</value>
+  </data>
+  <data name="&gt;&gt;printPreviewBarItem17.Type" xml:space="preserve">
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarItem, DevExpress.XtraPrinting.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;printPreviewBarItem18.Name" xml:space="preserve">
+    <value>printPreviewBarItem18</value>
+  </data>
+  <data name="&gt;&gt;printPreviewBarItem18.Type" xml:space="preserve">
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarItem, DevExpress.XtraPrinting.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;printPreviewBarItem19.Name" xml:space="preserve">
+    <value>printPreviewBarItem19</value>
+  </data>
+  <data name="&gt;&gt;printPreviewBarItem19.Type" xml:space="preserve">
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarItem, DevExpress.XtraPrinting.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;printPreviewBarItem20.Name" xml:space="preserve">
+    <value>printPreviewBarItem20</value>
+  </data>
+  <data name="&gt;&gt;printPreviewBarItem20.Type" xml:space="preserve">
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarItem, DevExpress.XtraPrinting.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;printPreviewBarItem4.Name" xml:space="preserve">
+    <value>printPreviewBarItem4</value>
+  </data>
+  <data name="&gt;&gt;printPreviewBarItem4.Type" xml:space="preserve">
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarItem, DevExpress.XtraPrinting.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;printPreviewBarItem15.Name" xml:space="preserve">
+    <value>printPreviewBarItem15</value>
+  </data>
+  <data name="&gt;&gt;printPreviewBarItem15.Type" xml:space="preserve">
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarItem, DevExpress.XtraPrinting.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;zoomBarEditItem1.Name" xml:space="preserve">
+    <value>zoomBarEditItem1</value>
+  </data>
+  <data name="&gt;&gt;zoomBarEditItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraPrinting.Preview.ZoomBarEditItem, DevExpress.XtraPrinting.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;printPreviewRepositoryItemComboBox1.Name" xml:space="preserve">
+    <value>printPreviewRepositoryItemComboBox1</value>
+  </data>
+  <data name="&gt;&gt;printPreviewRepositoryItemComboBox1.Type" xml:space="preserve">
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewRepositoryItemComboBox, DevExpress.XtraPrinting.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;printPreviewBarItem16.Name" xml:space="preserve">
+    <value>printPreviewBarItem16</value>
+  </data>
+  <data name="&gt;&gt;printPreviewBarItem16.Type" xml:space="preserve">
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarItem, DevExpress.XtraPrinting.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;printPreviewBarItem24.Name" xml:space="preserve">
+    <value>printPreviewBarItem24</value>
+  </data>
+  <data name="&gt;&gt;printPreviewBarItem24.Type" xml:space="preserve">
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarItem, DevExpress.XtraPrinting.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;printPreviewBarItem25.Name" xml:space="preserve">
+    <value>printPreviewBarItem25</value>
+  </data>
+  <data name="&gt;&gt;printPreviewBarItem25.Type" xml:space="preserve">
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarItem, DevExpress.XtraPrinting.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;previewBar2.Name" xml:space="preserve">
+    <value>previewBar2</value>
+  </data>
+  <data name="&gt;&gt;previewBar2.Type" xml:space="preserve">
+    <value>DevExpress.XtraPrinting.Preview.PreviewBar, DevExpress.XtraPrinting.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;printPreviewStaticItem1.Name" xml:space="preserve">
+    <value>printPreviewStaticItem1</value>
+  </data>
+  <data name="&gt;&gt;printPreviewStaticItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewStaticItem, DevExpress.XtraPrinting.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;barStaticItem1.Name" xml:space="preserve">
+    <value>barStaticItem1</value>
+  </data>
+  <data name="&gt;&gt;barStaticItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarStaticItem, DevExpress.XtraBars.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;progressBarEditItem1.Name" xml:space="preserve">
+    <value>progressBarEditItem1</value>
+  </data>
+  <data name="&gt;&gt;progressBarEditItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraPrinting.Preview.ProgressBarEditItem, DevExpress.XtraPrinting.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemProgressBar1.Name" xml:space="preserve">
+    <value>repositoryItemProgressBar1</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemProgressBar1.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemProgressBar, DevExpress.XtraEditors.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;printPreviewBarItem1.Name" xml:space="preserve">
+    <value>printPreviewBarItem1</value>
+  </data>
+  <data name="&gt;&gt;printPreviewBarItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarItem, DevExpress.XtraPrinting.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;barButtonItem1.Name" xml:space="preserve">
+    <value>barButtonItem1</value>
+  </data>
+  <data name="&gt;&gt;barButtonItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarButtonItem, DevExpress.XtraBars.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;printPreviewStaticItem2.Name" xml:space="preserve">
+    <value>printPreviewStaticItem2</value>
+  </data>
+  <data name="&gt;&gt;printPreviewStaticItem2.Type" xml:space="preserve">
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewStaticItem, DevExpress.XtraPrinting.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;zoomTrackBarEditItem1.Name" xml:space="preserve">
+    <value>zoomTrackBarEditItem1</value>
+  </data>
+  <data name="&gt;&gt;zoomTrackBarEditItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraPrinting.Preview.ZoomTrackBarEditItem, DevExpress.XtraPrinting.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemZoomTrackBar1.Name" xml:space="preserve">
+    <value>repositoryItemZoomTrackBar1</value>
+  </data>
+  <data name="&gt;&gt;repositoryItemZoomTrackBar1.Type" xml:space="preserve">
+    <value>DevExpress.XtraEditors.Repository.RepositoryItemZoomTrackBar, DevExpress.XtraEditors.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;printPreviewSubItem1.Name" xml:space="preserve">
+    <value>printPreviewSubItem1</value>
+  </data>
+  <data name="&gt;&gt;printPreviewSubItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewSubItem, DevExpress.XtraPrinting.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;printPreviewSubItem2.Name" xml:space="preserve">
+    <value>printPreviewSubItem2</value>
+  </data>
+  <data name="&gt;&gt;printPreviewSubItem2.Type" xml:space="preserve">
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewSubItem, DevExpress.XtraPrinting.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;printPreviewSubItem4.Name" xml:space="preserve">
+    <value>printPreviewSubItem4</value>
+  </data>
+  <data name="&gt;&gt;printPreviewSubItem4.Type" xml:space="preserve">
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewSubItem, DevExpress.XtraPrinting.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;printPreviewBarItem27.Name" xml:space="preserve">
+    <value>printPreviewBarItem27</value>
+  </data>
+  <data name="&gt;&gt;printPreviewBarItem27.Type" xml:space="preserve">
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarItem, DevExpress.XtraPrinting.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;printPreviewBarItem28.Name" xml:space="preserve">
+    <value>printPreviewBarItem28</value>
+  </data>
+  <data name="&gt;&gt;printPreviewBarItem28.Type" xml:space="preserve">
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarItem, DevExpress.XtraPrinting.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;barToolbarsListItem1.Name" xml:space="preserve">
+    <value>barToolbarsListItem1</value>
+  </data>
+  <data name="&gt;&gt;barToolbarsListItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraBars.BarToolbarsListItem, DevExpress.XtraBars.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;printPreviewSubItem3.Name" xml:space="preserve">
+    <value>printPreviewSubItem3</value>
+  </data>
+  <data name="&gt;&gt;printPreviewSubItem3.Type" xml:space="preserve">
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewSubItem, DevExpress.XtraPrinting.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;printPreviewBarCheckItem1.Name" xml:space="preserve">
+    <value>printPreviewBarCheckItem1</value>
+  </data>
+  <data name="&gt;&gt;printPreviewBarCheckItem1.Type" xml:space="preserve">
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem, DevExpress.XtraPrinting.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;printPreviewBarCheckItem2.Name" xml:space="preserve">
+    <value>printPreviewBarCheckItem2</value>
+  </data>
+  <data name="&gt;&gt;printPreviewBarCheckItem2.Type" xml:space="preserve">
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem, DevExpress.XtraPrinting.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;printPreviewBarCheckItem3.Name" xml:space="preserve">
+    <value>printPreviewBarCheckItem3</value>
+  </data>
+  <data name="&gt;&gt;printPreviewBarCheckItem3.Type" xml:space="preserve">
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem, DevExpress.XtraPrinting.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;printPreviewBarCheckItem4.Name" xml:space="preserve">
+    <value>printPreviewBarCheckItem4</value>
+  </data>
+  <data name="&gt;&gt;printPreviewBarCheckItem4.Type" xml:space="preserve">
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem, DevExpress.XtraPrinting.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;printPreviewBarCheckItem5.Name" xml:space="preserve">
+    <value>printPreviewBarCheckItem5</value>
+  </data>
+  <data name="&gt;&gt;printPreviewBarCheckItem5.Type" xml:space="preserve">
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem, DevExpress.XtraPrinting.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;printPreviewBarCheckItem6.Name" xml:space="preserve">
+    <value>printPreviewBarCheckItem6</value>
+  </data>
+  <data name="&gt;&gt;printPreviewBarCheckItem6.Type" xml:space="preserve">
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem, DevExpress.XtraPrinting.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;printPreviewBarCheckItem7.Name" xml:space="preserve">
+    <value>printPreviewBarCheckItem7</value>
+  </data>
+  <data name="&gt;&gt;printPreviewBarCheckItem7.Type" xml:space="preserve">
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem, DevExpress.XtraPrinting.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;printPreviewBarCheckItem8.Name" xml:space="preserve">
+    <value>printPreviewBarCheckItem8</value>
+  </data>
+  <data name="&gt;&gt;printPreviewBarCheckItem8.Type" xml:space="preserve">
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem, DevExpress.XtraPrinting.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;printPreviewBarCheckItem9.Name" xml:space="preserve">
+    <value>printPreviewBarCheckItem9</value>
+  </data>
+  <data name="&gt;&gt;printPreviewBarCheckItem9.Type" xml:space="preserve">
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem, DevExpress.XtraPrinting.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;printPreviewBarCheckItem10.Name" xml:space="preserve">
+    <value>printPreviewBarCheckItem10</value>
+  </data>
+  <data name="&gt;&gt;printPreviewBarCheckItem10.Type" xml:space="preserve">
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem, DevExpress.XtraPrinting.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;printPreviewBarCheckItem11.Name" xml:space="preserve">
+    <value>printPreviewBarCheckItem11</value>
+  </data>
+  <data name="&gt;&gt;printPreviewBarCheckItem11.Type" xml:space="preserve">
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem, DevExpress.XtraPrinting.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;printPreviewBarCheckItem12.Name" xml:space="preserve">
+    <value>printPreviewBarCheckItem12</value>
+  </data>
+  <data name="&gt;&gt;printPreviewBarCheckItem12.Type" xml:space="preserve">
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem, DevExpress.XtraPrinting.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;printPreviewBarCheckItem13.Name" xml:space="preserve">
+    <value>printPreviewBarCheckItem13</value>
+  </data>
+  <data name="&gt;&gt;printPreviewBarCheckItem13.Type" xml:space="preserve">
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem, DevExpress.XtraPrinting.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;printPreviewBarCheckItem14.Name" xml:space="preserve">
+    <value>printPreviewBarCheckItem14</value>
+  </data>
+  <data name="&gt;&gt;printPreviewBarCheckItem14.Type" xml:space="preserve">
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem, DevExpress.XtraPrinting.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;printPreviewBarCheckItem15.Name" xml:space="preserve">
+    <value>printPreviewBarCheckItem15</value>
+  </data>
+  <data name="&gt;&gt;printPreviewBarCheckItem15.Type" xml:space="preserve">
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem, DevExpress.XtraPrinting.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;printPreviewBarCheckItem16.Name" xml:space="preserve">
+    <value>printPreviewBarCheckItem16</value>
+  </data>
+  <data name="&gt;&gt;printPreviewBarCheckItem16.Type" xml:space="preserve">
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem, DevExpress.XtraPrinting.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;printPreviewBarCheckItem17.Name" xml:space="preserve">
+    <value>printPreviewBarCheckItem17</value>
+  </data>
+  <data name="&gt;&gt;printPreviewBarCheckItem17.Type" xml:space="preserve">
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem, DevExpress.XtraPrinting.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;printPreviewBarItem13.Name" xml:space="preserve">
+    <value>printPreviewBarItem13</value>
+  </data>
+  <data name="&gt;&gt;printPreviewBarItem13.Type" xml:space="preserve">
+    <value>DevExpress.XtraPrinting.Preview.PrintPreviewBarItem, DevExpress.XtraPrinting.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>EmbeddedRtfPrintControl</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.UserControl, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="printBarManager1.ImageStream" type="DevExpress.Utils.ImageCollectionStreamer, DevExpress.Utils.v13.2" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFpEZXZFeHByZXNzLlV0aWxzLnYxMi4xLCBWZXJzaW9uPTEyLjEu
+        Ny4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI4OGQxNzU0ZDcwMGU0OWEMAwAAAFFT
+        eXN0ZW0uRHJhd2luZywgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRv
+        a2VuPWIwM2Y1ZjdmMTFkNTBhM2EFAQAAAChEZXZFeHByZXNzLlV0aWxzLkltYWdlQ29sbGVjdGlvblN0
+        cmVhbWVyAgAAAAlJbWFnZVNpemUERGF0YQQHE1N5c3RlbS5EcmF3aW5nLlNpemUDAAAAAgIAAAAF/P//
+        /xNTeXN0ZW0uRHJhd2luZy5TaXplAgAAAAV3aWR0aAZoZWlnaHQAAAgIAwAAABAAAAAQAAAACQUAAAAP
+        BQAAAKs+AAACzAIAAIlQTkcNChoKAAAADUlIRFIAAAAQAAAAEAgGAAAAH/P/YQAAAAFzUkdCAK7OHOkA
+        AAAEZ0FNQQAAsY8L/GEFAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwA
+        AAJKSURBVDhPlZM7aFphFMfdkkl8BjIJRUWydNSCDgUnl1DjVOhgMZW2UDoZF0tUpAGXZmjApWDRtihU
+        kU520bXUVgo+6vv9fsUkrUa9/373kiaIheKB/3cf3/3/zrnnnstirRlOp9NnNpuxv78PrVZ7tKadxTKZ
+        TJ/1ev3R7u6uT6VS4Rrw/FMXz0IdPA228fhjC0Z/A4YPNejfVfHgbenmwSuHUqlU7+zs3Nx/Emjhb8wp
+        YEqW80sKwwkFnSu7BJDL5QcymQzb29tfryt4+L6GBTFekuXiEjglxu7FAo2zBTSvEksAiUSCra0t39L7
+        339TwGRG4WxKYfBrgRYxVk7nyA/muPvy+xJAKBS6NjY21EuAe6/TGP6m0DmnUBsvUBgt8LM/R6I7x50X
+        X5YAm5ub9PUBA4hGo4ZQKJRzuVwUXW6ZGHMka5IYf7Tn+Naa4fj4mPL7/blwOGy4yvqIHG8x5x6PJ0cC
+        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
+</value>
+  </data>
+  <data name="printPreviewSubItem1.Caption" xml:space="preserve">
+    <value>&amp;File</value>
+  </data>
+  <data name="printPreviewSubItem2.Caption" xml:space="preserve">
+    <value>&amp;View</value>
+  </data>
+  <data name="printPreviewSubItem4.Caption" xml:space="preserve">
+    <value>&amp;Page Layout</value>
+  </data>
+  <data name="printPreviewBarItem27.Caption" xml:space="preserve">
+    <value>&amp;Facing</value>
+  </data>
+  <data name="printPreviewBarItem28.Caption" xml:space="preserve">
+    <value>&amp;Continuous</value>
+  </data>
+  <data name="barToolbarsListItem1.Caption" xml:space="preserve">
+    <value>Bars</value>
+  </data>
+  <data name="printPreviewSubItem3.Caption" xml:space="preserve">
+    <value>&amp;Background</value>
+  </data>
+  <data name="printPreviewBarCheckItem1.Caption" xml:space="preserve">
+    <value>PDF File</value>
+  </data>
+  <data name="printPreviewBarCheckItem1.Hint" xml:space="preserve">
+    <value>PDF File</value>
+  </data>
+  <data name="printPreviewBarCheckItem2.Caption" xml:space="preserve">
+    <value>HTML File</value>
+  </data>
+  <data name="printPreviewBarCheckItem2.Hint" xml:space="preserve">
+    <value>HTML File</value>
+  </data>
+  <data name="printPreviewBarCheckItem3.Caption" xml:space="preserve">
+    <value>MHT File</value>
+  </data>
+  <data name="printPreviewBarCheckItem3.Hint" xml:space="preserve">
+    <value>MHT File</value>
+  </data>
+  <data name="printPreviewBarCheckItem4.Caption" xml:space="preserve">
+    <value>RTF File</value>
+  </data>
+  <data name="printPreviewBarCheckItem4.Hint" xml:space="preserve">
+    <value>RTF File</value>
+  </data>
+  <data name="printPreviewBarCheckItem5.Caption" xml:space="preserve">
+    <value>XLS File</value>
+  </data>
+  <data name="printPreviewBarCheckItem5.Hint" xml:space="preserve">
+    <value>XLS File</value>
+  </data>
+  <data name="printPreviewBarCheckItem6.Caption" xml:space="preserve">
+    <value>XLSX File</value>
+  </data>
+  <data name="printPreviewBarCheckItem6.Hint" xml:space="preserve">
+    <value>XLSX File</value>
+  </data>
+  <data name="printPreviewBarCheckItem7.Caption" xml:space="preserve">
+    <value>CSV File</value>
+  </data>
+  <data name="printPreviewBarCheckItem7.Hint" xml:space="preserve">
+    <value>CSV File</value>
+  </data>
+  <data name="printPreviewBarCheckItem8.Caption" xml:space="preserve">
+    <value>Text File</value>
+  </data>
+  <data name="printPreviewBarCheckItem8.Hint" xml:space="preserve">
+    <value>Text File</value>
+  </data>
+  <data name="printPreviewBarCheckItem9.Caption" xml:space="preserve">
+    <value>Image File</value>
+  </data>
+  <data name="printPreviewBarCheckItem9.Hint" xml:space="preserve">
+    <value>Image File</value>
+  </data>
+  <data name="printPreviewBarCheckItem10.Caption" xml:space="preserve">
+    <value>PDF File</value>
+  </data>
+  <data name="printPreviewBarCheckItem10.Hint" xml:space="preserve">
+    <value>PDF File</value>
+  </data>
+  <data name="printPreviewBarCheckItem11.Caption" xml:space="preserve">
+    <value>MHT File</value>
+  </data>
+  <data name="printPreviewBarCheckItem11.Hint" xml:space="preserve">
+    <value>MHT File</value>
+  </data>
+  <data name="printPreviewBarCheckItem12.Caption" xml:space="preserve">
+    <value>RTF File</value>
+  </data>
+  <data name="printPreviewBarCheckItem12.Hint" xml:space="preserve">
+    <value>RTF File</value>
+  </data>
+  <data name="printPreviewBarCheckItem13.Caption" xml:space="preserve">
+    <value>XLS File</value>
+  </data>
+  <data name="printPreviewBarCheckItem13.Hint" xml:space="preserve">
+    <value>XLS File</value>
+  </data>
+  <data name="printPreviewBarCheckItem14.Caption" xml:space="preserve">
+    <value>XLSX File</value>
+  </data>
+  <data name="printPreviewBarCheckItem14.Hint" xml:space="preserve">
+    <value>XLSX File</value>
+  </data>
+  <data name="printPreviewBarCheckItem15.Caption" xml:space="preserve">
+    <value>CSV File</value>
+  </data>
+  <data name="printPreviewBarCheckItem15.Hint" xml:space="preserve">
+    <value>CSV File</value>
+  </data>
+  <data name="printPreviewBarCheckItem16.Caption" xml:space="preserve">
+    <value>Text File</value>
+  </data>
+  <data name="printPreviewBarCheckItem16.Hint" xml:space="preserve">
+    <value>Text File</value>
+  </data>
+  <data name="printPreviewBarCheckItem17.Caption" xml:space="preserve">
+    <value>Image File</value>
+  </data>
+  <data name="printPreviewBarCheckItem17.Hint" xml:space="preserve">
+    <value>Image File</value>
+  </data>
+  <data name="printPreviewBarItem13.Caption" xml:space="preserve">
+    <value>Hand Tool</value>
+  </data>
+  <data name="printPreviewBarItem13.Hint" xml:space="preserve">
+    <value>Hand Tool</value>
+  </data>
+</root>

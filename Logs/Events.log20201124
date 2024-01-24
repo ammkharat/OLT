@@ -1,0 +1,13 @@
+2020-11-24 06:24:00,063 [1] INFO  EventService - Subscribe: [ClientAddress=net.tcp://10.9.21.6:9771/] [SiteId=13] [Machine=D126741] [Reason=RefreshConnect]
+2020-11-24 06:58:04,518 [34] INFO  EventService - Subscribe: [ClientAddress=net.tcp://10.9.21.6:9771/] [SiteId=13] [Machine=D126741] [Reason=RefreshConnect]
+2020-11-24 06:59:42,223 [1] INFO  EventService - Unsubscribe: [ClientAddress=net.tcp://10.9.21.6:9771/] [Reason=ApplicationExit]
+2020-11-24 07:11:33,931 [34] INFO  EventService - Subscribe: [ClientAddress=net.tcp://10.9.21.6:9771/] [SiteId=13] [Machine=D126741] [Reason=RefreshConnect]
+2020-11-24 07:36:00,119 [1] INFO  EventService - Subscribe: [ClientAddress=net.tcp://10.9.21.6:9771/] [SiteId=13] [Machine=D126741] [Reason=RefreshConnect]
+2020-11-24 08:08:05,061 [36] INFO  EventService - Subscribe: [ClientAddress=net.tcp://10.9.21.6:9771/] [SiteId=13] [Machine=D126741] [Reason=RefreshConnect]
+2020-11-24 08:10:58,813 [36] DEBUG EventQueue - Pushing event into queue: [Method:WorkPermitCreate] [DomainObject:WorkPermit] [Id:10] [Initiating Event Sink Uri:net.tcp://10.9.21.6:9771/]
+2020-11-24 08:10:59,641 [28] DEBUG EventService - Should Notify Client of Event Called.  IsRelevant = False
+2020-11-24 08:25:00,458 [28] INFO  EventService - Subscribe: [ClientAddress=net.tcp://10.9.21.6:9771/] [SiteId=13] [Machine=D126741] [Reason=RefreshConnect]
+2020-11-24 10:47:32,942 [17] INFO  EventService - Subscribe: [ClientAddress=net.tcp://10.9.21.6:9771/] [SiteId=13] [Machine=D126741] [Reason=RefreshConnect]
+2020-11-24 10:55:43,031 [15] INFO  EventService - Unsubscribe: [ClientAddress=net.tcp://10.9.21.6:9771/] [Reason=ApplicationExit]
+2020-11-24 11:20:35,662 [22] INFO  EventService - Subscribe: [ClientAddress=net.tcp://10.9.21.6:9771/] [SiteId=13] [Machine=D126741] [Reason=RefreshConnect]
+2020-11-24 11:56:00,382 [16] INFO  EventService - Unsubscribe: [ClientAddress=net.tcp://10.9.21.6:9771/] [Reason=ApplicationExit]

@@ -1,0 +1,173 @@
+1|	|View Action Item Definition|	|Action Items
+~~2|	|Approve Action Item Definition|	|Action Items
+~~3|	|Reject Action Item Definition|	|Action Items
+~~4|	|Create Action Item Definition|	|Action Items
+~~6|	|Edit Action Item Definition|	|Action Items
+~~8|	|Delete Action Item Definition|	|Action Items
+~~10|	|Comment Action Item Definition|	|Action Items
+~~11|	|Toggle Approval Required for Action Item Definition|	|Action Items
+~~12|	|View Target Definition|	|Targets
+~~13|	|Approve Target Definition|	|Targets
+~~14|	|Reject Target Definition|	|Targets
+~~15|	|Create Target Definition|	|Targets
+~~17|	|Edit Target Definition|	|Targets
+~~19|	|Delete Target Definition|	|Targets
+~~21|	|Comment on Target Definition|	|Targets
+~~22|	|Toggle Approval Required for Target Definition|	|Targets
+~~23|	|Create Permit|	|Work Permits
+~~24|	|View Permit|	|Work Permits
+~~25|	|Approve Permit|	|Work Permits
+~~26|	|Reject Permit|	|Work Permits
+~~27|	|Delete Permit|	|Work Permits
+~~28|	|Update Permit with Restrictions|	|Work Permits
+~~29|	|Update Permit at any time|	|Work Permits
+~~31|	|Print Permit|	|Work Permits
+~~32|	|Create Log|	|Logs
+~~33|	|View Log|	|Logs
+~~34|	|Edit Log|	|Logs
+~~35|	|Delete Log|	|Logs
+~~39|	|View Action Item|	|Action Items
+~~40|	|Respond to Action Item|	|Action Items
+~~41|	|View Target Alerts|	|Targets
+~~42|	|Respond to Target Alerts|	|Targets
+~~45|	|Clone work permit with some restrictions|	|Work Permits
+~~46|	|Clone work permit with no restriction|	|Work Permits
+~~47|	|View SAP Notifications|	|Logs - Notifications
+~~48|	|Process SAP Notifications|	|Logs - Notifications
+~~49|	|Copy work permit with some restrictions|	|Work Permits
+~~50|	|Copy work permit with no restriction|	|Work Permits
+~~51|	|Reply To Log|	|Logs
+~~52|	|Close Permit|	|Work Permits
+~~54|	|View Log Definitions|	|Logs
+~~57|	|Approve Non-Operations Permit|	|Work Permits
+~~58|	|Reject Non-Operations Permit|	|Work Permits
+~~59|	|Delete Non-Operations Permit|	|Work Permits
+~~60|	|Update Non-Operations Permit|	|Work Permits
+~~61|	|Close Non-Operations Permit|	|Work Permits
+~~62|	|Print Non-Operations Permit|	|Work Permits
+~~63|	|Edit Log Flagged as Operating Engineer Log|	|Logs
+~~64|	|Delete Log Flagged as Operating Engineer Log|	|Logs
+~~65|	|Cancel Log Flagged as Operating Engineer Log|	|Logs
+~~72|	|Configure Gas Test Limits|	|Admin - Work Permits
+~~73|	|Manage Operational Modes|	|Admin - Action Items & Targets
+~~75|	|Configure Work Permit Archival Process|	|Admin - Work Permits
+~~76|	|Configure Display Limits|	|Admin - Site Configuration
+~~77|	|Configure Auto Approve SAP Action Item Definition|	|Admin - Action Items
+~~78|	|Configure Work Permit Contractor|	|Admin - Work Permits
+~~80|	|Configure Plant Historian Tag List|	|Admin - Reports
+~~81|	|Configure Craft Or Trade|	|Admin - Work Permits
+~~82|	|Configure Work Assignments|	|Admin - Site Configuration
+~~83|	|Configure Pre-Approved Target Ranges|	|Targets
+~~84|	|Configure Automatic Re-Approval by Field|	|Admin - Action Items & Targets
+~~85|	|Configure Default FLOCs for Assignments|	|Admin - Site Configuration
+~~86|	|Comment WorkPermit|	|Work Permits
+~~88|	|View Summary Logs|	|Logs - Summary Logs
+~~89|	|Create Summary Logs|	|Logs - Summary Logs
+~~92|	|Edit Summary Logs|	|Logs - Summary Logs
+~~95|	|Delete Summary Logs|	|Logs - Summary Logs
+~~96|	|View Directives|	|Logs - Directives
+~~97|	|Create Directives|	|Logs - Directives
+~~98|	|Edit Directives|	|Logs - Directives
+~~99|	|Delete Directives|	|Logs - Directives
+~~100|	|View Restriction Reporting|	|Restriction Reporting
+~~101|	|Create Restriction Definition|	|Restriction Reporting
+~~102|	|Delete Restriction Definition|	|Restriction Reporting
+~~103|	|Edit Restriction Definition|	|Restriction Reporting
+~~104|	|Respond to Deviation In Shift|	|Restriction Reporting
+~~105|	|Edit Deviation Response For Alert In Shift|	|Restriction Reporting
+~~106|	|Edit Deviation Response For Alert Out of Shift|	|Restriction Reporting
+~~107|	|Configure Restriction Reason Code|	|Admin - Restriction Reporting
+~~108|	|Associate Restriction Reason Codes to Functional Locations|	|Admin - Restriction Reporting
+~~109|	|Configure Time Limit for Deviation Response|	|Admin - Restriction Reporting
+~~110|	|Respond to Deviation Out of Shift|	|Restriction Reporting
+~~111|	|Configure Business Categories|	|Admin - Action Items
+~~112|	|Associate Business Categories To Functional Locations|	|Admin - Action Items
+~~113|	|Configure Log Guidelines|	|Admin - Logs
+~~114|	|View Shift Handover|	|Shift Handovers
+~~115|	|Create Shift Handover Questionnaire|	|Shift Handovers
+~~116|	|Edit Shift Handover Questionnaire|	|Shift Handovers
+~~117|	|Delete Shift Handover Questionnaire|	|Shift Handovers
+~~120|	|Edit Shift Handover Configurations|	|Admin - Shift Handovers
+~~122|	|Configure Summary Log Custom Fields|	|Admin - Logs
+~~126|	|Edit DOR Comments|	|Logs - Summary Logs
+~~127|	|Configure DOR Cutoff Time|	|Admin - Restriction Reporting
+~~128|	|Edit Deviation Alert Comment|	|Restriction Reporting
+~~129|	|Edit Log Templates|	|Admin - Logs
+~~130|	|View Lab Alert Definitions and Lab Alerts|	|Lab Alerts
+~~131|	|Create Lab Alert Definition|	|Lab Alerts
+~~132|	|Edit Lab Alert Definition|	|Lab Alerts
+~~133|	|Delete Lab Alert Definition|	|Lab Alerts
+~~134|	|Respond To Lab Alert|	|Lab Alerts
+~~135|	|Configure Lab Alert|	|Admin - Lab Alerts
+~~136|	|Configure Default Tabs|	|Admin - Site Configuration
+~~141|	|Configure Work Assignment Not Selected Warning|	|Admin - Site Configuration
+~~142|	|Configure Unc Paths for Links|	|Admin - Site Configuration
+~~149|	|View Coker Card|	|Coker Cards
+~~150|	|Create Coker Card|	|Coker Cards
+~~151|	|Edit Coker Card|	|Coker Cards
+~~152|	|Delete Coker Card|	|Coker Cards
+~~153|	|Configure Work Assignments for Work Permit Auto-Assignment|	|Admin - Work Permits
+~~154|	|Configure Coker Cards|	|Admin - Coker Cards
+~~176|	|Cancel Log|	|Logs
+~~177|	|Cancel Standing Orders|	|Logs - Directives
+~~178|	|View Standing Orders|	|Logs - Directives
+~~179|	|Configure Priorities Page|	|Admin - Site Configuration
+~~180|	|Configure Work Permit Templates|	|Admin - Work Permits
+~~181|	|View Permit Requests|	|Work Permits
+~~182|	|Create Permit Request|	|Work Permits
+~~183|	|Edit Permit Request|	|Work Permits
+~~184|	|Delete Permit Request|	|Work Permits
+~~185|	|Submit Permit Request|	|Work Permits
+~~186|	|Import Permit Requests|	|Work Permits
+~~187|	|Create Log Definition|	|Logs
+~~188|	|Edit Log Definition|	|Logs
+~~189|	|Create Confined Space Documents|	|Work Permits
+~~190|	|Edit Confined Space Documents|	|Work Permits
+~~191|	|Print Confined Space Documents|	|Work Permits
+~~192|	|View Confined Space Documents|	|Work Permits
+~~193|	|Delete Confined Space Documents|	|Work Permits
+~~194|	|Configure Work Permit Dropdowns|	|Admin - Work Permits
+~~195|	|Configure Configured Document Links|	|Admin - Work Permits
+~~196|	|Create Form|	|Forms
+~~197|	|Clone Permit Request|	|Work Permits
+~~198|	|Delete Form|	|Forms
+~~199|	|Edit Form|	|Forms
+~~200|	|Configure Form Templates|	|Admin - Forms
+~~201|	|Configure Work Assignments for Work Permits|	|Admin - Work Permits
+~~202|	|Perform Tech Admin Tasks|	|Technical Admin
+~~204|	|Configure Area Labels|	|Admin - Site Configuration
+~~206|	|Edit Shift Handover E-mail Configurations|	|Admin - Shift Handovers
+~~207|	|View Form|	|Forms
+~~208|	|Approve Oilsands Training Form|	|Forms
+~~209|	|Configure Training Blocks|	|Admin - Forms
+~~210|	|View Navigation - Action Items|	|Action Items
+~~211|	|View Navigation - Targets|	|Targets
+~~212|	|View Navigation - Logs|	|Logs
+~~213|	|View Navigation - Work Permits|	|Work Permits
+~~214|	|View Navigation - Shift Handovers|	|Shift Handovers
+~~215|	|View Navigation - Lab Alerts|	|Lab Alerts
+~~216|	|View Navigation - Restrictions|	|Restriction Reporting
+~~217|	|View Navigation - Forms|	|Forms
+~~218|	|View Priorities - Action Items|	|Action Items
+~~219|	|View Priorities - Targets|	|Targets
+~~220|	|View Priorities - Directives|	|Logs
+~~221|	|View Priorities - Forms|	|Forms
+~~222|	|View Priorities - Form OP-14s|	|Forms
+~~223|	|View Priorities - Shift Handovers|	|Shift Handovers
+~~224|	|View Priorities - Work Permits|	|Work Permits
+~~225|	|Configure Site Communications|	|Admin - Site Configuration
+~~226|	|No reapproval required for GN-59 End Date Change|	|Forms
+~~228|	|Configure Work Permit Groups|	|Admin - Work Permits
+~~229|	|No approval required for GN-24 End Date Change|	|Forms
+~~230|	|No approval required for GN-6 End Date Change|	|Forms
+~~231|	|View Navigation - Directives|	|Directives
+~~232|	|View Directives - Future|	|Directives
+~~233|	|No approval required for GN-75A End Date Change|	|Forms
+~~234|	|No approval required for GN-1 End Date Change|	|Forms
+~~235|	|Copy Log|	|Logs
+~~236|	|Add Shift Information|	|Logs
+~~237|	|Configure Functional Locations|	|Admin - Site Configuration
+~~238|	|View Form - Overtime Request|	|Forms
+~~239|	|Approve Form - Overtime Request|	|Forms
+~~240|	|View Navigation - On Premise Personnel|	|On Premise Personnel
+~~

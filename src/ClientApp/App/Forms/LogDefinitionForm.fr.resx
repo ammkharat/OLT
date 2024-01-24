@@ -1,0 +1,842 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="IsOperatingEngineerLogCheckBox.Error" xml:space="preserve">
+    <value />
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="IsOperatingEngineerLogCheckBox.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="IsOperatingEngineerLogCheckBox.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="IsOperatingEngineerLogCheckBox.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="isInactiveCheckBox.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="isInactiveCheckBox.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="isInactiveCheckBox.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="isInactiveCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>153, 17</value>
+  </data>
+  <data name="isInactiveCheckBox.Text" xml:space="preserve">
+    <value>Temporairement désactivé</value>
+  </data>
+  <data name="isInactiveCheckBox.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="flowLayoutPanel.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="flowLayoutPanel.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="flowLayoutPanel.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="flowLayoutPanel.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="optionsGroupBox.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="optionsGroupBox.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="optionsGroupBox.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="optionsGroupBox.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="functionalLocationListBox.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="functionalLocationListBox.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="functionalLocationListBox.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="functionalLocationListBox.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="functionalLocationButton.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="functionalLocationButton.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="functionalLocationButton.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="functionalLocationButton.Text" xml:space="preserve">
+    <value>Ajouter...</value>
+  </data>
+  <data name="functionalLocationButton.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="removeFLOCButton.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="removeFLOCButton.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="removeFLOCButton.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="removeFLOCButton.Text" xml:space="preserve">
+    <value>Supprimer</value>
+  </data>
+  <data name="removeFLOCButton.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="flocButtonsPanel.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="flocButtonsPanel.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="flocButtonsPanel.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="flocButtonsPanel.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="flocAndButtonsTableLayoutPanel.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="flocAndButtonsTableLayoutPanel.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="flocAndButtonsTableLayoutPanel.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="flocAndButtonsTableLayoutPanel.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="functionalLocationGroupBox.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="functionalLocationGroupBox.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="functionalLocationGroupBox.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="functionalLocationGroupBox.Text" xml:space="preserve">
+    <value>Postes techniques</value>
+  </data>
+  <data name="functionalLocationGroupBox.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="flocsAndOptionsTableLayoutPanel.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="flocsAndOptionsTableLayoutPanel.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="flocsAndOptionsTableLayoutPanel.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="flocsAndOptionsTableLayoutPanel.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="commentsLabelLine.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="commentsLabelLine.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="commentsLabelLine.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="commentsLabelLine.Label" xml:space="preserve">
+    <value>Remarques</value>
+  </data>
+  <data name="commentsLabelLine.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="detailsLabelLine.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="detailsLabelLine.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="detailsLabelLine.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="detailsLabelLine.Label" xml:space="preserve">
+    <value>Détails</value>
+  </data>
+  <data name="detailsLabelLine.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lastModifiedDateAuthorHeader.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lastModifiedDateAuthorHeader.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="lastModifiedDateAuthorHeader.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lastModifiedDateAuthorHeader.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="logDateTimeCreateUserAndShiftPanel.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="logDateTimeCreateUserAndShiftPanel.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="logDateTimeCreateUserAndShiftPanel.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="logDateTimeCreateUserAndShiftPanel.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="operationsFollowUpCheckbox.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="operationsFollowUpCheckbox.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="operationsFollowUpCheckbox.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="operationsFollowUpCheckbox.Text" xml:space="preserve">
+    <value>Opérations</value>
+  </data>
+  <data name="operationsFollowUpCheckbox.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="supervisorFollowUpCheckbox.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="supervisorFollowUpCheckbox.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="supervisorFollowUpCheckbox.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="supervisorFollowUpCheckbox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 70</value>
+  </data>
+  <data name="supervisorFollowUpCheckbox.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="processControlFollowUpCheckBox.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="processControlFollowUpCheckBox.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="processControlFollowUpCheckBox.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="processControlFollowUpCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 38</value>
+  </data>
+  <data name="processControlFollowUpCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>82, 30</value>
+  </data>
+  <data name="processControlFollowUpCheckBox.Text" xml:space="preserve">
+    <value>Contrôle de
+production</value>
+  </data>
+  <data name="processControlFollowUpCheckBox.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="eHSFollowUpCheckBox.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="eHSFollowUpCheckBox.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="eHSFollowUpCheckBox.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="eHSFollowUpCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>102, 45</value>
+  </data>
+  <data name="eHSFollowUpCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 17</value>
+  </data>
+  <data name="eHSFollowUpCheckBox.Text" xml:space="preserve">
+    <value>ESP</value>
+  </data>
+  <data name="eHSFollowUpCheckBox.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="inspectionFollowUpCheckbox.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="inspectionFollowUpCheckbox.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="inspectionFollowUpCheckbox.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="inspectionFollowUpCheckbox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>102, 20</value>
+  </data>
+  <data name="inspectionFollowUpCheckbox.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="otherFollowUpCheckBox.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="otherFollowUpCheckBox.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="otherFollowUpCheckBox.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="otherFollowUpCheckBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>102, 63</value>
+  </data>
+  <data name="otherFollowUpCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>103, 30</value>
+  </data>
+  <data name="otherFollowUpCheckBox.Text" xml:space="preserve">
+    <value>Autres (voir les 
+commentaires)</value>
+  </data>
+  <data name="otherFollowUpCheckBox.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="followupGroupBox.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="followupGroupBox.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="followupGroupBox.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="followupGroupBox.Text" xml:space="preserve">
+    <value>Nécessite un suivi par</value>
+  </data>
+  <data name="followupGroupBox.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="logDocumentLinksControl.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="logDocumentLinksControl.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="logDocumentLinksControl.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="logDocumentLinksControl.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="linkGroupBox.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="linkGroupBox.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="linkGroupBox.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="linkGroupBox.Text" xml:space="preserve">
+    <value>Liens du document</value>
+  </data>
+  <data name="linkGroupBox.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="createOneLogRadioButton.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="createOneLogRadioButton.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="createOneLogRadioButton.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="createOneLogRadioButton.Text" xml:space="preserve">
+    <value>Créer une par poste technique</value>
+  </data>
+  <data name="createOneLogRadioButton.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="createLogForEachFlocRadioButton.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="createLogForEachFlocRadioButton.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="createLogForEachFlocRadioButton.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="createLogForEachFlocRadioButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 56</value>
+  </data>
+  <data name="createLogForEachFlocRadioButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>136, 31</value>
+  </data>
+  <data name="createLogForEachFlocRadioButton.Text" xml:space="preserve">
+    <value>Créer une pour chaque poste technique</value>
+  </data>
+  <data name="createLogForEachFlocRadioButton.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="multipleFunctionalLocationGroupBox.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="multipleFunctionalLocationGroupBox.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="multipleFunctionalLocationGroupBox.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="multipleFunctionalLocationGroupBox.Text" xml:space="preserve">
+    <value>Postes techniques multiples</value>
+  </data>
+  <data name="multipleFunctionalLocationGroupBox.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="advancedDetailsTableLayoutPanel.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="advancedDetailsTableLayoutPanel.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="advancedDetailsTableLayoutPanel.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="advancedDetailsTableLayoutPanel.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="advancedDetailsPanel.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="advancedDetailsPanel.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="advancedDetailsPanel.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="advancedDetailsPanel.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="customFieldsLabelLine.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="customFieldsLabelLine.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="customFieldsLabelLine.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="customFieldsLabelLine.Label" xml:space="preserve">
+    <value>Champs personnalisé</value>
+  </data>
+  <data name="customFieldsLabelLine.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="customFieldControl.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="customFieldControl.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="customFieldControl.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="customFieldControl.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="customFieldsPanel.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="customFieldsPanel.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="customFieldsPanel.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="customFieldsPanel.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="logCommentControl.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="logCommentControl.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="logCommentControl.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="logCommentControl.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="insertTemplateButton.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="insertTemplateButton.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="insertTemplateButton.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="insertTemplateButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>601, 5</value>
+  </data>
+  <data name="insertTemplateButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>103, 23</value>
+  </data>
+  <data name="insertTemplateButton.Text" xml:space="preserve">
+    <value>Insérer le modèle</value>
+  </data>
+  <data name="insertTemplateButton.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="templateLabel.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="templateLabel.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="templateLabel.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="templateLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>48, 13</value>
+  </data>
+  <data name="templateLabel.Text" xml:space="preserve">
+    <value>Modèle :</value>
+  </data>
+  <data name="templateLabel.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="logTemplateComboBox.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="logTemplateComboBox.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="logTemplateComboBox.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="logTemplateComboBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>516, 21</value>
+  </data>
+  <data name="logTemplateComboBox.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="templatePanel.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="templatePanel.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="templatePanel.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="templatePanel.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="templateAndCommentsTableLayoutPanel.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="templateAndCommentsTableLayoutPanel.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="templateAndCommentsTableLayoutPanel.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="templateAndCommentsTableLayoutPanel.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="schedulePicker.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="schedulePicker.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="schedulePicker.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="schedulePicker.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="repeatingScheduleLine.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="repeatingScheduleLine.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="repeatingScheduleLine.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="repeatingScheduleLine.Label" xml:space="preserve">
+    <value>Ordonnancement</value>
+  </data>
+  <data name="repeatingScheduleLine.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="schedulePanel.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="schedulePanel.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="schedulePanel.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="schedulePanel.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="additionalDetailsToggleButton.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="additionalDetailsToggleButton.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="additionalDetailsToggleButton.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="additionalDetailsToggleButton.ToolTip1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="additionalDetailsLabelLine.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="additionalDetailsLabelLine.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="additionalDetailsLabelLine.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="additionalDetailsLabelLine.Label" xml:space="preserve">
+    <value>Détails supplémentaires</value>
+  </data>
+  <data name="additionalDetailsLabelLine.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="additionalDetailsPanel.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="additionalDetailsPanel.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="additionalDetailsPanel.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="additionalDetailsPanel.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="tableLayoutPanel.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="tableLayoutPanel.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="tableLayoutPanel.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="tableLayoutPanel.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="scrollingPanel.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="scrollingPanel.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="scrollingPanel.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="scrollingPanel.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="saveAndCloseButton.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="saveAndCloseButton.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="saveAndCloseButton.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="saveAndCloseButton.Text" xml:space="preserve">
+    <value>&amp;Sauvegarder</value>
+  </data>
+  <data name="saveAndCloseButton.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cancelButton.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="cancelButton.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="cancelButton.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="cancelButton.Text" xml:space="preserve">
+    <value>&amp;Annuler</value>
+  </data>
+  <data name="cancelButton.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="buttonPanel.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="buttonPanel.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="buttonPanel.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="buttonPanel.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Formule de définition de registre</value>
+  </data>
+  <data name="$this.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="viewEditHistoryButton.Error" xml:space="preserve">
+    <value />
+  </data>
+  <data name="viewEditHistoryButton.IconAlignment" type="System.Windows.Forms.ErrorIconAlignment, System.Windows.Forms">
+    <value>MiddleRight</value>
+  </data>
+  <data name="viewEditHistoryButton.IconPadding" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="viewEditHistoryButton.Text" xml:space="preserve">
+    <value>&amp;Historique</value>
+  </data>
+</root>

@@ -1,0 +1,711 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+using Com.Suncor.Olt.Common.Domain.Form;
+using Com.Suncor.Olt.Common.Extension;
+using Com.Suncor.Olt.Common.Localization;
+using Com.Suncor.Olt.Common.Utility;
+
+namespace Com.Suncor.Olt.Common.Domain.WorkPermit
+{
+    [Serializable]
+    public class WorkPermitEdmonton : ModifiableDomainObject, IFunctionalLocationRelevant, IDocumentLinksObject
+    {
+        public const string A = "A";
+        public const string B = "B";
+        public const string C = "C";
+        public const string C1 = "C+";  //Added By Vibhor : RITM0556615 - OLT Edmonton Work Permit Change
+        public const string D = "D";
+
+        public const string ConfinedSpaceLevel1 = "1";
+        public const string ConfinedSpaceLevel2 = "2";
+        public const string ConfinedSpaceLevel3 = "3";
+        public static readonly TimeSpan NonTurnaroundPermitEndTimeOffset = new TimeSpan(1, 30, 0).Negate();
+        public static readonly TimeSpan TurnaroundPermitEndTimeOffset = new TimeSpan(1, 0, 0).Negate();
+
+        // note: these are not necessarily Edmonton's shift times but are just defaults used for permit requests
+        public static readonly Time DayShiftStartTime = new Time(6, 30);
+        public static readonly Time NightShiftStartTime = new Time(18, 30);
+
+        public static readonly Time PermitDefaultDayStart = DayShiftStartTime.Add(0, 30);
+        public static readonly Time PermitDefaultNightStart = NightShiftStartTime.Add(0, 30);
+
+        public static readonly Priority[] Priorities = {Priority.Normal, Priority.CriticalPath};
+
+        public WorkPermitEdmonton(DataSource dataSource, PermitRequestBasedWorkPermitStatus workPermitStatus,
+            WorkPermitEdmontonType workPermitType, DateTime createdDateTime, User createdBy)
+        {
+            DataSource = dataSource;
+            WorkPermitStatus = workPermitStatus;
+            WorkPermitType = workPermitType;
+
+            CreatedDateTime = createdDateTime;
+            CreatedBy = createdBy;
+
+            GN6_Deprecated = WorkPermitSafetyFormState.NotApplicable;
+            GN11 = WorkPermitSafetyFormState.NotApplicable;
+            GN24_Deprecated = WorkPermitSafetyFormState.NotApplicable;
+            GN27 = WorkPermitSafetyFormState.NotApplicable;
+            GN75_Deprecated = WorkPermitSafetyFormState.NotApplicable;
+
+            QuestionOneResponse = YesNoNotApplicable.YES;
+            Priority = Priority.Normal;
+
+            DocumentLinks = new List<DocumentLink>();
+        }
+
+//Added By Vibhor : DMND0010779 : OLT - Templateeasy clone
+        public WorkPermitEdmonton(string templatename, string categories)
+        {
+            _templateName = templatename;
+            _categories = categories;
+        }
+
+        public PermitRequestBasedWorkPermitStatus WorkPermitStatus { get; set; }
+
+        public DataSource DataSource { get; set; }
+
+        public long? PermitNumber { get; set; }
+
+        public bool IssuedToSuncor { get; set; }
+        public bool IssuedToCompany { get; set; }
+        public string Company { get; set; }
+        public string Occupation { get; set; }
+        
+        public int? NumberOfWorkers { get; set; }
+        public WorkPermitEdmontonGroup Group { get; set; }
+        public WorkPermitEdmontonType WorkPermitType { get; set; }
+        public bool DurationPermit { get; set; }
+        public FunctionalLocation FunctionalLocation { get; set; }
+        public string Location { get; set; }
+
+        [CachedRelationship]
+        public AreaLabel AreaLabel { get; set; }
+
+        public User IssuedByUser { get; set; }
+
+        public bool UsePreviousPermitAnswered { get; set; }
+
+        public bool AlkylationEntry { get; set; }
+        public string AlkylationEntryClassOfClothing { get; set; }
+
+        public bool FlarePitEntry { get; set; }
+        public string FlarePitEntryType { get; set; }
+
+        public bool ConfinedSpace { get; set; }
+        public string ConfinedSpaceCardNumber { get; set; }
+        public string ConfinedSpaceClass { get; set; }
+
+        public bool RescuePlan { get; set; }
+        public string RescuePlanFormNumber { get; set; }
+        public string ClonedFormDetailEdmonton { get; set; } // Added by Vibhor : DMND0011077 - Work Permit Clone History
+
+//Added By Vibhor : DMND0010779 : OLT - Templateeasy clone
+        public string TemplateName { get; set; }
+        public bool IsTemplate { get; set; }
+        public string TemplateCreatedBy { get; set; }
+        public string Categories { get; set; }
+        public bool Global { get; set; }
+        public bool Individual { get; set; }
+
+        public string _templateName { get; set; }
+        public string _categories { get; set; }
+
+
+        public long TemplateId { get; set; } //Added By Vibhor : RITM0613645 : OLT - Template Easy clone **Delete Feature**
+        
+
+        public bool VehicleEntry { get; set; }
+        public int? VehicleEntryTotal { get; set; }
+        public string VehicleEntryType { get; set; }
+
+        public bool SpecialWork { get; set; }
+        public string SpecialWorkFormNumber { get; set; }
+        public EdmontonPermitSpecialWorkType SpecialWorkType { get; set; }
+        public SpecialWork SpecialWorkList { get; set; }
+        public SpecialWork specialworktype { get; set; }//mangesh for SpecialWork
+
+        //mangesh for RoadAccessOnPermit
+        public bool RoadAccessOnPermit { get; set; }
+        public string RoadAccessOnPermitFormNumber { get; set; }
+        public string RoadAccessOnPermitType { get; set; }
+
+        public string SpecialWorkName { get; set; }
+
+        public bool GN59 { get; set; }
+
+        [CachedRelationship]
+        public FormGN59 FormGN59 { get; set; }
+
+        public bool GN7 { get; set; }
+
+        [CachedRelationship]
+        public FormGN7 FormGN7 { get; set; }
+
+        public bool GN6 { get; set; }
+
+        [CachedRelationship]
+        public FormGN6 FormGN6 { get; set; }
+
+        public bool GN24 { get; set; }
+
+        [CachedRelationship]
+        public FormGN24 FormGN24 { get; set; }
+
+        public bool GN75A { get; set; }
+
+        [CachedRelationship]
+        public FormGN75A FormGN75A { get; set; }
+
+        public bool GN1 { get; set; }
+
+        [CachedRelationship]
+        public FormGN1 FormGN1 { get; set; }
+
+        public long? FormGN1TradeChecklistId { get; set; }
+        public string FormGN1TradeChecklistDisplayNumber { get; set; }
+
+        public WorkPermitSafetyFormState GN6_Deprecated { get; set; }
+        public WorkPermitSafetyFormState GN11 { get; set; }
+        public WorkPermitSafetyFormState GN24_Deprecated { get; set; }
+        public WorkPermitSafetyFormState GN27 { get; set; }
+        public WorkPermitSafetyFormState GN75_Deprecated { get; set; }
+
+        public DateTime RequestedStartDateTime { get; set; }
+        public DateTime? IssuedDateTime { get; set; }
+        public DateTime ExpiredDateTime { get; set; }
+
+        // This is for when we need a start date, but since the permit might not have been issued yet we have to use the requested start instead.
+        // The issued date time is when the permit is valid from, so it's the most correct value.        
+        public DateTime RequestedOrIssuedDateTime
+        {
+            get { return IssuedDateTime != null ? IssuedDateTime.Value : RequestedStartDateTime; }
+        }
+
+        public bool HasBeenIssued
+        {
+            get { return IssuedDateTime.HasValue; }
+        }
+
+        public string WorkOrderNumber { get; set; }
+        public string OperationNumber { get; set; }
+        public string SubOperationNumber { get; set; }
+
+        public string TaskDescription { get; set; }
+        public string HazardsAndOrRequirements { get; set; }
+
+        public bool OtherAreasAndOrUnitsAffected { get; set; }
+        public string OtherAreasAndOrUnitsAffectedArea { get; set; }
+        public string OtherAreasAndOrUnitsAffectedPersonNotified { get; set; }
+
+        // Status of Piping/Equipment
+        public bool StatusOfPipingEquipmentSectionNotApplicableToJob { get; set; }
+        public string ProductNormallyInPipingEquipment { get; set; }
+
+        public YesNoNotApplicable IsolationValvesLocked { get; set; }
+        public YesNoNotApplicable DepressuredDrained { get; set; }
+        public YesNoNotApplicable Ventilated { get; set; }
+        public YesNoNotApplicable Purged { get; set; }
+        public YesNoNotApplicable BlindedAndTagged { get; set; }
+        public YesNoNotApplicable DoubleBlockAndBleed { get; set; }
+        public YesNoNotApplicable ElectricalLockout { get; set; }
+        public YesNoNotApplicable MechanicalLockout { get; set; }
+        public YesNoNotApplicable BlindSchematicAvailable { get; set; }
+
+        public string ZeroEnergyFormNumber { get; set; }
+        public string LockBoxNumber { get; set; }
+        public bool JobsiteEquipmentInspected { get; set; }
+
+        //ayman Edmonton work permit
+        public bool SignatureOfSiteInspected { get; set; }
+
+        // Confined space work 
+        public bool ConfinedSpaceWorkSectionNotApplicableToJob { get; set; }
+
+        public YesNoNotApplicable QuestionOneResponse { get; set; }
+        public YesNoNotApplicable QuestionTwoResponse { get; set; }
+        public YesNoNotApplicable QuestionTwoAResponse { get; set; }
+        public YesNoNotApplicable QuestionTwoBResponse { get; set; }
+        public YesNoNotApplicable QuestionThreeResponse { get; set; }
+        public YesNoNotApplicable QuestionFourResponse { get; set; }
+
+        // Gas Tests
+        public bool GasTestsSectionNotApplicableToJob { get; set; }
+        public bool WorkerToProvideGasTestData { get; set; }
+        public string OperatorGasDetectorNumber { get; set; }
+
+        public string GasTestDataLine1CombustibleGas { get; set; }
+        public string GasTestDataLine1Oxygen { get; set; }
+        public string GasTestDataLine1ToxicGas { get; set; }
+        public Time GasTestDataLine1Time { get; set; }
+
+        public string GasTestDataLine2CombustibleGas { get; set; }
+        public string GasTestDataLine2Oxygen { get; set; }
+        public string GasTestDataLine2ToxicGas { get; set; }
+        public Time GasTestDataLine2Time { get; set; }
+
+        public string GasTestDataLine3CombustibleGas { get; set; }
+        public string GasTestDataLine3Oxygen { get; set; }
+        public string GasTestDataLine3ToxicGas { get; set; }
+        public Time GasTestDataLine3Time { get; set; }
+
+        public string GasTestDataLine4CombustibleGas { get; set; }
+        public string GasTestDataLine4Oxygen { get; set; }
+        public string GasTestDataLine4ToxicGas { get; set; }
+        public Time GasTestDataLine4Time { get; set; }
+
+        //Workers Minimum Safety Requirements
+        public bool WorkersMinimumSafetyRequirementsSectionNotApplicableToJob { get; set; }
+
+        public bool FaceShield { get; set; }
+        public bool Goggles { get; set; }
+        public bool RubberBoots { get; set; }
+        public bool RubberGloves { get; set; }
+        public bool RubberSuit { get; set; }
+        public bool SafetyHarnessLifeline { get; set; }
+        public bool HighVoltagePPE { get; set; }
+        public bool Other1Checked { get; set; }
+        public String Other1 { get; set; }
+
+        public bool EquipmentGrounded { get; set; }
+        public bool FireBlanket { get; set; }
+        public bool FireExtinguisher { get; set; }
+        public bool FireMonitorManned { get; set; }
+        public bool FireWatch { get; set; }
+        public bool SewersDrainsCovered { get; set; }
+        public bool SteamHose { get; set; }
+        public bool Other2Checked { get; set; }
+        public String Other2 { get; set; }
+
+        public bool AirPurifyingRespirator { get; set; }
+        public bool BreathingAirApparatus { get; set; }
+        public bool DustMask { get; set; }
+        public bool LifeSupportSystem { get; set; }
+        public bool SafetyWatch { get; set; }
+        public bool ContinuousGasMonitor { get; set; }
+        public bool WorkersMonitor { get; set; }
+        public string WorkersMonitorNumber { get; set; }
+        public bool BumpTestMonitorPriorToUse { get; set; }
+        public bool Other3Checked { get; set; }
+        public String Other3 { get; set; }
+
+        public bool AirMover { get; set; }
+        public bool BarriersSigns { get; set; }
+        public bool RadioChannel { get; set; }
+        public string RadioChannelNumber { get; set; }
+        public bool AirHorn { get; set; }
+        public bool MechVentilationComfortOnly { get; set; }
+        public bool AsbestosMMCPrecautions { get; set; }
+        public bool Other4Checked { get; set; }
+        public String Other4 { get; set; }
+
+        public DateTime CreatedDateTime { get; private set; }
+        public User CreatedBy { get; private set; }
+
+        public bool ClonedViaTemplateTab { get; set; }   // Added By Vibhor : RITM0625399 - OLT - Include the "templates" as a source
+
+        public User SubmittedByUser
+        {
+            get { return DataSource.PERMIT_REQUEST == DataSource ? CreatedBy : null; }
+        }
+
+        public User PermitRequestCreatedByUser { get; set; }
+
+        public string PermitAcceptor { get; set; }
+        public string ShiftSupervisor { get; set; }
+
+        public bool UseCurrentPermitNumberForZeroEnergyFormNumber { get; set; }
+
+        public Priority Priority { get; set; }
+
+        public string DescriptionForLog
+        {
+            get
+            {
+                var sb = new StringBuilder();
+
+                sb.AppendLine(String.Format("{0}: {1}, {2}, {3}",
+                    StringResources.WorkPermitDescription_PermitNumberLabel,
+                    PermitNumber,
+                    WorkPermitType.Name,
+                    WorkPermitStatus));
+
+                sb.AppendLine(String.Format("{0}: {1}",
+                    StringResources.WorkPermitEdmontonHistoryClassTaskDescriptionPropertyKey, TaskDescription));
+
+                return sb.ToString();
+            }
+        }
+
+        public List<DocumentLink> DocumentLinks { get; set; }
+
+        public bool IsRelevantTo(long siteIdOfClient,  List<string> clientFullHierarchies, List<string> workPermitEdmontonFullHierarchies, List<string> restrictionFullHierarchies,SiteConfiguration siteConfiguration)
+        {
+            List<string> fullHierarchies;
+
+            if (workPermitEdmontonFullHierarchies.IsEmpty())
+            {
+                fullHierarchies = clientFullHierarchies;
+            }
+            else
+            {
+                fullHierarchies = workPermitEdmontonFullHierarchies;
+            }
+
+            return new ExactMatchRelevance(FunctionalLocation).IsRelevantTo(siteIdOfClient, fullHierarchies) ||
+                   new WalkDownRelevance(FunctionalLocation).IsRelevantTo(siteIdOfClient, fullHierarchies) ||
+                   new WalkUpRelevance(FunctionalLocation).IsRelevantTo(siteIdOfClient, fullHierarchies);
+        }
+
+        public void CopyContentsIntoNextDayPermit(ref WorkPermitEdmonton nextDayPermit)
+        {
+            var newNextDayPermit = this.DeepClone();
+            newNextDayPermit.Id = nextDayPermit.Id;
+            newNextDayPermit.WorkPermitStatus = nextDayPermit.WorkPermitStatus;
+
+            newNextDayPermit.PermitNumber = null;
+            newNextDayPermit.LastModifiedBy = nextDayPermit.LastModifiedBy;
+            newNextDayPermit.LastModifiedDateTime = nextDayPermit.LastModifiedDateTime;
+
+            newNextDayPermit.PermitRequestCreatedByUser = nextDayPermit.PermitRequestCreatedByUser;
+            newNextDayPermit.RequestedStartDateTime = nextDayPermit.RequestedStartDateTime;
+
+            newNextDayPermit.IssuedDateTime = null;
+            newNextDayPermit.IssuedByUser = null;
+            newNextDayPermit.ExpiredDateTime = nextDayPermit.ExpiredDateTime;
+
+            newNextDayPermit.UseCurrentPermitNumberForZeroEnergyFormNumber = false;
+
+            newNextDayPermit.WorkOrderNumber = nextDayPermit.WorkOrderNumber;
+            newNextDayPermit.OperationNumber = nextDayPermit.OperationNumber;
+            newNextDayPermit.SubOperationNumber = nextDayPermit.SubOperationNumber;
+
+            newNextDayPermit.DocumentLinks = newNextDayPermit.DocumentLinks.ConvertAll(link => link.CloneWithoutId());
+
+            if (!IncludeFormInCopy(FormGN59, newNextDayPermit))
+            {
+                newNextDayPermit.FormGN59 = null;
+            }
+
+            if (!IncludeFormInCopy(FormGN7, newNextDayPermit))
+            {
+                newNextDayPermit.FormGN7 = null;
+            }
+
+            if (!IncludeFormInCopy(FormGN24, newNextDayPermit))
+            {
+                newNextDayPermit.FormGN24 = null;
+            }
+
+            if (!IncludeFormInCopy(FormGN6, newNextDayPermit))
+            {
+                newNextDayPermit.FormGN6 = null;
+            }
+
+            if (!IncludeFormInCopy(FormGN75A, newNextDayPermit))
+            {
+                newNextDayPermit.FormGN75A = null;
+            }
+
+            if (!IncludeFormInCopy(FormGN1, newNextDayPermit))
+            {
+                newNextDayPermit.FormGN1 = null;
+                newNextDayPermit.FormGN1TradeChecklistDisplayNumber = null;
+                newNextDayPermit.FormGN1TradeChecklistId = null;
+
+                newNextDayPermit.RescuePlanFormNumber = null;
+                newNextDayPermit.ConfinedSpaceCardNumber = null;
+            }
+
+            nextDayPermit = newNextDayPermit;
+        }
+
+        private bool IncludeFormInCopy(BaseEdmontonForm form, WorkPermitEdmonton targetPermit)
+        {
+            return form != null && !form.IsDeleted && form.FormStatus.IsOneOf(FormStatus.Draft, FormStatus.Approved) &&
+                   form.IsWorkPermitDatesWithinFormDates(targetPermit);
+        }
+
+        public void ConvertToCloneNew() // Swapnil Patki For DMND0005325 Point Number 3
+        {
+            DataSource = DataSource.CLONE;
+
+            CreatedBy = null;
+        }
+
+        public void ConvertToClone(DateTime expiryDateTime)
+        {
+            Id = null;
+            PermitNumber = null;
+            LastModifiedBy = null;
+            LastModifiedDateTime = Clock.Now;
+
+            DataSource = DataSource.CLONE;
+
+            CreatedBy = null;
+
+            DocumentLinks.Clear();
+            UseCurrentPermitNumberForZeroEnergyFormNumber = false;
+
+            RequestedStartDateTime = Clock.Now;
+            ExpiredDateTime = expiryDateTime;
+
+            // only include the forms where the work permit is within the date range of the form.
+            if (FormGN59 != null &&
+                (FormGN59.IsDeleted || !FormGN59.FormStatus.IsOneOf(FormStatus.Draft, FormStatus.Approved) ||
+                 !FormGN59.IsWorkPermitDatesWithinFormDates(this)))
+            {
+                FormGN59 = null;
+            }
+            if (FormGN7 != null &&
+                (FormGN7.IsDeleted || !FormGN7.FormStatus.IsOneOf(FormStatus.Draft, FormStatus.Approved) ||
+                 !FormGN7.IsWorkPermitDatesWithinFormDates(this)))
+            {
+                FormGN7 = null;
+            }
+            if (FormGN24 != null &&
+                (FormGN24.IsDeleted || !FormGN24.FormStatus.IsOneOf(FormStatus.Draft, FormStatus.Approved) ||
+                 !FormGN24.IsWorkPermitDatesWithinFormDates(this)))
+            {
+                FormGN24 = null;
+            }
+            if (FormGN6 != null &&
+                (FormGN6.IsDeleted || !FormGN6.FormStatus.IsOneOf(FormStatus.Draft, FormStatus.Approved) ||
+                 !FormGN6.IsWorkPermitDatesWithinFormDates(this)))
+            {
+                FormGN6 = null;
+            }
+            if (FormGN75A != null &&
+                (FormGN75A.IsDeleted || !FormGN75A.FormStatus.IsOneOf(FormStatus.Draft, FormStatus.Approved) ||
+                 !FormGN75A.IsWorkPermitDatesWithinFormDates(this)))
+            {
+                FormGN75A = null;
+            }
+            if (FormGN1 != null &&
+                (FormGN1.IsDeleted || !FormGN1.FormStatus.IsOneOf(FormStatus.Draft, FormStatus.Approved) ||
+                 !FormGN1.IsWorkPermitDatesWithinFormDates(this)))
+            {
+                FormGN1 = null;
+                FormGN1TradeChecklistDisplayNumber = null;
+                FormGN1TradeChecklistId = null;
+                // don't clone these when the FormGN1 is selected, but that existing FormGN1 can't be cloned.
+                RescuePlanFormNumber = null;
+                ConfinedSpaceCardNumber = null;
+            }
+
+            IssuedDateTime = null;
+            IssuedByUser = null;
+        }
+
+        public void BuildPermitToSubmit(PermitRequestEdmonton request, User user, DateTime now, Date workPermitDate,
+            DateTime startDateTime)
+        {
+            IssuedToSuncor = request.IssuedToSuncor;
+            IssuedToCompany = !request.Company.IsNullOrEmptyOrWhitespace();
+            Company = request.Company;
+            Occupation = request.Occupation;
+            NumberOfWorkers = request.NumberOfWorkers;
+            Group = request.Group;
+            Priority = request.Priority;
+
+            FunctionalLocation = request.FunctionalLocation;
+            Location = request.Location;
+            AreaLabel = request.AreaLabel;
+
+            AlkylationEntry = request.AlkylationEntry;
+            AlkylationEntryClassOfClothing = request.AlkylationEntryClassOfClothing;
+            FlarePitEntry = request.FlarePitEntry;
+            FlarePitEntryType = request.FlarePitEntryType;
+
+            ConfinedSpace = request.ConfinedSpace;
+            ConfinedSpaceCardNumber = request.ConfinedSpaceCardNumber;
+            ConfinedSpaceClass = request.ConfinedSpaceClass;
+
+            RescuePlan = request.RescuePlan;
+            RescuePlanFormNumber = request.RescuePlanFormNumber;
+
+            VehicleEntry = request.VehicleEntry;
+            VehicleEntryTotal = request.VehicleEntryTotal;
+            VehicleEntryType = request.VehicleEntryType;
+
+            SpecialWork = request.SpecialWork;
+            SpecialWorkFormNumber = request.SpecialWorkFormNumber;
+            //SpecialWorkType = request.SpecialWorkType;
+            SpecialWorkList = request.specialworktype;//mangesh for SpecialWork
+            SpecialWorkName = request.SpecialWorkName;
+
+            GN59 = request.GN59;
+            FormGN59 = request.FormGN59;
+            GN7 = request.GN7;
+            FormGN7 = request.FormGN7;
+            GN24 = request.GN24;
+            FormGN24 = request.FormGN24;
+            GN6 = request.GN6;
+            FormGN6 = request.FormGN6;
+            GN75A = request.GN75A;
+            FormGN75A = request.FormGN75A;
+
+            GN1 = request.GN1;
+            FormGN1 = request.FormGN1;
+            FormGN1TradeChecklistDisplayNumber = request.FormGN1TradeChecklistDisplayNumber;
+            FormGN1TradeChecklistId = request.FormGN1TradeChecklistId;
+
+            GN6_Deprecated = request.GN6_Deprecated;
+            GN11 = request.GN11;
+            GN24_Deprecated = request.GN24_Deprecated;
+            GN27 = request.GN27;
+            GN75_Deprecated = request.GN75_Deprecated;
+
+            DocumentLinks = request.DocumentLinks.ConvertAll(link => new DocumentLink(link.Url, link.Title));
+
+            var requestedStartDateTime = workPermitDate.CreateDateTime(startDateTime.ToTime());
+            RequestedStartDateTime = requestedStartDateTime;
+
+            var endDateTime = UserShift(RequestedStartDateTime).EndDateTime;
+            var permitEndDateTime =
+                endDateTime.Add(request.Group.IsTurnaround
+                    ? TurnaroundPermitEndTimeOffset
+                    : NonTurnaroundPermitEndTimeOffset);
+            ExpiredDateTime = permitEndDateTime;
+
+            WorkOrderNumber = request.WorkOrderNumber;
+            OperationNumber = request.OperationNumberListAsString;
+            SubOperationNumber = request.SubOperationNumberListAsString;
+
+            TaskDescription = request.Description;
+            HazardsAndOrRequirements = request.HazardsAndOrRequirements;
+
+            OtherAreasAndOrUnitsAffected = !request.OtherAreasAndOrUnitsAffectedArea.IsNullOrEmptyOrWhitespace() ||
+                                           !request.OtherAreasAndOrUnitsAffectedPersonNotified.IsNullOrEmptyOrWhitespace
+                                               ();
+            OtherAreasAndOrUnitsAffectedArea = request.OtherAreasAndOrUnitsAffectedArea;
+            OtherAreasAndOrUnitsAffectedPersonNotified = request.OtherAreasAndOrUnitsAffectedPersonNotified;
+
+            WorkersMinimumSafetyRequirementsSectionNotApplicableToJob =
+                request.WorkersMinimumSafetyRequirementsSectionNotApplicableToJob;
+
+            if (!WorkersMinimumSafetyRequirementsSectionNotApplicableToJob)
+            {
+                FaceShield = request.FaceShield;
+                Goggles = request.Goggles;
+                RubberBoots = request.RubberBoots;
+                RubberGloves = request.RubberGloves;
+                RubberSuit = request.RubberSuit;
+                SafetyHarnessLifeline = request.SafetyHarnessLifeline;
+                HighVoltagePPE = request.HighVoltagePPE;
+                Other1Checked = !request.Other1.IsNullOrEmptyOrWhitespace();
+                Other1 = request.Other1;
+
+                EquipmentGrounded = request.EquipmentGrounded;
+                FireBlanket = request.FireBlanket;
+                FireExtinguisher = request.FireExtinguisher;
+                FireMonitorManned = request.FireMonitorManned;
+                FireWatch = request.FireWatch;
+                SewersDrainsCovered = request.SewersDrainsCovered;
+                SteamHose = request.SteamHose;
+                Other2Checked = !request.Other2.IsNullOrEmptyOrWhitespace();
+                Other2 = request.Other2;
+
+                AirPurifyingRespirator = request.AirPurifyingRespirator;
+                BreathingAirApparatus = request.BreathingAirApparatus;
+                DustMask = request.DustMask;
+                LifeSupportSystem = request.LifeSupportSystem;
+                SafetyWatch = request.SafetyWatch;
+                ContinuousGasMonitor = request.ContinuousGasMonitor;
+                WorkersMonitor = request.WorkersMonitor;
+                WorkersMonitorNumber = request.WorkersMonitorNumber;
+                BumpTestMonitorPriorToUse = request.BumpTestMonitorPriorToUse;
+                Other3Checked = !request.Other3.IsNullOrEmptyOrWhitespace();
+                Other3 = request.Other3;
+
+                AirMover = request.AirMover;
+                BarriersSigns = request.BarriersSigns;
+                RadioChannel = request.RadioChannel;
+                RadioChannelNumber = request.RadioChannelNumber;
+                AirHorn = request.AirHorn;
+                MechVentilationComfortOnly = request.MechVentilationComfortOnly;
+                AsbestosMMCPrecautions = request.AsbestosMMCPrecautions;
+                Other4Checked = !request.Other4.IsNullOrEmptyOrWhitespace();
+                Other4 = request.Other4;
+            }
+
+            PermitRequestCreatedByUser = request.CreatedBy;
+
+            LastModifiedBy = user;
+            LastModifiedDateTime = now;
+        }
+
+        public static UserShift UserShift(DateTime dateTime)
+        {
+            var currentTime = dateTime.ToTime();
+            var currentDate = dateTime.ToDate();
+
+            var shiftPattern = IsDayShift(currentTime)
+                ? new ShiftPattern(0, "D", DayShiftStartTime, NightShiftStartTime, dateTime, null, TimeSpan.Zero,
+                    TimeSpan.Zero)
+                : new ShiftPattern(0, "N", NightShiftStartTime, DayShiftStartTime, dateTime, null, TimeSpan.Zero,
+                    TimeSpan.Zero);
+
+            if (currentTime < DayShiftStartTime)
+            {
+                currentDate = currentDate.SubtractDays(1);
+            }
+
+            var userShift = new UserShift(shiftPattern, currentDate);
+            return userShift;
+        }
+
+        public static bool IsDayShift(Time time)
+        {
+            return (time >= DayShiftStartTime && time < NightShiftStartTime);
+        }
+
+        public WorkPermitEdmontonHistory TakeSnapshot()
+        {
+            return new WorkPermitEdmontonHistory(this);
+        }
+
+        public static string GetLocation(FunctionalLocation floc)
+        {
+            if (floc == null)
+            {
+                return null;
+            }
+
+            return floc.Description;
+        }
+
+        public DateTime GetDefaultExpiryDateTimeBasedOnGroup(UserShift userShift)
+        {
+            var shiftEndDateTime = userShift.EndDateTime;
+            //return
+            //    shiftEndDateTime.Add(Group.IsTurnaround
+            //        ? TurnaroundPermitEndTimeOffset
+            //        : NonTurnaroundPermitEndTimeOffset);
+
+            //mangesh - Cloning fails for incomplete Work Permit
+            //Error occured when : 1.select only mandatory field and save running unit work permit 2.clone it :- null reference error 
+            if (Group != null)
+            {
+                shiftEndDateTime = shiftEndDateTime.Add(Group.IsTurnaround
+                    ? TurnaroundPermitEndTimeOffset
+                    : NonTurnaroundPermitEndTimeOffset);
+            }
+            else
+            {
+                shiftEndDateTime =  shiftEndDateTime.Add(NonTurnaroundPermitEndTimeOffset);
+            }
+
+            return shiftEndDateTime;
+        }
+
+        public void MaybeSetZeroEnergyFormNumber(long? permitNumber)
+        {
+            if (ZeroEnergyFormNumber.IsNullOrEmptyOrWhitespace() && UseCurrentPermitNumberForZeroEnergyFormNumber &&
+                permitNumber.HasValue)
+            {
+                ZeroEnergyFormNumber = permitNumber.ToString();
+            }
+        }
+    }
+}

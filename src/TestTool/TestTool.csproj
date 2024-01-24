@@ -1,0 +1,319 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{344690B8-F40D-41F7-AEBB-28B18349C1EE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TestTool</RootNamespace>
+    <AssemblyName>TestTool</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>A69F2E4B1D8B2C296D295DCAEA6E294BC3B12478</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>TestTool_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Office.v13.2.Core, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v13.2.Core, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v13.2.Core, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.SpellChecker.v13.2.Core, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraRichEdit.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraRichEdit.v13.2.Extensions, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraSpellChecker.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics.Excel">
+      <HintPath>..\..\lib\Infragistics.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\..\lib\NET-4-0\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Builder.cs" />
+    <Compile Include="DevExRtfControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DevExRtfControl.Designer.cs">
+      <DependentUpon>DevExRtfControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CsvFlocParserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CsvFlocParserControl.Designer.cs">
+      <DependentUpon>CsvFlocParserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OpmTagValuePullControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OpmTagValuePullControl.Designer.cs">
+      <DependentUpon>OpmTagValuePullControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OpmToeDefinitionPullControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OpmToeDefinitionPullControl.Designer.cs">
+      <DependentUpon>OpmToeDefinitionPullControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OpmExcursionProxyControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OpmExcursionProxyControl.Designer.cs">
+      <DependentUpon>OpmExcursionProxyControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PermitRequestControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PermitRequestControl.Designer.cs">
+      <DependentUpon>PermitRequestControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OpmExcursionPullControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OpmExcursionPullControl.Designer.cs">
+      <DependentUpon>OpmExcursionPullControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PermitRequestPullControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PermitRequestPullControl.Designer.cs">
+      <DependentUpon>PermitRequestPullControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="DevExRtfControl.resx">
+      <DependentUpon>DevExRtfControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CsvFlocParserControl.resx">
+      <DependentUpon>CsvFlocParserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OpmTagValuePullControl.resx">
+      <DependentUpon>OpmTagValuePullControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OpmToeDefinitionPullControl.resx">
+      <DependentUpon>OpmToeDefinitionPullControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OpmExcursionProxyControl.resx">
+      <DependentUpon>OpmExcursionProxyControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PermitRequestControl.resx">
+      <DependentUpon>PermitRequestControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OpmExcursionPullControl.resx">
+      <DependentUpon>OpmExcursionPullControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PermitRequestPullControl.resx">
+      <DependentUpon>PermitRequestPullControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RoleMatrixLoaderControl.resx">
+      <DependentUpon>RoleMatrixLoaderControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RoleReportControl.resx">
+      <DependentUpon>RoleReportControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SapHandlerControl.resx">
+      <DependentUpon>SapHandlerControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WcfControl.resx">
+      <DependentUpon>WcfControl.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="RoleMatrixLoaderControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RoleMatrixLoaderControl.Designer.cs">
+      <DependentUpon>RoleMatrixLoaderControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RoleReportControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RoleReportControl.Designer.cs">
+      <DependentUpon>RoleReportControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SapHandlerControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SapHandlerControl.Designer.cs">
+      <DependentUpon>SapHandlerControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Submit.cs" />
+    <Compile Include="UserProvidedOpmXhqServiceSettings.cs" />
+    <Compile Include="WcfControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WcfControl.Designer.cs">
+      <DependentUpon>WcfControl.cs</DependentUpon>
+    </Compile>
+    <None Include="TestTool_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ClientApp\App\ClientApp.App.csproj">
+      <Project>{E286A1AC-CA29-4F37-8DA0-886212C5FF7D}</Project>
+      <Name>ClientApp.App</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\App\Common.App.csproj">
+      <Project>{31784A4C-5836-4671-88CD-5FE0B962BC3E}</Project>
+      <Name>Common.App</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RemoteApp\App\RemoteApp.App.csproj">
+      <Project>{69FA8ADA-E17D-4FFF-93FC-C5DB1D39599E}</Project>
+      <Name>RemoteApp.App</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>copy $(ProjectDir)licenses.licx $(ProjectDir)Properties</PreBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

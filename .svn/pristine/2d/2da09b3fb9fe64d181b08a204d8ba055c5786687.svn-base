@@ -1,0 +1,1146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="&gt;&gt;shiftGroupBox.Name" xml:space="preserve">
+    <value>shiftGroupBox</value>
+  </data>
+  <data name="&gt;&gt;shiftGroupBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltGroupBox, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;shiftGroupBox.Parent" xml:space="preserve">
+    <value>ultraExplorerBarContainerControl1</value>
+  </data>
+  <data name="&gt;&gt;shiftGroupBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;lastModifiedDateAuthorHeader.Name" xml:space="preserve">
+    <value>lastModifiedDateAuthorHeader</value>
+  </data>
+  <data name="&gt;&gt;lastModifiedDateAuthorHeader.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLastModifiedDateAuthorHeader, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;lastModifiedDateAuthorHeader.Parent" xml:space="preserve">
+    <value>ultraExplorerBarContainerControl1</value>
+  </data>
+  <data name="&gt;&gt;lastModifiedDateAuthorHeader.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="ultraExplorerBarContainerControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>32, 2</value>
+  </data>
+  <data name="ultraExplorerBarContainerControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>742, 41</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="ultraExplorerBarContainerControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>999</value>
+  </data>
+  <data name="&gt;&gt;ultraExplorerBarContainerControl1.Name" xml:space="preserve">
+    <value>ultraExplorerBarContainerControl1</value>
+  </data>
+  <data name="&gt;&gt;ultraExplorerBarContainerControl1.Type" xml:space="preserve">
+    <value>Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarContainerControl, Infragistics2.Win.UltraWinExplorerBar.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb</value>
+  </data>
+  <data name="&gt;&gt;ultraExplorerBarContainerControl1.Parent" xml:space="preserve">
+    <value>explorerBar</value>
+  </data>
+  <data name="&gt;&gt;ultraExplorerBarContainerControl1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="shiftGroupBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="shiftLabelData.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="shiftLabelData.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="shiftLabelData.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 16</value>
+  </data>
+  <data name="shiftLabelData.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 13</value>
+  </data>
+  <data name="shiftLabelData.TabIndex" type="System.Int32, mscorlib">
+    <value>999</value>
+  </data>
+  <data name="shiftLabelData.Text" xml:space="preserve">
+    <value>&lt;Shift&gt;</value>
+  </data>
+  <data name="shiftLabelData.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;shiftLabelData.Name" xml:space="preserve">
+    <value>shiftLabelData</value>
+  </data>
+  <data name="&gt;&gt;shiftLabelData.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabelData, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;shiftLabelData.Parent" xml:space="preserve">
+    <value>shiftGroupBox</value>
+  </data>
+  <data name="&gt;&gt;shiftLabelData.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="shiftGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>658, 0</value>
+  </data>
+  <data name="shiftGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>81, 38</value>
+  </data>
+  <data name="shiftGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>999</value>
+  </data>
+  <data name="shiftGroupBox.Text" xml:space="preserve">
+    <value>Shift</value>
+  </data>
+  <data name="&gt;&gt;shiftGroupBox.Name" xml:space="preserve">
+    <value>shiftGroupBox</value>
+  </data>
+  <data name="&gt;&gt;shiftGroupBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltGroupBox, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;shiftGroupBox.Parent" xml:space="preserve">
+    <value>ultraExplorerBarContainerControl1</value>
+  </data>
+  <data name="&gt;&gt;shiftGroupBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lastModifiedDateAuthorHeader.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="lastModifiedDateAuthorHeader.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="lastModifiedDateAuthorHeader.Size" type="System.Drawing.Size, System.Drawing">
+    <value>652, 38</value>
+  </data>
+  <data name="lastModifiedDateAuthorHeader.TabIndex" type="System.Int32, mscorlib">
+    <value>999</value>
+  </data>
+  <data name="&gt;&gt;lastModifiedDateAuthorHeader.Name" xml:space="preserve">
+    <value>lastModifiedDateAuthorHeader</value>
+  </data>
+  <data name="&gt;&gt;lastModifiedDateAuthorHeader.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLastModifiedDateAuthorHeader, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;lastModifiedDateAuthorHeader.Parent" xml:space="preserve">
+    <value>ultraExplorerBarContainerControl1</value>
+  </data>
+  <data name="&gt;&gt;lastModifiedDateAuthorHeader.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;oltLabelLine1.Name" xml:space="preserve">
+    <value>oltLabelLine1</value>
+  </data>
+  <data name="&gt;&gt;oltLabelLine1.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabelLine, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;oltLabelLine1.Parent" xml:space="preserve">
+    <value>ultraExplorerBarContainerControl3</value>
+  </data>
+  <data name="&gt;&gt;oltLabelLine1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="ultraExplorerBarContainerControl3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 49</value>
+  </data>
+  <data name="ultraExplorerBarContainerControl3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>792, 13</value>
+  </data>
+  <data name="ultraExplorerBarContainerControl3.TabIndex" type="System.Int32, mscorlib">
+    <value>999</value>
+  </data>
+  <data name="&gt;&gt;ultraExplorerBarContainerControl3.Name" xml:space="preserve">
+    <value>ultraExplorerBarContainerControl3</value>
+  </data>
+  <data name="&gt;&gt;ultraExplorerBarContainerControl3.Type" xml:space="preserve">
+    <value>Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarContainerControl, Infragistics2.Win.UltraWinExplorerBar.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb</value>
+  </data>
+  <data name="&gt;&gt;ultraExplorerBarContainerControl3.Parent" xml:space="preserve">
+    <value>explorerBar</value>
+  </data>
+  <data name="&gt;&gt;ultraExplorerBarContainerControl3.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="oltLabelLine1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="oltLabelLine1.Label" xml:space="preserve">
+    <value>Details</value>
+  </data>
+  <data name="oltLabelLine1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="oltLabelLine1.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 3</value>
+  </data>
+  <data name="oltLabelLine1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>792, 13</value>
+  </data>
+  <data name="oltLabelLine1.TabIndex" type="System.Int32, mscorlib">
+    <value>999</value>
+  </data>
+  <data name="&gt;&gt;oltLabelLine1.Name" xml:space="preserve">
+    <value>oltLabelLine1</value>
+  </data>
+  <data name="&gt;&gt;oltLabelLine1.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabelLine, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;oltLabelLine1.Parent" xml:space="preserve">
+    <value>ultraExplorerBarContainerControl3</value>
+  </data>
+  <data name="&gt;&gt;oltLabelLine1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;functionalLocationGroupBox.Name" xml:space="preserve">
+    <value>functionalLocationGroupBox</value>
+  </data>
+  <data name="&gt;&gt;functionalLocationGroupBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltGroupBox, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;functionalLocationGroupBox.Parent" xml:space="preserve">
+    <value>ultraExplorerBarContainerControl2</value>
+  </data>
+  <data name="&gt;&gt;functionalLocationGroupBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;handoverTypeGroupBox.Name" xml:space="preserve">
+    <value>handoverTypeGroupBox</value>
+  </data>
+  <data name="&gt;&gt;handoverTypeGroupBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltGroupBox, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;handoverTypeGroupBox.Parent" xml:space="preserve">
+    <value>ultraExplorerBarContainerControl2</value>
+  </data>
+  <data name="&gt;&gt;handoverTypeGroupBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="ultraExplorerBarContainerControl2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>32, 68</value>
+  </data>
+  <data name="ultraExplorerBarContainerControl2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>742, 112</value>
+  </data>
+  <data name="ultraExplorerBarContainerControl2.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;ultraExplorerBarContainerControl2.Name" xml:space="preserve">
+    <value>ultraExplorerBarContainerControl2</value>
+  </data>
+  <data name="&gt;&gt;ultraExplorerBarContainerControl2.Type" xml:space="preserve">
+    <value>Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarContainerControl, Infragistics2.Win.UltraWinExplorerBar.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb</value>
+  </data>
+  <data name="&gt;&gt;ultraExplorerBarContainerControl2.Parent" xml:space="preserve">
+    <value>explorerBar</value>
+  </data>
+  <data name="&gt;&gt;ultraExplorerBarContainerControl2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="functionalLocationGroupBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;removeFunctionalLocationButton.Name" xml:space="preserve">
+    <value>removeFunctionalLocationButton</value>
+  </data>
+  <data name="&gt;&gt;removeFunctionalLocationButton.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltButton, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;removeFunctionalLocationButton.Parent" xml:space="preserve">
+    <value>functionalLocationGroupBox</value>
+  </data>
+  <data name="&gt;&gt;removeFunctionalLocationButton.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;functionalLocationListBox.Name" xml:space="preserve">
+    <value>functionalLocationListBox</value>
+  </data>
+  <data name="&gt;&gt;functionalLocationListBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.Controls.FunctionalLocationListBox, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;functionalLocationListBox.Parent" xml:space="preserve">
+    <value>functionalLocationGroupBox</value>
+  </data>
+  <data name="&gt;&gt;functionalLocationListBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;addFunctionalLocationButton.Name" xml:space="preserve">
+    <value>addFunctionalLocationButton</value>
+  </data>
+  <data name="&gt;&gt;addFunctionalLocationButton.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltButton, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;addFunctionalLocationButton.Parent" xml:space="preserve">
+    <value>functionalLocationGroupBox</value>
+  </data>
+  <data name="&gt;&gt;addFunctionalLocationButton.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="functionalLocationGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>286, -3</value>
+  </data>
+  <data name="functionalLocationGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>453, 116</value>
+  </data>
+  <data name="functionalLocationGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>999</value>
+  </data>
+  <data name="functionalLocationGroupBox.Text" xml:space="preserve">
+    <value>Functional Locations</value>
+  </data>
+  <data name="&gt;&gt;functionalLocationGroupBox.Name" xml:space="preserve">
+    <value>functionalLocationGroupBox</value>
+  </data>
+  <data name="&gt;&gt;functionalLocationGroupBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltGroupBox, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;functionalLocationGroupBox.Parent" xml:space="preserve">
+    <value>ultraExplorerBarContainerControl2</value>
+  </data>
+  <data name="&gt;&gt;functionalLocationGroupBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="removeFunctionalLocationButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="removeFunctionalLocationButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>340, 56</value>
+  </data>
+  <data name="removeFunctionalLocationButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>105, 23</value>
+  </data>
+  <data name="removeFunctionalLocationButton.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="removeFunctionalLocationButton.Text" xml:space="preserve">
+    <value>Remove Selected</value>
+  </data>
+  <data name="&gt;&gt;removeFunctionalLocationButton.Name" xml:space="preserve">
+    <value>removeFunctionalLocationButton</value>
+  </data>
+  <data name="&gt;&gt;removeFunctionalLocationButton.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltButton, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;removeFunctionalLocationButton.Parent" xml:space="preserve">
+    <value>functionalLocationGroupBox</value>
+  </data>
+  <data name="&gt;&gt;removeFunctionalLocationButton.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="functionalLocationListBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="functionalLocationListBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 17</value>
+  </data>
+  <data name="functionalLocationListBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>313, 82</value>
+  </data>
+  <data name="functionalLocationListBox.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;functionalLocationListBox.Name" xml:space="preserve">
+    <value>functionalLocationListBox</value>
+  </data>
+  <data name="&gt;&gt;functionalLocationListBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.Controls.FunctionalLocationListBox, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;functionalLocationListBox.Parent" xml:space="preserve">
+    <value>functionalLocationGroupBox</value>
+  </data>
+  <data name="&gt;&gt;functionalLocationListBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="addFunctionalLocationButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="addFunctionalLocationButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>340, 27</value>
+  </data>
+  <data name="addFunctionalLocationButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>105, 23</value>
+  </data>
+  <data name="addFunctionalLocationButton.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="addFunctionalLocationButton.Text" xml:space="preserve">
+    <value>Add ...</value>
+  </data>
+  <data name="&gt;&gt;addFunctionalLocationButton.Name" xml:space="preserve">
+    <value>addFunctionalLocationButton</value>
+  </data>
+  <data name="&gt;&gt;addFunctionalLocationButton.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltButton, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;addFunctionalLocationButton.Parent" xml:space="preserve">
+    <value>functionalLocationGroupBox</value>
+  </data>
+  <data name="&gt;&gt;addFunctionalLocationButton.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;endDateTimeLabel.Name" xml:space="preserve">
+    <value>endDateTimeLabel</value>
+  </data>
+  <data name="&gt;&gt;endDateTimeLabel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;endDateTimeLabel.Parent" xml:space="preserve">
+    <value>handoverTypeGroupBox</value>
+  </data>
+  <data name="&gt;&gt;endDateTimeLabel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;ShiftEndDatePickerDatePicker.Name" xml:space="preserve">
+    <value>ShiftEndDatePickerDatePicker</value>
+  </data>
+  <data name="&gt;&gt;ShiftEndDatePickerDatePicker.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltDatePicker, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;ShiftEndDatePickerDatePicker.Parent" xml:space="preserve">
+    <value>handoverTypeGroupBox</value>
+  </data>
+  <data name="&gt;&gt;ShiftEndDatePickerDatePicker.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;startDateTimeLabel.Name" xml:space="preserve">
+    <value>startDateTimeLabel</value>
+  </data>
+  <data name="&gt;&gt;startDateTimeLabel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;startDateTimeLabel.Parent" xml:space="preserve">
+    <value>handoverTypeGroupBox</value>
+  </data>
+  <data name="&gt;&gt;startDateTimeLabel.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;ShiftStartDateDatePicker.Name" xml:space="preserve">
+    <value>ShiftStartDateDatePicker</value>
+  </data>
+  <data name="&gt;&gt;ShiftStartDateDatePicker.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltDatePicker, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;ShiftStartDateDatePicker.Parent" xml:space="preserve">
+    <value>handoverTypeGroupBox</value>
+  </data>
+  <data name="&gt;&gt;ShiftStartDateDatePicker.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;FlextShiftHandover_ChkBox.Name" xml:space="preserve">
+    <value>FlextShiftHandover_ChkBox</value>
+  </data>
+  <data name="&gt;&gt;FlextShiftHandover_ChkBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;FlextShiftHandover_ChkBox.Parent" xml:space="preserve">
+    <value>handoverTypeGroupBox</value>
+  </data>
+  <data name="&gt;&gt;FlextShiftHandover_ChkBox.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;handoverTypeComboBox.Name" xml:space="preserve">
+    <value>handoverTypeComboBox</value>
+  </data>
+  <data name="&gt;&gt;handoverTypeComboBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltComboBox, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;handoverTypeComboBox.Parent" xml:space="preserve">
+    <value>handoverTypeGroupBox</value>
+  </data>
+  <data name="&gt;&gt;handoverTypeComboBox.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;FlexiShiftHandoverGroupBox.Name" xml:space="preserve">
+    <value>FlexiShiftHandoverGroupBox</value>
+  </data>
+  <data name="&gt;&gt;FlexiShiftHandoverGroupBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltGroupBox, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;FlexiShiftHandoverGroupBox.Parent" xml:space="preserve">
+    <value>handoverTypeGroupBox</value>
+  </data>
+  <data name="&gt;&gt;FlexiShiftHandoverGroupBox.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="handoverTypeGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, -3</value>
+  </data>
+  <data name="handoverTypeGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>280, 116</value>
+  </data>
+  <data name="handoverTypeGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="handoverTypeGroupBox.Text" xml:space="preserve">
+    <value>Shift Handover Type</value>
+  </data>
+  <data name="&gt;&gt;handoverTypeGroupBox.Name" xml:space="preserve">
+    <value>handoverTypeGroupBox</value>
+  </data>
+  <data name="&gt;&gt;handoverTypeGroupBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltGroupBox, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;handoverTypeGroupBox.Parent" xml:space="preserve">
+    <value>ultraExplorerBarContainerControl2</value>
+  </data>
+  <data name="&gt;&gt;handoverTypeGroupBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="endDateTimeLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="endDateTimeLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 92</value>
+  </data>
+  <data name="endDateTimeLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 0</value>
+  </data>
+  <data name="endDateTimeLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 13</value>
+  </data>
+  <data name="endDateTimeLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="endDateTimeLabel.Text" xml:space="preserve">
+    <value>To Date:</value>
+  </data>
+  <data name="endDateTimeLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;endDateTimeLabel.Name" xml:space="preserve">
+    <value>endDateTimeLabel</value>
+  </data>
+  <data name="&gt;&gt;endDateTimeLabel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;endDateTimeLabel.Parent" xml:space="preserve">
+    <value>handoverTypeGroupBox</value>
+  </data>
+  <data name="&gt;&gt;endDateTimeLabel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="ShiftEndDatePickerDatePicker.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ShiftEndDatePickerDatePicker.Location" type="System.Drawing.Point, System.Drawing">
+    <value>76, 88</value>
+  </data>
+  <data name="ShiftEndDatePickerDatePicker.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="ShiftEndDatePickerDatePicker.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 21</value>
+  </data>
+  <data name="ShiftEndDatePickerDatePicker.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;ShiftEndDatePickerDatePicker.Name" xml:space="preserve">
+    <value>ShiftEndDatePickerDatePicker</value>
+  </data>
+  <data name="&gt;&gt;ShiftEndDatePickerDatePicker.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltDatePicker, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;ShiftEndDatePickerDatePicker.Parent" xml:space="preserve">
+    <value>handoverTypeGroupBox</value>
+  </data>
+  <data name="&gt;&gt;ShiftEndDatePickerDatePicker.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="startDateTimeLabel.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="startDateTimeLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 72</value>
+  </data>
+  <data name="startDateTimeLabel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 3, 3, 0</value>
+  </data>
+  <data name="startDateTimeLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 13</value>
+  </data>
+  <data name="startDateTimeLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="startDateTimeLabel.Text" xml:space="preserve">
+    <value>From Date:</value>
+  </data>
+  <data name="startDateTimeLabel.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;startDateTimeLabel.Name" xml:space="preserve">
+    <value>startDateTimeLabel</value>
+  </data>
+  <data name="&gt;&gt;startDateTimeLabel.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabel, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;startDateTimeLabel.Parent" xml:space="preserve">
+    <value>handoverTypeGroupBox</value>
+  </data>
+  <data name="&gt;&gt;startDateTimeLabel.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="ShiftStartDateDatePicker.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="ShiftStartDateDatePicker.Location" type="System.Drawing.Point, System.Drawing">
+    <value>77, 68</value>
+  </data>
+  <data name="ShiftStartDateDatePicker.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="ShiftStartDateDatePicker.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 21</value>
+  </data>
+  <data name="ShiftStartDateDatePicker.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;ShiftStartDateDatePicker.Name" xml:space="preserve">
+    <value>ShiftStartDateDatePicker</value>
+  </data>
+  <data name="&gt;&gt;ShiftStartDateDatePicker.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltDatePicker, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;ShiftStartDateDatePicker.Parent" xml:space="preserve">
+    <value>handoverTypeGroupBox</value>
+  </data>
+  <data name="&gt;&gt;ShiftStartDateDatePicker.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="FlextShiftHandover_ChkBox.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="FlextShiftHandover_ChkBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 43</value>
+  </data>
+  <data name="FlextShiftHandover_ChkBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>137, 17</value>
+  </data>
+  <data name="FlextShiftHandover_ChkBox.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="FlextShiftHandover_ChkBox.Text" xml:space="preserve">
+    <value>Flexible Shift Handover</value>
+  </data>
+  <data name="&gt;&gt;FlextShiftHandover_ChkBox.Name" xml:space="preserve">
+    <value>FlextShiftHandover_ChkBox</value>
+  </data>
+  <data name="&gt;&gt;FlextShiftHandover_ChkBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;FlextShiftHandover_ChkBox.Parent" xml:space="preserve">
+    <value>handoverTypeGroupBox</value>
+  </data>
+  <data name="&gt;&gt;FlextShiftHandover_ChkBox.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="handoverTypeComboBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 16</value>
+  </data>
+  <data name="handoverTypeComboBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>264, 21</value>
+  </data>
+  <data name="handoverTypeComboBox.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;handoverTypeComboBox.Name" xml:space="preserve">
+    <value>handoverTypeComboBox</value>
+  </data>
+  <data name="&gt;&gt;handoverTypeComboBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltComboBox, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;handoverTypeComboBox.Parent" xml:space="preserve">
+    <value>handoverTypeGroupBox</value>
+  </data>
+  <data name="&gt;&gt;handoverTypeComboBox.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="FlexiShiftHandoverGroupBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="FlexiShiftHandoverGroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>11, 57</value>
+  </data>
+  <data name="FlexiShiftHandoverGroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>252, 56</value>
+  </data>
+  <data name="FlexiShiftHandoverGroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>1000</value>
+  </data>
+  <data name="&gt;&gt;FlexiShiftHandoverGroupBox.Name" xml:space="preserve">
+    <value>FlexiShiftHandoverGroupBox</value>
+  </data>
+  <data name="&gt;&gt;FlexiShiftHandoverGroupBox.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltGroupBox, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;FlexiShiftHandoverGroupBox.Parent" xml:space="preserve">
+    <value>handoverTypeGroupBox</value>
+  </data>
+  <data name="&gt;&gt;FlexiShiftHandoverGroupBox.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;logLine.Name" xml:space="preserve">
+    <value>logLine</value>
+  </data>
+  <data name="&gt;&gt;logLine.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabelLine, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;logLine.Parent" xml:space="preserve">
+    <value>ultraExplorerBarContainerControl4</value>
+  </data>
+  <data name="&gt;&gt;logLine.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="ultraExplorerBarContainerControl4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 186</value>
+  </data>
+  <data name="ultraExplorerBarContainerControl4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>792, 13</value>
+  </data>
+  <data name="ultraExplorerBarContainerControl4.TabIndex" type="System.Int32, mscorlib">
+    <value>999</value>
+  </data>
+  <data name="&gt;&gt;ultraExplorerBarContainerControl4.Name" xml:space="preserve">
+    <value>ultraExplorerBarContainerControl4</value>
+  </data>
+  <data name="&gt;&gt;ultraExplorerBarContainerControl4.Type" xml:space="preserve">
+    <value>Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarContainerControl, Infragistics2.Win.UltraWinExplorerBar.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb</value>
+  </data>
+  <data name="&gt;&gt;ultraExplorerBarContainerControl4.Parent" xml:space="preserve">
+    <value>explorerBar</value>
+  </data>
+  <data name="&gt;&gt;ultraExplorerBarContainerControl4.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="logLine.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="logLine.Label" xml:space="preserve">
+    <value>Comments</value>
+  </data>
+  <data name="logLine.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="logLine.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 3</value>
+  </data>
+  <data name="logLine.Size" type="System.Drawing.Size, System.Drawing">
+    <value>792, 13</value>
+  </data>
+  <data name="logLine.TabIndex" type="System.Int32, mscorlib">
+    <value>999</value>
+  </data>
+  <data name="&gt;&gt;logLine.Name" xml:space="preserve">
+    <value>logLine</value>
+  </data>
+  <data name="&gt;&gt;logLine.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltLabelLine, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;logLine.Parent" xml:space="preserve">
+    <value>ultraExplorerBarContainerControl4</value>
+  </data>
+  <data name="&gt;&gt;logLine.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;richTextCommentDisplay.Name" xml:space="preserve">
+    <value>richTextCommentDisplay</value>
+  </data>
+  <data name="&gt;&gt;richTextCommentDisplay.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.Controls.RichTextDisplay, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;richTextCommentDisplay.Parent" xml:space="preserve">
+    <value>ultraExplorerBarContainerControl5</value>
+  </data>
+  <data name="&gt;&gt;richTextCommentDisplay.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="ultraExplorerBarContainerControl5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>32, 205</value>
+  </data>
+  <data name="ultraExplorerBarContainerControl5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>742, 304</value>
+  </data>
+  <data name="ultraExplorerBarContainerControl5.TabIndex" type="System.Int32, mscorlib">
+    <value>999</value>
+  </data>
+  <data name="&gt;&gt;ultraExplorerBarContainerControl5.Name" xml:space="preserve">
+    <value>ultraExplorerBarContainerControl5</value>
+  </data>
+  <data name="&gt;&gt;ultraExplorerBarContainerControl5.Type" xml:space="preserve">
+    <value>Infragistics.Win.UltraWinExplorerBar.UltraExplorerBarContainerControl, Infragistics2.Win.UltraWinExplorerBar.v10.2, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb</value>
+  </data>
+  <data name="&gt;&gt;ultraExplorerBarContainerControl5.Parent" xml:space="preserve">
+    <value>explorerBar</value>
+  </data>
+  <data name="&gt;&gt;ultraExplorerBarContainerControl5.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="richTextCommentDisplay.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="richTextCommentDisplay.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="richTextCommentDisplay.Size" type="System.Drawing.Size, System.Drawing">
+    <value>742, 304</value>
+  </data>
+  <data name="richTextCommentDisplay.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;richTextCommentDisplay.Name" xml:space="preserve">
+    <value>richTextCommentDisplay</value>
+  </data>
+  <data name="&gt;&gt;richTextCommentDisplay.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.Controls.RichTextDisplay, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;richTextCommentDisplay.Parent" xml:space="preserve">
+    <value>ultraExplorerBarContainerControl5</value>
+  </data>
+  <data name="&gt;&gt;richTextCommentDisplay.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="cancelButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="cancelButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>699, 9</value>
+  </data>
+  <data name="cancelButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="cancelButton.TabIndex" type="System.Int32, mscorlib">
+    <value>103</value>
+  </data>
+  <data name="cancelButton.Text" xml:space="preserve">
+    <value>&amp;Cancel</value>
+  </data>
+  <data name="&gt;&gt;cancelButton.Name" xml:space="preserve">
+    <value>cancelButton</value>
+  </data>
+  <data name="&gt;&gt;cancelButton.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltButton, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;cancelButton.Parent" xml:space="preserve">
+    <value>buttonPanel</value>
+  </data>
+  <data name="&gt;&gt;cancelButton.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="saveButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="saveButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>612, 9</value>
+  </data>
+  <data name="saveButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>81, 23</value>
+  </data>
+  <data name="saveButton.TabIndex" type="System.Int32, mscorlib">
+    <value>101</value>
+  </data>
+  <data name="saveButton.Text" xml:space="preserve">
+    <value>&amp;Save &amp;&amp; Close</value>
+  </data>
+  <data name="&gt;&gt;saveButton.Name" xml:space="preserve">
+    <value>saveButton</value>
+  </data>
+  <data name="&gt;&gt;saveButton.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltButton, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;saveButton.Parent" xml:space="preserve">
+    <value>buttonPanel</value>
+  </data>
+  <data name="&gt;&gt;saveButton.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="viewEditHistoryButton.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left</value>
+  </data>
+  <data name="viewEditHistoryButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>32, 9</value>
+  </data>
+  <data name="viewEditHistoryButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="viewEditHistoryButton.TabIndex" type="System.Int32, mscorlib">
+    <value>104</value>
+  </data>
+  <data name="viewEditHistoryButton.Text" xml:space="preserve">
+    <value>&amp;History</value>
+  </data>
+  <data name="&gt;&gt;viewEditHistoryButton.Name" xml:space="preserve">
+    <value>viewEditHistoryButton</value>
+  </data>
+  <data name="&gt;&gt;viewEditHistoryButton.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltButton, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;viewEditHistoryButton.Parent" xml:space="preserve">
+    <value>buttonPanel</value>
+  </data>
+  <data name="&gt;&gt;viewEditHistoryButton.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <metadata name="toolTip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="selectShiftLogMessages.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left</value>
+  </data>
+  <data name="selectShiftLogMessages.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="selectShiftLogMessages.Location" type="System.Drawing.Point, System.Drawing">
+    <value>123, 9</value>
+  </data>
+  <data name="selectShiftLogMessages.Size" type="System.Drawing.Size, System.Drawing">
+    <value>135, 23</value>
+  </data>
+  <data name="selectShiftLogMessages.TabIndex" type="System.Int32, mscorlib">
+    <value>105</value>
+  </data>
+  <data name="selectShiftLogMessages.Text" xml:space="preserve">
+    <value>Round Info</value>
+  </data>
+  <data name="selectShiftLogMessages.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;selectShiftLogMessages.Name" xml:space="preserve">
+    <value>selectShiftLogMessages</value>
+  </data>
+  <data name="&gt;&gt;selectShiftLogMessages.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltButton, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;selectShiftLogMessages.Parent" xml:space="preserve">
+    <value>buttonPanel</value>
+  </data>
+  <data name="&gt;&gt;selectShiftLogMessages.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="buttonPanel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="buttonPanel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 630</value>
+  </data>
+  <data name="buttonPanel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>806, 40</value>
+  </data>
+  <data name="buttonPanel.TabIndex" type="System.Int32, mscorlib">
+    <value>100</value>
+  </data>
+  <data name="&gt;&gt;buttonPanel.Name" xml:space="preserve">
+    <value>buttonPanel</value>
+  </data>
+  <data name="&gt;&gt;buttonPanel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;buttonPanel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;buttonPanel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="explorerBar.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="explorerBar.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt</value>
+  </data>
+  <data name="ultraExplorerBarGroup4.Text" xml:space="preserve">
+    <value>Header Group</value>
+  </data>
+  <data name="ultraExplorerBarGroup2.Text" xml:space="preserve">
+    <value>Details Line Group</value>
+  </data>
+  <data name="ultraExplorerBarGroup1.Text" xml:space="preserve">
+    <value>Details Group</value>
+  </data>
+  <data name="ultraExplorerBarGroup3.Text" xml:space="preserve">
+    <value>Logs Line Group</value>
+  </data>
+  <data name="ultraExplorerBarGroup5.Text" xml:space="preserve">
+    <value>Logs Group</value>
+  </data>
+  <data name="appearance1.FontData.BoldAsString" xml:space="preserve">
+    <value>True</value>
+  </data>
+  <data name="explorerBar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="explorerBar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>806, 630</value>
+  </data>
+  <data name="explorerBar.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;explorerBar.Name" xml:space="preserve">
+    <value>explorerBar</value>
+  </data>
+  <data name="&gt;&gt;explorerBar.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.OltControls.OltExplorerBar, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;explorerBar.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;explorerBar.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="functionLocationBlankErrorProvider.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>871, 17</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>48</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>806, 670</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterParent</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Shift Handover</value>
+  </data>
+  <data name="&gt;&gt;toolTip.Name" xml:space="preserve">
+    <value>toolTip</value>
+  </data>
+  <data name="&gt;&gt;toolTip.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;functionLocationBlankErrorProvider.Name" xml:space="preserve">
+    <value>functionLocationBlankErrorProvider</value>
+  </data>
+  <data name="&gt;&gt;functionLocationBlankErrorProvider.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ErrorProvider, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>ShiftHandoverQuestionnaireForm</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>Com.Suncor.Olt.Client.Forms.BaseForm, Operator Log Tool, Version=5.0.65533.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+</root>

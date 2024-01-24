@@ -1,0 +1,57 @@
+﻿CREATE NONCLUSTERED INDEX [IDX_CustomField_GroupId]
+ON [dbo].[CustomField]
+([CustomFieldGroupId])
+WITH
+(
+PAD_INDEX = OFF,
+FILLFACTOR = 100,
+IGNORE_DUP_KEY = OFF,
+STATISTICS_NORECOMPUTE = OFF,
+ONLINE = OFF,
+ALLOW_ROW_LOCKS = ON,
+ALLOW_PAGE_LOCKS = ON
+)
+ON [PRIMARY];
+GO
+
+CREATE NONCLUSTERED INDEX [IDX_CustomFieldDropDownValue_CustomFieldId]
+ON [dbo].[CustomFieldDropDownValue]
+([CustomFieldId])
+WITH
+(
+PAD_INDEX = OFF,
+FILLFACTOR = 100,
+IGNORE_DUP_KEY = OFF,
+STATISTICS_NORECOMPUTE = OFF,
+ONLINE = OFF,
+ALLOW_ROW_LOCKS = ON,
+ALLOW_PAGE_LOCKS = ON
+)
+ON [PRIMARY];
+GO
+
+ALTER TABLE dbo.CustomFieldGroupWorkAssignment ADD CONSTRAINT [PK_CustomFieldGroupWorkAssignment]
+PRIMARY KEY CLUSTERED ([CustomFieldGroupId], [WorkAssignmentId])
+GO
+
+
+CREATE NONCLUSTERED INDEX [IDX_CustomFieldGroupWorkAssignment]
+ON [dbo].[CustomFieldGroupWorkAssignment]
+([WorkAssignmentId] , [CustomFieldGroupId])
+WITH
+(
+PAD_INDEX = OFF,
+FILLFACTOR = 100,
+IGNORE_DUP_KEY = OFF,
+STATISTICS_NORECOMPUTE = OFF,
+ONLINE = OFF,
+ALLOW_ROW_LOCKS = ON,
+ALLOW_PAGE_LOCKS = ON
+)
+ON [PRIMARY];
+GO
+
+
+
+GO
+

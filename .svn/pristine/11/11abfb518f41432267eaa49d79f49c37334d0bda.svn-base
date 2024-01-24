@@ -1,0 +1,82 @@
+﻿using System;
+using Com.Suncor.Olt.Common.Domain;
+using Com.Suncor.Olt.Common.Utility;
+
+namespace Com.Suncor.Olt.Common.DTO
+{
+    [Serializable]
+    public abstract class BasePermitRequestDTO : DomainObject, IHasDataSource
+    {
+        public BasePermitRequestDTO(
+            long? id,
+            Date endDate,
+            string description,
+            DataSource dataSource,
+            string lastImportedByFullnameWithUserName,
+            DateTime? lastImportedDateTime,
+            string lastSubmittedByFullnameWithUserName,
+            DateTime? lastSubmittedDateTime,
+            long createdByUserId,
+            DateTime lastModifiedDateTime,
+            string lastModifiedByFullnameWithUserName)
+        {
+            Id = id;
+            EndDate = endDate;
+            Description = description;
+
+            DataSource = dataSource;
+            LastImportedByFullnameWithUserName = lastImportedByFullnameWithUserName;
+            LastImportedDateTime = lastImportedDateTime;
+            LastSubmittedByFullnameWithUserName = lastSubmittedByFullnameWithUserName;
+            LastSubmittedDateTime = lastSubmittedDateTime;
+
+            CreatedByUserId = createdByUserId;
+            LastModifiedDateTime = lastModifiedDateTime;
+            LastModifiedByFullnameWithUserName = lastModifiedByFullnameWithUserName;
+        }
+
+        [IncludeInSearch]
+        public string WorkOrderNumber { get; set; }
+
+        public abstract Date StartDate { get; }
+        public Date EndDate { get; private set; }
+
+        [IncludeInSearch]
+        public virtual DateTime? StartDateAsDateTime
+        {
+            get { return StartDate != null ? (DateTime?) StartDate.CreateDateTime(new Time(0)) : null; }
+        }
+
+        [IncludeInSearch]
+        public virtual DateTime? EndDateAsDateTime
+        {
+            get { return EndDate != null ? (DateTime?) EndDate.CreateDateTime(new Time(0)) : null; }
+        }
+
+        [IncludeInSearch]
+        public string Description { get; private set; }
+
+        [IncludeInSearch]
+        public string LastImportedByFullnameWithUserName { get; private set; }
+
+        [IncludeInSearch]
+        public DateTime? LastImportedDateTime { get; private set; }
+
+        [IncludeInSearch]
+        public string LastSubmittedByFullnameWithUserName { get; private set; }
+
+        [IncludeInSearch]
+        public DateTime? LastSubmittedDateTime { get; private set; }
+
+        public long CreatedByUserId { get; private set; }
+
+        [IncludeInSearch]
+        public DateTime LastModifiedDateTime { get; private set; }
+
+        [IncludeInSearch]
+        public string LastModifiedByFullnameWithUserName { get; private set; }
+
+        [IncludeInSearch]
+        public DataSource DataSource { get; private set; }
+    }
+}

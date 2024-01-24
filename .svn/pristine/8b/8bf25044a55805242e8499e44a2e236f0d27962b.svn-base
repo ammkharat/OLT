@@ -1,0 +1,41 @@
+﻿CREATE NONCLUSTERED INDEX [IDX_Schedule_TypeAndEnd]
+ON [dbo].[Schedule]
+([ScheduleTypeId] , [SiteId] , [EndDateTime])
+INCLUDE ([Id])
+WITH
+(
+PAD_INDEX = OFF,
+FILLFACTOR = 100,
+IGNORE_DUP_KEY = OFF,
+STATISTICS_NORECOMPUTE = OFF,
+ONLINE = OFF,
+ALLOW_ROW_LOCKS = ON,
+ALLOW_PAGE_LOCKS = ON,
+DATA_COMPRESSION = NONE
+)
+ON [PRIMARY];
+GO
+
+IF  EXISTS (SELECT * FROM sys.indexes WHERE object_id = OBJECT_ID(N'[dbo].[TargetDefinition]') AND name = N'IDX_TargetDefinition_ScheduleId')
+DROP INDEX [IDX_TargetDefinition_ScheduleId] ON [dbo].[TargetDefinition];
+GO
+
+CREATE UNIQUE NONCLUSTERED INDEX [IDX_TargetDefinition_ScheduleId]
+ON [dbo].[TargetDefinition]
+([ScheduleId])
+WITH
+(
+PAD_INDEX = OFF,
+FILLFACTOR = 90,
+IGNORE_DUP_KEY = OFF,
+STATISTICS_NORECOMPUTE = OFF,
+ALLOW_ROW_LOCKS = ON,
+ALLOW_PAGE_LOCKS = ON,
+DATA_COMPRESSION = NONE
+)
+ON [PRIMARY];
+GO
+
+
+GO
+

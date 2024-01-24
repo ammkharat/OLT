@@ -1,0 +1,71 @@
+﻿using System;
+using Com.Suncor.Olt.Common.Domain;
+using Com.Suncor.Olt.Common.Domain.Excursions;
+using Com.Suncor.Olt.Common.Extension;
+
+namespace Com.Suncor.Olt.Common.DTO.Excursions
+{
+    [Serializable]
+    public class ExcursionResponseEditingGridRowDTO : DomainObject
+    {
+        private string _excursionResponseComment;
+
+        public ExcursionResponseEditingGridRowDTO(long id, long opmExcursionId, string historianTag,
+            string toeName,
+            ToeType toeType, ExcursionStatus status, DateTime startDateTime,
+            decimal peak, decimal average, decimal duration, long? ilpNumber,
+            decimal toeLimitValue, string excursionResponseComment, DateTime? responseLastUpdated,
+            long? oltExcursionResponseId, string opmTrendUrl)
+            : base(id)
+        {
+            OpmExcursionId = opmExcursionId;
+            ToeName = toeName;
+            ToeType = toeType;
+            Status = status;
+            StartDateTime = startDateTime;
+            Peak = peak;
+            Average = average;
+            Duration = duration;
+            IlpNumber = ilpNumber;
+            ToeLimitValue = toeLimitValue;
+            _excursionResponseComment = excursionResponseComment;
+            ResponseLastUpdated = responseLastUpdated;
+            OltExcursionResponseId = oltExcursionResponseId;
+            HistorianTag = historianTag;
+            OpmTrendUrl = opmTrendUrl;
+        }
+
+        public long OpmExcursionId { get; private set; }
+        public string HistorianTag { get; private set; }
+        public string ToeName { get; private set; }
+        public ToeType ToeType { get; private set; }
+        public ExcursionStatus Status { get; private set; }
+        public DateTime StartDateTime { get; private set; }
+        public decimal Peak { get; private set; }
+        public decimal Average { get; private set; }
+        public decimal Duration { get; private set; }
+        public string OpmTrendUrl { get; private set; }
+        public long? IlpNumber { get; private set; }
+        public decimal ToeLimitValue { get; private set; }
+
+        public string Answered
+        {
+            get { return _excursionResponseComment.IsNullOrEmptyOrWhitespace() ? "No" : "Yes"; }
+        }
+
+        public string ExcursionResponseComment
+        {
+            get { return _excursionResponseComment; }
+            set
+            {
+                _excursionResponseComment = value;
+                IsDirty = true;
+            }
+        }
+
+        public bool IsDirty { get; set; }
+
+        public DateTime? ResponseLastUpdated { get; set; }
+        public long? OltExcursionResponseId { get; private set; }
+    }
+}

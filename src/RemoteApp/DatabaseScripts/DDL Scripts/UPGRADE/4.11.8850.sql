@@ -1,0 +1,133 @@
+﻿ALTER TABLE [dbo].[WorkPermitLubes] 
+ADD  CONSTRAINT [FK_WorkPermitLubes_Floc]
+FOREIGN KEY ([FunctionalLocationId])
+REFERENCES [dbo].[FunctionalLocation] ( [Id] )
+GO
+ALTER TABLE [dbo].[WorkPermitLubes] 
+ADD  CONSTRAINT [FK_WorkPermitLubeS_PermitRequest]
+FOREIGN KEY ([PermitRequestId])
+REFERENCES [dbo].[PermitRequestLubes] ( [Id] )
+GO
+
+-- lubes Permit request index for DTOs
+CREATE NONCLUSTERED INDEX [IDX_PermitRequestLubes_DTO]
+ON [dbo].[PermitRequestLubes]
+([RequestedStartDate] , [EndDate])
+WHERE (DELETED = 0)
+WITH
+(
+PAD_INDEX = OFF,
+FILLFACTOR = 90,
+IGNORE_DUP_KEY = OFF,
+STATISTICS_NORECOMPUTE = OFF,
+ONLINE = OFF,
+ALLOW_ROW_LOCKS = ON,
+ALLOW_PAGE_LOCKS = ON,
+DATA_COMPRESSION = NONE
+)
+ON [PRIMARY];
+GO
+
+-- Lubes work permit index for DTOs
+CREATE NONCLUSTERED INDEX [IDX_WorkPermitLubes_DTO]
+ON [dbo].[WorkPermitLubes]
+([StartDateTime] , [ExpireDateTime])
+WHERE (DELETED = 0)
+WITH
+(
+PAD_INDEX = OFF,
+FILLFACTOR = 90,
+IGNORE_DUP_KEY = OFF,
+STATISTICS_NORECOMPUTE = OFF,
+ONLINE = OFF,
+ALLOW_ROW_LOCKS = ON,
+ALLOW_PAGE_LOCKS = ON,
+DATA_COMPRESSION = NONE
+)
+ON [PRIMARY];
+GO
+
+
+CREATE NONCLUSTERED INDEX [IDX_PermitRequestEdmonton_DTO_Covering]
+ON [dbo].[PermitRequestEdmonton]
+([RequestedStartDate] , [EndDate], [FunctionalLocationId])
+INCLUDE ([CompletionStatusId], [GroupId], [DataSourceId])
+WHERE (DELETED = 0)
+WITH
+(
+PAD_INDEX = OFF,
+FILLFACTOR = 90,
+IGNORE_DUP_KEY = OFF,
+STATISTICS_NORECOMPUTE = OFF,
+ONLINE = OFF,
+ALLOW_ROW_LOCKS = ON,
+ALLOW_PAGE_LOCKS = ON,
+DATA_COMPRESSION = NONE,
+DROP_EXISTING = ON
+)
+ON [PRIMARY];
+GO
+
+DROP INDEX [IDX_PermitRequestEdmonton_Covering_Others]
+ON [dbo].[PermitRequestEdmonton]
+
+CREATE NONCLUSTERED INDEX [IDX_WorkPermitEdmonton_DTO_Covering]
+ON [dbo].[WorkPermitEdmonton]
+([RequestedStartDateTime] , [ExpiredDateTime] , [FunctionalLocationId])
+WHERE (DELETED = 0)
+WITH
+(
+PAD_INDEX = OFF,
+FILLFACTOR = 90,
+IGNORE_DUP_KEY = OFF,
+STATISTICS_NORECOMPUTE = OFF,
+ONLINE = OFF,
+ALLOW_ROW_LOCKS = ON,
+ALLOW_PAGE_LOCKS = ON,
+DATA_COMPRESSION = NONE,
+DROP_EXISTING = ON
+)
+ON [PRIMARY];
+GO
+
+
+CREATE NONCLUSTERED INDEX [IDX_Permit_Request]
+ON [dbo].[PermitRequestMontreal]
+([StartDate] , [EndDate])
+WHERE (DELETED = 0)
+WITH
+(
+PAD_INDEX = OFF,
+FILLFACTOR = 90,
+IGNORE_DUP_KEY = OFF,
+STATISTICS_NORECOMPUTE = OFF,
+ONLINE = OFF,
+ALLOW_ROW_LOCKS = ON,
+ALLOW_PAGE_LOCKS = ON,
+DATA_COMPRESSION = NONE,
+DROP_EXISTING = ON
+)
+ON [PRIMARY];
+GO
+
+CREATE NONCLUSTERED INDEX [IDX_WorkPermitMontreal_DTO]
+ON [dbo].[WorkPermitMontreal]
+([StartDateTime] , [EndDateTime])
+WHERE (DELETED = 0)
+WITH
+(
+PAD_INDEX = OFF,
+FILLFACTOR = 90,
+IGNORE_DUP_KEY = OFF,
+STATISTICS_NORECOMPUTE = OFF,
+ONLINE = OFF,
+ALLOW_ROW_LOCKS = ON,
+ALLOW_PAGE_LOCKS = ON,
+DATA_COMPRESSION = NONE,
+DROP_EXISTING = ON
+)
+ON [PRIMARY];
+
+
+GO
+

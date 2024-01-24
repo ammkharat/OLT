@@ -1,0 +1,245 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1354113B-C027-43A9-B018-74E089765ACA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Com.Suncor.Olt.Integration</RootNamespace>
+    <AssemblyName>Suncor.Olt.IntegrationHandlers.IntegrationTest</AssemblyName>
+    <WarningLevel>4</WarningLevel>
+    <ProjectTypeGuids>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>.\bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>false</DebugSymbols>
+    <Optimize>true</Optimize>
+    <OutputPath>.\bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="nunit.framework">
+      <HintPath>..\..\..\..\tools\nunit\framework\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="Osherove.ThreadTester, Version=1.0.0.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\lib\Osherove.ThreadTester.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\..\GlobalAssemblyInfo.cs">
+      <Link>Properties\GlobalAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="HTTPHandlers\Fixtures\FunctionalLocationSAPData.cs" />
+    <Compile Include="HTTPHandlers\Fixtures\FunctionalLocationSAPFixture.cs" />
+    <Compile Include="HTTPHandlers\Fixtures\NotificationFixture.cs" />
+    <Compile Include="HTTPHandlers\Fixtures\NotificationSAPData.cs" />
+    <Compile Include="HTTPHandlers\Fixtures\SAPFixture.cs" />
+    <Compile Include="HTTPHandlers\FunctionalLocationHandlerFunctionalTest.cs" />
+    <Compile Include="HTTPHandlers\NotificationFunctionalTest.cs" />
+    <Compile Include="HTTPHandlers\Utilities\Constants.cs" />
+    <Compile Include="HTTPHandlers\WorkOrderHandlerFunctionalTest.cs" />
+    <Compile Include="PlantDataHistorian\Denver_OSIPIPHDProviderTest.cs" />
+    <Compile Include="PlantDataHistorian\Lubes_HoneywellPHDProviderTest.cs" />
+    <Compile Include="PlantDataHistorian\Montreal_HoneywellPHDProviderTest.cs" />
+    <Compile Include="PlantDataHistorian\OilSands_HoneywellPHD310ProviderTest.cs" />
+    <Compile Include="PlantDataHistorian\PlantHistorianConnectionFixture.cs" />
+    <Compile Include="PlantDataHistorian\PlantHistorianGatewayTest.cs" />
+    <Compile Include="PlantDataHistorian\Sarnia_Honeywell300PHDProviderTest.cs" />
+    <Compile Include="Services\ActionItemDefinitionServiceClientTest.cs" />
+    <Compile Include="Services\ApplicationServiceClientTest.cs" />
+    <Compile Include="Services\AuthorizationMatrixTest.cs" />
+    <Compile Include="Services\BusinessCategoryServiceClientTest.cs" />
+    <Compile Include="Services\BusinessCategoryFLOCAssociationServiceClientTest.cs" />
+    <Compile Include="Services\CokerCardServiceClientTest.cs" />
+    <Compile Include="Services\WorkPermitAutoAssignmentConfigurationServiceClientTest.cs" />
+    <Compile Include="Services\LabAlertDefinitionServiceClientTest.cs" />
+    <Compile Include="Services\EventServiceClientTest.cs" />
+    <Compile Include="Services\FunctionalLocationOperationalModeServiceClientTest.cs" />
+    <Compile Include="Services\IntegrationTestEventNotificationService.cs" />
+    <Compile Include="Services\LabAlertLogResponseDataDependentTests.cs" />
+    <Compile Include="Services\ReportingServiceClientTest.cs" />
+    <Compile Include="Services\SecurityServiceTest.cs" />
+    <Compile Include="Services\TagServiceClientTest.cs" />
+    <Compile Include="Services\TargetDefinitionServiceClientTest.cs" />
+    <Compile Include="Services\UserLoginHistoryServiceClientTest.cs" />
+    <Compile Include="Services\SummaryLogServiceClientTest.cs" />
+    <Compile Include="Services\DeviationAlertServiceClientTest.cs" />
+    <Compile Include="Services\FunctionalLocationServiceClientTest.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Services\PlantHistorianServiceClientTest.cs" />
+    <Compile Include="Services\LogServiceClientTest.cs" />
+    <Compile Include="Services\PoorMansLoadTests.cs" />
+    <Compile Include="Services\RestrictionDefinitionServiceClientTest.cs" />
+    <Compile Include="Services\RestrictionReasonCodeServiceClientTest.cs" />
+    <Compile Include="Services\TimeServiceClientTest.cs" />
+    <Compile Include="Services\OpmXhqServiceClientTest.cs" />
+    <Compile Include="Services\WorkPermitServiceClientTest.cs" />
+    <Compile Include="SwipeCardReaderTest.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App.config.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="HTTPHandlers\TestData\ActionItemFromWorkOrder.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="HTTPHandlers\TestData\AddValidWorkOrder.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="HTTPHandlers\TestData\AutoApprovedActionItem.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="HTTPHandlers\TestData\AutoApprovedActionItemUpdated.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="HTTPHandlers\TestData\DuplicatingWorkOrderAsActionItem.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="HTTPHandlers\TestData\FirstWorkOrderSend.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="HTTPHandlers\TestData\SecondWorkOrderSend.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="HTTPHandlers\TestData\WorkOrder-Add-Update-Only-Once.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="HTTPHandlers\TestData\WorkOrder-Add.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="HTTPHandlers\TestData\WorkOrder-Update.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="HTTPHandlers\TestData\WorkOrderActionItemDefinitionSend.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="HTTPHandlers\TestData\WorkOrderActionItemDefinitionSendLevelOneFloc.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="HTTPHandlers\TestData\WorkOrderActionItemDefinitionSendLevelTwoFloc.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="HTTPHandlers\TestData\WorkOrderWithNullLastModifiedUser.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="HTTPHandlers\TestData\WorkOrderWithTypeAllLowerCase.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="HTTPHandlers\TestData\WorkPermit-Add-Update-Only-Once.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="HTTPHandlers\TestData\WorkPermit-Add.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="HTTPHandlers\TestData\WorkPermit-Flood.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="HTTPHandlers\TestData\WorkPermit-Update.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\ClientApp\App\ClientApp.App.csproj">
+      <Project>{E286A1AC-CA29-4F37-8DA0-886212C5FF7D}</Project>
+      <Name>ClientApp.App</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Common\App\Common.App.csproj">
+      <Project>{31784A4C-5836-4671-88CD-5FE0B962BC3E}</Project>
+      <Name>Common.App</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Common\Test.Common\Common.Test.Common.csproj">
+      <Project>{6AEE37AF-C60D-4711-AE02-682F04F23DE5}</Project>
+      <Name>Common.Test.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\DataHistorian\DataHistorian.App\PlantDataHistorian.App.csproj">
+      <Project>{1CBD3F68-A8CE-48C4-AA51-64E375CC3E75}</Project>
+      <Name>PlantDataHistorian.App</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\RemoteApp\App\RemoteApp.App.csproj">
+      <Project>{69FA8ADA-E17D-4FFF-93FC-C5DB1D39599E}</Project>
+      <Name>RemoteApp.App</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\SAPHandlers\Integration.Handlers\Integration.Handlers.csproj">
+      <Project>{D8392E1F-5ECB-41E5-8A44-890FF63205AF}</Project>
+      <Name>Integration.Handlers</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSHARP.Targets" />
+  <Import Project="$(MSBuildProjectDirectory)\..\..\..\..\olt.msbuild" />
+  <Target Name="BeforeBuild">
+    <CallTarget Targets="CreateConfigFile" />
+  </Target>
+</Project>

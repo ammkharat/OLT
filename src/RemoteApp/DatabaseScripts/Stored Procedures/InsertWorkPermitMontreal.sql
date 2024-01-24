@@ -1,0 +1,382 @@
+if exists (select * from dbo.sysobjects where id = object_id(N'[dbo].[InsertWorkPermitMontreal]') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+	drop procedure [dbo].[InsertWorkPermitMontreal]
+GO
+
+CREATE Procedure [dbo].[InsertWorkPermitMontreal]
+(
+  @Id bigint Output,
+  @PermitNumber bigint Output,
+  @ShouldCreatePermitNumber bit,
+  @SourceId int,
+  @WorkPermitStatusId tinyint,
+	@WorkPermitTypeId bigint,
+	@RequestedByGroupId bigint = NULL,
+	@StartDateTime DateTime,
+	@EndDateTime DateTime,
+	@TemplateId bigint = NULL,
+	@WorkOrderNumber VARCHAR(12) = NULL,
+	@Trade varchar(100),
+	@Description VARCHAR(400),
+	@CreatedDateTime DateTime,
+	@CreatedByUserId bigint,
+	@LastModifiedDateTime DateTime,
+	@LastModifiedByUserId bigint,
+	@PermitRequestId bigint = NULL,
+	@H2S bit,
+	@Hydrocarbure bit,
+	@Ammoniaque bit,
+	@Corrosif bit,
+	@CorrosifValue VARCHAR(100),
+	@Aromatique bit,
+	@AromatiqueValue VARCHAR(100),
+	@AutresSubstances bit,
+	@AutresSubstancesValue VARCHAR(100),
+	@ObtureOuDebranche bit,
+	@DepressuriseEtVidange bit,
+	@EnPresenceDeGazInerte bit,
+	@PurgeALaVapeur bit,
+	@RinceALeau bit,
+	@Excavation bit,
+	@DessinsRequis bit,
+	@DessinsRequisValue VARCHAR(100),
+	@CablesChauffantsMisHorsTension bit,
+	@PompeOuVerinPneumatique bit,
+	@ChaineEtCadenasseOuScelle bit,
+	@InterrupteursElectriquesVerrouilles bit,
+	@PurgeParUnGazInerte bit,
+	@OutilsElectriquesOuABatteries bit,
+	@BoiteEnergieZero bit,
+	@BoiteEnergieZeroValue VARCHAR(100),
+	@OutilsPneumatiques bit,
+	@MoteurACombustionInterne bit,
+	@TravauxSuperPoses bit,
+	@FormulaireDespaceClosAffiche bit,
+	@FormulaireDespaceClosAfficheValue VARCHAR(100),
+	@ExisteIlUneAnalyseDeTache bit,
+	@PossibiliteDeSulfureDeFer bit,
+	@AereVentile bit,
+	@SoudureALelectricite bit,
+	@BrulageAAcetylene bit,
+	@Nacelle bit,
+	@AutreConditions bit,
+	@AutreConditionsValue VARCHAR(100),
+	@LunettesMonocoques bit,
+	@HarnaisDeSecurite bit,
+	@EcranFacial bit,
+	@ProtectionAuditive bit,
+	@Trepied bit,
+	@DispositifAntichute bit,
+	@ProtectionRespiratoire bit,
+	@ProtectionRespiratoireValue VARCHAR(100),
+	@Habits bit,
+	@HabitsValue VARCHAR(100),
+	@AutreProtection bit,
+	@AutreProtectionValue VARCHAR(100),
+	@Extincteur bit,
+	@BouchesDegoutProtegees bit,
+	@CouvertureAntiEtincelles bit,
+	@SurveillantPouretincelles bit,
+	@PareEtincelles bit,
+	@MiseAlaTerrePresDuLieuDeTravail bit,
+	@BoyauAVapeur bit,
+	@AutresEquipementDincendie bit,
+	@AutresEquipementDincendieValue VARCHAR(100),
+	@Ventulateur bit,
+	@Barrieres bit,
+	@Surveillant bit,
+	@SurveillantValue VARCHAR(100),
+	@RadioEmetteur bit,
+	@PerimetreDeSecurite bit,
+	@DetectionContinueDesGaz bit,
+	@DetectionContinueDesGazValue VARCHAR(100),
+	@KlaxonSonore bit,
+	@Localiser bit,
+	@Amiante bit,
+	@AutreEquipementsSecurite bit,
+	@AutreEquipementsSecuriteValue VARCHAR(100),
+	@InstructionsSpeciales VARCHAR(500),
+	@SignatureOperateurSurLeTerrain bit,
+	@DetectionDesGazs bit,
+	@SignatureContremaitre bit,
+	@SignatureAutorise bit,
+	@RequestedDateTime datetime = null,
+	@RequestedByUserId bigint = null,
+	@Company varchar(50) = null,
+	@Supervisor varchar(100) = null,
+	@ExcavationNumber varchar(50) = null,
+	@ClonedFormDetailMontreal varchar(100) = NULL,
+	@UsePreviousPermitAnswered bit,
+	@IssuedDateTime datetime = null,
+	@NettoyageTransfertHorsSite bit
+)
+AS
+
+DECLARE @NewPermitNumber bigint
+
+IF @ShouldCreatePermitNumber = 1
+	BEGIN
+		EXEC @NewPermitNumber = GetNewSeqVal_WorkPermitMontrealPermitNumberSequence
+	END
+ELSE
+	BEGIN
+		SET @NewPermitNumber = NULL
+	END
+
+
+INSERT INTO WorkPermitMontreal
+(
+	SourceId,
+    WorkPermitTypeId,
+	RequestedByGroupId,
+	TemplateId,
+	WorkPermitStatusId,
+	StartDateTime,
+	EndDateTime,
+	PermitNumber,
+	WorkOrderNumber,
+	Trade,
+	Description,
+	CreatedDateTime,
+	CreatedByUserId,
+	LastModifiedDateTime,
+	LastModifiedByUserId,
+	PermitRequestId,
+	UsePreviousPermitAnswered,
+	IssuedDateTime,
+	ClonedFormDetailMontreal,
+	Deleted
+)
+VALUES
+(
+	@SourceId,
+	@WorkPermitTypeId,
+	@RequestedByGroupId,
+	@TemplateId,
+	@WorkPermitStatusId,
+	@StartDateTime,
+	@EndDateTime,
+	@NewPermitNumber,
+	@WorkOrderNumber,
+	@Trade,
+	@Description,
+	@CreatedDateTime,
+	@CreatedByUserId,
+	@LastModifiedDateTime,
+	@LastModifiedByUserId,
+	@PermitRequestId,
+	@UsePreviousPermitAnswered,
+	@IssuedDateTime,
+	@ClonedFormDetailMontreal,
+	0
+);
+
+SET @Id= SCOPE_IDENTITY() 
+SET @PermitNumber = @NewPermitNumber
+
+INSERT INTO WorkPermitMontrealDetails
+(
+	Id,
+	
+	H2S,
+	Hydrocarbure,
+	Ammoniaque,
+	Corrosif,
+	CorrosifValue,
+	Aromatique,
+	AromatiqueValue,
+	AutresSubstances,
+	AutresSubstancesValue,
+	
+	ObtureOuDebranche,
+	DepressuriseEtVidange,
+	EnPresenceDeGazInerte,
+	PurgeALaVapeur,
+	RinceALeau,
+	Excavation,
+	DessinsRequis,
+	DessinsRequisValue,
+	CablesChauffantsMisHorsTension,
+	PompeOuVerinPneumatique,
+	
+	ChaineEtCadenasseOuScelle,
+	InterrupteursElectriquesVerrouilles,
+	PurgeParUnGazInerte,
+	OutilsElectriquesOuABatteries,
+	BoiteEnergieZero,
+	BoiteEnergieZeroValue,
+	OutilsPneumatiques,
+	MoteurACombustionInterne,
+	TravauxSuperPoses,
+	
+	FormulaireDespaceClosAffiche,
+	FormulaireDespaceClosAfficheValue,
+	ExisteIlUneAnalyseDeTache,
+	PossibiliteDeSulfureDeFer,
+	AereVentile,
+	SoudureALelectricite,
+	BrulageAAcetylene,
+	Nacelle,
+	AutreConditions,
+	AutreConditionsValue,
+	
+	LunettesMonocoques,
+	HarnaisDeSecurite,
+	EcranFacial,
+	ProtectionAuditive,
+	Trepied,
+	DispositifAntichute,
+	ProtectionRespiratoire,
+	ProtectionRespiratoireValue,
+	Habits,
+	HabitsValue,
+	AutreProtection,
+	AutreProtectionValue,
+	
+	Extincteur,
+	BouchesDegoutProtegees,
+	CouvertureAntiEtincelles,
+	SurveillantPouretincelles,
+	PareEtincelles,
+	MiseAlaTerrePresDuLieuDeTravail,
+	BoyauAVapeur,
+	AutresEquipementDincendie,
+	AutresEquipementDincendieValue,
+	
+	Ventulateur,
+	Barrieres,
+	Surveillant,
+	SurveillantValue,
+	RadioEmetteur,
+	PerimetreDeSecurite,
+	DetectionContinueDesGaz,
+	DetectionContinueDesGazValue,
+	KlaxonSonore,
+	Localiser,
+	Amiante,
+	AutreEquipementsSecurite,
+	AutreEquipementsSecuriteValue,
+	
+	InstructionsSpeciales,
+	SignatureOperateurSurLeTerrain,
+	DetectionDesGazs,
+	SignatureContremaitre,
+	SignatureAutorise,
+	NettoyageTransfertHorsSite
+)
+VALUES
+(
+	@Id,
+	
+	@H2S,
+	@Hydrocarbure,
+	@Ammoniaque,
+	@Corrosif,
+	@CorrosifValue,
+	@Aromatique,
+	@AromatiqueValue,
+	@AutresSubstances,
+	@AutresSubstancesValue,
+	
+	@ObtureOuDebranche,
+	@DepressuriseEtVidange,
+	@EnPresenceDeGazInerte,
+	@PurgeALaVapeur,
+	@RinceALeau,
+	@Excavation,
+	@DessinsRequis,
+	@DessinsRequisValue,
+	@CablesChauffantsMisHorsTension,
+	@PompeOuVerinPneumatique,
+	
+	@ChaineEtCadenasseOuScelle,
+	@InterrupteursElectriquesVerrouilles,
+	@PurgeParUnGazInerte,
+	@OutilsElectriquesOuABatteries,
+	@BoiteEnergieZero,
+	@BoiteEnergieZeroValue,
+	@OutilsPneumatiques,
+	@MoteurACombustionInterne,
+	@TravauxSuperPoses,
+	
+	@FormulaireDespaceClosAffiche,
+	@FormulaireDespaceClosAfficheValue,
+	@ExisteIlUneAnalyseDeTache,
+	@PossibiliteDeSulfureDeFer,
+	@AereVentile,
+	@SoudureALelectricite,
+	@BrulageAAcetylene,
+	@Nacelle,
+	@AutreConditions,
+	@AutreConditionsValue,
+	
+	@LunettesMonocoques,
+	@HarnaisDeSecurite,
+	@EcranFacial,
+	@ProtectionAuditive,
+	@Trepied,
+	@DispositifAntichute,
+	@ProtectionRespiratoire,
+	@ProtectionRespiratoireValue,
+	@Habits,
+	@HabitsValue,
+	@AutreProtection,
+	@AutreProtectionValue,
+	
+	@Extincteur,
+	@BouchesDegoutProtegees,
+	@CouvertureAntiEtincelles,
+	@SurveillantPouretincelles,
+	@PareEtincelles,
+	@MiseAlaTerrePresDuLieuDeTravail,
+	@BoyauAVapeur,
+	@AutresEquipementDincendie,
+	@AutresEquipementDincendieValue,
+	
+	@Ventulateur,
+	@Barrieres,
+	@Surveillant,
+	@SurveillantValue,
+	@RadioEmetteur,
+	@PerimetreDeSecurite,
+	@DetectionContinueDesGaz,
+	@DetectionContinueDesGazValue,
+	@KlaxonSonore,
+	@Localiser,
+	@Amiante,
+	@AutreEquipementsSecurite,
+	@AutreEquipementsSecuriteValue,
+	
+	@InstructionsSpeciales,
+	@SignatureOperateurSurLeTerrain,
+	@DetectionDesGazs,
+	@SignatureContremaitre,
+	@SignatureAutorise,
+	@NettoyageTransfertHorsSite
+)
+
+if @RequestedDateTime is not NULL
+begin
+	INSERT INTO WorkPermitMontrealRequestDetails
+	(
+		Id, 
+		RequestedDateTime,
+		RequestedByUserId,
+		Company,
+		Supervisor,
+		ExcavationNumber
+	)
+	values
+	(
+		@Id,
+		@RequestedDateTime,
+		@RequestedByUserId,
+		@Company,
+		@Supervisor,
+		@ExcavationNumber
+	)
+end
+
+GO
+
+GRANT EXEC ON InsertWorkPermitMontreal TO PUBLIC
+GO

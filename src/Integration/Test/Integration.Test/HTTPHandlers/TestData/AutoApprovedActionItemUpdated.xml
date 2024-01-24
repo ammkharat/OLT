@@ -1,0 +1,44 @@
+﻿<?xml version="1.0"?>
+
+<WorkOrderOLTdata>
+  <WorkOrderRecord>
+    <header></header>
+    <WorkOrderDetails>
+      <WONumber>GENERATE_IN_TEST</WONumber>
+      <ShortText>AutoApprove Update to SAP</ShortText>
+      <FunctionalLocation>SR1-OFFS-BDOF</FunctionalLocation>
+      <EquipmentNumber></EquipmentNumber>
+      <PlantID>4000</PlantID>
+      <Operations>
+        <OperationKeyNo>1000049422</OperationKeyNo>
+        <OperationNumber>0010</OperationNumber>
+        <SubOperation></SubOperation>
+        <EarliestStartDate>2006-09-05</EarliestStartDate>
+        <EarliestStartTime>08:00:00</EarliestStartTime>
+        <EarliestFinishDate>2006-09-05</EarliestFinishDate>
+        <EarliestFinishTime>12:00:00</EarliestFinishTime>
+        <LongText>ENSURE THE UNIT OPERATOR INSPECTS THE NEW ELEMENTS IN 24-FS-05B BEFORE NORTH OF C.B.# 3. THE POSSIBLE PRESENCE OF AROMATICS (BENZENE, ETC.). * REPLACE THE FILTER ELEMENTS IN 24FS-005B. RE-INSTALLING THE COVER. PLACE THE OLD FILTER ELEMENTS INSIDE THE DUMPSTER BUCKET ON &quot;B&quot; AVE. * ENSURE PROPER P.P.E. IS WORN / USED WHILE CHANGING THE ELEMENTS DUE TO * PLACE A TAG ON FS-05B THAT READS &quot;FILTERS REPLACED ON MONTH/DATE/YEAR&quot;</LongText>
+        <WorkPermitType>COLD</WorkPermitType>
+        <WorkPermitAttrib>X</WorkPermitAttrib>
+        <WorkCenterID>10001148</WorkCenterID>
+        <WorkCenterName>PF-C</WorkCenterName>
+        <WorkCenterText>Pipefitter, Contract</WorkCenterText>
+      </Operations>
+      <Operations>
+        <OperationKeyNo>1000049422</OperationKeyNo>
+        <OperationNumber>0010</OperationNumber>
+        <SubOperation>0010</SubOperation>
+        <EarliestStartDate>2006-09-05</EarliestStartDate>
+        <EarliestStartTime>08:00:00</EarliestStartTime>
+        <EarliestFinishDate>2006-09-05</EarliestFinishDate>
+        <EarliestFinishTime>12:00:00</EarliestFinishTime>
+        <LongText>INSPECT THE NEW FILTER ELEMENTS BEFORE PF&#39;S CLOSE THE LID.</LongText>
+        <WorkPermitType></WorkPermitType>
+        <WorkPermitAttrib></WorkPermitAttrib>
+        <WorkCenterID>10001147</WorkCenterID>
+        <WorkCenterName>OPRPR</WorkCenterName>
+        <WorkCenterText>Operator, Process</WorkCenterText>
+      </Operations>
+    </WorkOrderDetails>
+  </WorkOrderRecord>
+</WorkOrderOLTdata>

@@ -1,0 +1,822 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="buildVersion.Size" type="System.Drawing.Size, System.Drawing">
+    <value>130, 17</value>
+  </data>
+  <data name="buildVersion.Text" xml:space="preserve">
+    <value>créerNuméroDeVersion</value>
+  </data>
+  <data name="menuItemNewActionItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>244, 22</value>
+  </data>
+  <data name="menuItemNewActionItem.Text" xml:space="preserve">
+    <value>Tâche de préparation</value>
+  </data>
+  <data name="menuItemNewTarget.Size" type="System.Drawing.Size, System.Drawing">
+    <value>244, 22</value>
+  </data>
+  <data name="menuItemNewTarget.Text" xml:space="preserve">
+    <value>Définition de cible</value>
+  </data>
+  <data name="menuItemNewRestriction.Size" type="System.Drawing.Size, System.Drawing">
+    <value>244, 22</value>
+  </data>
+  <data name="menuItemNewRestriction.Text" xml:space="preserve">
+    <value>Définition de restriction</value>
+  </data>
+  <data name="menuItemNewLabAlert.Size" type="System.Drawing.Size, System.Drawing">
+    <value>244, 22</value>
+  </data>
+  <data name="menuItemNewLabAlert.Text" xml:space="preserve">
+    <value>Définition d’alerte de laboratoire</value>
+  </data>
+  <data name="menuItemNewLogEntry.Size" type="System.Drawing.Size, System.Drawing">
+    <value>301, 22</value>
+  </data>
+  <data name="menuItemNewLogEntry.Text" xml:space="preserve">
+    <value>Entrée de registre</value>
+  </data>
+  <data name="menuItemNewLogDefinitionEntry.Size" type="System.Drawing.Size, System.Drawing">
+    <value>301, 22</value>
+  </data>
+  <data name="menuItemNewLogDefinitionEntry.Text" xml:space="preserve">
+    <value>Entrée de définition de registre répétitive</value>
+  </data>
+  <data name="menuItemCokerCardEntry.Size" type="System.Drawing.Size, System.Drawing">
+    <value>301, 22</value>
+  </data>
+  <data name="menuItemCokerCardEntry.Text" xml:space="preserve">
+    <value>Fiche de cokeur</value>
+  </data>
+  <data name="menuItemNewShiftSummaryLogEntry.Size" type="System.Drawing.Size, System.Drawing">
+    <value>301, 22</value>
+  </data>
+  <data name="menuItemNewShiftSummaryLogEntry.Text" xml:space="preserve">
+    <value>Entrée de registre des superviseurs de quart</value>
+  </data>
+  <data name="dailyDirectiveLogEntryToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>301, 22</value>
+  </data>
+  <data name="dailyDirectiveLogEntryToolStripMenuItem.Text" xml:space="preserve">
+    <value>Instruction quotidienne</value>
+  </data>
+  <data name="menuItemNewStandingOrderEntry.Size" type="System.Drawing.Size, System.Drawing">
+    <value>301, 22</value>
+  </data>
+  <data name="menuItemNewStandingOrderEntry.Text" xml:space="preserve">
+    <value>Instruction quotidienne répétitive</value>
+  </data>
+  <data name="menuItemLog.Size" type="System.Drawing.Size, System.Drawing">
+    <value>244, 22</value>
+  </data>
+  <data name="menuItemLog.Text" xml:space="preserve">
+    <value>Registre</value>
+  </data>
+  <data name="menuItemNewShiftHandoverQuestionnaire.Size" type="System.Drawing.Size, System.Drawing">
+    <value>244, 22</value>
+  </data>
+  <data name="menuItemNewShiftHandoverQuestionnaire.Text" xml:space="preserve">
+    <value>&amp;Relève de quart</value>
+  </data>
+  <data name="menuItemNewWorkPermit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>244, 22</value>
+  </data>
+  <data name="menuItemNewWorkPermit.Text" xml:space="preserve">
+    <value>&amp;Permis de travail sécuritaire</value>
+  </data>
+  <data name="permitRequestToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>244, 22</value>
+  </data>
+  <data name="permitRequestToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Demande de permis</value>
+  </data>
+  <data name="confinedSpaceDocumentToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>244, 22</value>
+  </data>
+  <data name="confinedSpaceDocumentToolStripMenuItem.Text" xml:space="preserve">
+    <value>Espace clos</value>
+  </data>
+  <data name="menuItemNewGN1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>292, 22</value>
+  </data>
+  <data name="menuItemNewGN6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>292, 22</value>
+  </data>
+  <data name="menuItemNewGN7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>292, 22</value>
+  </data>
+  <data name="menuItemNewGN24.Size" type="System.Drawing.Size, System.Drawing">
+    <value>292, 22</value>
+  </data>
+  <data name="menuItemNewGN59.Size" type="System.Drawing.Size, System.Drawing">
+    <value>292, 22</value>
+  </data>
+  <data name="menuItemNewGN75A.Size" type="System.Drawing.Size, System.Drawing">
+    <value>292, 22</value>
+  </data>
+  <data name="menuItemNewGN75B.Size" type="System.Drawing.Size, System.Drawing">
+    <value>292, 22</value>
+  </data>
+  <data name="menuItemNewOP14.Size" type="System.Drawing.Size, System.Drawing">
+    <value>292, 22</value>
+  </data>
+  <data name="menuItemNewFormOilsandsTraining.Size" type="System.Drawing.Size, System.Drawing">
+    <value>292, 22</value>
+  </data>
+
+  <data name="menuItemNewFormForthillsTraining.Size" type="System.Drawing.Size, System.Drawing">
+    <value>292, 22</value>
+  </data>
+  
+  <data name="menuItemNewFormOvertimeRequest.Size" type="System.Drawing.Size, System.Drawing">
+    <value>292, 22</value>
+  </data>
+  <data name="menuItemNewFormCriticalSystemDefeat.Size" type="System.Drawing.Size, System.Drawing">
+    <value>292, 22</value>
+  </data>
+  <data name="menuItemNewMontrealFormCriticalSystemDefeat.Size" type="System.Drawing.Size, System.Drawing">
+    <value>292, 22</value>
+  </data>
+  <data name="menuItemNewMontrealFormCriticalSystemDefeat.Text" xml:space="preserve">
+    <value>Dérivation des mécanismes de protection</value>
+  </data>
+  <data name="menuItemNewFormAlarmDisable.Size" type="System.Drawing.Size, System.Drawing">
+    <value>292, 22</value>
+  </data>
+  <data name="menuItemForm.Size" type="System.Drawing.Size, System.Drawing">
+    <value>244, 22</value>
+  </data>
+  <data name="menuItemForm.Text" xml:space="preserve">
+    <value>Formulaire</value>
+  </data>
+  <data name="menuItemNewDirective.Size" type="System.Drawing.Size, System.Drawing">
+    <value>244, 22</value>
+  </data>
+  <data name="menuItemNewDirective.Text" xml:space="preserve">
+    <value>Instructions quotidiennes</value>
+  </data>
+  <data name="menuItemNew.Size" type="System.Drawing.Size, System.Drawing">
+    <value>278, 22</value>
+  </data>
+  <data name="menuItemNew.Text" xml:space="preserve">
+    <value>&amp;Nouveau</value>
+  </data>
+  <data name="menuItemLogOut.Size" type="System.Drawing.Size, System.Drawing">
+    <value>278, 22</value>
+  </data>
+  <data name="menuItemLogOut.Text" xml:space="preserve">
+    <value>&amp;Clôturer la session</value>
+  </data>
+  <data name="menuItemChangeActiveFLOC.Size" type="System.Drawing.Size, System.Drawing">
+    <value>278, 22</value>
+  </data>
+  <data name="menuItemChangeActiveFLOC.Text" xml:space="preserve">
+    <value>&amp;Modifier le poste technique en vigueur</value>
+  </data>
+  <data name="menuItemPreferences.Size" type="System.Drawing.Size, System.Drawing">
+    <value>278, 22</value>
+  </data>
+  <data name="menuItemPreferences.Text" xml:space="preserve">
+    <value>&amp;Préférences...</value>
+  </data>
+  <data name="toolStripMenuItem2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>275, 6</value>
+  </data>
+  <data name="menuItemFileExit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>278, 22</value>
+  </data>
+  <data name="menuItemFileExit.Text" xml:space="preserve">
+    <value>&amp;Sortir</value>
+  </data>
+  <data name="menuItemFile.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 20</value>
+  </data>
+  <data name="menuItemFile.Text" xml:space="preserve">
+    <value>&amp;Fichier</value>
+  </data>
+  <data name="menuItemDailyShiftAlertReport.Size" type="System.Drawing.Size, System.Drawing">
+    <value>302, 22</value>
+  </data>
+  <data name="menuItemDailyShiftAlertReport.Text" xml:space="preserve">
+    <value>&amp;Avertissement d’objectif de quart journalier</value>
+  </data>
+  <data name="menuItemShiftGapReasonReport.Size" type="System.Drawing.Size, System.Drawing">
+    <value>302, 22</value>
+  </data>
+  <data name="menuItemShiftGapReasonReport.Text" xml:space="preserve">
+    <value>&amp;Rapport de justification de l’écart de quart</value>
+  </data>
+  <data name="menuItemTargetAlertExcelReport.Size" type="System.Drawing.Size, System.Drawing">
+    <value>302, 22</value>
+  </data>
+  <data name="menuItemTargetAlertExcelReport.Text" xml:space="preserve">
+    <value>Rapport Excel d’alertes cibles</value>
+  </data>
+  <data name="reportsTargetsToolStripSubMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>208, 22</value>
+  </data>
+  <data name="reportsTargetsToolStripSubMenuItem.Text" xml:space="preserve">
+    <value>Cibles</value>
+  </data>
+  <data name="menuItemRestrictionReport.Size" type="System.Drawing.Size, System.Drawing">
+    <value>188, 22</value>
+  </data>
+  <data name="menuItemRestrictionReport.Text" xml:space="preserve">
+    <value>&amp;Rapport de restriction</value>
+  </data>
+  <data name="reportsRestrictionsToolStripSubMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>208, 22</value>
+  </data>
+  <data name="reportsRestrictionsToolStripSubMenuItem.Text" xml:space="preserve">
+    <value>Restrictions</value>
+  </data>
+  <data name="menuItemCokerCardReport.Size" type="System.Drawing.Size, System.Drawing">
+    <value>228, 22</value>
+  </data>
+  <data name="menuItemCokerCardReport.Text" xml:space="preserve">
+    <value>Rapport de la fiche de cokeur</value>
+  </data>
+  <data name="reportsCokerCardsToolStripSubMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>208, 22</value>
+  </data>
+  <data name="reportsCokerCardsToolStripSubMenuItem.Text" xml:space="preserve">
+    <value>Fiches de cokeur</value>
+  </data>
+  <data name="menuItemDailyShiftLogReport.Size" type="System.Drawing.Size, System.Drawing">
+    <value>337, 22</value>
+  </data>
+  <data name="menuItemDailyShiftLogReport.Text" xml:space="preserve">
+    <value>&amp;Rapport de registre de quart journalier</value>
+  </data>
+  <data name="menuItemOperatingEngineerShiftLogReport.Size" type="System.Drawing.Size, System.Drawing">
+    <value>337, 22</value>
+  </data>
+  <data name="menuItemDetailedLogReport.Size" type="System.Drawing.Size, System.Drawing">
+    <value>337, 22</value>
+  </data>
+  <data name="menuItemDetailedLogReport.Text" xml:space="preserve">
+    <value>Rapport &amp;détaillé du registre</value>
+  </data>
+  <data name="menuItemMarkedAsReadLogReport.Size" type="System.Drawing.Size, System.Drawing">
+    <value>337, 22</value>
+  </data>
+  <data name="menuItemMarkedAsReadLogReport.Text" xml:space="preserve">
+    <value>Rapport &amp;marqué comme lu</value>
+  </data>
+  <data name="menuItemCustomFieldTrendReport.Size" type="System.Drawing.Size, System.Drawing">
+    <value>337, 22</value>
+  </data>
+  <data name="menuItemCustomFieldTrendReport.Text" xml:space="preserve">
+    <value>&amp;Rapport des tendances des champs personnalisés </value>
+  </data>
+  <data name="reportsLogsToolStripSubMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>208, 22</value>
+  </data>
+  <data name="reportsLogsToolStripSubMenuItem.Text" xml:space="preserve">
+    <value>Registres de quart</value>
+  </data>
+  <data name="menuItemShiftHandoverReport.Size" type="System.Drawing.Size, System.Drawing">
+    <value>217, 22</value>
+  </data>
+  <data name="menuItemShiftHandoverReport.Text" xml:space="preserve">
+    <value>&amp;Rapport de relève de quart</value>
+  </data>
+  <data name="menuItemMarkedAsReadShiftHandoverReport.Size" type="System.Drawing.Size, System.Drawing">
+    <value>217, 22</value>
+  </data>
+  <data name="menuItemMarkedAsReadShiftHandoverReport.Text" xml:space="preserve">
+    <value>Rapport &amp;marqué comme lu</value>
+  </data>
+  <data name="reportsShiftHandoverToolStripSubMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>208, 22</value>
+  </data>
+  <data name="reportsShiftHandoverToolStripSubMenuItem.Text" xml:space="preserve">
+    <value>Relève de quart</value>
+  </data>
+  <data name="reportsFormsToolStripSubMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>208, 22</value>
+  </data>
+  <data name="safeWorkPermitToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>208, 22</value>
+  </data>
+  <data name="menuItemMarkedAsReadDirectiveReport.Size" type="System.Drawing.Size, System.Drawing">
+    <value>217, 22</value>
+  </data>
+  <data name="menuItemMarkedAsReadDirectiveReport.Text" xml:space="preserve">
+    <value>Rapport &amp;marqué comme lu</value>
+  </data>
+  <data name="reportsDirectivesToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>208, 22</value>
+  </data>
+  <data name="reportsDirectivesToolStripMenuItem.Text" xml:space="preserve">
+    <value>Instructions quotidiennes</value>
+  </data>
+  <data name="menuItemReports.Size" type="System.Drawing.Size, System.Drawing">
+    <value>66, 20</value>
+  </data>
+  <data name="menuItemReports.Text" xml:space="preserve">
+    <value>&amp;Rapports</value>
+  </data>
+  <data name="priorityDisplayCriteriaToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>174, 22</value>
+  </data>
+  <data name="priorityDisplayCriteriaToolStripMenuItem.Text" xml:space="preserve">
+    <value>Afficher les critères</value>
+  </data>
+  <data name="adminPrioritiesToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>266, 22</value>
+  </data>
+  <data name="adminPrioritiesToolStripMenuItem.Text" xml:space="preserve">
+    <value>Tableau de bord</value>
+  </data>
+  <data name="configureActionItemSettingsStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>311, 22</value>
+  </data>
+  <data name="configureActionItemSettingsStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Réglages tâche de préparation</value>
+  </data>
+  <data name="configureBusinessCategoriesToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>311, 22</value>
+  </data>
+  <data name="configureBusinessCategoriesToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Ajouter/Modifier catégories d’affaires</value>
+  </data>
+  <data name="flocBusinessCategoryAssignmentToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>311, 22</value>
+  </data>
+  <data name="flocBusinessCategoryAssignmentToolStripMenuItem.Text" xml:space="preserve">
+    <value>Associer les catégories aux postes techniques</value>
+  </data>
+  <data name="configureActionItemReApprovalToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>311, 22</value>
+  </data>
+  <data name="configureActionItemReApprovalToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Nouveau approbation du niveau de champ</value>
+  </data>
+  <data name="adminActionItemsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>266, 22</value>
+  </data>
+  <data name="adminActionItemsToolStripMenuItem.Text" xml:space="preserve">
+    <value>Tâches de préparation</value>
+  </data>
+  <data name="configureTargetsReApprovalToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>334, 22</value>
+  </data>
+  <data name="configureTargetsReApprovalToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Nouveau approbation du niveau de champ</value>
+  </data>
+  <data name="configurePlantHistorianTagListToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>334, 22</value>
+  </data>
+  <data name="configurePlantHistorianTagListToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Information de procédé – Groupes d’étiquette PH</value>
+  </data>
+  <data name="adminTargetsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>266, 22</value>
+  </data>
+  <data name="adminTargetsToolStripMenuItem.Text" xml:space="preserve">
+    <value>Cibles</value>
+  </data>
+  <data name="editReasonCodesToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>371, 22</value>
+  </data>
+  <data name="editReasonCodesToolStripMenuItem.Text" xml:space="preserve">
+    <value>Modifier les codes de justification</value>
+  </data>
+  <data name="configureRestrictionReportingLimitsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>371, 22</value>
+  </data>
+  <data name="configureRestrictionReportingLimitsToolStripMenuItem.Text" xml:space="preserve">
+    <value>Configurer l’heure limite des réponses aux modifications</value>
+  </data>
+  <data name="configureRestrictionListsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>371, 22</value>
+  </data>
+  <data name="adminRestrictionsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>266, 22</value>
+  </data>
+  <data name="adminRestrictionsToolStripMenuItem.Text" xml:space="preserve">
+    <value>Restrictions</value>
+  </data>
+  <data name="labAlertConfigurationToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>282, 22</value>
+  </data>
+  <data name="labAlertConfigurationToolStripMenuItem.Text" xml:space="preserve">
+    <value>Configuration des alertes de laboratoire</value>
+  </data>
+  <data name="adminLabAlertsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>266, 22</value>
+  </data>
+  <data name="adminLabAlertsToolStripMenuItem.Text" xml:space="preserve">
+    <value>Alertes de laboratoire</value>
+  </data>
+  <data name="configureCutoffTimeForEditingDORCommentsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>460, 22</value>
+  </data>
+  <data name="configureCutoffTimeForEditingDORCommentsToolStripMenuItem.Text" xml:space="preserve">
+    <value>Configurer l’heure limite pour les modifications et les commentaires DOR</value>
+  </data>
+  <data name="customFieldsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>460, 22</value>
+  </data>
+  <data name="customFieldsToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Champs personnalisés</value>
+  </data>
+  <data name="logGuidelineConfigurationToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>460, 22</value>
+  </data>
+  <data name="logGuidelineConfigurationToolStripMenuItem.Text" xml:space="preserve">
+    <value>Lignes directrices d’enregistrement</value>
+  </data>
+  <data name="logTemplatesToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>460, 22</value>
+  </data>
+  <data name="logTemplatesToolStripMenuItem.Text" xml:space="preserve">
+    <value>Gabarits</value>
+  </data>
+  <data name="adminLogsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>266, 22</value>
+  </data>
+  <data name="adminLogsToolStripMenuItem.Text" xml:space="preserve">
+    <value>Registres / Instructions quotidiennes</value>
+  </data>
+  <data name="cokerCardConfigurationToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>162, 22</value>
+  </data>
+  <data name="cokerCardConfigurationToolStripMenuItem.Text" xml:space="preserve">
+    <value>Fiches de cokeur</value>
+  </data>
+  <data name="adminCokerCardsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>266, 22</value>
+  </data>
+  <data name="adminCokerCardsToolStripMenuItem.Text" xml:space="preserve">
+    <value>Fiches de cokeur</value>
+  </data>
+  <data name="shiftHandoverConfigurationToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>305, 22</value>
+  </data>
+  <data name="shiftHandoverConfigurationToolStripMenuItem.Text" xml:space="preserve">
+    <value>Relève de quart</value>
+  </data>
+  <data name="shiftHandoverEmailConfigurationToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>305, 22</value>
+  </data>
+  <data name="shiftHandoverEmailConfigurationToolStripMenuItem.Text" xml:space="preserve">
+    <value>Configuration du courriel de relève de quart</value>
+  </data>
+  <data name="adminShiftHandoverToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>266, 22</value>
+  </data>
+  <data name="adminShiftHandoverToolStripMenuItem.Text" xml:space="preserve">
+    <value>Relève de quart</value>
+  </data>
+  <data name="configureWorkPermitArchivalProcessToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>566, 22</value>
+  </data>
+  <data name="configureWorkPermitArchivalProcessToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Processus d’archivage</value>
+  </data>
+  <data name="associateWorkAssignmentsToFLOCsForPermitAutoAssignmentToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>566, 22</value>
+  </data>
+  <data name="associateWorkAssignmentsToFLOCsForPermitAutoAssignmentToolStripMenuItem.Text" xml:space="preserve">
+    <value>Associer les assignations des tâches aux postes techniques pour l'auto-assignation des permis</value>
+  </data>
+  <data name="configureWorkPermitContractorToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>566, 22</value>
+  </data>
+  <data name="configureWorkPermitContractorToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Liste de compagnie</value>
+  </data>
+  <data name="configureWorkCentersToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>566, 22</value>
+  </data>
+  <data name="configureWorkCentersToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Liste de corps de métier</value>
+  </data>
+  <data name="configureGasTestLimitsToolStrip.Size" type="System.Drawing.Size, System.Drawing">
+    <value>566, 22</value>
+  </data>
+  <data name="configureGasTestLimitsToolStrip.Text" xml:space="preserve">
+    <value>&amp;Limites des essais de gaz</value>
+  </data>
+  <data name="configureWorkPermitMontrealTemplatesToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>566, 22</value>
+  </data>
+  <data name="configureWorkPermitMontrealTemplatesToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Modèles de permis de travail</value>
+  </data>
+  <data name="configureWorkPermitMontrealDropdownsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>566, 22</value>
+  </data>
+  <data name="configureWorkPermitMontrealDropdownsToolStripMenuItem.Text" xml:space="preserve">
+    <value>Menus déroulants</value>
+  </data>
+  <data name="configureConfiguredDocumentLinksToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>566, 22</value>
+  </data>
+  <data name="configureConfiguredDocumentLinksToolStripMenuItem.Text" xml:space="preserve">
+    <value>Documents de référence</value>
+  </data>
+  <data name="associateWorkAssignmentsForPermitsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>566, 22</value>
+  </data>
+  <data name="associateWorkAssignmentsForPermitsToolStripMenuItem.Text" xml:space="preserve">
+    <value>Associer les assignations des tâches pour pour les permis et les formules</value>
+  </data>
+  <data name="areaLabelsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>566, 22</value>
+  </data>
+  <data name="areaLabelsToolStripMenuItem.Text" xml:space="preserve">
+    <value>Secteurs émetteurs</value>
+  </data>
+  <data name="configureWorkPermitGroupsMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>566, 22</value>
+  </data>
+  <data name="configureWorkPermitGroupsMenuItem.Text" xml:space="preserve">
+    <value>Groupes demandant</value>
+  </data>
+  <data name="adminWorkPermitsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>266, 22</value>
+  </data>
+  <data name="adminWorkPermitsToolStripMenuItem.Text" xml:space="preserve">
+    <value>Permis de travail sécuritaire</value>
+  </data>
+  <data name="configureFormTemplatesToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>286, 22</value>
+  </data>
+  <data name="configureFormTemplatesToolStripMenuItem.Text" xml:space="preserve">
+    <value>Gestion des formulaires modèles</value>
+  </data>
+  <data name="configureTrainingBlocksToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>286, 22</value>
+  </data>
+  <data name="configureTrainingBlocksToolStripMenuItem.Text" xml:space="preserve">
+    <value>Configuration des champs de formation</value>
+  </data>
+  <data name="configureFormDropdownsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>286, 22</value>
+  </data>
+  <data name="configureFormDropdownsToolStripMenuItem.Text" xml:space="preserve">
+    <value>Menu déroulant</value>
+  </data>
+  <data name="configureSafeWorkPermitAuditQuestionnaireToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>286, 22</value>
+  </data>
+  <data name="adminFormsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>266, 22</value>
+  </data>
+  <data name="adminFormsToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Formulaires</value>
+  </data>
+  <data name="toolStripSeparator2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>263, 6</value>
+  </data>
+  <data name="configureDefaultTabsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>174, 22</value>
+  </data>
+  <data name="configureDefaultTabsToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Onglets par défaut</value>
+  </data>
+  <data name="configureDisplayLimitsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>174, 22</value>
+  </data>
+  <data name="configureDisplayLimitsToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Limites d’affichage</value>
+  </data>
+  <data name="adminDisplaySettingsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>266, 22</value>
+  </data>
+  <data name="adminDisplaySettingsToolStripMenuItem.Text" xml:space="preserve">
+    <value>Afficher les réglages</value>
+  </data>
+  <data name="configureAssignmentsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>362, 22</value>
+  </data>
+  <data name="configureAssignmentsToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Ajouter/Modifier la liste d’assignation des tâches</value>
+  </data>
+  <data name="configureDefaultFLOCsForDailyAssignmentToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>362, 22</value>
+  </data>
+  <data name="configureDefaultFLOCsForDailyAssignmentToolStripMenuItem.Text" xml:space="preserve">
+    <value>Associer les affections de tâches aux postes techniques</value>
+  </data>
+  <data name="visibilityGroupsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>362, 22</value>
+  </data>
+  <data name="visibilityGroupsToolStripMenuItem.Text" xml:space="preserve">
+    <value>Groupes visibles</value>
+  </data>
+  <data name="configureWorkAssignmentNotSelectedWarningToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>362, 22</value>
+  </data>
+  <data name="configureWorkAssignmentNotSelectedWarningToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Avertissement de sélection de l’affectation de travail</value>
+  </data>
+  <data name="adminWorkAssignmentsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>266, 22</value>
+  </data>
+  <data name="adminWorkAssignmentsToolStripMenuItem.Text" xml:space="preserve">
+    <value>Assignations tâches</value>
+  </data>
+  <data name="linkPathsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>280, 22</value>
+  </data>
+  <data name="linkPathsToolStripMenuItem.Text" xml:space="preserve">
+    <value>Chemins d’accès au lien de document</value>
+  </data>
+  <data name="functionalLocationsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>280, 22</value>
+  </data>
+  <data name="functionalLocationsToolStripMenuItem.Text" xml:space="preserve">
+    <value>Postes techniques</value>
+  </data>
+  <data name="manageOperationalModeForUnitsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>280, 22</value>
+  </data>
+  <data name="manageOperationalModeForUnitsToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Mode opérationnel du poste technique</value>
+  </data>
+  <data name="siteCommunicationsToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>280, 22</value>
+  </data>
+  <data name="siteCommunicationsToolStripMenuItem.Text" xml:space="preserve">
+    <value>Communications de l'emplacement</value>
+  </data>
+  <data name="adminSiteConfigurationToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>266, 22</value>
+  </data>
+  <data name="adminSiteConfigurationToolStripMenuItem.Text" xml:space="preserve">
+    <value>Configuration du site</value>
+  </data>
+  <data name="oltApplicationHelpToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>268, 22</value>
+  </data>
+  <data name="oltApplicationHelpToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Aide sur l’application OLT</value>
+  </data>
+  <data name="toolStripMenuItem3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>265, 6</value>
+  </data>
+  <data name="roleMatrixToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>179, 22</value>
+  </data>
+  <data name="roleMatrixToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Matrice de rôle</value>
+  </data>
+  <data name="toolStripSeparator1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>176, 6</value>
+  </data>
+  <data name="openLogFileToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>179, 22</value>
+  </data>
+  <data name="openLogFileToolStripMenuItem.Text" xml:space="preserve">
+    <value>Ouvrir &amp;registre</value>
+  </data>
+  <data name="emailLogFileToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>179, 22</value>
+  </data>
+  <data name="emailLogFileToolStripMenuItem.Text" xml:space="preserve">
+    <value>R&amp;egistre par courriel</value>
+  </data>
+  <data name="supportToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>268, 22</value>
+  </data>
+  <data name="supportToolStripMenuItem.Text" xml:space="preserve">
+    <value>Soutien</value>
+  </data>
+  <data name="releaseNotesToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>268, 22</value>
+  </data>
+  <data name="releaseNotesToolStripMenuItem.Text" xml:space="preserve">
+    <value>Notes de version (anglais seulement)</value>
+  </data>
+  <data name="menuItemOLTApplicationHelp.Size" type="System.Drawing.Size, System.Drawing">
+    <value>43, 20</value>
+  </data>
+  <data name="menuItemOLTApplicationHelp.Text" xml:space="preserve">
+    <value>&amp;Aide</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Outil de registre de l'opérateur</value>
+  </data>
+</root>

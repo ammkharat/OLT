@@ -1,0 +1,44 @@
+﻿<?xml version="1.0"?>
+
+<WorkOrderOLTdata>
+  <WorkOrderRecord>
+    <header></header>
+    <WorkOrderDetails>
+      <WONumber>000030031437</WONumber>
+      <ShortText>1263439 10-tank farm south, slop line st</ShortText>
+      <FunctionalLocation>DN1-3003-0000</FunctionalLocation>
+      <EquipmentNumber></EquipmentNumber>
+      <PlantID>7000</PlantID>
+      <Operations>
+        <OperationKeyNo>1000059185</OperationKeyNo>
+        <OperationNumber>0040</OperationNumber>
+        <SubOperation></SubOperation>
+        <EarliestStartDate>2006-09-05</EarliestStartDate>
+        <EarliestStartTime>15:00:00</EarliestStartTime>
+        <EarliestFinishDate>2006-09-05</EarliestFinishDate>
+        <EarliestFinishTime>16:00:00</EarliestFinishTime>
+        <LongText>Loto Stm on Slop Line@Tk26/Tk38 for Rep</LongText>
+        <WorkPermitType></WorkPermitType>
+        <WorkPermitAttrib></WorkPermitAttrib>
+        <WorkCenterID>10001216</WorkCenterID>
+        <WorkCenterName>OPRPR</WorkCenterName>
+        <WorkCenterText>Operator, Process</WorkCenterText>
+      </Operations>
+      <Operations>
+        <OperationKeyNo>1000059185</OperationKeyNo>
+        <OperationNumber>0010</OperationNumber>
+        <SubOperation></SubOperation>
+        <EarliestStartDate>2006-09-05</EarliestStartDate>
+        <EarliestStartTime>08:00:00</EarliestStartTime>
+        <EarliestFinishDate>2006-09-05</EarliestFinishDate>
+        <EarliestFinishTime>12:00:00</EarliestFinishTime>
+        <LongText>Remove Insl Stm Leaks W of Tk26 on Slop</LongText>
+        <WorkPermitType>HOT</WorkPermitType>
+        <WorkPermitAttrib>EM</WorkPermitAttrib>
+        <WorkCenterID>10001898</WorkCenterID>
+        <WorkCenterName>INSU-C</WorkCenterName>
+        <WorkCenterText>Insulator, Contract</WorkCenterText>
+      </Operations>
+    </WorkOrderDetails>
+  </WorkOrderRecord>
+</WorkOrderOLTdata>

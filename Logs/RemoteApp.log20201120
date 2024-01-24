@@ -1,0 +1,848 @@
+2020-11-20 06:48:27,900 [1] DEBUG Main - Starting AppInitialize
+2020-11-20 06:48:27,908 [1] DEBUG Main - ThreadPool.MinThreads: 4
+2020-11-20 06:48:27,908 [1] DEBUG Main - ThreadPool.Completion Port Threads: 4
+2020-11-20 06:48:27,908 [1] DEBUG Main - ThreadPool.MaxThreads: 8191
+2020-11-20 06:48:27,908 [1] DEBUG Main - Bootstrapping.
+2020-11-20 06:48:28,157 [1] DEBUG Bootstrapper - Bootstrapping Remote Application @ 11/20/2020 06:48:28
+2020-11-20 06:48:28,184 [1] DEBUG Bootstrapper - Starting to bootstrap daos
+2020-11-20 06:48:30,635 [1] INFO  WcfConfiguration - WCF configuration is as follows:
+2020-11-20 06:48:30,635 [1] INFO  WcfConfiguration - clientPorts: 
+2020-11-20 06:48:30,636 [1] INFO  WcfConfiguration - clientHostNameOrIPAddress: 
+2020-11-20 06:48:30,636 [1] INFO  WcfConfiguration - receiveTimeout: 10
+2020-11-20 06:48:30,636 [1] INFO  WcfConfiguration - sendTimeout: 15
+2020-11-20 06:48:30,636 [1] INFO  WcfConfiguration - openTimeout: 2
+2020-11-20 06:48:30,636 [1] INFO  WcfConfiguration - closeTimeout: 2
+2020-11-20 06:48:30,636 [1] INFO  WcfConfiguration - maxBufferSize: 2147483647
+2020-11-20 06:48:30,636 [1] INFO  WcfConfiguration - maxBufferPoolSize: 2147483647
+2020-11-20 06:48:30,636 [1] INFO  WcfConfiguration - maxReceivedMessageSize: 2147483647
+2020-11-20 06:48:30,636 [1] INFO  WcfConfiguration - readerQuotasMaxStringContentLength: 2147483647
+2020-11-20 06:48:30,636 [1] INFO  WcfConfiguration - readerQuotasMaxDepth: 2147483647
+2020-11-20 06:48:30,636 [1] INFO  WcfConfiguration - readerQuotasMaxArrayLength: 2147483647
+2020-11-20 06:48:30,636 [1] INFO  WcfConfiguration - maxConcurrentCalls: 200
+2020-11-20 06:48:30,636 [1] INFO  WcfConfiguration - maxConcurrentInstances: 200
+2020-11-20 06:48:30,636 [1] INFO  WcfConfiguration - maxConcurrentSessions: 200
+2020-11-20 06:48:30,636 [1] INFO  WcfConfiguration - maxConnections: 5000
+2020-11-20 06:48:30,636 [1] INFO  WcfConfiguration - maxItemsInObjectGraph: 2147483647
+2020-11-20 06:48:30,636 [1] INFO  WcfConfiguration - clientServerBindingType: HttpBinaryEncoded
+2020-11-20 06:48:34,386 [1] DEBUG Bootstrapper - Complete bootstrapping daos
+2020-11-20 06:48:34,386 [1] DEBUG Main - Done AppInitialize
+2020-11-20 06:48:35,137 [5] DEBUG ServiceNameMap - Attempting to find cached Service type IApplicationService
+2020-11-20 06:48:35,137 [5] DEBUG ServiceNameMap - Attempting to find Service type IApplicationService in Assemblies
+2020-11-20 06:48:35,137 [5] DEBUG ServiceNameMap - Getting interface type for the service IApplicationService
+2020-11-20 06:48:35,137 [5] DEBUG ServiceNameMap - Found 69 assemblies to search.
+2020-11-20 06:48:35,137 [5] DEBUG ServiceNameMap - Found assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:48:35,137 [5] DEBUG ServiceNameMap - Found assembly System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:48:35,137 [5] DEBUG ServiceNameMap - Found assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:48:35,137 [5] DEBUG ServiceNameMap - Found assembly System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:48:35,137 [5] DEBUG ServiceNameMap - Found assembly System.Web.ApplicationServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:48:35,137 [5] DEBUG ServiceNameMap - Found assembly System.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:48:35,137 [5] DEBUG ServiceNameMap - Found assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:48:35,137 [5] DEBUG ServiceNameMap - Found assembly System.Runtime.Caching, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:48:35,137 [5] DEBUG ServiceNameMap - Found assembly Microsoft.Build.Utilities.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:48:35,137 [5] DEBUG ServiceNameMap - Found assembly Microsoft.JScript, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:48:35,138 [5] DEBUG ServiceNameMap - Found assembly Microsoft.CSharp, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:48:35,138 [5] DEBUG ServiceNameMap - Found assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:48:35,138 [5] DEBUG ServiceNameMap - Found assembly System.Web.Services, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:48:35,138 [5] DEBUG ServiceNameMap - Found assembly System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:48:35,138 [5] DEBUG ServiceNameMap - Found assembly System.EnterpriseServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:48:35,138 [5] DEBUG ServiceNameMap - Found assembly System.IdentityModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:48:35,138 [5] DEBUG ServiceNameMap - Found assembly System.Runtime.Serialization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:48:35,138 [5] DEBUG ServiceNameMap - Found assembly System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:48:35,138 [5] DEBUG ServiceNameMap - Found assembly System.ServiceModel.Activation, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:48:35,138 [5] DEBUG ServiceNameMap - Found assembly System.ServiceModel.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:48:35,138 [5] DEBUG ServiceNameMap - Found assembly System.Activities, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:48:35,138 [5] DEBUG ServiceNameMap - Found assembly System.ServiceModel.Activities, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:48:35,138 [5] DEBUG ServiceNameMap - Found assembly System.WorkflowServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:48:35,138 [5] DEBUG ServiceNameMap - Found assembly System.Web.Extensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:48:35,138 [5] DEBUG ServiceNameMap - Found assembly System.Data.DataSetExtensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:48:35,138 [5] DEBUG ServiceNameMap - Found assembly System.Xml.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:48:35,138 [5] DEBUG ServiceNameMap - Found assembly System.ComponentModel.DataAnnotations, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:48:35,138 [5] DEBUG ServiceNameMap - Found assembly System.Web.DynamicData, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:48:35,138 [5] DEBUG ServiceNameMap - Found assembly Castle.Core, Version=3.2.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc
+2020-11-20 06:48:35,138 [5] DEBUG ServiceNameMap - Found assembly Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2020-11-20 06:48:35,138 [5] DEBUG ServiceNameMap - Searching OLT assembly Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null for IApplicationService
+2020-11-20 06:48:35,165 [5] DEBUG ServiceNameMap - Found IApplicationService in Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2020-11-20 06:48:35,165 [5] DEBUG ServiceNameMap - Attempting to class that implements IApplicationService in Assemblies
+2020-11-20 06:48:35,165 [5] DEBUG ServiceNameMap - Found 69 assemblies to search for service implementation
+2020-11-20 06:48:35,165 [5] DEBUG ServiceNameMap - Found assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:48:35,165 [5] DEBUG ServiceNameMap - Found assembly System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:48:35,166 [5] DEBUG ServiceNameMap - Found assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:48:35,166 [5] DEBUG ServiceNameMap - Found assembly System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:48:35,166 [5] DEBUG ServiceNameMap - Found assembly System.Web.ApplicationServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:48:35,166 [5] DEBUG ServiceNameMap - Found assembly System.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:48:35,166 [5] DEBUG ServiceNameMap - Found assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:48:35,166 [5] DEBUG ServiceNameMap - Found assembly System.Runtime.Caching, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:48:35,166 [5] DEBUG ServiceNameMap - Found assembly Microsoft.Build.Utilities.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:48:35,166 [5] DEBUG ServiceNameMap - Found assembly Microsoft.JScript, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:48:35,166 [5] DEBUG ServiceNameMap - Found assembly Microsoft.CSharp, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:48:35,166 [5] DEBUG ServiceNameMap - Found assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:48:35,166 [5] DEBUG ServiceNameMap - Found assembly System.Web.Services, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:48:35,166 [5] DEBUG ServiceNameMap - Found assembly System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:48:35,166 [5] DEBUG ServiceNameMap - Found assembly System.EnterpriseServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:48:35,166 [5] DEBUG ServiceNameMap - Found assembly System.IdentityModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:48:35,166 [5] DEBUG ServiceNameMap - Found assembly System.Runtime.Serialization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:48:35,166 [5] DEBUG ServiceNameMap - Found assembly System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:48:35,166 [5] DEBUG ServiceNameMap - Found assembly System.ServiceModel.Activation, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:48:35,166 [5] DEBUG ServiceNameMap - Found assembly System.ServiceModel.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:48:35,166 [5] DEBUG ServiceNameMap - Found assembly System.Activities, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:48:35,166 [5] DEBUG ServiceNameMap - Found assembly System.ServiceModel.Activities, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:48:35,166 [5] DEBUG ServiceNameMap - Found assembly System.WorkflowServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:48:35,166 [5] DEBUG ServiceNameMap - Found assembly System.Web.Extensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:48:35,166 [5] DEBUG ServiceNameMap - Found assembly System.Data.DataSetExtensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:48:35,166 [5] DEBUG ServiceNameMap - Found assembly System.Xml.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:48:35,166 [5] DEBUG ServiceNameMap - Found assembly System.ComponentModel.DataAnnotations, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:48:35,166 [5] DEBUG ServiceNameMap - Found assembly System.Web.DynamicData, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:48:35,166 [5] DEBUG ServiceNameMap - Found assembly Castle.Core, Version=3.2.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc
+2020-11-20 06:48:35,166 [5] DEBUG ServiceNameMap - Found assembly Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2020-11-20 06:48:35,166 [5] DEBUG ServiceNameMap - Searching OLT assembly Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null for IApplicationService
+2020-11-20 06:48:35,166 [5] DEBUG ServiceNameMap - Found assembly Com.Suncor.Olt.PlantHistorian, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2020-11-20 06:48:35,166 [5] DEBUG ServiceNameMap - Searching OLT assembly Com.Suncor.Olt.PlantHistorian, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null for IApplicationService
+2020-11-20 06:48:35,167 [5] DEBUG ServiceNameMap - Found assembly Com.Suncor.Olt.Remote, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2020-11-20 06:48:35,167 [5] DEBUG ServiceNameMap - Searching OLT assembly Com.Suncor.Olt.Remote, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null for IApplicationService
+2020-11-20 06:48:35,179 [5] DEBUG ServiceNameMap - Found Com.Suncor.Olt.Remote.Services.ApplicationService implementing Com.Suncor.Olt.Common.Services.IApplicationService in Com.Suncor.Olt.Remote, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2020-11-20 06:48:35,180 [5] DEBUG ServiceNameMap - Found assembly Com.Suncor.Olt.Reports, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2020-11-20 06:48:35,180 [5] DEBUG ServiceNameMap - Searching OLT assembly Com.Suncor.Olt.Reports, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null for IApplicationService
+2020-11-20 06:48:35,426 [5] DEBUG ServiceNameMap - Found assembly Couchbase, Version=1.2.9.0, Culture=neutral, PublicKeyToken=05e9c6b5a9ec94c2
+2020-11-20 06:48:35,426 [5] DEBUG ServiceNameMap - Found assembly DevExpress.Data.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2020-11-20 06:48:35,426 [5] DEBUG ServiceNameMap - Found assembly DevExpress.Office.v13.2.Core, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2020-11-20 06:48:35,426 [5] DEBUG ServiceNameMap - Found assembly DevExpress.Printing.v13.2.Core, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2020-11-20 06:48:35,426 [5] DEBUG ServiceNameMap - Found assembly DevExpress.RichEdit.v13.2.Core, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2020-11-20 06:48:35,426 [5] DEBUG ServiceNameMap - Found assembly DevExpress.Utils.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2020-11-20 06:48:35,426 [5] DEBUG ServiceNameMap - Found assembly DevExpress.XtraEditors.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2020-11-20 06:48:35,426 [5] DEBUG ServiceNameMap - Found assembly DevExpress.XtraPrinting.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2020-11-20 06:48:35,426 [5] DEBUG ServiceNameMap - Found assembly DevExpress.XtraRichEdit.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2020-11-20 06:48:35,426 [5] DEBUG ServiceNameMap - Found assembly Enyim.Caching, Version=1.2.9.0, Culture=neutral, PublicKeyToken=05e9c6b5a9ec94c2
+2020-11-20 06:48:35,426 [5] DEBUG ServiceNameMap - Found assembly Infragistics.Excel, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb
+2020-11-20 06:48:35,426 [5] DEBUG ServiceNameMap - Found assembly log4net, Version=1.2.13.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a
+2020-11-20 06:48:35,426 [5] DEBUG ServiceNameMap - Found assembly Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+2020-11-20 06:48:35,426 [5] DEBUG ServiceNameMap - Found assembly Oracle.DataAccess, Version=2.111.7.20, Culture=neutral, PublicKeyToken=89b483f429c47342
+2020-11-20 06:48:35,426 [5] DEBUG ServiceNameMap - Found assembly OSIsoft.PISDK, Version=1.3.0.0, Culture=neutral, PublicKeyToken=c3309f0734ba2805
+2020-11-20 06:48:35,426 [5] DEBUG ServiceNameMap - Found assembly OSIsoft.PISDKCommon, Version=1.3.0.0, Culture=neutral, PublicKeyToken=c3309f0734ba2805
+2020-11-20 06:48:35,426 [5] DEBUG ServiceNameMap - Found assembly OSIsoft.PITimeServer, Version=1.3.0.0, Culture=neutral, PublicKeyToken=c3309f0734ba2805
+2020-11-20 06:48:35,426 [5] DEBUG ServiceNameMap - Found assembly Microsoft.VisualStudio.Web.PageInspector.Loader, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:48:35,426 [5] DEBUG ServiceNameMap - Found assembly System.Web.WebPages.Deployment, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:48:35,426 [5] DEBUG ServiceNameMap - Found assembly System.Deployment, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:48:35,426 [5] DEBUG ServiceNameMap - Found assembly System.Transactions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:48:35,426 [5] DEBUG ServiceNameMap - Found assembly System.Xaml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:48:35,426 [5] DEBUG ServiceNameMap - Found assembly Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:48:35,426 [5] DEBUG ServiceNameMap - Found assembly System.Data.Services.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:48:35,426 [5] DEBUG ServiceNameMap - Found assembly App_Code.cj13svsi, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+2020-11-20 06:48:35,426 [5] DEBUG ServiceNameMap - Found assembly System.Web.RegularExpressions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:48:35,426 [5] DEBUG ServiceNameMap - Found assembly App_global.asax.ahpetibv, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+2020-11-20 06:48:35,426 [5] DEBUG ServiceNameMap - Found assembly Anonymously Hosted DynamicMethods Assembly, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+2020-11-20 06:48:35,426 [5] DEBUG ServiceNameMap - Found assembly DynamicProxyGenAssembly2, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+2020-11-20 06:48:35,426 [5] DEBUG ServiceNameMap - Found assembly SMDiagnostics, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:48:35,426 [5] DEBUG ServiceNameMap - Found assembly System.ServiceModel.Internals, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:48:35,426 [5] DEBUG ServiceNameMap - Found assembly Microsoft.VisualStudio.Diagnostics.ServiceModelSink, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:48:35,426 [5] DEBUG ServiceNameMap - Found assembly DynamicProxyGenAssembly2, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+2020-11-20 06:48:35,426 [5] DEBUG ServiceNameMap - Found assembly System.Xaml.Hosting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:48:35,427 [5] DEBUG ServiceNameMap - Found assembly System.ServiceModel.WasHosting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:48:35,427 [5] DEBUG ServiceNameMap - Found assembly Microsoft.Web.Administration, Version=7.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:48:35,460 [5] DEBUG ServiceNameMap - Getting interface type for the service IApplicationService
+2020-11-20 06:48:35,460 [5] DEBUG ServiceNameMap - Found 72 assemblies to search.
+2020-11-20 06:48:35,460 [5] DEBUG ServiceNameMap - Found assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:48:35,460 [5] DEBUG ServiceNameMap - Found assembly System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:48:35,460 [5] DEBUG ServiceNameMap - Found assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:48:35,460 [5] DEBUG ServiceNameMap - Found assembly System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:48:35,460 [5] DEBUG ServiceNameMap - Found assembly System.Web.ApplicationServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:48:35,460 [5] DEBUG ServiceNameMap - Found assembly System.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:48:35,460 [5] DEBUG ServiceNameMap - Found assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:48:35,460 [5] DEBUG ServiceNameMap - Found assembly System.Runtime.Caching, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:48:35,460 [5] DEBUG ServiceNameMap - Found assembly Microsoft.Build.Utilities.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:48:35,460 [5] DEBUG ServiceNameMap - Found assembly Microsoft.JScript, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:48:35,460 [5] DEBUG ServiceNameMap - Found assembly Microsoft.CSharp, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:48:35,460 [5] DEBUG ServiceNameMap - Found assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:48:35,460 [5] DEBUG ServiceNameMap - Found assembly System.Web.Services, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:48:35,460 [5] DEBUG ServiceNameMap - Found assembly System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:48:35,460 [5] DEBUG ServiceNameMap - Found assembly System.EnterpriseServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:48:35,460 [5] DEBUG ServiceNameMap - Found assembly System.IdentityModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:48:35,460 [5] DEBUG ServiceNameMap - Found assembly System.Runtime.Serialization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:48:35,460 [5] DEBUG ServiceNameMap - Found assembly System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:48:35,460 [5] DEBUG ServiceNameMap - Found assembly System.ServiceModel.Activation, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:48:35,460 [5] DEBUG ServiceNameMap - Found assembly System.ServiceModel.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:48:35,460 [5] DEBUG ServiceNameMap - Found assembly System.Activities, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:48:35,460 [5] DEBUG ServiceNameMap - Found assembly System.ServiceModel.Activities, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:48:35,460 [5] DEBUG ServiceNameMap - Found assembly System.WorkflowServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:48:35,460 [5] DEBUG ServiceNameMap - Found assembly System.Web.Extensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:48:35,461 [5] DEBUG ServiceNameMap - Found assembly System.Data.DataSetExtensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:48:35,461 [5] DEBUG ServiceNameMap - Found assembly System.Xml.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:48:35,461 [5] DEBUG ServiceNameMap - Found assembly System.ComponentModel.DataAnnotations, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:48:35,461 [5] DEBUG ServiceNameMap - Found assembly System.Web.DynamicData, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:48:35,461 [5] DEBUG ServiceNameMap - Found assembly Castle.Core, Version=3.2.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc
+2020-11-20 06:48:35,461 [5] DEBUG ServiceNameMap - Found assembly Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2020-11-20 06:48:35,461 [5] DEBUG ServiceNameMap - Searching OLT assembly Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null for IApplicationService
+2020-11-20 06:48:35,461 [5] DEBUG ServiceNameMap - Found IApplicationService in Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2020-11-20 06:48:35,461 [5] DEBUG OltServiceHostFactory - Adding add service endpoint for Com.Suncor.Olt.Common.Services.IApplicationService
+2020-11-20 06:48:35,461 [5] DEBUG OltServiceHostFactory - Adding alternate data contract serializer
+2020-11-20 06:48:35,461 [5] DEBUG OltServiceHostFactory - Adding service metadata behavior
+2020-11-20 06:48:35,461 [5] DEBUG OltServiceHostFactory - Adding service debug behavior
+2020-11-20 06:48:35,461 [5] DEBUG OltServiceHostFactory - Adding service throttling behavior
+2020-11-20 06:50:03,180 [5] DEBUG ServiceNameMap - Attempting to find cached Service type ISecurityService
+2020-11-20 06:50:03,180 [5] DEBUG ServiceNameMap - Attempting to find Service type ISecurityService in Assemblies
+2020-11-20 06:50:03,180 [5] DEBUG ServiceNameMap - Getting interface type for the service ISecurityService
+2020-11-20 06:50:03,180 [5] DEBUG ServiceNameMap - Found 73 assemblies to search.
+2020-11-20 06:50:03,180 [5] DEBUG ServiceNameMap - Found assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:03,180 [5] DEBUG ServiceNameMap - Found assembly System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:50:03,180 [5] DEBUG ServiceNameMap - Found assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:03,180 [5] DEBUG ServiceNameMap - Found assembly System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:03,180 [5] DEBUG ServiceNameMap - Found assembly System.Web.ApplicationServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:50:03,180 [5] DEBUG ServiceNameMap - Found assembly System.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:50:03,180 [5] DEBUG ServiceNameMap - Found assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:03,180 [5] DEBUG ServiceNameMap - Found assembly System.Runtime.Caching, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:50:03,180 [5] DEBUG ServiceNameMap - Found assembly Microsoft.Build.Utilities.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:50:03,180 [5] DEBUG ServiceNameMap - Found assembly Microsoft.JScript, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:50:03,180 [5] DEBUG ServiceNameMap - Found assembly Microsoft.CSharp, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:50:03,180 [5] DEBUG ServiceNameMap - Found assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:03,180 [5] DEBUG ServiceNameMap - Found assembly System.Web.Services, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:50:03,180 [5] DEBUG ServiceNameMap - Found assembly System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:50:03,180 [5] DEBUG ServiceNameMap - Found assembly System.EnterpriseServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:50:03,180 [5] DEBUG ServiceNameMap - Found assembly System.IdentityModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:03,180 [5] DEBUG ServiceNameMap - Found assembly System.Runtime.Serialization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:03,180 [5] DEBUG ServiceNameMap - Found assembly System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:03,180 [5] DEBUG ServiceNameMap - Found assembly System.ServiceModel.Activation, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:50:03,180 [5] DEBUG ServiceNameMap - Found assembly System.ServiceModel.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:50:03,180 [5] DEBUG ServiceNameMap - Found assembly System.Activities, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:50:03,180 [5] DEBUG ServiceNameMap - Found assembly System.ServiceModel.Activities, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:50:03,180 [5] DEBUG ServiceNameMap - Found assembly System.WorkflowServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:50:03,180 [5] DEBUG ServiceNameMap - Found assembly System.Web.Extensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:50:03,180 [5] DEBUG ServiceNameMap - Found assembly System.Data.DataSetExtensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:03,180 [5] DEBUG ServiceNameMap - Found assembly System.Xml.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:03,180 [5] DEBUG ServiceNameMap - Found assembly System.ComponentModel.DataAnnotations, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:50:03,180 [5] DEBUG ServiceNameMap - Found assembly System.Web.DynamicData, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:50:03,180 [5] DEBUG ServiceNameMap - Found assembly Castle.Core, Version=3.2.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc
+2020-11-20 06:50:03,180 [5] DEBUG ServiceNameMap - Found assembly Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2020-11-20 06:50:03,180 [5] DEBUG ServiceNameMap - Searching OLT assembly Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null for ISecurityService
+2020-11-20 06:50:03,181 [5] DEBUG ServiceNameMap - Found ISecurityService in Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2020-11-20 06:50:03,181 [5] DEBUG ServiceNameMap - Attempting to class that implements ISecurityService in Assemblies
+2020-11-20 06:50:03,181 [5] DEBUG ServiceNameMap - Found 73 assemblies to search for service implementation
+2020-11-20 06:50:03,181 [5] DEBUG ServiceNameMap - Found assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:03,181 [5] DEBUG ServiceNameMap - Found assembly System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:50:03,181 [5] DEBUG ServiceNameMap - Found assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:03,181 [5] DEBUG ServiceNameMap - Found assembly System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:03,181 [5] DEBUG ServiceNameMap - Found assembly System.Web.ApplicationServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:50:03,181 [5] DEBUG ServiceNameMap - Found assembly System.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:50:03,181 [5] DEBUG ServiceNameMap - Found assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:03,181 [5] DEBUG ServiceNameMap - Found assembly System.Runtime.Caching, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:50:03,181 [5] DEBUG ServiceNameMap - Found assembly Microsoft.Build.Utilities.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:50:03,181 [5] DEBUG ServiceNameMap - Found assembly Microsoft.JScript, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:50:03,181 [5] DEBUG ServiceNameMap - Found assembly Microsoft.CSharp, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:50:03,181 [5] DEBUG ServiceNameMap - Found assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:03,181 [5] DEBUG ServiceNameMap - Found assembly System.Web.Services, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:50:03,181 [5] DEBUG ServiceNameMap - Found assembly System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:50:03,181 [5] DEBUG ServiceNameMap - Found assembly System.EnterpriseServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:50:03,181 [5] DEBUG ServiceNameMap - Found assembly System.IdentityModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:03,181 [5] DEBUG ServiceNameMap - Found assembly System.Runtime.Serialization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:03,181 [5] DEBUG ServiceNameMap - Found assembly System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:03,181 [5] DEBUG ServiceNameMap - Found assembly System.ServiceModel.Activation, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:50:03,181 [5] DEBUG ServiceNameMap - Found assembly System.ServiceModel.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:50:03,181 [5] DEBUG ServiceNameMap - Found assembly System.Activities, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:50:03,181 [5] DEBUG ServiceNameMap - Found assembly System.ServiceModel.Activities, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:50:03,181 [5] DEBUG ServiceNameMap - Found assembly System.WorkflowServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:50:03,181 [5] DEBUG ServiceNameMap - Found assembly System.Web.Extensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:50:03,181 [5] DEBUG ServiceNameMap - Found assembly System.Data.DataSetExtensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:03,181 [5] DEBUG ServiceNameMap - Found assembly System.Xml.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:03,181 [5] DEBUG ServiceNameMap - Found assembly System.ComponentModel.DataAnnotations, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:50:03,181 [5] DEBUG ServiceNameMap - Found assembly System.Web.DynamicData, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:50:03,181 [5] DEBUG ServiceNameMap - Found assembly Castle.Core, Version=3.2.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc
+2020-11-20 06:50:03,181 [5] DEBUG ServiceNameMap - Found assembly Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2020-11-20 06:50:03,181 [5] DEBUG ServiceNameMap - Searching OLT assembly Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null for ISecurityService
+2020-11-20 06:50:03,181 [5] DEBUG ServiceNameMap - Found assembly Com.Suncor.Olt.PlantHistorian, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2020-11-20 06:50:03,181 [5] DEBUG ServiceNameMap - Searching OLT assembly Com.Suncor.Olt.PlantHistorian, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null for ISecurityService
+2020-11-20 06:50:03,181 [5] DEBUG ServiceNameMap - Found assembly Com.Suncor.Olt.Remote, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2020-11-20 06:50:03,181 [5] DEBUG ServiceNameMap - Searching OLT assembly Com.Suncor.Olt.Remote, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null for ISecurityService
+2020-11-20 06:50:03,182 [5] DEBUG ServiceNameMap - Found Com.Suncor.Olt.Remote.Services.SecurityService implementing Com.Suncor.Olt.Common.Services.ISecurityService in Com.Suncor.Olt.Remote, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2020-11-20 06:50:03,182 [5] DEBUG ServiceNameMap - Found assembly Com.Suncor.Olt.Reports, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2020-11-20 06:50:03,182 [5] DEBUG ServiceNameMap - Searching OLT assembly Com.Suncor.Olt.Reports, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null for ISecurityService
+2020-11-20 06:50:03,182 [5] DEBUG ServiceNameMap - Found assembly Couchbase, Version=1.2.9.0, Culture=neutral, PublicKeyToken=05e9c6b5a9ec94c2
+2020-11-20 06:50:03,182 [5] DEBUG ServiceNameMap - Found assembly DevExpress.Data.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2020-11-20 06:50:03,182 [5] DEBUG ServiceNameMap - Found assembly DevExpress.Office.v13.2.Core, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2020-11-20 06:50:03,182 [5] DEBUG ServiceNameMap - Found assembly DevExpress.Printing.v13.2.Core, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2020-11-20 06:50:03,182 [5] DEBUG ServiceNameMap - Found assembly DevExpress.RichEdit.v13.2.Core, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2020-11-20 06:50:03,182 [5] DEBUG ServiceNameMap - Found assembly DevExpress.Utils.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2020-11-20 06:50:03,182 [5] DEBUG ServiceNameMap - Found assembly DevExpress.XtraEditors.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2020-11-20 06:50:03,182 [5] DEBUG ServiceNameMap - Found assembly DevExpress.XtraPrinting.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2020-11-20 06:50:03,182 [5] DEBUG ServiceNameMap - Found assembly DevExpress.XtraRichEdit.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2020-11-20 06:50:03,182 [5] DEBUG ServiceNameMap - Found assembly Enyim.Caching, Version=1.2.9.0, Culture=neutral, PublicKeyToken=05e9c6b5a9ec94c2
+2020-11-20 06:50:03,182 [5] DEBUG ServiceNameMap - Found assembly Infragistics.Excel, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb
+2020-11-20 06:50:03,182 [5] DEBUG ServiceNameMap - Found assembly log4net, Version=1.2.13.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a
+2020-11-20 06:50:03,182 [5] DEBUG ServiceNameMap - Found assembly Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+2020-11-20 06:50:03,182 [5] DEBUG ServiceNameMap - Found assembly Oracle.DataAccess, Version=2.111.7.20, Culture=neutral, PublicKeyToken=89b483f429c47342
+2020-11-20 06:50:03,182 [5] DEBUG ServiceNameMap - Found assembly OSIsoft.PISDK, Version=1.3.0.0, Culture=neutral, PublicKeyToken=c3309f0734ba2805
+2020-11-20 06:50:03,182 [5] DEBUG ServiceNameMap - Found assembly OSIsoft.PISDKCommon, Version=1.3.0.0, Culture=neutral, PublicKeyToken=c3309f0734ba2805
+2020-11-20 06:50:03,182 [5] DEBUG ServiceNameMap - Found assembly OSIsoft.PITimeServer, Version=1.3.0.0, Culture=neutral, PublicKeyToken=c3309f0734ba2805
+2020-11-20 06:50:03,182 [5] DEBUG ServiceNameMap - Found assembly Microsoft.VisualStudio.Web.PageInspector.Loader, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:50:03,182 [5] DEBUG ServiceNameMap - Found assembly System.Web.WebPages.Deployment, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:50:03,182 [5] DEBUG ServiceNameMap - Found assembly System.Deployment, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:50:03,182 [5] DEBUG ServiceNameMap - Found assembly System.Transactions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:03,182 [5] DEBUG ServiceNameMap - Found assembly System.Xaml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:03,182 [5] DEBUG ServiceNameMap - Found assembly Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:50:03,182 [5] DEBUG ServiceNameMap - Found assembly System.Data.Services.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:03,182 [5] DEBUG ServiceNameMap - Found assembly App_Code.cj13svsi, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+2020-11-20 06:50:03,182 [5] DEBUG ServiceNameMap - Found assembly System.Web.RegularExpressions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:50:03,182 [5] DEBUG ServiceNameMap - Found assembly App_global.asax.ahpetibv, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+2020-11-20 06:50:03,182 [5] DEBUG ServiceNameMap - Found assembly Anonymously Hosted DynamicMethods Assembly, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+2020-11-20 06:50:03,182 [5] DEBUG ServiceNameMap - Found assembly DynamicProxyGenAssembly2, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+2020-11-20 06:50:03,182 [5] DEBUG ServiceNameMap - Found assembly SMDiagnostics, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:03,182 [5] DEBUG ServiceNameMap - Found assembly System.ServiceModel.Internals, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:50:03,182 [5] DEBUG ServiceNameMap - Found assembly Microsoft.VisualStudio.Diagnostics.ServiceModelSink, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:50:03,182 [5] DEBUG ServiceNameMap - Found assembly DynamicProxyGenAssembly2, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+2020-11-20 06:50:03,182 [5] DEBUG ServiceNameMap - Found assembly System.Xaml.Hosting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:50:03,182 [5] DEBUG ServiceNameMap - Found assembly System.ServiceModel.WasHosting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:03,182 [5] DEBUG ServiceNameMap - Found assembly Microsoft.Web.Administration, Version=7.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:50:03,182 [5] DEBUG ServiceNameMap - Found assembly DevExpress.XtraCharts.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2020-11-20 06:50:03,182 [5] DEBUG ServiceNameMap - Found assembly DevExpress.XtraReports.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2020-11-20 06:50:03,182 [5] DEBUG ServiceNameMap - Found assembly System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:03,183 [5] DEBUG ServiceNameMap - Found assembly System.Net.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:50:03,183 [5] DEBUG ServiceNameMap - Getting interface type for the service ISecurityService
+2020-11-20 06:50:03,183 [5] DEBUG ServiceNameMap - Found 73 assemblies to search.
+2020-11-20 06:50:03,183 [5] DEBUG ServiceNameMap - Found assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:03,183 [5] DEBUG ServiceNameMap - Found assembly System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:50:03,183 [5] DEBUG ServiceNameMap - Found assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:03,183 [5] DEBUG ServiceNameMap - Found assembly System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:03,183 [5] DEBUG ServiceNameMap - Found assembly System.Web.ApplicationServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:50:03,183 [5] DEBUG ServiceNameMap - Found assembly System.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:50:03,183 [5] DEBUG ServiceNameMap - Found assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:03,183 [5] DEBUG ServiceNameMap - Found assembly System.Runtime.Caching, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:50:03,183 [5] DEBUG ServiceNameMap - Found assembly Microsoft.Build.Utilities.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:50:03,183 [5] DEBUG ServiceNameMap - Found assembly Microsoft.JScript, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:50:03,183 [5] DEBUG ServiceNameMap - Found assembly Microsoft.CSharp, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:50:03,183 [5] DEBUG ServiceNameMap - Found assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:03,183 [5] DEBUG ServiceNameMap - Found assembly System.Web.Services, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:50:03,183 [5] DEBUG ServiceNameMap - Found assembly System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:50:03,183 [5] DEBUG ServiceNameMap - Found assembly System.EnterpriseServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:50:03,183 [5] DEBUG ServiceNameMap - Found assembly System.IdentityModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:03,183 [5] DEBUG ServiceNameMap - Found assembly System.Runtime.Serialization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:03,183 [5] DEBUG ServiceNameMap - Found assembly System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:03,183 [5] DEBUG ServiceNameMap - Found assembly System.ServiceModel.Activation, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:50:03,183 [5] DEBUG ServiceNameMap - Found assembly System.ServiceModel.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:50:03,183 [5] DEBUG ServiceNameMap - Found assembly System.Activities, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:50:03,183 [5] DEBUG ServiceNameMap - Found assembly System.ServiceModel.Activities, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:50:03,183 [5] DEBUG ServiceNameMap - Found assembly System.WorkflowServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:50:03,183 [5] DEBUG ServiceNameMap - Found assembly System.Web.Extensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:50:03,183 [5] DEBUG ServiceNameMap - Found assembly System.Data.DataSetExtensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:03,183 [5] DEBUG ServiceNameMap - Found assembly System.Xml.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:03,183 [5] DEBUG ServiceNameMap - Found assembly System.ComponentModel.DataAnnotations, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:50:03,183 [5] DEBUG ServiceNameMap - Found assembly System.Web.DynamicData, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:50:03,184 [5] DEBUG ServiceNameMap - Found assembly Castle.Core, Version=3.2.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc
+2020-11-20 06:50:03,184 [5] DEBUG ServiceNameMap - Found assembly Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2020-11-20 06:50:03,184 [5] DEBUG ServiceNameMap - Searching OLT assembly Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null for ISecurityService
+2020-11-20 06:50:03,184 [5] DEBUG ServiceNameMap - Found ISecurityService in Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2020-11-20 06:50:03,184 [5] DEBUG OltServiceHostFactory - Adding add service endpoint for Com.Suncor.Olt.Common.Services.ISecurityService
+2020-11-20 06:50:03,184 [5] DEBUG OltServiceHostFactory - Adding alternate data contract serializer
+2020-11-20 06:50:03,184 [5] DEBUG OltServiceHostFactory - Adding service metadata behavior
+2020-11-20 06:50:03,184 [5] DEBUG OltServiceHostFactory - Adding service debug behavior
+2020-11-20 06:50:03,184 [5] DEBUG OltServiceHostFactory - Adding service throttling behavior
+2020-11-20 06:50:07,430 [25] DEBUG StoredProcPerformanceInterceptor - Com.Suncor.Olt.Remote.DataAccess.Domain.ISiteDao.QueryAll took 2375ms.
+2020-11-20 06:50:12,284 [5] DEBUG ServiceNameMap - Attempting to find cached Service type IObjectLockingService
+2020-11-20 06:50:12,284 [5] DEBUG ServiceNameMap - Attempting to find Service type IObjectLockingService in Assemblies
+2020-11-20 06:50:12,284 [5] DEBUG ServiceNameMap - Getting interface type for the service IObjectLockingService
+2020-11-20 06:50:12,284 [5] DEBUG ServiceNameMap - Found 73 assemblies to search.
+2020-11-20 06:50:12,284 [5] DEBUG ServiceNameMap - Found assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:12,284 [5] DEBUG ServiceNameMap - Found assembly System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:50:12,284 [5] DEBUG ServiceNameMap - Found assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:12,284 [5] DEBUG ServiceNameMap - Found assembly System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:12,284 [5] DEBUG ServiceNameMap - Found assembly System.Web.ApplicationServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:50:12,284 [5] DEBUG ServiceNameMap - Found assembly System.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:50:12,284 [5] DEBUG ServiceNameMap - Found assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:12,285 [5] DEBUG ServiceNameMap - Found assembly System.Runtime.Caching, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:50:12,285 [5] DEBUG ServiceNameMap - Found assembly Microsoft.Build.Utilities.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:50:12,285 [5] DEBUG ServiceNameMap - Found assembly Microsoft.JScript, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:50:12,285 [5] DEBUG ServiceNameMap - Found assembly Microsoft.CSharp, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:50:12,285 [5] DEBUG ServiceNameMap - Found assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:12,285 [5] DEBUG ServiceNameMap - Found assembly System.Web.Services, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:50:12,285 [5] DEBUG ServiceNameMap - Found assembly System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:50:12,285 [5] DEBUG ServiceNameMap - Found assembly System.EnterpriseServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:50:12,285 [5] DEBUG ServiceNameMap - Found assembly System.IdentityModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:12,285 [5] DEBUG ServiceNameMap - Found assembly System.Runtime.Serialization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:12,285 [5] DEBUG ServiceNameMap - Found assembly System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:12,285 [5] DEBUG ServiceNameMap - Found assembly System.ServiceModel.Activation, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:50:12,285 [5] DEBUG ServiceNameMap - Found assembly System.ServiceModel.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:50:12,285 [5] DEBUG ServiceNameMap - Found assembly System.Activities, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:50:12,285 [5] DEBUG ServiceNameMap - Found assembly System.ServiceModel.Activities, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:50:12,285 [5] DEBUG ServiceNameMap - Found assembly System.WorkflowServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:50:12,285 [5] DEBUG ServiceNameMap - Found assembly System.Web.Extensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:50:12,285 [5] DEBUG ServiceNameMap - Found assembly System.Data.DataSetExtensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:12,285 [5] DEBUG ServiceNameMap - Found assembly System.Xml.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:12,285 [5] DEBUG ServiceNameMap - Found assembly System.ComponentModel.DataAnnotations, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:50:12,285 [5] DEBUG ServiceNameMap - Found assembly System.Web.DynamicData, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:50:12,285 [5] DEBUG ServiceNameMap - Found assembly Castle.Core, Version=3.2.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc
+2020-11-20 06:50:12,285 [5] DEBUG ServiceNameMap - Found assembly Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2020-11-20 06:50:12,285 [5] DEBUG ServiceNameMap - Searching OLT assembly Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null for IObjectLockingService
+2020-11-20 06:50:12,285 [5] DEBUG ServiceNameMap - Found IObjectLockingService in Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2020-11-20 06:50:12,285 [5] DEBUG ServiceNameMap - Attempting to class that implements IObjectLockingService in Assemblies
+2020-11-20 06:50:12,285 [5] DEBUG ServiceNameMap - Found 73 assemblies to search for service implementation
+2020-11-20 06:50:12,285 [5] DEBUG ServiceNameMap - Found assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:12,285 [5] DEBUG ServiceNameMap - Found assembly System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:50:12,285 [5] DEBUG ServiceNameMap - Found assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:12,285 [5] DEBUG ServiceNameMap - Found assembly System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:12,285 [5] DEBUG ServiceNameMap - Found assembly System.Web.ApplicationServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:50:12,285 [5] DEBUG ServiceNameMap - Found assembly System.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:50:12,285 [5] DEBUG ServiceNameMap - Found assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:12,285 [5] DEBUG ServiceNameMap - Found assembly System.Runtime.Caching, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:50:12,285 [5] DEBUG ServiceNameMap - Found assembly Microsoft.Build.Utilities.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:50:12,285 [5] DEBUG ServiceNameMap - Found assembly Microsoft.JScript, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:50:12,285 [5] DEBUG ServiceNameMap - Found assembly Microsoft.CSharp, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:50:12,285 [5] DEBUG ServiceNameMap - Found assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:12,285 [5] DEBUG ServiceNameMap - Found assembly System.Web.Services, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:50:12,285 [5] DEBUG ServiceNameMap - Found assembly System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:50:12,286 [5] DEBUG ServiceNameMap - Found assembly System.EnterpriseServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:50:12,286 [5] DEBUG ServiceNameMap - Found assembly System.IdentityModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:12,286 [5] DEBUG ServiceNameMap - Found assembly System.Runtime.Serialization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:12,286 [5] DEBUG ServiceNameMap - Found assembly System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:12,286 [5] DEBUG ServiceNameMap - Found assembly System.ServiceModel.Activation, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:50:12,286 [5] DEBUG ServiceNameMap - Found assembly System.ServiceModel.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:50:12,286 [5] DEBUG ServiceNameMap - Found assembly System.Activities, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:50:12,286 [5] DEBUG ServiceNameMap - Found assembly System.ServiceModel.Activities, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:50:12,286 [5] DEBUG ServiceNameMap - Found assembly System.WorkflowServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:50:12,286 [5] DEBUG ServiceNameMap - Found assembly System.Web.Extensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:50:12,286 [5] DEBUG ServiceNameMap - Found assembly System.Data.DataSetExtensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:12,286 [5] DEBUG ServiceNameMap - Found assembly System.Xml.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:12,286 [5] DEBUG ServiceNameMap - Found assembly System.ComponentModel.DataAnnotations, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:50:12,286 [5] DEBUG ServiceNameMap - Found assembly System.Web.DynamicData, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:50:12,286 [5] DEBUG ServiceNameMap - Found assembly Castle.Core, Version=3.2.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc
+2020-11-20 06:50:12,286 [5] DEBUG ServiceNameMap - Found assembly Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2020-11-20 06:50:12,286 [5] DEBUG ServiceNameMap - Searching OLT assembly Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null for IObjectLockingService
+2020-11-20 06:50:12,286 [5] DEBUG ServiceNameMap - Found assembly Com.Suncor.Olt.PlantHistorian, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2020-11-20 06:50:12,286 [5] DEBUG ServiceNameMap - Searching OLT assembly Com.Suncor.Olt.PlantHistorian, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null for IObjectLockingService
+2020-11-20 06:50:12,286 [5] DEBUG ServiceNameMap - Found assembly Com.Suncor.Olt.Remote, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2020-11-20 06:50:12,286 [5] DEBUG ServiceNameMap - Searching OLT assembly Com.Suncor.Olt.Remote, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null for IObjectLockingService
+2020-11-20 06:50:12,286 [5] DEBUG ServiceNameMap - Found Com.Suncor.Olt.Remote.Services.ObjectLockingService implementing Com.Suncor.Olt.Common.Services.IObjectLockingService in Com.Suncor.Olt.Remote, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2020-11-20 06:50:12,286 [5] DEBUG ServiceNameMap - Found assembly Com.Suncor.Olt.Reports, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2020-11-20 06:50:12,286 [5] DEBUG ServiceNameMap - Searching OLT assembly Com.Suncor.Olt.Reports, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null for IObjectLockingService
+2020-11-20 06:50:12,287 [5] DEBUG ServiceNameMap - Found assembly Couchbase, Version=1.2.9.0, Culture=neutral, PublicKeyToken=05e9c6b5a9ec94c2
+2020-11-20 06:50:12,287 [5] DEBUG ServiceNameMap - Found assembly DevExpress.Data.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2020-11-20 06:50:12,287 [5] DEBUG ServiceNameMap - Found assembly DevExpress.Office.v13.2.Core, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2020-11-20 06:50:12,287 [5] DEBUG ServiceNameMap - Found assembly DevExpress.Printing.v13.2.Core, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2020-11-20 06:50:12,287 [5] DEBUG ServiceNameMap - Found assembly DevExpress.RichEdit.v13.2.Core, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2020-11-20 06:50:12,287 [5] DEBUG ServiceNameMap - Found assembly DevExpress.Utils.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2020-11-20 06:50:12,287 [5] DEBUG ServiceNameMap - Found assembly DevExpress.XtraEditors.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2020-11-20 06:50:12,287 [5] DEBUG ServiceNameMap - Found assembly DevExpress.XtraPrinting.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2020-11-20 06:50:12,287 [5] DEBUG ServiceNameMap - Found assembly DevExpress.XtraRichEdit.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2020-11-20 06:50:12,287 [5] DEBUG ServiceNameMap - Found assembly Enyim.Caching, Version=1.2.9.0, Culture=neutral, PublicKeyToken=05e9c6b5a9ec94c2
+2020-11-20 06:50:12,287 [5] DEBUG ServiceNameMap - Found assembly Infragistics.Excel, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb
+2020-11-20 06:50:12,287 [5] DEBUG ServiceNameMap - Found assembly log4net, Version=1.2.13.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a
+2020-11-20 06:50:12,287 [5] DEBUG ServiceNameMap - Found assembly Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+2020-11-20 06:50:12,287 [5] DEBUG ServiceNameMap - Found assembly Oracle.DataAccess, Version=2.111.7.20, Culture=neutral, PublicKeyToken=89b483f429c47342
+2020-11-20 06:50:12,287 [5] DEBUG ServiceNameMap - Found assembly OSIsoft.PISDK, Version=1.3.0.0, Culture=neutral, PublicKeyToken=c3309f0734ba2805
+2020-11-20 06:50:12,287 [5] DEBUG ServiceNameMap - Found assembly OSIsoft.PISDKCommon, Version=1.3.0.0, Culture=neutral, PublicKeyToken=c3309f0734ba2805
+2020-11-20 06:50:12,287 [5] DEBUG ServiceNameMap - Found assembly OSIsoft.PITimeServer, Version=1.3.0.0, Culture=neutral, PublicKeyToken=c3309f0734ba2805
+2020-11-20 06:50:12,287 [5] DEBUG ServiceNameMap - Found assembly Microsoft.VisualStudio.Web.PageInspector.Loader, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:50:12,287 [5] DEBUG ServiceNameMap - Found assembly System.Web.WebPages.Deployment, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:50:12,287 [5] DEBUG ServiceNameMap - Found assembly System.Deployment, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:50:12,287 [5] DEBUG ServiceNameMap - Found assembly System.Transactions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:12,287 [5] DEBUG ServiceNameMap - Found assembly System.Xaml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:12,287 [5] DEBUG ServiceNameMap - Found assembly Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:50:12,287 [5] DEBUG ServiceNameMap - Found assembly System.Data.Services.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:12,287 [5] DEBUG ServiceNameMap - Found assembly App_Code.cj13svsi, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+2020-11-20 06:50:12,287 [5] DEBUG ServiceNameMap - Found assembly System.Web.RegularExpressions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:50:12,287 [5] DEBUG ServiceNameMap - Found assembly App_global.asax.ahpetibv, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+2020-11-20 06:50:12,287 [5] DEBUG ServiceNameMap - Found assembly Anonymously Hosted DynamicMethods Assembly, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+2020-11-20 06:50:12,287 [5] DEBUG ServiceNameMap - Found assembly DynamicProxyGenAssembly2, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+2020-11-20 06:50:12,287 [5] DEBUG ServiceNameMap - Found assembly SMDiagnostics, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:12,287 [5] DEBUG ServiceNameMap - Found assembly System.ServiceModel.Internals, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:50:12,287 [5] DEBUG ServiceNameMap - Found assembly Microsoft.VisualStudio.Diagnostics.ServiceModelSink, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:50:12,287 [5] DEBUG ServiceNameMap - Found assembly DynamicProxyGenAssembly2, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+2020-11-20 06:50:12,287 [5] DEBUG ServiceNameMap - Found assembly System.Xaml.Hosting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:50:12,287 [5] DEBUG ServiceNameMap - Found assembly System.ServiceModel.WasHosting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:12,287 [5] DEBUG ServiceNameMap - Found assembly Microsoft.Web.Administration, Version=7.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:50:12,287 [5] DEBUG ServiceNameMap - Found assembly DevExpress.XtraCharts.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2020-11-20 06:50:12,287 [5] DEBUG ServiceNameMap - Found assembly DevExpress.XtraReports.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2020-11-20 06:50:12,287 [5] DEBUG ServiceNameMap - Found assembly System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:12,287 [5] DEBUG ServiceNameMap - Found assembly System.Net.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:50:12,288 [5] DEBUG ServiceNameMap - Getting interface type for the service IObjectLockingService
+2020-11-20 06:50:12,288 [5] DEBUG ServiceNameMap - Found 73 assemblies to search.
+2020-11-20 06:50:12,288 [5] DEBUG ServiceNameMap - Found assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:12,288 [5] DEBUG ServiceNameMap - Found assembly System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:50:12,288 [5] DEBUG ServiceNameMap - Found assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:12,288 [5] DEBUG ServiceNameMap - Found assembly System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:12,288 [5] DEBUG ServiceNameMap - Found assembly System.Web.ApplicationServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:50:12,288 [5] DEBUG ServiceNameMap - Found assembly System.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:50:12,288 [5] DEBUG ServiceNameMap - Found assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:12,288 [5] DEBUG ServiceNameMap - Found assembly System.Runtime.Caching, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:50:12,288 [5] DEBUG ServiceNameMap - Found assembly Microsoft.Build.Utilities.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:50:12,288 [5] DEBUG ServiceNameMap - Found assembly Microsoft.JScript, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:50:12,288 [5] DEBUG ServiceNameMap - Found assembly Microsoft.CSharp, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:50:12,288 [5] DEBUG ServiceNameMap - Found assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:12,288 [5] DEBUG ServiceNameMap - Found assembly System.Web.Services, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:50:12,288 [5] DEBUG ServiceNameMap - Found assembly System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:50:12,288 [5] DEBUG ServiceNameMap - Found assembly System.EnterpriseServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:50:12,288 [5] DEBUG ServiceNameMap - Found assembly System.IdentityModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:12,288 [5] DEBUG ServiceNameMap - Found assembly System.Runtime.Serialization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:12,288 [5] DEBUG ServiceNameMap - Found assembly System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:12,288 [5] DEBUG ServiceNameMap - Found assembly System.ServiceModel.Activation, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:50:12,288 [5] DEBUG ServiceNameMap - Found assembly System.ServiceModel.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:50:12,288 [5] DEBUG ServiceNameMap - Found assembly System.Activities, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:50:12,288 [5] DEBUG ServiceNameMap - Found assembly System.ServiceModel.Activities, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:50:12,288 [5] DEBUG ServiceNameMap - Found assembly System.WorkflowServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:50:12,288 [5] DEBUG ServiceNameMap - Found assembly System.Web.Extensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:50:12,288 [5] DEBUG ServiceNameMap - Found assembly System.Data.DataSetExtensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:12,288 [5] DEBUG ServiceNameMap - Found assembly System.Xml.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:12,288 [5] DEBUG ServiceNameMap - Found assembly System.ComponentModel.DataAnnotations, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:50:12,288 [5] DEBUG ServiceNameMap - Found assembly System.Web.DynamicData, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:50:12,288 [5] DEBUG ServiceNameMap - Found assembly Castle.Core, Version=3.2.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc
+2020-11-20 06:50:12,289 [5] DEBUG ServiceNameMap - Found assembly Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2020-11-20 06:50:12,289 [5] DEBUG ServiceNameMap - Searching OLT assembly Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null for IObjectLockingService
+2020-11-20 06:50:12,289 [5] DEBUG ServiceNameMap - Found IObjectLockingService in Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2020-11-20 06:50:12,289 [5] DEBUG OltServiceHostFactory - Adding add service endpoint for Com.Suncor.Olt.Common.Services.IObjectLockingService
+2020-11-20 06:50:12,289 [5] DEBUG OltServiceHostFactory - Adding alternate data contract serializer
+2020-11-20 06:50:12,289 [5] DEBUG OltServiceHostFactory - Adding service metadata behavior
+2020-11-20 06:50:12,289 [5] DEBUG OltServiceHostFactory - Adding service debug behavior
+2020-11-20 06:50:12,289 [5] DEBUG OltServiceHostFactory - Adding service throttling behavior
+2020-11-20 06:50:18,915 [5] DEBUG ServiceNameMap - Attempting to find cached Service type ISiteConfigurationService
+2020-11-20 06:50:18,915 [5] DEBUG ServiceNameMap - Attempting to find Service type ISiteConfigurationService in Assemblies
+2020-11-20 06:50:18,915 [5] DEBUG ServiceNameMap - Getting interface type for the service ISiteConfigurationService
+2020-11-20 06:50:18,915 [5] DEBUG ServiceNameMap - Found 73 assemblies to search.
+2020-11-20 06:50:18,915 [5] DEBUG ServiceNameMap - Found assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:18,916 [5] DEBUG ServiceNameMap - Found assembly System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:50:18,916 [5] DEBUG ServiceNameMap - Found assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:18,916 [5] DEBUG ServiceNameMap - Found assembly System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:18,916 [5] DEBUG ServiceNameMap - Found assembly System.Web.ApplicationServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:50:18,916 [5] DEBUG ServiceNameMap - Found assembly System.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:50:18,916 [5] DEBUG ServiceNameMap - Found assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:18,916 [5] DEBUG ServiceNameMap - Found assembly System.Runtime.Caching, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:50:18,916 [5] DEBUG ServiceNameMap - Found assembly Microsoft.Build.Utilities.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:50:18,916 [5] DEBUG ServiceNameMap - Found assembly Microsoft.JScript, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:50:18,916 [5] DEBUG ServiceNameMap - Found assembly Microsoft.CSharp, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:50:18,916 [5] DEBUG ServiceNameMap - Found assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:18,916 [5] DEBUG ServiceNameMap - Found assembly System.Web.Services, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:50:18,916 [5] DEBUG ServiceNameMap - Found assembly System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:50:18,916 [5] DEBUG ServiceNameMap - Found assembly System.EnterpriseServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:50:18,916 [5] DEBUG ServiceNameMap - Found assembly System.IdentityModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:18,916 [5] DEBUG ServiceNameMap - Found assembly System.Runtime.Serialization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:18,916 [5] DEBUG ServiceNameMap - Found assembly System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:18,916 [5] DEBUG ServiceNameMap - Found assembly System.ServiceModel.Activation, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:50:18,916 [5] DEBUG ServiceNameMap - Found assembly System.ServiceModel.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:50:18,916 [5] DEBUG ServiceNameMap - Found assembly System.Activities, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:50:18,916 [5] DEBUG ServiceNameMap - Found assembly System.ServiceModel.Activities, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:50:18,916 [5] DEBUG ServiceNameMap - Found assembly System.WorkflowServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:50:18,916 [5] DEBUG ServiceNameMap - Found assembly System.Web.Extensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:50:18,916 [5] DEBUG ServiceNameMap - Found assembly System.Data.DataSetExtensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:18,916 [5] DEBUG ServiceNameMap - Found assembly System.Xml.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:18,916 [5] DEBUG ServiceNameMap - Found assembly System.ComponentModel.DataAnnotations, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:50:18,916 [5] DEBUG ServiceNameMap - Found assembly System.Web.DynamicData, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:50:18,916 [5] DEBUG ServiceNameMap - Found assembly Castle.Core, Version=3.2.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc
+2020-11-20 06:50:18,916 [5] DEBUG ServiceNameMap - Found assembly Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2020-11-20 06:50:18,916 [5] DEBUG ServiceNameMap - Searching OLT assembly Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null for ISiteConfigurationService
+2020-11-20 06:50:18,916 [5] DEBUG ServiceNameMap - Found ISiteConfigurationService in Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2020-11-20 06:50:18,916 [5] DEBUG ServiceNameMap - Attempting to class that implements ISiteConfigurationService in Assemblies
+2020-11-20 06:50:18,916 [5] DEBUG ServiceNameMap - Found 73 assemblies to search for service implementation
+2020-11-20 06:50:18,916 [5] DEBUG ServiceNameMap - Found assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:18,916 [5] DEBUG ServiceNameMap - Found assembly System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:50:18,916 [5] DEBUG ServiceNameMap - Found assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:18,916 [5] DEBUG ServiceNameMap - Found assembly System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:18,916 [5] DEBUG ServiceNameMap - Found assembly System.Web.ApplicationServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:50:18,916 [5] DEBUG ServiceNameMap - Found assembly System.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:50:18,916 [5] DEBUG ServiceNameMap - Found assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:18,916 [5] DEBUG ServiceNameMap - Found assembly System.Runtime.Caching, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:50:18,916 [5] DEBUG ServiceNameMap - Found assembly Microsoft.Build.Utilities.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:50:18,916 [5] DEBUG ServiceNameMap - Found assembly Microsoft.JScript, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:50:18,916 [5] DEBUG ServiceNameMap - Found assembly Microsoft.CSharp, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:50:18,916 [5] DEBUG ServiceNameMap - Found assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:18,916 [5] DEBUG ServiceNameMap - Found assembly System.Web.Services, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:50:18,916 [5] DEBUG ServiceNameMap - Found assembly System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:50:18,916 [5] DEBUG ServiceNameMap - Found assembly System.EnterpriseServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:50:18,916 [5] DEBUG ServiceNameMap - Found assembly System.IdentityModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:18,916 [5] DEBUG ServiceNameMap - Found assembly System.Runtime.Serialization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:18,916 [5] DEBUG ServiceNameMap - Found assembly System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:18,916 [5] DEBUG ServiceNameMap - Found assembly System.ServiceModel.Activation, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:50:18,917 [5] DEBUG ServiceNameMap - Found assembly System.ServiceModel.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:50:18,917 [5] DEBUG ServiceNameMap - Found assembly System.Activities, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:50:18,917 [5] DEBUG ServiceNameMap - Found assembly System.ServiceModel.Activities, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:50:18,917 [5] DEBUG ServiceNameMap - Found assembly System.WorkflowServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:50:18,917 [5] DEBUG ServiceNameMap - Found assembly System.Web.Extensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:50:18,917 [5] DEBUG ServiceNameMap - Found assembly System.Data.DataSetExtensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:18,917 [5] DEBUG ServiceNameMap - Found assembly System.Xml.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:18,917 [5] DEBUG ServiceNameMap - Found assembly System.ComponentModel.DataAnnotations, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:50:18,917 [5] DEBUG ServiceNameMap - Found assembly System.Web.DynamicData, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:50:18,917 [5] DEBUG ServiceNameMap - Found assembly Castle.Core, Version=3.2.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc
+2020-11-20 06:50:18,917 [5] DEBUG ServiceNameMap - Found assembly Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2020-11-20 06:50:18,917 [5] DEBUG ServiceNameMap - Searching OLT assembly Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null for ISiteConfigurationService
+2020-11-20 06:50:18,917 [5] DEBUG ServiceNameMap - Found assembly Com.Suncor.Olt.PlantHistorian, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2020-11-20 06:50:18,917 [5] DEBUG ServiceNameMap - Searching OLT assembly Com.Suncor.Olt.PlantHistorian, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null for ISiteConfigurationService
+2020-11-20 06:50:18,917 [5] DEBUG ServiceNameMap - Found assembly Com.Suncor.Olt.Remote, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2020-11-20 06:50:18,917 [5] DEBUG ServiceNameMap - Searching OLT assembly Com.Suncor.Olt.Remote, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null for ISiteConfigurationService
+2020-11-20 06:50:18,917 [5] DEBUG ServiceNameMap - Found Com.Suncor.Olt.Remote.Services.SiteConfigurationService implementing Com.Suncor.Olt.Common.Services.ISiteConfigurationService in Com.Suncor.Olt.Remote, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2020-11-20 06:50:18,917 [5] DEBUG ServiceNameMap - Found assembly Com.Suncor.Olt.Reports, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2020-11-20 06:50:18,917 [5] DEBUG ServiceNameMap - Searching OLT assembly Com.Suncor.Olt.Reports, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null for ISiteConfigurationService
+2020-11-20 06:50:18,917 [5] DEBUG ServiceNameMap - Found assembly Couchbase, Version=1.2.9.0, Culture=neutral, PublicKeyToken=05e9c6b5a9ec94c2
+2020-11-20 06:50:18,917 [5] DEBUG ServiceNameMap - Found assembly DevExpress.Data.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2020-11-20 06:50:18,917 [5] DEBUG ServiceNameMap - Found assembly DevExpress.Office.v13.2.Core, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2020-11-20 06:50:18,917 [5] DEBUG ServiceNameMap - Found assembly DevExpress.Printing.v13.2.Core, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2020-11-20 06:50:18,917 [5] DEBUG ServiceNameMap - Found assembly DevExpress.RichEdit.v13.2.Core, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2020-11-20 06:50:18,917 [5] DEBUG ServiceNameMap - Found assembly DevExpress.Utils.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2020-11-20 06:50:18,917 [5] DEBUG ServiceNameMap - Found assembly DevExpress.XtraEditors.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2020-11-20 06:50:18,917 [5] DEBUG ServiceNameMap - Found assembly DevExpress.XtraPrinting.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2020-11-20 06:50:18,917 [5] DEBUG ServiceNameMap - Found assembly DevExpress.XtraRichEdit.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2020-11-20 06:50:18,917 [5] DEBUG ServiceNameMap - Found assembly Enyim.Caching, Version=1.2.9.0, Culture=neutral, PublicKeyToken=05e9c6b5a9ec94c2
+2020-11-20 06:50:18,917 [5] DEBUG ServiceNameMap - Found assembly Infragistics.Excel, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb
+2020-11-20 06:50:18,917 [5] DEBUG ServiceNameMap - Found assembly log4net, Version=1.2.13.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a
+2020-11-20 06:50:18,917 [5] DEBUG ServiceNameMap - Found assembly Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+2020-11-20 06:50:18,917 [5] DEBUG ServiceNameMap - Found assembly Oracle.DataAccess, Version=2.111.7.20, Culture=neutral, PublicKeyToken=89b483f429c47342
+2020-11-20 06:50:18,917 [5] DEBUG ServiceNameMap - Found assembly OSIsoft.PISDK, Version=1.3.0.0, Culture=neutral, PublicKeyToken=c3309f0734ba2805
+2020-11-20 06:50:18,917 [5] DEBUG ServiceNameMap - Found assembly OSIsoft.PISDKCommon, Version=1.3.0.0, Culture=neutral, PublicKeyToken=c3309f0734ba2805
+2020-11-20 06:50:18,917 [5] DEBUG ServiceNameMap - Found assembly OSIsoft.PITimeServer, Version=1.3.0.0, Culture=neutral, PublicKeyToken=c3309f0734ba2805
+2020-11-20 06:50:18,917 [5] DEBUG ServiceNameMap - Found assembly Microsoft.VisualStudio.Web.PageInspector.Loader, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:50:18,917 [5] DEBUG ServiceNameMap - Found assembly System.Web.WebPages.Deployment, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:50:18,917 [5] DEBUG ServiceNameMap - Found assembly System.Deployment, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:50:18,917 [5] DEBUG ServiceNameMap - Found assembly System.Transactions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:18,917 [5] DEBUG ServiceNameMap - Found assembly System.Xaml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:18,917 [5] DEBUG ServiceNameMap - Found assembly Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:50:18,917 [5] DEBUG ServiceNameMap - Found assembly System.Data.Services.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:18,918 [5] DEBUG ServiceNameMap - Found assembly App_Code.cj13svsi, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+2020-11-20 06:50:18,918 [5] DEBUG ServiceNameMap - Found assembly System.Web.RegularExpressions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:50:18,918 [5] DEBUG ServiceNameMap - Found assembly App_global.asax.ahpetibv, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+2020-11-20 06:50:18,918 [5] DEBUG ServiceNameMap - Found assembly Anonymously Hosted DynamicMethods Assembly, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+2020-11-20 06:50:18,918 [5] DEBUG ServiceNameMap - Found assembly DynamicProxyGenAssembly2, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+2020-11-20 06:50:18,918 [5] DEBUG ServiceNameMap - Found assembly SMDiagnostics, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:18,918 [5] DEBUG ServiceNameMap - Found assembly System.ServiceModel.Internals, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:50:18,918 [5] DEBUG ServiceNameMap - Found assembly Microsoft.VisualStudio.Diagnostics.ServiceModelSink, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:50:18,918 [5] DEBUG ServiceNameMap - Found assembly DynamicProxyGenAssembly2, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+2020-11-20 06:50:18,918 [5] DEBUG ServiceNameMap - Found assembly System.Xaml.Hosting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:50:18,918 [5] DEBUG ServiceNameMap - Found assembly System.ServiceModel.WasHosting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:18,918 [5] DEBUG ServiceNameMap - Found assembly Microsoft.Web.Administration, Version=7.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:50:18,918 [5] DEBUG ServiceNameMap - Found assembly DevExpress.XtraCharts.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2020-11-20 06:50:18,918 [5] DEBUG ServiceNameMap - Found assembly DevExpress.XtraReports.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2020-11-20 06:50:18,918 [5] DEBUG ServiceNameMap - Found assembly System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:18,918 [5] DEBUG ServiceNameMap - Found assembly System.Net.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:50:18,919 [5] DEBUG ServiceNameMap - Getting interface type for the service ISiteConfigurationService
+2020-11-20 06:50:18,919 [5] DEBUG ServiceNameMap - Found 73 assemblies to search.
+2020-11-20 06:50:18,919 [5] DEBUG ServiceNameMap - Found assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:18,919 [5] DEBUG ServiceNameMap - Found assembly System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:50:18,919 [5] DEBUG ServiceNameMap - Found assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:18,919 [5] DEBUG ServiceNameMap - Found assembly System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:18,919 [5] DEBUG ServiceNameMap - Found assembly System.Web.ApplicationServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:50:18,919 [5] DEBUG ServiceNameMap - Found assembly System.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:50:18,919 [5] DEBUG ServiceNameMap - Found assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:18,919 [5] DEBUG ServiceNameMap - Found assembly System.Runtime.Caching, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:50:18,919 [5] DEBUG ServiceNameMap - Found assembly Microsoft.Build.Utilities.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:50:18,919 [5] DEBUG ServiceNameMap - Found assembly Microsoft.JScript, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:50:18,919 [5] DEBUG ServiceNameMap - Found assembly Microsoft.CSharp, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:50:18,919 [5] DEBUG ServiceNameMap - Found assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:18,919 [5] DEBUG ServiceNameMap - Found assembly System.Web.Services, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:50:18,919 [5] DEBUG ServiceNameMap - Found assembly System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:50:18,919 [5] DEBUG ServiceNameMap - Found assembly System.EnterpriseServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:50:18,919 [5] DEBUG ServiceNameMap - Found assembly System.IdentityModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:18,919 [5] DEBUG ServiceNameMap - Found assembly System.Runtime.Serialization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:18,919 [5] DEBUG ServiceNameMap - Found assembly System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:18,919 [5] DEBUG ServiceNameMap - Found assembly System.ServiceModel.Activation, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:50:18,920 [5] DEBUG ServiceNameMap - Found assembly System.ServiceModel.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:50:18,920 [5] DEBUG ServiceNameMap - Found assembly System.Activities, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:50:18,920 [5] DEBUG ServiceNameMap - Found assembly System.ServiceModel.Activities, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:50:18,920 [5] DEBUG ServiceNameMap - Found assembly System.WorkflowServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:50:18,920 [5] DEBUG ServiceNameMap - Found assembly System.Web.Extensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:50:18,920 [5] DEBUG ServiceNameMap - Found assembly System.Data.DataSetExtensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:18,920 [5] DEBUG ServiceNameMap - Found assembly System.Xml.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:18,920 [5] DEBUG ServiceNameMap - Found assembly System.ComponentModel.DataAnnotations, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:50:18,920 [5] DEBUG ServiceNameMap - Found assembly System.Web.DynamicData, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:50:18,920 [5] DEBUG ServiceNameMap - Found assembly Castle.Core, Version=3.2.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc
+2020-11-20 06:50:18,920 [5] DEBUG ServiceNameMap - Found assembly Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2020-11-20 06:50:18,920 [5] DEBUG ServiceNameMap - Searching OLT assembly Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null for ISiteConfigurationService
+2020-11-20 06:50:18,920 [5] DEBUG ServiceNameMap - Found ISiteConfigurationService in Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2020-11-20 06:50:18,920 [5] DEBUG OltServiceHostFactory - Adding add service endpoint for Com.Suncor.Olt.Common.Services.ISiteConfigurationService
+2020-11-20 06:50:18,920 [5] DEBUG OltServiceHostFactory - Adding alternate data contract serializer
+2020-11-20 06:50:18,920 [5] DEBUG OltServiceHostFactory - Adding service metadata behavior
+2020-11-20 06:50:18,920 [5] DEBUG OltServiceHostFactory - Adding service debug behavior
+2020-11-20 06:50:18,920 [5] DEBUG OltServiceHostFactory - Adding service throttling behavior
+2020-11-20 06:50:19,941 [1] ERROR ServerOperationInvoker - An error has occured while executing server operation.
+Error GUID: 4a557e12-7525-4f42-b76c-a21e4e180cfd
+Method: Com.Suncor.Olt.Common.Domain.SiteConfiguration QueryBySiteId(Int64)
+User Information: [User:12492] [Shift:] [ClientUri:net.tcp://10.9.21.6:9771/]
+Input[0]: Type:Int64 - 13
+Exception Information: System.InvalidCastException: Specified cast is not valid.
+   at Com.Suncor.Olt.Remote.DataAccess.SqlDataReaderExtensions.Get[T](IDataRecord dataRecord, String columnName) in c:\code\windows\csc\OLT\trunk\src\RemoteApp\App\DataAccess\SqlDataReaderExtensions.cs:line 27
+   at Com.Suncor.Olt.Remote.DataAccess.Domain.SiteConfigurationDao.PopulateInstance(SqlDataReader reader) in c:\code\windows\csc\OLT\trunk\src\RemoteApp\App\DataAccess\Domain\SiteConfigurationDao.cs:line 695
+   at Com.Suncor.Olt.Remote.DataAccess.SqlCommandExtensions.ExecuteCommandForSingleResult[T](SqlCommand command, PopulateInstance`1 populateHandler) in c:\code\windows\csc\OLT\trunk\src\RemoteApp\App\DataAccess\SqlCommandExtensions.cs:line 288
+   at Com.Suncor.Olt.Remote.DataAccess.SqlCommandExtensions.QueryById[T](SqlCommand command, Int64 id, PopulateInstance`1 populateHandler, String storedProcedureName) in c:\code\windows\csc\OLT\trunk\src\RemoteApp\App\DataAccess\SqlCommandExtensions.cs:line 147
+   at Com.Suncor.Olt.Remote.DataAccess.Domain.SiteConfigurationDao.QueryBySiteId(Int64 siteId) in c:\code\windows\csc\OLT\trunk\src\RemoteApp\App\DataAccess\Domain\SiteConfigurationDao.cs:line 57
+   at Castle.Proxies.Invocations.ISiteConfigurationDao_QueryBySiteId.InvokeMethodOnTarget()
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Com.Suncor.Olt.Remote.DataAccess.StoredProcDaoInterceptor.RunCommand(SqlConnection sqlConnection, IInvocation invocation) in c:\code\windows\csc\OLT\trunk\src\RemoteApp\App\DataAccess\StoredProcDaoInterceptor.cs:line 61
+   at Com.Suncor.Olt.Remote.DataAccess.StoredProcDaoInterceptor.Intercept(IInvocation invocation) in c:\code\windows\csc\OLT\trunk\src\RemoteApp\App\DataAccess\StoredProcDaoInterceptor.cs:line 27
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Com.Suncor.Olt.Remote.DataAccess.StoredProcPerformanceInterceptor.Intercept(IInvocation invocation) in c:\code\windows\csc\OLT\trunk\src\RemoteApp\App\DataAccess\StoredProcPerformanceInterceptor.cs:line 22
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.Proxies.ISiteConfigurationDaoProxy.QueryBySiteId(Int64 siteId)
+   at Com.Suncor.Olt.Remote.Services.SiteConfigurationService.QueryBySiteId(Int64 siteId) in c:\code\windows\csc\OLT\trunk\src\RemoteApp\App\Services\SiteConfigurationService.cs:line 73
+   at SyncInvokeQueryBySiteId(Object , Object[] , Object[] )
+   at System.ServiceModel.Dispatcher.SyncMethodInvoker.Invoke(Object instance, Object[] inputs, Object[]& outputs)
+   at Com.Suncor.Olt.Remote.Wcf.ServerOperationInvoker.InvokeWithTransaction(Object instance, Object[] inputs, Object[]& outputs) in c:\code\windows\csc\OLT\trunk\src\RemoteApp\App\Wcf\ServerOperationInvoker.cs:line 181
+   at Com.Suncor.Olt.Remote.Wcf.ServerOperationInvoker.Invoke(Object instance, Object[] inputs, Object[]& outputs) in c:\code\windows\csc\OLT\trunk\src\RemoteApp\App\Wcf\ServerOperationInvoker.cs:line 86
+2020-11-20 06:50:37,038 [5] DEBUG ServiceNameMap - Attempting to find cached Service type IAnalyticsService
+2020-11-20 06:50:37,038 [5] DEBUG ServiceNameMap - Attempting to find Service type IAnalyticsService in Assemblies
+2020-11-20 06:50:37,038 [5] DEBUG ServiceNameMap - Getting interface type for the service IAnalyticsService
+2020-11-20 06:50:37,038 [5] DEBUG ServiceNameMap - Found 73 assemblies to search.
+2020-11-20 06:50:37,038 [5] DEBUG ServiceNameMap - Found assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:37,038 [5] DEBUG ServiceNameMap - Found assembly System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:50:37,038 [5] DEBUG ServiceNameMap - Found assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:37,038 [5] DEBUG ServiceNameMap - Found assembly System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:37,038 [5] DEBUG ServiceNameMap - Found assembly System.Web.ApplicationServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:50:37,038 [5] DEBUG ServiceNameMap - Found assembly System.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:50:37,038 [5] DEBUG ServiceNameMap - Found assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:37,038 [5] DEBUG ServiceNameMap - Found assembly System.Runtime.Caching, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:50:37,038 [5] DEBUG ServiceNameMap - Found assembly Microsoft.Build.Utilities.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:50:37,039 [5] DEBUG ServiceNameMap - Found assembly Microsoft.JScript, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:50:37,039 [5] DEBUG ServiceNameMap - Found assembly Microsoft.CSharp, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:50:37,039 [5] DEBUG ServiceNameMap - Found assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:37,039 [5] DEBUG ServiceNameMap - Found assembly System.Web.Services, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:50:37,039 [5] DEBUG ServiceNameMap - Found assembly System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:50:37,039 [5] DEBUG ServiceNameMap - Found assembly System.EnterpriseServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:50:37,039 [5] DEBUG ServiceNameMap - Found assembly System.IdentityModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:37,039 [5] DEBUG ServiceNameMap - Found assembly System.Runtime.Serialization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:37,039 [5] DEBUG ServiceNameMap - Found assembly System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:37,039 [5] DEBUG ServiceNameMap - Found assembly System.ServiceModel.Activation, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:50:37,039 [5] DEBUG ServiceNameMap - Found assembly System.ServiceModel.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:50:37,039 [5] DEBUG ServiceNameMap - Found assembly System.Activities, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:50:37,039 [5] DEBUG ServiceNameMap - Found assembly System.ServiceModel.Activities, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:50:37,039 [5] DEBUG ServiceNameMap - Found assembly System.WorkflowServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:50:37,039 [5] DEBUG ServiceNameMap - Found assembly System.Web.Extensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:50:37,039 [5] DEBUG ServiceNameMap - Found assembly System.Data.DataSetExtensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:37,039 [5] DEBUG ServiceNameMap - Found assembly System.Xml.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:37,039 [5] DEBUG ServiceNameMap - Found assembly System.ComponentModel.DataAnnotations, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:50:37,039 [5] DEBUG ServiceNameMap - Found assembly System.Web.DynamicData, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:50:37,039 [5] DEBUG ServiceNameMap - Found assembly Castle.Core, Version=3.2.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc
+2020-11-20 06:50:37,039 [5] DEBUG ServiceNameMap - Found assembly Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2020-11-20 06:50:37,039 [5] DEBUG ServiceNameMap - Searching OLT assembly Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null for IAnalyticsService
+2020-11-20 06:50:37,039 [5] DEBUG ServiceNameMap - Found IAnalyticsService in Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2020-11-20 06:50:37,039 [5] DEBUG ServiceNameMap - Attempting to class that implements IAnalyticsService in Assemblies
+2020-11-20 06:50:37,039 [5] DEBUG ServiceNameMap - Found 73 assemblies to search for service implementation
+2020-11-20 06:50:37,039 [5] DEBUG ServiceNameMap - Found assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:37,039 [5] DEBUG ServiceNameMap - Found assembly System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:50:37,039 [5] DEBUG ServiceNameMap - Found assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:37,039 [5] DEBUG ServiceNameMap - Found assembly System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:37,039 [5] DEBUG ServiceNameMap - Found assembly System.Web.ApplicationServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:50:37,039 [5] DEBUG ServiceNameMap - Found assembly System.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:50:37,039 [5] DEBUG ServiceNameMap - Found assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:37,039 [5] DEBUG ServiceNameMap - Found assembly System.Runtime.Caching, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:50:37,039 [5] DEBUG ServiceNameMap - Found assembly Microsoft.Build.Utilities.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:50:37,039 [5] DEBUG ServiceNameMap - Found assembly Microsoft.JScript, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:50:37,039 [5] DEBUG ServiceNameMap - Found assembly Microsoft.CSharp, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:50:37,039 [5] DEBUG ServiceNameMap - Found assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:37,039 [5] DEBUG ServiceNameMap - Found assembly System.Web.Services, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:50:37,039 [5] DEBUG ServiceNameMap - Found assembly System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:50:37,039 [5] DEBUG ServiceNameMap - Found assembly System.EnterpriseServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:50:37,039 [5] DEBUG ServiceNameMap - Found assembly System.IdentityModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:37,040 [5] DEBUG ServiceNameMap - Found assembly System.Runtime.Serialization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:37,040 [5] DEBUG ServiceNameMap - Found assembly System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:37,040 [5] DEBUG ServiceNameMap - Found assembly System.ServiceModel.Activation, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:50:37,040 [5] DEBUG ServiceNameMap - Found assembly System.ServiceModel.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:50:37,040 [5] DEBUG ServiceNameMap - Found assembly System.Activities, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:50:37,040 [5] DEBUG ServiceNameMap - Found assembly System.ServiceModel.Activities, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:50:37,040 [5] DEBUG ServiceNameMap - Found assembly System.WorkflowServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:50:37,040 [5] DEBUG ServiceNameMap - Found assembly System.Web.Extensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:50:37,040 [5] DEBUG ServiceNameMap - Found assembly System.Data.DataSetExtensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:37,040 [5] DEBUG ServiceNameMap - Found assembly System.Xml.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:37,040 [5] DEBUG ServiceNameMap - Found assembly System.ComponentModel.DataAnnotations, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:50:37,040 [5] DEBUG ServiceNameMap - Found assembly System.Web.DynamicData, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:50:37,040 [5] DEBUG ServiceNameMap - Found assembly Castle.Core, Version=3.2.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc
+2020-11-20 06:50:37,040 [5] DEBUG ServiceNameMap - Found assembly Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2020-11-20 06:50:37,040 [5] DEBUG ServiceNameMap - Searching OLT assembly Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null for IAnalyticsService
+2020-11-20 06:50:37,040 [5] DEBUG ServiceNameMap - Found assembly Com.Suncor.Olt.PlantHistorian, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2020-11-20 06:50:37,040 [5] DEBUG ServiceNameMap - Searching OLT assembly Com.Suncor.Olt.PlantHistorian, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null for IAnalyticsService
+2020-11-20 06:50:37,040 [5] DEBUG ServiceNameMap - Found assembly Com.Suncor.Olt.Remote, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2020-11-20 06:50:37,040 [5] DEBUG ServiceNameMap - Searching OLT assembly Com.Suncor.Olt.Remote, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null for IAnalyticsService
+2020-11-20 06:50:37,040 [5] DEBUG ServiceNameMap - Found Com.Suncor.Olt.Remote.Services.AnalyticsService implementing Com.Suncor.Olt.Common.Services.IAnalyticsService in Com.Suncor.Olt.Remote, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2020-11-20 06:50:37,040 [5] DEBUG ServiceNameMap - Found assembly Com.Suncor.Olt.Reports, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2020-11-20 06:50:37,040 [5] DEBUG ServiceNameMap - Searching OLT assembly Com.Suncor.Olt.Reports, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null for IAnalyticsService
+2020-11-20 06:50:37,040 [5] DEBUG ServiceNameMap - Found assembly Couchbase, Version=1.2.9.0, Culture=neutral, PublicKeyToken=05e9c6b5a9ec94c2
+2020-11-20 06:50:37,040 [5] DEBUG ServiceNameMap - Found assembly DevExpress.Data.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2020-11-20 06:50:37,040 [5] DEBUG ServiceNameMap - Found assembly DevExpress.Office.v13.2.Core, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2020-11-20 06:50:37,040 [5] DEBUG ServiceNameMap - Found assembly DevExpress.Printing.v13.2.Core, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2020-11-20 06:50:37,040 [5] DEBUG ServiceNameMap - Found assembly DevExpress.RichEdit.v13.2.Core, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2020-11-20 06:50:37,041 [5] DEBUG ServiceNameMap - Found assembly DevExpress.Utils.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2020-11-20 06:50:37,041 [5] DEBUG ServiceNameMap - Found assembly DevExpress.XtraEditors.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2020-11-20 06:50:37,041 [5] DEBUG ServiceNameMap - Found assembly DevExpress.XtraPrinting.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2020-11-20 06:50:37,041 [5] DEBUG ServiceNameMap - Found assembly DevExpress.XtraRichEdit.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2020-11-20 06:50:37,041 [5] DEBUG ServiceNameMap - Found assembly Enyim.Caching, Version=1.2.9.0, Culture=neutral, PublicKeyToken=05e9c6b5a9ec94c2
+2020-11-20 06:50:37,041 [5] DEBUG ServiceNameMap - Found assembly Infragistics.Excel, Version=10.2.20102.1004, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb
+2020-11-20 06:50:37,041 [5] DEBUG ServiceNameMap - Found assembly log4net, Version=1.2.13.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a
+2020-11-20 06:50:37,041 [5] DEBUG ServiceNameMap - Found assembly Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed
+2020-11-20 06:50:37,041 [5] DEBUG ServiceNameMap - Found assembly Oracle.DataAccess, Version=2.111.7.20, Culture=neutral, PublicKeyToken=89b483f429c47342
+2020-11-20 06:50:37,041 [5] DEBUG ServiceNameMap - Found assembly OSIsoft.PISDK, Version=1.3.0.0, Culture=neutral, PublicKeyToken=c3309f0734ba2805
+2020-11-20 06:50:37,041 [5] DEBUG ServiceNameMap - Found assembly OSIsoft.PISDKCommon, Version=1.3.0.0, Culture=neutral, PublicKeyToken=c3309f0734ba2805
+2020-11-20 06:50:37,041 [5] DEBUG ServiceNameMap - Found assembly OSIsoft.PITimeServer, Version=1.3.0.0, Culture=neutral, PublicKeyToken=c3309f0734ba2805
+2020-11-20 06:50:37,041 [5] DEBUG ServiceNameMap - Found assembly Microsoft.VisualStudio.Web.PageInspector.Loader, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:50:37,041 [5] DEBUG ServiceNameMap - Found assembly System.Web.WebPages.Deployment, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:50:37,041 [5] DEBUG ServiceNameMap - Found assembly System.Deployment, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:50:37,041 [5] DEBUG ServiceNameMap - Found assembly System.Transactions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:37,041 [5] DEBUG ServiceNameMap - Found assembly System.Xaml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:37,041 [5] DEBUG ServiceNameMap - Found assembly Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:50:37,041 [5] DEBUG ServiceNameMap - Found assembly System.Data.Services.Design, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:37,041 [5] DEBUG ServiceNameMap - Found assembly App_Code.cj13svsi, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+2020-11-20 06:50:37,041 [5] DEBUG ServiceNameMap - Found assembly System.Web.RegularExpressions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:50:37,041 [5] DEBUG ServiceNameMap - Found assembly App_global.asax.ahpetibv, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+2020-11-20 06:50:37,041 [5] DEBUG ServiceNameMap - Found assembly Anonymously Hosted DynamicMethods Assembly, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+2020-11-20 06:50:37,041 [5] DEBUG ServiceNameMap - Found assembly DynamicProxyGenAssembly2, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+2020-11-20 06:50:37,041 [5] DEBUG ServiceNameMap - Found assembly SMDiagnostics, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:37,041 [5] DEBUG ServiceNameMap - Found assembly System.ServiceModel.Internals, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:50:37,041 [5] DEBUG ServiceNameMap - Found assembly Microsoft.VisualStudio.Diagnostics.ServiceModelSink, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:50:37,041 [5] DEBUG ServiceNameMap - Found assembly DynamicProxyGenAssembly2, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+2020-11-20 06:50:37,041 [5] DEBUG ServiceNameMap - Found assembly System.Xaml.Hosting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:50:37,041 [5] DEBUG ServiceNameMap - Found assembly System.ServiceModel.WasHosting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:37,041 [5] DEBUG ServiceNameMap - Found assembly Microsoft.Web.Administration, Version=7.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:50:37,041 [5] DEBUG ServiceNameMap - Found assembly DevExpress.XtraCharts.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2020-11-20 06:50:37,041 [5] DEBUG ServiceNameMap - Found assembly DevExpress.XtraReports.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a
+2020-11-20 06:50:37,041 [5] DEBUG ServiceNameMap - Found assembly System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:37,041 [5] DEBUG ServiceNameMap - Found assembly System.Net.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:50:37,042 [5] DEBUG ServiceNameMap - Getting interface type for the service IAnalyticsService
+2020-11-20 06:50:37,042 [5] DEBUG ServiceNameMap - Found 73 assemblies to search.
+2020-11-20 06:50:37,042 [5] DEBUG ServiceNameMap - Found assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:37,042 [5] DEBUG ServiceNameMap - Found assembly System.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:50:37,042 [5] DEBUG ServiceNameMap - Found assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:37,042 [5] DEBUG ServiceNameMap - Found assembly System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:37,042 [5] DEBUG ServiceNameMap - Found assembly System.Web.ApplicationServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:50:37,042 [5] DEBUG ServiceNameMap - Found assembly System.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:50:37,042 [5] DEBUG ServiceNameMap - Found assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:37,042 [5] DEBUG ServiceNameMap - Found assembly System.Runtime.Caching, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:50:37,042 [5] DEBUG ServiceNameMap - Found assembly Microsoft.Build.Utilities.v4.0, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:50:37,042 [5] DEBUG ServiceNameMap - Found assembly Microsoft.JScript, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:50:37,042 [5] DEBUG ServiceNameMap - Found assembly Microsoft.CSharp, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:50:37,042 [5] DEBUG ServiceNameMap - Found assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:37,042 [5] DEBUG ServiceNameMap - Found assembly System.Web.Services, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:50:37,042 [5] DEBUG ServiceNameMap - Found assembly System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:50:37,042 [5] DEBUG ServiceNameMap - Found assembly System.EnterpriseServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+2020-11-20 06:50:37,042 [5] DEBUG ServiceNameMap - Found assembly System.IdentityModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:37,042 [5] DEBUG ServiceNameMap - Found assembly System.Runtime.Serialization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:37,042 [5] DEBUG ServiceNameMap - Found assembly System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:37,042 [5] DEBUG ServiceNameMap - Found assembly System.ServiceModel.Activation, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:50:37,042 [5] DEBUG ServiceNameMap - Found assembly System.ServiceModel.Web, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:50:37,042 [5] DEBUG ServiceNameMap - Found assembly System.Activities, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:50:37,042 [5] DEBUG ServiceNameMap - Found assembly System.ServiceModel.Activities, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:50:37,042 [5] DEBUG ServiceNameMap - Found assembly System.WorkflowServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:50:37,042 [5] DEBUG ServiceNameMap - Found assembly System.Web.Extensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:50:37,042 [5] DEBUG ServiceNameMap - Found assembly System.Data.DataSetExtensions, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:37,042 [5] DEBUG ServiceNameMap - Found assembly System.Xml.Linq, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+2020-11-20 06:50:37,042 [5] DEBUG ServiceNameMap - Found assembly System.ComponentModel.DataAnnotations, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:50:37,042 [5] DEBUG ServiceNameMap - Found assembly System.Web.DynamicData, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35
+2020-11-20 06:50:37,042 [5] DEBUG ServiceNameMap - Found assembly Castle.Core, Version=3.2.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc
+2020-11-20 06:50:37,042 [5] DEBUG ServiceNameMap - Found assembly Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2020-11-20 06:50:37,042 [5] DEBUG ServiceNameMap - Searching OLT assembly Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null for IAnalyticsService
+2020-11-20 06:50:37,043 [5] DEBUG ServiceNameMap - Found IAnalyticsService in Com.Suncor.Olt.Common, Version=5.11.65533.0, Culture=neutral, PublicKeyToken=null
+2020-11-20 06:50:37,043 [5] DEBUG OltServiceHostFactory - Adding add service endpoint for Com.Suncor.Olt.Common.Services.IAnalyticsService
+2020-11-20 06:50:37,043 [5] DEBUG OltServiceHostFactory - Adding alternate data contract serializer
+2020-11-20 06:50:37,043 [5] DEBUG OltServiceHostFactory - Adding service metadata behavior
+2020-11-20 06:50:37,043 [5] DEBUG OltServiceHostFactory - Adding service debug behavior
+2020-11-20 06:50:37,043 [5] DEBUG OltServiceHostFactory - Adding service throttling behavior
+2020-11-20 06:52:46,724 [1] ERROR ServerOperationInvoker - An error has occured while executing server operation.
+Error GUID: c2f1e46b-be4f-443f-8904-d42e09cd971f
+Method: Com.Suncor.Olt.Common.Domain.SiteConfiguration QueryBySiteId(Int64)
+User Information: [User:12492] [Shift:] [ClientUri:net.tcp://10.9.21.6:9771/]
+Input[0]: Type:Int64 - 13
+Exception Information: System.InvalidCastException: Specified cast is not valid.
+   at Com.Suncor.Olt.Remote.DataAccess.SqlDataReaderExtensions.Get[T](IDataRecord dataRecord, String columnName) in c:\code\windows\csc\OLT\trunk\src\RemoteApp\App\DataAccess\SqlDataReaderExtensions.cs:line 27
+   at Com.Suncor.Olt.Remote.DataAccess.Domain.SiteConfigurationDao.PopulateInstance(SqlDataReader reader) in c:\code\windows\csc\OLT\trunk\src\RemoteApp\App\DataAccess\Domain\SiteConfigurationDao.cs:line 695
+   at Com.Suncor.Olt.Remote.DataAccess.SqlCommandExtensions.ExecuteCommandForSingleResult[T](SqlCommand command, PopulateInstance`1 populateHandler) in c:\code\windows\csc\OLT\trunk\src\RemoteApp\App\DataAccess\SqlCommandExtensions.cs:line 288
+   at Com.Suncor.Olt.Remote.DataAccess.SqlCommandExtensions.QueryById[T](SqlCommand command, Int64 id, PopulateInstance`1 populateHandler, String storedProcedureName) in c:\code\windows\csc\OLT\trunk\src\RemoteApp\App\DataAccess\SqlCommandExtensions.cs:line 147
+   at Com.Suncor.Olt.Remote.DataAccess.Domain.SiteConfigurationDao.QueryBySiteId(Int64 siteId) in c:\code\windows\csc\OLT\trunk\src\RemoteApp\App\DataAccess\Domain\SiteConfigurationDao.cs:line 57
+   at Castle.Proxies.Invocations.ISiteConfigurationDao_QueryBySiteId.InvokeMethodOnTarget()
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Com.Suncor.Olt.Remote.DataAccess.StoredProcDaoInterceptor.RunCommand(SqlConnection sqlConnection, IInvocation invocation) in c:\code\windows\csc\OLT\trunk\src\RemoteApp\App\DataAccess\StoredProcDaoInterceptor.cs:line 61
+   at Com.Suncor.Olt.Remote.DataAccess.StoredProcDaoInterceptor.Intercept(IInvocation invocation) in c:\code\windows\csc\OLT\trunk\src\RemoteApp\App\DataAccess\StoredProcDaoInterceptor.cs:line 27
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Com.Suncor.Olt.Remote.DataAccess.StoredProcPerformanceInterceptor.Intercept(IInvocation invocation) in c:\code\windows\csc\OLT\trunk\src\RemoteApp\App\DataAccess\StoredProcPerformanceInterceptor.cs:line 22
+   at Castle.DynamicProxy.AbstractInvocation.Proceed()
+   at Castle.Proxies.ISiteConfigurationDaoProxy.QueryBySiteId(Int64 siteId)
+   at Com.Suncor.Olt.Remote.Services.SiteConfigurationService.QueryBySiteId(Int64 siteId) in c:\code\windows\csc\OLT\trunk\src\RemoteApp\App\Services\SiteConfigurationService.cs:line 73
+   at SyncInvokeQueryBySiteId(Object , Object[] , Object[] )
+   at System.ServiceModel.Dispatcher.SyncMethodInvoker.Invoke(Object instance, Object[] inputs, Object[]& outputs)
+   at Com.Suncor.Olt.Remote.Wcf.ServerOperationInvoker.InvokeWithTransaction(Object instance, Object[] inputs, Object[]& outputs) in c:\code\windows\csc\OLT\trunk\src\RemoteApp\App\Wcf\ServerOperationInvoker.cs:line 181
+   at Com.Suncor.Olt.Remote.Wcf.ServerOperationInvoker.Invoke(Object instance, Object[] inputs, Object[]& outputs) in c:\code\windows\csc\OLT\trunk\src\RemoteApp\App\Wcf\ServerOperationInvoker.cs:line 86

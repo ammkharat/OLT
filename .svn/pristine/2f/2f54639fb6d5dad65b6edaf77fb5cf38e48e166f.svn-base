@@ -1,0 +1,124 @@
+﻿CREATE NONCLUSTERED INDEX [IDX_ActionItem_Priority_Page]
+ON [dbo].[ActionItem]
+(
+ [StartDateTime] , [EndDateTime] , [WorkAssignmentId]
+)
+WHERE (DELETED = 0 AND ActionItemStatusId < 4) -- status not cleared
+WITH
+(
+PAD_INDEX = OFF,
+FILLFACTOR = 100,
+IGNORE_DUP_KEY = OFF,
+STATISTICS_NORECOMPUTE = OFF,
+ONLINE = OFF,
+ALLOW_ROW_LOCKS = ON,
+ALLOW_PAGE_LOCKS = ON,
+DATA_COMPRESSION = NONE,
+DROP_EXISTING = ON
+)
+ON [PRIMARY];
+GO
+
+CREATE NONCLUSTERED INDEX [IDX_ActionItem_ActionItemPage]
+ON [dbo].[ActionItem]
+(
+ [StartDateTime] , [EndDateTime], [WorkAssignmentId]
+)
+WHERE (DELETED = 0 AND ActionItemStatusId < 4) -- status not cleared
+WITH
+(
+PAD_INDEX = OFF,
+FILLFACTOR = 100,
+IGNORE_DUP_KEY = OFF,
+STATISTICS_NORECOMPUTE = OFF,
+ONLINE = OFF,
+ALLOW_ROW_LOCKS = ON,
+ALLOW_PAGE_LOCKS = ON,
+DATA_COMPRESSION = NONE,
+DROP_EXISTING = OFF
+)
+ON [PRIMARY];
+GO
+
+CREATE NONCLUSTERED INDEX [IDX_ActionItem_ActionItemByAssignmentPage]
+ON [dbo].[ActionItem]
+(
+ [StartDateTime] , [EndDateTime], [WorkAssignmentId]
+)
+WHERE (DELETED = 0 AND WorkAssignmentId IS NOT NULL AND ActionItemStatusId < 4) -- status not cleared
+WITH
+(
+PAD_INDEX = OFF,
+FILLFACTOR = 100,
+IGNORE_DUP_KEY = OFF,
+STATISTICS_NORECOMPUTE = OFF,
+ONLINE = OFF,
+ALLOW_ROW_LOCKS = ON,
+ALLOW_PAGE_LOCKS = ON,
+DATA_COMPRESSION = NONE,
+DROP_EXISTING = OFF
+)
+ON [PRIMARY];
+GO
+
+CREATE NONCLUSTERED INDEX [IDX_ActionItem_ActionItemDefinition]
+ON [dbo].[ActionItem]
+([CreatedByActionItemDefinitionId])
+WHERE (DELETED = 0)
+WITH
+(
+PAD_INDEX = OFF,
+FILLFACTOR = 100,
+IGNORE_DUP_KEY = OFF,
+STATISTICS_NORECOMPUTE = OFF,
+ONLINE = OFF,
+ALLOW_ROW_LOCKS = ON,
+ALLOW_PAGE_LOCKS = ON,
+DATA_COMPRESSION = NONE
+)
+ON [PRIMARY];
+GO
+
+
+DROP INDEX [IDX_ActionItemDefinition_WorkAssignmentId] ON [dbo].[ActionItemDefinition];
+GO
+
+ALTER TABLE ActionItemDefinition ALTER COLUMN [WorkAssignmentId] bigint SPARSE NULL
+
+CREATE NONCLUSTERED INDEX [IDX_ActionItemDefinition_WorkAssignmentId]
+ON [dbo].[ActionItemDefinition]
+([WorkAssignmentId], [Active])
+INCLUDE ([ScheduleId])
+WHERE DELETED = 0 
+WITH
+(
+PAD_INDEX = OFF,
+FILLFACTOR = 100,
+IGNORE_DUP_KEY = OFF,
+STATISTICS_NORECOMPUTE = OFF,
+ONLINE = OFF,
+ALLOW_ROW_LOCKS = ON,
+ALLOW_PAGE_LOCKS = ON,
+DATA_COMPRESSION = NONE
+)
+ON [PRIMARY];
+GO
+
+CREATE NONCLUSTERED INDEX [IDX_ActionItemDefinition_WorkAssignmentId_Filtered]
+ON [dbo].[ActionItemDefinition]
+([WorkAssignmentId], [Active])
+INCLUDE ([ScheduleId])
+WHERE ([WorkAssignmentId] IS NOT NULL and DELETED = 0)
+WITH
+(
+PAD_INDEX = OFF,
+FILLFACTOR = 100,
+IGNORE_DUP_KEY = OFF,
+STATISTICS_NORECOMPUTE = OFF,
+ONLINE = OFF,
+ALLOW_ROW_LOCKS = ON,
+ALLOW_PAGE_LOCKS = ON,
+DATA_COMPRESSION = NONE
+)
+ON [PRIMARY];
+GO

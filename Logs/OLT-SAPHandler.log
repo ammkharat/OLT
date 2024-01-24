@@ -1,0 +1,40 @@
+2021-02-01 08:39:13,821 [8] INFO  WcfConfiguration - WCF configuration is as follows:
+2021-02-01 08:39:13,822 [8] INFO  WcfConfiguration - clientPorts: 
+2021-02-01 08:39:13,822 [8] INFO  WcfConfiguration - clientHostNameOrIPAddress: 
+2021-02-01 08:39:13,822 [8] INFO  WcfConfiguration - receiveTimeout: 10
+2021-02-01 08:39:13,822 [8] INFO  WcfConfiguration - sendTimeout: 15
+2021-02-01 08:39:13,822 [8] INFO  WcfConfiguration - openTimeout: 2
+2021-02-01 08:39:13,822 [8] INFO  WcfConfiguration - closeTimeout: 2
+2021-02-01 08:39:13,822 [8] INFO  WcfConfiguration - maxBufferSize: 2147483647
+2021-02-01 08:39:13,822 [8] INFO  WcfConfiguration - maxBufferPoolSize: 524288
+2021-02-01 08:39:13,822 [8] INFO  WcfConfiguration - maxReceivedMessageSize: 2147483647
+2021-02-01 08:39:13,822 [8] INFO  WcfConfiguration - readerQuotasMaxStringContentLength: 2147483647
+2021-02-01 08:39:13,822 [8] INFO  WcfConfiguration - readerQuotasMaxDepth: 2147483647
+2021-02-01 08:39:13,823 [8] INFO  WcfConfiguration - readerQuotasMaxArrayLength: 2147483647
+2021-02-01 08:39:13,823 [8] INFO  WcfConfiguration - maxConcurrentCalls: 200
+2021-02-01 08:39:13,823 [8] INFO  WcfConfiguration - maxConcurrentInstances: 200
+2021-02-01 08:39:13,823 [8] INFO  WcfConfiguration - maxConcurrentSessions: 200
+2021-02-01 08:39:13,823 [8] INFO  WcfConfiguration - maxConnections: 5000
+2021-02-01 08:39:13,823 [8] INFO  WcfConfiguration - maxItemsInObjectGraph: 2147483647
+2021-02-01 08:39:13,823 [8] INFO  WcfConfiguration - clientServerBindingType: HttpBinaryEncoded
+2021-02-01 08:39:32,903 [8] ERROR FunctionalLocationMessageHandler - NULL language code received from SAP. There should be follow-up with the webMethods team to determine why. The code should be EN or FR. OLT will default to EN.
+2021-02-01 08:39:32,903 [8] ERROR FunctionalLocationMessageHandler - OLT received an unrecognized language code. The code received was: 
+2021-02-01 08:39:33,404 [8] DEBUG FunctionalLocationMessageHandler - ADD Functional Location: SR1-PLT1-GEN1-SAS-TEST655186180000.
+2021-02-01 08:40:14,682 [6] ERROR FunctionalLocationMessageHandler - NULL language code received from SAP. There should be follow-up with the webMethods team to determine why. The code should be EN or FR. OLT will default to EN.
+2021-02-01 08:40:14,682 [6] ERROR FunctionalLocationMessageHandler - OLT received an unrecognized language code. The code received was: 
+2021-02-01 08:40:14,689 [6] DEBUG FunctionalLocationMessageHandler - ADD Functional Location: SR1-PLT1-GEN1-SAS-TEST656142400000.
+2021-02-01 08:40:24,238 [8] ERROR FunctionalLocationMessageHandler - NULL language code received from SAP. There should be follow-up with the webMethods team to determine why. The code should be EN or FR. OLT will default to EN.
+2021-02-01 08:40:24,238 [8] ERROR FunctionalLocationMessageHandler - OLT received an unrecognized language code. The code received was: 
+2021-02-01 08:40:24,246 [8] DEBUG FunctionalLocationMessageHandler - ADD Functional Location: SR1-PLT1-GEN1-SAS-TEST656239560000.
+2021-02-01 08:40:50,638 [6] ERROR FunctionalLocationMessageHandler - NULL language code received from SAP. There should be follow-up with the webMethods team to determine why. The code should be EN or FR. OLT will default to EN.
+2021-02-01 08:40:50,638 [6] ERROR FunctionalLocationMessageHandler - OLT received an unrecognized language code. The code received was: 
+2021-02-01 08:40:50,647 [6] DEBUG FunctionalLocationMessageHandler - ADD Functional Location: SR1-PLT1-GEN1-SAS-TEST656503560000.
+2021-02-01 08:41:59,083 [6] ERROR FunctionalLocationMessageHandler - NULL language code received from SAP. There should be follow-up with the webMethods team to determine why. The code should be EN or FR. OLT will default to EN.
+2021-02-01 08:41:59,083 [6] ERROR FunctionalLocationMessageHandler - OLT received an unrecognized language code. The code received was: 
+2021-02-01 08:41:59,091 [6] DEBUG FunctionalLocationMessageHandler - ADD Functional Location: SR1-PLT1-GEN1-SAS-TEST657187290000.
+2021-02-01 08:42:16,991 [12] ERROR FunctionalLocationMessageHandler - NULL language code received from SAP. There should be follow-up with the webMethods team to determine why. The code should be EN or FR. OLT will default to EN.
+2021-02-01 08:42:16,991 [12] ERROR FunctionalLocationMessageHandler - OLT received an unrecognized language code. The code received was: 
+2021-02-01 08:42:16,999 [12] DEBUG FunctionalLocationMessageHandler - ADD Functional Location: SR1-PLT1-GEN1-SAS-TEST657367010000.
+2021-02-01 08:42:17,064 [8] ERROR FunctionalLocationMessageHandler - NULL language code received from SAP. There should be follow-up with the webMethods team to determine why. The code should be EN or FR. OLT will default to EN.
+2021-02-01 08:42:17,064 [8] ERROR FunctionalLocationMessageHandler - OLT received an unrecognized language code. The code received was: 
+2021-02-01 08:42:17,112 [8] DEBUG FunctionalLocationMessageHandler - Updating Functional Location SR1-PLT1-GEN1-SAS-TEST657367010000. Old description: ,  New description: Created By GetChangeFlocDescriptionNew Description, Old Culture: en, New Culture: en

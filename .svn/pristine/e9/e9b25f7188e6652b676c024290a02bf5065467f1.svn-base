@@ -1,0 +1,227 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Drawing;
+using Com.Suncor.Olt.Common.Domain;
+using Com.Suncor.Olt.Common.Domain.WorkPermit;
+using Com.Suncor.Olt.Common.Localization;
+using DevExpress.XtraRichEdit.API.Native;
+
+namespace Com.Suncor.Olt.Client.Forms
+{
+    public partial class WorkPermitCloseWithStatusForm : BaseForm, IWorkPermitCloseWithStatusFormView
+    {
+        public event EventHandler SubmitButtonClick;
+        public event EventHandler CancelButtonClick;
+        public event EventHandler ActionItemCheckboxCheck;//Added by ppanigrahi
+
+        public WorkPermitCloseWithStatusForm()
+        {
+            InitializeComponent();
+            closeStatusComboBox.DisplayMember = "Name";
+
+            submitButton.Click += submitButton_Click;
+            cancelButton.Click += cancelButton_Click;
+            actionItemCheckBox.Click += ActionItemCheckboxCheck_Click;//Added by ppanigrahi
+            
+        }
+
+        public DateTime CreateDateTime
+        {
+            set { lastModifiedData.LastModifiedDate = value; }
+        }
+
+        public User Author
+        {
+            set { lastModifiedData.LastModifiedUser = value; }
+        }
+
+        public List<WorkPermitLoggableStatus> Statuses
+        {
+            set
+            {
+                closeStatusComboBox.DataSource = value;
+            }
+        }
+
+        public Size SetSize
+        {
+            set { this.buttonsPanel.Size = value; }
+        }
+
+        public Size setFormSize
+        {
+            set { this.Size = value; }
+
+        }
+
+        public Size mainPanelSize
+        {
+            set { this.mainPanel.Size = value; }
+        }
+
+        public string Shift
+        {
+            set { shiftLabel.Text = value; }
+        }
+
+        public WorkPermitLoggableStatus SelectedStatus
+        {
+            get { return (WorkPermitLoggableStatus) closeStatusComboBox.SelectedItem; }
+        }
+
+        public string CommentsSectionTitle
+        {
+            set { commentsGroupBox.Text = value; }
+        }
+
+        public string Comment
+        {
+            get { return commentTextBox.Text; }
+        }
+       
+
+        public string Description
+        {
+            set { descriptionTextBox.Text = value; }
+        }
+
+        public string FormTitle
+        {
+            set { Text = value; }
+        }
+
+        public bool StatusHidden
+        {
+            get { return !closeGroupBox.Visible; }
+            
+        }
+
+        public bool ActionItemCheckBoxVisible
+        {
+           
+            set
+            {
+                
+
+                    actionItemCheckBox.Visible = value;
+              
+            }
+        }
+
+        public bool ActionItemCheckBoxchecked
+        {
+
+            get { return actionItemCheckBox.Checked; }
+            set { actionItemCheckBox.Checked = value; }
+
+        }
+
+        public bool commentBoxEnable
+        {
+
+            get { return cmtTextBox.Enabled; }
+            set
+            {
+                cmtTextBox.Enabled = value;
+                
+            }
+        }
+
+        public bool commentBoxVisible
+        {
+            set { cmtTextBox.Visible = value; }
+        }
+
+        public bool dateTimeControlVisible
+        {
+
+            set
+            {
+                validToDatePicker.Visible = value;
+                validToTimePicker.Visible = value;
+                dtClose.Visible = value;
+                oltLabelLine3.Visible = value;
+                oltLabelLine2.Visible = value;
+            }
+        }
+
+        public bool dateTimeControlEnable
+        {
+            set
+            {
+                validToDatePicker.Enabled = value;
+                validToTimePicker.Enabled = value;
+            }
+        }
+
+        //public bool hotpanelVisible
+        //{
+        //    set {HotPermitPanel.Visible = value; }
+        //}
+        public void HideCloseStatus()
+        {
+            closeGroupBox.Hide();
+        }
+
+        public void SetErrorForNoStatusSelected()
+        {
+            errorProvider.SetError(closeGroupBox, StringResources.WorkPermitCloseComment_NoStatusError);
+        }
+
+        public void SetErrorForNoComments()
+        {
+            errorProvider.SetError(commentsGroupBox, StringResources.WorkPermitCloseComment_NoLogCommentError);
+        }
+
+        public void ClearErrors()
+        {
+            errorProvider.Clear();
+        }
+
+        private void submitButton_Click(object sender, EventArgs e)
+        {
+            if (SubmitButtonClick != null)
+            {
+                SubmitButtonClick(sender, e);
+            }
+        }
+        //Added by ppanigrahi
+        private void ActionItemCheckboxCheck_Click(object sender, EventArgs e)
+        {
+            if (ActionItemCheckboxCheck != null)
+            {
+                ActionItemCheckboxCheck(sender, e);
+            }
+        }
+        private void cancelButton_Click(object sender, EventArgs e)
+        {
+            if (CancelButtonClick != null)
+            {
+                CancelButtonClick(sender, e);
+            }
+        }
+        public DateTime ClosingDateTime
+        {
+            get
+            {
+                Date date = validToDatePicker.Value;
+                Time time = validToTimePicker.Value;
+
+                return date.CreateDateTime(time);
+            }
+
+            set
+            {
+                validToDatePicker.Value = new Date(value);
+                validToTimePicker.Value = new Time(value);
+            }
+        }
+
+        public string WorkPermitCloseComment
+        {
+
+            get { return cmtTextBox.Text; }
+        }
+
+    }
+}

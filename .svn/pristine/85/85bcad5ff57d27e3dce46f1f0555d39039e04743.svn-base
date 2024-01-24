@@ -1,0 +1,61 @@
+
+if exists (select * from dbo.sysobjects where id = object_id(N'[dbo].[QueryUsersMarkedDirectiveAsNotRead]') and OBJECTPROPERTY(id, N'IsProcedure') = 1)
+drop procedure [dbo].[QueryUsersMarkedDirectiveAsNotRead]
+Go
+  
+CREATE Procedure [dbo].[QueryUsersMarkedDirectiveAsNotRead]  
+(  
+ @DirectiveId bigint  
+)  
+AS  
+ Select * into #TempUserRead
+ From
+ (
+     SELECT   
+        UserId  
+     FROM   
+      [DirectiveRead]  
+     WHERE  
+       DirectiveId =@DirectiveId
+)As X
+
+Select * into #TempUserNotRead
+From
+(
+  (SELECT  
+   l.UserID As CreatedByUserID  
+ FROM  
+    [Log] l
+   Where  l.CreatedDateTime >= DATEADD(year,-1,GETDATE())
+   )
+    UNION ALL
+    (
+     SELECT  
+       l.CreatedByUserID  
+     FROM   
+     [SummaryLog] l
+     Where  l.CreatedDateTime >= DATEADD(year,-1,GETDATE())
+    )
+    UNION ALL
+    (
+       SELECT        
+         q.CreatedByUserID   
+        FROM        
+       ShiftHandoverQuestionnaire q
+       Where  (q.CreatedDateTime >= DATEADD(year,-1,GETDATE()))
+  
+  ) 
+  )AS Y
+  
+ Select distinct( t.CreatedByUserID) as Id,u.userName
+    from #TempUserNotRead t Join [User] u  on t.CreatedByUserID=u.Id
+   where t.CreatedByUserID not in (Select #TempUserRead.UserId from #TempUserRead)
+   
+   Drop Table #TempUserNotRead
+   Drop Table #TempUserRead  
+    
+Go
+ GRANT EXEC ON QueryUsersMarkedDirectiveAsNotRead TO PUBLIC
+
+
+

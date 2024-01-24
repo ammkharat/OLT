@@ -1,0 +1,1109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{11ABC86E-A2DF-457F-8ED9-5F946CF0BD67}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Com.Suncor.Olt.Reports</RootNamespace>
+    <AssemblyName>Com.Suncor.Olt.Reports</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Charts.v13.2.Core, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Office.v13.2.Core, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v13.2.Core, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v13.2.Core, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v13.2.Core, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v13.2.Wizard, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Sparkline.v13.2.Core, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v13.2.UI, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v13.2.Extensions, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraRichEdit.v13.2, Version=13.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\..\lib\NET-4-0\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\GlobalAssemblyInfo.cs">
+      <Link>Properties\GlobalAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="Adapters\FormGenericCsdReportAdapter.cs" />
+    <Compile Include="Adapters\ReadingReportAdapter.cs" />
+    <Compile Include="FormGenericCsdReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FormGenericCsdReport.Designer.cs">
+      <DependentUpon>FormGenericCsdReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormOP14PipelineReport .cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FormOP14PipelineReport .Designer.cs">
+      <DependentUpon>FormOP14PipelineReport .cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReadingReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReadingReport.Designer.cs">
+      <DependentUpon>ReadingReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ActionItemReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ActionItemReport.Designer.cs">
+      <DependentUpon>ActionItemReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Adapters\AbstractLocalizedReportAdapter.cs" />
+    <Compile Include="Adapters\ActionItemMainReportAdapter.cs" />
+    <Compile Include="Adapters\ConfinedSpaceMudsReportAdapter.cs" />
+    <Compile Include="Adapters\CsdSubreportBuilder.cs" />
+    <Compile Include="Adapters\CsdReportAdapter.cs" />
+    <Compile Include="Adapters\ActionItemReportAdapter.cs" />
+    <Compile Include="Adapters\ActionItemSubreportBuilder.cs" />
+    <Compile Include="Adapters\ApprovalReportAdapter.cs" />
+    <Compile Include="Adapters\BaseEdmontonFormReportAdapter.cs" />
+    <Compile Include="Adapters\CokerCardReportAdapter.cs" />
+    <Compile Include="Adapters\CommentsReportAdapter.cs" />
+    <Compile Include="Adapters\ConfinedSpaceMontrealReportAdapter.cs" />
+    <Compile Include="Adapters\FormOP14MarkAsReadReportAdapter.cs" />
+    <Compile Include="Adapters\DocumentSuggestionReportAdapter.cs" />
+    <Compile Include="Adapters\EventExcursionReportAdapter.cs" />
+    <Compile Include="Adapters\EventExcursionsSubreportBuilder.cs" />
+    <Compile Include="Adapters\ExtensionReasonReportAdapter.cs" />
+    <Compile Include="Adapters\FormGenericTemplateReportAdapter.cs" />
+    <Compile Include="Adapters\FormGN1ReportAdapter.cs" />
+    <Compile Include="Adapters\FormGN1TechnicalRescuePlanReportAdapter.cs" />
+    <Compile Include="Adapters\FormGN1TradeChecklistReportAdapter.cs" />
+    <Compile Include="Adapters\FormGN75AReportAdapter.cs" />
+    <Compile Include="Adapters\DirectiveReportAdapter.cs" />
+    <Compile Include="Adapters\FormGN59ChecklistReportAdapter.cs" />
+    <Compile Include="Adapters\FormLubesAlarmDisableReportAdapter.cs" />
+    <Compile Include="Adapters\FormMontrealCsdReportAdapter.cs" />
+    <Compile Include="Adapters\FormLubesCsdReportAdapter.cs" />
+    <Compile Include="Adapters\FormMudsTemporaryInstallationsReportAdapter.cs" />
+    <Compile Include="Adapters\FormOvertimeFormReportAdapter.cs" />
+    <Compile Include="Adapters\OnPremiseContractorReportAdapter.cs" />
+    <Compile Include="Adapters\OnPremisePersonnelShiftReportAdapter.cs" />
+    <Compile Include="Adapters\OnPremisePersonnelShiftReportDetailsAdapter.cs" />
+    <Compile Include="Adapters\PermitAssessmentAnswerReportAdapter.cs" />
+    <Compile Include="Adapters\ProcedureDeviationReportAdapter.cs" />
+    <Compile Include="Adapters\SafeWorkPermitAuditQuestionnaireReportAdapter.cs" />
+    <Compile Include="Adapters\SarniaEipIssueReportAdapter.cs" />
+    <Compile Include="Adapters\WorkAssignmentReportAdapter.cs" />
+    <Compile Include="Adapters\WorkPermitFortHillsReportAdapter.cs" />
+    <Compile Include="Adapters\WorkPermitMudsNettoyageReportAdapter.cs" />
+    <Compile Include="Adapters\WorkPermitMudsReportAdapter.cs" />
+    <Compile Include="Adapters\WorkPermitUSPipelineReportAdapter.cs" />
+    <Compile Include="Adapters\WorkPermitMontrealNettoyageReportAdapter.cs" />
+    <Compile Include="Adapters\FormGN75BReportAdapter.cs" />
+    <Compile Include="Adapters\FormGN75RosterReportAdapter.cs" />
+    <Compile Include="Adapters\GN59FormReportAdapter.cs" />
+    <Compile Include="Adapters\CustomFieldsReportAdapter.cs" />
+    <Compile Include="Adapters\DailyShiftLogReportAdapter.cs" />
+    <Compile Include="Adapters\DailyShiftTargetAlertGapReasonReportAdapter.cs" />
+    <Compile Include="Adapters\DailyShiftTargetAlertReportAdapter.cs" />
+    <Compile Include="Adapters\DateTimeAndUserReportAdapter.cs" />
+    <Compile Include="Adapters\DocumentLinkReportAdapter.cs" />
+    <Compile Include="Adapters\FormGN24ReportAdapter.cs" />
+    <Compile Include="Adapters\FormGN6ReportAdapter.cs" />
+    <Compile Include="Adapters\FormOilsandsTrainingReportAdapter.cs" />
+    <Compile Include="Adapters\FormReportAdapter.cs" />
+    <Compile Include="Adapters\FunctionalLocationReportAdapter.cs" />
+    <Compile Include="Adapters\GenericMultiLogReportAdapter.cs" />
+    <Compile Include="Adapters\GenericMultiLogReportAdapterBuilder.cs" />
+    <Compile Include="Adapters\GenericSingleLogReportAdapter.cs" />
+    <Compile Include="Adapters\GN7FormReportAdapter.cs" />
+    <Compile Include="Adapters\IReportAdapter.cs" />
+    <Compile Include="Adapters\FormOP14ReportAdapter.cs" />
+    <Compile Include="Adapters\ShiftHandoverAnswerReportAdapter.cs" />
+    <Compile Include="Adapters\ShiftHandoverQuestionnaireReportAdapter.cs" />
+    <Compile Include="Adapters\ShiftHandoverQuestionnaireReportAdapterBuilder.cs" />
+    <Compile Include="Adapters\TrainingBlockReportAdapter.cs" />
+    <Compile Include="Adapters\WorkPermitDenverReportAdapter.cs" />
+    <Compile Include="Adapters\WorkPermitEdmontonReportAdapter.cs" />
+    <Compile Include="Adapters\WorkPermitLubesReportAdapter.cs" />
+    <Compile Include="Adapters\WorkPermitMontrealReportAdapter.cs" />
+    <Compile Include="Adapters\WorkPermitSarniaReportAdapter.cs" />
+    <Compile Include="ConfinedSpaceMontrealReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ConfinedSpaceMontrealReport.Designer.cs">
+      <DependentUpon>ConfinedSpaceMontrealReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConfinedSpaceMudsReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ConfinedSpaceMudsReport.Designer.cs">
+      <DependentUpon>ConfinedSpaceMudsReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConfinedSpaceMuds_Report.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ConfinedSpaceMuds_Report.Designer.cs">
+      <DependentUpon>ConfinedSpaceMuds_Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormGenericTemplateReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FormGenericTemplateReport.Designer.cs">
+      <DependentUpon>FormGenericTemplateReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMudsTemporaryInstallationReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FormMudsTemporaryInstallationReport.Designer.cs">
+      <DependentUpon>FormMudsTemporaryInstallationReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormOP14MarkAsReadReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FormOP14MarkAsReadReport.Designer.cs">
+      <DependentUpon>FormOP14MarkAsReadReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProcedureDeviationReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ProcedureDeviationReport.Designer.cs">
+      <DependentUpon>ProcedureDeviationReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLubesAlarmDisableReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FormLubesAlarmDisableReport.Designer.cs">
+      <DependentUpon>FormLubesAlarmDisableReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMontrealCsdReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FormMontrealCsdReport.Designer.cs">
+      <DependentUpon>FormMontrealCsdReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLubesCsdReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FormLubesCsdReport.Designer.cs">
+      <DependentUpon>FormLubesCsdReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DocumentSuggestionReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DocumentSuggestionReport.Designer.cs">
+      <DependentUpon>DocumentSuggestionReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SafeWorkPermitAuditQuestionnaireReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SafeWorkPermitAuditQuestionnaireReport.Designer.cs">
+      <DependentUpon>SafeWorkPermitAuditQuestionnaireReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OnPremisePersonnelShiftReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="OnPremisePersonnelShiftReport.Designer.cs">
+      <DependentUpon>OnPremisePersonnelShiftReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormOvertimeFormReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FormOvertimeFormReport.Designer.cs">
+      <DependentUpon>FormOvertimeFormReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormGN1SingleTradeChecklistReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FormGN1SingleTradeChecklistReport.Designer.cs">
+      <DependentUpon>FormGN1SingleTradeChecklistReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormGN1Report.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FormGN1Report.Designer.cs">
+      <DependentUpon>FormGN1Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormGN75AReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FormGN75AReport.Designer.cs">
+      <DependentUpon>FormGN75AReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DirectiveReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DirectiveReport.Designer.cs">
+      <DependentUpon>DirectiveReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormOP14Report.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FormOP14Report.Designer.cs">
+      <DependentUpon>FormOP14Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormGN59ChecklistReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FormGN59ChecklistReport.Designer.cs">
+      <DependentUpon>FormGN59ChecklistReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SarniaEipIssueReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SarniaEipIssueReport.Designer.cs">
+      <DependentUpon>SarniaEipIssueReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubReports\Directive\WorkAssignmentSubReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SubReports\Directive\WorkAssignmentSubReport.Designer.cs">
+      <DependentUpon>WorkAssignmentSubReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubReports\Directive\FunctionalLocationSubReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SubReports\Directive\FunctionalLocationSubReport.Designer.cs">
+      <DependentUpon>FunctionalLocationSubReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubReports\DocumentSuggestion\ExtensionReasonCommentsSubReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SubReports\DocumentSuggestion\ExtensionReasonCommentsSubReport.Designer.cs">
+      <DependentUpon>ExtensionReasonCommentsSubReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubReports\DocumentSuggestion\FunctionalLocationSubReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SubReports\DocumentSuggestion\FunctionalLocationSubReport.Designer.cs">
+      <DependentUpon>FunctionalLocationSubReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubReports\GNForm\FormGN1TechnicalRescuePlanReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SubReports\GNForm\FormGN1TechnicalRescuePlanReport.Designer.cs">
+      <DependentUpon>FormGN1TechnicalRescuePlanReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubReports\GNForm\FormGN1TradeChecklistReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SubReports\GNForm\FormGN1TradeChecklistReport.Designer.cs">
+      <DependentUpon>FormGN1TradeChecklistReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubReports\GNForm\FormGN1LogSheetReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SubReports\GNForm\FormGN1LogSheetReport.Designer.cs">
+      <DependentUpon>FormGN1LogSheetReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubReports\GNForm\FormGN1PlanningWorksheetReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SubReports\GNForm\FormGN1PlanningWorksheetReport.Designer.cs">
+      <DependentUpon>FormGN1PlanningWorksheetReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubReports\GNForm\GN75BFormIsolationReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SubReports\GNForm\GN75BFormIsolationReport.Designer.cs">
+      <DependentUpon>GN75BFormIsolationReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubReports\OilsandsTraining\FunctionalLocationSubReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SubReports\OilsandsTraining\FunctionalLocationSubReport.Designer.cs">
+      <DependentUpon>FunctionalLocationSubReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubReports\DocumentSuggestion\ApprovalSubReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SubReports\DocumentSuggestion\ApprovalSubReport.Designer.cs">
+      <DependentUpon>ApprovalSubReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubReports\OvertimeForm\ApprovalSubReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SubReports\OvertimeForm\ApprovalSubReport.Designer.cs">
+      <DependentUpon>ApprovalSubReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubReports\OvertimeForm\OnPremisePersonnelShiftsSubReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SubReports\OvertimeForm\OnPremisePersonnelShiftsSubReport.Designer.cs">
+      <DependentUpon>OnPremisePersonnelShiftsSubReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubReports\PermitAssessment\PermitAssessmentAnswerSubReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SubReports\PermitAssessment\PermitAssessmentAnswerSubReport.Designer.cs">
+      <DependentUpon>PermitAssessmentAnswerSubReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubReports\OvertimeForm\OnPremiseContractorSubReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SubReports\OvertimeForm\OnPremiseContractorSubReport.Designer.cs">
+      <DependentUpon>OnPremiseContractorSubReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubReports\ProcedureDeviation\DocumentLinksSubReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SubReports\ProcedureDeviation\DocumentLinksSubReport.Designer.cs">
+      <DependentUpon>DocumentLinksSubReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubReports\ProcedureDeviation\TemporaryApprovalsSubReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SubReports\ProcedureDeviation\TemporaryApprovalsSubReport.Designer.cs">
+      <DependentUpon>TemporaryApprovalsSubReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubReports\ProcedureDeviation\ImmediateApprovalsSubReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SubReports\ProcedureDeviation\ImmediateApprovalsSubReport.Designer.cs">
+      <DependentUpon>ImmediateApprovalsSubReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubReports\ProcedureDeviation\ExtensionReasonCommentsSubReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SubReports\ProcedureDeviation\ExtensionReasonCommentsSubReport.Designer.cs">
+      <DependentUpon>ExtensionReasonCommentsSubReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubReports\ProcedureDeviation\FunctionalLocationSubReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SubReports\ProcedureDeviation\FunctionalLocationSubReport.Designer.cs">
+      <DependentUpon>FunctionalLocationSubReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubReports\ShiftHandoverQuestionnaire\EventExcursionsSubReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SubReports\ShiftHandoverQuestionnaire\EventExcursionsSubReport.Designer.cs">
+      <DependentUpon>EventExcursionsSubReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubReports\ShiftHandoverQuestionnaire\CsdsSubReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SubReports\ShiftHandoverQuestionnaire\CsdsSubReport.Designer.cs">
+      <DependentUpon>CsdsSubReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubReports\WorkPermitLubes\FLRAReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SubReports\WorkPermitLubes\FLRAReport.Designer.cs">
+      <DependentUpon>FLRAReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubReports\WorkPermitMuds\WorkPermitMudsHotReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SubReports\WorkPermitMuds\WorkPermitMudsHotReport.Designer.cs">
+      <DependentUpon>WorkPermitMudsHotReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubReports\WorkPermitMuds\WorkPermitMudsModColdReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SubReports\WorkPermitMuds\WorkPermitMudsModColdReport.Designer.cs">
+      <DependentUpon>WorkPermitMudsModColdReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubReports\WorkPermitMuds\WorkPermitWithPDF.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SubReports\WorkPermitMuds\WorkPermitWithPDF.Designer.cs">
+      <DependentUpon>WorkPermitWithPDF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubReports\WorkPermitMuds\XtraReport1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SubReports\WorkPermitMuds\XtraReport1.Designer.cs">
+      <DependentUpon>XtraReport1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkPermitMudsNettoyageReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WorkPermitMudsNettoyageReport.Designer.cs">
+      <DependentUpon>WorkPermitMudsNettoyageReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkPermitMudsReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WorkPermitMudsReport.Designer.cs">
+      <DependentUpon>WorkPermitMudsReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkPermitUSPipelineReport_Pre_4_10.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WorkPermitFortHillsReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WorkPermitUSPipelineReport_Pre_4_10.Designer.cs">
+      <DependentUpon>WorkPermitUSPipelineReport_Pre_4_10.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkPermitFortHillsReport.Designer.cs">
+      <DependentUpon>WorkPermitFortHillsReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkPermitLubesReport_Pre_4_20.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WorkPermitLubesReport_Pre_4_20.Designer.cs">
+      <DependentUpon>WorkPermitLubesReport_Pre_4_20.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkPermitLubesReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WorkPermitLubesReport.Designer.cs">
+      <DependentUpon>WorkPermitLubesReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkPermitMontrealNettoyageReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WorkPermitMontrealNettoyageReport.Designer.cs">
+      <DependentUpon>WorkPermitMontrealNettoyageReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormGN75BReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FormGN75BReport.Designer.cs">
+      <DependentUpon>FormGN75BReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormGN75RosterReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FormGN75RosterReport.Designer.cs">
+      <DependentUpon>FormGN75RosterReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormGN6Report.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FormGN6Report.Designer.cs">
+      <DependentUpon>FormGN6Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormGN24Report.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FormGN24Report.Designer.cs">
+      <DependentUpon>FormGN24Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubReports\GNForm\FormGN6SectionReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SubReports\GNForm\FormGN6SectionReport.Designer.cs">
+      <DependentUpon>FormGN6SectionReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkPermitDenverReport_Pre_4_10.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WorkPermitDenverReport_Pre_4_10.Designer.cs">
+      <DependentUpon>WorkPermitDenverReport_Pre_4_10.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DailyShiftLogReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DailyShiftLogReport.Designer.cs">
+      <DependentUpon>DailyShiftLogReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DailyShiftTargetAlertGapReasonReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DailyShiftTargetAlertGapReasonReport.Designer.cs">
+      <DependentUpon>DailyShiftTargetAlertGapReasonReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DailyShiftTargetAlertReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DailyShiftTargetAlertReport.Designer.cs">
+      <DependentUpon>DailyShiftTargetAlertReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormOilsandsTrainingReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FormOilsandsTrainingReport.Designer.cs">
+      <DependentUpon>FormOilsandsTrainingReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="FormReport.Designer.cs">
+      <DependentUpon>FormReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Printing\IOltReport.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RtfGenericMultiLogReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RtfGenericMultiLogReport.Designer.cs">
+      <DependentUpon>RtfGenericMultiLogReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RtfGenericSingleLogReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RtfGenericSingleLogReport.Designer.cs">
+      <DependentUpon>RtfGenericSingleLogReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RtfShiftHandoverQuestionnaireReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RtfShiftHandoverQuestionnaireReport.Designer.cs">
+      <DependentUpon>RtfShiftHandoverQuestionnaireReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubReports\DailyShiftLog\CommentsSubReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SubReports\DailyShiftLog\CommentsSubReport.Designer.cs">
+      <DependentUpon>CommentsSubReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubReports\DailyShiftLog\TagInfoSubReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SubReports\DailyShiftLog\TagInfoSubReport.Designer.cs">
+      <DependentUpon>TagInfoSubReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubReports\GenericMultiLog\CustomFieldsSubReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SubReports\GenericMultiLog\CustomFieldsSubReport.Designer.cs">
+      <DependentUpon>CustomFieldsSubReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubReports\GenericMultiLog\DocumentLinksSubReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SubReports\GenericMultiLog\DocumentLinksSubReport.Designer.cs">
+      <DependentUpon>DocumentLinksSubReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubReports\GenericMultiLog\FunctionalLocationSubReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SubReports\GenericMultiLog\FunctionalLocationSubReport.Designer.cs">
+      <DependentUpon>FunctionalLocationSubReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubReports\GenericSingleLog\CustomFieldsSubReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SubReports\GenericSingleLog\CustomFieldsSubReport.Designer.cs">
+      <DependentUpon>CustomFieldsSubReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubReports\GenericSingleLog\DateTimeAndUserSubReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SubReports\GenericSingleLog\DateTimeAndUserSubReport.Designer.cs">
+      <DependentUpon>DateTimeAndUserSubReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubReports\GenericSingleLog\DocumentLinksSubReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SubReports\GenericSingleLog\DocumentLinksSubReport.Designer.cs">
+      <DependentUpon>DocumentLinksSubReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubReports\GenericSingleLog\FunctionalLocationSubReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SubReports\GenericSingleLog\FunctionalLocationSubReport.Designer.cs">
+      <DependentUpon>FunctionalLocationSubReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubReports\GNForm\GNFormApprovalReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SubReports\GNForm\GNFormApprovalReport.Designer.cs">
+      <DependentUpon>GNFormApprovalReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubReports\OilsandsTraining\ApprovalSubReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SubReports\OilsandsTraining\ApprovalSubReport.Designer.cs">
+      <DependentUpon>ApprovalSubReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubReports\OilsandsTraining\TrainingBlockSubReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SubReports\OilsandsTraining\TrainingBlockSubReport.Designer.cs">
+      <DependentUpon>TrainingBlockSubReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubReports\ShiftHandoverQuestionnaire\ActionItemsSubReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SubReports\ShiftHandoverQuestionnaire\ActionItemsSubReport.Designer.cs">
+      <DependentUpon>ActionItemsSubReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubReports\ShiftHandoverQuestionnaire\AnswersSubReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SubReports\ShiftHandoverQuestionnaire\AnswersSubReport.Designer.cs">
+      <DependentUpon>AnswersSubReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubReports\ShiftHandoverQuestionnaire\CokerCardsSubReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SubReports\ShiftHandoverQuestionnaire\CokerCardsSubReport.Designer.cs">
+      <DependentUpon>CokerCardsSubReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubReports\ShiftHandoverQuestionnaire\CommentsSubReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SubReports\ShiftHandoverQuestionnaire\CommentsSubReport.Designer.cs">
+      <DependentUpon>CommentsSubReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubReports\ShiftHandoverQuestionnaire\CustomFieldsSubReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SubReports\ShiftHandoverQuestionnaire\CustomFieldsSubReport.Designer.cs">
+      <DependentUpon>CustomFieldsSubReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SubReports\WorkPermitLubes\FLRAReport_Pre_4_18.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SubReports\WorkPermitLubes\FLRAReport_Pre_4_18.Designer.cs">
+      <DependentUpon>FLRAReport_Pre_4_18.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkPermitDenverReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WorkPermitDenverReport.Designer.cs">
+      <DependentUpon>WorkPermitDenverReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkPermitEdmontonReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WorkPermitEdmontonReport.Designer.cs">
+      <DependentUpon>WorkPermitEdmontonReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkPermitLubesReport_Pre_4_18.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WorkPermitLubesReport_Pre_4_18.Designer.cs">
+      <DependentUpon>WorkPermitLubesReport_Pre_4_18.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkPermitMontrealReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WorkPermitMontrealReport.Designer.cs">
+      <DependentUpon>WorkPermitMontrealReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkPermitSarniaReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WorkPermitSarniaReport.Designer.cs">
+      <DependentUpon>WorkPermitSarniaReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkPermitUSPipelineReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WorkPermitUSPipelineReport.Designer.cs">
+      <DependentUpon>WorkPermitUSPipelineReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XRLabelExtensions.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FormGenericCsdReport.fr.resx">
+      <DependentUpon>FormGenericCsdReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGenericCsdReport.resx">
+      <DependentUpon>FormGenericCsdReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOP14PipelineReport .resx">
+      <DependentUpon>FormOP14PipelineReport .cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReadingReport.resx">
+      <DependentUpon>ReadingReport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ActionItemReport.resx">
+      <DependentUpon>ActionItemReport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfinedSpaceMontrealReport.resx">
+      <DependentUpon>ConfinedSpaceMontrealReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfinedSpaceMudsReport.resx">
+      <DependentUpon>ConfinedSpaceMudsReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfinedSpaceMuds_Report.resx">
+      <DependentUpon>ConfinedSpaceMuds_Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGenericTemplateReport.resx">
+      <DependentUpon>FormGenericTemplateReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMudsTemporaryInstallationReport.fr.resx">
+      <DependentUpon>FormMudsTemporaryInstallationReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMudsTemporaryInstallationReport.resx">
+      <DependentUpon>FormMudsTemporaryInstallationReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOP14MarkAsReadReport.resx">
+      <DependentUpon>FormOP14MarkAsReadReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProcedureDeviationReport.resx">
+      <DependentUpon>ProcedureDeviationReport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLubesAlarmDisableReport.resx">
+      <DependentUpon>FormLubesAlarmDisableReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMontrealCsdReport.fr.resx">
+      <DependentUpon>FormMontrealCsdReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMontrealCsdReport.resx">
+      <DependentUpon>FormMontrealCsdReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLubesCsdReport.resx">
+      <DependentUpon>FormLubesCsdReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DocumentSuggestionReport.resx">
+      <DependentUpon>DocumentSuggestionReport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SafeWorkPermitAuditQuestionnaireReport.resx">
+      <DependentUpon>SafeWorkPermitAuditQuestionnaireReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OnPremisePersonnelShiftReport.resx">
+      <DependentUpon>OnPremisePersonnelShiftReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOvertimeFormReport.resx">
+      <DependentUpon>FormOvertimeFormReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGN1SingleTradeChecklistReport.resx">
+      <DependentUpon>FormGN1SingleTradeChecklistReport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGN1Report.resx">
+      <DependentUpon>FormGN1Report.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGN75AReport.resx">
+      <DependentUpon>FormGN75AReport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DirectiveReport.resx">
+      <DependentUpon>DirectiveReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOP14Report.resx">
+      <DependentUpon>FormOP14Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGN59ChecklistReport.resx">
+      <DependentUpon>FormGN59ChecklistReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SarniaEipIssueReport.resx">
+      <DependentUpon>SarniaEipIssueReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubReports\Directive\WorkAssignmentSubReport.resx">
+      <DependentUpon>WorkAssignmentSubReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubReports\Directive\FunctionalLocationSubReport.resx">
+      <DependentUpon>FunctionalLocationSubReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubReports\DocumentSuggestion\ExtensionReasonCommentsSubReport.resx">
+      <DependentUpon>ExtensionReasonCommentsSubReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubReports\DocumentSuggestion\FunctionalLocationSubReport.resx">
+      <DependentUpon>FunctionalLocationSubReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubReports\GNForm\FormGN1TechnicalRescuePlanReport.resx">
+      <DependentUpon>FormGN1TechnicalRescuePlanReport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubReports\GNForm\FormGN1TradeChecklistReport.resx">
+      <DependentUpon>FormGN1TradeChecklistReport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubReports\GNForm\FormGN1LogSheetReport.resx">
+      <DependentUpon>FormGN1LogSheetReport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubReports\GNForm\FormGN1PlanningWorksheetReport.resx">
+      <DependentUpon>FormGN1PlanningWorksheetReport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubReports\GNForm\GN75BFormIsolationReport.resx">
+      <DependentUpon>GN75BFormIsolationReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubReports\GNForm\GNFormApprovalReport.fr.resx">
+      <DependentUpon>GNFormApprovalReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubReports\OilsandsTraining\FunctionalLocationSubReport.resx">
+      <DependentUpon>FunctionalLocationSubReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubReports\DocumentSuggestion\ApprovalSubReport.resx">
+      <DependentUpon>ApprovalSubReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubReports\OvertimeForm\ApprovalSubReport.resx">
+      <DependentUpon>ApprovalSubReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubReports\OvertimeForm\OnPremisePersonnelShiftsSubReport.resx">
+      <DependentUpon>OnPremisePersonnelShiftsSubReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubReports\PermitAssessment\PermitAssessmentAnswerSubReport.resx">
+      <DependentUpon>PermitAssessmentAnswerSubReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubReports\OvertimeForm\OnPremiseContractorSubReport.resx">
+      <DependentUpon>OnPremiseContractorSubReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubReports\ProcedureDeviation\DocumentLinksSubReport.resx">
+      <DependentUpon>DocumentLinksSubReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubReports\ProcedureDeviation\TemporaryApprovalsSubReport.resx">
+      <DependentUpon>TemporaryApprovalsSubReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubReports\ProcedureDeviation\ImmediateApprovalsSubReport.resx">
+      <DependentUpon>ImmediateApprovalsSubReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubReports\ProcedureDeviation\ExtensionReasonCommentsSubReport.resx">
+      <DependentUpon>ExtensionReasonCommentsSubReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubReports\ProcedureDeviation\FunctionalLocationSubReport.resx">
+      <DependentUpon>FunctionalLocationSubReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubReports\ShiftHandoverQuestionnaire\EventExcursionsSubReport.resx">
+      <DependentUpon>EventExcursionsSubReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubReports\ShiftHandoverQuestionnaire\CsdsSubReport.resx">
+      <DependentUpon>CsdsSubReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubReports\WorkPermitLubes\FLRAReport.resx">
+      <DependentUpon>FLRAReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubReports\WorkPermitMuds\WorkPermitMudsHotReport.resx">
+      <DependentUpon>WorkPermitMudsHotReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubReports\WorkPermitMuds\WorkPermitMudsModColdReport.resx">
+      <DependentUpon>WorkPermitMudsModColdReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubReports\WorkPermitMuds\WorkPermitWithPDF.resx">
+      <DependentUpon>WorkPermitWithPDF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubReports\WorkPermitMuds\XtraReport1.resx">
+      <DependentUpon>XtraReport1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkPermitMudsNettoyageReport.resx">
+      <DependentUpon>WorkPermitMudsNettoyageReport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkPermitMudsReport.resx">
+      <DependentUpon>WorkPermitMudsReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkPermitFortHillsReport.resx">
+      <DependentUpon>WorkPermitFortHillsReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkPermitLubesReport_Pre_4_20.resx">
+      <DependentUpon>WorkPermitLubesReport_Pre_4_20.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkPermitLubesReport.resx">
+      <DependentUpon>WorkPermitLubesReport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkPermitMontrealNettoyageReport.resx">
+      <DependentUpon>WorkPermitMontrealNettoyageReport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGN75BReport.resx">
+      <DependentUpon>FormGN75BReport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGN75RosterReport.resx">
+      <DependentUpon>FormGN75RosterReport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGN6Report.resx">
+      <DependentUpon>FormGN6Report.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGN24Report.resx">
+      <DependentUpon>FormGN24Report.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubReports\GNForm\FormGN6SectionReport.resx">
+      <DependentUpon>FormGN6SectionReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkPermitDenverReport_Pre_4_10.resx">
+      <DependentUpon>WorkPermitDenverReport_Pre_4_10.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DailyShiftLogReport.resx">
+      <DependentUpon>DailyShiftLogReport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DailyShiftTargetAlertGapReasonReport.resx">
+      <DependentUpon>DailyShiftTargetAlertGapReasonReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DailyShiftTargetAlertReport.resx">
+      <DependentUpon>DailyShiftTargetAlertReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormOilsandsTrainingReport.resx">
+      <DependentUpon>FormOilsandsTrainingReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormReport.resx">
+      <DependentUpon>FormReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="RtfGenericMultiLogReport.resx">
+      <DependentUpon>RtfGenericMultiLogReport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RtfGenericSingleLogReport.resx">
+      <DependentUpon>RtfGenericSingleLogReport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RtfShiftHandoverQuestionnaireReport.resx">
+      <DependentUpon>RtfShiftHandoverQuestionnaireReport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubReports\DailyShiftLog\CommentsSubReport.resx">
+      <DependentUpon>CommentsSubReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubReports\DailyShiftLog\TagInfoSubReport.resx">
+      <DependentUpon>TagInfoSubReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubReports\GenericMultiLog\CustomFieldsSubReport.resx">
+      <DependentUpon>CustomFieldsSubReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubReports\GenericMultiLog\DocumentLinksSubReport.resx">
+      <DependentUpon>DocumentLinksSubReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubReports\GenericMultiLog\FunctionalLocationSubReport.resx">
+      <DependentUpon>FunctionalLocationSubReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubReports\GenericSingleLog\CustomFieldsSubReport.resx">
+      <DependentUpon>CustomFieldsSubReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubReports\GenericSingleLog\DateTimeAndUserSubReport.resx">
+      <DependentUpon>DateTimeAndUserSubReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubReports\GenericSingleLog\DocumentLinksSubReport.resx">
+      <DependentUpon>DocumentLinksSubReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubReports\GenericSingleLog\FunctionalLocationSubReport.resx">
+      <DependentUpon>FunctionalLocationSubReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubReports\GNForm\GNFormApprovalReport.resx">
+      <DependentUpon>GNFormApprovalReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubReports\OilsandsTraining\ApprovalSubReport.resx">
+      <DependentUpon>ApprovalSubReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubReports\OilsandsTraining\TrainingBlockSubReport.resx">
+      <DependentUpon>TrainingBlockSubReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubReports\ShiftHandoverQuestionnaire\ActionItemsSubReport.resx">
+      <DependentUpon>ActionItemsSubReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubReports\ShiftHandoverQuestionnaire\AnswersSubReport.resx">
+      <DependentUpon>AnswersSubReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubReports\ShiftHandoverQuestionnaire\CokerCardsSubReport.resx">
+      <DependentUpon>CokerCardsSubReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubReports\ShiftHandoverQuestionnaire\CommentsSubReport.resx">
+      <DependentUpon>CommentsSubReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubReports\ShiftHandoverQuestionnaire\CustomFieldsSubReport.resx">
+      <DependentUpon>CustomFieldsSubReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubReports\WorkPermitLubes\FLRAReport_Pre_4_18.resx">
+      <DependentUpon>FLRAReport_Pre_4_18.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkPermitDenverReport.resx">
+      <DependentUpon>WorkPermitDenverReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkPermitEdmontonReport.resx">
+      <DependentUpon>WorkPermitEdmontonReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkPermitLubesReport_Pre_4_18.resx">
+      <DependentUpon>WorkPermitLubesReport_Pre_4_18.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkPermitMontrealReport.resx">
+      <DependentUpon>WorkPermitMontrealReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkPermitSarniaReport.resx">
+      <DependentUpon>WorkPermitSarniaReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkPermitUSPipelineReport.resx">
+      <DependentUpon>WorkPermitUSPipelineReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkPermitUSPipelineReport_Pre_4_10.resx">
+      <DependentUpon>WorkPermitUSPipelineReport_Pre_4_10.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\App\Common.App.csproj">
+      <Project>{31784A4C-5836-4671-88CD-5FE0B962BC3E}</Project>
+      <Name>Common.App</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\DataSources\Com.Suncor.Olt.Reports.Adapters.CsdReportAdapter.datasource" />
+    <None Include="Properties\DataSources\Com.Suncor.Olt.Reports.Adapters.ExtensionReasonReportAdapter.datasource" />
+    <None Include="Properties\DataSources\Com.Suncor.Olt.Reports.Adapters.FormLubesAlarmDisableReportAdapter.datasource" />
+    <None Include="Properties\DataSources\Com.Suncor.Olt.Reports.Adapters.FormLubesCsdReportAdapter.datasource" />
+    <None Include="Properties\DataSources\Com.Suncor.Olt.Reports.Adapters.FormMontrealCsdReportAdapter.datasource" />
+    <None Include="Properties\DataSources\Com.Suncor.Olt.Reports.Adapters.FormOP14MarkAsReadReportAdapter.datasource" />
+    <None Include="Properties\DataSources\Com.Suncor.Olt.Reports.Adapters.OnPremisePersonnelShiftReportAdapter.datasource" />
+    <None Include="Properties\DataSources\Com.Suncor.Olt.Reports.Adapters.OnPremisePersonnelShiftReportDetailsAdapter.datasource" />
+    <None Include="Properties\DataSources\Com.Suncor.Olt.Reports.Adapters.PermitAssessmentAnswerReportAdapter.datasource" />
+    <None Include="Properties\DataSources\Com.Suncor.Olt.Reports.Adapters.ProcedureDeviationReportAdapter.datasource" />
+    <None Include="Properties\DataSources\Com.Suncor.Olt.Reports.Adapters.SafeWorkPermitAuditQuestionnaireReportAdapter.datasource" />
+    <None Include="Properties\DataSources\Com.Suncor.Olt.Reports.SubReports.ShiftHandoverQuestionnaire.EventExcursionsSubReport.datasource" />
+    <None Include="SubReports\WorkPermitMuds\SS-PTS01D AST.pdf" />
+    <None Include="SubReports\WorkPermitMuds\SS-PTS01D AST.rtf" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

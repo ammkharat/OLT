@@ -1,0 +1,34 @@
+/****** Object:  Table [dbo].[FormGN75BDevicePosition]    Script Date: 6/1/2018 11:03:57 AM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+IF EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = N'FormGN75BDevicePosition')
+BEGIN
+drop table FormGN75BDevicePosition
+END
+CREATE TABLE [dbo].[FormGN75BDevicePosition](
+	[Id] [bigint] IDENTITY(1,1) NOT FOR REPLICATION NOT NULL,
+	[FormGN75BId] [bigint] NOT NULL,
+	[DevicePosition] [varchar](20) NOT NULL,
+	[Deleted] [bit] NOT NULL,
+	[DisplayOrder] [int] NOT NULL,
+ CONSTRAINT [PK_FormGN75BDevicePosition_Id] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, FILLFACTOR = 100) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+
+ALTER TABLE [dbo].[FormGN75BDevicePosition] ADD  DEFAULT ((0)) FOR [Deleted]
+GO
+
+ALTER TABLE [dbo].[FormGN75BDevicePosition]  WITH CHECK ADD  CONSTRAINT [FK_FormGN75BDevicePosition_FormGN75] FOREIGN KEY([FormGN75BId])
+REFERENCES [dbo].[FormGN75B] ([Id])
+GO
+
+ALTER TABLE [dbo].[FormGN75BDevicePosition] CHECK CONSTRAINT [FK_FormGN75BDevicePosition_FormGN75]
+GO
+

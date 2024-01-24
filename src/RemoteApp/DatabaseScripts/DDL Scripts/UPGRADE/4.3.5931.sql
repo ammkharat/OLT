@@ -1,0 +1,33 @@
+﻿
+ALTER TABLE [dbo].[CustomField] ADD [Id] [bigint] IDENTITY(100,1) NOT NULL;
+GO
+
+ALTER TABLE [dbo].[CustomField]  WITH NOCHECK ADD  CONSTRAINT [PK_CustomField] PRIMARY KEY CLUSTERED
+(
+	[Id] ASC
+) WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON, FILLFACTOR = 100) ON [PRIMARY]
+GO
+
+
+
+
+CREATE TABLE [dbo].[CustomFieldDropDownValue](
+	[Id] [bigint] IDENTITY(100,1) NOT NULL,
+	[CustomFieldId] bigint NOT NULL,
+	[Value] [varchar](100) NOT NULL,
+	[DisplayOrder] [int] NOT NULL,
+ CONSTRAINT [PK_CustomFieldDropDownValue] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON, FILLFACTOR = 100) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+ALTER TABLE [dbo].[CustomFieldDropDownValue]  WITH CHECK ADD  CONSTRAINT [FK_CustomFieldDropDownValue_CustomField] FOREIGN KEY([CustomFieldId])
+REFERENCES [dbo].[CustomField] ([Id])
+GO
+
+
+
+GO
+

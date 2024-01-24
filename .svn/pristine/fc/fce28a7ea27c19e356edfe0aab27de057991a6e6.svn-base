@@ -1,0 +1,430 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>32, 13</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Nom:</value>
+  </data>
+  <data name="approveButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>78, 22</value>
+  </data>
+  <data name="approveButton.Text" xml:space="preserve">
+    <value>Approuver</value>
+  </data>
+  <data name="rejectButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 22</value>
+  </data>
+  <data name="rejectButton.Text" xml:space="preserve">
+    <value>Refuser</value>
+  </data>
+  <data name="closeButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>61, 22</value>
+  </data>
+  <data name="closeButton.Text" xml:space="preserve">
+    <value>Fermer</value>
+  </data>
+  <data name="deleteButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 22</value>
+  </data>
+  <data name="deleteButton.Text" xml:space="preserve">
+    <value>Supprimer</value>
+  </data>
+  <data name="editButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 22</value>
+  </data>
+  <data name="editButton.Text" xml:space="preserve">
+    <value>Éditer</value>
+  </data>
+  <data name="commentButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>130, 22</value>
+  </data>
+  <data name="commentButton.Text" xml:space="preserve">
+    <value>Faire un commentaire</value>
+  </data>
+  <data name="copyButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>58, 22</value>
+  </data>
+  <data name="copyButton.Text" xml:space="preserve">
+    <value>Copier</value>
+  </data>
+  <data name="cloneButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>58, 22</value>
+  </data>
+  <data name="cloneButton.Text" xml:space="preserve">
+    <value>Cloner</value>
+  </data>
+  <data name="printButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 22</value>
+  </data>
+  <data name="printButton.Text" xml:space="preserve">
+    <value>Imprimer</value>
+  </data>
+  <data name="printPreviewButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>105, 22</value>
+  </data>
+  <data name="printPreviewButton.Text" xml:space="preserve">
+    <value>Afficher l'aperçu</value>
+  </data>
+  <data name="exportallButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>81, 20</value>
+  </data>
+  <data name="exportallButton.ToolTipText" xml:space="preserve">
+    <value>Exporter les données de la grille vers Excel</value>
+  </data>
+  <data name="rangeButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>51, 20</value>
+  </data>
+  <data name="rangeButton.Text" xml:space="preserve">
+    <value>&amp;Filtre</value>
+  </data>
+  <data name="rangeButton.ToolTipText" xml:space="preserve">
+    <value>Filtrer selon la période et les états</value>
+  </data>
+  <data name="editHistoryButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>61, 20</value>
+  </data>
+  <data name="editHistoryButton.ToolTipText" xml:space="preserve">
+    <value>Afficher l'historique des modifications</value>
+  </data>
+  <data name="workPermitTypeColdRadioButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>49, 17</value>
+  </data>
+  <data name="workPermitTypeColdRadioButton.Text" xml:space="preserve">
+    <value>Froid</value>
+  </data>
+  <data name="workPermitTypeHotRadioButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>62, 17</value>
+  </data>
+  <data name="workPermitTypeHotRadioButton.Text" xml:space="preserve">
+    <value>Chaleur</value>
+  </data>
+  <data name="workPermitTypeGroupBox.Text" xml:space="preserve">
+    <value>Type de permis</value>
+  </data>
+  <data name="oltGroupBox1.Text" xml:space="preserve">
+    <value>Type de permis</value>
+  </data>
+  <data name="asbestosCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 17</value>
+  </data>
+  <data name="asbestosCheckBox.Text" xml:space="preserve">
+    <value>Amiante</value>
+  </data>
+  <data name="systemEntryCheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>101, 17</value>
+  </data>
+  <data name="systemEntryCheckBox.Text" xml:space="preserve">
+    <value>Entrée système</value>
+  </data>
+  <data name="permitAttributesGroupBox.Text" xml:space="preserve">
+    <value>Attributs du permis</value>
+  </data>
+  <data name="jobStepDescriptionGroupBox.Text" xml:space="preserve">
+    <value>Description de l'étape de travail</value>
+  </data>
+  <data name="flocGroupBox.Text" xml:space="preserve">
+    <value>Poste technique</value>
+  </data>
+  <data name="workOrderDescriptionGroupBox.Text" xml:space="preserve">
+    <value>Description de l'ordre d'exécution</value>
+  </data>
+  <data name="workOrderNumberGroupBox.Text" xml:space="preserve">
+    <value>No ordre exécution</value>
+  </data>
+  <data name="communicationMethodsNACheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>48, 17</value>
+  </data>
+  <data name="communicationMethodsNACheckBox.Text" xml:space="preserve">
+    <value>S.O.</value>
+  </data>
+  <data name="communicationMethodOtherRadioButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>52, 17</value>
+  </data>
+  <data name="communicationMethodOtherRadioButton.Text" xml:space="preserve">
+    <value>Autre</value>
+  </data>
+  <data name="oltLabel3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>25, 13</value>
+  </data>
+  <data name="oltLabel3.Text" xml:space="preserve">
+    <value>Fin:</value>
+  </data>
+  <data name="locationJobSpecificsGroupBox.Text" xml:space="preserve">
+    <value>Poste / Caractéristiques d'emploi / Portée</value>
+  </data>
+  <data name="toolsGroupBox.Text" xml:space="preserve">
+    <value>Outils à utiliser</value>
+  </data>
+  <data name="equipmentVentilationMethodNACheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>48, 17</value>
+  </data>
+  <data name="equipmentVentilationMethodNACheckBox.Text" xml:space="preserve">
+    <value>S.O.</value>
+  </data>
+  <data name="electricIsolationMethodNACheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>48, 17</value>
+  </data>
+  <data name="electricIsolationMethodNACheckBox.Text" xml:space="preserve">
+    <value>S.O.</value>
+  </data>
+  <data name="equipmentIsolationMethodNACheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>48, 17</value>
+  </data>
+  <data name="equipmentIsolationMethodNACheckBox.Text" xml:space="preserve">
+    <value>S.O.</value>
+  </data>
+  <data name="equipmentStillContainsResidualValvesNACheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>48, 17</value>
+  </data>
+  <data name="equipmentStillContainsResidualValvesNACheckBox.Text" xml:space="preserve">
+    <value>S.O.</value>
+  </data>
+  <data name="equipmentPreviousContentsNACheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>48, 17</value>
+  </data>
+  <data name="equipmentPreviousContentsNACheckBox.Text" xml:space="preserve">
+    <value>S.O.</value>
+  </data>
+  <data name="equipmentElectricalTestBumpNACheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>48, 17</value>
+  </data>
+  <data name="equipmentElectricalTestBumpNACheckBox.Text" xml:space="preserve">
+    <value>S.O.</value>
+  </data>
+  <data name="equipmentConditionNACheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>48, 17</value>
+  </data>
+  <data name="equipmentConditionNACheckBox.Text" xml:space="preserve">
+    <value>S.O.</value>
+  </data>
+  <data name="equipmentLeakingValvesNACheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>48, 17</value>
+  </data>
+  <data name="equipmentLeakingValvesNACheckBox.Text" xml:space="preserve">
+    <value>S.O.</value>
+  </data>
+  <data name="jobSitePreparationSewerIsolationMethodNACheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>48, 17</value>
+  </data>
+  <data name="jobSitePreparationSewerIsolationMethodNACheckBox.Text" xml:space="preserve">
+    <value>S.O.</value>
+  </data>
+  <data name="jobSitePreparationAreaPreparationNACheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>48, 17</value>
+  </data>
+  <data name="jobSitePreparationAreaPreparationNACheckBox.Text" xml:space="preserve">
+    <value>S.O.</value>
+  </data>
+  <data name="jobSitePreparationSurroundingConditionsAffectOrContaminatedNACheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>48, 17</value>
+  </data>
+  <data name="jobSitePreparationSurroundingConditionsAffectOrContaminatedNACheckBox.Text" xml:space="preserve">
+    <value>S.O.</value>
+  </data>
+  <data name="jobSitePreparationLightingElectricalRequirementNACheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>48, 17</value>
+  </data>
+  <data name="jobSitePreparationLightingElectricalRequirementNACheckBox.Text" xml:space="preserve">
+    <value>S.O.</value>
+  </data>
+  <data name="jobSitePreparationBondingOrGroundingRequiredNACheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>48, 17</value>
+  </data>
+  <data name="jobSitePreparationBondingOrGroundingRequiredNACheckBox.Text" xml:space="preserve">
+    <value>S.O.</value>
+  </data>
+  <data name="jobsitePreparationFlowRequiredForJobNACheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>48, 17</value>
+  </data>
+  <data name="jobsitePreparationFlowRequiredForJobNACheckBox.Text" xml:space="preserve">
+    <value>S.O.</value>
+  </data>
+  <data name="oltGroupBox4.Text" xml:space="preserve">
+    <value>Préparation du travail / du lieu de travail</value>
+  </data>
+  <data name="radiationSealedSourceIsolationNACheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>48, 17</value>
+  </data>
+  <data name="radiationSealedSourceIsolationNACheckBox.Text" xml:space="preserve">
+    <value>S.O.</value>
+  </data>
+  <data name="oltGroupBox5.Text" xml:space="preserve">
+    <value>Renseignements sur les radiations</value>
+  </data>
+  <data name="fireConfinedSpaceNACheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>48, 17</value>
+  </data>
+  <data name="fireConfinedSpaceNACheckBox.Text" xml:space="preserve">
+    <value>S.O.</value>
+  </data>
+  <data name="fireConfinedSpaceProtectionGroupBox.Text" xml:space="preserve">
+    <value>Exigences de protection - incendie / espace confiné</value>
+  </data>
+  <data name="respiratoryProtectionRequirementsNACheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>48, 17</value>
+  </data>
+  <data name="respiratoryProtectionRequirementsNACheckBox.Text" xml:space="preserve">
+    <value>S.O.</value>
+  </data>
+  <data name="respiratoryProtectionGroupBox.Text" xml:space="preserve">
+    <value>Exigences de protection respiratoire</value>
+  </data>
+  <data name="specialRescueOrFallNACheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>48, 17</value>
+  </data>
+  <data name="specialRescueOrFallNACheckBox.Text" xml:space="preserve">
+    <value>S.O.</value>
+  </data>
+  <data name="specialEyeOrFaceProtectionNACheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>48, 17</value>
+  </data>
+  <data name="specialEyeOrFaceProtectionNACheckBox.Text" xml:space="preserve">
+    <value>S.O.</value>
+  </data>
+  <data name="specialHandProtectionNACheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>48, 17</value>
+  </data>
+  <data name="specialHandProtectionNACheckBox.Text" xml:space="preserve">
+    <value>S.O.</value>
+  </data>
+  <data name="specialProtectiveFootwearNACheckBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>48, 17</value>
+  </data>
+  <data name="specialProtectiveFootwearNACheckBox.Text" xml:space="preserve">
+    <value>S.O.</value>
+  </data>
+  <data name="oltGroupBox6.Text" xml:space="preserve">
+    <value>EPI spécial requis (autre que celui obligatoire dans l'aire de travail)</value>
+  </data>
+  <data name="specialPrecautionsOrConsiderationsGroupBox.Text" xml:space="preserve">
+    <value>Précautions et considérations spéciales</value>
+  </data>
+  <data name="oltGroupBox7.Text" xml:space="preserve">
+    <value>Renseignements sur les essais de gaz</value>
+  </data>
+  <data name="documentLinkGroupBox.Text" xml:space="preserve">
+    <value>Liens du document</value>
+  </data>
+  <data name="additionalAuthorizationRequiredGroupBox.Text" xml:space="preserve">
+    <value>Évaluations / autorisations / formulaires supplémentaires requis</value>
+  </data>
+</root>

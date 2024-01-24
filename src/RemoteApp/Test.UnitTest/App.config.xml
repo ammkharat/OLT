@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+  <configSections>
+    <section name="PlantHistorianConfiguration"  type="Com.Suncor.Olt.Common.Domain.PlantHistorian.PlantHistorianSection, Com.Suncor.Olt.Common" />
+    <!--section name="dataCacheClient" type="Microsoft.ApplicationServer.Caching.DataCacheClientSection,  Microsoft.ApplicationServer.Caching.Core, Version=1.0.0.0, 
+            Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+        allowLocation="true"
+        allowDefinition="Everywhere"/-->
+  </configSections>
+  <appSettings>
+    <add key="LDAP_USER_DOMAIN" value="$(LdapUserDomain)" />
+    <add key="LDAP_PATH" value="$(LdapPath)" />
+
+    <add key="RemoteServicesURL" value="$(ClientRemoteServicesURILocation)"/>
+    <add key="AuthenticationProvider" value="Com.Suncor.Olt.Remote.Providers.LdapAuthenticationProvider"/>
+    <add key="ServerTimeZone" value="Mountain Standard Time" />
+    <add key="WebMethodsPullTests" value="$(WebMethodsPullTests)"/>
+  </appSettings>
+  <connectionStrings>
+    <add name="SqlServer" connectionString="$(ConnectionString)" providerName="System.Data.SqlClient" />
+  </connectionStrings>
+   <!--dataCacheClient>
+    <hosts>
+      <host name="OLTSBXCGY003" cachePort="22233" />
+    </hosts>
+  </dataCacheClient-->
+</configuration>

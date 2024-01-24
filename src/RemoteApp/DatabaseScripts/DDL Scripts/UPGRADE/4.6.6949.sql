@@ -1,0 +1,34 @@
+﻿CREATE NONCLUSTERED INDEX [IDX_ActionItem_Priority_Page]
+ON [dbo].[ActionItem]
+(
+	[StartDateTime] ASC,
+	[Deleted] ASC,
+	[EndDateTime] ASC,
+	[ActionItemStatusId] ASC,
+	[WorkAssignmentId] ASC,
+	[ResponseRequired] ASC,
+	[Id] ASC
+) WITH (PAD_INDEX = OFF,FILLFACTOR = 100,IGNORE_DUP_KEY = OFF,STATISTICS_NORECOMPUTE = OFF,ONLINE = OFF,ALLOW_ROW_LOCKS = ON,ALLOW_PAGE_LOCKS = ON)
+ON [PRIMARY];
+GO
+
+CREATE UNIQUE NONCLUSTERED INDEX [IDX_ActionItemDefinition_Floc]
+ON [dbo].[ActionItemFunctionalLocation]
+([FunctionalLocationId] , [ActionItemId])
+WITH
+(
+PAD_INDEX = OFF,
+FILLFACTOR = 100,
+IGNORE_DUP_KEY = OFF,
+STATISTICS_NORECOMPUTE = OFF,
+ALLOW_ROW_LOCKS = ON,
+ALLOW_PAGE_LOCKS = ON,
+DROP_EXISTING = ON
+)
+ON [PRIMARY];
+GO
+
+
+
+GO
+

@@ -1,0 +1,411 @@
+﻿ALTER INDEX [IDX_DeviationAlertResponseHistory] ON [dbo].[DeviationAlertResponseHistory] REBUILD;
+
+ALTER INDEX [PK_RoleElementTemplate] ON [dbo].[RoleElementTemplate] REBUILD;
+GO
+
+DROP INDEX [IDX_TargetDefinition_Schedule] 
+ON [dbo].[TargetDefinition];
+GO
+
+CREATE UNIQUE NONCLUSTERED INDEX [IDX_ShiftHandoverQuestionnaireHistory_Id]
+ON [dbo].[ShiftHandoverQuestionnaireHistory]
+([Id] , [ShiftHandoverQuestionnaireHistoryId])
+WITH
+(
+PAD_INDEX = OFF,
+FILLFACTOR = 95,
+IGNORE_DUP_KEY = OFF,
+STATISTICS_NORECOMPUTE = OFF,
+ONLINE = OFF,
+ALLOW_ROW_LOCKS = ON,
+ALLOW_PAGE_LOCKS = ON,
+DATA_COMPRESSION = NONE,
+DROP_EXISTING = ON
+)
+ON [PRIMARY];
+GO
+
+ALTER TABLE [dbo].[EventSinks] 
+ADD  CONSTRAINT [PK_EventSinks]
+PRIMARY KEY CLUSTERED ([ID] )
+WITH ( PAD_INDEX = OFF,
+FILLFACTOR = 80,
+IGNORE_DUP_KEY = OFF,
+STATISTICS_NORECOMPUTE = OFF,
+ALLOW_ROW_LOCKS = ON,
+ALLOW_PAGE_LOCKS = ON,
+DATA_COMPRESSION = NONE )
+ ON [PRIMARY]
+GO
+
+CREATE NONCLUSTERED INDEX [IDX_EventSinks_ClientUri]
+ON [dbo].[EventSinks]
+([ClientUri])
+WITH
+(
+PAD_INDEX = OFF,
+FILLFACTOR = 80,
+IGNORE_DUP_KEY = OFF,
+STATISTICS_NORECOMPUTE = OFF,
+ONLINE = ON,
+ALLOW_ROW_LOCKS = ON,
+ALLOW_PAGE_LOCKS = ON,
+DATA_COMPRESSION = NONE
+)
+ON [PRIMARY];
+GO
+
+ALTER TABLE [dbo].[LogActionItemAssociation]
+ ALTER COLUMN [ActionItemId] bigint NOT NULL
+GO
+
+CREATE NONCLUSTERED INDEX [IDX_LogActionItemAssociation_ActionItem]
+ON [dbo].[LogActionItemAssociation]
+([ActionItemId])
+WITH
+(
+PAD_INDEX = OFF,
+FILLFACTOR = 90,
+IGNORE_DUP_KEY = OFF,
+STATISTICS_NORECOMPUTE = OFF,
+ONLINE = OFF,
+ALLOW_ROW_LOCKS = ON,
+ALLOW_PAGE_LOCKS = ON,
+DATA_COMPRESSION = NONE
+)
+ON [PRIMARY];
+GO
+
+ALTER INDEX [PK_ActionItem]
+ON [dbo].[ActionItem]
+REBUILD PARTITION = ALL WITH ( 
+FILLFACTOR = 100,
+SORT_IN_TEMPDB = OFF
+)
+GO
+
+ALTER INDEX [PK_ActionItemDefinition]
+ON [dbo].[ActionItemDefinition]
+REBUILD PARTITION = ALL WITH ( 
+FILLFACTOR = 100,
+SORT_IN_TEMPDB = OFF
+)
+go
+
+ALTER INDEX [PK_ActionItemDefinitionAutoReApprovalConfiguration]
+ON [dbo].[ActionItemDefinitionAutoReApprovalConfiguration]
+REBUILD PARTITION = ALL WITH ( 
+FILLFACTOR = 100,
+ONLINE = ON,
+SORT_IN_TEMPDB = OFF
+)
+go
+
+ALTER INDEX [PK_Comment]
+ON [dbo].[Comment]
+REBUILD PARTITION = ALL WITH ( 
+FILLFACTOR = 100,
+SORT_IN_TEMPDB = OFF
+)
+go
+
+ALTER INDEX [IDX_ConfinedSpaceHistory]
+ON [dbo].[ConfinedSpaceHistory]
+REBUILD PARTITION = ALL WITH ( 
+FILLFACTOR = 100,
+ONLINE = ON,
+SORT_IN_TEMPDB = OFF
+)
+go
+
+ALTER INDEX [PK_Contractor]
+ON [dbo].[Contractor]
+REBUILD PARTITION = ALL WITH ( 
+FILLFACTOR = 100,
+ONLINE = ON,
+SORT_IN_TEMPDB = OFF
+)
+go
+
+ALTER INDEX [PK_CraftOrTrade]
+ON [dbo].[CraftOrTrade]
+REBUILD PARTITION = ALL WITH ( 
+FILLFACTOR = 100,
+ONLINE = ON,
+SORT_IN_TEMPDB = OFF
+)
+go
+
+ALTER INDEX [PK_DeviationAlert]
+ON [dbo].[DeviationAlert]
+REBUILD PARTITION = ALL WITH ( 
+FILLFACTOR = 100,
+SORT_IN_TEMPDB = OFF
+)
+go
+
+ALTER INDEX [PK_DeviationAlertResponse]
+ON [dbo].[DeviationAlertResponse]
+REBUILD PARTITION = ALL WITH ( 
+FILLFACTOR = 100,
+ONLINE = ON,
+SORT_IN_TEMPDB = OFF
+)
+go
+
+ALTER INDEX [PK_DeviationAlertResponseReasonCodeAssignment]
+ON [dbo].[DeviationAlertResponseReasonCodeAssignment]
+REBUILD PARTITION = ALL WITH ( 
+FILLFACTOR = 100,
+SORT_IN_TEMPDB = OFF
+)
+go
+
+ALTER INDEX [PK_DocumentLink]
+ON [dbo].[DocumentLink]
+REBUILD PARTITION = ALL WITH ( 
+FILLFACTOR = 100,
+SORT_IN_TEMPDB = OFF
+)
+go
+
+ALTER INDEX [PK_FunctionalLocation]
+ON [dbo].[FunctionalLocation]
+REBUILD PARTITION = ALL WITH ( 
+FILLFACTOR = 100,
+ONLINE = ON,
+SORT_IN_TEMPDB = OFF
+)
+go
+
+ALTER INDEX [PK_FunctionalLocationOperationalModeHistory]
+ON [dbo].[FunctionalLocationOperationalModeHistory]
+REBUILD PARTITION = ALL WITH ( 
+FILLFACTOR = 100,
+ONLINE = ON,
+SORT_IN_TEMPDB = OFF
+)
+go
+
+ALTER INDEX [PK_GasTestElementInfo]
+ON [dbo].[GasTestElementInfo]
+REBUILD PARTITION = ALL WITH ( 
+FILLFACTOR = 100,
+ONLINE = ON,
+SORT_IN_TEMPDB = OFF
+)
+go
+
+ALTER INDEX [PK_GasTestElementInfoHistory]
+ON [dbo].[GasTestElementInfoConfigurationHistory]
+REBUILD PARTITION = ALL WITH ( 
+FILLFACTOR = 100,
+ONLINE = ON,
+SORT_IN_TEMPDB = OFF
+)
+go
+
+ALTER INDEX [PK_GasLimitUnit]
+ON [dbo].[GasLimitUnit]
+REBUILD PARTITION = ALL WITH ( 
+FILLFACTOR = 100,
+ONLINE = ON,
+SORT_IN_TEMPDB = OFF
+)
+go
+
+ALTER INDEX [PK_LogDefinition]
+ON [dbo].[LogDefinition]
+REBUILD PARTITION = ALL WITH ( 
+FILLFACTOR = 100,
+SORT_IN_TEMPDB = OFF
+)
+go
+
+ALTER INDEX [PK_PermitRequestEdmonton]
+ON [dbo].[PermitRequestEdmonton]
+REBUILD PARTITION = ALL WITH ( 
+FILLFACTOR = 100,
+SORT_IN_TEMPDB = OFF
+)
+go
+
+ALTER INDEX [PK_PermitRequestMontreal]
+ON [dbo].[PermitRequestMontreal]
+REBUILD PARTITION = ALL WITH ( 
+FILLFACTOR = 100,
+ONLINE = ON,
+SORT_IN_TEMPDB = OFF
+)
+go
+
+ALTER INDEX [PK_RestrictionDefinition]
+ON [dbo].[RestrictionDefinition]
+REBUILD PARTITION = ALL WITH ( 
+FILLFACTOR = 100,
+SORT_IN_TEMPDB = OFF
+)
+go
+
+ALTER INDEX [PK_RestrictionReasonCode]
+ON [dbo].[RestrictionReasonCode]
+REBUILD PARTITION = ALL WITH ( 
+FILLFACTOR = 100,
+ONLINE = ON,
+SORT_IN_TEMPDB = OFF
+)
+go
+
+ALTER INDEX [PK_RestrictionReasonCodeFLOCAssociation]
+ON [dbo].[RestrictionReasonCodeFLOCAssociation]
+REBUILD PARTITION = ALL WITH ( 
+FILLFACTOR = 100,
+ONLINE = ON,
+SORT_IN_TEMPDB = OFF
+)
+go
+
+ALTER INDEX [PK_Role]
+ON [dbo].[Role]
+REBUILD PARTITION = ALL WITH ( 
+FILLFACTOR = 100,
+ONLINE = ON,
+SORT_IN_TEMPDB = OFF
+)
+go
+
+ALTER INDEX [PK_RoleElement]
+ON [dbo].[RoleElement]
+REBUILD PARTITION = ALL WITH ( 
+FILLFACTOR = 100,
+ONLINE = ON,
+SORT_IN_TEMPDB = OFF
+)
+go
+
+ALTER INDEX [PK_SAPNotification]
+ON [dbo].[SAPNotification]
+REBUILD PARTITION = ALL WITH ( 
+FILLFACTOR = 100,
+SORT_IN_TEMPDB = OFF
+)
+go
+
+ALTER INDEX [PK_Schedule]
+ON [dbo].[Schedule]
+REBUILD PARTITION = ALL WITH ( 
+FILLFACTOR = 100,
+ONLINE = ON,
+SORT_IN_TEMPDB = OFF
+)
+go
+
+ALTER INDEX [PK_Shift]
+ON [dbo].[Shift]
+REBUILD PARTITION = ALL WITH ( 
+FILLFACTOR = 100,
+ONLINE = ON,
+SORT_IN_TEMPDB = OFF
+)
+go
+
+ALTER INDEX [PK_Site]
+ON [dbo].[Site]
+REBUILD PARTITION = ALL WITH ( 
+FILLFACTOR = 100,
+ONLINE = ON,
+SORT_IN_TEMPDB = OFF
+)
+go
+
+ALTER INDEX [PK_Tag]
+ON [dbo].[Tag]
+REBUILD PARTITION = ALL WITH ( 
+FILLFACTOR = 100,
+ONLINE = ON,
+SORT_IN_TEMPDB = OFF
+)
+go
+
+ALTER INDEX [PK_TargetAlert]
+ON [dbo].[TargetAlert]
+REBUILD PARTITION = ALL WITH ( 
+FILLFACTOR = 100,
+SORT_IN_TEMPDB = OFF
+)
+go
+
+ALTER INDEX [PK_TargetDefinition]
+ON [dbo].[TargetDefinition]
+REBUILD PARTITION = ALL WITH ( 
+FILLFACTOR = 100,
+SORT_IN_TEMPDB = OFF
+)
+go
+
+ALTER INDEX [PK_TargetDefinitionReadWriteTagConfiguration]
+ON [dbo].[TargetDefinitionReadWriteTagConfiguration]
+REBUILD PARTITION = ALL WITH ( 
+FILLFACTOR = 100,
+ONLINE = ON,
+SORT_IN_TEMPDB = OFF
+)
+go
+
+ALTER INDEX [PK_User]
+ON [dbo].[User]
+REBUILD PARTITION = ALL WITH ( 
+FILLFACTOR = 100,
+ONLINE = ON,
+SORT_IN_TEMPDB = OFF
+)
+go
+
+ALTER INDEX [PK_UserPrintPreference]
+ON [dbo].[UserPrintPreference]
+REBUILD PARTITION = ALL WITH ( 
+FILLFACTOR = 100,
+ONLINE = ON,
+SORT_IN_TEMPDB = OFF
+)
+go
+
+ALTER INDEX [PK_WorkAssignment]
+ON [dbo].[WorkAssignment]
+REBUILD PARTITION = ALL WITH ( 
+FILLFACTOR = 100,
+ONLINE = ON,
+SORT_IN_TEMPDB = OFF
+)
+go
+
+ALTER INDEX [PK_WorkPermitEdmontonDetails]
+ON [dbo].[WorkPermitEdmontonDetails]
+REBUILD PARTITION = ALL WITH ( 
+FILLFACTOR = 100,
+ONLINE = ON,
+SORT_IN_TEMPDB = OFF
+)
+go
+
+ALTER INDEX [PK_WorkPermitGasTestElementInfo]
+ON [dbo].[WorkPermitGasTestElementInfo]
+REBUILD PARTITION = ALL WITH ( 
+FILLFACTOR = 100,
+ONLINE = ON,
+SORT_IN_TEMPDB = OFF
+)
+go
+
+ALTER INDEX [PK_WorkPermitMontreal]
+ON [dbo].[WorkPermitMontreal]
+REBUILD PARTITION = ALL WITH ( 
+FILLFACTOR = 100,
+ONLINE = ON,
+SORT_IN_TEMPDB = OFF
+)
+go
+
+
+GO
+

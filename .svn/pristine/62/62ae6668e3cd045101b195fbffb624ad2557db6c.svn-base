@@ -1,0 +1,29 @@
+﻿<?xml version="1.0"?>
+
+<WorkOrderOLTdata>
+  <WorkOrderRecord>
+    <header></header>
+    <WorkOrderDetails>
+      <WONumber>000045004307</WONumber>
+      <ShortText>MPRG TANK FARM ANALYZER WEEKLY</ShortText>
+      <FunctionalLocation>SR1-PLT1-AFTU</FunctionalLocation>
+      <EquipmentNumber></EquipmentNumber>
+      <PlantID>4000</PlantID>
+      <Operations>
+        <OperationKeyNo>1000019581</OperationKeyNo>
+        <OperationNumber>0010</OperationNumber>
+        <SubOperation></SubOperation>
+        <EarliestStartDate>2006-04-03</EarliestStartDate>
+        <EarliestStartTime>12:00:00</EarliestStartTime>
+        <EarliestFinishDate>2006-04-03</EarliestFinishDate>
+        <EarliestFinishTime>04:00:00</EarliestFinishTime>
+        <WorkPermitType>COLD</WorkPermitType>
+        <WorkPermitAttrib>X\</WorkPermitAttrib>
+        <WorkCenterID>10001141</WorkCenterID>
+        <WorkCenterName>SUPV</WorkCenterName>
+        <WorkCenterText>Instrument Technicia</WorkCenterText>
+        <LongText></LongText>
+      </Operations>
+    </WorkOrderDetails>
+  </WorkOrderRecord>
+</WorkOrderOLTdata>

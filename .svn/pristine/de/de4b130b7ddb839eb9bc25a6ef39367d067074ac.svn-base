@@ -1,0 +1,22 @@
+IF EXISTS (SELECT * FROM sysobjects WHERE type = 'P' AND name = 'RemoveFormGenericTemplateApprover')
+	BEGIN
+		DROP PROCEDURE [dbo].RemoveFormGenericTemplateApprover
+	END
+GO
+      
+Create Procedure [dbo].[RemoveFormGenericTemplateApprover]        
+ (        
+  @Id BIGINT        
+ )        
+AS        
+----DELETE FROM FormGenericTemplateApprover WHERE Id = @Id     
+
+Update  FormGenericTemplateApprover
+Set IsDeleted = 1
+Where   
+Id = @Id   
+   
+  
+GRANT EXEC ON RemoveFormGenericTemplateApprover TO PUBLIC  
+
+
